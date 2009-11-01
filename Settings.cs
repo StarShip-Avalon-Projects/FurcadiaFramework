@@ -5,7 +5,6 @@
 */
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.IO;
 using System.Collections;
@@ -13,10 +12,6 @@ using System.Xml.Serialization;
 
 namespace Furcadia
 {
-    public enum SettingsFormat
-    {
-        Ini,Xml
-    }
     /// <summary>
     /// A simple way to load settings whether from ini or xml.
     /// </summary>

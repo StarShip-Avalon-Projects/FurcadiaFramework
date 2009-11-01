@@ -5,10 +5,12 @@
 */
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Net;
 using System.Net.Sockets;
+using Microsoft.Win32;
+using System.IO;
+
 namespace Furcadia
 {
     /// <summary>
@@ -35,29 +37,6 @@ namespace Furcadia
         {
             get { return IPAddress.Parse(_ip); }
             set { _ip = value.ToString(); }
-        }
-
-        /// <summary>
-        /// Gets the path to the Furcadia program folder.
-        /// </summary>
-        public static string Path
-        {
-            get
-            {
-                try
-                {
-                    object ret = Microsoft.Win32.Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\Dragon's Eye Productions\Furcadia\Programs", "Path", null);
-                    if (ret == null)
-                        ret = Microsoft.Win32.Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Dragon's Eye Productions\Furcadia\Programs", "Path", null);
-                    if (ret == null)
-                        throw new NullReferenceException("Registry value to Furcadia's default directory not found. Do you have Furcadia installed on your system?");
-                    if (ret != null ) 
-                        if (!ret.ToString().EndsWith(@"\")) ret = ret.ToString() +  @"\";
-                        return ret.ToString();
-                }
-                catch { 
-                    throw new NullReferenceException("There was an error trying to retrieve the Furcadia default directory path information. Do you have Furcadia installed on your system?"); }
-            }
         }
     }
 }

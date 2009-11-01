@@ -5,7 +5,6 @@
 */
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Net;
 using System.Diagnostics;
@@ -82,7 +81,7 @@ namespace Furcadia.Net
                 friends += friend + "&";
             if (_friends.Length > 0)
             {
-                Action a = delegate
+                Furcadia.Net.NetProxy.ActionDelegate a = delegate
                 {
                     if (aborted) return;
                     this.request = (HttpWebRequest)WebRequest.Create(url + "/q/?" + friends);
@@ -107,7 +106,7 @@ namespace Furcadia.Net
                             this.statusCode = (int)(HttpStatusCode)this.response.StatusCode;
                             string[] onln = this.responseBody.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
                             this._timelimit = int.Parse(onln[0].Substring(1));
-                            var list = onln.ToList();
+                            var list = new List<string>(onln);
                             if (list.Count >= 3)
                             {
                                 list.RemoveAt(0);
