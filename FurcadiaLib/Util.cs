@@ -1,4 +1,4 @@
-﻿/*Log Header
+/*Log Header
  *Format: (date,Version) AuthorName, Changes.
  * (Oct 27,2009,0.1) Squizzle, Initial Developer.
  * 
@@ -37,6 +37,35 @@ namespace Furcadia
         {
             get { return IPAddress.Parse(_ip); }
             set { _ip = value.ToString(); }
+        }
+
+        public static uint Base220ToUInt(string str)
+        {
+            CharEnumerator breakdown;
+            uint value = 0;
+            int i,length = str.Length;
+            breakdown = str.GetEnumerator();
+            breakdown.MoveNext();
+            for (i = 0; i < length - 1; i++)
+            {
+                value += Convert.ToUInt32((Convert.ToByte(breakdown.Current) - 35) * (220 ^ 1));
+                breakdown.MoveNext();
+            }
+            return value;
+        }
+
+        public static string UIntToBase220(uint num, int size)
+        {
+            int i;
+            byte tbyte;
+            StringBuilder build = new StringBuilder();
+            for (i = 1; i <= size; i++)
+            {
+                tbyte = Convert.ToByte(num % 220);
+                num /= 220;
+                build.Append(Convert.ToChar(tbyte + 35));
+            }
+            return build.ToString();
         }
     }
 }

@@ -11,9 +11,6 @@ namespace Furcadia.Net
 {
     public interface INetMessage
     {
-
-        byte[] GetBuffer();
-
         string GetString();
 
         void Write(string data);

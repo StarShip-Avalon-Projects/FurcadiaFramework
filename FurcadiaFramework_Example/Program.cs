@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -8,42 +8,28 @@ using Furcadia.Drawing;
 using Furcadia.Drawing.Graphics;
 using Furcadia.IO;
 using System.Drawing.Imaging;
+using Furcadia.Net;
+using FurcadiaFramework_Example.Demo;
+using System.Collections;
 
 
 namespace FurcadiaFramework_Example
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            FurcadiaShapes file = new FurcadiaShapes(Paths.GetDefaultPatchPath() + "/buttons.fox");
-            Bitmap[] bitmaps = Helper.ToBitmapArray(file);
-
-            Form main = new Form();
-            main.Text = "!";
-            main.Width = 50;
-            main.Height = 50;
-            main.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            main.AutoSize = true;
-
-            
-            Button button1 = new Button();
-            button1.AutoSize = true;
-            button1.Text = "Random";
-
-            PictureBox pictureBox1 = new PictureBox();
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.Top = button1.Height + 2;
-
-            main.Controls.Add(button1);
-            main.Controls.Add(pictureBox1);
-
-            button1.Click += delegate
+            Queue queue = new Queue();
+            queue.Enqueue(new GraphicsDemo());
+            queue.Enqueue(new NetworkDemo());
+            queue.Enqueue(new ScriptDemo());
+            queue.Enqueue(new FriendStatusDemo());
+            while (queue.Count > 0)
             {
-                Random rand = new Random();
-                pictureBox1.Image = bitmaps[(rand.Next() % bitmaps.Length)];
-            };
-            Application.Run(main);
+                ((IDemo)queue.Dequeue()).Run();
+                queue.TrimToSize();
+            }
+			return 0;
         }
     }
 }

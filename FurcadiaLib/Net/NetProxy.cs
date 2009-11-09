@@ -13,11 +13,12 @@ using System.Threading;
 using System.IO;
 using System.Collections.Generic;
 using Furcadia.IO;
+using System.Net.NetworkInformation;
 
 namespace Furcadia.Net
 {
 
-    public class NetProxy : INetConnection
+    public class NetProxy : Object
     {
         #region Event Handling
         public delegate void ActionDelegate();
@@ -62,40 +63,68 @@ namespace Furcadia.Net
 
         public NetProxy(int port)
         {
-            _endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
+            try
+            {
+                _endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
+            }
+            catch { }
         }
 
         public NetProxy(int port, int lport)
         {
             _lport = lport;
+            try
+            {
             _endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
+            }
+            catch { }
         }
 
         public NetProxy(string host, int port)
         {
-            _endpoint = new IPEndPoint(Dns.GetHostEntry(host).AddressList[0], port);
+            try
+            {
+                _endpoint = new IPEndPoint(Dns.GetHostEntry(host).AddressList[0], port);
+            }
+            catch { }
         }
 
         public NetProxy(string host, int port, int lport)
         {
             _lport = lport;
-            _endpoint = new IPEndPoint(Dns.GetHostEntry(host).AddressList[0], port);
+            try
+            {
+                _endpoint = new IPEndPoint(Dns.GetHostEntry(host).AddressList[0], port);
+            }
+            catch { }
         }
 
         public NetProxy(IPAddress ip, int port)
         {
-            _endpoint = new IPEndPoint(ip, port);
+            try
+            {
+                _endpoint = new IPEndPoint(ip, port);
+            }
+            catch { }
         }
         public NetProxy(IPAddress ip, int port, int lport)
         {
             _lport = lport;
-            _endpoint = new IPEndPoint(ip, port);
+            try
+            {
+                _endpoint = new IPEndPoint(ip, port);
+            }
+            catch { }
         }
 
         public NetProxy(IPEndPoint endpoint, int lport)
         {
             _lport = lport;
-            _endpoint = endpoint;
+            try
+            {
+                _endpoint = endpoint;
+            }
+            catch { }
         }
 
         #endregion
@@ -136,20 +165,45 @@ namespace Furcadia.Net
         /// </summary>
         public void Connect()
         {
-            try
-            {
+            //try
+            //{
                 string proxyIni = "localhost " + _lport.ToString();
                 FileStream proxyStream = new FileStream(Paths.GetInstallPath() + "/proxy.ini", FileMode.Create);
-                proxyStream.Write(Encoding.GetEncoding(_code).GetBytes(proxyIni), 0, proxyIni.Length);
+                proxyStream.Write(System.Text.Encoding.GetEncoding(_code).GetBytes(proxyIni), 0, proxyIni.Length);
                 proxyStream.Close();
+                if (listen != null)
+                {
+                    listen.Start();
+                    listen.BeginAcceptTcpClient(new AsyncCallback(AsyncListener), listen);
+                }
+                else
+                {
+                    bool isAvailable = true;
+                    IPGlobalProperties ipGlobalProperties = IPGlobalProperties.GetIPGlobalProperties();
+                    TcpConnectionInformation[] tcpInfoArray = ipGlobalProperties.GetActiveTcpConnections();
 
-                listen = new TcpListener(IPAddress.Any,_lport);
-                listen.Start();
-                listen.BeginAcceptTcpClient(new AsyncCallback(AsyncListener), listen);
+                    foreach (TcpConnectionInformation tcpi in tcpInfoArray)
+                    {
+                        if (tcpi.LocalEndPoint.Port == this._endpoint.Port)
+                        {
+                            Console.WriteLine(tcpi.State);
+                            isAvailable = false;
+                            break;
+                        }
+                    }
+                    if (isAvailable)
+                    {
+                        listen = new TcpListener(IPAddress.Any, _lport);
+                        listen.Start();
+                        listen.BeginAcceptTcpClient(new AsyncCallback(AsyncListener), listen);
+                    }
+                    else throw new Exception("Port " + _lport.ToString() + " is being used.");
+
+                }
                 
                 //Run
                 if (string.IsNullOrEmpty(ProcessPath)) ProcessPath = Paths.GetInstallPath();
-                //ProcessPath is not a directory
+                //check ProcessPath is not a directory
                 if (!Directory.Exists(ProcessPath)) throw new DirectoryNotFoundException();
                 Directory.SetCurrentDirectory(ProcessPath);
                 if (string.IsNullOrEmpty(Process)) Process = "Furcadia.exe";
@@ -157,8 +211,8 @@ namespace Furcadia.Net
                 System.Diagnostics.Process proc = System.Diagnostics.Process.Start(Process);
                 proc.EnableRaisingEvents = true;
                 proc.Exited += delegate { if (this.ClientExited != null) this.ClientExited(); };
-            }
-            catch (Exception e) { if (Error != null) Error(e); }
+            //}
+            //catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
 
         public void SendClient(INetMessage message)
@@ -166,19 +220,9 @@ namespace Furcadia.Net
             try
             {
                 if (client.GetStream().CanWrite)
-                    client.GetStream().Write(Encoding.GetEncoding(_code).GetBytes(message.GetString()), 0, Encoding.GetEncoding(_code).GetBytes(message.GetString()).Length);
+                    client.GetStream().Write(System.Text.Encoding.GetEncoding(_code).GetBytes(message.GetString()), 0, System.Text.Encoding.GetEncoding(_code).GetBytes(message.GetString()).Length);
             }
-            catch (Exception e) { if (Error != null) Error(e); }
-        }
-
-        public void SendClient(string message)
-        {
-            try
-            {
-                if (client.GetStream().CanWrite)
-                    client.GetStream().Write(Encoding.GetEncoding(_code).GetBytes(message), 0, Encoding.GetEncoding(_code).GetBytes(message).Length);
-            }
-            catch (Exception e) { if (Error != null) Error(e); }
+            catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
 
         public void SendServer(INetMessage message)
@@ -186,9 +230,9 @@ namespace Furcadia.Net
             try
             {
                 if (server.GetStream().CanWrite)
-                    server.GetStream().Write(Encoding.GetEncoding(_code).GetBytes(message.GetString()), 0, Encoding.GetEncoding(_code).GetBytes(message.GetString()).Length);
+                    server.GetStream().Write(System.Text.Encoding.GetEncoding(_code).GetBytes(message.GetString()), 0, System.Text.Encoding.GetEncoding(_code).GetBytes(message.GetString()).Length);
             }
-            catch (Exception e) { if (Error != null) Error(e); }
+            catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
 
         public void SendServer(string message)
@@ -196,10 +240,11 @@ namespace Furcadia.Net
             try
             {
                 if (server.GetStream().CanWrite)
-                    server.GetStream().Write(Encoding.GetEncoding(_code).GetBytes(message), 0, Encoding.GetEncoding(_code).GetBytes(message).Length);
+                    server.GetStream().Write(System.Text.Encoding.GetEncoding(_code).GetBytes(message), 0, System.Text.Encoding.GetEncoding(_code).GetBytes(message).Length);
             }
-            catch (Exception e) { if (Error != null) Error(e); }
+            catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
+
         /// <summary>
         /// Terminates the connection.
         /// </summary>
@@ -207,11 +252,23 @@ namespace Furcadia.Net
         {
             try
             {
-                server.Close();
+                client.GetStream().Close();
+                server.GetStream().Close();
                 client.Close();
+                server.Close();
             }
-            catch (Exception e) { if (Error != null) Error(e); }
+            catch{ }
         }
+
+        ~NetProxy()
+        {
+            try
+            {
+                this.Kill();
+            }
+            catch { }
+        }
+
         #endregion
 
         #region Private Methods
@@ -219,33 +276,44 @@ namespace Furcadia.Net
         {
             try
             {
-                client = listen.EndAcceptTcpClient(ar);
+                try
+                {
+                    client = listen.EndAcceptTcpClient(ar);
+                }
+                catch (SocketException se) { if (se.ErrorCode > 0) throw se; }
                 listen.Stop();
                 // Connect to the server
                 server = new TcpClient(Util.Host,_endpoint.Port);
 
                 if (!server.Connected) throw new Exception("There was a problem connecting to the server.");
-		        client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
+                client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
                 server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
             }
-            catch(Exception e) { if (Error != null) Error(e); }
+            catch (Exception e) { if (Error != null) Error(e);}
         }
 
         private void GetClientData(IAsyncResult ar)
         {
-            List<string> lines = new List<string>();
-            int read = client.GetStream().EndRead(ar);
-            clientBuild = Encoding.GetEncoding(_code).GetString(clientBuffer, 0, read);
-            while (client.GetStream().DataAvailable)
-                clientBuild += Encoding.GetEncoding(_code).GetString(clientBuffer, 0, client.GetStream().Read(clientBuffer, 0, clientBuffer.Length));
-            lines.AddRange(clientBuild.Split('\n'));
-            for (int i = 0; i < lines.Count; i++)
+            try
             {
-                NetMessage msg = new NetMessage();
-                msg.Write(((ClientData != null) ? ClientData(lines[i]) : lines[i]) + "\n");
-                SendServer(msg);
-            }
+                if (client.Connected == false) return;
 
+                List<string> lines = new List<string>();
+                int read = client.GetStream().EndRead(ar);
+                clientBuild = System.Text.Encoding.GetEncoding(_code).GetString(clientBuffer, 0, read);
+                while (client.GetStream().DataAvailable)
+                    clientBuild += System.Text.Encoding.GetEncoding(_code).GetString(clientBuffer, 0, client.GetStream().Read(clientBuffer, 0, clientBuffer.Length));
+                lines.AddRange(clientBuild.Split('\n'));
+                for (int i = 0; i < lines.Count; i++)
+                {
+                    INetMessage msg = new NetMessage();
+					if (ClientData != null) msg.Write(ClientData(lines[i]));
+					else msg.Write(lines[i] + "\n");
+					if (msg.GetString().EndsWith("\n") == false) msg.Write("\n");
+                    SendServer(msg);
+                }
+            }
+            catch (Exception e) { if (Error != null) Error(e); else throw e; }
             if (client.Connected && clientBuild.Length >= 1)
             {
                 client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
@@ -254,27 +322,32 @@ namespace Furcadia.Net
 
         private void GetServerData(IAsyncResult ar)
         {
-            List<string> lines = new List<string>();
-            int read = server.GetStream().EndRead(ar);
-            if (!string.IsNullOrEmpty(_ServerLeftOvers))serverBuild += _ServerLeftOvers;
-            serverBuild = Encoding.GetEncoding(_code).GetString(serverBuffer, 0, read);
-            while (server.GetStream().DataAvailable)
-                serverBuild += Encoding.GetEncoding(_code).GetString(serverBuffer, 0, server.GetStream().Read(serverBuffer, 0, serverBuffer.Length));
-            lines.AddRange(serverBuild.Split('\n'));
-            for (int i = 0; i < lines.Count; i++)
+            try
             {
-                if (!lines[i].Contains("\n"))
+                if (server.Connected == false) return;
+
+                List<string> lines = new List<string>();
+                int read = server.GetStream().EndRead(ar);
+                if (!string.IsNullOrEmpty(_ServerLeftOvers)) serverBuild += _ServerLeftOvers;
+                serverBuild = System.Text.Encoding.GetEncoding(_code).GetString(serverBuffer, 0, read);
+                while (server.GetStream().DataAvailable)
+                    serverBuild += System.Text.Encoding.GetEncoding(_code).GetString(serverBuffer, 0, server.GetStream().Read(serverBuffer, 0, serverBuffer.Length));
+                lines.AddRange(serverBuild.Split('\n'));
+                for (int i = 0; i < lines.Count; i++)
                 {
-                    _ServerLeftOvers += lines[i] + "\n";
-                    //lines.RemoveAt(i);
-                }
-                if (i < lines.Count)
-                {
-                    NetMessage msg = new NetMessage();
-                    msg.Write(((ServerData != null)?ServerData(lines[i]): lines[i]) + "\n");
-                    SendClient(msg);
+                    if (!lines[i].Contains("\n"))
+                    {
+                        _ServerLeftOvers += lines[i] + "\n";
+                    }
+                    if (i < lines.Count)
+                    {
+                        NetMessage msg = new NetMessage();
+                        msg.Write(((ServerData != null) ? ServerData(lines[i]) : lines[i]) + "\n");
+                        SendClient(msg);
+                    }
                 }
             }
+            catch (Exception e) { if (Error != null) Error(e); else throw e; }
             if (server.Connected && serverBuild.Length != 0)
                 server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
         }
