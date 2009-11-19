@@ -17,18 +17,11 @@ namespace FurcadiaFramework_Example.Demo
 
 	public class ScriptDemo : IDemo
 	{
-
-		public ScriptDemo ()
-		{
-
-		}
-
         #region IDemo Members
 
         public void Run()
         {
-            //throw new NotImplementedException();
-            System.Diagnostics.Debug.WriteLine("Not implimented!");
+            Console.WriteLine("HELLO WORLD! :)");
         }
 
         #endregion

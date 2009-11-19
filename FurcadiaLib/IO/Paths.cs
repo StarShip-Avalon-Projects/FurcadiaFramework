@@ -16,6 +16,24 @@ namespace Furcadia.IO
     /// </summary>
     public class Paths
     {
+        /// <summary>
+        /// Determines the registry path by platform. (x32/x64)
+        /// Thanks to Ioka for this one.
+        /// <example>SDF
+        /// </example>
+        /// </summary>
+        /// <returns>
+        /// A path to the Furcadia registry folder
+        /// NullReferenceException
+        /// </returns>
+        public static string GetRegistryPath()
+        {
+            if (IntPtr.Size == 64) //64 bit
+                return @"SOFTWARE\Wow6432Node\Dragon's Eye Productions\Furcadia\";
+            else if (IntPtr.Size == 32) //32 bit
+                return @"SOFTWARE\Dragon's Eye Productions\Furcadia\";
+            throw new NullReferenceException("Registry path not found.");
+        }
 
         private static string _installpath;
         /// <summary>
@@ -33,7 +51,10 @@ namespace Furcadia.IO
             RegistryKey regkey = Registry.LocalMachine;
             try
 			{
-                regkey = regkey.OpenSubKey(@"SOFTWARE\Dragon's Eye Productions\Furcadia\Programs", false);
+                if (IntPtr.Size == 4) //32 bit
+                    regkey = regkey.OpenSubKey(GetRegistryPath() + "Programs", false);
+                else if (IntPtr.Size == 8) //64 bit
+                    regkey = regkey.OpenSubKey(GetRegistryPath() + "Programs", false);
                 path = regkey.GetValue("path").ToString();
                 regkey.Close();
                 if (System.IO.Directory.Exists(path)){
@@ -75,7 +96,7 @@ namespace Furcadia.IO
             RegistryKey regkey = Registry.LocalMachine;
             try
             {
-                regkey = regkey.OpenSubKey(@"SOFTWARE\Dragon's Eye Productions\Furcadia\Patches", false);
+                regkey = regkey.OpenSubKey(GetRegistryPath() + "Patches", false);
                 path = regkey.GetValue("default").ToString();
                 regkey.Close();
                 if (System.IO.Directory.Exists(path))

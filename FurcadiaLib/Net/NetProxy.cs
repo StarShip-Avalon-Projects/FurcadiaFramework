@@ -165,8 +165,8 @@ namespace Furcadia.Net
         /// </summary>
         public void Connect()
         {
-            //try
-            //{
+            try
+            {
                 string proxyIni = "localhost " + _lport.ToString();
                 FileStream proxyStream = new FileStream(Paths.GetInstallPath() + "/proxy.ini", FileMode.Create);
                 proxyStream.Write(System.Text.Encoding.GetEncoding(_code).GetBytes(proxyIni), 0, proxyIni.Length);
@@ -211,8 +211,8 @@ namespace Furcadia.Net
                 System.Diagnostics.Process proc = System.Diagnostics.Process.Start(Process);
                 proc.EnableRaisingEvents = true;
                 proc.Exited += delegate { if (this.ClientExited != null) this.ClientExited(); };
-            //}
-            //catch (Exception e) { if (Error != null) Error(e); else throw e; }
+            }
+            catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
 
         public void SendClient(INetMessage message)
@@ -258,15 +258,6 @@ namespace Furcadia.Net
                 server.Close();
             }
             catch{ }
-        }
-
-        ~NetProxy()
-        {
-            try
-            {
-                this.Kill();
-            }
-            catch { }
         }
 
         #endregion
