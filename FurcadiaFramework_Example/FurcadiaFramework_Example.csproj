@@ -61,17 +61,12 @@
     <Compile Include="Demo\NetworkDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Demo\ScriptDemo.cs" />
     <Compile Include="Demo\IDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FurcadiaLib\FurcadiaLib.csproj">
       <Project>{156C2AF0-3DA8-4D8C-A525-5400185579B3}</Project>
       <Name>FurcadiaLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonkeySpeak\Monkeyspeak.csproj">
-      <Project>{8ED5BDB4-E485-4E66-B7C8-95F3150A0972}</Project>
-      <Name>Monkeyspeak</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

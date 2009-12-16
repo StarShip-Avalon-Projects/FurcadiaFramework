@@ -359,17 +359,22 @@ namespace Furcadia.Drawing.Graphics
                             rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos--]].B;
                         }
                     }
+                    /* Save the bitmap */
+                    System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
+                    bmp.UnlockBits(bmpData);
+
                 }
                 else
                 {
+#warning 24-bit support is in alpha (waiting on Furcadia Update).
                     //24-bit support.
-#warning 24-bit support is not implimented.
+                    Bitmap old_bmp = (Bitmap)Image.FromStream(new MemoryStream(frame.ImageData));
+                    bmp = new Bitmap(old_bmp.Width, old_bmp.Height, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+                    System.Drawing.Graphics g = System.Drawing.Graphics.FromImage(bmp);
+                    g.DrawImage(bmp, 0, 0, old_bmp.Width, old_bmp.Height);
+                    g.Dispose();
+                    old_bmp.Dispose();
                 }
-
-                /* Save the bitmap */
-                System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
-                bmp.UnlockBits(bmpData);
-
                 return bmp;
             }
             catch

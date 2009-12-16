@@ -13,6 +13,8 @@ namespace FurcadiaFramework_Example.Demo
     public class GraphicsDemo : IDemo
     {
         private delegate void Invoker();
+        private bool is_testing;
+
         public GraphicsDemo() { }
 
         #region IDemo Members
@@ -21,9 +23,18 @@ namespace FurcadiaFramework_Example.Demo
         {
             Form f = new Form();
             f.Text = "Graphics Demo";
+
+            Label desc = new Label();
+            desc.Text = "Hold F5 for 24 bit image test.";
+            desc.AutoSize = true;
+            desc.Top = 0;
+            desc.Left = 0;
+
             PictureBox pic = new PictureBox();
             pic.Height = 100;
             pic.Width = 100;
+            pic.Top = desc.Height;
+            pic.Left = 0;
             pic.Dock = DockStyle.Fill;
             pic.AutoSize = true;
 
@@ -43,6 +54,11 @@ namespace FurcadiaFramework_Example.Demo
                 if (timer.Enabled) timer.Stop();
             };
 
+            f.KeyDown += delegate(object sender, KeyEventArgs e) { 
+                if (e.KeyCode == Keys.F5) 
+                    is_testing = true; 
+            else is_testing = false; };
+
             FurcadiaShapes shape = new FurcadiaShapes(Paths.GetDefaultPatchPath() + "buttons.fox");
             Bitmap[] anims = Helper.ToBitmapArray(shape);
             Random rand = new Random();
@@ -54,12 +70,24 @@ namespace FurcadiaFramework_Example.Demo
                     {
                         f.Invoke(new Invoker(delegate
                         {
-                            pic.Image = anims[rand.Next() % anims.Length];
+                            pic.Top = desc.Height;
+                            if (!is_testing)
+                                pic.Image = anims[rand.Next() % anims.Length];
+                            else {
+                                throw new NotImplementedException();
+                            }
                         }));
                     }
                     catch { }
                 }
-                else pic.Image = anims[rand.Next() % anims.Length];
+                else {
+                    if (!is_testing)
+                        pic.Image = anims[rand.Next() % anims.Length];
+                    else
+                    {
+                        throw new NotImplementedException();
+                    }
+                }
 
             };
 

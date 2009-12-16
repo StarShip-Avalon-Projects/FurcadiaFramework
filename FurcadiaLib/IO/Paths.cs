@@ -1,6 +1,6 @@
 /****NOTICE: DO NOT REMOVE
  * Credits go to Artex for helping me fix Path issues and
- * contributing some of his code.
+ * contributing his code.
  ****NOTICE: DO NOT REMOVE.*/
 
 using System;
@@ -19,12 +19,9 @@ namespace Furcadia.IO
         /// <summary>
         /// Determines the registry path by platform. (x32/x64)
         /// Thanks to Ioka for this one.
-        /// <example>SDF
-        /// </example>
         /// </summary>
         /// <returns>
-        /// A path to the Furcadia registry folder
-        /// NullReferenceException
+        /// A path to the Furcadia registry folder or NullReferenceException.
         /// </returns>
         public static string GetRegistryPath()
         {
@@ -32,7 +29,7 @@ namespace Furcadia.IO
                 return @"SOFTWARE\Wow6432Node\Dragon's Eye Productions\Furcadia\";
             else if (IntPtr.Size == 32) //32 bit
                 return @"SOFTWARE\Dragon's Eye Productions\Furcadia\";
-            throw new NullReferenceException("Registry path not found.");
+            else return @"SOFTWARE\Dragon's Eye Productions\Furcadia\";
         }
 
         private static string _installpath;

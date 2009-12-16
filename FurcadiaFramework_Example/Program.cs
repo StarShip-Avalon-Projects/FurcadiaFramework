@@ -22,7 +22,6 @@ namespace FurcadiaFramework_Example
             Queue queue = new Queue();
             queue.Enqueue(new GraphicsDemo());
             queue.Enqueue(new NetworkDemo());
-            queue.Enqueue(new ScriptDemo());
             queue.Enqueue(new FriendStatusDemo());
             while (queue.Count > 0)
             {
