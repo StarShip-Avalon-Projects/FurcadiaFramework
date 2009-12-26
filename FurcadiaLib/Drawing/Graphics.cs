@@ -344,13 +344,16 @@ namespace Furcadia.Drawing.Graphics
                 /* Copy the image data over */
                 if (frame.FrameFormat == Frame.FrameFormats.Format8Bit)
                 {
-                    int bpos, ipos = (int)frame.ImageDataSize - 1;
+                    #region Kylix Code (kept for ref)
+                    //int bpos, ipos = (int)frame.ImageDataSize - 1;
+                    /*
                     for (int y = 0; y < bmpData.Height; y++)
                     {
+                    */
                         /* Alignment and flip */
-                        bpos = bmpData.Stride * (y + 1) - (bmpData.Stride - bmpData.Width * 4) - 1;
-
-                        /* Pixel assignment */
+                        //bpos = bmpData.Stride * (y + 1) - (bmpData.Stride - bmpData.Width * 4) - 1;
+                    
+                        /* Pixel assignment *//*
                         for (int x = 0; x < bmpData.Width; x++)
                         {
                             rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos]].A;
@@ -359,10 +362,18 @@ namespace Furcadia.Drawing.Graphics
                             rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos--]].B;
                         }
                     }
+                    */
                     /* Save the bitmap */
-                    System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
-                    bmp.UnlockBits(bmpData);
+                    //System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
+                    //bmp.UnlockBits(bmpData);
+                    #endregion
 
+                    Bitmap old_bmp = (Bitmap)Image.FromStream(new MemoryStream(frame.ImageData));
+                    bmp = new Bitmap(old_bmp.Width, old_bmp.Height, System.Drawing.Imaging.PixelFormat.Format8bppIndexed);
+                    System.Drawing.Graphics g = System.Drawing.Graphics.FromImage(bmp);
+                    g.DrawImage(bmp, 0, 0, old_bmp.Width, old_bmp.Height);
+                    g.Dispose();
+                    old_bmp.Dispose();
                 }
                 else
                 {

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurcadiaFramework_Example", "FurcadiaFramework_Example\FurcadiaFramework_Example.csproj", "{C1DCB738-FA04-4C2B-8718-A035AF86758C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurcadiaLib", "FurcadiaLib\FurcadiaLib.csproj", "{156C2AF0-3DA8-4D8C-A525-5400185579B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = FurcadiaFramework_Example\FurcadiaFramework_Example.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$1.ResourceNamePolicy = FileFormatDefault
+		version = 0.3
+	EndGlobalSection
+EndGlobal
