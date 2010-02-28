@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Furcadia.Net;
@@ -41,8 +41,9 @@ namespace FurcadiaFramework_Example.Demo
                 {
                     pounce.ClearFriends();
                     foreach (string friend in input.Text.Split(','))
-                        pounce.AddFriend(friend);
-                    pounce.Connect();
+                        if (!String.IsNullOrEmpty(friend)) pounce.AddFriend(friend);
+                    pounce.ConnectAsync();
+					statusBox.AppendText("Retrieving...\n");
                 }
                 
             };
@@ -56,18 +57,20 @@ namespace FurcadiaFramework_Example.Demo
                         {
                             statusBox.AppendText(friend + " is Online!\n");
                         }));
-                }
-                pounce.ClearFriends();
-                pounce.Kill();
+					else statusBox.AppendText(friend + " is Online!\n");
+                };
+				//Update the Total Furres online count.
+				f.Text = "Total: "+pounce.TotalFurresOnline;
+				pounce.Kill();
             };
             f.HelpButton = true;
             f.HelpRequested += delegate
             {
-                MessageBox.Show("Type into the box the names separated by a comma (,) [i.e Bob, Charlie|Omega, Bill]");
+                MessageBox.Show("Type into the box the names (shortname only) separated by a comma (,) [i.e Bob, CharlieOmega, alphacentauri]");
             };
             f.HelpButtonClicked += delegate
             {
-                MessageBox.Show("Type into the box the names separated by a comma (,) [i.e Bob, Charlie|Omega, Bill]");
+                MessageBox.Show("Type into the box the names (shortname only) separated by a comma (,) [i.e Bob, CharlieOmega, alphacentauri]");
             };
             container.Panel1.Controls.Add(input);
             container.Panel2.Controls.Add(statusBox);

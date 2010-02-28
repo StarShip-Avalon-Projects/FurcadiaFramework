@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Furcadia.Drawing.Graphics;
@@ -19,8 +19,8 @@ namespace Furcadia.Drawing
             {
                 foreach (Frame frame in shape.Frames)
                 {
-                    if (frame.ImageDataSize > 0)
-                        bitmaps.Add(new Bitmap(toConvert.Render(frame, pal)));
+					if (frame.ImageDataSize > 0)
+						bitmaps.Add(toConvert.ToBitmap(frame, pal));
                 }
             }
             return bitmaps.ToArray();

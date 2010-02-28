@@ -18,7 +18,7 @@ using System.Net.NetworkInformation;
 namespace Furcadia.Net
 {
 
-    public class NetProxy : Object
+    public class NetProxy
     {
         #region Event Handling
         public delegate void ActionDelegate();
@@ -186,7 +186,6 @@ namespace Furcadia.Net
                     {
                         if (tcpi.LocalEndPoint.Port == this._endpoint.Port)
                         {
-                            Console.WriteLine(tcpi.State);
                             isAvailable = false;
                             break;
                         }
@@ -206,7 +205,7 @@ namespace Furcadia.Net
                 //check ProcessPath is not a directory
                 if (!Directory.Exists(ProcessPath)) throw new DirectoryNotFoundException();
                 Directory.SetCurrentDirectory(ProcessPath);
-                if (string.IsNullOrEmpty(Process)) Process = "Furcadia.exe";
+                if (string.IsNullOrEmpty(Process)) throw new FileNotFoundException("Client process not found.");
                 if (!File.Exists(Process)) throw new Exception("Client executable '"+Process+"' not found.");
                 System.Diagnostics.Process proc = System.Diagnostics.Process.Start(Process);
                 proc.EnableRaisingEvents = true;
@@ -224,6 +223,17 @@ namespace Furcadia.Net
             }
             catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
+		
+		public void SendClient(string message)
+		{
+            try
+            {
+                if (client.GetStream().CanWrite)
+                    client.GetStream().Write(System.Text.Encoding.GetEncoding(_code).GetBytes(message), 0, System.Text.Encoding.GetEncoding(_code).GetBytes(message).Length);
+            }
+            catch (Exception e) { if (Error != null) Error(e); else throw e; }
+
+		}
 
         public void SendServer(INetMessage message)
         {

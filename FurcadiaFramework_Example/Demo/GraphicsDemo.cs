@@ -58,8 +58,9 @@ namespace FurcadiaFramework_Example.Demo
                 if (e.KeyCode == Keys.F5) 
                     is_testing = true; 
             else is_testing = false; };
-
-            FurcadiaShapes shape = new FurcadiaShapes(Paths.GetDefaultPatchPath() + "buttons.fox");
+			
+			#region Furcadia.Graphics implimentation here.
+            FurcadiaShapes shape = new FurcadiaShapes(Paths.GetDefaultPatchPath() + "item.fox");
             Bitmap[] anims = Helper.ToBitmapArray(shape);
             Random rand = new Random();
             timer.Elapsed += delegate
@@ -90,7 +91,8 @@ namespace FurcadiaFramework_Example.Demo
                 }
 
             };
-
+			#endregion
+			
             f.Controls.Add(pic);
             f.ShowDialog();
         }
