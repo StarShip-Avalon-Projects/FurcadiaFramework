@@ -14,7 +14,9 @@ using System;
 namespace FurcadiaFramework_Example.Demo
 {
 
-
+	/// <summary>
+	/// 
+	/// </summary>
 	public interface IDemo
 	{
 		/// <summary>

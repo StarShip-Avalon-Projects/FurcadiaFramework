@@ -57,6 +57,8 @@ namespace Furcadia.Net
         private string clientBuild, serverBuild;
         private int _lport = 6700;
         private int _code = 1252;
+		private bool _isServerConnected = false, _isClientConnected = false;
+		private string _proc = "Furcadia.exe", _procpath;
         #endregion
 
         #region Constructors
@@ -130,8 +132,7 @@ namespace Furcadia.Net
         #endregion
 
         #region Properties
-
-		private string _proc, _procpath;
+		
         /// <summary>
         /// Process to start. (default: Furcadia.exe)
         /// </summary>
@@ -141,11 +142,29 @@ namespace Furcadia.Net
             set { _proc=value; }
         }
 
+		/// <summary>
+		/// Process path (default: none) 
+		/// </summary>
         public string ProcessPath
         {
             get { return _procpath; }
             set { _procpath = value; }
         }
+		
+		/// <summary>
+		/// Proxy is connected, or not. 
+		/// </summary>
+		public bool IsServerConnected
+		{
+			get { return _isServerConnected; }
+			set { _isServerConnected = value; }
+		}
+		
+		public bool IsClientConnected
+		{
+			get { return _isClientConnected;}
+			set { _isClientConnected = value;}
+		}
         #endregion
 
         #region Public Methods
@@ -156,7 +175,7 @@ namespace Furcadia.Net
         /// <param name="file">Process full path and file name.</param>
         public void SetProcess(string file)
         {
-            if (!File.Exists(file)) throw new FileNotFoundException();
+            if (!File.Exists(file)) throw new FileNotFoundException("File not found.",file);
             ProcessPath = Path.GetDirectoryName(file);
             Process = Path.GetFileName(file);
         }
@@ -205,8 +224,7 @@ namespace Furcadia.Net
                 //check ProcessPath is not a directory
                 if (!Directory.Exists(ProcessPath)) throw new DirectoryNotFoundException();
                 Directory.SetCurrentDirectory(ProcessPath);
-                if (string.IsNullOrEmpty(Process)) throw new FileNotFoundException("Client process not found.");
-                if (!File.Exists(Process)) throw new Exception("Client executable '"+Process+"' not found.");
+                if (!File.Exists(ProcessPath + Process)) throw new Exception("Client executable '"+Process+"' not found.");
                 System.Diagnostics.Process proc = System.Diagnostics.Process.Start(Process);
                 proc.EnableRaisingEvents = true;
                 proc.Exited += delegate { if (this.ClientExited != null) this.ClientExited(); };
@@ -287,6 +305,8 @@ namespace Furcadia.Net
                 server = new TcpClient(Util.Host,_endpoint.Port);
 
                 if (!server.Connected) throw new Exception("There was a problem connecting to the server.");
+				IsClientConnected = client.Connected;
+				IsServerConnected = server.Connected;
                 client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
                 server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
             }
@@ -297,6 +317,7 @@ namespace Furcadia.Net
         {
             try
             {
+				IsClientConnected = client.Connected;
                 if (client.Connected == false) return;
 
                 List<string> lines = new List<string>();
@@ -325,6 +346,7 @@ namespace Furcadia.Net
         {
             try
             {
+				IsServerConnected = server.Connected;
                 if (server.Connected == false) return;
 
                 List<string> lines = new List<string>();

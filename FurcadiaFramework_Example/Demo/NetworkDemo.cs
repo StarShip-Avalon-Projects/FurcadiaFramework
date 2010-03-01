@@ -10,7 +10,6 @@ namespace FurcadiaFramework_Example.Demo
     {
         public NetworkDemo()
         {
-			NetProxy proxy = new NetProxy(6500);
         }
 		
 		public void Run(){

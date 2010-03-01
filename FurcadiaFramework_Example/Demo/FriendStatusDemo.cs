@@ -6,16 +6,24 @@ using System.Windows.Forms;
 
 namespace FurcadiaFramework_Example.Demo
 {
+	/// <summary>
+	/// 
+	/// </summary>
     public class FriendStatusDemo : IDemo
     {
         private delegate void Invoker();
         PounceConnection pounce;
+		/// <summary>
+		/// 
+		/// </summary>
         public FriendStatusDemo()
         {
 
         }
         #region IDemo Members
-
+		/// <summary>
+		/// 
+		/// </summary>
         public void Run()
         {
             pounce = new PounceConnection("http://on.furcadia.com/", null);
