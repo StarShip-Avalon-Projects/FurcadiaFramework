@@ -20,23 +20,39 @@ namespace Furcadia.Net
 		private HttpWebRequest request;
 		
         private string _url;
-        private string responseBody;
+        private string _responseBody;
+        private int _statusCode;
         private int _timelimit;
-        private int statusCode;
+        private int _num_dreams_mainmaps;
         private List<string> _friends = new List<string>();
-        private bool aborted;
 		private int _totalOnline;
 
 		/// <summary>
 		/// When a response from the server is recieved this property will contain
 		/// the raw HTTP string.
 		/// </summary>
-        public string RawResponse { get { return responseBody; } }
-        public int TimeLimit { get { return _timelimit; } }
-
+        public string RawResponse { get { return _responseBody; } }
         /// <summary>
-        /// Passes:
-        /// list of online players
+        /// The amount of time allowed between subsequent online check requests.
+        /// (Obsolete) 
+        /// </summary>
+        [Obsolete]
+        public int TimeLimit { get {return _timelimit; } }
+
+		/// <summary>
+		/// Total online Furre count retrieved from a online check request
+		/// </summary>
+		public int TotalFurresOnline {
+			get { return _totalOnline; }
+			set { _totalOnline = value; }
+		}
+
+		public int NumberOfDreamsOnMainMaps {
+			get { return _num_dreams_mainmaps; }
+		}
+		
+        /// <summary>
+        /// Called when a online check request sends a response.  First argument is a list of players online.
         /// </summary>
         public event Action<string[]> Response;
 
@@ -53,21 +69,12 @@ namespace Furcadia.Net
             {
                 foreach (string friend in shortN_friends)
                 {
-                    //Check for validity
                     AddFriend(friend);
                 }
             }
         }
 
-        public int TotalFurresOnline { get{
-				return _totalOnline;
-			}
-			set {
-				_totalOnline = value;
-			}
-		}
-
-        private bool IsValidAlphaNumeric(string inputStr)
+        internal bool IsValidAlphaNumeric(string inputStr)
         {
             if (string.IsNullOrEmpty(inputStr))
                 return false;
@@ -80,55 +87,57 @@ namespace Furcadia.Net
             return true;
         }
 
-        private void Request(string url)
+        internal void Request (string url)
         {
-            string friends = string.Empty;
-            foreach (string friend in _friends)
-                friends += friend + "&"; //jack&jill&hill
-            if (aborted) return;
-            request = (HttpWebRequest)WebRequest.Create(url + "/q/?" + friends);
+        	string friends = string.Empty;
+        	foreach (string friend in _friends)
+        		friends += "u[]=" + friend + "&"; //u[]=jack&u[]=jill&u[]=hill
+            request = (HttpWebRequest)WebRequest.Create(((url.EndsWith("/"))?url : url +"/") + "q/?" + friends);
             try
             {
                 request.BeginGetResponse(new AsyncCallback(RespCallback),null);
             }
             catch
             {
-                this.responseBody = "No Server Response";
+                this._responseBody = "No Server Response";
             }
         }
 
-		private void RespCallback(IAsyncResult ar){
-            byte[] buf = new byte[1024];
-            StringBuilder respBody = new StringBuilder();
-			HttpWebResponse resp = (HttpWebResponse)request.EndGetResponse(ar);
-            Stream respStream = resp.GetResponseStream();
-            // number of bytes read
-            int count = 0;
-            do
+		internal void RespCallback (IAsyncResult ar)
+		{
+			byte[] buf = new byte[1024];
+			StringBuilder respBody = new StringBuilder ();
+			HttpWebResponse resp = (HttpWebResponse)request.EndGetResponse (ar);
+			Stream respStream = resp.GetResponseStream ();
+			// number of bytes read
+			int count = 0;
+			do
             {
-                count = respStream.Read(buf, 0, buf.Length);
-                if (count != 0)
-                    respBody.Append(System.Text.Encoding.ASCII.GetString(buf, 0, count));
-            }
+				count = respStream.Read (buf, 0, buf.Length);
+				if (count != 0)
+					respBody.Append (System.Text.Encoding.ASCII.GetString (buf, 0, count));
+			}
             while (count > 0);
+		
 
-            this.responseBody = respBody.ToString();
-            if (responseBody != string.Empty)
+            this._responseBody = respBody.ToString ();
+			if (_responseBody != string.Empty)
             {
-                // Not really useful for getting friend online status
-                this.statusCode = (int)(HttpStatusCode)resp.StatusCode;
-                // Split the responseBody by '\n' into an array
-                string[] onln = this.responseBody.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                // the get request time limit (normally 15000)
-                this._timelimit = int.Parse(onln[0].Substring(1));
-                List<string> list = new List<string>(onln);
-                if (list.Count >= 3)
+				// Not really useful for getting friend online status but store it anyways!
+				this._statusCode = (int)(HttpStatusCode)resp.StatusCode;
+				// Split the responseBody by '\n' into an array
+				string[] onln = this._responseBody.Split (new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+				// the get request time limit (normally 15000) (Squizzle's Note: now timelimit is 30000ms as seen April 23, 2010.)
+				this._timelimit = int.Parse (onln[0].Substring (1));
+				List<string> list = new List<string> (onln);
+				if (list.Count >= 3)
                 {
-                    // Remove the first element T15000
-                    list.RemoveAt(0);
-                    TotalFurresOnline = Convert.ToInt32(list[list.Count - 1].Substring(1));
-                    // Remove the last element # Furres online.
-                    list.RemoveAt(list.Count - 1);
+					// Remove the first element T30000
+					list.RemoveAt (0);
+					_totalOnline = Convert.ToInt32 (list[list.Count - 1].Substring (1));
+					list.RemoveAt (list.Count - 1);
+					_num_dreams_mainmaps = Convert.ToInt32 (list[list.Count - 1].Substring (1));
+                    list.RemoveAt (list.Count - 1);
                     // Trim the + from the beginning of the name.
                     for (int i = 0; i <= list.Count - 1; i++) list[i] = list[i].Remove(0, 1);
                     if (Response != null) Response(list.ToArray());
@@ -137,17 +146,18 @@ namespace Furcadia.Net
             }
 		}
 		
+		/// <summary>
+		/// Connects to the online check server (thingy) and sends a online check request 
+		/// </summary>
         public void Connect()
         {
-            aborted = false;
             if (string.IsNullOrEmpty(_url) == false && Uri.IsWellFormedUriString(_url,UriKind.RelativeOrAbsolute))this.Request(_url);
         }
 		
 		/// <summary>
-		/// Connects asynchronously without affecting the main thread. 
+		/// Connects asynchronously to the online check server without affecting the executing thread.
 		/// </summary>
 		public void ConnectAsync(){
-			aborted = false;
             if (string.IsNullOrEmpty(_url) == false && 
 			    Uri.IsWellFormedUriString(_url,UriKind.RelativeOrAbsolute))
 			{
@@ -156,21 +166,52 @@ namespace Furcadia.Net
 			}
 		}
 
-        public void AddFriend(string name)
+		/// <summary>
+		/// Adds a friend to a list of friends.
+		/// Throws a Exception on non alphanumeric string.
+		/// </summary>
+		/// <param name="name">
+		/// A <see cref="System.String"/>
+		/// </param>
+		/// <returns>
+		/// A <see cref="System.Boolean"/>.
+		/// True if successfully added friend name.
+		/// False if name already added.
+		/// </returns>
+        public bool AddFriend(string name)
         {
-            if (IsValidAlphaNumeric(name.ToLower()))
-                _friends.Add(name.ToLower());
+        	if (IsValidAlphaNumeric (name.ToLower ())) {
+        		if (_friends.Contains(name.ToLower())==false){
+            		_friends.Add(name.ToLower ());
+            		return true;
+            	}
+            }
             else throw new Exception(name + " is not valid alphanumeric (a-z0-9).");
+            return false;
         }
 
-        public void RemoveFriend(string name)
+        public bool RemoveFriend(string name)
         {
-            _friends.Remove(name);
+        	if (_friends.Contains(name)){
+            	_friends.Remove(name);
+            	return true;
+            }
+            return false;
         }
 
         public void ClearFriends()
         {
             _friends.Clear();
+        }
+
+        public bool ClearFriend(string shortname)
+        {
+            if (_friends.Contains(shortname))
+            {
+                _friends.Remove(shortname);
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
@@ -199,8 +240,7 @@ namespace Furcadia.Net
 
         public void Kill()
         {
-            //if (timer != null && timer.Enabled) timer.Stop();
-            if (request != null) { request.Abort(); aborted = true; }
+            if (request != null) { request.Abort(); }
         }
     }
 }
