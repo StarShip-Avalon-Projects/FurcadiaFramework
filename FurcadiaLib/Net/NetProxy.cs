@@ -1,7 +1,7 @@
 /*Log Header
  *Format: (date,Version) AuthorName, Changes.
- * (?) Kylix, Initial Coder
- * (Oct 27,2009,0.1) Squizzle, Added NetMessage, delegates, and NetProxy class.
+ * (?,2007) Kylix, Initial Coder and SimpleProxy project manager
+ * (Oct 27,2009) Squizzle, Added NetMessage, delegates, and NetProxy wrapper class.
  * 
 */
 
@@ -23,8 +23,11 @@ namespace Furcadia.Net
         #region Event Handling
         public delegate void ActionDelegate();
         public delegate string DataEventHandler(string data);
-        public delegate void AnyEventHandler(params object[] datas);
         public delegate void ErrorEventHandler(Exception e);
+        /// <summary>
+        ///This is triggered when the  
+        /// </summary>
+        public event ActionDelegate Connected;
         /// <summary>
         /// This is triggered when the Server sends data to the client.
         /// </summary>
@@ -47,17 +50,21 @@ namespace Furcadia.Net
         #endregion
 
         #region Private Declarations
+        /// <summary>
+        /// Max buffer size 
+        /// </summary>
+        private static int BUFFER_CAP = 4024;
+        private static int ENCODE_PAGE = 1252;
+        
         private IPEndPoint _endpoint;
         private TcpClient server;
         private TcpClient client;
         private TcpListener listen;
-
-        private byte[] clientBuffer = new byte[4000], serverBuffer = new byte[4000];
+        
+        private byte[] clientBuffer = new byte[BUFFER_CAP], serverBuffer = new byte[BUFFER_CAP];
         private string _ServerLeftOvers;
         private string clientBuild, serverBuild;
         private int _lport = 6700;
-        private int _code = 1252;
-		private bool _isServerConnected = false, _isClientConnected = false;
 		private string _proc = "Furcadia.exe", _procpath;
         #endregion
 
@@ -156,14 +163,34 @@ namespace Furcadia.Net
 		/// </summary>
 		public bool IsServerConnected
 		{
-			get { return _isServerConnected; }
-			set { _isServerConnected = value; }
+			get { 
+				if (server != null) 
+					return server.Connected; 
+				else
+				 return false; }
 		}
 		
 		public bool IsClientConnected
 		{
-			get { return _isClientConnected;}
-			set { _isClientConnected = value;}
+			get {
+				if (client != null)
+					return client.Connected;
+				else 
+					return false; }
+		}
+		#endregion
+		
+		#region Public Static Properties
+		public static int BufferCapacity{
+			get{
+				return BUFFER_CAP;
+			}
+		}
+		
+		public static int EncoderPage {
+			get{
+				return ENCODE_PAGE;
+			}
 		}
         #endregion
 
@@ -188,7 +215,7 @@ namespace Furcadia.Net
             {
                 string proxyIni = "localhost " + _lport.ToString();
                 FileStream proxyStream = new FileStream(Paths.GetInstallPath() + "/proxy.ini", FileMode.Create);
-                proxyStream.Write(System.Text.Encoding.GetEncoding(_code).GetBytes(proxyIni), 0, proxyIni.Length);
+                proxyStream.Write(System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(proxyIni), 0, proxyIni.Length);
                 proxyStream.Close();
                 if (listen != null)
                 {
@@ -222,9 +249,9 @@ namespace Furcadia.Net
                 //Run
                 if (string.IsNullOrEmpty(ProcessPath)) ProcessPath = Paths.GetInstallPath();
                 //check ProcessPath is not a directory
-                if (!Directory.Exists(ProcessPath)) throw new DirectoryNotFoundException();
+                if (!Directory.Exists(ProcessPath)) throw new DirectoryNotFoundException("Process path not found.");
                 Directory.SetCurrentDirectory(ProcessPath);
-                if (!File.Exists(ProcessPath + Process)) throw new Exception("Client executable '"+Process+"' not found.");
+                if (!File.Exists(Path.Combine(ProcessPath,Process))) throw new Exception("Client executable '"+Process+"' not found.");
                 System.Diagnostics.Process proc = System.Diagnostics.Process.Start(Process);
                 proc.EnableRaisingEvents = true;
                 proc.Exited += delegate { if (this.ClientExited != null) this.ClientExited(); };
@@ -232,43 +259,43 @@ namespace Furcadia.Net
             catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
 
-        public void SendClient(INetMessage message)
+        public void SendClient (INetMessage message)
         {
-            try
+        	try
             {
-                if (client.GetStream().CanWrite)
-                    client.GetStream().Write(System.Text.Encoding.GetEncoding(_code).GetBytes(message.GetString()), 0, System.Text.Encoding.GetEncoding(_code).GetBytes(message.GetString()).Length);
+        		if (client.GetStream ().CanWrite)
+        			client.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message.GetString ()), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message.GetString()).Length);
             }
             catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
 		
-		public void SendClient(string message)
+		public void SendClient (string message)
 		{
-            try
+			try
             {
-                if (client.GetStream().CanWrite)
-                    client.GetStream().Write(System.Text.Encoding.GetEncoding(_code).GetBytes(message), 0, System.Text.Encoding.GetEncoding(_code).GetBytes(message).Length);
+				if (client.GetStream ().CanWrite)
+					client.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
             }
             catch (Exception e) { if (Error != null) Error(e); else throw e; }
 
 		}
 
-        public void SendServer(INetMessage message)
+        public void SendServer (INetMessage message)
         {
-            try
+        	try
             {
-                if (server.GetStream().CanWrite)
-                    server.GetStream().Write(System.Text.Encoding.GetEncoding(_code).GetBytes(message.GetString()), 0, System.Text.Encoding.GetEncoding(_code).GetBytes(message.GetString()).Length);
+        		if (server.GetStream ().CanWrite)
+        			server.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message.GetString ()), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message.GetString()).Length);
             }
             catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
 
-        public void SendServer(string message)
+        public void SendServer (string message)
         {
-            try
+        	try
             {
-                if (server.GetStream().CanWrite)
-                    server.GetStream().Write(System.Text.Encoding.GetEncoding(_code).GetBytes(message), 0, System.Text.Encoding.GetEncoding(_code).GetBytes(message).Length);
+        		if (server.GetStream ().CanWrite)
+        			server.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
             }
             catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
@@ -285,7 +312,7 @@ namespace Furcadia.Net
                 client.Close();
                 server.Close();
             }
-            catch{ }
+            catch (Exception e) { if (Error != null) Error(e); }
         }
 
         #endregion
@@ -301,37 +328,51 @@ namespace Furcadia.Net
                 }
                 catch (SocketException se) { if (se.ErrorCode > 0) throw se; }
                 listen.Stop();
-                // Connect to the server
+                // Connects to the server
                 server = new TcpClient(Util.Host,_endpoint.Port);
-
+                
                 if (!server.Connected) throw new Exception("There was a problem connecting to the server.");
-				IsClientConnected = client.Connected;
-				IsServerConnected = server.Connected;
+                
                 client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
                 server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
+                
+            	if (Connected != null)
+            		Connected();
             }
             catch (Exception e) { if (Error != null) Error(e);}
         }
 
-        private void GetClientData(IAsyncResult ar)
+        private void GetClientData (IAsyncResult ar)
         {
-            try
+        	try
             {
-				IsClientConnected = client.Connected;
-                if (client.Connected == false) return;
-
-                List<string> lines = new List<string>();
-                int read = client.GetStream().EndRead(ar);
-                clientBuild = System.Text.Encoding.GetEncoding(_code).GetString(clientBuffer, 0, read);
-                while (client.GetStream().DataAvailable)
-                    clientBuild += System.Text.Encoding.GetEncoding(_code).GetString(clientBuffer, 0, client.GetStream().Read(clientBuffer, 0, clientBuffer.Length));
+        		if (client.Connected == false)
+        			throw new SocketException ((int)SocketError.NotConnected);
+        		
+                List<string> lines = new List<string> ();
+        		//read = number of bytes read
+        		int read = client.GetStream ().EndRead (ar);
+        		//ClientBuild is a string containing data read off the clientBuffer
+        		clientBuild = System.Text.Encoding.GetEncoding (EncoderPage).GetString (clientBuffer, 0, read);
+        		while (client.GetStream ().DataAvailable) {
+        			//clientBuffer.Length = NetProxy.BUFFER_CAP 
+        			int pos = client.GetStream ().Read (clientBuffer, 0, clientBuffer.Length);
+        			clientBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(clientBuffer, 0, pos);
+                    }
+                //Every line should end with '\n'
+                //Split function removes the last character
                 lines.AddRange(clientBuild.Split('\n'));
                 for (int i = 0; i < lines.Count; i++)
                 {
                     INetMessage msg = new NetMessage();
+                    //Send the line to the ClientData event and write the return value to a new NetMessage
 					if (ClientData != null) msg.Write(ClientData(lines[i]));
+					//If the ClientData event is unassigned then leave the data as is and append '\n'
 					else msg.Write(lines[i] + "\n");
+					//If the NetMessage doesn't have '\n' at the end add it
+					//The '\n' separates the server/client protocols
 					if (msg.GetString().EndsWith("\n") == false) msg.Write("\n");
+					//Send it on it's way...
                     SendServer(msg);
                 }
             }
@@ -342,19 +383,20 @@ namespace Furcadia.Net
             }
         }
 
-        private void GetServerData(IAsyncResult ar)
+        private void GetServerData (IAsyncResult ar)
         {
-            try
+        	try
             {
-				IsServerConnected = server.Connected;
-                if (server.Connected == false) return;
-
-                List<string> lines = new List<string>();
-                int read = server.GetStream().EndRead(ar);
-                if (!string.IsNullOrEmpty(_ServerLeftOvers)) serverBuild += _ServerLeftOvers;
-                serverBuild = System.Text.Encoding.GetEncoding(_code).GetString(serverBuffer, 0, read);
-                while (server.GetStream().DataAvailable)
-                    serverBuild += System.Text.Encoding.GetEncoding(_code).GetString(serverBuffer, 0, server.GetStream().Read(serverBuffer, 0, serverBuffer.Length));
+        		List<string> lines = new List<string> ();
+        		int read = server.GetStream ().EndRead (ar);
+        		//If we have left over data add it to this server build
+        		if (!string.IsNullOrEmpty (_ServerLeftOvers))
+        			serverBuild += _ServerLeftOvers;
+        		serverBuild = System.Text.Encoding.GetEncoding (EncoderPage).GetString (serverBuffer, 0, read);
+        		while (server.GetStream ().DataAvailable) {
+        			int pos = server.GetStream ().Read (serverBuffer, 0, serverBuffer.Length);
+        			serverBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, pos);
+                    }
                 lines.AddRange(serverBuild.Split('\n'));
                 for (int i = 0; i < lines.Count; i++)
                 {

@@ -28,6 +28,8 @@ namespace FurcadiaFramework_Example
                 ((IDemo)queue.Dequeue()).Run();
                 queue.TrimToSize();
             }
+            
+            Console.ReadKey();
 			return 0;
         }
     }

@@ -16,6 +16,27 @@ namespace Furcadia.IO
     /// </summary>
     public class Paths
     {
+    
+    	private static string _FurcadiaDocpath;
+    	/// <summary>
+    	/// Gets the location of the Furcadia folder located in "My Documents"
+    	/// </summary>
+    	/// <returns>
+    	/// A <see cref="System.String"/> containing the location of Furcadia folder in "My Documents".
+    	/// </returns>
+    	public static string GetFurcadiaDocPath()
+    	{
+    		if (!String.IsNullOrEmpty(_FurcadiaDocpath)) return _FurcadiaDocpath;
+    		string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), 
+    					"Furcadia");
+    		if (Directory.Exists(path))
+    		{
+    			_FurcadiaDocpath = path;
+    			return _FurcadiaDocpath;
+    		}
+    		throw new DirectoryNotFoundException("Furcadia documents path not found.\n" + path);
+    	}
+    	
         /// <summary>
         /// Determines the registry path by platform. (x32/x64)
         /// Thanks to Ioka for this one.
@@ -25,6 +46,7 @@ namespace Furcadia.IO
         /// </returns>
         public static string GetRegistryPath()
         {
+        	//64x & 32x Untested but should work
             if (IntPtr.Size == 64) //64 bit
                 return @"SOFTWARE\Wow6432Node\Dragon's Eye Productions\Furcadia\";
             else if (IntPtr.Size == 32) //32 bit
@@ -56,26 +78,23 @@ namespace Furcadia.IO
                 regkey.Close();
                 if (System.IO.Directory.Exists(path)){
                     _installpath = path;
-                    return path; // Path found
+                    return _installpath; // Path found
                 }
             }
-            catch(Exception e)
-            {
-				Console.WriteLine(e);
-                Console.ReadKey();
+            catch{
             }
 
             // Making a guess from the FurcadiaDefaultPath property.
             path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
-                        "/Furcadia");
+                        "Furcadia");
             if (System.IO.Directory.Exists(path))
             {
                 _installpath = path;
-                return path; // Path found
+                return _installpath; // Path found
             }
 
             // All options were exhausted - assume Furcadia not installed.
-            throw new DirectoryNotFoundException();
+            throw new DirectoryNotFoundException("Furcadia Install path not found.");
         }
 
         private static string _defaultpatchpath;
@@ -99,7 +118,7 @@ namespace Furcadia.IO
                 if (System.IO.Directory.Exists(path))
                 {
                     _defaultpatchpath = path;
-                    return path; // Path found
+                    return _defaultpatchpath; // Path found
                 }
             }
             catch{ //NullReference Exception = regkey not found.
@@ -109,18 +128,18 @@ namespace Furcadia.IO
             path = GetInstallPath();
             if (path == string.Empty)
                 path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
-                        "/Furcadia");
+                        "Furcadia");
 
             path = Path.Combine(path,"/patches/default");
 
             if (System.IO.Directory.Exists(path))
             {
                 _defaultpatchpath = path;
-                return path; // Path found
+                return _defaultpatchpath; // Path found
             }
 
             // All options were exhausted - assume Furcadia not installed.
-            return null;
+            throw new DirectoryNotFoundException("Furcadia Install path not found.");
         }
 
         private static string _localsettingspath;
@@ -145,7 +164,7 @@ namespace Furcadia.IO
         {
             if (!string.IsNullOrEmpty(_cachepath)) return _cachepath;
             else _cachepath = Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
-                        "/Dragon's Eye Productions/Furcadia");
+                        "Dragon's Eye Productions/Furcadia");
             return _cachepath;
         }
 
@@ -177,9 +196,9 @@ namespace Furcadia.IO
             sr.Close();
 
             if (!System.IO.Directory.Exists(path))
-                return null; // localdir.ini found, but the path in it is missing.
+                throw new DirectoryNotFoundException("Path not found in localdir.ini"); // localdir.ini found, but the path in it is missing.
             _localdirpath = path;
-            return path; // Localdir path found!
+            return _localdirpath; // Localdir path found!
         }
     }
 }

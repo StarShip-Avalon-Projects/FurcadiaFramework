@@ -47,7 +47,7 @@ namespace FurcadiaFramework_Example.Demo
             input.KeyDown += delegate(object sender, KeyEventArgs e) {
                 if (e.KeyCode == Keys.Enter)
                 {
-                    pounce.ClearFriends();
+                    pounce.RemoveFriends();
                     foreach (string friend in input.Text.Split(','))
                         if (!String.IsNullOrEmpty(friend)) pounce.AddFriend(friend);
                     pounce.ConnectAsync();
@@ -56,7 +56,7 @@ namespace FurcadiaFramework_Example.Demo
                 
             };
 
-            pounce.Response += delegate(string[] friends)
+            pounce.Response += delegate(string[] friends, string[] dreams)
             {
                 foreach (string friend in friends)
                 {
@@ -66,9 +66,25 @@ namespace FurcadiaFramework_Example.Demo
                             statusBox.AppendText(friend + " is Online!\n");
                         }));
 					else statusBox.AppendText(friend + " is Online!\n");
-                };
-				//Update the Total Furres online count.
-				f.Text = "Total: "+pounce.TotalFurresOnline;
+                }
+
+                foreach (string dream in dreams)
+                {
+                    if (statusBox.InvokeRequired)
+                        statusBox.Invoke(new Invoker(delegate
+                        {
+                            statusBox.AppendText(dream + " is uploaded!\n");
+                        }));
+                    else statusBox.AppendText(dream + " is uploaded!\n");
+                }
+
+				//Display total num of furres online and dream number count in title.
+                if (f.InvokeRequired)
+                    f.Invoke(new Invoker(delegate
+                    {
+                        f.Text = "Total: " + pounce.TotalFurresOnline + "Dreams: " + pounce.NumberOfDreamsOnMainMaps;
+                    }));
+                else f.Text = "Total: " + pounce.TotalFurresOnline + "Dreams: " + pounce.NumberOfDreamsOnMainMaps;
 				pounce.Kill();
             };
             f.HelpButton = true;

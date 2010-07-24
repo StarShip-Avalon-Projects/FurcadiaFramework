@@ -1,4 +1,4 @@
-﻿/*Log Header
+/*Log Header
  *Format: (date,Version) AuthorName, Changes.
  * (Oct 27,2009,0.1) Squizzle, Initial Developer.
  * 
@@ -21,11 +21,6 @@ namespace Furcadia.Net
             _data = new StringBuilder();
         }
 
-        public byte[] GetBuffer()
-        {
-            throw new NotImplementedException();
-        }
-
         public string GetString()
         {
             return _data.ToString();
@@ -38,7 +33,7 @@ namespace Furcadia.Net
 
         public void Write(byte[] data)
         {
-            _data.Append(Convert.ToBase64String(data));
+            _data.Append(Encoding.GetEncoding(NetProxy.EncoderPage).GetString(data));
         }
     }
 }

@@ -17,14 +17,15 @@ namespace Furcadia.Net
 {
     public class PounceConnection
 	{
+        public delegate void PounceResponse(string[] friends, string[] dreams);
+
 		private HttpWebRequest request;
 		
         private string _url;
         private string _responseBody;
         private int _statusCode;
-        private int _timelimit;
         private int _num_dreams_mainmaps;
-        private List<string> _friends = new List<string>();
+        private List<string> _friends = new List<string>(), _dreams = new List<string>();
 		private int _totalOnline;
 
 		/// <summary>
@@ -32,12 +33,6 @@ namespace Furcadia.Net
 		/// the raw HTTP string.
 		/// </summary>
         public string RawResponse { get { return _responseBody; } }
-        /// <summary>
-        /// The amount of time allowed between subsequent online check requests.
-        /// (Obsolete) 
-        /// </summary>
-        [Obsolete]
-        public int TimeLimit { get {return _timelimit; } }
 
 		/// <summary>
 		/// Total online Furre count retrieved from a online check request
@@ -54,7 +49,7 @@ namespace Furcadia.Net
         /// <summary>
         /// Called when a online check request sends a response.  First argument is a list of players online.
         /// </summary>
-        public event Action<string[]> Response;
+        public event PounceResponse Response;
 
         /// <summary>
         /// A http web request 
@@ -89,10 +84,12 @@ namespace Furcadia.Net
 
         internal void Request (string url)
         {
-        	string friends = string.Empty;
+        	string requestString = string.Empty;
         	foreach (string friend in _friends)
-        		friends += "u[]=" + friend + "&"; //u[]=jack&u[]=jill&u[]=hill
-            request = (HttpWebRequest)WebRequest.Create(((url.EndsWith("/"))?url : url +"/") + "q/?" + friends);
+        		requestString += "u[]=" + friend + "&"; //u[]=jack&u[]=jill&u[]=hill
+            foreach (string dream in _dreams)
+                requestString += "d[]=" + dream.Substring(6) + "&";
+            request = (HttpWebRequest)WebRequest.Create(((url.EndsWith("/"))?url : url +"/") + "q/?" + requestString);
             try
             {
                 request.BeginGetResponse(new AsyncCallback(RespCallback),null);
@@ -103,51 +100,64 @@ namespace Furcadia.Net
             }
         }
 
-		internal void RespCallback (IAsyncResult ar)
-		{
-			byte[] buf = new byte[1024];
-			StringBuilder respBody = new StringBuilder ();
-			HttpWebResponse resp = (HttpWebResponse)request.EndGetResponse (ar);
-			Stream respStream = resp.GetResponseStream ();
-			// number of bytes read
-			int count = 0;
-			do
+        internal void RespCallback(IAsyncResult ar)
+        {
+            byte[] buf = new byte[1024];
+            StringBuilder respBody = new StringBuilder();
+            HttpWebResponse resp = (HttpWebResponse)request.EndGetResponse(ar);
+            Stream respStream = resp.GetResponseStream();
+            // number of bytes read
+            int count = 0;
+            do
             {
-				count = respStream.Read (buf, 0, buf.Length);
-				if (count != 0)
-					respBody.Append (System.Text.Encoding.ASCII.GetString (buf, 0, count));
-			}
-            while (count > 0);
-		
-
-            this._responseBody = respBody.ToString ();
-			if (_responseBody != string.Empty)
-            {
-				// Not really useful for getting friend online status but store it anyways!
-				this._statusCode = (int)(HttpStatusCode)resp.StatusCode;
-				// Split the responseBody by '\n' into an array
-				string[] onln = this._responseBody.Split (new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
-				// the get request time limit (normally 15000) (Squizzle's Note: now timelimit is 30000ms as seen April 23, 2010.)
-				this._timelimit = int.Parse (onln[0].Substring (1));
-				List<string> list = new List<string> (onln);
-				if (list.Count >= 3)
-                {
-					// Remove the first element T30000
-					list.RemoveAt (0);
-					_totalOnline = Convert.ToInt32 (list[list.Count - 1].Substring (1));
-					list.RemoveAt (list.Count - 1);
-					_num_dreams_mainmaps = Convert.ToInt32 (list[list.Count - 1].Substring (1));
-                    list.RemoveAt (list.Count - 1);
-                    // Trim the + from the beginning of the name.
-                    for (int i = 0; i <= list.Count - 1; i++) list[i] = list[i].Remove(0, 1);
-                    if (Response != null) Response(list.ToArray());
-                }
-				resp.Close();
+                count = respStream.Read(buf, 0, buf.Length);
+                if (count != 0)
+                    respBody.Append(System.Text.Encoding.ASCII.GetString(buf, 0, count));
             }
-		}
+            while (count > 0);
+
+            this._responseBody = respBody.ToString();
+            if (_responseBody != string.Empty)
+            {
+                // Not really useful for getting friend online status but store it anyways!
+                this._statusCode = (int)(HttpStatusCode)resp.StatusCode;
+                // Split the responseBody by '\n' into an array
+                string[] onln = this._responseBody.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                List<string> list = new List<string>(onln);
+                List<string> dreams = new List<string>();
+                List<string> friends = new List<string>();
+                if (list.Count >= 3)
+                {
+                    // Remove the first element T30000
+                    list.RemoveAt(0);
+                    for (int i = 0; i <= list.Count - 1; i++)
+                    {
+                        //Must be a dream if it starts with...
+                        if (list[i].StartsWith("#"))
+                        {
+                            list[i] = list[i].Remove(0, 2);
+                            dreams.Add(list[i]);
+                            list.RemoveAt(i);
+                        }
+                        if (list[i].StartsWith("@10"))
+                        {
+                            friends.Add(list[i].Substring(4));
+                            list.RemoveAt(i);
+                        }
+                    }
+                    friends.ForEach(Console.Write);
+                    _num_dreams_mainmaps = Convert.ToInt32(list[list.Count - 1].Substring(1));
+                    list.RemoveAt(list.Count - 1);
+                    _totalOnline = Convert.ToInt32(list[list.Count - 1].Substring(1));
+                    list.RemoveAt(list.Count - 1);
+                }
+                if (Response != null) Response(friends.ToArray(), dreams.ToArray());
+            }
+            resp.Close();
+        }
 		
 		/// <summary>
-		/// Connects to the online check server (thingy) and sends a online check request 
+		/// Connects to the online check server and sends a online check request 
 		/// </summary>
         public void Connect()
         {
@@ -155,7 +165,7 @@ namespace Furcadia.Net
         }
 		
 		/// <summary>
-		/// Connects asynchronously to the online check server without affecting the executing thread.
+		/// Connects asynchronously to the online check server and sends a request without affecting the executing thread.
 		/// </summary>
 		public void ConnectAsync(){
             if (string.IsNullOrEmpty(_url) == false && 
@@ -180,9 +190,11 @@ namespace Furcadia.Net
 		/// </returns>
         public bool AddFriend(string name)
         {
-        	if (IsValidAlphaNumeric (name.ToLower ())) {
-        		if (_friends.Contains(name.ToLower())==false){
-            		_friends.Add(name.ToLower ());
+        	name = name.ToLower();
+        	name = name.Replace(" ","");
+        	if (IsValidAlphaNumeric (name)) {
+        		if (_friends.Contains(name)==false){
+            		_friends.Add(name);
             		return true;
             	}
             }
@@ -199,19 +211,9 @@ namespace Furcadia.Net
             return false;
         }
 
-        public void ClearFriends()
+        public void RemoveFriends()
         {
             _friends.Clear();
-        }
-
-        public bool ClearFriend(string shortname)
-        {
-            if (_friends.Contains(shortname))
-            {
-                _friends.Remove(shortname);
-                return true;
-            }
-            return false;
         }
 
         /// <summary>

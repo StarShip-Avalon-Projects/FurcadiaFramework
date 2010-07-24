@@ -8,6 +8,9 @@ using System.Text;
 
 namespace Furcadia
 {
+	/// <summary>
+	/// 
+	/// </summary>
     public class Base220 : IComparable<uint>, IEquatable<uint>
     {
         public const byte CHAR_OFFSET = (byte)'#';

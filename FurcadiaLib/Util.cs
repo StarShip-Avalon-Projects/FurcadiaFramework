@@ -32,6 +32,8 @@ namespace Furcadia
         private static string _ip = "72.36.220.249";
         /// <summary>
         /// Gets or sets the IP of the Furcadia server.
+       	/// (Note(7/22/2010): Do not use this.  The IP may be wrong.
+       	/// Use Furcadia.Util.Host instead.
         /// </summary>
         public static IPAddress Ip
         {

@@ -95,6 +95,7 @@
           <ChangeLogPolicy UpdateMode="ProjectRoot" inheritsSet="Mono">
             <MessageStyle LineAlign="0" />
           </ChangeLogPolicy>
+          <VersionControlPolicy inheritsSet="Mono" />
         </Policies>
       </Properties>
     </MonoDevelop>
