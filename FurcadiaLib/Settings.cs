@@ -18,7 +18,7 @@ namespace Furcadia
     public class Settings
     {
         /// <summary>
-        /// Loads a xml file and returns a new instance of T.
+        /// Loads a xml file and returns a new instance of T. T must be Xml Deserializable!
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="file"></param>
@@ -42,7 +42,7 @@ namespace Furcadia
         /// <summary>
         /// Loads an ini file and returns a key/value pair of values.
         /// (Note: It reads Key=Value pairs only.)
-        /// (Add: Also the ini must be proper, one key/value per line.)
+        /// (Add: Also the ini must be proper, one key/value per line. No section garbage.)
         /// </summary>
         /// <param name="file"></param>
         /// <returns>A new Hashtable, or a empty Hashtable on file not found.</returns>
@@ -55,12 +55,12 @@ namespace Furcadia
                 foreach (string line in lines)
                 {
                     //get key/value!
-                    string[] key_value = line.Split('=');
+                    string[] key_value = line.Split(new char[]{'='},2);
                     if (key_value.Length == 2) ret.Add(key_value[0], key_value[1]);
                 }
                 return ret;
             }
-            else { return ret; }
+            else { throw new FileNotFoundException(file); }
         }
     }
 }
