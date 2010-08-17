@@ -13,9 +13,8 @@ namespace Furcadia.IO
 		internal static string FormatWineHDDir(string path)
 		{
 			string _s = path.Substring(0,1);
-			string newPath = path.Remove(0,3).ToLower();
+			string newPath = path.Remove(0,3);
 			//newPath = newPath.Replace("\\",Path.DirectorySeparatorChar.ToString());
-			Console.WriteLine(newPath);
 			switch(_s.ToLower())
 			{
 				case "c":
@@ -29,15 +28,20 @@ namespace Furcadia.IO
 			ProcessStartInfo startinfo = new ProcessStartInfo("regedit", "/S /E " + "tmp.reg " + "\""+regPath+"\"");
 			Process proc = Process.Start(startinfo);
 			proc.Close();
-			//CAUTION: THIS LINE MIGHT HANG PROGRAM
-			while (File.Exists("tmp.reg")==false) Thread.Sleep(100);
-			FileStream stream = TryOpenFile("tmp.reg", FileMode.Open, FileAccess.Read, FileShare.Read, 3, 1000);
-			if (stream != null)
+
+			int _timeout = 0;
+			while (File.Exists("tmp.reg")==false && _timeout < 10)
 			{
-				path = parseRegFile(stream, "Path");
+				_timeout++;
+				Thread.Sleep(100);
+			}
+			
+			FileStream fs = TryOpenFile("tmp.reg", FileMode.Open, FileAccess.Read, FileShare.Read, 3, 1000);
+			if (fs != null)
+			{
+				path = parseRegFile(fs, key);
 				path = path.Remove(0,path.IndexOf('=')+1);
 				File.Delete("tmp.reg");
-				Console.WriteLine(path);
 				if (path != null){
 					path = FormatWineHDDir(path);
 				}

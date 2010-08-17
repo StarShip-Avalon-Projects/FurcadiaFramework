@@ -13,7 +13,6 @@ namespace FurcadiaFramework_Example.Demo
     public class GraphicsDemo : IDemo
     {
         private delegate void Invoker();
-        private bool is_testing;
 
         public GraphicsDemo() { }
 
@@ -53,11 +52,6 @@ namespace FurcadiaFramework_Example.Demo
             {
                 if (timer.Enabled) timer.Stop();
             };
-
-            f.KeyDown += delegate(object sender, KeyEventArgs e) { 
-                if (e.KeyCode == Keys.F5) 
-                    is_testing = true; 
-            else is_testing = false; };
 			
 			#region Furcadia.Graphics implimentation here.
             FurcadiaShapes shape = new FurcadiaShapes(Paths.GetDefaultPatchPath() + "item.fox");
@@ -70,27 +64,23 @@ namespace FurcadiaFramework_Example.Demo
                     try
                     {
                         f.Invoke(new Invoker(delegate
-                        {
-                            pic.Top = desc.Height;
-                            if (!is_testing)
-                                pic.Image = anims[rand.Next() % anims.Length];
-                            else {
-                                throw new NotImplementedException();
-                            }
-                        }));
+        	                     {
+			                    	   pic.Image = null;
+			                        	pic.Image = anims[rand.Next() % anims.Length];
+			                        	pic.Top = desc.Height;
+											pic.PerformLayout();
+        	                     }));
                     }
                     catch { }
                 }
-                else {
-                    if (!is_testing)
-                        pic.Image = anims[rand.Next() % anims.Length];
-                    else
-                    {
-                        throw new NotImplementedException();
-                    }
+            		else {
+                		pic.Image = null;
+                		pic.Image = anims[rand.Next() % anims.Length];
+                		pic.Top = desc.Height;
+                		pic.PerformLayout();
                 }
-
             };
+            
 			#endregion
 			
             f.Controls.Add(pic);
