@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading;
 using System.IO;
 using System.Collections.Generic;
-using Furcadia.IO;
+using Furcadia.IO;s
 using System.Net.NetworkInformation;
 
 using System.Timers;
@@ -84,7 +84,7 @@ namespace Furcadia.Net
         public NetProxy()
         {
             string SetPath = Paths.GetLocalSettingsPath();
-            string SetFile = "/settings/";
+            string SetFile = "/settings.ini";
             string[] sett = FurcIni.LoadFurcadiaSettings(SetPath,SetFile);
             string port = FurcIni.GetUserSetting("PreferredServerPort", sett);
             int Var = Convert.ToInt32(port);
@@ -254,8 +254,10 @@ namespace Furcadia.Net
              /// Check proxy.ini if it exoists then use it
              /// 
              /// otherwise use settings.ini to avoid UAC issues on %Program Files%
-             if (File.Exists(fIni))
+               UserFileAccessRights rights = new UserFileAccessRights(Paths.GetInstallPath());
+               if (File.Exists(fIni) | rights.canWrite() & rights.canRead() )
              {
+           
                  UseProxyIni = true;
                  FileStream proxyStream = new FileStream(fIni, FileMode.OpenOrCreate, FileAccess.Write);
                  proxyStream.Write(System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(proxyIni), 0, proxyIni.Length);
@@ -313,6 +315,35 @@ namespace Furcadia.Net
             catch (Exception e) { if (Error != null) Error(e); else throw e; }
         }
 
+     
+
+
+
+
+
+        ///// <summary> Checks for write access for the given file.
+        ///// </summary>
+        ///// <param name="fileName">The filename.</param>
+        ///// <returns>true, if write access is allowed, otherwise false</returns>
+        //public static bool WriteAccess(string fileName)
+        //{
+        //    if ((File.GetAttributes(fileName) & FileAttributes.ReadOnly) != 0)
+        //        return false;
+
+        //    // Get the access rules of the specified files (user groups and user names that have access to the file)
+        //    var rules = File.GetAccessControl(fileName).GetAccessRules(true, true, typeof(System.Security.Principal.SecurityIdentifier));
+
+        //    // Get the identity of the current user and the groups that the user is in.
+        //    var groups = WindowsIdentity.GetCurrent().Groups;
+        //    string sidCurrentUser = WindowsIdentity.GetCurrent().User.Value;
+
+        //    // Check if writing to the file is explicitly denied for this user or a group the user is in.
+        //    if (rules.OfType<FileSystemAccessRule>().Any(r => (groups.Contains(r.IdentityReference) || r.IdentityReference.Value == sidCurrentUser) && r.AccessControlType == AccessControlType.Deny && (r.FileSystemRights & FileSystemRights.WriteData) == FileSystemRights.WriteData))
+        //        return false;
+
+        //    // Check if writing is allowed
+        //    return rules.OfType<FileSystemAccessRule>().Any(r => (groups.Contains(r.IdentityReference) || r.IdentityReference.Value == sidCurrentUser) && r.AccessControlType == AccessControlType.Allow && (r.FileSystemRights & FileSystemRights.WriteData) == FileSystemRights.WriteData);
+        //}
 
 
         public void SendClient (INetMessage message)

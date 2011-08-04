@@ -57,12 +57,28 @@ namespace Furcadia.Net
         }
         public  struct BOT
         {
-            private string _Color, _Desc,_Name, _Owner, _Msg, _Password, _Script;
-            private int _X, _Y, _ID, _ITEM, _Logins;
+            private string _ColorType, _Color, _Desc,_Name, _Owner, _Msg, _Password, _Script;
+            private uint _X, _Y, _ID, _Shape, _ITEM, _Logins, _Flag;
+            private TimeSpan _AFK ;
+            public uint Flag
+            {
+                get { return _Flag;} 
+                set { _Flag = value; }
+            }
+            public string ColorType
+            {
+                get { return _ColorType; } 
+                set { _ColorType = value; }
+            }
             public string Color
             {
                 get { return _Color; }
                 set { _Color = value; }
+            }
+            public uint Shape
+            {
+                get { return _Shape; }
+                set { _Shape = value; }
             }
             public string Desc
             {
@@ -94,30 +110,35 @@ namespace Furcadia.Net
                 get { return _Password; }
                 set { _Password = value; }
             }
-            public int X
+            public uint X
             {
                 get { return _X; }
                 set { _X = value; }
             }
-            public int Y
+            public uint Y
             {
                 get { return _Y; }
                 set { _Y = value; }
             }
-            public int ID
+            public uint ID
             {
                 get { return _ID; }
                 set { _ID = value; }
             }
-            public int ITEM
+            public uint ITEM
             {
                 get { return _ITEM; }
                 set { _ITEM = value; }
             }
-            public int LOGINS
+            public uint LOGINS
             {
                 get { return _Logins; }
                 set { _Logins = value; }
+            }
+            public TimeSpan AFK
+            {
+                get { return _AFK; }
+                set { _AFK = value; }
             }
             public void Clear()
             {
@@ -133,6 +154,7 @@ namespace Furcadia.Net
              _ID = 0;
              _ITEM = 0;
              _Logins = 0;
+             _ColorType = " ";
             }
         }
         public struct FURRE
