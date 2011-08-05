@@ -309,11 +309,6 @@ namespace Furcadia.Net
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
 		}
 
-		
-
-
-
-
 
 		///// <summary> Checks for write access for the given file.
 		///// </summary>
@@ -342,19 +337,14 @@ namespace Furcadia.Net
 
 		public void SendClient (INetMessage message)
 		{
-			try
-			{
-				if (client.GetStream ().CanWrite)
-					client.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message.GetString ()), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message.GetString()).Length);
-			}
-			catch (Exception e) { if (Error != null) Error(e); else throw e; }
+			SendClient(message.GetString());
 		}
 		
 		public void SendClient (string message)
 		{
 			try
 			{
-				if (client.GetStream ().CanWrite)
+				if (client.Client != null && client.GetStream ().CanWrite)
 					client.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
 			}
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
@@ -363,12 +353,7 @@ namespace Furcadia.Net
 
 		public void SendServer (INetMessage message)
 		{
-			try
-			{
-				if (server.GetStream ().CanWrite)
-					server.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message.GetString ()), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message.GetString()).Length);
-			}
-			catch (Exception e) { if (Error != null) Error(e); else throw e; }
+			SendServer(message.GetString());
 		}
 
 		public void SendServer (string message)
@@ -388,10 +373,17 @@ namespace Furcadia.Net
 		{
 			try
 			{
-				client.GetStream().Close();
-				server.GetStream().Close();
-				client.Close();
-				server.Close();
+				if (client != null && client.Connected == true){
+					NetworkStream clientStream = client.GetStream();
+					if (clientStream != null) clientStream.Close();
+					client.Close();
+				}
+				
+				if (server != null && server.Connected == true){
+					NetworkStream serverStream = server.GetStream();
+					if (serverStream != null) serverStream.Close();
+					server.Close();
+				}
 			}
 			catch (Exception e) { if (Error != null) Error(e); }
 		}
@@ -455,7 +447,6 @@ namespace Furcadia.Net
 				if (client.Connected == false)
 				{
 					throw new SocketException((int)SocketError.NotConnected);
-					return;
 				}
 				List<string> lines = new List<string> ();
 				//read = number of bytes read
@@ -495,6 +486,10 @@ namespace Furcadia.Net
 		{
 			try
 			{
+				if (server.Connected == false)
+				{
+					throw new SocketException((int)SocketError.NotConnected);
+				}
 				List<string> lines = new List<string> ();
 				int read = server.GetStream ().EndRead (ar);
 				//If we have left over data add it to this server build
