@@ -4,12 +4,12 @@ Imports System.IO
 
 Imports Furcadia.IO
 Imports Furcadia.Net
-
+Imports ConfigStructs
 
 
 Public Class Main
 
-    Private WithEvents simpleProxy As netproxy
+    Private WithEvents simpleProxy As NetProxy
 
     Delegate Sub AddDataToListCaller(ByVal lb As ListBox, ByVal obj As Object)
 
@@ -25,26 +25,22 @@ Public Class Main
         End If
     End Sub
 
-    Private Sub browse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles browse.Click
 
-        ' Search for the Furcadia path manually
-        browseDialog.FileName = furcadiaPath.Text
-        browseDialog.ShowDialog()
-        furcadiaPath.Text = browseDialog.FileName.Substring(0, InStrRev(browseDialog.FileName, "\"))
-
-    End Sub
 
     Private Sub Main_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
         ' Try to get Furcadia's path from the registry
-        furcadiaPath.Text = Paths.GetInstallPath
+        Loadconfig()
 
     End Sub
 
-    Private Sub go_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles go.Click
-        simpleProxy = New NetProxy(Convert.ToInt32(localPort.Text))
+    Public Sub Loadconfig()
+
+    End Sub
+
+    Private Sub go_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        simpleProxy = New NetProxy()
         simpleProxy.Connect()
-        configGroup.Enabled = False
     End Sub
 
     Private Function onClientDataReceived(ByVal data As String) Handles simpleProxy.ClientData
@@ -53,7 +49,7 @@ Public Class Main
         If data.StartsWith("desc") = True Or data.StartsWith("chdesc") = True Then
             data += " [SimpleProxy with <a href='http://furcadia.codeplex.com'>Furcadia Framework</a> for Third Party Programs]"
 
-         ElseIf data = "quit" Then
+        ElseIf data = "quit" Then
 
         End If
         Return data
@@ -86,4 +82,22 @@ Public Class Main
         Catch
         End Try
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+    End Sub
+
+    Private Sub BTN_Config_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BTN_Config.Click
+        ' Config.Show()
+    End Sub
+
+    Private Function InvokeRequired() As Boolean
+        Throw New NotImplementedException
+    End Function
+
+    Private Sub Invoke(ByVal addDataToListCaller As SimpleProxy2.Main.AddDataToListCaller, ByVal dataArray As Object())
+        Throw New NotImplementedException
+    End Sub
+
 End Class
+
