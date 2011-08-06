@@ -9,7 +9,8 @@ namespace Furcadia.Net
        
         public class DREAM
         {
-            public static Dictionary<string, FURRE> Furres = new Dictionary<string, FURRE>();
+            // Public Shared Furres As New Dictionary(Of UInteger, FURRE)
+            public static Dictionary<uint, FURRE> Furres = new Dictionary<uint, FURRE>();
             private string _Name, _Title, _Lines,  _Rating, _URL, _Owner;
             
             public  string Owner

@@ -6,6 +6,8 @@
  */
 
 using System;
+using System.Diagnostics;
+//using System.ComponentModel;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -68,7 +70,7 @@ namespace Furcadia.Net
 		private string _ServerLeftOvers;
 		private string clientBuild, serverBuild;
 		public static int _lport = 6700;
-
+        private int _procID;
 		private static System.Timers.Timer NewsTimer;
 
 		private string _proc = "Furcadia.exe", _procpath, _procCMD ="-pick";
@@ -86,11 +88,10 @@ namespace Furcadia.Net
 			string SetPath = Paths.GetLocalSettingsPath();
 			string SetFile = "/settings.ini";
 			string[] sett = FurcIni.LoadFurcadiaSettings(SetPath,SetFile);
-			string port = FurcIni.GetUserSetting("PreferredServerPort", sett);
-			int Var = Convert.ToInt32(port);
+            int port = Convert.ToInt32(FurcIni.GetUserSetting("PreferredServerPort", sett));
 			try
 			{
-				_endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], Var);
+				_endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
 			}
 			catch { }
 		}
@@ -173,6 +174,23 @@ namespace Furcadia.Net
 			get { return _proc;}
 			set { _proc=value; }
 		}
+        public int ProcID
+        {
+            get { return _procID; }
+            set { _procID = value; }
+        }
+
+      public void  fProcess()
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo(_proc);
+            startInfo.WorkingDirectory = ProcessPath;
+            startInfo.Arguments = ProcessCMD;
+
+           System.Diagnostics.Process test = System.Diagnostics.Process.Start(startInfo);
+            test.EnableRaisingEvents = true;
+            test.Exited += delegate { if (this.ClientExited != null) this.ClientExited(); };
+        }
+        		
 
 		/// <summary>
 		/// Process path (default: none)
@@ -296,8 +314,8 @@ namespace Furcadia.Net
 
 				}
 				
-				//Run
-				if (string.IsNullOrEmpty(ProcessPath)) ProcessPath = Paths.GetInstallPath();
+				//Run         
+                if (string.IsNullOrEmpty(ProcessPath)) ProcessPath = Paths.GetInstallPath();
 				//check ProcessPath is not a directory
 				if (!Directory.Exists(ProcessPath)) throw new DirectoryNotFoundException("Process path not found.");
 				Directory.SetCurrentDirectory(ProcessPath);
@@ -305,6 +323,8 @@ namespace Furcadia.Net
 				System.Diagnostics.Process proc = System.Diagnostics.Process.Start(Process,ProcessCMD );
 				proc.EnableRaisingEvents = true;
 				proc.Exited += delegate { if (this.ClientExited != null) this.ClientExited(); };
+                ProcID = proc.Id;
+                
 			}
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
 		}
@@ -447,6 +467,7 @@ namespace Furcadia.Net
 				if (client.Connected == false)
 				{
 					throw new SocketException((int)SocketError.NotConnected);
+					//return;
 				}
 				List<string> lines = new List<string> ();
 				//read = number of bytes read
