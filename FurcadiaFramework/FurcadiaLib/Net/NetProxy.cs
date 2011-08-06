@@ -180,19 +180,7 @@ namespace Furcadia.Net
             set { _procID = value; }
         }
 
-      public void  fProcess()
-        {
-            ProcessStartInfo startInfo = new ProcessStartInfo(_proc);
-            startInfo.WorkingDirectory = ProcessPath;
-            startInfo.Arguments = ProcessCMD;
-
-           System.Diagnostics.Process test = System.Diagnostics.Process.Start(startInfo);
-            test.EnableRaisingEvents = true;
-            test.Exited += delegate { if (this.ClientExited != null) this.ClientExited(); };
-        }
-        		
-
-		/// <summary>
+   		/// <summary>
 		/// Process path (default: none)
 		/// </summary>
 		public string ProcessPath
@@ -330,31 +318,6 @@ namespace Furcadia.Net
 		}
 
 
-		///// <summary> Checks for write access for the given file.
-		///// </summary>
-		///// <param name="fileName">The filename.</param>
-		///// <returns>true, if write access is allowed, otherwise false</returns>
-		//public static bool WriteAccess(string fileName)
-		//{
-		//    if ((File.GetAttributes(fileName) & FileAttributes.ReadOnly) != 0)
-		//        return false;
-
-		//    // Get the access rules of the specified files (user groups and user names that have access to the file)
-		//    var rules = File.GetAccessControl(fileName).GetAccessRules(true, true, typeof(System.Security.Principal.SecurityIdentifier));
-
-		//    // Get the identity of the current user and the groups that the user is in.
-		//    var groups = WindowsIdentity.GetCurrent().Groups;
-		//    string sidCurrentUser = WindowsIdentity.GetCurrent().User.Value;
-
-		//    // Check if writing to the file is explicitly denied for this user or a group the user is in.
-		//    if (rules.OfType<FileSystemAccessRule>().Any(r => (groups.Contains(r.IdentityReference) || r.IdentityReference.Value == sidCurrentUser) && r.AccessControlType == AccessControlType.Deny && (r.FileSystemRights & FileSystemRights.WriteData) == FileSystemRights.WriteData))
-		//        return false;
-
-		//    // Check if writing is allowed
-		//    return rules.OfType<FileSystemAccessRule>().Any(r => (groups.Contains(r.IdentityReference) || r.IdentityReference.Value == sidCurrentUser) && r.AccessControlType == AccessControlType.Allow && (r.FileSystemRights & FileSystemRights.WriteData) == FileSystemRights.WriteData);
-		//}
-
-
 		public void SendClient (INetMessage message)
 		{
 			SendClient(message.GetString());
@@ -441,7 +404,7 @@ namespace Furcadia.Net
 					{
 						/// reset settings.ini
 						/// 10second delay timer
-						System.Timers.Timer NewsTimer = new System.Timers.Timer();
+						NewsTimer = new System.Timers.Timer();
 						NewsTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
 						NewsTimer.Enabled = true;
 						NewsTimer.Interval = 10000;
@@ -482,7 +445,7 @@ namespace Furcadia.Net
 				//Every line should end with '\n'
 				//Split function removes the last character
 				lines.AddRange(clientBuild.Split('\n'));
-				for (int i = 0; i < lines.Count; i++)
+				for (int i = 0; i < lines.Count -1 ; i++)
 				{
 					INetMessage msg = new NetMessage();
 					//Send the line to the ClientData event and write the return value to a new NetMessage

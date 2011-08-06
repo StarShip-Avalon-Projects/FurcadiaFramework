@@ -50,8 +50,12 @@ Public Class Main
     Private Function onClientDataReceived(ByVal data As String) Handles simpleProxy.ClientData
         AddDataToList(clientList, data)
 
-        If data.Length > 4 Then If data.Substring(0, 4) = "desc" Or data.Substring(0, 6) = "chdesc" Then data += " [SimpleProxy with Furcadia Framework for Third Party Programs]"
+        If data.StartsWith("desc") = True Or data.StartsWith("chdesc") = True Then
+            data += " [SimpleProxy with <a href='http://furcadia.codeplex.com'>Furcadia Framework</a> for Third Party Programs]"
 
+         ElseIf data = "quit" Then
+
+        End If
         Return data
     End Function
 
@@ -71,14 +75,14 @@ Public Class Main
 
     Private Sub sendToClient_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles sendToClient.Click
         Try
-            simpleProxy.SendClient(toClient.Text & Chr(10)) : toClient.Text = ""
+            simpleProxy.SendClient(toClient.Text) : toClient.Text = ""
         Catch
         End Try
     End Sub
 
     Private Sub sendToServer_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles sendToServer.Click
         Try
-            simpleProxy.SendServer(toServer.Text & Chr(10)) : toServer.Text = ""
+            simpleProxy.SendServer(toServer.Text) : toServer.Text = ""
         Catch
         End Try
     End Sub
