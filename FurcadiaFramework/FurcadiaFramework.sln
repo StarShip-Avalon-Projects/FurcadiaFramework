@@ -12,7 +12,7 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SimpleProxy2", "..\simplepr
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
+		SccNumberOfProjects = 4
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs05
 		SccLocalPath0 = .
@@ -22,6 +22,9 @@ Global
 		SccProjectUniqueName2 = FurcadiaLib\\FurcadiaLib.csproj
 		SccProjectName2 = FurcadiaLib
 		SccLocalPath2 = FurcadiaLib
+		SccProjectUniqueName3 = ..\\simpleproxy\\SimpleProxy2.vbproj
+		SccProjectName3 = ../simpleproxy
+		SccLocalPath3 = ..\\simpleproxy
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

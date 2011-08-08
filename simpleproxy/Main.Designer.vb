@@ -19,35 +19,40 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.clientGroup = New System.Windows.Forms.GroupBox()
-        Me.sendToClient = New System.Windows.Forms.Button()
-        Me.toClient = New System.Windows.Forms.TextBox()
-        Me.clientList = New System.Windows.Forms.ListBox()
-        Me.serverGroup = New System.Windows.Forms.GroupBox()
-        Me.sendToServer = New System.Windows.Forms.Button()
+        Me.ServerList = New System.Windows.Forms.ListBox()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.BTN_Config = New System.Windows.Forms.Button()
+        Me.BTN_Go = New System.Windows.Forms.Button()
+        Me.GrpAction = New System.Windows.Forms.GroupBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BTN_TurnR = New System.Windows.Forms.Button()
+        Me._ne = New System.Windows.Forms.PictureBox()
+        Me._nw = New System.Windows.Forms.PictureBox()
+        Me.use_ = New System.Windows.Forms.Button()
+        Me.get_ = New System.Windows.Forms.Button()
+        Me.se_ = New System.Windows.Forms.PictureBox()
+        Me.sw_ = New System.Windows.Forms.PictureBox()
+        Me.DreamList = New System.Windows.Forms.ListBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.toServer = New System.Windows.Forms.TextBox()
-        Me.serverList = New System.Windows.Forms.ListBox()
-        Me.configGroup = New System.Windows.Forms.GroupBox()
-        Me.go = New System.Windows.Forms.Button()
-        Me.browse = New System.Windows.Forms.Button()
-        Me.localPort = New System.Windows.Forms.TextBox()
-        Me.destination = New System.Windows.Forms.TextBox()
-        Me.furcadiaPath = New System.Windows.Forms.TextBox()
-        Me.portLabel = New System.Windows.Forms.Label()
-        Me.destLabel = New System.Windows.Forms.Label()
-        Me.pathLabel = New System.Windows.Forms.Label()
-        Me.ioConfigContainer = New System.Windows.Forms.SplitContainer()
-        Me.clientServerContainer = New System.Windows.Forms.SplitContainer()
-        Me.browseDialog = New System.Windows.Forms.OpenFileDialog()
+        Me.sendToServer = New System.Windows.Forms.Button()
         Me.clientGroup.SuspendLayout()
-        Me.serverGroup.SuspendLayout()
-        Me.configGroup.SuspendLayout()
-        Me.ioConfigContainer.Panel1.SuspendLayout()
-        Me.ioConfigContainer.Panel2.SuspendLayout()
-        Me.ioConfigContainer.SuspendLayout()
-        Me.clientServerContainer.Panel1.SuspendLayout()
-        Me.clientServerContainer.Panel2.SuspendLayout()
-        Me.clientServerContainer.SuspendLayout()
+        Me.GrpAction.SuspendLayout()
+        CType(Me._ne, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._nw, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.se_, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.sw_, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'clientGroup
@@ -55,276 +60,317 @@ Partial Class Main
         Me.clientGroup.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.clientGroup.Controls.Add(Me.sendToClient)
-        Me.clientGroup.Controls.Add(Me.toClient)
-        Me.clientGroup.Controls.Add(Me.clientList)
-        Me.clientGroup.Location = New System.Drawing.Point(11, 3)
+        Me.clientGroup.Controls.Add(Me.ServerList)
+        Me.clientGroup.Location = New System.Drawing.Point(12, 12)
         Me.clientGroup.Name = "clientGroup"
-        Me.clientGroup.Size = New System.Drawing.Size(180, 194)
+        Me.clientGroup.Size = New System.Drawing.Size(229, 166)
         Me.clientGroup.TabIndex = 0
         Me.clientGroup.TabStop = False
         Me.clientGroup.Text = "From Client"
         '
-        'sendToClient
+        'ServerList
         '
-        Me.sendToClient.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.sendToClient.Location = New System.Drawing.Point(127, 163)
-        Me.sendToClient.Name = "sendToClient"
-        Me.sendToClient.Size = New System.Drawing.Size(35, 20)
-        Me.sendToClient.TabIndex = 2
-        Me.sendToClient.Text = "->"
-        Me.sendToClient.UseVisualStyleBackColor = True
-        '
-        'toClient
-        '
-        Me.toClient.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.toClient.Location = New System.Drawing.Point(18, 163)
-        Me.toClient.Name = "toClient"
-        Me.toClient.Size = New System.Drawing.Size(103, 20)
-        Me.toClient.TabIndex = 1
-        '
-        'clientList
-        '
-        Me.clientList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.ServerList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.clientList.FormattingEnabled = True
-        Me.clientList.Location = New System.Drawing.Point(18, 19)
-        Me.clientList.Name = "clientList"
-        Me.clientList.Size = New System.Drawing.Size(144, 134)
-        Me.clientList.TabIndex = 0
+        Me.ServerList.FormattingEnabled = True
+        Me.ServerList.Location = New System.Drawing.Point(18, 19)
+        Me.ServerList.Name = "ServerList"
+        Me.ServerList.Size = New System.Drawing.Size(193, 134)
+        Me.ServerList.TabIndex = 0
         '
-        'serverGroup
+        'NotifyIcon1
         '
-        Me.serverGroup.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
+        'BTN_Config
+        '
+        Me.BTN_Config.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTN_Config.Location = New System.Drawing.Point(30, 320)
+        Me.BTN_Config.Name = "BTN_Config"
+        Me.BTN_Config.Size = New System.Drawing.Size(80, 30)
+        Me.BTN_Config.TabIndex = 11
+        Me.BTN_Config.Text = "Config"
+        Me.BTN_Config.UseVisualStyleBackColor = True
+        '
+        'BTN_Go
+        '
+        Me.BTN_Go.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTN_Go.Location = New System.Drawing.Point(125, 320)
+        Me.BTN_Go.Name = "BTN_Go"
+        Me.BTN_Go.Size = New System.Drawing.Size(98, 30)
+        Me.BTN_Go.TabIndex = 10
+        Me.BTN_Go.Text = "Go!"
+        Me.BTN_Go.UseVisualStyleBackColor = True
+        '
+        'GrpAction
+        '
+        Me.GrpAction.Controls.Add(Me.Button4)
+        Me.GrpAction.Controls.Add(Me.Button1)
+        Me.GrpAction.Controls.Add(Me.Button3)
+        Me.GrpAction.Controls.Add(Me.Button2)
+        Me.GrpAction.Controls.Add(Me.BTN_TurnR)
+        Me.GrpAction.Controls.Add(Me._ne)
+        Me.GrpAction.Controls.Add(Me._nw)
+        Me.GrpAction.Controls.Add(Me.use_)
+        Me.GrpAction.Controls.Add(Me.get_)
+        Me.GrpAction.Controls.Add(Me.se_)
+        Me.GrpAction.Controls.Add(Me.sw_)
+        Me.GrpAction.Location = New System.Drawing.Point(253, 201)
+        Me.GrpAction.Name = "GrpAction"
+        Me.GrpAction.Size = New System.Drawing.Size(164, 162)
+        Me.GrpAction.TabIndex = 14
+        Me.GrpAction.TabStop = False
+        Me.GrpAction.Text = "Actios"
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(116, 69)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(41, 23)
+        Me.Button4.TabIndex = 46
+        Me.Button4.Text = "Stand"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(116, 19)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(41, 23)
+        Me.Button1.TabIndex = 45
+        Me.Button1.Text = "Lie"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(116, 43)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(41, 23)
+        Me.Button3.TabIndex = 44
+        Me.Button3.Text = "Sit"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(3, 19)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(30, 23)
+        Me.Button2.TabIndex = 43
+        Me.Button2.Text = "<="
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'BTN_TurnR
+        '
+        Me.BTN_TurnR.Location = New System.Drawing.Point(3, 43)
+        Me.BTN_TurnR.Name = "BTN_TurnR"
+        Me.BTN_TurnR.Size = New System.Drawing.Size(30, 23)
+        Me.BTN_TurnR.TabIndex = 42
+        Me.BTN_TurnR.Text = "=>"
+        Me.BTN_TurnR.UseVisualStyleBackColor = True
+        '
+        '_ne
+        '
+        Me._ne.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me._ne.Cursor = System.Windows.Forms.Cursors.Hand
+        Me._ne.Image = CType(resources.GetObject("_ne.Image"), System.Drawing.Image)
+        Me._ne.Location = New System.Drawing.Point(74, 19)
+        Me._ne.Name = "_ne"
+        Me._ne.Size = New System.Drawing.Size(36, 36)
+        Me._ne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me._ne.TabIndex = 41
+        Me._ne.TabStop = False
+        Me._ne.WaitOnLoad = True
+        '
+        '_nw
+        '
+        Me._nw.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me._nw.Cursor = System.Windows.Forms.Cursors.Hand
+        Me._nw.Image = CType(resources.GetObject("_nw.Image"), System.Drawing.Image)
+        Me._nw.Location = New System.Drawing.Point(38, 19)
+        Me._nw.Name = "_nw"
+        Me._nw.Size = New System.Drawing.Size(36, 36)
+        Me._nw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me._nw.TabIndex = 40
+        Me._nw.TabStop = False
+        Me._nw.WaitOnLoad = True
+        '
+        'use_
+        '
+        Me.use_.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.use_.FlatAppearance.BorderSize = 0
+        Me.use_.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.use_.Location = New System.Drawing.Point(74, 95)
+        Me.use_.Name = "use_"
+        Me.use_.Size = New System.Drawing.Size(35, 23)
+        Me.use_.TabIndex = 38
+        Me.use_.Text = "Use"
+        Me.use_.UseVisualStyleBackColor = True
+        '
+        'get_
+        '
+        Me.get_.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.get_.FlatAppearance.BorderSize = 0
+        Me.get_.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.get_.Location = New System.Drawing.Point(38, 95)
+        Me.get_.Name = "get_"
+        Me.get_.Size = New System.Drawing.Size(32, 23)
+        Me.get_.TabIndex = 37
+        Me.get_.Text = "Get"
+        Me.get_.UseVisualStyleBackColor = True
+        '
+        'se_
+        '
+        Me.se_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.se_.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.se_.Image = CType(resources.GetObject("se_.Image"), System.Drawing.Image)
+        Me.se_.Location = New System.Drawing.Point(74, 56)
+        Me.se_.Name = "se_"
+        Me.se_.Size = New System.Drawing.Size(36, 36)
+        Me.se_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.se_.TabIndex = 36
+        Me.se_.TabStop = False
+        Me.se_.WaitOnLoad = True
+        '
+        'sw_
+        '
+        Me.sw_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.sw_.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.sw_.Image = CType(resources.GetObject("sw_.Image"), System.Drawing.Image)
+        Me.sw_.Location = New System.Drawing.Point(38, 56)
+        Me.sw_.Name = "sw_"
+        Me.sw_.Size = New System.Drawing.Size(36, 36)
+        Me.sw_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.sw_.TabIndex = 35
+        Me.sw_.TabStop = False
+        Me.sw_.WaitOnLoad = True
+        '
+        'DreamList
+        '
+        Me.DreamList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.serverGroup.Controls.Add(Me.sendToServer)
-        Me.serverGroup.Controls.Add(Me.toServer)
-        Me.serverGroup.Controls.Add(Me.serverList)
-        Me.serverGroup.Location = New System.Drawing.Point(12, 3)
-        Me.serverGroup.Name = "serverGroup"
-        Me.serverGroup.Size = New System.Drawing.Size(180, 194)
-        Me.serverGroup.TabIndex = 1
-        Me.serverGroup.TabStop = False
-        Me.serverGroup.Text = "From Server"
+        Me.DreamList.FormattingEnabled = True
+        Me.DreamList.Location = New System.Drawing.Point(6, 19)
+        Me.DreamList.Name = "DreamList"
+        Me.DreamList.Size = New System.Drawing.Size(158, 134)
+        Me.DreamList.TabIndex = 12
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(6, 166)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(84, 13)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Furres in Dream:"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(96, 163)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(68, 20)
+        Me.TextBox1.TabIndex = 14
+        Me.TextBox1.Text = "0"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.DreamList)
+        Me.GroupBox1.Location = New System.Drawing.Point(247, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(170, 194)
+        Me.GroupBox1.TabIndex = 13
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Dream List"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.toServer)
+        Me.GroupBox3.Controls.Add(Me.sendToServer)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 184)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(229, 130)
+        Me.GroupBox3.TabIndex = 47
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Chat"
+        '
+        'toServer
+        '
+        Me.toServer.AcceptsReturn = True
+        Me.toServer.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.toServer.Location = New System.Drawing.Point(18, 19)
+        Me.toServer.Multiline = True
+        Me.toServer.Name = "toServer"
+        Me.toServer.Size = New System.Drawing.Size(193, 79)
+        Me.toServer.TabIndex = 3
         '
         'sendToServer
         '
         Me.sendToServer.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.sendToServer.Location = New System.Drawing.Point(127, 163)
+        Me.sendToServer.Location = New System.Drawing.Point(176, 104)
         Me.sendToServer.Name = "sendToServer"
         Me.sendToServer.Size = New System.Drawing.Size(35, 20)
-        Me.sendToServer.TabIndex = 2
+        Me.sendToServer.TabIndex = 4
         Me.sendToServer.Text = "->"
         Me.sendToServer.UseVisualStyleBackColor = True
-        '
-        'toServer
-        '
-        Me.toServer.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.toServer.Location = New System.Drawing.Point(18, 163)
-        Me.toServer.Name = "toServer"
-        Me.toServer.Size = New System.Drawing.Size(103, 20)
-        Me.toServer.TabIndex = 1
-        '
-        'serverList
-        '
-        Me.serverList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.serverList.FormattingEnabled = True
-        Me.serverList.Location = New System.Drawing.Point(18, 19)
-        Me.serverList.Name = "serverList"
-        Me.serverList.Size = New System.Drawing.Size(144, 134)
-        Me.serverList.TabIndex = 0
-        '
-        'configGroup
-        '
-        Me.configGroup.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.configGroup.Controls.Add(Me.go)
-        Me.configGroup.Controls.Add(Me.browse)
-        Me.configGroup.Controls.Add(Me.localPort)
-        Me.configGroup.Controls.Add(Me.destination)
-        Me.configGroup.Controls.Add(Me.furcadiaPath)
-        Me.configGroup.Controls.Add(Me.portLabel)
-        Me.configGroup.Controls.Add(Me.destLabel)
-        Me.configGroup.Controls.Add(Me.pathLabel)
-        Me.configGroup.Location = New System.Drawing.Point(11, 7)
-        Me.configGroup.Name = "configGroup"
-        Me.configGroup.Size = New System.Drawing.Size(388, 128)
-        Me.configGroup.TabIndex = 2
-        Me.configGroup.TabStop = False
-        Me.configGroup.Text = "Configuration"
-        '
-        'go
-        '
-        Me.go.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.go.Location = New System.Drawing.Point(277, 85)
-        Me.go.Name = "go"
-        Me.go.Size = New System.Drawing.Size(93, 27)
-        Me.go.TabIndex = 8
-        Me.go.Text = "Go!"
-        Me.go.UseVisualStyleBackColor = True
-        '
-        'browse
-        '
-        Me.browse.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.browse.Location = New System.Drawing.Point(344, 24)
-        Me.browse.Name = "browse"
-        Me.browse.Size = New System.Drawing.Size(24, 19)
-        Me.browse.TabIndex = 6
-        Me.browse.Text = "..."
-        Me.browse.UseVisualStyleBackColor = True
-        '
-        'localPort
-        '
-        Me.localPort.Location = New System.Drawing.Point(96, 76)
-        Me.localPort.MaxLength = 5
-        Me.localPort.Name = "localPort"
-        Me.localPort.Size = New System.Drawing.Size(58, 20)
-        Me.localPort.TabIndex = 5
-        Me.localPort.Text = "6500"
-        '
-        'destination
-        '
-        Me.destination.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.destination.Location = New System.Drawing.Point(96, 50)
-        Me.destination.Name = "destination"
-        Me.destination.Size = New System.Drawing.Size(242, 20)
-        Me.destination.TabIndex = 4
-        Me.destination.Text = "lightbringer.furcadia.com:6500"
-        '
-        'furcadiaPath
-        '
-        Me.furcadiaPath.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.furcadiaPath.Location = New System.Drawing.Point(96, 24)
-        Me.furcadiaPath.Name = "furcadiaPath"
-        Me.furcadiaPath.Size = New System.Drawing.Size(242, 20)
-        Me.furcadiaPath.TabIndex = 3
-        '
-        'portLabel
-        '
-        Me.portLabel.AutoSize = True
-        Me.portLabel.Location = New System.Drawing.Point(27, 79)
-        Me.portLabel.Name = "portLabel"
-        Me.portLabel.Size = New System.Drawing.Size(58, 13)
-        Me.portLabel.TabIndex = 2
-        Me.portLabel.Text = "Local Port:"
-        '
-        'destLabel
-        '
-        Me.destLabel.AutoSize = True
-        Me.destLabel.Location = New System.Drawing.Point(27, 53)
-        Me.destLabel.Name = "destLabel"
-        Me.destLabel.Size = New System.Drawing.Size(63, 13)
-        Me.destLabel.TabIndex = 1
-        Me.destLabel.Text = "Destination:"
-        '
-        'pathLabel
-        '
-        Me.pathLabel.AutoSize = True
-        Me.pathLabel.Location = New System.Drawing.Point(27, 27)
-        Me.pathLabel.Name = "pathLabel"
-        Me.pathLabel.Size = New System.Drawing.Size(32, 13)
-        Me.pathLabel.TabIndex = 0
-        Me.pathLabel.Text = "Path:"
-        '
-        'ioConfigContainer
-        '
-        Me.ioConfigContainer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ioConfigContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ioConfigContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel2
-        Me.ioConfigContainer.IsSplitterFixed = True
-        Me.ioConfigContainer.Location = New System.Drawing.Point(12, 12)
-        Me.ioConfigContainer.Name = "ioConfigContainer"
-        Me.ioConfigContainer.Orientation = System.Windows.Forms.Orientation.Horizontal
-        '
-        'ioConfigContainer.Panel1
-        '
-        Me.ioConfigContainer.Panel1.Controls.Add(Me.clientServerContainer)
-        '
-        'ioConfigContainer.Panel2
-        '
-        Me.ioConfigContainer.Panel2.Controls.Add(Me.configGroup)
-        Me.ioConfigContainer.Size = New System.Drawing.Size(413, 358)
-        Me.ioConfigContainer.SplitterDistance = 207
-        Me.ioConfigContainer.TabIndex = 3
-        '
-        'clientServerContainer
-        '
-        Me.clientServerContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.clientServerContainer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.clientServerContainer.Location = New System.Drawing.Point(0, 0)
-        Me.clientServerContainer.Name = "clientServerContainer"
-        '
-        'clientServerContainer.Panel1
-        '
-        Me.clientServerContainer.Panel1.Controls.Add(Me.clientGroup)
-        Me.clientServerContainer.Panel1MinSize = 128
-        '
-        'clientServerContainer.Panel2
-        '
-        Me.clientServerContainer.Panel2.Controls.Add(Me.serverGroup)
-        Me.clientServerContainer.Panel2MinSize = 128
-        Me.clientServerContainer.Size = New System.Drawing.Size(413, 207)
-        Me.clientServerContainer.SplitterDistance = 203
-        Me.clientServerContainer.TabIndex = 0
-        '
-        'browseDialog
-        '
-        Me.browseDialog.DefaultExt = "exe"
-        Me.browseDialog.Filter = "Furcadia Client (Furcadia.exe)|Furcadia.exe"
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(437, 383)
-        Me.Controls.Add(Me.ioConfigContainer)
+        Me.ClientSize = New System.Drawing.Size(429, 362)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GrpAction)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.clientGroup)
+        Me.Controls.Add(Me.BTN_Config)
+        Me.Controls.Add(Me.BTN_Go)
         Me.MinimumSize = New System.Drawing.Size(445, 400)
         Me.Name = "Main"
         Me.Text = "Simple Proxy"
         Me.clientGroup.ResumeLayout(False)
-        Me.clientGroup.PerformLayout()
-        Me.serverGroup.ResumeLayout(False)
-        Me.serverGroup.PerformLayout()
-        Me.configGroup.ResumeLayout(False)
-        Me.configGroup.PerformLayout()
-        Me.ioConfigContainer.Panel1.ResumeLayout(False)
-        Me.ioConfigContainer.Panel2.ResumeLayout(False)
-        Me.ioConfigContainer.ResumeLayout(False)
-        Me.clientServerContainer.Panel1.ResumeLayout(False)
-        Me.clientServerContainer.Panel2.ResumeLayout(False)
-        Me.clientServerContainer.ResumeLayout(False)
+        Me.GrpAction.ResumeLayout(False)
+        Me.GrpAction.PerformLayout()
+        CType(Me._ne, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._nw, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.se_, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.sw_, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents clientGroup As System.Windows.Forms.GroupBox
-    Friend WithEvents toClient As System.Windows.Forms.TextBox
-    Friend WithEvents clientList As System.Windows.Forms.ListBox
-    Friend WithEvents sendToClient As System.Windows.Forms.Button
-    Friend WithEvents serverGroup As System.Windows.Forms.GroupBox
-    Friend WithEvents sendToServer As System.Windows.Forms.Button
+    Friend WithEvents ServerList As System.Windows.Forms.ListBox
+    Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
+    Friend WithEvents BTN_Config As System.Windows.Forms.Button
+    Friend WithEvents BTN_Go As System.Windows.Forms.Button
+    Friend WithEvents GrpAction As System.Windows.Forms.GroupBox
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents BTN_TurnR As System.Windows.Forms.Button
+    Friend WithEvents _ne As System.Windows.Forms.PictureBox
+    Friend WithEvents _nw As System.Windows.Forms.PictureBox
+    Friend WithEvents use_ As System.Windows.Forms.Button
+    Friend WithEvents get_ As System.Windows.Forms.Button
+    Friend WithEvents se_ As System.Windows.Forms.PictureBox
+    Friend WithEvents sw_ As System.Windows.Forms.PictureBox
+    Friend WithEvents DreamList As System.Windows.Forms.ListBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents toServer As System.Windows.Forms.TextBox
-    Friend WithEvents serverList As System.Windows.Forms.ListBox
-    Friend WithEvents configGroup As System.Windows.Forms.GroupBox
-    Friend WithEvents localPort As System.Windows.Forms.TextBox
-    Friend WithEvents destination As System.Windows.Forms.TextBox
-    Friend WithEvents furcadiaPath As System.Windows.Forms.TextBox
-    Friend WithEvents portLabel As System.Windows.Forms.Label
-    Friend WithEvents destLabel As System.Windows.Forms.Label
-    Friend WithEvents pathLabel As System.Windows.Forms.Label
-    Friend WithEvents browse As System.Windows.Forms.Button
-    Friend WithEvents go As System.Windows.Forms.Button
-    Friend WithEvents ioConfigContainer As System.Windows.Forms.SplitContainer
-    Friend WithEvents clientServerContainer As System.Windows.Forms.SplitContainer
-    Friend WithEvents browseDialog As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents sendToServer As System.Windows.Forms.Button
 
 End Class

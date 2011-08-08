@@ -76,6 +76,7 @@
     <Compile Include="IO\RegistryExplorer.cs" />
     <Compile Include="Net\ClientStructure.cs" />
     <Compile Include="Net\INetMessage.cs" />
+    <Compile Include="Net\Movement.cs" />
     <Compile Include="Net\NetProxy.cs" />
     <Compile Include="Net\NetMessage.cs" />
     <Compile Include="Net\PounceConnection.cs" />
