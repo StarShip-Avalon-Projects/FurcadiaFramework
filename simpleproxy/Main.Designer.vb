@@ -45,6 +45,7 @@ Partial Class Main
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.toServer = New System.Windows.Forms.TextBox()
         Me.sendToServer = New System.Windows.Forms.Button()
+        Me.StandAloneChkBx = New System.Windows.Forms.CheckBox()
         Me.clientGroup.SuspendLayout()
         Me.GrpAction.SuspendLayout()
         CType(Me._ne, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -119,7 +120,7 @@ Partial Class Main
         Me.GrpAction.Controls.Add(Me.sw_)
         Me.GrpAction.Location = New System.Drawing.Point(253, 201)
         Me.GrpAction.Name = "GrpAction"
-        Me.GrpAction.Size = New System.Drawing.Size(164, 162)
+        Me.GrpAction.Size = New System.Drawing.Size(164, 121)
         Me.GrpAction.TabIndex = 14
         Me.GrpAction.TabStop = False
         Me.GrpAction.Text = "Actios"
@@ -320,11 +321,22 @@ Partial Class Main
         Me.sendToServer.Text = "->"
         Me.sendToServer.UseVisualStyleBackColor = True
         '
+        'StandAloneChkBx
+        '
+        Me.StandAloneChkBx.AutoSize = True
+        Me.StandAloneChkBx.Location = New System.Drawing.Point(246, 328)
+        Me.StandAloneChkBx.Name = "StandAloneChkBx"
+        Me.StandAloneChkBx.Size = New System.Drawing.Size(81, 17)
+        Me.StandAloneChkBx.TabIndex = 47
+        Me.StandAloneChkBx.Text = "CheckBox1"
+        Me.StandAloneChkBx.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(429, 362)
+        Me.Controls.Add(Me.StandAloneChkBx)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GrpAction)
         Me.Controls.Add(Me.GroupBox1)
@@ -346,6 +358,7 @@ Partial Class Main
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents clientGroup As System.Windows.Forms.GroupBox
@@ -372,5 +385,6 @@ Partial Class Main
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents toServer As System.Windows.Forms.TextBox
     Friend WithEvents sendToServer As System.Windows.Forms.Button
+    Friend WithEvents StandAloneChkBx As System.Windows.Forms.CheckBox
 
 End Class

@@ -7,6 +7,7 @@ Public Class ConfigStructs
         Public Shared lPort As Integer = 6700
         Public Shared sPort As Integer = 6500
         Public Shared Host As String = "lightbringer.furcadia.com"
+        Public Shared StandAlone As Boolean = False
 
     End Structure
 
