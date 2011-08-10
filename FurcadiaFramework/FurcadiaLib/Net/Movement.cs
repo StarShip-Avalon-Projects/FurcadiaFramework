@@ -16,7 +16,7 @@ namespace Furcadia.Net
         /// **Spawn is out dated. 
         ///   New information requires a 4byte for AFK flag at the end
         /// </summary>
-        public static Dictionary<uint, FURRE> List = new Dictionary<uint, FURRE>();
+        public static Dictionary<int, FURRE> List = new Dictionary<int, FURRE>();
 
         private string _Name, _Title, _Lines, _Rating, _URL, _Owner;
 
@@ -69,9 +69,11 @@ namespace Furcadia.Net
         private string _Name;
         private string _Color;
         private string _Desc;
+        private char _ColorType;
         private uint _X;
         private uint _Y;
         private uint _ID;
+        private string _Shape;
         private uint _Flag;
         private TimeSpan _AFK;
 
@@ -80,6 +82,17 @@ namespace Furcadia.Net
         {
             get { return _Name; }
             set { _Name = value; }
+        }
+        public char ColorType
+        {
+            get { return _ColorType; }
+            set { _ColorType = value; }
+        }
+        public string Shape
+        {
+            get { return _Shape; }
+            set { _Shape = value; }
+
         }
         public string Color
         {
@@ -118,12 +131,27 @@ namespace Furcadia.Net
             get { return _AFK; }
             set { _AFK = value; }
         }
+        public void Clear()
+        {
+
+            _Name = "";
+            _ColorType = '\0';
+            _Color = "";
+            _Desc = "";
+            _X = 0;
+            _Y = 0;
+            _Shape = "";
+            _ID = 0;
+            _Flag = 0;
+            _AFK = new TimeSpan(0, 0, 0, 0, 0);
+        }
+
     }
 
     /// <summary>
     /// Furcadia reconmended Material to support thier Protocol Standards
     /// </summary>
-    class Movement
+    public class Movement
     {
         public enum Flags
         {

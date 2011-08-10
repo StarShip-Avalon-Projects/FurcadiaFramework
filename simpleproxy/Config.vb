@@ -21,11 +21,13 @@ Public Class Config
         cMain.Host = TxtBx_CharIni.Text
         cMain.sPort = Convert.ToInt32(TxtSPort.Text)
         cMain.lPort = Convert.ToInt32(TxtHPort.Text)
+        cMain.StandAlone = Convert.ToBoolean(StandAloneChkBx.Checked)
         cBot.IniFile = TxtBx_CharIni.Text
         'Save the settings to the ini file
         MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "Host", cMain.Host)
-        MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "SPort", cMain.sPort)
-        MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "LPort", cMain.lPort)
+        MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "SPort", cMain.sPort.ToString)
+        MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "LPort", cMain.lPort.ToString)
+        MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "StandAlone", cMain.StandAlone.ToString)
         MyIni.IniWrite(pPath & "/Settings.Ini", "Bot", "BotIni", cBot.IniFile)
         Me.Close()
 
@@ -44,13 +46,18 @@ Public Class Config
         End If
         If File.Exists(pPath & "/Settings.Ini") Then
             cMain.Host = MyIni.IniRead(pPath & "/Settings.Ini", "Main", "Host")
-            cMain.sPort = MyIni.IniRead(pPath & "/Settings.Ini", "Main", "SPort")
-            cMain.lPort = MyIni.IniRead(pPath & "/Settings.Ini", "Main", "LPort")
+            cMain.sPort = Convert.ToInt32(MyIni.IniRead(pPath & "/Settings.Ini", "Main", "SPort"))
+            cMain.lPort = Convert.ToInt32(MyIni.IniRead(pPath & "/Settings.Ini", "Main", "LPort"))
+            If Not ("" = MyIni.IniRead(pPath & "/Settings.Ini", "Main", "StandAlone")) Then
+                cMain.StandAlone = Convert.ToBoolean(MyIni.IniRead(pPath & "/Settings.Ini", "Main", "StandAlone"))
+            End If
             cBot.IniFile = MyIni.IniRead(pPath & "/Settings.Ini", "Bot", "BotIni")
+
         End If
         TxtBx_CharIni.Text = cMain.Host
         TxtSPort.Text = cMain.sPort.ToString
         TxtHPort.Text = cMain.lPort.ToString
+        StandAloneChkBx.Checked = cMain.StandAlone
         TxtBx_CharIni.Text = cBot.IniFile
     End Sub
 

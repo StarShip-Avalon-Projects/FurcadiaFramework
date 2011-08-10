@@ -30,9 +30,19 @@ namespace Furcadia.Net
 		public delegate string DataEventHandler(string data);
 		public delegate void ErrorEventHandler(Exception e);
 		/// <summary>
-		///This is triggered when the
+		///This is triggered when the 
 		/// </summary>
 		public event ActionDelegate Connected;
+        /// <summary>
+        ///This is triggered when the Server Disconnects
+        /// </summary>
+        public event ActionDelegate ServerDisConnected;
+        /// <summary>
+        ///This is triggered when the Client Disconnects
+        /// </summary>
+        public event ActionDelegate ClientDisConnected;
+
+
 		/// <summary>
 		/// This is triggered when the Server sends data to the client.
 		/// </summary>
@@ -72,7 +82,7 @@ namespace Furcadia.Net
 		public static int _lport = 6700;
         private int _procID;
 		private static System.Timers.Timer NewsTimer;
-
+        private static bool _StandAloneMode = false, Clientflag = true;
 		private string _proc = "Furcadia.exe", _procpath, _procCMD ="-pick";
 		#endregion
 		/// <summary>
@@ -207,7 +217,17 @@ namespace Furcadia.Net
 				else
 					return false; }
 		}
-		
+
+        /// <summary>
+        /// Standalone Mode
+        /// Keep Connection after Cloient Closes/Disconnects
+        /// </summary>
+        public bool StandAloneMode
+        {
+            get { return _StandAloneMode;  }
+            set { _StandAloneMode = value; }
+        }
+
 		public bool IsClientConnected
 		{
 			get {
@@ -371,6 +391,25 @@ namespace Furcadia.Net
 			catch (Exception e) { if (Error != null) Error(e); }
 		}
 
+
+        /// <summary>
+        /// Terminates Client the connection.
+        /// </summary>
+       public void ClientKill()
+        {
+            			try
+			{
+				if (client != null && client.Connected == true){
+					NetworkStream clientStream = client.GetStream();
+					if (clientStream != null) clientStream.Close();
+					client.Close();
+				}
+				
+				
+			}
+			catch (Exception e) { if (Error != null) Error(e); }
+        }
+
 		#endregion
 
 		#region Private Methods
@@ -395,6 +434,7 @@ namespace Furcadia.Net
 				if (Connected != null)
 				{
 					Connected();
+                    Clientflag = true;
 					/// Delete proxy.ini or restore settings.ini
 					if (UseProxyIni)
 					{
@@ -439,8 +479,16 @@ namespace Furcadia.Net
 				clientBuild = System.Text.Encoding.GetEncoding (EncoderPage).GetString (clientBuffer, 0, read);
 				while (client.GetStream ().DataAvailable) {
 					//clientBuffer.Length = NetProxy.BUFFER_CAP
-					int pos = client.GetStream ().Read (clientBuffer, 0, clientBuffer.Length);
-					clientBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(clientBuffer, 0, pos);
+
+                    if (clientBuffer.Length <= 0)
+                    {
+
+                        ClientDisConnected();
+
+                    }
+
+		            int pos = client.GetStream ().Read (clientBuffer, 0, clientBuffer.Length);
+					clientBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(clientBuffer, 0, pos);			
 				}
 				//Every line should end with '\n'
 				//Split function removes the last character
@@ -456,51 +504,86 @@ namespace Furcadia.Net
 					//The '\n' separates the server/client protocols
 					if (msg.GetString().EndsWith("\n") == false) msg.Write("\n");
 					//Send it on it's way...
-					SendServer(msg);
-				}
+                    if (IsServerConnected && (StandAloneMode == true && msg.GetString() == "quit" + "\n"))
+                    {
+                        //Don't know if this is the right way to do this
+                        //But it Works.
+                        // This Stops Server Side from writing to a Fake Client
+                        Clientflag = false;
+
+                        ClientDisConnected();
+                        
+                       // client.Close();
+                       // return;
+                    }
+                    else if (IsServerConnected && (StandAloneMode == true && msg.GetString() != "quit" + "\n"))
+                    {
+                        SendServer(msg);
+                        
+                    }
+                    else if (IsServerConnected && StandAloneMode == false)
+                    {
+                        SendServer(msg);
+                    }
 			}
+            }
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
 			if (client.Connected && clientBuild.Length >= 1)
 			{
 				client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
 			}
 		}
-
+        
 		private void GetServerData (IAsyncResult ar)
 		{
 			try
 			{
-				if (server.Connected == false)
+                if (IsServerConnected == false)
 				{
 					throw new SocketException((int)SocketError.NotConnected);
 				}
 				List<string> lines = new List<string> ();
 				int read = server.GetStream ().EndRead (ar);
 				//If we have left over data add it to this server build
-				if (!string.IsNullOrEmpty (_ServerLeftOvers))
+                if (!string.IsNullOrEmpty(_ServerLeftOvers) && _ServerLeftOvers.Length > 0)
 					serverBuild += _ServerLeftOvers;
 				serverBuild = System.Text.Encoding.GetEncoding (EncoderPage).GetString (serverBuffer, 0, read);
-				while (server.GetStream ().DataAvailable) {
+                while ( server.GetStream().DataAvailable == true)
+                {
+
+                    if (serverBuffer.Length <= 0)
+                    {
+
+                        ServerDisConnected();
+
+                    }
 					int pos = server.GetStream ().Read (serverBuffer, 0, serverBuffer.Length);
 					serverBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, pos);
 				}
 				lines.AddRange(serverBuild.Split('\n'));
-				for (int i = 0; i < lines.Count; i++)
+				for (int i = 0; i < lines.Count - 1 ; i++)
 				{
 					if (!lines[i].Contains("\n"))
 					{
 						_ServerLeftOvers += lines[i] + "\n";
 					}
-					if (i < lines.Count)
+					if (i < lines.Count -1 && IsClientConnected == true)
 					{
 						NetMessage msg = new NetMessage();
 						msg.Write(((ServerData != null) ? ServerData(lines[i]) : lines[i]) + "\n");
-						SendClient(msg);
+
+                        //Don't know if this is the right way to do this
+                        //But it Works.
+                        // Clientflag Stops Server Side from writing to a Fake Client
+                        if (IsClientConnected && Clientflag)
+                        {
+                            SendClient(msg);
+                        }
 					}
 				}
 			}
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
-			if (server.Connected && serverBuild.Length != 0)
+			if (IsServerConnected && serverBuild.Length > 0)
 				server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
 		}
 		#endregion

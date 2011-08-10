@@ -35,6 +35,7 @@
         Me.TxtHPort = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.browseDialog = New System.Windows.Forms.OpenFileDialog()
+        Me.StandAloneChkBx = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -97,6 +98,7 @@
         '
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.StandAloneChkBx)
         Me.GroupBox1.Controls.Add(Me.BTN_Browse)
         Me.GroupBox1.Controls.Add(Me.BTN_Ok)
         Me.GroupBox1.Controls.Add(Me.BTN_Cancel)
@@ -166,6 +168,16 @@
         Me.browseDialog.DefaultExt = "ini"
         Me.browseDialog.Filter = "Furcadia Character Files)|*.ini"
         '
+        'StandAloneChkBx
+        '
+        Me.StandAloneChkBx.AutoSize = True
+        Me.StandAloneChkBx.Location = New System.Drawing.Point(26, 138)
+        Me.StandAloneChkBx.Name = "StandAloneChkBx"
+        Me.StandAloneChkBx.Size = New System.Drawing.Size(84, 17)
+        Me.StandAloneChkBx.TabIndex = 50
+        Me.StandAloneChkBx.Text = "Stand Alone"
+        Me.StandAloneChkBx.UseVisualStyleBackColor = True
+        '
         'Config
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -191,6 +203,7 @@
     Friend WithEvents TxtHPort As System.Windows.Forms.TextBox
         Friend WithEvents Label4 As System.Windows.Forms.Label
         Friend WithEvents BTN_Browse As System.Windows.Forms.Button
-        Friend WithEvents browseDialog As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents browseDialog As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents StandAloneChkBx As System.Windows.Forms.CheckBox
     End Class
 
