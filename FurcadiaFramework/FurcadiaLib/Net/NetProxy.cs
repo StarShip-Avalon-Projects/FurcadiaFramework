@@ -7,6 +7,7 @@
 
 using System;
 using System.Diagnostics;
+using System.Security.Permissions;
 //using System.ComponentModel;
 using System.Net;
 using System.Net.Sockets;
@@ -62,6 +63,9 @@ namespace Furcadia.Net
 		/// This is triggered when a handled Exception is thrown.
 		/// </summary>
 		public event ErrorEventHandler Error;
+
+
+
 		#endregion
 
 		#region Private Declarations
@@ -84,6 +88,8 @@ namespace Furcadia.Net
 		private static System.Timers.Timer NewsTimer;
         private static bool _StandAloneMode = false, Clientflag = true;
 		private string _proc = "Furcadia.exe", _procpath, _procCMD ="-pick";
+
+      
 		#endregion
 		/// <summary>
 		/// Use proxy.ini if it exists. otherwise use settings.ini.
@@ -264,6 +270,8 @@ namespace Furcadia.Net
 			ProcessPath = Path.GetDirectoryName(file);
 			Process = Path.GetFileName(file);
 		}
+
+
 		/// <summary>
 		/// Connects to the Furcadia Server and starts the mini proxy.
 		/// </summary>
@@ -282,10 +290,12 @@ namespace Furcadia.Net
 				/// otherwise use settings.ini to avoid UAC issues on %Program Files%
 				FileStream proxyStream = null;
 				try{
-					proxyStream = File.OpenWrite(fIni);
+					/// Still Causes fileAccess Exception on 7
+                    proxyStream = File.OpenWrite(fIni);
 					proxyStream.Write(System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(proxyIni), 0, proxyIni.Length);
 					proxyStream.Flush();
 					proxyStream.Close();
+                    UseProxyIni = true;
 				}catch{
 					UseProxyIni = false;
 					Settings.InitializeFurcadiaSettings();
@@ -330,7 +340,14 @@ namespace Furcadia.Net
 				if (!File.Exists(Path.Combine(ProcessPath,Process))) throw new Exception("Client executable '"+Process+"' not found.");
 				System.Diagnostics.Process proc = System.Diagnostics.Process.Start(Process,ProcessCMD );
 				proc.EnableRaisingEvents = true;
-				proc.Exited += delegate { if (this.ClientExited != null) this.ClientExited(); };
+                proc.Exited += delegate
+                {
+                    if (this.ClientExited != null)
+                    {
+                        //ClientDisConnected();
+                        this.ClientExited();
+                    }
+                 };
                 ProcID = proc.Id;
                 
 			}
@@ -392,24 +409,6 @@ namespace Furcadia.Net
 		}
 
 
-        /// <summary>
-        /// Terminates Client the connection.
-        /// </summary>
-       public void ClientKill()
-        {
-            			try
-			{
-				if (client != null && client.Connected == true){
-					NetworkStream clientStream = client.GetStream();
-					if (clientStream != null) clientStream.Close();
-					client.Close();
-				}
-				
-				
-			}
-			catch (Exception e) { if (Error != null) Error(e); }
-        }
-
 		#endregion
 
 		#region Private Methods
@@ -463,6 +462,8 @@ namespace Furcadia.Net
 			Settings.RestoreFurcadiaSettings();
 		}
 
+
+
 		private void GetClientData (IAsyncResult ar)
 		{
 			try
@@ -493,7 +494,7 @@ namespace Furcadia.Net
 				//Every line should end with '\n'
 				//Split function removes the last character
 				lines.AddRange(clientBuild.Split('\n'));
-				for (int i = 0; i < lines.Count -1 ; i++)
+				for (int i = 0; i < lines.Count  ; i++)
 				{
 					INetMessage msg = new NetMessage();
 					//Send the line to the ClientData event and write the return value to a new NetMessage
@@ -561,7 +562,7 @@ namespace Furcadia.Net
 					serverBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, pos);
 				}
 				lines.AddRange(serverBuild.Split('\n'));
-				for (int i = 0; i < lines.Count - 1 ; i++)
+				for (int i = 0; i < lines.Count  ; i++)
 				{
 					if (!lines[i].Contains("\n"))
 					{

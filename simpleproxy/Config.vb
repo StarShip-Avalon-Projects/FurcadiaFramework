@@ -6,8 +6,10 @@ Imports Furcadia.IO
 
 Public Class Config
     Dim MyConfig As New ConfigStructs
-    Dim pPath As String = MyConfig.pPath()
+    Dim pPath As String = ConfigStructs.pPath()
     Dim MyIni As New IniMod
+    Public cMain As cMain
+    Public cBot As cBot
 
 
 
@@ -18,17 +20,14 @@ Public Class Config
 
     Private Sub BTN_Ok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BTN_Ok.Click
         'apply the Settings
-        cMain.Host = TxtBx_CharIni.Text
+        cMain.Host = TxtBx_Server.Text
         cMain.sPort = Convert.ToInt32(TxtSPort.Text)
         cMain.lPort = Convert.ToInt32(TxtHPort.Text)
         cMain.StandAlone = Convert.ToBoolean(StandAloneChkBx.Checked)
         cBot.IniFile = TxtBx_CharIni.Text
         'Save the settings to the ini file
-        MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "Host", cMain.Host)
-        MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "SPort", cMain.sPort.ToString)
-        MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "LPort", cMain.lPort.ToString)
-        MyIni.IniWrite(pPath & "/Settings.Ini", "Main", "StandAlone", cMain.StandAlone.ToString)
-        MyIni.IniWrite(pPath & "/Settings.Ini", "Bot", "BotIni", cBot.IniFile)
+        cMain.SaveMainSettings()
+        cBot.SaveBotSettings()
         Me.Close()
 
     End Sub
@@ -41,20 +40,9 @@ Public Class Config
     End Sub
 
     Public Sub Loadconfig()
-        If (Not System.IO.Directory.Exists(pPath)) Then
-            System.IO.Directory.CreateDirectory(pPath)
-        End If
-        If File.Exists(pPath & "/Settings.Ini") Then
-            cMain.Host = MyIni.IniRead(pPath & "/Settings.Ini", "Main", "Host")
-            cMain.sPort = Convert.ToInt32(MyIni.IniRead(pPath & "/Settings.Ini", "Main", "SPort"))
-            cMain.lPort = Convert.ToInt32(MyIni.IniRead(pPath & "/Settings.Ini", "Main", "LPort"))
-            If Not ("" = MyIni.IniRead(pPath & "/Settings.Ini", "Main", "StandAlone")) Then
-                cMain.StandAlone = Convert.ToBoolean(MyIni.IniRead(pPath & "/Settings.Ini", "Main", "StandAlone"))
-            End If
-            cBot.IniFile = MyIni.IniRead(pPath & "/Settings.Ini", "Bot", "BotIni")
-
-        End If
-        TxtBx_CharIni.Text = cMain.Host
+        cMain.LoadMainSettings()
+        cBot.LoadBotSettings()
+        TxtBx_Server.Text = cMain.Host
         TxtSPort.Text = cMain.sPort.ToString
         TxtHPort.Text = cMain.lPort.ToString
         StandAloneChkBx.Checked = cMain.StandAlone
