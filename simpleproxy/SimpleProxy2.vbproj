@@ -65,6 +65,12 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Debug.Designer.vb">
+      <DependentUpon>Debug.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Debug.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ini.vb" />
     <Compile Include="Config.Designer.vb">
       <DependentUpon>Config.vb</DependentUpon>
@@ -99,6 +105,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Config.resx">
       <DependentUpon>Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debug.resx">
+      <DependentUpon>Debug.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <SubType>Designer</SubType>

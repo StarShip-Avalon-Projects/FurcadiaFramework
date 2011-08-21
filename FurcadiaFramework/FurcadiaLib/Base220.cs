@@ -5,7 +5,7 @@
 */
 using System;
 using System.Text;
-
+using Furcadia.Net;
 namespace Furcadia
 {
 	/// <summary>
@@ -128,8 +128,9 @@ namespace Furcadia
         }
         public byte[] ToByteArray(int nDigits)
         {
-            System.Text.ASCIIEncoding enc = new ASCIIEncoding();
-            return enc.GetBytes(ToString(nDigits));
+           // System.Text.Encoding.GetEncoding(EncoderPage).GetBytes 
+            
+            return System.Text.Encoding.GetEncoding(NetProxy.EncoderPage).GetBytes(ToString(nDigits));
         }
         public uint FromString(string s)
         {

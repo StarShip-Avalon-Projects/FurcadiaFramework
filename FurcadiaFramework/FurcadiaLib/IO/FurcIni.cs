@@ -42,7 +42,7 @@ namespace Furcadia.IO
             catch (Exception e)
             {
 
-                return false;
+                throw new Exception("++ ERROR: Couldn't Load " + file + " to change.");
             }
 
         }

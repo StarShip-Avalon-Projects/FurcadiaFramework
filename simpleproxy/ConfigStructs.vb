@@ -86,7 +86,7 @@ Public Class ConfigStructs
             End Set
         End Property
 
-        '''Time Stamp mode
+        'Time Stamp mode
         ' 0 = off
         ' 1 = time
         ' 2 = Date Time
@@ -104,47 +104,50 @@ Public Class ConfigStructs
             _TimeStamp = 0
         End Sub
         Public Sub LoadMainSettings()
-            If Not File.Exists(SetFile) Then
+            System.IO.Directory.CreateDirectory(pPath())
+            'If Not File.Exists(SetFile) Then
 
-            End If
-            ' Dim _Host2 As String = MyIni.IniRead(SetFile, "Main", "Host")
-            If MyIni.IniRead(SetFile, "Main", "Host") <> "" Then
-                _Host = MyIni.IniRead(SetFile, "Main", "Host")
-            Else
-                _Host = "lightbringer.furcadia.com"
-            End If
-            If MyIni.IniRead(SetFile, "Main", "SPort") <> "" Then
-                _sPort = Convert.ToInt32(MyIni.IniRead(SetFile, "Main", "SPort"))
-            Else
-                _sPort = 6500
-            End If
-            If MyIni.IniRead(SetFile, "Main", "LPort") <> "" Then
-                _lPort = Convert.ToInt32(MyIni.IniRead(SetFile, "Main", "LPort"))
-            Else
-                _lPort = 6700
-            End If
-            If MyIni.IniRead(SetFile, "Main", "StandAlone") <> "" Then
-                _StandAlone = Convert.ToBoolean(MyIni.IniRead(SetFile, "Main", "StandAlone"))
-            Else
-                _StandAlone = False
-            End If
 
-            If MyIni.IniRead(SetFile, "Main", "Log") <> "" Then
-                _log = Convert.ToBoolean(MyIni.IniRead(SetFile, "Main", "Log"))
-            Else
-                _log = False
-            End If
-            If MyIni.IniRead(SetFile, "Main", "Debug") <> "" Then
-                _debug = Convert.ToBoolean(MyIni.IniRead(SetFile, "Main", "Debug"))
-            Else
-                _debug = False
-            End If
 
-            If MyIni.IniRead(SetFile, "Main", "TimeStamp") <> "" Then
-                _TimeStamp = Convert.ToUInt16(MyIni.IniRead(SetFile, "Main", "TimeStamp"))
-            Else
-                _TimeStamp = 0
-            End If
+            '    End If
+                ' Dim _Host2 As String = MyIni.IniRead(SetFile, "Main", "Host")
+                If MyIni.IniRead(SetFile, "Main", "Host") <> "" Then
+                    _Host = MyIni.IniRead(SetFile, "Main", "Host")
+                Else
+                    _Host = "lightbringer.furcadia.com"
+                End If
+                If MyIni.IniRead(SetFile, "Main", "SPort") <> "" Then
+                    _sPort = Convert.ToInt32(MyIni.IniRead(SetFile, "Main", "SPort"))
+                Else
+                    _sPort = 6500
+                End If
+                If MyIni.IniRead(SetFile, "Main", "LPort") <> "" Then
+                    _lPort = Convert.ToInt32(MyIni.IniRead(SetFile, "Main", "LPort"))
+                Else
+                    _lPort = 6700
+                End If
+                If MyIni.IniRead(SetFile, "Main", "StandAlone") <> "" Then
+                    _StandAlone = Convert.ToBoolean(MyIni.IniRead(SetFile, "Main", "StandAlone"))
+                Else
+                    _StandAlone = False
+                End If
+
+                If MyIni.IniRead(SetFile, "Main", "Log") <> "" Then
+                    _log = Convert.ToBoolean(MyIni.IniRead(SetFile, "Main", "Log"))
+                Else
+                    _log = False
+                End If
+                If MyIni.IniRead(SetFile, "Main", "Debug") <> "" Then
+                    _debug = Convert.ToBoolean(MyIni.IniRead(SetFile, "Main", "Debug"))
+                Else
+                    _debug = False
+                End If
+
+                If MyIni.IniRead(SetFile, "Main", "TimeStamp") <> "" Then
+                    _TimeStamp = Convert.ToUInt16(MyIni.IniRead(SetFile, "Main", "TimeStamp"))
+                Else
+                    _TimeStamp = 0
+                End If
 
         End Sub
         Public Sub SaveMainSettings()

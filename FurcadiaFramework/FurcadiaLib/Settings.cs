@@ -39,7 +39,7 @@ namespace Furcadia
         {
             Boolean Check;
           FurcSettings =  FurcIni.LoadFurcadiaSettings(sPath, sFile);
-          BackupSettings = FurcIni.LoadFurcadiaSettings(sPath, sFile);
+          BackupSettings = FurcSettings;
           if (FurcSettings != null) Check = true;
           if (BackupSettings != null) Check = true;
           else { Check = false; }

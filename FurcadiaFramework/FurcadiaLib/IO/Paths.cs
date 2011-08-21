@@ -29,7 +29,7 @@ namespace Furcadia.IO
 			if (!String.IsNullOrEmpty(_FurcadiaDocpath)) return _FurcadiaDocpath;
 			string path = GetLocaldirPath();
 			if (String.IsNullOrEmpty(path))
-				path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
 				                    "Furcadia");
 
 			if (Directory.Exists(path))
@@ -56,6 +56,19 @@ namespace Furcadia.IO
 				return @"SOFTWARE\Dragon's Eye Productions\Furcadia\";
 			else return @"SOFTWARE\Dragon's Eye Productions\Furcadia\";
 		}
+
+        static string ProgramFilesx86()
+        {
+            if (8 == IntPtr.Size
+                || (!String.IsNullOrEmpty(Environment.GetEnvironmentVariable("PROCESSOR_ARCHITEW6432"))))
+            {
+                return Environment.GetEnvironmentVariable("ProgramFiles(x86)");
+            }
+
+            return Environment.GetEnvironmentVariable("ProgramFiles");
+        }
+
+
 
 		private static string _installpath;
 		/// <summary>
@@ -90,7 +103,7 @@ namespace Furcadia.IO
 				}
 
 				// Making a guess from the FurcadiaDefaultPath property.
-				path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+                path = Path.Combine(ProgramFilesx86(),
 				                    "Furcadia");
 			}
 			// Scanning registry for a path (NON-WINDOWS ONLY)
@@ -142,8 +155,7 @@ namespace Furcadia.IO
 				// Making a guess from the FurcadiaPath or FurcadiaDefaultPath property.
 				path = GetInstallPath();
 				if (path == string.Empty)
-					path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
-					                    "Furcadia");
+                    path = Path.Combine(ProgramFilesx86(), "Furcadia");
 
 				path = Path.Combine(path,"/patches/default");
 			}else{
@@ -169,7 +181,7 @@ namespace Furcadia.IO
 			if (!string.IsNullOrEmpty(_localsettingspath)) return _localsettingspath;
 			else _localsettingspath = GetLocaldirPath();
 			if (String.IsNullOrEmpty(_localsettingspath))
-				_localsettingspath = Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                _localsettingspath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
 				                                  "Dragon's Eye Productions/Furcadia");
 			return _localsettingspath;
 		}
@@ -181,7 +193,7 @@ namespace Furcadia.IO
 		/// <returns>All Users Application Data path for Furcadia.</returns>
 		public static string GetCachePath()
 		{
-			if (!String.IsNullOrEmpty(_cachepath)) return _cachepath;
+            if (!String.IsNullOrEmpty(_cachepath)) return _cachepath;
 			else _cachepath = GetLocaldirPath();
 			if (String.IsNullOrEmpty(_cachepath))
 				_cachepath = Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
