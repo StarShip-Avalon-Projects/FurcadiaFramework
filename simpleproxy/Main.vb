@@ -34,7 +34,8 @@ Public Class Main
     Private WithEvents simpleProxy As NetProxy
     Private ControlThread As Thread = Nothing
     'UpDate Btn-Go Text and Actions Group Enable
-    Delegate Sub UpDateBtn_GoCallback(ByVal [text] As String)
+    Delegate Sub UpDateBtn_GoCallback(ByVal [text] As Object)
+    Delegate Sub UpDateBtn_StandCallback(ByVal [furre] As FURRE)
     Delegate Sub AddDataToListCaller(ByVal lb As Object, ByVal obj As Object)
     Delegate Sub UpDateDreamListCaller(ByVal [dummy] As String)
 #End Region
@@ -254,6 +255,7 @@ Public Class Main
                 Player.Color = data.Substring(sColorPos, ColorSize)
                 DREAM.List.Item(Player.ID) = Player
                 IsBot(Player)
+
                 'Hide Avatar
             ElseIf data.StartsWith("C") <> 0 And loggingIn = 2 Then 'And loggingIn = False
                 Player.ID = ConvertFromBase220(data.Substring(1, 4))
@@ -495,55 +497,58 @@ Public Class Main
 
     Public Function IsBot(ByVal player As FURRE) As Boolean
         If player.ShortName <> Bot.ShortName Then Return False
-
-        'Update inteface
-        Select Case player.Position
-            Case 0
-                BtnSit_stand_Lie.Text = "stand"
-            Case 1
-                BtnSit_stand_Lie.Text = "lay"
-            Case 2
-                BtnSit_stand_Lie.Text = "lay"
-            Case 3
-                BtnSit_stand_Lie.Text = "lay"
-            Case 4
-                BtnSit_stand_Lie.Text = "stand"
-            Case 5
-                BtnSit_stand_Lie.Text = "lay"
-            Case 6
-                BtnSit_stand_Lie.Text = "lay"
-            Case 7
-                BtnSit_stand_Lie.Text = "lay"
-            Case 8
-                BtnSit_stand_Lie.Text = "stand"
-            Case 9
-                BtnSit_stand_Lie.Text = "lay"
-            Case 10
-                BtnSit_stand_Lie.Text = "lay"
-            Case 11
-                BtnSit_stand_Lie.Text = "lay"
-            Case 12
-                BtnSit_stand_Lie.Text = "stand"
-            Case 13
-                BtnSit_stand_Lie.Text = "stand"
-            Case 14
-                BtnSit_stand_Lie.Text = "stand"
-            Case 15
-                BtnSit_stand_Lie.Text = "stand"
-            Case 16
-                BtnSit_stand_Lie.Text = "sit"
-            Case 17
-                BtnSit_stand_Lie.Text = "sit"
-            Case 18
-                BtnSit_stand_Lie.Text = "sit"
-            Case 19
-                BtnSit_stand_Lie.Text = "sit"
-            Case Else
-
-        End Select
         Bot = player
-        Return True
+        If BtnSit_stand_Lie.InvokeRequired Then
+            Dim d As New UpDateBtn_StandCallback(AddressOf IsBot)
+            Me.Invoke(d, [player])
+        Else
+            'Update inteface
+            Select Case Bot.Position
+                Case 0
+                    BtnSit_stand_Lie.Text = "stand"
+                Case 1
+                    BtnSit_stand_Lie.Text = "lay"
+                Case 2
+                    BtnSit_stand_Lie.Text = "lay"
+                Case 3
+                    BtnSit_stand_Lie.Text = "lay"
+                Case 4
+                    BtnSit_stand_Lie.Text = "stand"
+                Case 5
+                    BtnSit_stand_Lie.Text = "lay"
+                Case 6
+                    BtnSit_stand_Lie.Text = "lay"
+                Case 7
+                    BtnSit_stand_Lie.Text = "lay"
+                Case 8
+                    BtnSit_stand_Lie.Text = "stand"
+                Case 9
+                    BtnSit_stand_Lie.Text = "lay"
+                Case 10
+                    BtnSit_stand_Lie.Text = "lay"
+                Case 11
+                    BtnSit_stand_Lie.Text = "lay"
+                Case 12
+                    BtnSit_stand_Lie.Text = "stand"
+                Case 13
+                    BtnSit_stand_Lie.Text = "stand"
+                Case 14
+                    BtnSit_stand_Lie.Text = "stand"
+                Case 15
+                    BtnSit_stand_Lie.Text = "stand"
+                Case 16
+                    BtnSit_stand_Lie.Text = "sit"
+                Case 17
+                    BtnSit_stand_Lie.Text = "sit"
+                Case 18
+                    BtnSit_stand_Lie.Text = "sit"
+                Case 19
+                    BtnSit_stand_Lie.Text = "sit"
+                Case Else
 
+            End Select
+            Return True
+        End If
     End Function
 
 #End Region
