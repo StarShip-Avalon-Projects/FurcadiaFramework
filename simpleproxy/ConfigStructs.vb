@@ -32,11 +32,9 @@ Public Class ConfigStructs
 
         Public Property lPort() As Integer
             Get
-                ' _lPort = Convert.ToInt32(MyIni.IniRead(pPath() & "/Settings.Ini", "Main", "LPort"))
                 Return _lPort
             End Get
             Set(ByVal value As Integer)
-                ' MyIni.IniWrite(pPath() & "/Settings.Ini", "Main", "SPort", value.ToString)
                 _lPort = value
             End Set
         End Property
@@ -105,17 +103,11 @@ Public Class ConfigStructs
         End Sub
         Public Sub LoadMainSettings()
             System.IO.Directory.CreateDirectory(pPath())
-            'If Not File.Exists(SetFile) Then
-
-
-
-            '    End If
-                ' Dim _Host2 As String = MyIni.IniRead(SetFile, "Main", "Host")
-                If MyIni.IniRead(SetFile, "Main", "Host") <> "" Then
-                    _Host = MyIni.IniRead(SetFile, "Main", "Host")
-                Else
-                    _Host = "lightbringer.furcadia.com"
-                End If
+            If MyIni.IniRead(SetFile, "Main", "Host") <> "" Then
+                _Host = MyIni.IniRead(SetFile, "Main", "Host")
+            Else
+                _Host = "lightbringer.furcadia.com"
+            End If
                 If MyIni.IniRead(SetFile, "Main", "SPort") <> "" Then
                     _sPort = Convert.ToInt32(MyIni.IniRead(SetFile, "Main", "SPort"))
                 Else
@@ -166,15 +158,16 @@ Public Class ConfigStructs
     Public Structure cBot
         Private Shared MyIni As New IniMod
         Private Shared _IniFile As String
+
         Public Property IniFile() As String
             Get
-
                 Return _IniFile
             End Get
             Set(ByVal value As String)
                 _IniFile = value
             End Set
         End Property
+
         Public Sub LoadBotSettings()
             If MyIni.IniRead(SetFile, "Bot", "BotIni") <> "" Then
                 _IniFile = MyIni.IniRead(SetFile, "Bot", "BotIni")
@@ -182,11 +175,10 @@ Public Class ConfigStructs
                 _IniFile = "-pick"
             End If
         End Sub
+
         Public Sub SaveBotSettings()
             MyIni.IniWrite(SetFile, "Bot", "BotIni", _IniFile)
         End Sub
     End Structure
-
-
 
 End Class

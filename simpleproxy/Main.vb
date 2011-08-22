@@ -167,35 +167,27 @@ Public Class Main
                 Player.Name = data.Substring(12, NameLength).Replace("|", " ")
                 Dim ColTypePos As UInteger = 12 + NameLength
                 Player.ColorType = data.Substring(ColTypePos, 1)
-                Dim ColorSize As UInteger = 14
+                Dim ColorSize As UInteger = 10
                 If Player.ColorType <> "t" Then
                     ColorSize = 30
                 End If
-                Dim sColorPos As UInteger = ColTypePos '+ 1
+                Dim sColorPos As UInteger = ColTypePos + 1
                 Player.Color = data.Substring(sColorPos, ColorSize)
-                Dim FlagPos As UInteger = sColorPos + ColorSize + 1
-                Player.Flag = ConvertFromBase95(data.Substring(FlagPos, 1))
-                Dim AFK_Pos As UInteger = FlagPos + 1
-
-                Dim Remainder As Integer = data.Length - FlagPos
-                'Player.AFK = New TimeSpan(ConvertFromBase220(ConvertFromBase220(data.Substring(AFK_Pos, 1))) * TimeSpan.TicksPerSecond)
+                Dim FlagPos As UInteger = data.Length - 5
+                Player.Flag = ConvertFromBase220(data.Substring(FlagPos, 1))
+                Dim AFK_Pos As UInteger = data.Length - 4
+                Player.AFK = New TimeSpan(ConvertFromBase220(ConvertFromBase220(data.Substring(AFK_Pos, 4))) * TimeSpan.TicksPerSecond)
                 Dim FlagCheck As Integer = CType(Flags.CHAR_FLAG_NEW_AVATAR, Integer) - Player.Flag
 
                 ' Add New Arrivals to Dream List
                 ' One or the other will trigger it
-
-                If FlagCheck = 0 Then
-                    DREAM.List.Add(Player.ID, Player)
-                    UpDateDreamList("")
-                    'Some reason AFK[4] and Flag[1] are npot Showing
-                    'Till I Figure this out.. Lets Add the furres to the list ant way
-                ElseIf Not DREAM.List.ContainsKey(Player.ID) Then
+                IsBot(Player)
+                If FlagCheck <> 0 And Not DREAM.List.ContainsKey(Player.ID) Then
                     DREAM.List.Add(Player.ID, Player)
                     UpDateDreamList("")
                 Else
                     'Update existing furre with the new data
                     DREAM.List.Item(Player.ID) = Player
-                    IsBot(Player)
                 End If
                 '     TriggerCmd(MS0_FENTER)
                 '   TriggerCmd(MS0_FENTEREX)
@@ -243,11 +235,10 @@ Public Class Main
             ElseIf data.StartsWith("B") <> 0 And loggingIn = 2 Then 'And loggingIn = False
                 Player.ID = ConvertFromBase220(data.Substring(1, 4))
                 Player = DREAM.List.Item(Player.ID)
-                Player.X = ConvertFromBase220(data.Substring(5, 2))
-                Player.Y = ConvertFromBase220(data.Substring(7, 2))
-                Dim ColTypePos As UInteger = 17
+                Player.Shape = ConvertFromBase220(data.Substring(5, 2))
+                Dim ColTypePos As UInteger = 7
                 Player.ColorType = data.Substring(ColTypePos, 1)
-                Dim ColorSize As UInteger = 14
+                Dim ColorSize As UInteger = 10
                 If Player.ColorType <> "t" Then
                     ColorSize = 30
                 End If
@@ -753,27 +744,16 @@ Public Class Main
 
     Private Sub BtnSit_stand_Lie_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSit_stand_Lie.Click
         If Not bConnected Then Exit Sub
-        If IsLaying() Then
-            BtnSit_stand_Lie.Text = "Stand"
-        ElseIf IsSitting() Then
-            BtnSit_stand_Lie.Text = "Lie"
-        ElseIf IsStanding() Then
+        If BtnSit_stand_Lie.Text = "Stand" Then
+            BtnSit_stand_Lie.Text = "Lay"
+        ElseIf BtnSit_stand_Lie.Text = "Lay" Then
             BtnSit_stand_Lie.Text = "Sit"
+        ElseIf BtnSit_stand_Lie.Text = "Sit" Then
+            BtnSit_stand_Lie.Text = "Stand"
         End If
         sndServer("`lie")
     End Sub
 
-    Private Function IsLaying() As Boolean
-        Return False
-    End Function
-
-    Private Function IsSitting() As Boolean
-        Return False
-    End Function
-
-    Private Function IsStanding() As Boolean
-        Return False
-    End Function
 
 #End Region
 
