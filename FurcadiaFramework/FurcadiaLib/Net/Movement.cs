@@ -75,6 +75,9 @@ namespace Furcadia.Net
         private uint _X;
         private uint _Y;
         private uint _ID;
+        private uint _Gender;
+        private uint _Species;
+        private uint _Special;
         private uint _Position;
         private string _Shape;
         private int _Flag;
@@ -119,7 +122,10 @@ namespace Furcadia.Net
         public  string Color
         {
             get { return _Color; }
-            set { _Color = value; }
+            set { 
+                _Color = value; 
+            
+            }
 
         }
         public  string Desc
@@ -153,10 +159,7 @@ namespace Furcadia.Net
             get { return _AFK; }
             set { _AFK = value; }
         }
-        public uint trousers
-        {
-            get { return Base220.ConvertFromBase220(_Color.Substring(10, 1)); }
-        }
+
         public  uint Gender
         {
             get { return Base220.ConvertFromBase220(_Color.Substring(11, 1)); }
