@@ -63,8 +63,7 @@ namespace Furcadia.IO
 
         static string ProgramFilesx86()
         {
-            if (8 == IntPtr.Size
-                || (!String.IsNullOrEmpty(Environment.GetEnvironmentVariable("PROCESSOR_ARCHITEW6432"))))
+            if (OSBitness.Is64BitOperatingSystem())
             {
                 return Environment.GetEnvironmentVariable("ProgramFiles(x86)");
             }
@@ -107,8 +106,7 @@ namespace Furcadia.IO
                 }
 
                 // Making a guess from the FurcadiaDefaultPath property.
-                path = Path.Combine(ProgramFilesx86(),
-                                    "Furcadia");
+                path = Path.Combine(ProgramFilesx86(), "Furcadia");
             }
             // Scanning registry for a path (NON-WINDOWS ONLY)
             else
