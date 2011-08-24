@@ -27,6 +27,8 @@ Public Class Main
     Dim Bot As New FURRE
     Public cMain As cMain
     Public cBot As cBot
+    Public BotUID As String
+    Public BotName As String
 
 #End Region
 
@@ -47,6 +49,54 @@ Public Class Main
     Private Const Iconfilter As String = "<img src='fsh://system.fsh:([^']*)'(.*)/>"
     Private Const YouSayFilter As String = "You ([\x21-\x3B\=\x3F-\x7E]+), ""([^']*)"""
 
+#End Region
+
+#Region "Helper Functions"
+    Public Function fFindNthOccur(ByVal pStr As String, _
+                                    ByVal pFind As String, _
+                                    ByVal pNth As Integer) As Integer
+        '------------------------------------------------------------------
+        ' Purpose:   Return location of nth occurence of item in a string.
+        ' Coded by:  raskew
+        ' Arguments: pStr: The string to be searched.
+        '            pFind: The item to search for.
+        '            pNth:  The occurence of the item in string.
+        ' Input:     From the debug (immediate) window:
+        '            x = "The quick brown fox jumped over the lazy dog"
+        '            1) ? fFindNthOccur(x, " ", 3)
+        '            2) ? left(x, fFindNthOccur(x, " ", 3))
+        '            3) ? mid(x, fFindNthOccur(x, " ", 3)+1)
+        ' Output:    1) 16
+        '            2) The quick brown
+        '            3) fox jumped over the lazy dog
+        '------------------------------------------------------------------
+        Dim strHold As String
+        Dim strFind As String
+        Dim intHold As Integer
+        Dim intSay As Integer
+        Dim intKeep As Integer
+        Dim n As Integer
+
+        strHold = pStr
+        strFind = pFind
+        intHold = pNth
+        intKeep = 0
+        n = 0
+
+        Do While n < intHold
+            If InStr(strHold, strFind) = 0 Then
+                fFindNthOccur = 0
+                Exit Do
+            Else
+                intSay = InStr(1, strHold, strFind)
+                intKeep = intKeep + intSay
+                n = n + 1
+                strHold = Mid(strHold, intSay + Len(strFind))
+                fFindNthOccur = intKeep
+            End If
+        Loop
+
+    End Function
 #End Region
 
 
@@ -154,6 +204,28 @@ Public Class Main
         Try
             If data = "Dragonroar" Then
                 loggingIn = 1
+                '  Login Sucessful
+            ElseIf data = "&&&&&&&&&&&&&" Then
+                loggingIn = 2
+
+                ' Species Tags
+            ElseIf data.StartsWith("]-") Then
+
+                'DS Variables
+            ElseIf data.StartsWith("0") Then
+
+                'Phoenix Speak event
+            ElseIf data.StartsWith("3") Then
+
+                'self Induced Dradon Speak Event
+            ElseIf data.StartsWith("6") Then
+
+                'Dragon Speak event
+            ElseIf data.StartsWith("7") Then
+
+                'Dragon Speak Addon (Follows Instructions 6 and 7
+            ElseIf data.StartsWith("8") Then
+
 
             ElseIf data.StartsWith("<") And loggingIn = 2 Then 'And loggingIn = True
                 Player.ID = ConvertFromBase220(data.Substring(1, 4))
@@ -264,6 +336,10 @@ Public Class Main
                 DREAM.List.Clear()
                 UpDateDreamList("")
 
+                'Snag out UID
+            ElseIf data.StartsWith("]B") Then
+                BotUID = data.Remove(0, 2)
+                Bot.ID = ConvertFromBase220(BotUID)
                 'Process Channels Seperatly
             ElseIf data.StartsWith("(") Then
                 ChannelProcess(data)
@@ -388,84 +464,84 @@ Public Class Main
             End If
 
         ElseIf Channel = "query" Then
-        Dim QCMD As String = Regex.Match(data, "href='command://(.*)'>").Groups(1).ToString
-        Select Case QCMD
-            Case "join"
-                ''JOIN
-                sndDisplay(User & " requests to join.")
-                If Not IsBot(Player) Then
-                    '    '   TriggerCmd(MS0_JOIN)
-                    '    '   TriggerCmd(MS0_JOINEX)
-                End If
-            Case "summon"
-                ''SUMMON
-                sndDisplay(User & " requests a summon.")
-                If Not IsBot(Player) Then
-                    '    '  TriggerCmd(MS0_SUMMON)
-                    '    '  TriggerCmd(MS0_SUMMONEX)
-                End If
-            Case "follow"
-                ''LEAD
-                sndDisplay(User & " requests to lead.")
-                If Not IsBot(Player) Then
-                    '    PLAYER.Name = ""
-                    '    ' TriggerCmd(MS0_LEAD)
-                    '    PLAYER.Name = followRequester
-                    '    '  TriggerCmd(MS0_LEADEX)
-                End If
-            Case "lead"
-                ''FOLLOW
-                sndDisplay(User & " requests the bot to follow.")
-                If Not IsBot(Player) Then
-                    '    PLAYER.Name = ""
-                    '    '  TriggerCmd(MS0_FOLLOW)
-                    '    PLAYER.Name = leadRequester
-                    '    ' TriggerCmd(MS0_FOLLOWEX)
-                End If
-            Case Else
-                sndDisplay("## Unknown " & Channel & "## " & data)
-        End Select
+            Dim QCMD As String = Regex.Match(data, "href='command://(.*)'>").Groups(1).ToString
+            Select Case QCMD
+                Case "join"
+                    ''JOIN
+                    sndDisplay(User & " requests to join.")
+                    If Not IsBot(Player) Then
+                        '    '   TriggerCmd(MS0_JOIN)
+                        '    '   TriggerCmd(MS0_JOINEX)
+                    End If
+                Case "summon"
+                    ''SUMMON
+                    sndDisplay(User & " requests a summon.")
+                    If Not IsBot(Player) Then
+                        '    '  TriggerCmd(MS0_SUMMON)
+                        '    '  TriggerCmd(MS0_SUMMONEX)
+                    End If
+                Case "follow"
+                    ''LEAD
+                    sndDisplay(User & " requests to lead.")
+                    If Not IsBot(Player) Then
+                        '    PLAYER.Name = ""
+                        '    ' TriggerCmd(MS0_LEAD)
+                        '    PLAYER.Name = followRequester
+                        '    '  TriggerCmd(MS0_LEADEX)
+                    End If
+                Case "lead"
+                    ''FOLLOW
+                    sndDisplay(User & " requests the bot to follow.")
+                    If Not IsBot(Player) Then
+                        '    PLAYER.Name = ""
+                        '    '  TriggerCmd(MS0_FOLLOW)
+                        '    PLAYER.Name = leadRequester
+                        '    ' TriggerCmd(MS0_FOLLOWEX)
+                    End If
+                Case Else
+                    sndDisplay("## Unknown " & Channel & "## " & data)
+            End Select
 
-        'NameFilter
+            'NameFilter
         ElseIf Channel = "whisper" Then
-        ''WHISPER
+            ''WHISPER
 
-        Dim WhisperFrom As String = Regex.Match(data, "whispers, ""(.*)"" to you").Groups(1).ToString()
-        Dim WhisperTo As String = Regex.Match(data, "You whisper ""(.*)"" to").Groups(1).ToString()
-        Dim WhisperDir As String = Regex.Match(data, "src='whisper-(.*)'").Groups(1).ToString()
-        If WhisperDir = "from" Then
-            sndDisplay(User & " whispers""" & WhisperFrom & """ to you.")
-            '    TriggerCmd(MS0_WHISPER)
-            '    TriggerCmd(MS0_WHISPEREX)
-            '   TriggerCmd(MS0_WHISPERMSG)
-            '    TriggerCmd(MS0_WHISPERMSGEX)
-            '    TriggerCmd(MS0_WHISPERANY)
-            '   TriggerCmd(MS0_WHISPERANYEX)
-        Else
-            WhisperTo = WhisperTo.Replace("<wnd>", "")
-            sndDisplay("You whisper""" & WhisperTo & """ to " & User & ".")
-        End If
+            Dim WhisperFrom As String = Regex.Match(data, "whispers, ""(.*)"" to you").Groups(1).ToString()
+            Dim WhisperTo As String = Regex.Match(data, "You whisper ""(.*)"" to").Groups(1).ToString()
+            Dim WhisperDir As String = Regex.Match(data, "src='whisper-(.*)'").Groups(1).ToString()
+            If WhisperDir = "from" Then
+                sndDisplay(User & " whispers""" & WhisperFrom & """ to you.")
+                '    TriggerCmd(MS0_WHISPER)
+                '    TriggerCmd(MS0_WHISPEREX)
+                '   TriggerCmd(MS0_WHISPERMSG)
+                '    TriggerCmd(MS0_WHISPERMSGEX)
+                '    TriggerCmd(MS0_WHISPERANY)
+                '   TriggerCmd(MS0_WHISPERANYEX)
+            Else
+                WhisperTo = WhisperTo.Replace("<wnd>", "")
+                sndDisplay("You whisper""" & WhisperTo & """ to " & User & ".")
+            End If
 
         ElseIf Channel = "emote" Then
-        ' ''EMOTE
-        sndDisplay(User & " emotes: " & Text)
-        If Not IsBot(Player) Then
-            '    '    TriggerCmd(MS0_EMOTE)
-            '    '    TriggerCmd(MS0_EMOTEEX)
-            '    '    TriggerCmd(MS0_EMOTEANY)
-            '    '    TriggerCmd(MS0_EMOTEANYEX)
-            '    '    TriggerCmd(MS0_EMOTEMSG)
-            '    '    TriggerCmd(MS0_EMOTEMSGEX)
-        End If
-
-            ElseIf Channel = "error" Then
-        sndDisplay("Error:>> " & Text)
-            ElseIf data.StartsWith("Communication") Then
-        sndDisplay("Error: Communication Error.  Aborting connection.")
-        simpleProxy.Kill()
-            Else
-        sndDisplay("## Unknown Command ## " & data)
+            ' ''EMOTE
+            sndDisplay(User & " emotes: " & Text)
+            If Not IsBot(Player) Then
+                '    '    TriggerCmd(MS0_EMOTE)
+                '    '    TriggerCmd(MS0_EMOTEEX)
+                '    '    TriggerCmd(MS0_EMOTEANY)
+                '    '    TriggerCmd(MS0_EMOTEANYEX)
+                '    '    TriggerCmd(MS0_EMOTEMSG)
+                '    '    TriggerCmd(MS0_EMOTEMSGEX)
             End If
+
+        ElseIf Channel = "error" Then
+            sndDisplay("Error:>> " & Text)
+        ElseIf data.StartsWith("Communication") Then
+            sndDisplay("Error: Communication Error.  Aborting connection.")
+            simpleProxy.Kill()
+        Else
+            sndDisplay("## Unknown Command ## " & data)
+        End If
     End Sub
 
     Private Function ShortNametoFurre(ByVal sname As String) As FURRE
@@ -487,7 +563,7 @@ Public Class Main
     End Function
 
     Public Function IsBot(ByVal player As FURRE) As Boolean
-        If player.ShortName <> Bot.ShortName Then Return False
+        If player.ShortName <> BotName Then Return False
         Bot = player
         If BtnSit_stand_Lie.InvokeRequired Then
             Dim d As New UpDateBtn_StandCallback(AddressOf IsBot)
@@ -496,45 +572,45 @@ Public Class Main
             'Update inteface
             Select Case Bot.Position
                 Case 0
-                    BtnSit_stand_Lie.Text = "stand"
+                    BtnSit_stand_Lie.Text = "Stand"
                 Case 1
-                    BtnSit_stand_Lie.Text = "lay"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 2
-                    BtnSit_stand_Lie.Text = "lay"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 3
-                    BtnSit_stand_Lie.Text = "lay"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 4
-                    BtnSit_stand_Lie.Text = "stand"
+                    BtnSit_stand_Lie.Text = "Stand"
                 Case 5
-                    BtnSit_stand_Lie.Text = "lay"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 6
-                    BtnSit_stand_Lie.Text = "lay"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 7
-                    BtnSit_stand_Lie.Text = "lay"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 8
-                    BtnSit_stand_Lie.Text = "stand"
+                    BtnSit_stand_Lie.Text = "Stand"
                 Case 9
-                    BtnSit_stand_Lie.Text = "lay"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 10
-                    BtnSit_stand_Lie.Text = "lay"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 11
-                    BtnSit_stand_Lie.Text = "lay"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 12
-                    BtnSit_stand_Lie.Text = "stand"
+                    BtnSit_stand_Lie.Text = "Stand"
                 Case 13
-                    BtnSit_stand_Lie.Text = "stand"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 14
-                    BtnSit_stand_Lie.Text = "stand"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 15
-                    BtnSit_stand_Lie.Text = "stand"
+                    BtnSit_stand_Lie.Text = "Lay"
                 Case 16
-                    BtnSit_stand_Lie.Text = "sit"
+                    BtnSit_stand_Lie.Text = "Sit"
                 Case 17
-                    BtnSit_stand_Lie.Text = "sit"
+                    BtnSit_stand_Lie.Text = "Sit"
                 Case 18
-                    BtnSit_stand_Lie.Text = "sit"
+                    BtnSit_stand_Lie.Text = "Sit"
                 Case 19
-                    BtnSit_stand_Lie.Text = "sit"
+                    BtnSit_stand_Lie.Text = "Sit"
                 Case Else
 
             End Select
@@ -551,6 +627,15 @@ Public Class Main
         If data = "vascodagama" Then
             loggingIn = 2
         End If
+        'Capture The Bots Name
+        If data.StartsWith("connect") Then
+            Dim test As String = data.Replace("connect ", "")
+            test = test.TrimStart(" ")
+            BotName = test.Substring(0, test.IndexOf(" "))
+            BotName = BotName.Replace("|", "")
+            BotName = BotName.Replace("[^a-zA-Z0-9\0x0020_.]+", "").ToLower()
+        End If
+
         Return data
     End Function
 
@@ -611,15 +696,10 @@ Public Class Main
     Private Sub BTN_Go_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BTN_Go.Click
         Me.ControlThread = New Thread(New ThreadStart(AddressOf Me.test3))
         If BTN_Go.Text = "Go!" Then
-            'Prime Our Bot Vars
-            Dim toon As Character = Character.Load(Paths.GetFurcadiaDocPath() & "/Furcadia Characters/" & cBot.IniFile)
-            Bot.Name = toon.Name
-            Bot.Color = toon.ColorString
-
             simpleProxy = New NetProxy(cMain.Host, cMain.sPort, cMain.lPort)
             With simpleProxy
                 .ProcessCMD = cBot.IniFile
-                .StandAloneMode = cMain.StandAlone
+                .StandAloneMode = False 'cMain.StandAlone
                 .Connect()
                 BTN_Go.Text = "Connecting..."
             End With
