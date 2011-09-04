@@ -27,8 +27,26 @@ Public Class ConfigStructs
         Private Shared _log As Boolean = False
         Private Shared _debug As Boolean = False
         Private Shared _TimeStamp As UShort = 0
+        Private Shared _Fontface As String
+        Private Shared _FontSize As Integer
 
+        Public Property FontSize() As Integer
+            Get
+                Return _FontSize
+            End Get
+            Set(ByVal value As Integer)
+                _FontSize = value
+            End Set
+        End Property
 
+        Public Property FontFace() As String
+            Get
+                Return _Fontface
+            End Get
+            Set(ByVal value As String)
+                _Fontface = value
+            End Set
+        End Property
 
         Public Property lPort() As Integer
             Get
@@ -139,7 +157,8 @@ Public Class ConfigStructs
                     _TimeStamp = Convert.ToUInt16(MyIni.IniRead(SetFile, "Main", "TimeStamp"))
                 Else
                     _TimeStamp = 0
-                End If
+            End If
+
 
         End Sub
         Public Sub SaveMainSettings()

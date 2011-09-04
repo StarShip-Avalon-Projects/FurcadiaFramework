@@ -4,6 +4,7 @@ Imports System.ComponentModel
 Imports System.Threading
 Imports System.Windows.Forms
 Imports System.IO
+Imports System.Text
 Imports System.Timers
 Imports Furcadia.IO
 Imports Furcadia.Net
@@ -29,6 +30,9 @@ Public Class Main
     Public cBot As cBot
     Public BotUID As String
     Public BotName As String
+    Public Look As Boolean = False
+    Public AppFont As New Font("Microsoft Sans Serif", 10, FontStyle.Regular)
+    Public DreamCounter As Integer = 0
 
 #End Region
 
@@ -43,10 +47,11 @@ Public Class Main
 #End Region
 
 #Region "RegEx filters"
-    Private Const EntryFilter As String = "^<font color='([^']*)'>(.*)</font>$"
+    Private Const EntryFilter As String = "^<font color='([^']*?)'>(.*?)</font>$"
     Private Const NameFilter As String = "<name shortname='([^']*)'(.*)>([\x21-\x3B\=\x3F-\x7E]+)</name>"
+    Private Const DescFilter As String = "<desc shortname='([^']*)' />(.*)"
     Private Const ChannelNameFilter As String = "<channel name='([^']*)' />"
-    Private Const Iconfilter As String = "<img src='fsh://system.fsh:([^']*)'(.*)/>"
+    Private Const Iconfilter As String = "<img src='fsh://system.fsh:([^']*)'(.*?)/>"
     Private Const YouSayFilter As String = "You ([\x21-\x3B\=\x3F-\x7E]+), ""([^']*)"""
 
 #End Region
@@ -106,22 +111,69 @@ Public Class Main
             Dim dataArray() As Object = {lb, obj}
             Me.Invoke(New AddDataToListCaller(AddressOf AddDataToList), dataArray)
         Else
-            If lb.GetType().ToString = "System.Windows.Forms.RichTextBox" Then
-                lb.AppendText(obj & vbCrLf)
-            ElseIf lb.GetType().ToString = "System.Windows.Forms.ListBox" Then
-                While lb.PreferredHeight > 100
-                    lb.Items.RemoveAt(0)
-                End While
-                lb.Items.Add(obj)
+            If lb.GetType().ToString = "SimpleProxy2.Controls.RichTextBoxEx" Then
+                Dim data As String = obj
+                Dim build As New System.Text.StringBuilder(data)
+                build = build.Replace("<b>", "\b ")
+                build = build.Replace("</b>", "\b0 ")
+                build = build.Replace("<i>", "\i ")
+                build = build.Replace("</i>", "\i0 ")
+                build = build.Replace("<ul>", "\ul ")
+                build = build.Replace("</ul>", "\ul0 ")
+
+                lb.SelectionStart = lb.TextLength
+                lb.SelectedRtf = FormatText(build.ToString, 10)
+
+                LinkSet()
+
             End If
         End If
     End Sub
 
+    Private Sub log__LinkClicked(ByVal sender As Object, ByVal e As System.Windows.Forms.LinkClickedEventArgs)
+        MsgBox(e.LinkText)
+    End Sub
+
+    Private Sub LinkSet()
+        ' OnTextChanged after text is sent to log_.RichTextBoxEx 
+        Dim links As MatchCollection = Regex.Matches(log_.Text, "<a.*?href=['|""](.*?)['?|""].*?>(.*?)</a>")
+        For Each match As Match In links
+            Dim matchUrl As String = match.Groups(1).Value
+            Dim matchText As String = match.Groups(2).Value
+            If match.Success Then
+                With log_
+                    .Select(match.Index, match.Length)
+                    .SelectedRtf = "{\rtf1\ansi " & matchText & "\v #" & matchUrl & "\v0}"
+                    .[Select](match.Index, matchText.Length + 1 + matchUrl.Length)
+                    .SetSelectionLink(True)
+                    .[Select](match.Index + matchText.Length + 1 + matchUrl.Length, 0)
+                End With
+            End If
+        Next
+        links = Regex.Matches(log_.Text, "<a.*?href=(.*?)>(.*?)</a>")
+        For Each match As Match In links
+            Dim matchUrl As String = match.Groups(1).Value
+            Dim matchText As String = match.Groups(2).Value
+            If match.Success Then
+                With log_
+                    .Select(match.Index, match.Length)
+                    .SelectedRtf = "{\rtf1\ansi " & matchText & "\v #" & matchUrl & "\v0}"
+                    .[Select](match.Index, matchText.Length + 1 + matchUrl.Length)
+                    .SetSelectionLink(True)
+                    .[Select](match.Index + matchText.Length + 1 + matchUrl.Length, 0)
+                End With
+            End If
+        Next
+
+    End Sub
+
     Public Sub UpDateDreamList(ByVal [dummy] As String)
+
         If Me.DreamList.InvokeRequired Then
             'Dim dataArray() As Object = {lb, obj}
             Me.Invoke(New UpDateDreamListCaller(AddressOf UpDateDreamList), [dummy])
         Else
+            If DreamCounter >= 2 Then Exit Sub
             Dim p As KeyValuePair(Of UInteger, FURRE)
             DreamList.Items.Clear()
             For Each p In DREAM.List
@@ -131,12 +183,16 @@ Public Class Main
         End If
     End Sub
 
+    Private Sub DreamListRefresh_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DreamListRefresh.Tick
+        DreamCounter = 0
+    End Sub
+
     Public Sub sndDisplay(ByVal data As String)
-        data = data.Replace("\n", vbLf)
+        data = data.Replace("\n", vbCrLf)
         If cMain.log Then
-            AddDataToList(log_, Microsoft.VisualBasic.TimeString & ": " & data.Replace("\n", vbCr))
+            AddDataToList(log_, Microsoft.VisualBasic.TimeString & ": " & data)
         Else
-            AddDataToList(log_, data.Replace("\n", vbCr))
+            AddDataToList(log_, data)
         End If
     End Sub
 
@@ -144,7 +200,7 @@ Public Class Main
 
         If data.StartsWith("`m ") Then
             ' TriggerCmd(MS0_MOVE)
-            Select Case data.Substring(1, 2)
+            Select Case data.Substring(2, 1)
                 Case "7"
                     '     TriggerCmd(MS0_MOVENW)
                 Case "9"
@@ -226,6 +282,17 @@ Public Class Main
                 'Dragon Speak Addon (Follows Instructions 6 and 7
             ElseIf data.StartsWith("8") Then
 
+                'Look responce
+            ElseIf data.StartsWith("]f") Then
+                Dim length As Short = 14
+                Look = True
+                If data.Substring(2, 1) <> "t" Then
+                    length = 30
+
+                Else
+                    length = 14
+
+                End If
 
             ElseIf data.StartsWith("<") And loggingIn = 2 Then 'And loggingIn = True
                 Player.ID = ConvertFromBase220(data.Substring(1, 4))
@@ -368,7 +435,7 @@ Public Class Main
         If User <> "" Then
             Player = ShortNametoFurre(ShortUser)
         End If
-
+        Dim Desc As String = Regex.Match(data, DescFilter).Groups(2).ToString()
         Dim r As New Regex(Iconfilter)
         Text = r.Replace(Text, "")
         Dim s As New Regex(ChannelNameFilter)
@@ -383,45 +450,7 @@ Public Class Main
             ' TriggerCmd(MS0_EMITANY)
             ' TriggerCmd(MS0_EMITMSG)
 
-        ElseIf data.StartsWith("<img src='fsh://system.fsh:") = True And InStr(data, "Lines of DragonSpeak") <> 0 Then
-            Dim t As New Regex(Iconfilter)
-            Text = t.Replace(data, "")
-            sndDisplay("[" & fIcon(data) & "> " & Text)
-            'DREAM.Lines = Integer.Parse(StrTrimLeft(data, data.LastIndexOf(":") + 1).Trim)
-            'sndServer(Chr(34) & "dreamurl")
-            'bdreamenter = False
-        ElseIf data.StartsWith("<img src='fsh://system.fsh:86'  /> Furcadia Standard Time:") = True Then
-            Dim t As New Regex(Iconfilter)
-            Text = t.Replace(data, "")
-            sndDisplay("[" & fIcon(data) & "> " & Text)
-            'furcTime = Date.UtcNow.AddHours(5).ToLongTimeString().Split(" "c)
-            'MS.TriggerCmd(MS.MS0_FURCTIME)
-            '*************ERRORS***************
-        ElseIf data.StartsWith("<img src='fsh://system.fsh:86'  /> Dream Standard:") <> 0 Then
-            Dim t As New Regex(Iconfilter)
-            Text = t.Replace(data, "")
-            sndDisplay("[" & fIcon(data) & "> " & Text)
-            If loggingIn = 2 Then
-                ' If bClientOpen = False Then sndServer("vascodagama")
-                ' DREAM.List.Clear()
-                'UpDateDreamList("")
-                'bdreamenter = True
-            Else
-                ' If bClientOpen = False Then sndServer("vascodagama")
-                'TriggerCmd(MS0_LOGIN)
-                ' loggingIn = False
-                ' bdreamenter = True
-            End If
-
-        ElseIf data.StartsWith("<img src='fsh://system.fsh:86'  />") = True And InStr(data, "players in the dream of ") <> 0 Then
-            Dim t As New Regex(Iconfilter)
-            Text = t.Replace(data, "")
-            sndDisplay("[" & fIcon(data) & "> " & Text)
-            'DREAM.Name = StrTrimLeft(data, InStr(data, "of") + 2).Replace(".", "")
-            'data = data.Replace(DREAM.Name, "")
-            'dNumFurres = Integer.Parse(RegExp(data, "\d*").Replace(" ", ""))
-
-        ElseIf InStr(data, "<A HREF=" & Chr(34) & "furc://") Then
+        ElseIf InStr(data, "<A HREF=""furc://") Then
             'DREAM.URL = StrBetween(data, Chr(34), Chr(34))
             'DREAM.URL = StrTrimRight(DREAM.URL, DREAM.URL.Length - InStr(DREAM.URL, Chr(34)) + 1)
             'DREAM.Name = DREAM.URL.Replace("furc://", "")
@@ -431,18 +460,30 @@ Public Class Main
             '    DREAM.Name = DREAM.Name.Remove(DREAM.Name.LastIndexOf("/"), 1)
             'End If
 
+            ''BCast (Advertisments, Announcments)
+        ElseIf Channel = "bcast" Then
+            Dim u As Match = Regex.Match(data, "[(.*?)](.*?)</")
+            sndDisplay("[" & fIcon(data) & "> [" & u.Groups(1).Value & "]" & u.Groups(2).Value)
+
             ''SAY
         ElseIf Channel = "myspeech" Then
             Dim t As New Regex(YouSayFilter)
             Dim u As String = t.Match(data).Groups(1).ToString
             Text = t.Match(data).Groups(2).ToString
             sndDisplay("You " & u & ", """ & Text & """")
-        ElseIf User <> "" And Channel = "" Then
+        ElseIf User <> "" And Channel = "" And Look = False Then
             Dim t As New Regex(NameFilter)
             Text = t.Replace(data, "")
             Text = Text.Remove(0, 2)
             sndDisplay(User & " says, """ & Text & """")
 
+        ElseIf User <> "" And Channel = "" And Look = True Then
+            sndDisplay("You See '" & User & " '")
+
+        ElseIf Desc <> "" Then
+            Dim DescName As String = Regex.Match(data, DescFilter).Groups(1).ToString()
+            sndDisplay(Desc)
+            Look = False
         ElseIf Channel = "shout" Then
             ''SHOUT
             Dim t As New Regex(YouSayFilter)
@@ -539,6 +580,46 @@ Public Class Main
         ElseIf data.StartsWith("Communication") Then
             sndDisplay("Error: Communication Error.  Aborting connection.")
             simpleProxy.Kill()
+
+
+        ElseIf data.StartsWith("<img src='fsh://system.fsh:") And InStr(data, "Lines of DragonSpeak") Then
+            Dim t As New Regex(Iconfilter)
+            Text = t.Replace(data, "")
+            sndDisplay("[" & fIcon(data) & "> " & Text)
+            'DREAM.Lines = Integer.Parse(StrTrimLeft(data, data.LastIndexOf(":") + 1).Trim)
+            'sndServer(Chr(34) & "dreamurl")
+            'bdreamenter = False
+        ElseIf data.StartsWith("<img src='fsh://system.fsh:86' /> Furcadia Standard Time:") Then
+            Dim t As New Regex(Iconfilter)
+            Text = t.Replace(data, "")
+            sndDisplay("[" & fIcon(data) & "> " & Text)
+            'furcTime = Date.UtcNow.AddHours(5).ToLongTimeString().Split(" "c)
+            'MS.TriggerCmd(MS.MS0_FURCTIME)
+            '**********       
+        ElseIf data.StartsWith("<img src='fsh://system.fsh:86' />") = True And InStr(data, "players in the dream of ") Then
+            Dim t As New Regex(Iconfilter)
+            Text = t.Replace(data, "")
+            sndDisplay("[" & fIcon(data) & "> " & Text)
+            'DREAM.Name = StrTrimLeft(data, InStr(data, "of") + 2).Replace(".", "")
+            'data = data.Replace(DREAM.Name, "")
+            'dNumFurres = Integer.Parse(RegExp(data, "\d*").Replace(" ", ""))***ERRORS***************
+        ElseIf data.StartsWith("<img src='fsh://system.fsh:86' />") Then
+            Dim t As New Regex(Iconfilter)
+            Text = t.Replace(data, "")
+            sndDisplay("[" & fIcon(data) & "> " & Text)
+            If loggingIn = 2 Then
+                ' If bClientOpen = False Then sndServer("vascodagama")
+                ' DREAM.List.Clear()
+                'UpDateDreamList("")
+                'bdreamenter = True
+            Else
+                ' If bClientOpen = False Then sndServer("vascodagama")
+                'TriggerCmd(MS0_LOGIN)
+                ' loggingIn = False
+                ' bdreamenter = True
+            End If
+
+
         Else
             sndDisplay("## Unknown Command ## " & data)
         End If
@@ -558,6 +639,8 @@ Public Class Main
         Select Case MyIcon
             Case "86"
                 MyIcon = "#"
+            Case "91"
+                MyIcon = "+"
         End Select
         Return MyIcon
     End Function
@@ -627,6 +710,7 @@ Public Class Main
         If data = "vascodagama" Then
             loggingIn = 2
         End If
+
         'Capture The Bots Name
         If data.StartsWith("connect") Then
             Dim test As String = data.Replace("connect ", "")
@@ -681,6 +765,7 @@ Public Class Main
         Else
             If BTN_Go.Text = "Connected." Then
                 '  bConnected = True
+                sndDisplay("Connecting...")
                 BTN_Go.Text = "Go!"
             ElseIf BTN_Go.Text = "Connecting..." Then 'bConnected = True And
                 BTN_Go.Text = "Connected."
@@ -688,6 +773,11 @@ Public Class Main
         End If
 
     End Sub
+
+    Public Function FormatText(ByVal data As String, ByVal FontSize As Integer, Optional ByVal FontFace As String = "Microsoft Sans Serif") As String
+        FontSize *= 2
+        Return "{\rtf1\ansi\ansicpg1252\deff0\deflang1044{\fonttbl{\f0\fcharset0 " & FontFace & ";}}\viewkind4\uc1\fs" & FontSize.ToString & " " & data & " \par}"
+    End Function
 
     Private Sub BTN_Config_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BTN_Config.Click
         Config.Show()
@@ -711,10 +801,21 @@ Public Class Main
         Me.ControlThread.Start()
     End Sub
 
+    Private Sub Main_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Me.KeyPress
+
+    End Sub
+
     Private Sub Main_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         ' Try to get Furcadia's path from the registry
         cMain.LoadMainSettings()
         cBot.LoadBotSettings()
+        InitializeTextControls()
+    End Sub
+
+    Public Sub InitializeTextControls()
+        toServer.Font = AppFont
+        DreamList.Font = AppFont
+        DreamCountTxtBx.Font = AppFont
     End Sub
 
     Private Sub toServer_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles toServer.KeyPress
@@ -767,7 +868,6 @@ Public Class Main
         Me.ActionTmr.Enabled = False
         ActionCMD = ""
     End Sub
-
 
     Private Sub se__MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles se_.MouseDown
         If Not bConnected Then Exit Sub

@@ -22,7 +22,6 @@ Partial Class Main
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.clientGroup = New System.Windows.Forms.GroupBox()
-        Me.log_ = New System.Windows.Forms.RichTextBox()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.BTN_Config = New System.Windows.Forms.Button()
         Me.BTN_Go = New System.Windows.Forms.Button()
@@ -44,6 +43,9 @@ Partial Class Main
         Me.toServer = New System.Windows.Forms.TextBox()
         Me.sendToServer = New System.Windows.Forms.Button()
         Me.ActionTmr = New System.Windows.Forms.Timer(Me.components)
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.DreamListRefresh = New System.Windows.Forms.Timer(Me.components)
+        Me.log_ = New Controls.RichTextBoxEx()
         Me.clientGroup.SuspendLayout()
         Me.GrpAction.SuspendLayout()
         CType(Me._ne, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,17 +68,6 @@ Partial Class Main
         Me.clientGroup.TabIndex = 0
         Me.clientGroup.TabStop = False
         Me.clientGroup.Text = "Log"
-        '
-        'log_
-        '
-        Me.log_.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.log_.Location = New System.Drawing.Point(3, 16)
-        Me.log_.Name = "log_"
-        Me.log_.Size = New System.Drawing.Size(257, 144)
-        Me.log_.TabIndex = 1
-        Me.log_.Text = ""
         '
         'NotifyIcon1
         '
@@ -230,11 +221,13 @@ Partial Class Main
         Me.DreamList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DreamList.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DreamList.FormattingEnabled = True
         Me.DreamList.HorizontalScrollbar = True
+        Me.DreamList.ItemHeight = 16
         Me.DreamList.Location = New System.Drawing.Point(5, 16)
         Me.DreamList.Name = "DreamList"
-        Me.DreamList.Size = New System.Drawing.Size(124, 134)
+        Me.DreamList.Size = New System.Drawing.Size(124, 132)
         Me.DreamList.TabIndex = 12
         '
         'Label1
@@ -248,9 +241,10 @@ Partial Class Main
         '
         'DreamCountTxtBx
         '
+        Me.DreamCountTxtBx.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DreamCountTxtBx.Location = New System.Drawing.Point(96, 157)
         Me.DreamCountTxtBx.Name = "DreamCountTxtBx"
-        Me.DreamCountTxtBx.Size = New System.Drawing.Size(33, 20)
+        Me.DreamCountTxtBx.Size = New System.Drawing.Size(33, 23)
         Me.DreamCountTxtBx.TabIndex = 14
         Me.DreamCountTxtBx.Text = "###"
         '
@@ -286,6 +280,7 @@ Partial Class Main
         Me.toServer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.toServer.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.toServer.Location = New System.Drawing.Point(3, 19)
         Me.toServer.Multiline = True
         Me.toServer.Name = "toServer"
@@ -305,6 +300,24 @@ Partial Class Main
         'ActionTmr
         '
         Me.ActionTmr.Interval = 250
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'DreamListRefresh
+        '
+        Me.DreamListRefresh.Enabled = True
+        Me.DreamListRefresh.Interval = 400
+        '
+        'log_
+        '
+        Me.log_.Location = New System.Drawing.Point(3, 16)
+        Me.log_.Name = "log_"
+        Me.log_.Size = New System.Drawing.Size(254, 144)
+        Me.log_.TabIndex = 49
+        Me.log_.Text = ""
         '
         'Main
         '
@@ -355,7 +368,9 @@ Partial Class Main
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents toServer As System.Windows.Forms.TextBox
     Friend WithEvents sendToServer As System.Windows.Forms.Button
-    Friend WithEvents log_ As System.Windows.Forms.RichTextBox
     Friend WithEvents ActionTmr As System.Windows.Forms.Timer
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents DreamListRefresh As System.Windows.Forms.Timer
+    Friend WithEvents log_ As Controls.RichTextBoxEx
 
 End Class

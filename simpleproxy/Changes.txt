@@ -1,0 +1,10 @@
+
+Simple Proxy 2.01
++ Added RchTextBoxEx control
+m Changed log_ from Rich textBox to RichtextBoxEx Custom Control
+m Added Hyperlink Linking to RichTect Control
+m Tweaked Server Text Parsing
+m Added FML to RTF Parsing <i>, <ul>, <b>, <A href="url">Title</a>
+ * URL's Pending Fine Tuning
++ Started adding config options Font Face and Font Size
++ Started Adding Main Window Position Saving
