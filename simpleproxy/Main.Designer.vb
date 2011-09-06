@@ -22,6 +22,7 @@ Partial Class Main
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.clientGroup = New System.Windows.Forms.GroupBox()
+        Me.log_ = New SimpleProxy2.Controls.RichTextBoxEx()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.BTN_Config = New System.Windows.Forms.Button()
         Me.BTN_Go = New System.Windows.Forms.Button()
@@ -35,25 +36,24 @@ Partial Class Main
         Me.get_ = New System.Windows.Forms.Button()
         Me.se_ = New System.Windows.Forms.PictureBox()
         Me.sw_ = New System.Windows.Forms.PictureBox()
-        Me.DreamList = New System.Windows.Forms.ListBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.DreamCountTxtBx = New System.Windows.Forms.TextBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.toServer = New System.Windows.Forms.TextBox()
         Me.sendToServer = New System.Windows.Forms.Button()
         Me.ActionTmr = New System.Windows.Forms.Timer(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.DreamListRefresh = New System.Windows.Forms.Timer(Me.components)
-        Me.log_ = New Controls.RichTextBoxEx()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.DreamCountTxtBx = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DreamList = New System.Windows.Forms.ListBox()
         Me.clientGroup.SuspendLayout()
         Me.GrpAction.SuspendLayout()
         CType(Me._ne, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._nw, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.se_, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sw_, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'clientGroup
@@ -68,6 +68,17 @@ Partial Class Main
         Me.clientGroup.TabIndex = 0
         Me.clientGroup.TabStop = False
         Me.clientGroup.Text = "Log"
+        '
+        'log_
+        '
+        Me.log_.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.log_.Location = New System.Drawing.Point(3, 16)
+        Me.log_.Name = "log_"
+        Me.log_.Size = New System.Drawing.Size(254, 144)
+        Me.log_.TabIndex = 49
+        Me.log_.Text = ""
         '
         'NotifyIcon1
         '
@@ -216,51 +227,6 @@ Partial Class Main
         Me.sw_.TabStop = False
         Me.sw_.WaitOnLoad = True
         '
-        'DreamList
-        '
-        Me.DreamList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DreamList.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DreamList.FormattingEnabled = True
-        Me.DreamList.HorizontalScrollbar = True
-        Me.DreamList.ItemHeight = 16
-        Me.DreamList.Location = New System.Drawing.Point(5, 16)
-        Me.DreamList.Name = "DreamList"
-        Me.DreamList.Size = New System.Drawing.Size(124, 132)
-        Me.DreamList.TabIndex = 12
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 160)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 13)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Furres in Dream:"
-        '
-        'DreamCountTxtBx
-        '
-        Me.DreamCountTxtBx.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DreamCountTxtBx.Location = New System.Drawing.Point(96, 157)
-        Me.DreamCountTxtBx.Name = "DreamCountTxtBx"
-        Me.DreamCountTxtBx.Size = New System.Drawing.Size(33, 23)
-        Me.DreamCountTxtBx.TabIndex = 14
-        Me.DreamCountTxtBx.Text = "###"
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.DreamCountTxtBx)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.DreamList)
-        Me.GroupBox1.Location = New System.Drawing.Point(281, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(136, 181)
-        Me.GroupBox1.TabIndex = 13
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Dream List"
-        '
         'GroupBox3
         '
         Me.GroupBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
@@ -311,22 +277,59 @@ Partial Class Main
         Me.DreamListRefresh.Enabled = True
         Me.DreamListRefresh.Interval = 400
         '
-        'log_
+        'GroupBox1
         '
-        Me.log_.Location = New System.Drawing.Point(3, 16)
-        Me.log_.Name = "log_"
-        Me.log_.Size = New System.Drawing.Size(254, 144)
-        Me.log_.TabIndex = 49
-        Me.log_.Text = ""
+        Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.DreamCountTxtBx)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.DreamList)
+        Me.GroupBox1.Location = New System.Drawing.Point(281, 11)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(136, 181)
+        Me.GroupBox1.TabIndex = 48
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Dream List"
+        '
+        'DreamCountTxtBx
+        '
+        Me.DreamCountTxtBx.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DreamCountTxtBx.Location = New System.Drawing.Point(96, 157)
+        Me.DreamCountTxtBx.Name = "DreamCountTxtBx"
+        Me.DreamCountTxtBx.Size = New System.Drawing.Size(33, 23)
+        Me.DreamCountTxtBx.TabIndex = 14
+        Me.DreamCountTxtBx.Text = "###"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(6, 160)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(84, 13)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Furres in Dream:"
+        '
+        'DreamList
+        '
+        Me.DreamList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DreamList.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DreamList.FormattingEnabled = True
+        Me.DreamList.HorizontalScrollbar = True
+        Me.DreamList.ItemHeight = 16
+        Me.DreamList.Location = New System.Drawing.Point(5, 16)
+        Me.DreamList.Name = "DreamList"
+        Me.DreamList.Size = New System.Drawing.Size(124, 132)
+        Me.DreamList.TabIndex = 12
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(429, 362)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GrpAction)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.clientGroup)
         Me.Controls.Add(Me.BTN_Config)
         Me.Controls.Add(Me.BTN_Go)
@@ -340,10 +343,10 @@ Partial Class Main
         CType(Me._nw, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.se_, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.sw_, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -361,10 +364,6 @@ Partial Class Main
     Friend WithEvents get_ As System.Windows.Forms.Button
     Friend WithEvents se_ As System.Windows.Forms.PictureBox
     Friend WithEvents sw_ As System.Windows.Forms.PictureBox
-    Friend WithEvents DreamList As System.Windows.Forms.ListBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DreamCountTxtBx As System.Windows.Forms.TextBox
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents toServer As System.Windows.Forms.TextBox
     Friend WithEvents sendToServer As System.Windows.Forms.Button
@@ -372,5 +371,9 @@ Partial Class Main
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents DreamListRefresh As System.Windows.Forms.Timer
     Friend WithEvents log_ As Controls.RichTextBoxEx
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents DreamCountTxtBx As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents DreamList As System.Windows.Forms.ListBox
 
 End Class

@@ -40,7 +40,8 @@ Namespace Controls
         End Function
 
         Private _protocols As List(Of String)
-
+        Private updating As Integer
+        Private oldEventMask As IntPtr
         Private Const WM_USER As Integer = &H400
         Private Const EM_GETCHARFORMAT As Integer = WM_USER + 58
         Private Const EM_SETCHARFORMAT As Integer = WM_USER + 68
@@ -153,6 +154,7 @@ Namespace Controls
         End Property
 
         Protected Overrides Sub OnTextChanged(ByVal e As EventArgs)
+
             For Each p As String In _protocols
                 Dim matches As MatchCollection = Regex.Matches(Me.Text, p & "(.*?)\s", RegexOptions.IgnoreCase)
                 For Each m As Match In matches
@@ -294,6 +296,60 @@ Namespace Controls
 
         Public Sub urlClicked(ByVal sender As Object, ByVal e As LinkClickedEventArgs) Handles Me.LinkClicked
             MessageBox.Show(e.LinkText)
+        End Sub
+
+        ''' <summary>
+        ''' Maintains performance while updating.
+        ''' </summary>
+        ''' <remarks>
+        ''' <para>
+        ''' It is recommended to call this method before doing
+        ''' any major updates that you do not wish the user to
+        ''' see. Remember to call EndUpdate when you are finished
+        ''' with the update. Nested calls are supported.
+        ''' </para>
+        ''' <para>
+        ''' Calling this method will prevent redrawing. It will
+        ''' also setup the event mask of the underlying richedit
+        ''' control so that no events are sent.
+        ''' </para>
+        ''' </remarks>
+        Public Sub BeginUpdate()
+            ' Deal with nested calls.
+            updating += 1
+
+            If updating > 1 Then
+                Return
+            End If
+
+            ' Prevent the control from raising any events.
+            oldEventMask = SendMessage(New HandleRef(Me, Handle), EM_SETEVENTMASK, 0, 0)
+
+            ' Prevent the control from redrawing itself.
+            SendMessage(New HandleRef(Me, Handle), WM_SETREDRAW, 0, 0)
+        End Sub
+
+        ''' <summary>
+        ''' Resumes drawing and event handling.
+        ''' </summary>
+        ''' <remarks>
+        ''' This method should be called every time a call is made
+        ''' made to BeginUpdate. It resets the event mask to it's
+        ''' original value and enables redrawing of the control.
+        ''' </remarks>
+        Public Sub EndUpdate()
+            ' Deal with nested calls.
+            updating -= 1
+
+            If updating > 0 Then
+                Return
+            End If
+
+            ' Allow the control to redraw itself.
+            SendMessage(New HandleRef(Me, Handle), WM_SETREDRAW, 1, 0)
+
+            ' Allow the control to raise event messages.
+            SendMessage(New HandleRef(Me, Handle), EM_SETEVENTMASK, 0, oldEventMask)
         End Sub
 
     End Class

@@ -121,50 +121,37 @@ Public Class Main
                 build = build.Replace("<ul>", "\ul ")
                 build = build.Replace("</ul>", "\ul0 ")
 
+                Dim Images As MatchCollection = Regex.Matches(data, "<img .*?src=[""']?([^'"">]+)[""']?.*?>", RegexOptions.IgnoreCase)
+                For Each Image As Match In Images
+                    Dim img As String = Image.Groups(1).Value
+                    Dim alt As String = Image.Groups(2).Value
+                    build = build.Replace(Image.ToString, "IMG:" & img & "::")
+                Next
                 lb.SelectionStart = lb.TextLength
-                lb.SelectedRtf = FormatText(build.ToString, 10)
+                lb.SelectedRtf = FormatText(build.ToString)
 
-                LinkSet()
-
+                lb.BeginUpdate()
+                'since we Put the Data in the RTB now we Finish Setting the Links
+                Dim links As MatchCollection = Regex.Matches(lb.Text, "<a.*?href=[""']?(.*?)[""']?.*?>(.*?)</a>", RegexOptions.IgnoreCase)
+                For Each match As Match In links
+                    Dim matchUrl As String = match.Groups(1).Value
+                    Dim matchText As String = match.Groups(2).Value
+                    If match.Success Then
+                        With lb
+                            .Find(match.ToString)
+                            .SelectedRtf = FormatURL(matchText & "\v #" & matchUrl & "\v0")
+                            .find(matchText & "#" & matchUrl)
+                            .SetSelectionLink(True)
+                        End With
+                    End If
+                Next
+                lb.EndUpdate()
             End If
         End If
     End Sub
 
     Private Sub log__LinkClicked(ByVal sender As Object, ByVal e As System.Windows.Forms.LinkClickedEventArgs)
         MsgBox(e.LinkText)
-    End Sub
-
-    Private Sub LinkSet()
-        ' OnTextChanged after text is sent to log_.RichTextBoxEx 
-        Dim links As MatchCollection = Regex.Matches(log_.Text, "<a.*?href=['|""](.*?)['?|""].*?>(.*?)</a>")
-        For Each match As Match In links
-            Dim matchUrl As String = match.Groups(1).Value
-            Dim matchText As String = match.Groups(2).Value
-            If match.Success Then
-                With log_
-                    .Select(match.Index, match.Length)
-                    .SelectedRtf = "{\rtf1\ansi " & matchText & "\v #" & matchUrl & "\v0}"
-                    .[Select](match.Index, matchText.Length + 1 + matchUrl.Length)
-                    .SetSelectionLink(True)
-                    .[Select](match.Index + matchText.Length + 1 + matchUrl.Length, 0)
-                End With
-            End If
-        Next
-        links = Regex.Matches(log_.Text, "<a.*?href=(.*?)>(.*?)</a>")
-        For Each match As Match In links
-            Dim matchUrl As String = match.Groups(1).Value
-            Dim matchText As String = match.Groups(2).Value
-            If match.Success Then
-                With log_
-                    .Select(match.Index, match.Length)
-                    .SelectedRtf = "{\rtf1\ansi " & matchText & "\v #" & matchUrl & "\v0}"
-                    .[Select](match.Index, matchText.Length + 1 + matchUrl.Length)
-                    .SetSelectionLink(True)
-                    .[Select](match.Index + matchText.Length + 1 + matchUrl.Length, 0)
-                End With
-            End If
-        Next
-
     End Sub
 
     Public Sub UpDateDreamList(ByVal [dummy] As String)
@@ -176,10 +163,14 @@ Public Class Main
             If DreamCounter >= 2 Then Exit Sub
             Dim p As KeyValuePair(Of UInteger, FURRE)
             DreamList.Items.Clear()
+            DreamList.BeginUpdate()
+            DreamList.Sorted = True
             For Each p In DREAM.List
                 DreamList.Items.Add(DREAM.List.Item(p.Key).Name)
             Next
+            DreamList.EndUpdate()
             DreamCountTxtBx.Text = DREAM.List.Count.ToString
+
         End If
     End Sub
 
@@ -188,7 +179,7 @@ Public Class Main
     End Sub
 
     Public Sub sndDisplay(ByVal data As String)
-        data = data.Replace("\n", vbCrLf)
+        data = data.Replace(vbLf, vbCrLf)
         If cMain.log Then
             AddDataToList(log_, Microsoft.VisualBasic.TimeString & ": " & data)
         Else
@@ -288,11 +279,13 @@ Public Class Main
                 Look = True
                 If data.Substring(2, 1) <> "t" Then
                     length = 30
-
                 Else
                     length = 14
-
                 End If
+                Player = ShortNametoFurre(LongNameToShortName(data.Remove(0, length + 2)))
+                Player.Color = data.Substring(2, length)
+                If IsBot(Player) Then Look = False
+                DREAM.List.Item(Player.ID) = Player
 
             ElseIf data.StartsWith("<") And loggingIn = 2 Then 'And loggingIn = True
                 Player.ID = ConvertFromBase220(data.Substring(1, 4))
@@ -471,158 +464,160 @@ Public Class Main
             Dim u As String = t.Match(data).Groups(1).ToString
             Text = t.Match(data).Groups(2).ToString
             sndDisplay("You " & u & ", """ & Text & """")
-        ElseIf User <> "" And Channel = "" And Look = False Then
+        ElseIf User <> "" And Channel = "" Then
+            Dim tt As Match = Regex.Match(data, "\(you see(.*?)\)", RegexOptions.IgnoreCase)
             Dim t As New Regex(NameFilter)
-            Text = t.Replace(data, "")
-            Text = Text.Remove(0, 2)
-            sndDisplay(User & " says, """ & Text & """")
-
-        ElseIf User <> "" And Channel = "" And Look = True Then
-            sndDisplay("You See '" & User & " '")
-
-        ElseIf Desc <> "" Then
-            Dim DescName As String = Regex.Match(data, DescFilter).Groups(1).ToString()
-            sndDisplay(Desc)
-            Look = False
-        ElseIf Channel = "shout" Then
-            ''SHOUT
-            Dim t As New Regex(YouSayFilter)
-            Dim u As String = t.Match(data).Groups(1).ToString
-            Text = t.Match(data).Groups(2).ToString
-            If User = "" Then
-                sndDisplay("You " & u & ", """ & Text & """")
+            If Not tt.Success Then
+                Text = t.Replace(data, "")
+                Text = Text.Remove(0, 2)
+                sndDisplay(User & " says, """ & Text & """")
             Else
-                Text = Regex.Match(data, "shouts: (.*)</font>").Groups(1).ToString()
-                sndDisplay(User & " shouts, """ & Text & """")
-            End If
-            If Not IsBot(Player) Then
-                '    '    TriggerCmd(MS0_SAY)
-                '    '    TriggerCmd(MS0_SAYEX)
-                '    '    TriggerCmd(MS0_SAYANY)
-                '    ''    TriggerCmd(MS0_SAYANYEX)
-                '    '    TriggerCmd(MS0_SAYMSG)
-                '    '    TriggerCmd(MS0_SAYMSGEX)
+                sndDisplay("You See '" & User & " '")
             End If
 
-        ElseIf Channel = "query" Then
-            Dim QCMD As String = Regex.Match(data, "href='command://(.*)'>").Groups(1).ToString
-            Select Case QCMD
-                Case "join"
-                    ''JOIN
-                    sndDisplay(User & " requests to join.")
-                    If Not IsBot(Player) Then
-                        '    '   TriggerCmd(MS0_JOIN)
-                        '    '   TriggerCmd(MS0_JOINEX)
-                    End If
-                Case "summon"
-                    ''SUMMON
-                    sndDisplay(User & " requests a summon.")
-                    If Not IsBot(Player) Then
-                        '    '  TriggerCmd(MS0_SUMMON)
-                        '    '  TriggerCmd(MS0_SUMMONEX)
-                    End If
-                Case "follow"
-                    ''LEAD
-                    sndDisplay(User & " requests to lead.")
-                    If Not IsBot(Player) Then
-                        '    PLAYER.Name = ""
-                        '    ' TriggerCmd(MS0_LEAD)
-                        '    PLAYER.Name = followRequester
-                        '    '  TriggerCmd(MS0_LEADEX)
-                    End If
-                Case "lead"
-                    ''FOLLOW
-                    sndDisplay(User & " requests the bot to follow.")
-                    If Not IsBot(Player) Then
-                        '    PLAYER.Name = ""
-                        '    '  TriggerCmd(MS0_FOLLOW)
-                        '    PLAYER.Name = leadRequester
-                        '    ' TriggerCmd(MS0_FOLLOWEX)
-                    End If
-                Case Else
-                    sndDisplay("## Unknown " & Channel & "## " & data)
-            End Select
+            ElseIf Desc <> "" Then
+                Dim DescName As String = Regex.Match(data, DescFilter).Groups(1).ToString()
+                sndDisplay(Desc)
+                Look = False
+            ElseIf Channel = "shout" Then
+                ''SHOUT
+                Dim t As New Regex(YouSayFilter)
+                Dim u As String = t.Match(data).Groups(1).ToString
+                Text = t.Match(data).Groups(2).ToString
+                If User = "" Then
+                    sndDisplay("You " & u & ", """ & Text & """")
+                Else
+                    Text = Regex.Match(data, "shouts: (.*)</font>").Groups(1).ToString()
+                    sndDisplay(User & " shouts, """ & Text & """")
+                End If
+                If Not IsBot(Player) Then
+                    '    '    TriggerCmd(MS0_SAY)
+                    '    '    TriggerCmd(MS0_SAYEX)
+                    '    '    TriggerCmd(MS0_SAYANY)
+                    '    ''    TriggerCmd(MS0_SAYANYEX)
+                    '    '    TriggerCmd(MS0_SAYMSG)
+                    '    '    TriggerCmd(MS0_SAYMSGEX)
+                End If
 
-            'NameFilter
-        ElseIf Channel = "whisper" Then
-            ''WHISPER
+            ElseIf Channel = "query" Then
+                Dim QCMD As String = Regex.Match(data, "href='command://(.*)'>").Groups(1).ToString
+                Select Case QCMD
+                    Case "join"
+                        ''JOIN
+                        sndDisplay(User & " requests to join.")
+                        If Not IsBot(Player) Then
+                            '    '   TriggerCmd(MS0_JOIN)
+                            '    '   TriggerCmd(MS0_JOINEX)
+                        End If
+                    Case "summon"
+                        ''SUMMON
+                        sndDisplay(User & " requests a summon.")
+                        If Not IsBot(Player) Then
+                            '    '  TriggerCmd(MS0_SUMMON)
+                            '    '  TriggerCmd(MS0_SUMMONEX)
+                        End If
+                    Case "follow"
+                        ''LEAD
+                        sndDisplay(User & " requests to lead.")
+                        If Not IsBot(Player) Then
+                            '    PLAYER.Name = ""
+                            '    ' TriggerCmd(MS0_LEAD)
+                            '    PLAYER.Name = followRequester
+                            '    '  TriggerCmd(MS0_LEADEX)
+                        End If
+                    Case "lead"
+                        ''FOLLOW
+                        sndDisplay(User & " requests the bot to follow.")
+                        If Not IsBot(Player) Then
+                            '    PLAYER.Name = ""
+                            '    '  TriggerCmd(MS0_FOLLOW)
+                            '    PLAYER.Name = leadRequester
+                            '    ' TriggerCmd(MS0_FOLLOWEX)
+                        End If
+                    Case Else
+                        sndDisplay("## Unknown " & Channel & "## " & data)
+                End Select
 
-            Dim WhisperFrom As String = Regex.Match(data, "whispers, ""(.*)"" to you").Groups(1).ToString()
-            Dim WhisperTo As String = Regex.Match(data, "You whisper ""(.*)"" to").Groups(1).ToString()
-            Dim WhisperDir As String = Regex.Match(data, "src='whisper-(.*)'").Groups(1).ToString()
-            If WhisperDir = "from" Then
-                sndDisplay(User & " whispers""" & WhisperFrom & """ to you.")
-                '    TriggerCmd(MS0_WHISPER)
-                '    TriggerCmd(MS0_WHISPEREX)
-                '   TriggerCmd(MS0_WHISPERMSG)
-                '    TriggerCmd(MS0_WHISPERMSGEX)
-                '    TriggerCmd(MS0_WHISPERANY)
-                '   TriggerCmd(MS0_WHISPERANYEX)
+                'NameFilter
+            ElseIf Channel = "whisper" Then
+                ''WHISPER
+
+                Dim WhisperFrom As String = Regex.Match(data, "whispers, ""(.*)"" to you").Groups(1).ToString()
+                Dim WhisperTo As String = Regex.Match(data, "You whisper ""(.*)"" to").Groups(1).ToString()
+                Dim WhisperDir As String = Regex.Match(data, "src='whisper-(.*)'").Groups(1).ToString()
+                If WhisperDir = "from" Then
+                    sndDisplay(User & " whispers""" & WhisperFrom & """ to you.")
+                    '    TriggerCmd(MS0_WHISPER)
+                    '    TriggerCmd(MS0_WHISPEREX)
+                    '   TriggerCmd(MS0_WHISPERMSG)
+                    '    TriggerCmd(MS0_WHISPERMSGEX)
+                    '    TriggerCmd(MS0_WHISPERANY)
+                    '   TriggerCmd(MS0_WHISPERANYEX)
+                Else
+                    WhisperTo = WhisperTo.Replace("<wnd>", "")
+                    sndDisplay("You whisper""" & WhisperTo & """ to " & User & ".")
+                End If
+
+            ElseIf Channel = "emote" Then
+                ' ''EMOTE
+                sndDisplay(User & " emotes: " & Text)
+                If Not IsBot(Player) Then
+                    '    '    TriggerCmd(MS0_EMOTE)
+                    '    '    TriggerCmd(MS0_EMOTEEX)
+                    '    '    TriggerCmd(MS0_EMOTEANY)
+                    '    '    TriggerCmd(MS0_EMOTEANYEX)
+                    '    '    TriggerCmd(MS0_EMOTEMSG)
+                    '    '    TriggerCmd(MS0_EMOTEMSGEX)
+                End If
+
+            ElseIf Channel = "error" Then
+                sndDisplay("Error:>> " & Text)
+            ElseIf data.StartsWith("Communication") Then
+                sndDisplay("Error: Communication Error.  Aborting connection.")
+                simpleProxy.Kill()
+
+
+            ElseIf data.StartsWith("<img src='fsh://system.fsh:") And InStr(data, "Lines of DragonSpeak") Then
+                Dim t As New Regex(Iconfilter)
+                Text = t.Replace(data, "")
+                sndDisplay("[" & fIcon(data) & "> " & Text)
+                'DREAM.Lines = Integer.Parse(StrTrimLeft(data, data.LastIndexOf(":") + 1).Trim)
+                'sndServer(Chr(34) & "dreamurl")
+                'bdreamenter = False
+            ElseIf data.StartsWith("<img src='fsh://system.fsh:86' /> Furcadia Standard Time:") Then
+                Dim t As New Regex(Iconfilter)
+                Text = t.Replace(data, "")
+                sndDisplay("[" & fIcon(data) & "> " & Text)
+                'furcTime = Date.UtcNow.AddHours(5).ToLongTimeString().Split(" "c)
+                'MS.TriggerCmd(MS.MS0_FURCTIME)
+                '**********       
+            ElseIf data.StartsWith("<img src='fsh://system.fsh:86' />") = True And InStr(data, "players in the dream of ") Then
+                Dim t As New Regex(Iconfilter)
+                Text = t.Replace(data, "")
+                sndDisplay("[" & fIcon(data) & "> " & Text)
+                'DREAM.Name = StrTrimLeft(data, InStr(data, "of") + 2).Replace(".", "")
+                'data = data.Replace(DREAM.Name, "")
+                'dNumFurres = Integer.Parse(RegExp(data, "\d*").Replace(" ", ""))***ERRORS***************
+            ElseIf data.StartsWith("<img src='fsh://system.fsh:86' />") Then
+                Dim t As New Regex(Iconfilter)
+                Text = t.Replace(data, "")
+                sndDisplay("[" & fIcon(data) & "> " & Text)
+                If loggingIn = 2 Then
+                    ' If bClientOpen = False Then sndServer("vascodagama")
+                    ' DREAM.List.Clear()
+                    'UpDateDreamList("")
+                    'bdreamenter = True
+                Else
+                    ' If bClientOpen = False Then sndServer("vascodagama")
+                    'TriggerCmd(MS0_LOGIN)
+                    ' loggingIn = False
+                    ' bdreamenter = True
+                End If
+
+
             Else
-                WhisperTo = WhisperTo.Replace("<wnd>", "")
-                sndDisplay("You whisper""" & WhisperTo & """ to " & User & ".")
+                sndDisplay("## Unknown Command ## " & data)
             End If
-
-        ElseIf Channel = "emote" Then
-            ' ''EMOTE
-            sndDisplay(User & " emotes: " & Text)
-            If Not IsBot(Player) Then
-                '    '    TriggerCmd(MS0_EMOTE)
-                '    '    TriggerCmd(MS0_EMOTEEX)
-                '    '    TriggerCmd(MS0_EMOTEANY)
-                '    '    TriggerCmd(MS0_EMOTEANYEX)
-                '    '    TriggerCmd(MS0_EMOTEMSG)
-                '    '    TriggerCmd(MS0_EMOTEMSGEX)
-            End If
-
-        ElseIf Channel = "error" Then
-            sndDisplay("Error:>> " & Text)
-        ElseIf data.StartsWith("Communication") Then
-            sndDisplay("Error: Communication Error.  Aborting connection.")
-            simpleProxy.Kill()
-
-
-        ElseIf data.StartsWith("<img src='fsh://system.fsh:") And InStr(data, "Lines of DragonSpeak") Then
-            Dim t As New Regex(Iconfilter)
-            Text = t.Replace(data, "")
-            sndDisplay("[" & fIcon(data) & "> " & Text)
-            'DREAM.Lines = Integer.Parse(StrTrimLeft(data, data.LastIndexOf(":") + 1).Trim)
-            'sndServer(Chr(34) & "dreamurl")
-            'bdreamenter = False
-        ElseIf data.StartsWith("<img src='fsh://system.fsh:86' /> Furcadia Standard Time:") Then
-            Dim t As New Regex(Iconfilter)
-            Text = t.Replace(data, "")
-            sndDisplay("[" & fIcon(data) & "> " & Text)
-            'furcTime = Date.UtcNow.AddHours(5).ToLongTimeString().Split(" "c)
-            'MS.TriggerCmd(MS.MS0_FURCTIME)
-            '**********       
-        ElseIf data.StartsWith("<img src='fsh://system.fsh:86' />") = True And InStr(data, "players in the dream of ") Then
-            Dim t As New Regex(Iconfilter)
-            Text = t.Replace(data, "")
-            sndDisplay("[" & fIcon(data) & "> " & Text)
-            'DREAM.Name = StrTrimLeft(data, InStr(data, "of") + 2).Replace(".", "")
-            'data = data.Replace(DREAM.Name, "")
-            'dNumFurres = Integer.Parse(RegExp(data, "\d*").Replace(" ", ""))***ERRORS***************
-        ElseIf data.StartsWith("<img src='fsh://system.fsh:86' />") Then
-            Dim t As New Regex(Iconfilter)
-            Text = t.Replace(data, "")
-            sndDisplay("[" & fIcon(data) & "> " & Text)
-            If loggingIn = 2 Then
-                ' If bClientOpen = False Then sndServer("vascodagama")
-                ' DREAM.List.Clear()
-                'UpDateDreamList("")
-                'bdreamenter = True
-            Else
-                ' If bClientOpen = False Then sndServer("vascodagama")
-                'TriggerCmd(MS0_LOGIN)
-                ' loggingIn = False
-                ' bdreamenter = True
-            End If
-
-
-        Else
-            sndDisplay("## Unknown Command ## " & data)
-        End If
     End Sub
 
     Private Function ShortNametoFurre(ByVal sname As String) As FURRE
@@ -632,6 +627,10 @@ Public Class Main
                 Return Character.Value
             End If
         Next
+    End Function
+
+    Private Function LongNameToShortName(ByVal Name As String) As String
+        Return Regex.Replace(Name.ToLower(), "[^a-zA-Z0-9\0x0020_.]+", "")
     End Function
 
     Private Function fIcon(ByVal data As String) As String
@@ -774,9 +773,18 @@ Public Class Main
 
     End Sub
 
-    Public Function FormatText(ByVal data As String, ByVal FontSize As Integer, Optional ByVal FontFace As String = "Microsoft Sans Serif") As String
+    Public Function FormatText(ByVal data As String) As String
+
+        Dim FontSize As Integer = AppFont.Size
+        Dim FontFace As String = AppFont.Name
         FontSize *= 2
         Return "{\rtf1\ansi\ansicpg1252\deff0\deflang1044{\fonttbl{\f0\fcharset0 " & FontFace & ";}}\viewkind4\uc1\fs" & FontSize.ToString & " " & data & " \par}"
+    End Function
+    Public Function FormatURL(ByVal data As String) As String
+        Dim FontSize As Integer = AppFont.Size
+        Dim FontFace As String = AppFont.Name
+        FontSize *= 2
+        Return "{\rtf1\ansi\ansicpg1252\deff0\deflang1044{\fonttbl{\f0\fcharset0 " & FontFace & ";}}\viewkind4\uc1\fs" & FontSize.ToString & " " & data & "}"
     End Function
 
     Private Sub BTN_Config_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BTN_Config.Click
@@ -791,6 +799,7 @@ Public Class Main
                 .ProcessCMD = cBot.IniFile
                 .StandAloneMode = False 'cMain.StandAlone
                 .Connect()
+                Look = False
                 BTN_Go.Text = "Connecting..."
             End With
             loggingIn = 1

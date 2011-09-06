@@ -1,4 +1,8 @@
 Sort out Silver Monkey Script Engine
+
+FIFO Stack to Prevent Throat Tied Syndrome on Non-Silver Sponsor Bots 
+and to Avoid Data loss on silver Sponsor. SS 100ms is Safe
+
 Add Access DataBase interface functions Maybe MySql stuff
 add Website Get/Submit for Web php Interaction IE Updating a Roster for a Guild
 Change Input textbox to RichtextBoxEx and Add RTF to FML converter
@@ -10,3 +14,12 @@ Dream Upload handeling. Use Client for Encrypted Dream Uploading
   *** Ctrl+T and Registry Dream Name+location 
 img src Image Downloading and Display "Facebook and Twitter Share Links"
 fox/fsh img display for Channel Tags
+Ad FILO Stack with 10 slots for Command History to Server (ctrl+i)
+
+Enque System::
+Kyle Storm says
+Just consider that if you're building a proxy, the client doesn't HAVE to send just one request
+to the server. It can send several before any of them even get handled. With just a boolean flag,
+you will be matching up the LAST request with the FIRST response (which isn't necessarily correct)
+
+Parsing Emoticons and Desc Tags
