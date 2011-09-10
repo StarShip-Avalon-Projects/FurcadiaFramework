@@ -5,7 +5,7 @@ and to Avoid Data loss on silver Sponsor. SS 100ms is Safe
 
 Add Access DataBase interface functions Maybe MySql stuff
 add Website Get/Submit for Web php Interaction IE Updating a Roster for a Guild
-Change Input textbox to RichtextBoxEx and Add RTF to FML converter
+
 Add Furcadia InterProcess Communication WM_COPYDATA
 Convert Server Parser to Furcadia Framewrt with Server Protocol Command Delegates
   *** IE Dream User List handeling in the Library rather then just the Structure list
@@ -23,3 +23,9 @@ to the server. It can send several before any of them even get handled. With jus
 you will be matching up the LAST request with the FIRST response (which isn't necessarily correct)
 
 Parsing Emoticons and Desc Tags
+
+Known Issues:
+Stand Sit Lay button Doesn't Show the Next Stage Properly
+Stand Alone Mode Buggy
+Go Button Doesn't Show the Correct Text
+BCasts not displayed properly

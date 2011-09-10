@@ -1,3 +1,19 @@
+Simple Proxy 2.02
++ Added menu Bar
++ Added Status Bar with Client Server Status Icons
++ Revealed Debug Window Option
++ Switched Input Box to RichtextBoxEx
++ Added Bold, Italic, and UnderLine Buttons
+m Applied rtf to FML Conversion for input Text Box
+m Reorganized Configuration Window
+m Finished FontFace and FontSize Config options
++ Added Text Color options to Configuragion and Settings.ini File
++ Enabled TimeStamps and added to Settings.ini
++ Added TextColor Enums and Converter Function as System.drawing.color can't be used in Function Parameters
+m Tweaked Text Parser. cleaned up stray text
++ Added Logfile support for rtf, html and plain text format with Options
++ added Window position saving
+
 
 Simple Proxy 2.01
 + Added RchTextBoxEx control
