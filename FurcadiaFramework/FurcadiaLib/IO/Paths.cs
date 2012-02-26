@@ -252,7 +252,7 @@ namespace Furcadia.IO
         * WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
         \***************************************************************************/
 
-        private static class OSBitness
+        public static class OSBitness
         {
             #region Is64BitOperatingSystem (IsWow64Process)
 

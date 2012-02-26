@@ -74,7 +74,7 @@ namespace Furcadia.Net
 		/// </summary>
 		private static int BUFFER_CAP = 4096;
 		private static int ENCODE_PAGE = 1252;
-		
+		private bool CConnected;
 		private IPEndPoint _endpoint;
 		private TcpClient server;
 		private TcpClient client;
@@ -226,7 +226,7 @@ namespace Furcadia.Net
 
         /// <summary>
         /// Standalone Mode
-        /// Keep Connection after Cloient Closes/Disconnects
+        /// Keep Connection after Client Closes/Disconnects
         /// </summary>
         public bool StandAloneMode
         {
@@ -344,12 +344,13 @@ namespace Furcadia.Net
                 {
                     if (this.ClientExited != null)
                     {
+                        CConnected = false;
                         //ClientDisConnected();
                         this.ClientExited();
                     }
                  };
                 ProcID = proc.Id;
-                
+                CConnected = true;
 			}
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
 		}
@@ -537,53 +538,51 @@ namespace Furcadia.Net
         
 		private void GetServerData (IAsyncResult ar)
 		{
-			try
-			{
+            try
+            {
                 if (IsServerConnected == false)
-				{
-					throw new SocketException((int)SocketError.NotConnected);
-				}
-				List<string> lines = new List<string> ();
-				int read = server.GetStream ().EndRead (ar);
-				//If we have left over data add it to this server build
-                if (!string.IsNullOrEmpty(_ServerLeftOvers) && _ServerLeftOvers.Length > 0)
-					serverBuild += _ServerLeftOvers;
-				serverBuild = System.Text.Encoding.GetEncoding (EncoderPage).GetString (serverBuffer, 0, read);
-                while ( server.GetStream().DataAvailable == true)
                 {
-
-                    if (serverBuffer.Length <= 0)
+                    ServerDisConnected();
+                   throw new SocketException((int)SocketError.NotConnected);
+                }
+                else
+                {
+                    List<string> lines = new List<string>();
+                    int read = server.GetStream().EndRead(ar);
+                    //If we have left over data add it to this server build
+                    if (!string.IsNullOrEmpty(_ServerLeftOvers) && _ServerLeftOvers.Length > 0)
+                        serverBuild += _ServerLeftOvers;
+                    serverBuild = System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, read);
+                    while (server.GetStream().DataAvailable == true)
                     {
 
-                        ServerDisConnected();
-
+                        int pos = server.GetStream().Read(serverBuffer, 0, serverBuffer.Length);
+                        serverBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, pos);
                     }
-					int pos = server.GetStream ().Read (serverBuffer, 0, serverBuffer.Length);
-					serverBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, pos);
-				}
-				lines.AddRange(serverBuild.Split('\n'));
-				for (int i = 0; i < lines.Count  ; i++)
-				{
-					if (!lines[i].Contains("\n"))
-					{
-						_ServerLeftOvers += lines[i] + "\n";
-					}
-					if (i < lines.Count -1 && IsClientConnected == true)
-					{
-						NetMessage msg = new NetMessage();
-						msg.Write(((ServerData != null) ? ServerData(lines[i]) : lines[i]) + "\n");
-
-                        //Don't know if this is the right way to do this
-                        //But it Works.
-                        // Clientflag Stops Server Side from writing to a Fake Client
-                        if (IsClientConnected && Clientflag)
+                    lines.AddRange(serverBuild.Split('\n'));
+                    for (int i = 0; i < lines.Count; i++)
+                    {
+                        if (!lines[i].Contains("\n"))
                         {
-                            SendClient(msg);
+                            _ServerLeftOvers += lines[i] + "\n";
                         }
-					}
-				}
-			}
-			catch (Exception e) { if (Error != null) Error(e); else throw e; }
+                        if (i < lines.Count - 1 && IsClientConnected == true)
+                        {
+                            NetMessage msg = new NetMessage();
+                            msg.Write(((ServerData != null) ? ServerData(lines[i]) : lines[i]) + "\n");
+
+                            //Don't know if this is the right way to do this
+                            //But it Works.
+                            // Clientflag Stops Server Side from writing to a Fake Client
+                            if (IsClientConnected && CConnected )
+                            {
+                                SendClient(msg);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e) { if (Error != null) Error(e); else throw e; }
 			if (IsServerConnected && serverBuild.Length > 0)
 				server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
 		}

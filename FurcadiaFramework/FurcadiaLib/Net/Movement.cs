@@ -327,6 +327,9 @@ namespace Furcadia.Net
            LOCAL10       = 7181,
            LOCAL11       = 7201,
            LOCAL12       = 7221,
+           LOCAL13       = 7241,
+           LOCAL14       = 7261,
+           LOCAL15       = 7281,
 //Dynamic Slots
            DYN1        = 10001,
            DYN2        = 10021,
