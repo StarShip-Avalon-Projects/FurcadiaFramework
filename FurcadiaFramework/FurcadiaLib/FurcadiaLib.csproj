@@ -48,6 +48,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\FurcadiaLib.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -60,6 +61,9 @@
     <DebugSymbols>true</DebugSymbols>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <DocumentationFile>bin\Release\FurcadiaLib.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -144,4 +148,17 @@
     </MonoDevelop>
     <VisualStudio />
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>REM DEL old files
+del "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar"
+del "$(TargetDir)$(TargetName)_$(PlatformName)_Binaries.rar"
+REM Create the BIN rar
+cd $(TargetDir)
+"c:/program files/winrar/rar.exe" a -r -x*.tmp "$(TargetDir)$(TargetName)_$(PlatformName)_Binaries.rar" *.*
+
+REM Create the SRC rar
+cd $(ProjectDir)
+"c:/program files/winrar/rar.exe" a -r -x*\.svn\* -n*.*proj -n*.sln -n*.cs -nlicense*.* "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" *.*
+move "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

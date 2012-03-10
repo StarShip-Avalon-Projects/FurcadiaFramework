@@ -34,14 +34,14 @@ namespace Furcadia.Net
 		///This is triggered when the 
 		/// </summary>
 		public event ActionDelegate Connected;
-        /// <summary>
-        ///This is triggered when the Server Disconnects
-        /// </summary>
-        public event ActionDelegate ServerDisConnected;
-        /// <summary>
-        ///This is triggered when the Client Disconnects
-        /// </summary>
-        public event ActionDelegate ClientDisConnected;
+		/// <summary>
+		///This is triggered when the Server Disconnects
+		/// </summary>
+		public event ActionDelegate ServerDisConnected;
+		/// <summary>
+		///This is triggered when the Client Disconnects
+		/// </summary>
+		public event ActionDelegate ClientDisConnected;
 
 
 		/// <summary>
@@ -84,12 +84,12 @@ namespace Furcadia.Net
 		private string _ServerLeftOvers;
 		private string clientBuild, serverBuild;
 		public static int _lport = 6700;
-        private int _procID;
+		private int _procID;
 		private static System.Timers.Timer NewsTimer;
-        private static bool _StandAloneMode = false, Clientflag = true;
+		private static bool _StandAloneMode = false, Clientflag = true;
 		private string _proc = "Furcadia.exe", _procpath, _procCMD ="-pick";
 
-      
+	  
 		#endregion
 		/// <summary>
 		/// Use proxy.ini if it exists. otherwise use settings.ini.
@@ -104,7 +104,7 @@ namespace Furcadia.Net
 			string SetPath = Paths.GetLocalSettingsPath();
 			string SetFile = "/settings.ini";
 			string[] sett = FurcIni.LoadFurcadiaSettings(SetPath,SetFile);
-            int port = Convert.ToInt32(FurcIni.GetUserSetting("PreferredServerPort", sett));
+			int port = Convert.ToInt32(FurcIni.GetUserSetting("PreferredServerPort", sett));
 			try
 			{
 				_endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
@@ -190,13 +190,13 @@ namespace Furcadia.Net
 			get { return _proc;}
 			set { _proc=value; }
 		}
-        public int ProcID
-        {
-            get { return _procID; }
-            set { _procID = value; }
-        }
+		public int ProcID
+		{
+			get { return _procID; }
+			set { _procID = value; }
+		}
 
-   		/// <summary>
+		/// <summary>
 		/// Process path (default: none)
 		/// </summary>
 		public string ProcessPath
@@ -224,15 +224,15 @@ namespace Furcadia.Net
 					return false; }
 		}
 
-        /// <summary>
-        /// Standalone Mode
-        /// Keep Connection after Client Closes/Disconnects
-        /// </summary>
-        public bool StandAloneMode
-        {
-            get { return _StandAloneMode;  }
-            set { _StandAloneMode = value; }
-        }
+		/// <summary>
+		/// Standalone Mode
+		/// Keep Connection after Client Closes/Disconnects
+		/// </summary>
+		public bool StandAloneMode
+		{
+			get { return _StandAloneMode;  }
+			set { _StandAloneMode = value; }
+		}
 
 		public bool IsClientConnected
 		{
@@ -291,11 +291,11 @@ namespace Furcadia.Net
 				FileStream proxyStream = null;
 				try{
 					/// Still Causes fileAccess Exception on 7
-                    proxyStream = File.OpenWrite(fIni);
+					proxyStream = File.OpenWrite(fIni);
 					proxyStream.Write(System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(proxyIni), 0, proxyIni.Length);
 					proxyStream.Flush();
 					proxyStream.Close();
-                    UseProxyIni = true;
+					UseProxyIni = true;
 				}catch{
 					UseProxyIni = false;
 					Settings.InitializeFurcadiaSettings();
@@ -333,24 +333,25 @@ namespace Furcadia.Net
 				}
 				
 				//Run         
-                if (string.IsNullOrEmpty(ProcessPath)) ProcessPath = Paths.GetInstallPath();
+				if (string.IsNullOrEmpty(ProcessPath)) ProcessPath = Paths.GetInstallPath();
 				//check ProcessPath is not a directory
 				if (!Directory.Exists(ProcessPath)) throw new DirectoryNotFoundException("Process path not found.");
 				Directory.SetCurrentDirectory(ProcessPath);
 				if (!File.Exists(Path.Combine(ProcessPath,Process))) throw new Exception("Client executable '"+Process+"' not found.");
 				System.Diagnostics.Process proc = System.Diagnostics.Process.Start(Process,ProcessCMD );
 				proc.EnableRaisingEvents = true;
-                proc.Exited += delegate
-                {
-                    if (this.ClientExited != null)
-                    {
-                        CConnected = false;
-                        //ClientDisConnected();
-                        this.ClientExited();
-                    }
-                 };
-                ProcID = proc.Id;
-                CConnected = true;
+				proc.Exited += delegate
+				{
+					if (this.ClientExited != null)
+					{
+						CConnected = false;
+						//ClientDisConnected();
+
+						this.ClientExited();
+					}
+				 };
+				ProcID = proc.Id;
+				CConnected = true;
 			}
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
 		}
@@ -396,13 +397,13 @@ namespace Furcadia.Net
 			{
 				if (client != null && client.Connected == true){
 					NetworkStream clientStream = client.GetStream();
-					if (clientStream != null) clientStream.Close();
+					if (clientStream != null) clientStream.Flush();
 					client.Close();
 				}
 				
 				if (server != null && server.Connected == true){
 					NetworkStream serverStream = server.GetStream();
-					if (serverStream != null) serverStream.Close();
+                    if (serverStream != null) serverStream.Flush();
 					server.Close();
 				}
 			}
@@ -434,7 +435,7 @@ namespace Furcadia.Net
 				if (Connected != null)
 				{
 					Connected();
-                    Clientflag = true;
+					Clientflag = true;
 					/// Delete proxy.ini or restore settings.ini
 					if (UseProxyIni)
 					{
@@ -472,7 +473,7 @@ namespace Furcadia.Net
 				if (client.Connected == false)
 				{
 					throw new SocketException((int)SocketError.NotConnected);
-					//return;
+					return;
 				}
 				List<string> lines = new List<string> ();
 				//read = number of bytes read
@@ -482,14 +483,14 @@ namespace Furcadia.Net
 				while (client.GetStream ().DataAvailable) {
 					//clientBuffer.Length = NetProxy.BUFFER_CAP
 
-                    if (clientBuffer.Length <= 0)
-                    {
+					if (clientBuffer.Length <= 0)
+					{
 
-                        ClientDisConnected();
+						ClientDisConnected();
 
-                    }
+					}
 
-		            int pos = client.GetStream ().Read (clientBuffer, 0, clientBuffer.Length);
+					int pos = client.GetStream ().Read (clientBuffer, 0, clientBuffer.Length);
 					clientBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(clientBuffer, 0, pos);			
 				}
 				//Every line should end with '\n'
@@ -506,83 +507,83 @@ namespace Furcadia.Net
 					//The '\n' separates the server/client protocols
 					if (msg.GetString().EndsWith("\n") == false) msg.Write("\n");
 					//Send it on it's way...
-                    if (IsServerConnected && (StandAloneMode == true && msg.GetString() == "quit" + "\n"))
-                    {
-                        //Don't know if this is the right way to do this
-                        //But it Works.
-                        // This Stops Server Side from writing to a Fake Client
-                        Clientflag = false;
+					if (IsServerConnected && (StandAloneMode == true && msg.GetString() == "quit" + "\n"))
+					{
+						//Don't know if this is the right way to do this
+						//But it Works.
+						// This Stops Server Side from writing to a Fake Client
+						Clientflag = false;
 
-                        ClientDisConnected();
-                        
-                       // client.Close();
-                       // return;
-                    }
-                    else if (IsServerConnected && (StandAloneMode == true && msg.GetString() != "quit" + "\n"))
-                    {
-                        SendServer(msg);
-                        
-                    }
-                    else if (IsServerConnected && StandAloneMode == false)
-                    {
-                        SendServer(msg);
-                    }
+						ClientDisConnected();
+						
+					   // client.Close();
+					   // return;
+					}
+					else if (IsServerConnected && (StandAloneMode == true && msg.GetString() != "quit" + "\n"))
+					{
+						SendServer(msg);
+						
+					}
+					else if (IsServerConnected && StandAloneMode == false)
+					{
+						SendServer(msg);
+					}
 			}
-            }
+			}
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
 			if (client.Connected && clientBuild.Length >= 1)
 			{
 				client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
 			}
 		}
-        
+		
 		private void GetServerData (IAsyncResult ar)
 		{
-            try
-            {
-                if (IsServerConnected == false)
-                {
-                    ServerDisConnected();
-                   throw new SocketException((int)SocketError.NotConnected);
-                }
-                else
-                {
-                    List<string> lines = new List<string>();
-                    int read = server.GetStream().EndRead(ar);
-                    //If we have left over data add it to this server build
-                    if (!string.IsNullOrEmpty(_ServerLeftOvers) && _ServerLeftOvers.Length > 0)
-                        serverBuild += _ServerLeftOvers;
-                    serverBuild = System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, read);
-                    while (server.GetStream().DataAvailable == true)
-                    {
+			try
+			{
+				if (IsServerConnected == false)
+				{
+					ServerDisConnected();
+				   throw new SocketException((int)SocketError.NotConnected);
+				}
+				else
+				{
+					List<string> lines = new List<string>();
+					int read = server.GetStream().EndRead(ar);
+					//If we have left over data add it to this server build
+					if (!string.IsNullOrEmpty(_ServerLeftOvers) && _ServerLeftOvers.Length > 0)
+						serverBuild += _ServerLeftOvers;
+					serverBuild = System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, read);
+					while (server.GetStream().DataAvailable == true)
+					{
 
-                        int pos = server.GetStream().Read(serverBuffer, 0, serverBuffer.Length);
-                        serverBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, pos);
-                    }
-                    lines.AddRange(serverBuild.Split('\n'));
-                    for (int i = 0; i < lines.Count; i++)
-                    {
-                        if (!lines[i].Contains("\n"))
-                        {
-                            _ServerLeftOvers += lines[i] + "\n";
-                        }
-                        if (i < lines.Count - 1 && IsClientConnected == true)
-                        {
-                            NetMessage msg = new NetMessage();
-                            msg.Write(((ServerData != null) ? ServerData(lines[i]) : lines[i]) + "\n");
+						int pos = server.GetStream().Read(serverBuffer, 0, serverBuffer.Length);
+						serverBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, pos);
+					}
+					lines.AddRange(serverBuild.Split('\n'));
+					for (int i = 0; i < lines.Count; i++)
+					{
+						if (!lines[i].Contains("\n"))
+						{
+							_ServerLeftOvers += lines[i] + "\n";
+						}
+						if (i < lines.Count - 1 && IsClientConnected == true)
+						{
+							NetMessage msg = new NetMessage();
+							msg.Write(((ServerData != null) ? ServerData(lines[i]) : lines[i]) + "\n");
 
-                            //Don't know if this is the right way to do this
-                            //But it Works.
-                            // Clientflag Stops Server Side from writing to a Fake Client
-                            if (IsClientConnected && CConnected )
-                            {
-                                SendClient(msg);
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception e) { if (Error != null) Error(e); else throw e; }
+							//Don't know if this is the right way to do this
+							//But it Works.
+							// Clientflag Stops Server Side from writing to a Fake Client
+							if (IsClientConnected && CConnected )
+							{
+								SendClient(msg);
+							}
+						}
+					}
+				}
+			}
+			catch (Exception e) { if (Error != null) Error(e); else throw e; }
 			if (IsServerConnected && serverBuild.Length > 0)
 				server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
 		}
