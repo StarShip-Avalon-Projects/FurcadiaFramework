@@ -403,7 +403,7 @@ namespace Furcadia.Net
 				
 				if (server != null && server.Connected == true){
 					NetworkStream serverStream = server.GetStream();
-                    if (serverStream != null) serverStream.Flush();
+					if (serverStream != null) serverStream.Flush();
 					server.Close();
 				}
 			}
