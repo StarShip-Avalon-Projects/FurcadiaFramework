@@ -72,7 +72,7 @@ namespace Furcadia.Net
 		/// <summary>
 		/// Max buffer size
 		/// </summary>
-		private static int BUFFER_CAP = 4096;
+		private static int BUFFER_CAP = 2048;
 		private static int ENCODE_PAGE = 1252;
 		private bool CConnected;
 		private IPEndPoint _endpoint;
@@ -366,7 +366,7 @@ namespace Furcadia.Net
 		{
 			try
 			{
-				if (client.Client != null && client.GetStream ().CanWrite)
+				if (client.Client != null && client.GetStream ().CanWrite == true && client.Connected == true)
 					client.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
 			}
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
@@ -397,13 +397,21 @@ namespace Furcadia.Net
 			{
 				if (client != null && client.Connected == true){
 					NetworkStream clientStream = client.GetStream();
-					if (clientStream != null) clientStream.Flush();
-					client.Close();
+					if (clientStream != null)
+					{
+						clientStream.Flush();
+						clientStream.Close();
+					}
+										client.Close();
 				}
 				
 				if (server != null && server.Connected == true){
 					NetworkStream serverStream = server.GetStream();
-					if (serverStream != null) serverStream.Flush();
+					if (serverStream != null) 
+					{
+						serverStream.Flush();
+						serverStream.Close();
+					}
 					server.Close();
 				}
 			}
@@ -473,7 +481,7 @@ namespace Furcadia.Net
 				if (client.Connected == false)
 				{
 					throw new SocketException((int)SocketError.NotConnected);
-					return;
+					//return;
 				}
 				List<string> lines = new List<string> ();
 				//read = number of bytes read
@@ -507,7 +515,7 @@ namespace Furcadia.Net
 					//The '\n' separates the server/client protocols
 					if (msg.GetString().EndsWith("\n") == false) msg.Write("\n");
 					//Send it on it's way...
-					if (IsServerConnected && (StandAloneMode == true && msg.GetString() == "quit" + "\n"))
+					if (IsServerConnected && (StandAloneMode == true && msg.GetString() == "`quit" + "\n"))
 					{
 						//Don't know if this is the right way to do this
 						//But it Works.
@@ -519,7 +527,7 @@ namespace Furcadia.Net
 					   // client.Close();
 					   // return;
 					}
-					else if (IsServerConnected && (StandAloneMode == true && msg.GetString() != "quit" + "\n"))
+					else if (IsServerConnected && (StandAloneMode == true && msg.GetString() != "`quit" + "\n"))
 					{
 						SendServer(msg);
 						
@@ -531,7 +539,7 @@ namespace Furcadia.Net
 			}
 			}
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
-			if (client.Connected && clientBuild.Length >= 1)
+			if (client.Connected == true  && clientBuild.Length >= 1)
 			{
 				client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
 			}
@@ -575,7 +583,7 @@ namespace Furcadia.Net
 							//Don't know if this is the right way to do this
 							//But it Works.
 							// Clientflag Stops Server Side from writing to a Fake Client
-							if (IsClientConnected && CConnected )
+							if (IsClientConnected )
 							{
 								SendClient(msg);
 							}
