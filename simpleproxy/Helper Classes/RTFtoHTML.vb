@@ -97,7 +97,7 @@ Public Class RTFtoHTML
       strReturn &= "normal "
     End If
     'size
-    strReturn &= fnt.SizeInPoints & "pt/normal "
+        strReturn &= fnt.SizeInPoints & "pt/normal "
     'family
     strReturn &= fnt.FontFamily.Name
     Return strReturn

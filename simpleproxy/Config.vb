@@ -123,37 +123,26 @@ Public Class Config
         Select Case cMain.LogOption
             Case 0
                 RadioOverwriteLog.Checked = True
-                RadioNewFile.Checked = False
                 ChkBxTimeStampLog.Checked = False
                 ChkBxTimeStampLog.Enabled = False
             Case 1
-                RadioOverwriteLog.Checked = False
                 RadioNewFile.Checked = True
                 ChkBxTimeStampLog.Checked = False
                 ChkBxTimeStampLog.Enabled = True
             Case 2
-                RadioOverwriteLog.Checked = False
                 RadioNewFile.Checked = True
                 ChkBxTimeStampLog.Checked = True
                 ChkBxTimeStampLog.Enabled = True
-            Case Else
-                MsgBox("LogOption Option Error")
         End Select
     End Sub
 
     Public Sub setRadioExt()
         Select Case cMain.LogType
             Case "rtf"
-                RadioHTML.Checked = False
                 RadioRTF.Checked = True
-                RadioTXT.Checked = False
             Case "html"
                 RadioHTML.Checked = True
-                RadioRTF.Checked = False
-                RadioTXT.Checked = False
             Case "txt"
-                RadioHTML.Checked = False
-                RadioRTF.Checked = False
                 RadioTXT.Checked = True
         End Select
     End Sub
@@ -174,55 +163,39 @@ Public Class Config
     End Sub
 
     Private Sub WhisperColorBox_Click(sender As System.Object, e As System.EventArgs) Handles WhisperColorBox.Click
-        Dim dlg As New ColorDialog
-        dlg.Color = WhisperColorBox.BackColor
-        If dlg.ShowDialog() = DialogResult.OK Then
-            WhisperColorBox.BackColor = dlg.Color
-        End If
+        GetColor(WhisperColorBox)
     End Sub
 
     Private Sub ShoutColorBox_Click(sender As System.Object, e As System.EventArgs) Handles ShoutColorBox.Click
-        Dim dlg As New ColorDialog
-        dlg.Color = ShoutColorBox.BackColor
-        If dlg.ShowDialog() = DialogResult.OK Then
-            ShoutColorBox.BackColor = dlg.Color
-        End If
+        GetColor(ShoutColorBox)
     End Sub
 
     Private Sub EmitColorBox_Click(sender As System.Object, e As System.EventArgs) Handles EmitColorBox.Click
-        Dim dlg As New ColorDialog
-        dlg.Color = EmitColorBox.BackColor
-        If dlg.ShowDialog() = DialogResult.OK Then
-            EmitColorBox.BackColor = dlg.Color
-        End If
+        GetColor(EmitColorBox)
     End Sub
 
     Private Sub SayColorBox_Click(sender As System.Object, e As System.EventArgs) Handles SayColorBox.Click
-        Dim dlg As New ColorDialog
-        dlg.Color = SayColorBox.BackColor
-        If dlg.ShowDialog() = DialogResult.OK Then
-            SayColorBox.BackColor = dlg.Color
-        End If
+        GetColor(SayColorBox)
     End Sub
 
     Private Sub DefaultColorBox_Click(sender As System.Object, e As System.EventArgs) Handles DefaultColorBox.Click
+        GetColor(DefaultColorBox)
+    End Sub
+
+    Private Sub EmoteColorBox_Click(sender As System.Object, e As System.EventArgs) Handles EmoteColorBox.Click
+        GetColor(EmoteColorBox)
+    End Sub
+
+    Public Sub GetColor(ByRef ColorBX As System.Windows.Forms.PictureBox)
         Dim dlg As New ColorDialog
-        dlg.Color = DefaultColorBox.BackColor
+        dlg.Color = ColorBX.BackColor
         If dlg.ShowDialog() = DialogResult.OK Then
-            DefaultColorBox.BackColor = dlg.Color
+            ColorBX.BackColor = dlg.Color
         End If
     End Sub
 
     Private Sub ChkTimeStamp_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles ChkTimeStamp.CheckedChanged
         cMain.TimeStamp = ChkTimeStamp.CheckState
-    End Sub
-
-    Private Sub EmoteColorBox_Click(sender As System.Object, e As System.EventArgs) Handles EmoteColorBox.Click
-        Dim dlg As New ColorDialog
-        dlg.Color = EmoteColorBox.BackColor
-        If dlg.ShowDialog() = DialogResult.OK Then
-            EmoteColorBox.BackColor = dlg.Color
-        End If
     End Sub
 
     Private Sub ChckSaveToLog_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles ChckSaveToLog.CheckedChanged

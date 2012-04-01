@@ -346,8 +346,10 @@ namespace Furcadia.Net
 					{
 						CConnected = false;
 						//ClientDisConnected();
-
+						
 						this.ClientExited();
+						//client.Close();
+						//server.Close();
 					}
 				 };
 				ProcID = proc.Id;
@@ -366,8 +368,8 @@ namespace Furcadia.Net
 		{
 			try
 			{
-				if (client.Client != null && client.GetStream ().CanWrite == true && client.Connected == true)
-					client.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
+				if (client.Client != null && client.GetStream().CanWrite == true && client.Connected == true)
+					client.GetStream().Write (System.Text.Encoding.GetEncoding(EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
 			}
 			catch (Exception e) { if (Error != null) Error(e); else throw e; }
 
@@ -414,8 +416,26 @@ namespace Furcadia.Net
 					}
 					server.Close();
 				}
+				
 			}
 			catch (Exception e) { if (Error != null) Error(e); }
+		}
+
+		//Implement IDisposable.
+		public void Dispose()
+		{
+			Dispose(true);
+			GC.SuppressFinalize(this);
+		}
+
+		protected virtual void Dispose(bool disposing)
+		{
+			if (disposing)
+			{
+				// Free other state (managed objects).
+			}
+			// Free your own state (unmanaged objects).
+			// Set large fields to null.
 		}
 
 
