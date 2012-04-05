@@ -92,6 +92,7 @@ namespace Furcadia.Net
 			request = (HttpWebRequest)WebRequest.Create(((url.EndsWith("/"))?url : url +"/") + "q/?" + requestString);
 			try
 			{
+               
 				request.BeginGetResponse(new AsyncCallback(RespCallback),null);
 			}
 			catch
