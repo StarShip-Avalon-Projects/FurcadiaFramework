@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Base220.cs" />
     <Compile Include="Base95.cs" />
+    <Compile Include="Drawing\Remapper.cs" />
     <Compile Include="IO\GCAWeb.Utils.cs" />
     <Compile Include="Drawing\Graphics.cs" />
     <Compile Include="Drawing\Helper.cs" />
