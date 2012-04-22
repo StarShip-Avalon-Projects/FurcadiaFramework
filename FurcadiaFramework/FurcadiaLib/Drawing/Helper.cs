@@ -19,11 +19,24 @@ namespace Furcadia.Drawing
             {
                 foreach (Frame frame in shape.Frames)
                 {
-					if (frame.ImageDataSize > 0)
-						bitmaps.Add(toConvert.ToBitmap(frame, pal));
+                    if (frame.ImageDataSize > 0)
+                        bitmaps.Add(toConvert.ToBitmap(frame, pal));
                 }
             }
             return bitmaps.ToArray();
         }
+
+        /// <summary>
+        /// Converts a Char to Desc Tag
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
+            public static int CharToDescTag(char c)
+        {
+            return (int)(c - 33);
+        }
     }
+
+    
+
 }
