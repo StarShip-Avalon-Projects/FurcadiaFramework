@@ -74,7 +74,6 @@
   <ItemGroup>
     <Compile Include="Base220.cs" />
     <Compile Include="Base95.cs" />
-    <Compile Include="Drawing\Remapper.cs" />
     <Compile Include="IO\GCAWeb.Utils.cs" />
     <Compile Include="Drawing\Graphics.cs" />
     <Compile Include="Drawing\Helper.cs" />
@@ -92,6 +91,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="Util.cs" />
@@ -124,6 +128,14 @@
   <ItemGroup>
     <Content Include="Changes.txt" />
     <Content Include="ToDo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\furc.pal" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
