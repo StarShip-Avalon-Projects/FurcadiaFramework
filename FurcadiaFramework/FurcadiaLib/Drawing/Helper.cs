@@ -20,7 +20,7 @@ namespace Furcadia.Drawing
                 foreach (Frame frame in shape.Frames)
                 {
                     if (frame.ImageDataSize > 0)
-                        bitmaps.Add(toConvert.ToBitmap(frame, pal));
+                        bitmaps.Add(FurcadiaShapes.ToBitmap(frame, pal));
                 }
             }
             return bitmaps.ToArray();

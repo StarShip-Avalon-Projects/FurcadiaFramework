@@ -333,7 +333,7 @@ namespace Furcadia.Drawing.Graphics
         }
 
 
-        public System.Drawing.Bitmap ToBitmap(Furcadia.Drawing.Graphics.Frame frame, Palette pal)
+        public static System.Drawing.Bitmap ToBitmap(Furcadia.Drawing.Graphics.Frame frame, Palette pal)
         {
             /* Create a new bitmap */
             try
