@@ -132,4 +132,17 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>REM DEL old files
+del "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar"
+del "$(TargetDir)$(TargetName)_$(PlatformName)_Binaries.rar"
+REM Create the BIN rar
+cd $(TargetDir)
+"c:/program files/winrar/rar.exe" a -r -x*.tmp "$(TargetDir)$(TargetName)_$(PlatformName)_Binaries.rar" *.*
+
+REM Create the SRC rar
+cd $(ProjectDir)
+"c:/program files/winrar/rar.exe" a -r -x*\.svn\* -n*.*proj -n*.sln -n*.cs -nlicense*.* "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" *.*
+move "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

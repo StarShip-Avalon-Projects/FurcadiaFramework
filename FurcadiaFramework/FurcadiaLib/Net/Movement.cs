@@ -91,7 +91,11 @@ namespace Furcadia.Net
         }
         public  string ShortName
         {
-            get { return Regex.Replace(_Name.ToLower(), "[^a-zA-Z0-9\0x0020_.]+", ""); }
+            get
+            {
+                return Regex.Replace(_Name.ToLower(), "[^a-zA-Z0-9\0x0020_.]+", "");
+                
+                 }
         }
        
         public  char ColorType

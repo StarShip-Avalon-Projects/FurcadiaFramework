@@ -33,14 +33,10 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <SccProjectName>
-    </SccProjectName>
-    <SccLocalPath>
-    </SccLocalPath>
-    <SccAuxPath>
-    </SccAuxPath>
-    <SccProvider>
-    </SccProvider>
+    <SccProjectName>%24/furcadia/FurcadiaFramework/FurcadiaLib</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://tfs.codeplex.com/tfs/tfs05</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -55,16 +51,17 @@
     <DocumentationFile>bin\Debug\FurcadiaLib.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>full</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>false</DebugSymbols>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>bin\Release\FurcadiaLib.XML</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
@@ -78,21 +75,6 @@
   <ItemGroup>
     <Compile Include="Base220.cs" />
     <Compile Include="Base95.cs" />
-    <Compile Include="Compression\BZip2\BZip2.cs" />
-    <Compile Include="Compression\BZip2\BZip2Constants.cs" />
-    <Compile Include="Compression\BZip2\BZip2Exception.cs" />
-    <Compile Include="Compression\BZip2\BZip2InputStream.cs" />
-    <Compile Include="Compression\BZip2\BZip2OutputStream.cs" />
-    <Compile Include="Compression\BZip2\SharpZipBaseException.cs" />
-    <Compile Include="Compression\Checksums\CRC32.cs" />
-    <Compile Include="Compression\Checksums\CRCTool.cs" />
-    <Compile Include="Compression\Checksums\IChecksum.cs" />
-    <Compile Include="Compression\Checksums\StrangeCRC.cs" />
-    <Compile Include="Compression\Lzw\LzwDecoder.cs" />
-    <Compile Include="Compression\Lzw\LzwEncoder.cs" />
-    <Compile Include="Compression\Lzw\LzwTests.cs" />
-    <Compile Include="Compression\Rch\RchDecoder.cs" />
-    <Compile Include="Compression\Rch\RchEncoder.cs" />
     <Compile Include="IO\GCAWeb.Utils.cs" />
     <Compile Include="Drawing\Graphics.cs" />
     <Compile Include="Drawing\Helper.cs" />
