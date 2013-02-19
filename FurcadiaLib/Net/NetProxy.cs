@@ -397,6 +397,7 @@ namespace Furcadia.Net
 		{
 			try
 			{
+                listen.Stop();
 				if (client != null && client.Connected == true){
 					NetworkStream clientStream = client.GetStream();
 					if (clientStream != null )
@@ -504,8 +505,7 @@ namespace Furcadia.Net
 			{
 				if (client.Connected == false)
 				{
-					//throw new SocketException((int)SocketError.NotConnected);
-					return;
+					throw new SocketException((int)SocketError.NotConnected);
 				}
 				List<string> lines = new List<string> ();
 				//read = number of bytes read
@@ -562,11 +562,13 @@ namespace Furcadia.Net
 					}
 			}
 			}
-			catch (Exception e) { if (Error != null) Error(e); else throw e; }
+            catch (Exception e) {  } //Error != null) Error(e); else throw e;
+            //ClientDisConnected();
 			if (client.Connected == true  && clientBuild.Length >= 1)
 			{
 				client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
 			}
+            
 		}
 		
 		private void GetServerData (IAsyncResult ar)
@@ -574,10 +576,10 @@ namespace Furcadia.Net
 			try
 			{
 				if (IsServerConnected == false)
-				{
-					ServerDisConnected();
-					return;
-				   //throw new SocketException((int)SocketError.NotConnected);
+				{				
+	
+
+				   throw new SocketException((int)SocketError.NotConnected);
 				}
 				else
 				{
@@ -616,10 +618,11 @@ namespace Furcadia.Net
 					}
 				}
 			}
-			catch (Exception e) { if (Error != null) Error(e); else throw e; }
-			if (IsServerConnected && serverBuild.Length > 0)
+            catch (Exception e) { } //Error != null) Error(e); else throw e;
+            if (IsServerConnected && serverBuild.Length > 0)
 				server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
-		}
+		if (server.Connected == false) ServerDisConnected(); 
+        }
 		#endregion
 	}
 }
