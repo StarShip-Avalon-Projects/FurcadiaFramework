@@ -280,8 +280,5 @@ Partial Public Class MainForm
         LoadINI()
     End Sub
 
-
-
-
 End Class
 

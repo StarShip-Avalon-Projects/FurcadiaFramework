@@ -17,10 +17,14 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>2.0</OldToolsVersion>
-    <SccProjectName>%24/furcadia/simpleproxy</SccProjectName>
-    <SccLocalPath>.</SccLocalPath>
-    <SccAuxPath>https://tfs.codeplex.com/tfs/tfs05</SccAuxPath>
-    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -52,11 +56,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Monkeyspeak">
-      <HintPath>dll\Monkeyspeak.dll</HintPath>
-    </Reference>
-    <Reference Include="Nini, Version=1.1.0.0, Culture=neutral, PublicKeyToken=691faec150a7fa7b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Nini">
       <HintPath>dll\Nini.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -150,14 +150,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\furcadia-56477\FurcadiaLib\FurcadiaLib.csproj">
+    <ProjectReference Include="..\FurcadiaLib\FurcadiaLib.csproj">
       <Project>{156C2AF0-3DA8-4D8C-A525-5400185579B3}</Project>
       <Name>FurcadiaLib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Changes.txt" />
+    <Content Include="dll\Nini.dll" />
     <Content Include="Format Notes.txt" />
+    <Content Include="images\green_hand.png" />
+    <Content Include="images\grey_hand.png" />
+    <Content Include="images\red_hand.png" />
     <Content Include="resources\images2.ico" />
     <Content Include="resources\images2.jpg" />
     <Content Include="resources\images2v.ico" />
@@ -187,7 +191,7 @@ cd $(TargetDir)
 
 REM Create the SRC rar
 cd $(ProjectDir)
-"c:/program files/winrar/rar.exe" a -r -x*\.svn\* -n*.*proj -n*.sln -n*.nsi -n*.vb -nlicense*.* -n*.dll "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" *.*
+"c:/program files/winrar/rar.exe" a -r -x*\.svn\*  -x*\obj\* -n*.*proj -n*.sln  -n*.vb -nlicense*.*-n*.sln -n*.resx  -n*.dll -n*.config "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" *.*
 move "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" "$(TargetDir)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

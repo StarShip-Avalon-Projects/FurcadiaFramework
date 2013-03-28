@@ -183,8 +183,7 @@ namespace Furcadia.Net
             }
 
             respStream.Close();
-            //streamRead.Close();
-
+      
             // Release the HttpWebResponse
             resp.Close();
             allDone.Set();

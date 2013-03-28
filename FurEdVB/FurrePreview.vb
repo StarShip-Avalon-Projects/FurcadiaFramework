@@ -5,7 +5,7 @@ Imports System.Data
 Imports System.Text
 Imports System.Windows.Forms
 Imports FurEdVB.FurEd
-Imports Furcadia.Graphics
+'Imports Furcadia.Graphics
 Imports Furcadia.Drawing.Graphics
 Imports System.IO
 Imports Furcadia.IO
@@ -373,6 +373,10 @@ Partial Public Class FurrePreview
     Private AvatarFrame As Integer = 0
     Private ColourCode As String
 
+
+    'cr = speciesChooser.Nodes.Add("Prime Wings")
+    'AddSpecies(cr, "Rodent", 16, 0, 1, 1, _
+    '2, 15, 20, 0)
     Private Sub AddSpecies(parent As TreeNode, name As String, afile As Integer, aoffset As Integer, pmfile As Integer, pffile As Integer, _
      pufile As Integer, pm As Integer, pf As Integer, pu As Integer)
         Dim newnode As New TreeNode(name)

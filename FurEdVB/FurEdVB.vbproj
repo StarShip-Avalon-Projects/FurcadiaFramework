@@ -164,7 +164,7 @@ cd $(TargetDir)
 
 REM Create the SRC rar
 cd $(ProjectDir)
-"c:/program files/winrar/rar.exe" a -r -x*\.svn\* -n*.*proj -n*.sln -n*.nsi -n*.vb -nlicense*.* -n*.dll "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" *.*
+"c:/program files/winrar/rar.exe" a -r -x*\.svn\* -x*\obj\* -n*.*proj -n*.sln  -n*.vb -n*.sln -n*.resx  -n*.config "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" *.*
 move "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" "$(TargetDir)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
