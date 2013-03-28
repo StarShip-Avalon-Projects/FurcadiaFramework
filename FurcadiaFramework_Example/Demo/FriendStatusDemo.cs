@@ -26,7 +26,7 @@ namespace FurcadiaFramework_Example.Demo
 		/// </summary>
 		public void Run()
 		{
-			pounce = new PounceConnection("http://on.furcadia.com/", null);
+			pounce = new PounceConnection("http://on.furcadia.com/q/", null);
 			Form f = new Form();
 			f.Text = "Frind Status Checkr (Misspelled Version)";
 			f.AutoScroll = true;
