@@ -60,7 +60,7 @@ namespace Furcadia.IO
                 Match m = regexkey.Match(SettingFile[WiDx]);
                 if (regexkey.Match(SettingFile[WiDx]).Success && m.Groups[1].Value == WhichSetting)
                 {
-                    SettingFile[WiDx] = WhichSetting + "=" + WhichValue;
+                    SettingFile[WiDx] = WhichSetting + " = " + WhichValue;
                     return true;
                 }
             }

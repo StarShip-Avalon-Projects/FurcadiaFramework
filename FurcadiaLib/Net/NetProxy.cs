@@ -26,6 +26,7 @@ namespace Furcadia.Net
 	
 	public class NetProxy
 	{
+
 		#region Event Handling
 		public delegate void ActionDelegate();
 		public delegate string DataEventHandler(string data);
@@ -296,24 +297,15 @@ namespace Furcadia.Net
 				/// UAC Perms Needed to Create proxy.ini
 				/// Win 7 Change your UAC Level or add file create Permissions to [%program files%/furcadia]
 				/// Maybe Do this at install
-				string fIni = Paths.GetInstallPath() + "/proxy.ini" ;
+				string fIni = Paths.GetInstallPath() + "proxy.ini" ;
 				/// Check proxy.ini if it exoists then use it
 				/// 
 				/// otherwise use settings.ini to avoid UAC issues on %Program Files%
-				FileStream proxyStream = null;
-				try{
-					/// Still Causes fileAccess Exception on 7
-					proxyStream = File.OpenWrite(fIni);
-					proxyStream.Write(System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(proxyIni), 0, proxyIni.Length);
-					proxyStream.Flush();
-					proxyStream.Close();
-					UseProxyIni = true;
-				}catch{
-					UseProxyIni = false;
-					Settings.InitializeFurcadiaSettings();
-				}finally{
-					if (proxyStream != null) proxyStream.Close();
-				}
+				if (File.Exists(proxyIni))
+					File.Delete(proxyIni);
+				UseProxyIni = false;
+				Settings.InitializeFurcadiaSettings();
+
 				
 				if (listen != null)
 				{
@@ -336,6 +328,7 @@ namespace Furcadia.Net
 					}
 					if (isAvailable)
 					{
+					   
 						listen = new TcpListener(IPAddress.Any, _lport);
 						listen.Start();
 						listen.BeginAcceptTcpClient(new AsyncCallback(AsyncListener), listen);
@@ -363,7 +356,7 @@ namespace Furcadia.Net
 				ProcID = proc.Id;
 				CConnected = true;
 			}
-			catch (Exception e) { if (Error != null) Error(e); else throw e; }
+			catch (Exception e) { if (Error != null) Error(e); } //else throw e;
 		}
 
 
@@ -430,9 +423,23 @@ namespace Furcadia.Net
 		{
 			try
 			{
-				CloseClient();
-				
-				if (server != null && server.Connected == true){
+			   if (listen != null) listen.Stop();
+
+			   if (client != null && client.Connected == true) 
+				{
+					NetworkStream clientStream = client.GetStream();
+					if (clientStream != null)
+					{
+						clientStream.Flush();
+						clientStream.Dispose();
+						clientStream.Close();
+					}
+
+					client.Close();
+				}
+
+			   if (server != null && server.Connected == true)
+			   { 
 					NetworkStream serverStream = server.GetStream();
 					if (serverStream != null ) 
 					{
@@ -473,6 +480,7 @@ namespace Furcadia.Net
 		{
 			try
 			{
+				
 				try
 				{
 					client = listen.EndAcceptTcpClient(ar);
@@ -494,7 +502,7 @@ namespace Furcadia.Net
 					/// Delete proxy.ini or restore settings.ini
 					if (UseProxyIni)
 					{
-						File.Delete(Paths.GetInstallPath() + "/proxy.ini");
+						File.Delete(Paths.GetInstallPath() + "proxy.ini");
 					}
 					else
 					{
@@ -600,7 +608,7 @@ namespace Furcadia.Net
 					{
 						ServerData2(lines[i]);
 						if (IsClientConnected == true && ServerData != null && 
-                            ServerData(lines[i] + '\n') != "" && ServerData(lines[i] + '\n') != null)
+							ServerData(lines[i] + '\n') != "" && ServerData(lines[i] + '\n') != null)
 						{
 							if (!lines[i].Contains("\n"))
 							{
