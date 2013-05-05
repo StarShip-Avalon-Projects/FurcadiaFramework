@@ -547,7 +547,7 @@ namespace Furcadia.Net
 
 					if (clientBuffer.Length <= 0)
 						ClientDisConnected();
-					int pos = client.GetStream ().Read (clientBuffer, 0, clientBuffer.Length);
+					int pos = client.GetStream ().Read (clientBuffer, 0, clientBuffer.Length - 1);
 					clientBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(clientBuffer, 0, pos);			
 				}
 				//Every line should end with '\n'

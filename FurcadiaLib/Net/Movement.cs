@@ -85,6 +85,8 @@ namespace Furcadia.Net
             private TimeSpan _AFK;
             private int _LastStat;
             private int _Wings;
+            private bool _Visible;
+
             public string Name
             {
                 get { return _Name; }
@@ -200,6 +202,12 @@ namespace Furcadia.Net
                 get { return _Special; }
                 set { _Special = value; }
             }
+            public bool Visible
+            {
+                get { return _Visible; }
+                set { _Visible = value; }
+            }
+
             public void Clear()
             {
                 _Name = "";
@@ -220,6 +228,7 @@ namespace Furcadia.Net
                 _DSSpecies = -1;
                 _LastStat = -1;
                 _Wings = -1;
+                _Visible = false;
             }
         
     }
