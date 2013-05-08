@@ -88,7 +88,7 @@ namespace Furcadia.Net
 		private TcpClient server;
 		private TcpClient client;
 		private TcpListener listen;
-		
+        private static string[] BackupSettings;
 		private byte[] clientBuffer = new byte[BUFFER_CAP], serverBuffer = new byte[BUFFER_CAP];
 		private string _ServerLeftOvers;
 		private string clientBuild, serverBuild;
@@ -304,7 +304,7 @@ namespace Furcadia.Net
 				if (File.Exists(proxyIni))
 					File.Delete(proxyIni);
 				UseProxyIni = false;
-				Settings.InitializeFurcadiaSettings();
+				BackupSettings = Settings.InitializeFurcadiaSettings();
 
 				
 				if (listen != null)
@@ -524,7 +524,7 @@ namespace Furcadia.Net
 		private static void OnTimedEvent(object source, ElapsedEventArgs e)
 		{
 			/// reset settings.ini
-			Settings.RestoreFurcadiaSettings();
+            Settings.RestoreFurcadiaSettings(BackupSettings);
 		}
 
 
@@ -547,11 +547,12 @@ namespace Furcadia.Net
 
 					if (clientBuffer.Length <= 0)
 						ClientDisConnected();
-					int pos = client.GetStream ().Read (clientBuffer, 0, clientBuffer.Length - 1);
+					int pos = client.GetStream ().Read (clientBuffer, 0, clientBuffer.Length );
 					clientBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(clientBuffer, 0, pos);			
 				}
 				//Every line should end with '\n'
 				//Split function removes the last character
+                     
 				lines.AddRange(clientBuild.Split('\n'));
 				for (int i = 0; i < lines.Count  ; i++)
 				{
@@ -602,19 +603,26 @@ namespace Furcadia.Net
 					{
 						int pos = server.GetStream().Read(serverBuffer, 0, serverBuffer.Length);
 						serverBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, pos);
-					}
+
+                    }
 					lines.AddRange(serverBuild.Split('\n'));
+                    if (!serverBuild.EndsWith("\n"))
+                    {
+                      _ServerLeftOvers += lines[lines.Count -1] ;
+                      lines.RemoveAt(lines.Count - 1);
+                    }
+                     
 					for (int i = 0; i < lines.Count; i++)
 					{
 						ServerData2(lines[i]);
 						if (IsClientConnected == true && ServerData != null && 
-							ServerData(lines[i] + '\n') != "" && ServerData(lines[i] + '\n') != null)
+							ServerData(lines[i]) != "" && ServerData(lines[i]) != null)
 						{
-							if (!lines[i].Contains("\n"))
-							{
-								_ServerLeftOvers += lines[i] + "\n";
-							}
-							if (i < lines.Count - 1)
+                            //if (!lines[i].Contains("\n"))
+                            //{
+                            //    _ServerLeftOvers += lines[i] + "\n";
+                            //}
+							if (i < lines.Count)
 							{
 								NetMessage msg = new NetMessage();
 								msg.Write( ServerData(lines[i])+ '\n' );

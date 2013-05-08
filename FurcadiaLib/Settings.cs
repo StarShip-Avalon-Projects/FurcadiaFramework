@@ -31,47 +31,40 @@ namespace Furcadia
 
         static string[] Keys = new string[4] { "UseProxyOrFirewall", "ProxyHost", "ProxyPort", "SessionCloseCheck" };
         static string[] values = new string[4] { "Yes", "localhost", NetProxy._lport.ToString(), "no" };
-        static private string[] FurcSettings;
-        private static string[] BackupSettings;
 
-        /// Load and Store settings.ini with backup
-        public static Boolean InitializeFurcadiaSettings()
+          /// Load and Store settings.ini with backup
+        public static string[] InitializeFurcadiaSettings()
         {
-            Boolean Check;
-          FurcSettings =  FurcIni.LoadFurcadiaSettings(sPath, sFile);
-          BackupSettings = FurcSettings;
-          if (FurcSettings != null) Check = true;
-          if (BackupSettings != null) Check = true;
-          else { Check = false; }
+           string[] FurcSettings = FurcIni.LoadFurcadiaSettings(sPath, sFile);
+           string[] Backup = FurcIni.LoadFurcadiaSettings(sPath, sFile);
            for (int Key = 0; Key < Keys.Length; Key++)
            {
-               Check = Check & FurcIni.SetUserSetting(Keys[Key], values[Key], FurcSettings);
+               FurcIni.SetUserSetting(Keys[Key], values[Key], FurcSettings);
            }
             /// Save settings.ini?
-            Check = Check & FurcIni.SaveFurcadiaSettings(sPath, sFile, FurcSettings);
-            return Check; 
+            FurcIni.SaveFurcadiaSettings(sPath, sFile, FurcSettings);
+           return Backup;
         }
 
 
         /// restore from backup settings.ini
 
-        public static Boolean RestoreFurcadiaSettings()
+        public static void RestoreFurcadiaSettings(string[] BackupSettings)
         {
-            Boolean Check;
+
             /// Get the New Changes by Furcadia Suite
-            FurcSettings = FurcIni.LoadFurcadiaSettings(sPath, sFile);
-                 if (BackupSettings != null) Check = true;
-            else { Check = false; }
+            string[] FurcSettings = FurcIni.LoadFurcadiaSettings(sPath, sFile);
+
             for (int Key = 0; Key < Keys.Length; Key++)
             {
                 /// Capture Back up Fields 
                 string Value = FurcIni.GetUserSetting(Keys[Key], BackupSettings);
                 /// Use Backup for Settings
-                Check = Check & FurcIni.SetUserSetting(Keys[Key], Value, FurcSettings);
+                 FurcIni.SetUserSetting(Keys[Key], Value, FurcSettings);
             }
             /// Save settings.ini
-            Check = Check & FurcIni.SaveFurcadiaSettings(sPath, sFile, FurcSettings);
-            return Check;
+             FurcIni.SaveFurcadiaSettings(sPath, sFile, FurcSettings);
+           
         }
 
         /// <summary>

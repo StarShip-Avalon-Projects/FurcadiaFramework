@@ -30,14 +30,13 @@ namespace Furcadia.IO
 
         }
 
-        public static Boolean SaveFurcadiaSettings(string path, string file, string[] SettingFile)
+        public static void SaveFurcadiaSettings(string path, string file, string[] SettingFile)
         {
             /// long FileIn, WiDx;
 
             try
             {
                 File.WriteAllLines(path + file, SettingFile, Encoding.UTF8);
-                return true;
             }
             catch (Exception e)
             {
@@ -51,7 +50,7 @@ namespace Furcadia.IO
         /// </summary>
         /// <param name="file"></param>
         /// <returns>true on success.</returns>
-        public static Boolean SetUserSetting(string WhichSetting, string WhichValue, string[] SettingFile)
+        public static void SetUserSetting(string WhichSetting, string WhichValue, string[] SettingFile)
         {
             Regex regexkey = new Regex("^\\s*([^=\\s]*)[^=]*=(.*)", (RegexOptions.Singleline | RegexOptions.IgnoreCase));
                    
@@ -61,7 +60,7 @@ namespace Furcadia.IO
                 if (regexkey.Match(SettingFile[WiDx]).Success && m.Groups[1].Value == WhichSetting)
                 {
                     SettingFile[WiDx] = WhichSetting + " = " + WhichValue;
-                    return true;
+                    return;
                 }
             }
             throw new Exception("++ ERROR: Couldn't find " + WhichSetting + " to change.");
