@@ -74,6 +74,8 @@ namespace Furcadia.Net
             private char _ColorType;
             private uint _X;
             private uint _Y;
+            private uint _SourceX;
+            private uint _SourceY;
             private uint _ID;
             private int _Gender;
             private int _Species;
@@ -86,7 +88,12 @@ namespace Furcadia.Net
             private int _LastStat;
             private int _Wings;
             private bool _Visible;
-
+            private string _badge;
+            private string _tag;
+            private int _group;
+            private int _level; 
+            private int _option;
+            private int _option1; 
             public string Name
             {
                 get { return _Name; }
@@ -150,13 +157,31 @@ namespace Furcadia.Net
             public uint X
             {
                 get { return _X; }
-                set { _X = value; }
+                set 
+                {
+                    _SourceX = _X;
+                    _X = value; 
+                }
             }
             public uint Y
             {
                 get { return _Y; }
-                set { _Y = value; }
+                set 
+                {
+                    _SourceY = _Y;
+                    _Y = value; 
+                }
 
+            }
+            public uint SourceX
+            {
+                get { return _SourceX; }
+                set {}
+            }
+            public uint SourceY
+            {
+                get { return _SourceY; }
+                set {}
             }
             public uint ID
             {
@@ -167,6 +192,39 @@ namespace Furcadia.Net
             {
                 get { return _Flag; }
                 set { _Flag = value; }
+            }
+            public string Badge
+            {
+                get { return _badge; }
+                set 
+                {
+                    _badge = value;
+                    _tag = Badges.GetTag(_badge);
+                    _group = Badges.GetGroup(_badge);
+                    _level = Badges.GetLevel(_badge);
+                }
+            }
+            public string Tag
+            {
+                get { return _tag; }
+            }
+            public int Group
+            {
+                get { return _group; }
+            }
+            public int Level
+            {
+                get { return _level; }
+            }
+            public int Option
+            {
+                get { return _option; }
+                set { _option = value; }
+            }
+            public int Option1
+            {
+                get { return _option1; }
+                set { _option1 = value; }
             }
             public TimeSpan AFK
             {
@@ -216,9 +274,17 @@ namespace Furcadia.Net
                 _Desc = null;
                 _X = 0;
                 _Y = 0;
+                _SourceX = 0;
+                _SourceY = 0;
                 _Shape = 0;
                 _ID = 0;
                 _Flag = 0;
+                _tag = "";
+                _badge = "";
+                _group = 0;
+                _level = 0;
+                _option = 0;
+                _option1 = 0;
                 _AFK = new TimeSpan(0, 0, 0, 0, 0);
 
                 // -1 means these haven't been set yet
