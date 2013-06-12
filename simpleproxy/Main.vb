@@ -691,49 +691,13 @@ Public Class Main
         Else
             'Update inteface
             Try
-                Select Case Bot.Position
+                                Select Case Bot.FrameInfo.pose
                     Case 0
                         BtnSit_stand_Lie.Text = "Stand"
-                    Case 1
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 2
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 3
+                    Case 1 To 3
                         BtnSit_stand_Lie.Text = "Lay"
                     Case 4
-                        BtnSit_stand_Lie.Text = "Stand"
-                    Case 5
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 6
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 7
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 8
-                        BtnSit_stand_Lie.Text = "Stand"
-                    Case 9
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 10
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 11
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 12
-                        BtnSit_stand_Lie.Text = "Stand"
-                    Case 13
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 14
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 15
-                        BtnSit_stand_Lie.Text = "Lay"
-                    Case 16
                         BtnSit_stand_Lie.Text = "Sit"
-                    Case 17
-                        BtnSit_stand_Lie.Text = "Sit"
-                    Case 18
-                        BtnSit_stand_Lie.Text = "Sit"
-                    Case 19
-                        BtnSit_stand_Lie.Text = "Sit"
-                    Case Else
-
                 End Select
             Catch eX As Exception
                 Dim logError As New ErrorLogging(eX, Me)

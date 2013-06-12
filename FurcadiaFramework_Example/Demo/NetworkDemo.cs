@@ -71,7 +71,7 @@ namespace FurcadiaFramework_Example.Demo
 				Write (f, "Connection(Client: " + proxy.IsClientConnected + " Server: " + proxy.IsServerConnected + ")");
 			};
 			
-			proxy.Error += delegate(Exception e) {
+			proxy.Error += delegate(Exception e, Object o) {
                 if (output.InvokeRequired)
                 {
                     output.Invoke(new Invoker(delegate { output.AppendText("\nERROR: " + e.Message); }));

@@ -29,8 +29,8 @@ namespace Furcadia
         static string sPath = Paths.GetLocalSettingsPath();
         static string sFile = "/settings.ini";
 
-        static string[] Keys = new string[4] { "UseProxyOrFirewall", "ProxyHost", "ProxyPort", "SessionCloseCheck" };
-        static string[] values = new string[4] { "Yes", "localhost", NetProxy._lport.ToString(), "no" };
+        static string[] Keys = new string[8] { "UseProxyOrFirewall", "ProxyHost", "ProxyPort", "SessionCloseCheck", "ProxyHostType", "ProxyCustomType", "ProxyCustomData", "ProxyApplyToFs" };
+        static string[] values = new string[8] { "Yes", "localhost", NetProxy._lport.ToString(), "no", "0", "0", "CONNECT %host% %port%", "no"  };
 
           /// Load and Store settings.ini with backup
         public static string[] InitializeFurcadiaSettings()

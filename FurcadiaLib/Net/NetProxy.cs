@@ -31,7 +31,9 @@ namespace Furcadia.Net
 		public delegate void ActionDelegate();
 		public delegate string DataEventHandler(string data);
 		public delegate void DataEventHandler2(string data);
-		public delegate void ErrorEventHandler(Exception e);
+
+        public delegate void ErrorEventHandler(Exception e, Object o);
+        //public delegate void ErrorEventHandler(Exception e);
 		/// <summary>
 		///This is triggered when the 
 		/// </summary>
@@ -88,7 +90,7 @@ namespace Furcadia.Net
 		private TcpClient server;
 		private TcpClient client;
 		private TcpListener listen;
-        private static string[] BackupSettings;
+		private static string[] BackupSettings;
 		private byte[] clientBuffer = new byte[BUFFER_CAP], serverBuffer = new byte[BUFFER_CAP];
 		private string _ServerLeftOvers;
 		private string clientBuild, serverBuild;
@@ -356,7 +358,7 @@ namespace Furcadia.Net
 				ProcID = proc.Id;
 				CConnected = true;
 			}
-			catch (Exception e) { if (Error != null) Error(e); } //else throw e;
+			catch (Exception e) { if (Error != null) Error(e, this); } //else throw e;
 		}
 
 
@@ -372,7 +374,7 @@ namespace Furcadia.Net
 				if (client.Client != null && client.GetStream().CanWrite == true && client.Connected == true)
 					client.GetStream().Write(System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
 			}
-			catch (Exception e) { if (Error != null) Error(e); }
+			catch (Exception e) { if (Error != null) Error(e, this); }
 
 		}
 
@@ -388,7 +390,7 @@ namespace Furcadia.Net
 				if (server.GetStream ().CanWrite)
 					server.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
 			}
-			catch (Exception e) { if (Error != null) Error(e); }
+			catch (Exception e) { if (Error != null) Error(e, this); }
 		}
 
 		/// <summary>
@@ -412,7 +414,7 @@ namespace Furcadia.Net
 					client.Close();
 				}
 			}
-			catch (Exception e) { if (Error != null) Error(e); }
+			catch (Exception e) { if (Error != null) Error(e,this); }
 
 		}
 
@@ -434,7 +436,7 @@ namespace Furcadia.Net
 						clientStream.Dispose();
 						clientStream.Close();
 					}
-
+                   
 					client.Close();
 				}
 
@@ -452,7 +454,7 @@ namespace Furcadia.Net
 				
 				
 			}
-			catch (Exception e) { if (Error != null) Error(e); }
+			catch (Exception e) { if (Error != null) Error(e, "Kill()"); }
 		}
 
 		//Implement IDisposable.
@@ -518,13 +520,13 @@ namespace Furcadia.Net
 					
 				}
 			}
-			catch (Exception e) { if (Error != null) Error(e);}
+			catch (Exception e) { if (Error != null) Error(e,this);}
 		}
 
 		private static void OnTimedEvent(object source, ElapsedEventArgs e)
 		{
 			/// reset settings.ini
-            Settings.RestoreFurcadiaSettings(BackupSettings);
+			Settings.RestoreFurcadiaSettings(BackupSettings);
 		}
 
 
@@ -552,7 +554,7 @@ namespace Furcadia.Net
 				}
 				//Every line should end with '\n'
 				//Split function removes the last character
-                     
+					 
 				lines.AddRange(clientBuild.Split('\n'));
 				for (int i = 0; i < lines.Count  ; i++)
 				{
@@ -575,10 +577,12 @@ namespace Furcadia.Net
 			}
 			}
 			catch (Exception e) 
-            {
-                if (client.Connected == true) ClientDisConnected();
-                if (Error != null) Error(e); 
-            } // else throw e;
+			{
+				if (client.Connected == true) ClientDisConnected();
+				if (Error != null) Error(e,this); 
+			} // else throw e;
+            if (IsClientConnected && clientBuild.Length < 1 || IsClientConnected == false)
+                if (ClientDisConnected != null) ClientDisConnected();
 			if (client.Connected == true  && clientBuild.Length >= 1)
 			{
 				client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);
@@ -590,15 +594,20 @@ namespace Furcadia.Net
 		{
 			try
 			{
+
 				if (IsServerConnected == false)
 				{
-                   //ServerDisConnected();
 				   throw new SocketException((int)SocketError.NotConnected);
 				}
 				else
 				{
 					List<string> lines = new List<string>();
 					int read = server.GetStream().EndRead(ar);
+					if (read < 1)
+					{
+						ServerDisConnected();
+                        return;
+					}
 					//If we have left over data add it to this server build
 					if (!string.IsNullOrEmpty(_ServerLeftOvers) && _ServerLeftOvers.Length > 0)
 						serverBuild += _ServerLeftOvers;
@@ -608,24 +617,24 @@ namespace Furcadia.Net
 						int pos = server.GetStream().Read(serverBuffer, 0, serverBuffer.Length);
 						serverBuild += System.Text.Encoding.GetEncoding(EncoderPage).GetString(serverBuffer, 0, pos);
 
-                    }
+					}
 					lines.AddRange(serverBuild.Split('\n'));
-                    if (!serverBuild.EndsWith("\n"))
-                    {
-                      _ServerLeftOvers += lines[lines.Count -1] ;
-                      lines.RemoveAt(lines.Count - 1);
-                    }
-                     
+					if (!serverBuild.EndsWith("\n"))
+					{
+					  _ServerLeftOvers += lines[lines.Count -1] ;
+					  lines.RemoveAt(lines.Count - 1);
+					}
+					 
 					for (int i = 0; i < lines.Count; i++)
 					{
 						ServerData2(lines[i]);
 						if (IsClientConnected == true && ServerData != null && 
 							ServerData(lines[i]) != "" && ServerData(lines[i]) != null)
 						{
-                            //if (!lines[i].Contains("\n"))
-                            //{
-                            //    _ServerLeftOvers += lines[i] + "\n";
-                            //}
+							//if (!lines[i].Contains("\n"))
+							//{
+							//    _ServerLeftOvers += lines[i] + "\n";
+							//}
 							if (i < lines.Count)
 							{
 								NetMessage msg = new NetMessage();
@@ -637,10 +646,13 @@ namespace Furcadia.Net
 				}
 			}
 			catch (Exception e) 
-            {
-                if (IsServerConnected == true) ServerDisConnected();
-                if (Error != null) Error(e); 
-            } //else throw e;
+			{
+			   // if (IsServerConnected == true) ServerDisConnected();
+				if (Error != null) Error(e, this); 
+			} //else throw e;
+			// Detect if client disconnected
+            if (IsServerConnected && serverBuild.Length < 1 || IsServerConnected == false)
+                if (ServerDisConnected != null) ServerDisConnected();
 			if (IsServerConnected && serverBuild.Length > 0)
 				server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
 							 
