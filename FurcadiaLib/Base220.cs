@@ -104,7 +104,7 @@ namespace Furcadia
 			uint mod = 1;
 
 			// Conversion
-			for (int i = b220str.Length - 1; i >= 0; i--)
+            for (int i = 0; i < b220str.Length; i++)
 			{
 				num += (uint)(((int)b220str[i] - CHAR_OFFSET) * mod);
 				mod *= 220;

@@ -88,12 +88,13 @@ namespace Furcadia.Net
             private int _LastStat;
             private int _Wings;
             private bool _Visible;
+            private bool _WasVisible;
             private string _badge;
             private string _tag;
             private int _group;
             private int _level; 
             private int _option;
-            private int _option1; 
+            private int _option1;
             public string Name
             {
                 get { return _Name; }
@@ -263,9 +264,16 @@ namespace Furcadia.Net
             public bool Visible
             {
                 get { return _Visible; }
-                set { _Visible = value; }
+                set
+                {
+                    _WasVisible = _Visible;
+                    _Visible = value; 
+                }
             }
-
+            public bool WasVisible
+            {
+                get { return _WasVisible; }
+            }
             public void Clear()
             {
                 _Name = "";
@@ -295,6 +303,7 @@ namespace Furcadia.Net
                 _LastStat = -1;
                 _Wings = -1;
                 _Visible = false;
+                _WasVisible = false;
             }
         
     }

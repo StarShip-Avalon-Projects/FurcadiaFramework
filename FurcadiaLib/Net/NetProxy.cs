@@ -32,7 +32,7 @@ namespace Furcadia.Net
 		public delegate string DataEventHandler(string data);
 		public delegate void DataEventHandler2(string data);
 
-        public delegate void ErrorEventHandler(Exception e, Object o);
+        public delegate void ErrorEventHandler(Exception e, Object o, String n);
         //public delegate void ErrorEventHandler(Exception e);
 		/// <summary>
 		///This is triggered when the 
@@ -358,7 +358,7 @@ namespace Furcadia.Net
 				ProcID = proc.Id;
 				CConnected = true;
 			}
-			catch (Exception e) { if (Error != null) Error(e, this); } //else throw e;
+			catch (Exception e) { if (Error != null) Error(e, this, "Connect()"); } //else throw e;
 		}
 
 
@@ -374,7 +374,7 @@ namespace Furcadia.Net
 				if (client.Client != null && client.GetStream().CanWrite == true && client.Connected == true)
 					client.GetStream().Write(System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
 			}
-			catch (Exception e) { if (Error != null) Error(e, this); }
+			catch (Exception e) { if (Error != null) Error(e, this, "SendClient()"); }
 
 		}
 
@@ -390,7 +390,7 @@ namespace Furcadia.Net
 				if (server.GetStream ().CanWrite)
 					server.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
 			}
-			catch (Exception e) { if (Error != null) Error(e, this); }
+			catch (Exception e) { if (Error != null) Error(e, this, "SendServer"); }
 		}
 
 		/// <summary>
@@ -414,7 +414,7 @@ namespace Furcadia.Net
 					client.Close();
 				}
 			}
-			catch (Exception e) { if (Error != null) Error(e,this); }
+			catch (Exception e) { if (Error != null) Error(e,this, "CloseClient()"); }
 
 		}
 
@@ -454,7 +454,7 @@ namespace Furcadia.Net
 				
 				
 			}
-			catch (Exception e) { if (Error != null) Error(e, "Kill()"); }
+			catch (Exception e) { if (Error != null) Error(e,this, "Kill()"); }
 		}
 
 		//Implement IDisposable.
@@ -520,7 +520,7 @@ namespace Furcadia.Net
 					
 				}
 			}
-			catch (Exception e) { if (Error != null) Error(e,this);}
+			catch (Exception e) { if (Error != null) Error(e,this, "AsyncListener()");}
 		}
 
 		private static void OnTimedEvent(object source, ElapsedEventArgs e)
@@ -579,7 +579,7 @@ namespace Furcadia.Net
 			catch (Exception e) 
 			{
 				if (client.Connected == true) ClientDisConnected();
-				if (Error != null) Error(e,this); 
+				if (Error != null) Error(e,this, "GetClientData()"); 
 			} // else throw e;
             if (IsClientConnected && clientBuild.Length < 1 || IsClientConnected == false)
                 if (ClientDisConnected != null) ClientDisConnected();
@@ -648,7 +648,7 @@ namespace Furcadia.Net
 			catch (Exception e) 
 			{
 			   // if (IsServerConnected == true) ServerDisConnected();
-				if (Error != null) Error(e, this); 
+				if (Error != null) Error(e, this, "GetServerData()"); 
 			} //else throw e;
 			// Detect if client disconnected
             if (IsServerConnected && serverBuild.Length < 1 || IsServerConnected == false)
