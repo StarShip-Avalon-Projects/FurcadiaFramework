@@ -245,9 +245,11 @@ namespace Furcadia.IO
 			// Read localdir.ini for remote path and verify it.
 			StreamReader sr = new StreamReader(ini_path);
 			path = sr.ReadLine();
-			path.Trim();
+            if (path != null)
+                path.Trim();
 			sr.Close();
-
+            if (String.IsNullOrEmpty(path))
+                path = install_path;
 			if (!System.IO.Directory.Exists(path))
 				throw new DirectoryNotFoundException("Path not found in localdir.ini"); // localdir.ini found, but the path in it is missing.
 			_localdirpath = path;
