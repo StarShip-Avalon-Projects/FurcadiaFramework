@@ -71,8 +71,10 @@ namespace Furcadia.IO
 			return Environment.GetEnvironmentVariable("ProgramFiles");
 		}
 
-
-
+        public static string InstallPath
+        {
+            set { _installpath = value; }
+        }
 		private static string _installpath;
 		/// <summary>
 		/// Find the path to Furcadia data files currently installed on this
@@ -184,7 +186,7 @@ namespace Furcadia.IO
 		public static string GetLocalSettingsPath()
 		{
 			if (!string.IsNullOrEmpty(_localsettingspath)) return _localsettingspath;
-			else _localsettingspath = GetLocaldirPath();
+			else _localsettingspath = GetLocaldirPath(); // + "settings/"
 			if (String.IsNullOrEmpty(_localsettingspath))
 				_localsettingspath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
 												  "Dragon's Eye Productions/Furcadia");
