@@ -71,6 +71,7 @@ namespace Furcadia.Net
             private string _Name;
             private string _Color;
             private string _Desc;
+            private string _Message;
             private char _ColorType;
             private uint _X;
             private uint _Y;
@@ -99,6 +100,11 @@ namespace Furcadia.Net
             {
                 get { return _Name; }
                 set { _Name = value; }
+            }
+            public string Message
+            {
+                get { return _Message; }
+                set { _Message = value; }
             }
             public string ShortName
             {
@@ -277,6 +283,7 @@ namespace Furcadia.Net
             public void Clear()
             {
                 _Name = "";
+                _Message = "";
                 _ColorType = '\0';
                 _Color = "#";
                 _Desc = null;
