@@ -96,6 +96,22 @@
     <Compile Include="Badges.cs" />
     <Compile Include="Base220.cs" />
     <Compile Include="Base95.cs" />
+    <Compile Include="Compression\BZip2\BZip2.cs" />
+    <Compile Include="Compression\BZip2\BZip2Constants.cs" />
+    <Compile Include="Compression\BZip2\BZip2Exception.cs" />
+    <Compile Include="Compression\BZip2\BZip2InputStream.cs" />
+    <Compile Include="Compression\BZip2\BZip2OutputStream.cs" />
+    <Compile Include="Compression\BZip2\SharpZipBaseException.cs" />
+    <Compile Include="Compression\Checksums\CRC32.cs" />
+    <Compile Include="Compression\Checksums\CRCTool.cs" />
+    <Compile Include="Compression\Checksums\IChecksum.cs" />
+    <Compile Include="Compression\Checksums\StrangeCRC.cs" />
+    <Compile Include="Compression\Lzw\LzwDecoder.cs" />
+    <Compile Include="Compression\Lzw\LzwEncoder.cs" />
+    <Compile Include="Compression\Lzw\LzwTests.cs" />
+    <Compile Include="Compression\Rch\RchDecoder.cs" />
+    <Compile Include="Compression\Rch\RchEncoder.cs" />
+    <Compile Include="Drawing\Maps.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
