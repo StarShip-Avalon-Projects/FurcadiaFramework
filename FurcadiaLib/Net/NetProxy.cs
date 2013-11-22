@@ -390,7 +390,11 @@ namespace Furcadia.Net
 				if (server.GetStream ().CanWrite)
 					server.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
 			}
-			catch (Exception e) { if (Error != null) Error(e, this, "SendServer"); }
+			catch (Exception e) 
+            {
+                if (Error != null) Error(e, this, "SendServer");
+                if (ServerDisConnected != null) ServerDisConnected();
+            }
 		}
 
 		/// <summary>
@@ -648,11 +652,17 @@ namespace Furcadia.Net
 			catch (Exception e) 
 			{
 			   // if (IsServerConnected == true) ServerDisConnected();
-				if (Error != null) Error(e, this, "GetServerData()"); 
+				if (Error != null) Error(e, this, "GetServerData()");
+                if (ServerDisConnected != null) ServerDisConnected();
+                return;
 			} //else throw e;
 			// Detect if client disconnected
             if (IsServerConnected && serverBuild.Length < 1 || IsServerConnected == false)
+            {
                 if (ServerDisConnected != null) ServerDisConnected();
+
+            }
+               
 			if (IsServerConnected && serverBuild.Length > 0)
 				server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);
 							 
