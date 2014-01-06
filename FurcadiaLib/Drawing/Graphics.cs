@@ -372,7 +372,7 @@ namespace Furcadia.Drawing.Graphics
 					bmp.UnlockBits(bmpData);
 
 				}
-				else
+				else if(frame.FrameFormat == Frame.FrameFormats.FormatRGB)
 				{
 #warning 24-bit is not supported in this version. For updates: http://furcadia.codeplex.com/
 					//24 bit support

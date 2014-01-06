@@ -20,7 +20,7 @@ namespace Furcadia.Drawing
         //--- Data Members ---//
         uint iHeight = 0;
         uint iWidth = 0;
-
+        double version = 0;
         Tile[,] map;
         Dictionary<string,string> headers = new Dictionary<string,string>();
 
@@ -34,7 +34,10 @@ namespace Furcadia.Drawing
         {
             get { return iWidth; }
         }
-
+        public double Version
+        {
+            get { return version; }
+        }
         //--- Static Functions ---//
         public static Maps CreateInstance()
         {
@@ -74,7 +77,8 @@ namespace Furcadia.Drawing
                 sr.Close();
                 throw new Exception("Not a Furcadia map or format not supported");
             }
-
+            double.TryParse(line.Substring(5), out version);
+            
             int pos = line.Length + 1;
             headers.Add("map_signature", line.Trim());
 
@@ -138,16 +142,19 @@ namespace Furcadia.Drawing
                     map[y, x].WallNE = br.ReadByte();
                 }
             }
+            if (version > 1.3)
+            {
+                // Reading regions
+                for (uint x = 0; x < iWidth; x++)
+                    for (uint y = 0; y < iHeight; y++)
+                        map[y, x].Region = br.ReadUInt16();
 
-            // Reading regions
-            for (uint x = 0; x < iWidth; x++)
-                for (uint y = 0; y < iHeight; y++)
-                    map[y, x].Region = br.ReadUInt16();
+                // Reading effects
+                for (uint x = 0; x < iWidth; x++)
+                    for (uint y = 0; y < iHeight; y++)
+                        map[y, x].Effect = br.ReadUInt16();
+            }
 
-            // Reading effects
-            for (uint x = 0; x < iWidth; x++)
-                for (uint y = 0; y < iHeight; y++)
-                    map[y, x].Effect = br.ReadUInt16();
 
             // Success :D
             br.Close();
@@ -161,8 +168,8 @@ namespace Furcadia.Drawing
             try
             {
                 StreamWriter sw = new StreamWriter(file);
-                sw.Write(headers["map_signature"] + "\n");
-                
+                //sw.Write(headers["map_signature"] + "\n");
+                sw.Write("MAP V1.4\n", version);
                 foreach (string key in headers.Keys)
                 {
                     if (key != "map_signature")
@@ -188,13 +195,14 @@ namespace Furcadia.Drawing
                         bw.Write(map[y, x].WallNE);
                     }
                 }
+                
+                    for (uint x = 0; x < iWidth; x++)
+                        for (uint y = 0; y < iHeight; y++)
+                            bw.Write(map[y, x].Region);
+                    for (uint x = 0; x < iWidth; x++)
+                        for (uint y = 0; y < iHeight; y++)
+                            bw.Write(map[y, x].Effect);
 
-                for (uint x = 0; x < iWidth; x++)
-                    for (uint y = 0; y < iHeight; y++)
-                        bw.Write(map[y, x].Region);
-                for (uint x = 0; x < iWidth; x++)
-                    for (uint y = 0; y < iHeight; y++)
-                        bw.Write(map[y, x].Effect);
                 bw.Close();
             }
             catch

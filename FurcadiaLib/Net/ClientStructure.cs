@@ -11,7 +11,8 @@ namespace Furcadia.Net
         public struct BOT
         {
             private string _ColorType, _Color, _Desc, _Name, _Owner, _Msg, _Password, _Script;
-            private uint _X, _Y, _ID, _Shape, _ITEM, _Logins, _Flag;
+            private uint  _ID, _Shape, _ITEM, _Logins, _Flag;
+            private int _X, _Y;
             private TimeSpan _AFK;
             public uint Flag
             {
@@ -63,12 +64,12 @@ namespace Furcadia.Net
                 get { return _Password; }
                 set { _Password = value; }
             }
-            public uint X
+            public int X
             {
                 get { return _X; }
                 set { _X = value; }
             }
-            public uint Y
+            public int Y
             {
                 get { return _Y; }
                 set { _Y = value; }
@@ -95,19 +96,19 @@ namespace Furcadia.Net
             }
             public void Clear()
             {
-                _Color = " ";
-                _Desc = " ";
-                _Name = " ";
-                _Owner = " ";
+                _Color = "";
+                _Desc = "";
+                _Name = "";
+                _Owner = "";
                 _X = 0;
                 _Y = 0;
-                _Msg = " ";
-                _Script = " ";
-                _Password = " ";
+                _Msg = "";
+                _Script = "";
+                _Password = "";
                 _ID = 0;
                 _ITEM = 0;
                 _Logins = 0;
-                _ColorType = " ";
+                _ColorType = "";
             }
         }
 
