@@ -81,26 +81,31 @@ namespace Furcadia
 
        public static int GetGroup(string tag)
         {
+            int result = 0;
             if (tag == "")
-                return 0;
+                return result;
             if (dt == null)
                 PrimeTable();
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 object test = dt.Rows[i]["Hash"];
                 if (Convert.IsDBNull(test) == false)
-                    if (tag == dt.Rows[i]["Hash"])
-                        return Convert.ToInt32(dt.Rows[i]["Group"]);
+                    if (tag == dt.Rows[i]["Hash"].ToString())
+                    {
+                        int.TryParse(dt.Rows[i]["Group"].ToString(), out result);
+                        return result;
+                    }
                     else
-                        return 0;
+                        return result;
                     
             }
-            return 0;
+            return result;
         }
         public static int GetLevel(string tag)
         {
+            int result = 0;
             if (tag == "")
-                return 0;
+                return result;
             if (dt == null)
                 PrimeTable();
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -108,12 +113,15 @@ namespace Furcadia
                 object test = dt.Rows[i]["Hash"];
                 if (Convert.IsDBNull(test) == false)
                     if (tag == dt.Rows[i]["Hash"])
-                        return Convert.ToInt32(dt.Rows[i]["Level"]);
+                    {
+                        int.TryParse(dt.Rows[i]["Level"].ToString(), out result);
+                        return result;
+                    }
                     else
-                        return 0;
+                        return result;
 
             }
-            return 0;
+            return result;
         }
 
         public static T NumToEnum<T>(int number)
@@ -123,8 +131,9 @@ namespace Furcadia
 
         public static string GetTag(string tag)
         {
+            string result = null;
             if (tag == "")
-                return "";
+                return result;
             if (dt == null)
                 PrimeTable();
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -133,16 +142,19 @@ namespace Furcadia
                 if (Convert.IsDBNull(test) == false)
                     if (tag == (string) test)
                     {
-                        int lvl = Convert.ToInt32(dt.Rows[i]["Level"]);
-                        int grp = Convert.ToInt32(dt.Rows[i]["Group"]);
+                        int lvl = 0;
+                        int grp = 0;
+                        int.TryParse(dt.Rows[i]["Level"].ToString(), out lvl);
+                        int.TryParse(dt.Rows[i]["Group"].ToString(), out grp);
                         Group g = NumToEnum<Group>(grp);
                         Level l = NumToEnum<Level>(lvl);
-                        return "[" + g + "-" + l + "]";
+                        result = "[" + g.ToString() + "-" + l.ToString() + "]";
+                        return result;
                     }
 
 
             }
-            return "";
+            return result;
         }
 
     }

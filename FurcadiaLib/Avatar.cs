@@ -92,9 +92,9 @@ namespace Furcadia
                 if (Species == Convert.ToInt32(dt.Rows[i]["FrameIndex"]))
                 {
                     _Frame.Spec = Species;
-                    _Frame.DS_Number = Convert.ToInt32(dt.Rows[i]["DS"]);
-                    _Frame.gender = Convert.ToInt32(dt.Rows[i]["Gender"]);
-                    _Frame.Wings = Convert.ToInt32(dt.Rows[i]["Wings"]);
+                     int.TryParse(dt.Rows[i]["DS"].ToString(), out _Frame.DS_Number);
+                     int.TryParse(dt.Rows[i]["Gender"].ToString(), out _Frame.gender);
+                     int.TryParse(dt.Rows[i]["Wings"].ToString(), out _Frame.Wings);
                     switch (Frame %  20)
                     {
 

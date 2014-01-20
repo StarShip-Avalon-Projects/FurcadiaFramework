@@ -96,6 +96,12 @@ namespace Furcadia.Net
             private int _level; 
             private int _option;
             private int _option1;
+
+            private int _PawObjectOld;
+            private int _PawObjectCurrent;
+            private int _FloorObjectOld;
+            private int _FloorObjectCurrent;
+
             public string Name
             {
                 get { return _Name; }
@@ -233,6 +239,29 @@ namespace Furcadia.Net
                 get { return _option1; }
                 set { _option1 = value; }
             }
+
+            public int PawObjectCurrent
+            {
+                get { return _PawObjectCurrent; }
+                set { _PawObjectCurrent = value; }
+            }
+            public int PawObjectOld
+            {
+                get { return _PawObjectOld; }
+                set { _PawObjectOld = value; }
+            }
+            public int FloorObjectCurrent
+            {
+                get { return _FloorObjectCurrent; }
+                set { _FloorObjectCurrent = value; }
+            }
+            public int FloorObjectOld
+            {
+                get { return _FloorObjectOld; }
+                set { _FloorObjectOld = value; }
+            }
+
+
             public TimeSpan AFK
             {
                 get { return _AFK; }

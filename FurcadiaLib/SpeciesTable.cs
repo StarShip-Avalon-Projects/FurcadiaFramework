@@ -51,16 +51,17 @@ namespace Furcadia
         public static int SpecNum(int species, int special)
         {
             int result = 0;
-            bool BaseSpecies = true;
             if (dt == null)
                 PrimeTable();
 
+           
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-
-                if (Convert.ToInt32(dt.Rows[i]["Special"]) == special)
+                int Special = 0;
+               int.TryParse(dt.Rows[i]["Special"].ToString(), out Special);
+              if (Special == special)
                 {
-                    switch (Convert.ToInt32(dt.Rows[i]["Special"]))
+                    switch (Special)
                     {
                         // Rodent
                         case 0:
@@ -130,8 +131,7 @@ namespace Furcadia
                             result = species + 1;
                             break;
                         default:
-                            BaseSpecies = false;
-                            result = Convert.ToInt32(dt.Rows[i]["DS"]); 
+                            int.TryParse(dt.Rows[i]["DS"].ToString(), out result); 
                             break;
                     }
                     break;
@@ -152,10 +152,11 @@ namespace Furcadia
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-
-                if (Convert.ToInt32(dt.Rows[i]["Special"]) == special)
+                int Special = 0;
+                int.TryParse(dt.Rows[i]["Special"].ToString(), out Special);
+                if (Special == special)
                 {
-                    result = Convert.ToInt32(dt.Rows[i]["Wings"]);
+                    int.TryParse(dt.Rows[i]["Wings"].ToString(), out result);
                     break;
                 }
 
