@@ -112,7 +112,7 @@ namespace Furcadia
             {
                 object test = dt.Rows[i]["Hash"];
                 if (Convert.IsDBNull(test) == false)
-                    if (tag == dt.Rows[i]["Hash"])
+                    if (tag == dt.Rows[i]["Hash"].ToString())
                     {
                         int.TryParse(dt.Rows[i]["Level"].ToString(), out result);
                         return result;

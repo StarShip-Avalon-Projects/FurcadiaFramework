@@ -28,6 +28,7 @@
     </SccProvider>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
+    <UseMSBuildEngine>False</UseMSBuildEngine>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -42,7 +43,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <UseMSBuildEngine>False</UseMSBuildEngine>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -214,6 +214,6 @@ cd $(TargetDir)
 REM Create the SRC rar
 cd $(ProjectDir)
 "c:/program files/winrar/rar.exe" a -r -x*\.svn\* -n*.*proj -n*.sln -n*.pal -n*.csv -n*.cs -nlicense*.* "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" *.*
-move "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" "$(TargetDir)"</PostBuildEvent>
+move "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" "$(SolutionDir)\SRC"</PostBuildEvent>
   </PropertyGroup>
 </Project>
