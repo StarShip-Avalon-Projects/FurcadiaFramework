@@ -83,7 +83,7 @@ namespace Furcadia.Net
 		/// <summary>
 		/// Max buffer size
 		/// </summary>
-		private static int BUFFER_CAP = 2048;
+		private static int BUFFER_CAP = 1024;
 		private static int ENCODE_PAGE = 1252;
 		private bool CConnected = false;
 		private IPEndPoint _endpoint;
@@ -387,6 +387,7 @@ namespace Furcadia.Net
 		{
 			try
 			{
+             
 				if (server.GetStream ().CanWrite)
 					server.GetStream ().Write (System.Text.Encoding.GetEncoding (EncoderPage).GetBytes (message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
 			}

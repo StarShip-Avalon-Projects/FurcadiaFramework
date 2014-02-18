@@ -173,7 +173,7 @@ namespace Furcadia.Net
                             list.RemoveAt(i);
                         }
                     }
-                    friends.ForEach(Console.Write);
+                    //friends.ForEach(Console.Write);
                     _num_dreams_mainmaps = Convert.ToInt32(list[list.Count - 1].Substring(1));
                     list.RemoveAt(list.Count - 1);
                     _totalOnline = Convert.ToInt32(list[list.Count - 1].Substring(1));

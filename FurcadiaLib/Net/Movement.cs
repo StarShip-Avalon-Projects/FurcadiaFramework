@@ -97,10 +97,10 @@ namespace Furcadia.Net
             private int _option;
             private int _option1;
 
-            private int _PawObjectOld;
-            private int _PawObjectCurrent;
-            private int _FloorObjectOld;
-            private int _FloorObjectCurrent;
+            private uint _PawObjectOld;
+            private uint _PawObjectCurrent;
+            private uint _FloorObjectOld;
+            private uint _FloorObjectCurrent;
 
             public string Name
             {
@@ -240,22 +240,30 @@ namespace Furcadia.Net
                 set { _option1 = value; }
             }
 
-            public int PawObjectCurrent
+            public uint PawObjectCurrent
             {
                 get { return _PawObjectCurrent; }
-                set { _PawObjectCurrent = value; }
+                set 
+                {
+                    _PawObjectOld = _PawObjectCurrent;
+                    _PawObjectCurrent = value; 
+                }
             }
-            public int PawObjectOld
+            public uint PawObjectOld
             {
                 get { return _PawObjectOld; }
                 set { _PawObjectOld = value; }
             }
-            public int FloorObjectCurrent
+            public uint FloorObjectCurrent
             {
                 get { return _FloorObjectCurrent; }
-                set { _FloorObjectCurrent = value; }
+                set
+                {
+                    _FloorObjectOld = _FloorObjectCurrent;
+                    _FloorObjectCurrent = value; 
+                }
             }
-            public int FloorObjectOld
+            public uint FloorObjectOld
             {
                 get { return _FloorObjectOld; }
                 set { _FloorObjectOld = value; }
@@ -340,6 +348,10 @@ namespace Furcadia.Net
                 _Wings = -1;
                 _Visible = false;
                 _WasVisible = false;
+                _FloorObjectOld = 0;
+                _FloorObjectCurrent = 0;
+                _PawObjectCurrent = 0;
+                _PawObjectOld = 0;
             }
         
     }
