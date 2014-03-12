@@ -889,6 +889,7 @@ Public Class Main
 
     Private Sub Main_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         ' Try to get Furcadia's path from the registry
+        FurcPath = New Paths()
         cMain.LoadMainSettings()
         cBot.LoadBotSettings()
         InitializeTextControls()

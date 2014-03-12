@@ -391,6 +391,7 @@ namespace Furcadia.Drawing.Graphics
 
 	public class Palette
 	{
+
 		public readonly Color[] Colors;
 
 		/// <summary>
@@ -398,11 +399,41 @@ namespace Furcadia.Drawing.Graphics
 		/// </summary>
 		public static Palette Default
 		{
-			get { return new Palette(Paths.GetDefaultPatchPath() + "/title261.pcx"); }
+            get { return new Palette(Furcpath.GetDefaultPatchPath() + "/title261.pcx"); }
 		}
 
-		public Palette(string pcxPath)
+        static Paths Furcpath;
+
+        public Palette(string pcxPath)
+        {
+            Furcpath = new Paths();
+
+            byte[] colors;
+
+            /* Open the PCX and rip out the palette (with verification!) */
+            System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.StreamReader(pcxPath).BaseStream);
+            br.BaseStream.Seek(-769, System.IO.SeekOrigin.End);
+            if (br.ReadByte() != 12)
+            {
+                br.Close();
+                throw new FurcadiaPaletteException("A 256-color palette was not found in file (" + pcxPath + ").");
+            }
+            colors = br.ReadBytes(768);
+            br.Close();
+
+            /* Reorganize the data into a Color class array */
+            Color[] cols = new Color[256];
+            cols[0] = System.Drawing.Color.FromArgb(0, 0, 0, 0);
+            for (int i = 1; i < 256; i++)
+            {
+                cols[i] = Color.FromArgb(colors[i * 3], colors[i * 3 + 1], colors[i * 3 + 2]);
+            }
+            Colors = cols;
+        }
+
+        public Palette(string pcxPath, string fpath)
 		{
+            Furcpath = new Paths(fpath);
 
 			byte[] colors;
 

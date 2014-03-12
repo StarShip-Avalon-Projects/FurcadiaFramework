@@ -258,6 +258,8 @@ Partial Public Class MainForm
     End Sub
 
     Private Sub MainForm_Load1(sender As Object, e As System.EventArgs) Handles Me.Load
+        Furcpath = New Furcadia.IO.Paths()
+
         FurrePreview.Prepare()
 
         Dim path As String = [String].Join(System.IO.Path.DirectorySeparatorChar.ToString(), New String() {Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Furcadia", "Furcadia Characters"})

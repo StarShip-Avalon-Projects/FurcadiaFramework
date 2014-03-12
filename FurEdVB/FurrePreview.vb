@@ -295,9 +295,9 @@ Partial Public Class FurrePreview
         ConvPal(0) = Color.Transparent
         Palette = ConvPal
 
-        Dim DefaultPatchPath As String = CleanupPath(Paths.GetDefaultPatchPath())
+        Dim DefaultPatchPath As String = CleanupPath(FurcPath.GetDefaultPatchPath())
 
-        Dim DynamicAvatarPath As String = CleanupPath(Paths.GetDynAvatarPath())
+        Dim DynamicAvatarPath As String = CleanupPath(FurcPath.GetDynAvatarPath())
 
         Players = New FurcadiaShapes(126) {}
         For i As Integer = 1 To 55

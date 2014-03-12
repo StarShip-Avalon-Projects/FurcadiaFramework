@@ -4,7 +4,9 @@ Imports System.Windows.Forms
 Namespace FurEd
 	NotInheritable Class Program
 		Private Sub New()
-		End Sub
+        End Sub
+
+
 		''' <summary>
 		''' The main entry point for the application.
 		''' </summary>

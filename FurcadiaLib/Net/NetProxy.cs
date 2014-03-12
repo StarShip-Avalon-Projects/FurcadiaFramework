@@ -109,10 +109,11 @@ namespace Furcadia.Net
 
 
 		#region Constructors
-
+        public Paths FurcPath;
 		public NetProxy()
 		{
-			string SetPath = Paths.GetLocalSettingsPath();
+            FurcPath = new Paths();
+			string SetPath = FurcPath.GetLocalSettingsPath();
 			string SetFile = "/settings.ini";
 			string[] sett = FurcIni.LoadFurcadiaSettings(SetPath,SetFile);
 			int port = Convert.ToInt32(FurcIni.GetUserSetting("PreferredServerPort", sett));
@@ -125,6 +126,7 @@ namespace Furcadia.Net
 
 		public NetProxy(int port)
 		{
+            FurcPath = new Paths();
 			try
 			{
 				_endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
@@ -134,6 +136,7 @@ namespace Furcadia.Net
 
 		public NetProxy(int port, int lport)
 		{
+            FurcPath = new Paths();
 			_lport = lport;
 			try
 			{
@@ -144,6 +147,7 @@ namespace Furcadia.Net
 
 		public NetProxy(string host, int port)
 		{
+            FurcPath = new Paths();
 			try
 			{
 				_endpoint = new IPEndPoint(Dns.GetHostEntry(host).AddressList[0], port);
@@ -153,6 +157,7 @@ namespace Furcadia.Net
 
 		public NetProxy(string host, int port, int lport)
 		{
+            FurcPath = new Paths();
 			_lport = lport;
 			try
 			{
@@ -163,6 +168,7 @@ namespace Furcadia.Net
 
 		public NetProxy(IPAddress ip, int port)
 		{
+            FurcPath = new Paths();
 			try
 			{
 				_endpoint = new IPEndPoint(ip, port);
@@ -171,6 +177,7 @@ namespace Furcadia.Net
 		}
 		public NetProxy(IPAddress ip, int port, int lport)
 		{
+            FurcPath = new Paths();
 			_lport = lport;
 			try
 			{
@@ -181,6 +188,7 @@ namespace Furcadia.Net
 
 		public NetProxy(IPEndPoint endpoint, int lport)
 		{
+            FurcPath = new Paths();
 			_lport = lport;
 			try
 			{
@@ -216,8 +224,14 @@ namespace Furcadia.Net
 		/// </summary>
 		public string ProcessPath
 		{
-			get { return _procpath; }
-			set { _procpath = value; }
+			get {
+                return _procpath; 
+            }
+			set
+            {
+                FurcPath = new Paths(_procpath);
+                _procpath = value; 
+            }
 		}
 		/// <summary>
 		/// Command to pass (default: -pick)
@@ -299,7 +313,7 @@ namespace Furcadia.Net
 				/// UAC Perms Needed to Create proxy.ini
 				/// Win 7 Change your UAC Level or add file create Permissions to [%program files%/furcadia]
 				/// Maybe Do this at install
-				string fIni = Paths.GetInstallPath() + "proxy.ini" ;
+				string fIni = FurcPath.GetInstallPath() + "proxy.ini" ;
 				/// Check proxy.ini if it exoists then use it
 				/// 
 				/// otherwise use settings.ini to avoid UAC issues on %Program Files%
@@ -340,7 +354,7 @@ namespace Furcadia.Net
 				}
 				
 				//Run         
-				if (string.IsNullOrEmpty(ProcessPath)) ProcessPath = Paths.GetInstallPath();
+				if (string.IsNullOrEmpty(ProcessPath)) ProcessPath = FurcPath.GetInstallPath();
 				//check ProcessPath is not a directory
 				if (!Directory.Exists(ProcessPath)) throw new DirectoryNotFoundException("Process path not found.");
 				Directory.SetCurrentDirectory(ProcessPath);
@@ -509,7 +523,7 @@ namespace Furcadia.Net
 					/// Delete proxy.ini or restore settings.ini
 					if (UseProxyIni)
 					{
-						File.Delete(Paths.GetInstallPath() + "proxy.ini");
+						File.Delete(FurcPath.GetInstallPath() + "proxy.ini");
 					}
 					else
 					{

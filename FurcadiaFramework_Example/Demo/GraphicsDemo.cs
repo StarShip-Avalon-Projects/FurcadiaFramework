@@ -17,9 +17,10 @@ namespace FurcadiaFramework_Example.Demo
 		public GraphicsDemo() { }
 
 		#region IDemo Members
-
+        Paths FurcPath;
 		public void Run()
 		{
+            FurcPath = new Paths();
 			Form f = new Form();
 			f.Text = "Graphics Demo";
 
@@ -54,7 +55,7 @@ namespace FurcadiaFramework_Example.Demo
 			};
 			
 			#region Furcadia.Graphics implimentation here.
-			FurcadiaShapes shape = new FurcadiaShapes(Paths.GetDefaultPatchPath() + "item.fox");
+            FurcadiaShapes shape = new FurcadiaShapes(FurcPath.GetDefaultPatchPath() + "item.fox");
 			Bitmap[] anims = Helper.ToBitmapArray(shape);
 			Random rand = new Random();
 			timer.Elapsed += delegate

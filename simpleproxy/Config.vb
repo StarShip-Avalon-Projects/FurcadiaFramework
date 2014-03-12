@@ -152,7 +152,7 @@ Public Class Config
 
         With browseDialog
             ' Select Character ini file
-            .InitialDirectory = Paths.GetFurcadiaDocPath & "\Furcadia Characters\"
+            .InitialDirectory = FurcPath.GetFurcadiaDocPath & "Furcadia Characters\"
             If .ShowDialog = DialogResult.OK Then
                 Dim slashPosition As Integer = .FileName.LastIndexOf("\")
                 Dim filenameOnly As String = .FileName.Substring(slashPosition + 1)

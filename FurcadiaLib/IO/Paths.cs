@@ -18,15 +18,24 @@ namespace Furcadia.IO
 	/// </summary>
 	public class Paths
 	{
+        public Paths()
+        {
+            _installpath = null;
+        }
+        public Paths(string path)
+        {
+            _installpath = path;
+        }
 
-		private static string _FurcadiaDocpath;
+
+		private  string _FurcadiaDocpath;
 		/// <summary>
 		/// Gets the location of the Furcadia folder located in "My Documents"
 		/// </summary>
 		/// <returns>
 		/// A <see cref="System.String"/> containing the location of Furcadia folder in "My Documents".
 		/// </returns>
-		public static string GetFurcadiaDocPath()
+		public  string GetFurcadiaDocPath()
 		{
 			if (!String.IsNullOrEmpty(_FurcadiaDocpath)) return _FurcadiaDocpath;
 			string path = GetLocaldirPath();
@@ -49,7 +58,7 @@ namespace Furcadia.IO
 		/// <returns>
 		/// A path to the Furcadia registry folder or NullReferenceException.
 		/// </returns>
-		public static string GetRegistryPath()
+		public  string GetRegistryPath()
 		{
             if (OSBitness.Is64BitOperatingSystem())
 			{
@@ -61,7 +70,7 @@ namespace Furcadia.IO
 			}
 		}
 
-		static string ProgramFilesx86()
+		public string ProgramFilesx86()
 		{
             if (OSBitness.Is64BitOperatingSystem())
 			{
@@ -71,17 +80,20 @@ namespace Furcadia.IO
 			return Environment.GetEnvironmentVariable("ProgramFiles");
 		}
 
-        public static string InstallPath
+        public  string InstallPath
         {
             set { _installpath = value; }
         }
-		private static string _installpath;
+
+
+
+		private  string _installpath;
 		/// <summary>
 		/// Find the path to Furcadia data files currently installed on this
 		/// system.
 		/// </summary>
 		/// <returns>Path to the Furcadia program folder or null if not found/not installed.</returns>
-		public static string GetInstallPath()
+		public  string GetInstallPath()
 		{
 			//If path already found return it.
 			if (!string.IsNullOrEmpty(_installpath)) return _installpath;
@@ -126,12 +138,12 @@ namespace Furcadia.IO
 			throw new DirectoryNotFoundException("Furcadia Install path not found." + "\n" + path);
 		}
 
-		private static string _defaultpatchpath;
+		private  string _defaultpatchpath;
 		/// <summary>
 		/// Find the path to the default patch folder on the current machine.
 		/// </summary>
 		/// <returns>Path to the default patch folder or null if not found.</returns>
-		public static string GetDefaultPatchPath()
+		public  string GetDefaultPatchPath()
 		{
 			//If path already found return it.
 			if (!string.IsNullOrEmpty(_defaultpatchpath)) return _defaultpatchpath;
@@ -178,27 +190,27 @@ namespace Furcadia.IO
 			throw new DirectoryNotFoundException("Furcadia Install path not found.");
 		}
 
-		private static string _localsettingspath;
+		private  string _localsettingspath;
 		/// <summary>
 		/// Get the path to the Local Settings directory for Furcadia.
 		/// </summary>
 		/// <returns>Furcadia local settings directory.</returns>
-		public static string GetLocalSettingsPath()
+		public  string GetLocalSettingsPath()
 		{
-			if (!string.IsNullOrEmpty(_localsettingspath)) return _localsettingspath;
-			else _localsettingspath = GetLocaldirPath(); // + "settings/"
+            if (!string.IsNullOrEmpty(_localsettingspath)) return _localsettingspath;
+            else _localsettingspath = GetLocaldirPath() + "settings/";
 			if (String.IsNullOrEmpty(_localsettingspath))
 				_localsettingspath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
 												  "Dragon's Eye Productions/Furcadia");
 			return _localsettingspath;
 		}
 
-		private static string _cachepath;
+		private  string _cachepath;
 		/// <summary>
 		/// Get the All Users Application Data path for Furcadia.
 		/// </summary>
 		/// <returns>All Users Application Data path for Furcadia.</returns>
-		public static string GetCachePath()
+		public  string GetCachePath()
 		{
 			if (!String.IsNullOrEmpty(_cachepath)) return _cachepath;
 			else _cachepath = GetLocaldirPath();
@@ -208,28 +220,28 @@ namespace Furcadia.IO
 			return _cachepath;
 		}
 
-		private static string _dynavpath;
+		private  string _dynavpath;
 		/// <summary>
 		/// Get the All Dynamic Avatar path for Furcadia.
 		/// </summary>
 		/// <returns>All Dynamic Avatar path for Furcadia.</returns>
-		public static string GetDynAvatarPath()
+		public  string GetDynAvatarPath()
 		{
-			if (!String.IsNullOrEmpty(_cachepath)) return _cachepath;
-			else _cachepath = GetLocaldirPath();
-			if (String.IsNullOrEmpty(_cachepath))
-				_cachepath = Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+            if (!String.IsNullOrEmpty(_dynavpath)) return _dynavpath;
+            else _dynavpath = GetLocaldirPath();
+            if (String.IsNullOrEmpty(_dynavpath))
+                _dynavpath = Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
 										  "Dragon's Eye Productions/Furcadia/Dynamic Avatars");
-			return _cachepath;
+            return _dynavpath;
 		}
 
-		private static string _localdirpath;
+		private  string _localdirpath;
 		/// <summary>
 		/// Find the current localdir path where data files would be stored
 		/// on the current machine.
 		/// </summary>
 		/// <returns>Path to the data folder from localdir.ini or null if not found.</returns>
-		public static string GetLocaldirPath()
+		public  string GetLocaldirPath()
 		{
 			if (!string.IsNullOrEmpty(_localdirpath)) return _localdirpath;
 			string path;
