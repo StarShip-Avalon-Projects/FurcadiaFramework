@@ -47,6 +47,8 @@ Public Class Main
 #Region "Events"
     Private WithEvents simpleProxy As NetProxy
     Private ControlThread As Thread = Nothing
+    Dim _FormClose As Boolean
+
     'UpDate Btn-Go Text and Actions Group Enable
     Delegate Sub UpDateBtn_GoCallback(ByRef [text] As Object)
     Delegate Sub UpDateBtn_StandCallback(ByRef [furre] As FURRE)
@@ -57,6 +59,9 @@ Public Class Main
     Dim LogTimer As New System.Timers.Timer()
     Dim DreamUpdateTimer As New System.Timers.Timer()
 #End Region
+    Public LogStream As LogStream
+    Public NewBot As Boolean
+    Public writer As TextBoxWriter = Nothing
 
     Public Enum fColorEnum
         DefaultColor
@@ -106,63 +111,141 @@ Public Class Main
 
 #Region " Methods"
 
-    Public Sub AddDataToList(ByRef lb As Object, ByRef obj As Object, ByRef newColor As fColorEnum)
+    Public Sub AddDataToList(ByRef lb As Controls.RichTextBoxEx, ByRef obj As String, ByRef newColor As fColorEnum)
         If InvokeRequired Then
             Dim dataArray() As Object = {lb, obj, newColor}
             Me.Invoke(New AddDataToListCaller(AddressOf AddDataToList), dataArray)
         Else
-            If lb.GetType().ToString = "SimpleProxy2.Controls.RichTextBoxEx" Then
-
-                Dim data As String = obj
-                Dim build As New System.Text.StringBuilder(data)
-                build = build.Replace("<b>", "\b ")
+            If lb.GetType().ToString.Contains("Controls.RichTextBoxEx") Then
+                'Pos_Old = GetScrollPos(lb.Handle, SBS_VERT)
+                Dim build As New System.Text.StringBuilder(obj)
                 build = build.Replace("</b>", "\b0 ")
-                build = build.Replace("<i>", "\i ")
+                build = build.Replace("<b>", "\b ")
                 build = build.Replace("</i>", "\i0 ")
-                build = build.Replace("<ul>", "\ul ")
+                build = build.Replace("<i>", "\i ")
                 build = build.Replace("</ul>", "\ul0 ")
+                build = build.Replace("<ul>", "\ul ")
+
                 build = build.Replace("&lt;", "<")
                 build = build.Replace("&gt;", ">")
-                Dim Images As MatchCollection = Regex.Matches(data, "<img .*?src=[""']?([^'"">]+)[""']?.*?>", RegexOptions.IgnoreCase)
-                For Each Image As Match In Images
-                    Dim img As String = Image.Groups(1).Value
-                    Dim alt As String = Image.Groups(2).Value
-                    build = build.Replace(Image.ToString, "IMG:" & img & "::")
-                Next
-                lb.SelectionStart = lb.TextLength
-                Dim myColor As System.Drawing.Color = fColor(newColor)
 
+
+                Dim Names As MatchCollection = Regex.Matches(obj, NameFilter)
+                For Each Name As System.Text.RegularExpressions.Match In Names
+                    build = build.Replace(Name.ToString, Name.Groups(3).Value)
+                Next
+                '<name shortname='acuara' forced>
+                Dim MyIcon As MatchCollection = Regex.Matches(obj, Iconfilter)
+                For Each Icon As System.Text.RegularExpressions.Match In MyIcon
+                    Select Case Icon.Groups(1).Value
+                        Case "91"
+                            build = build.Replace(Icon.ToString, "[#]")
+                        Case Else
+                            build = build.Replace(Icon.ToString, "[" + Icon.Groups(1).Value + "]")
+                    End Select
+
+                Next
+
+                'Dim myColor As System.Drawing.Color = fColor(newColor)
+                lb.ReadOnly = False
+                lb.BeginUpdate()
+
+                lb.SelectionStart = lb.TextLength
                 lb.SelectedRtf = FormatText(build.ToString, newColor)
 
-                lb.BeginUpdate()
                 'since we Put the Data in the RTB now we Finish Setting the Links
                 Dim param() As String = {"<a.*?href=['""](.*?)['""].*?>(.*?)</a>", "<a.*?href=(.*?)>(.*?)</a>"}
                 For i As Integer = 0 To param.Length - 1
                     Dim links As MatchCollection = Regex.Matches(lb.Text, param(i), RegexOptions.IgnoreCase)
                     ' links = links & Regex.Matches(lb.Text, "<a.*?href='(.*?)'.*?>(.*?)</a>", RegexOptions.IgnoreCase)
-                    For Each match As Match In links
-                        Dim matchUrl As String = match.Groups(1).Value
-                        Dim matchText As String = match.Groups(2).Value
-                        If match.Success Then
+                    For Each mmatch As System.Text.RegularExpressions.Match In links
+                        Dim matchUrl As String = mmatch.Groups(1).Value
+                        Dim matchText As String = mmatch.Groups(2).Value
+                        If mmatch.Success Then
                             With lb
-                                .Find(match.ToString)
+                                .Find(mmatch.ToString)
+                                'WAIT Snag Image Links first!
+                                'Dim snag As Match = Regex.Match(matchText, "IMG:(.*?)::")
+                                'If snag.Success Then
+                                '    Dim RTFimg As New RTFBuilder
+                                '    RTFimg.InsertImage(LoadImageFromUrl(snag.Groups(1).ToString))
+                                '    .SelectedRtf = RTFimg.ToString
+                                'Else
                                 .SelectedRtf = FormatURL(matchText & "\v #" & matchUrl & "\v0 ")
-                                .find(matchText & "#" & matchUrl)
+                                .Find(matchText & "#" & matchUrl, RichTextBoxFinds.WholeWord)
                                 .SetSelectionLink(True)
+                                'End If
+                                'Put the Link in
+
                             End With
                         End If
                     Next
                 Next
+                'Dim Images As MatchCollection = Regex.Matches(lb.Text, "<img .*?src=[""']?([^'"">]+)[""']?.*?>", RegexOptions.IgnoreCase)
+                'For Each Image As Match In Images
+                '    Dim img As String = Image.Groups(1).Value
+                '    Dim alt As String = Image.Groups(2).Value
+                '    With lb
+                '        .SelectionStart = lb.Text.IndexOf(Image.ToString)
+                '        .SelectionLength = Image.ToString.Length
+                '        Dim RTFimg As New RTFBuilder
+                '        'RTFimg.Append("IMG:" & img & "::")
+                '        RTFimg.InsertImage(LoadImageFromUrl(img))
+                '        .SelectedRtf = RTFimg.ToString
+                '    End With
+                'Next
+
+                'Dim SysImages As MatchCollection = Regex.Matches(lb.Text, "\$(.[0-9]+)\$")
+                'For Each SysMatch As Match In SysImages
+                '    Dim idx As Integer = Convert.ToInt32(SysMatch.Groups(1).ToString)
+                '    With lb
+                '        .Find(SysMatch.ToString)
+                '        Dim RTFimg As New RTFBuilder
+                '        RTFimg.InsertImage(IMGresize(GetFrame(idx), log_))
+                '        .SelectedRtf = RTFimg.ToString
+                '    End With
+                'Next
+                '' 
+                'SysImages = Regex.Matches(lb.Text, "#C(.?)?")
+                'For Each SysMatch As Match In SysImages
+                '    Dim idx As Integer = Helper.CharToDescTag(SysMatch.Groups(1).ToString)
+                '    With lb
+                '        .Find(SysMatch.ToString)
+                '        Dim RTFimg As New RTFBuilder
+                '        RTFimg.InsertImage(IMGresize(GetFrame(idx, "desctags.fox"), log_))
+                '        .SelectedRtf = RTFimg.ToString
+                '    End With
+                'Next
+                'SysImages = Regex.Matches(lb.Text, "#S(.?)?")
+                'For Each SysMatch As Match In SysImages
+                '    With lb
+                '        .Find(SysMatch.ToString)
+                '        .SelectedRtf = GetSmily(SysMatch.Groups(1).Value)
+                '    End With
+                'Next
+
+
+                Try
+                    Dim SelStart As Integer = 0
+                    While (lb.Lines.Length > 350)
+                        'Array.Copy(lb.Lines, 1, lb.Lines, 0, lb.Lines.Length - 1)
+                        SelStart = lb.SelectionStart
+                        lb.SelectionStart = 0
+                        lb.SelectionLength = lb.Text.IndexOf(vbLf, 0) + 1
+                        lb.SelectedText = ""
+                        lb.SelectionStart = SelStart
+                    End While
+                Catch
+                    lb.Clear()
+                    Console.WriteLine("Reset Log box due to over flow")
+                End Try
                 lb.EndUpdate()
-                ' Auto Save
-                If cMain.log = True Then
-                    AddHandler LogTimer.Elapsed, AddressOf saveLog
-                    LogTimer.AutoReset = False
-                    ' Set the Interval to 1 seconds (1000 milliseconds).
-                    LogTimer.Interval = 1000
-                    LogTimer.Enabled = True
-                End If
+                lb.ReadOnly = True
+
             End If
+
+
+
         End If
     End Sub
 
@@ -194,10 +277,10 @@ Public Class Main
 
     Public Sub sndDisplay(ByRef data As String, Optional ByRef newColor As fColorEnum = fColorEnum.DefaultColor)
         Try
-            data = data.Replace(vbLf, vbCrLf)
+            'data = data.Replace(vbLf, vbCrLf)
+            If cBot.log Then LogStream.Writeline(data)
             If cMain.TimeStamp Then
-                Dim Now As String = DateTime.Now.ToString
-                Now = Now.Replace("#", "")
+                Dim Now As String = DateTime.Now.ToLongTimeString
                 data = Now.ToString & ": " & data
             End If
             AddDataToList(log_, data, newColor)
@@ -770,35 +853,21 @@ Public Class Main
     End Sub
 
     Public Function setLogName() As String
-
-        Select Case cMain.LogOption
+        Select Case cBot.LogOption
             Case 0
-                fname = cMain.LogNameBase
+                Return cBot.LogNameBase
+            Case 1
+                cBot.LogIdx += 1
+                cBot.SaveBotSettings()
+                Return cBot.LogNameBase & cBot.LogIdx.ToString
             Case 2
-                If NewLogFile Then
-                    cMain.LogIdx += 1
-                End If
-                fname = cMain.LogNameBase & cMain.LogIdx.ToString
-            Case 3
-                If NewLogFile Then
-                    Dim LogDate As String = DateTime.Now.ToString
-                    fname = cMain.LogNameBase & LogDate
-                End If
+                Return cBot.LogNameBase & Date.Now().ToString("MM_dd_yyyy_H-mm-ss")
+
         End Select
-        NewLogFile = False
-        Return fname
+        Return "Default"
     End Function
 
-    Public Sub saveLog()
-        Select Case cMain.LogType
-            Case "rtf"
-                SaveRTF(cMain.LogPath, setLogName() & ".rtf")
-            Case "html"
-                SaveHTML(cMain.LogPath, setLogName() & ".html")
-            Case "txt"
-                SavePlainTxt(cMain.LogPath, setLogName() & ".txt")
-        End Select
-    End Sub
+
 
     Public Sub SaveRTF(ByRef path As String, ByRef fName As String)
         If log_.InvokeRequired Then
@@ -890,12 +959,13 @@ Public Class Main
     Private Sub Main_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         ' Try to get Furcadia's path from the registry
         FurcPath = New Paths()
-        cMain.LoadMainSettings()
-        cBot.LoadBotSettings()
+        writer = New TextBoxWriter(log_)
+        cMain = New cMain
+        'cBot.LoadBotSettings()
         InitializeTextControls()
         'Me.Size = My.Settings.MainFormSize
         Me.Location = My.Settings.MainFormLocation
-        Me.Text = My.Settings.MainFormText
+        Me.Text = Application.ProductName + ": V" + Application.ProductVersion
         Me.Visible = True
     End Sub
 
@@ -1005,10 +1075,12 @@ Public Class Main
     End Sub
 
     Private Sub BTN_Go_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BTN_Go.Click
-        Me.ControlThread = New Thread(New ThreadStart(AddressOf Me.test3))
+        If IsNothing(cBot) Then Exit Sub
         If BTN_Go.Text = "Go!" Then
-
-            simpleProxy = New NetProxy(cMain.Host, cMain.sPort, cMain.lPort)
+            If cBot.log Then
+                LogStream = New LogStream(setLogName(), cBot.LogPath)
+            End If
+            simpleProxy = New NetProxy(cMain.Host, cMain.sPort, cBot.lPort)
             With simpleProxy
                 .ProcessCMD = cBot.IniFile
                 .StandAloneMode = False 'cMain.StandAlone
@@ -1028,7 +1100,6 @@ Public Class Main
             TS_Status_Server.Image = My.Resources.images2
             TS_Status_Client.Image = My.Resources.images2
         End If
-        Me.ControlThread.Start()
     End Sub
 
     Private Sub toServer_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles toServer.KeyPress
@@ -1086,6 +1157,59 @@ Public Class Main
                 .SelectionFont = New System.Drawing.Font(currentFont.FontFamily, currentFont.Size, newFontStyle)
             End If
         End With
+    End Sub
+
+    Private Sub NewBotToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles NewBotToolStripMenuItem.Click
+        With BotSetup
+            .BFile = New cBot
+            If .ShowDialog() = Windows.Forms.DialogResult.OK Then
+                cBot = .BFile
+            End If
+        End With
+
+
+    End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles OpenToolStripMenuItem.Click
+        With BotIniOpen
+            ' Select Bot ini file
+            .InitialDirectory = mPath()
+            If .ShowDialog = DialogResult.OK Then
+                cBot = New cBot(.FileName)
+                ' BotSetup.BotFile = .FileName
+                ' BotSetup.ShowDialog()
+                Me.EditBotToolStripMenuItem.Enabled = True
+            End If
+
+        End With
+    End Sub
+
+    Private Sub EditBotToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles EditBotToolStripMenuItem.Click
+
+        With BotSetup
+            .BFile = cBot
+            If .ShowDialog = Windows.Forms.DialogResult.OK Then
+                cBot = .BFile
+            End If
+        End With
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ExitToolStripMenuItem.Click
+        FormClose()
+    End Sub
+
+    Private Sub FormClose()
+        _FormClose = True
+        My.Settings.MainFormLocation = Me.Location
+
+        'Timers.DestroyTimers()
+        'Save the user settings so next time the
+        'window will be the same size and location
+        SettingsIni.Save(SetFile)
+        My.Settings.Save()
+        NotifyIcon1.Visible = False
+
+        Me.Dispose()
     End Sub
 
 End Class

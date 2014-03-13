@@ -1,5 +1,4 @@
 ﻿Imports System.IO
-Imports SimpleProxy2.IniMod
 Imports SimpleProxy2.ConfigStructs
 Imports Furcadia.IO
 
@@ -27,9 +26,8 @@ Public Class ConfigStructs
    
 
 
-    Public Structure cMain
+    Public Class cMain
 
-        Private Shared MyIni As New IniMod
 
         Private Shared _lPort As Integer = 0
         Private Shared _sPort As Integer = 0
@@ -59,52 +57,7 @@ Public Class ConfigStructs
         Private Shared _defaultColor As Color = Color.Black
         Private Shared _emoteColor As Color = Color.DarkCyan
 
-        Public Property LogNameBase As String
-            Get
-                Return _logNamebase
-            End Get
-            Set(value As String)
-                _logNamebase = value
-            End Set
-        End Property
-        Public Property LogPath As String
-            Get
-                Return _logPath
-            End Get
-            Set(value As String)
-                _logPath = value
-            End Set
-        End Property
-        Public Property LogOption As Short
-            Get
-                Return _logOption
-            End Get
-            Set(value As Short)
-                _logOption = value
-            End Set
-        End Property
-        Public Property LogIdx As UInt32
-            Get
-                If MyIni.IniRead(SetFile, "Main", "LogIdx") <> "" Then
-                    _logIdx = Convert.ToUInt32(MyIni.IniRead(SetFile, "Main", "LogIdx"))
-                End If
-                Return _logIdx
-            End Get
-            Set(value As UInt32)
-                _logIdx = value
-                MyIni.IniWrite(SetFile, "Main", "LogType", _logIdx.ToString)
-
-            End Set
-        End Property
-
-        Public Property LogType As String
-            Get
-                Return _LogType
-            End Get
-            Set(value As String)
-                _LogType = value
-            End Set
-        End Property
+      
 
         Public Property ApFont As Font
             Get
@@ -236,107 +189,83 @@ Public Class ConfigStructs
             _debug = False
             _TimeStamp = 0
         End Sub
-        Public Sub LoadMainSettings()
+
+        Public Sub New()
             System.IO.Directory.CreateDirectory(pPath())
-            If MyIni.IniRead(SetFile, "Main", "Host") <> "" Then
-                _Host = MyIni.IniRead(SetFile, "Main", "Host")
-            Else
-                _Host = "lightbringer.furcadia.com"
-            End If
-            If MyIni.IniRead(SetFile, "Main", "SPort") <> "" Then
-                _sPort = Convert.ToInt32(MyIni.IniRead(SetFile, "Main", "SPort"))
-            Else
-                _sPort = 6500
-            End If
-            If MyIni.IniRead(SetFile, "Main", "LPort") <> "" Then
-                _lPort = Convert.ToInt32(MyIni.IniRead(SetFile, "Main", "LPort"))
-            Else
-                _lPort = 6700
-            End If
-            If MyIni.IniRead(SetFile, "Main", "StandAlone") <> "" Then
-                _StandAlone = Convert.ToBoolean(MyIni.IniRead(SetFile, "Main", "StandAlone"))
-            Else
-                _StandAlone = False
-            End If
-            If MyIni.IniRead(SetFile, "Main", "Log") <> "" Then
-                _log = Convert.ToBoolean(MyIni.IniRead(SetFile, "Main", "Log"))
-            End If
-            If MyIni.IniRead(SetFile, "Main", "LogOption") <> "" Then
-                _logOption = Convert.ToUInt16(MyIni.IniRead(SetFile, "Main", "LogOption"))
-            End If
-            If MyIni.IniRead(SetFile, "Main", "LogNameBase") <> "" Then
-                _logNamebase = MyIni.IniRead(SetFile, "Main", "LogNameBase")
-            End If
-            If MyIni.IniRead(SetFile, "Main", "LogNamePath") <> "" Then
-                _logNamebase = MyIni.IniRead(SetFile, "Main", "LogNamePath")
-            End If
-            If MyIni.IniRead(SetFile, "Main", "Debug") <> "" Then
-                _debug = Convert.ToBoolean(MyIni.IniRead(SetFile, "Main", "Debug"))
-            Else
-                _debug = False
-            End If
-            If MyIni.IniRead(SetFile, "Main", "TimeStamp") <> "" Then
-                _TimeStamp = Convert.ToInt16(MyIni.IniRead(SetFile, "Main", "TimeStamp"))
-            Else
-                _TimeStamp = 0
-            End If
-            If MyIni.IniRead(SetFile, "Main", "FontFace") <> "" Then
-                _FontFace = MyIni.IniRead(SetFile, "Main", "FontFace")
-            End If
-            If MyIni.IniRead(SetFile, "Main", "FontSize") <> "" Then
-                _FontSize = Convert.ToUInt32(MyIni.IniRead(SetFile, "Main", "FontSize"))
-            End If
-            If MyIni.IniRead(SetFile, "Main", "FontSize") <> "" OrElse MyIni.IniRead(SetFile, "Main", "FontFace") <> "" Then
-                _AppFont = New Font(_FontFace, _FontSize)
-            End If
-            If MyIni.IniRead(SetFile, "Main", "EmitColor") <> "" Then
-                _emitColor = ColorTranslator.FromHtml(MyIni.IniRead(SetFile, "Main", "EmitColor"))
-            End If
-            If MyIni.IniRead(SetFile, "Main", "SayColor") <> "" Then
-                _sayColor = ColorTranslator.FromHtml(MyIni.IniRead(SetFile, "Main", "SayColor"))
-            End If
-            If MyIni.IniRead(SetFile, "Main", "ShoutColor") <> "" Then
-                _shoutColor = ColorTranslator.FromHtml(MyIni.IniRead(SetFile, "Main", "ShoutColor"))
-            End If
-            If MyIni.IniRead(SetFile, "Main", "WhColor") <> "" Then
-                _whColor = ColorTranslator.FromHtml(MyIni.IniRead(SetFile, "Main", "WhColor"))
-            End If
-            If MyIni.IniRead(SetFile, "Main", "DefaultColor") <> "" Then
-                _defaultColor = ColorTranslator.FromHtml(MyIni.IniRead(SetFile, "Main", "DefaultColor"))
-            End If
-            If MyIni.IniRead(SetFile, "Main", "EmoteColor") <> "" Then
-                _emoteColor = ColorTranslator.FromHtml(MyIni.IniRead(SetFile, "Main", "EmoteColor"))
-            End If
-            If MyIni.IniRead(SetFile, "Main", "LogType") <> "" Then
-                _LogType = MyIni.IniRead(SetFile, "Main", "LogType")
-            End If
+            If File.Exists(SetFile) Then SettingsIni.Load(SetFile, True)
+
+            Dim s As String = ""
+            s = SettingsIni.GetKeyValue("Main", "Host")
+            If Not String.IsNullOrEmpty(s) Then _Host = s.Trim
+
+            s = SettingsIni.GetKeyValue("Main", "SPort")
+            If Not String.IsNullOrEmpty(s) Then _sPort = s.ToInteger
+
+
+            s = SettingsIni.GetKeyValue("Main", "Debug")
+            If Not String.IsNullOrEmpty(s) Then _debug = Convert.ToBoolean(s)
+
+            s = SettingsIni.GetKeyValue("Main", "TimeStamp")
+            If Not String.IsNullOrEmpty(s) Then _TimeStamp = CUShort(Convert.ToInt16(s))
+
+            s = SettingsIni.GetKeyValue("Main", "FontFace")
+            If Not String.IsNullOrEmpty(s) Then _FontFace = s
+            s = SettingsIni.GetKeyValue("Main", "FontSize")
+            If Not String.IsNullOrEmpty(s) Then _FontSize = s.ToInteger
+            _AppFont = New Font(_FontFace, _FontSize)
+
+
+            s = SettingsIni.GetKeyValue("Main", "EmitColor")
+            If Not String.IsNullOrEmpty(s) Then _emitColor = ColorTranslator.FromHtml(s)
+
+            s = SettingsIni.GetKeyValue("Main", "SayColor")
+            If Not String.IsNullOrEmpty(s) Then _sayColor = ColorTranslator.FromHtml(s)
+
+            s = SettingsIni.GetKeyValue("Main", "ShoutColor")
+            If Not String.IsNullOrEmpty(s) Then _shoutColor = ColorTranslator.FromHtml(s)
+
+            s = SettingsIni.GetKeyValue("Main", "WhColor")
+            If Not String.IsNullOrEmpty(s) Then _whColor = ColorTranslator.FromHtml(s)
+
+            s = SettingsIni.GetKeyValue("Main", "DefaultColor")
+            If Not String.IsNullOrEmpty(s) Then _defaultColor = ColorTranslator.FromHtml(s)
+
+            s = SettingsIni.GetKeyValue("Main", "EmoteColor")
+            If Not String.IsNullOrEmpty(s) Then _emoteColor = ColorTranslator.FromHtml(s)
+
+
+
+
+
+
+
         End Sub
+
         Public Sub SaveMainSettings()
-            MyIni.IniWrite(SetFile, "Main", "Host", _Host)
-            MyIni.IniWrite(SetFile, "Main", "SPort", _sPort.ToString)
-            MyIni.IniWrite(SetFile, "Main", "LPort", _lPort.ToString)
-            MyIni.IniWrite(SetFile, "Main", "StandAlone", _StandAlone.ToString)
-            MyIni.IniWrite(SetFile, "Main", "Debug", _debug.ToString)
-            MyIni.IniWrite(SetFile, "Main", "Log", _log.ToString)
-            MyIni.IniWrite(SetFile, "Main", "LogType", _LogType)
-            MyIni.IniWrite(SetFile, "Main", "LogNameBase", _logNamebase)
-            MyIni.IniWrite(SetFile, "Main", "LogPath", _logPath)
-            MyIni.IniWrite(SetFile, "Main", "LogOption", _logOption.ToString)
-            MyIni.IniWrite(SetFile, "Main", "TimeStamp", _TimeStamp.ToString)
-            MyIni.IniWrite(SetFile, "Main", "FontFace", ApFont.Name)
-            MyIni.IniWrite(SetFile, "Main", "FontSize", ApFont.Size.ToString)
-            MyIni.IniWrite(SetFile, "Main", "EmitColor", ColorTranslator.ToHtml(_emitColor).ToString)
-            MyIni.IniWrite(SetFile, "Main", "SayColor", ColorTranslator.ToHtml(_sayColor).ToString)
-            MyIni.IniWrite(SetFile, "Main", "ShoutColor", ColorTranslator.ToHtml(_shoutColor).ToString)
-            MyIni.IniWrite(SetFile, "Main", "WhColor", ColorTranslator.ToHtml(_whColor).ToString)
-            MyIni.IniWrite(SetFile, "Main", "DefaultColor", ColorTranslator.ToHtml(_defaultColor).ToString)
-            MyIni.IniWrite(SetFile, "Main", "EmoteColor", ColorTranslator.ToHtml(_emoteColor).ToString)
+            SettingsIni.SetKeyValue("Main", "Host", _Host)
+            '_reconnectMax
+            SettingsIni.SetKeyValue("Main", "SPort", _sPort.ToString)
+            SettingsIni.SetKeyValue("Main", "Debug", _debug.ToString)
+            SettingsIni.SetKeyValue("Main", "TimeStamp", _TimeStamp.ToString)
+            SettingsIni.SetKeyValue("Main", "FontFace", ApFont.Name)
+            SettingsIni.SetKeyValue("Main", "FontSize", ApFont.Size.ToString)
+            SettingsIni.SetKeyValue("Main", "EmitColor", ColorTranslator.ToHtml(_emitColor).ToString)
+            SettingsIni.SetKeyValue("Main", "SayColor", ColorTranslator.ToHtml(_sayColor).ToString)
+            SettingsIni.SetKeyValue("Main", "ShoutColor", ColorTranslator.ToHtml(_shoutColor).ToString)
+            SettingsIni.SetKeyValue("Main", "WhColor", ColorTranslator.ToHtml(_whColor).ToString)
+            SettingsIni.SetKeyValue("Main", "DefaultColor", ColorTranslator.ToHtml(_defaultColor).ToString)
+            SettingsIni.SetKeyValue("Main", "EmoteColor", ColorTranslator.ToHtml(_emoteColor).ToString)
+
+
+
+            SettingsIni.Save(SetFile)
         End Sub
 
-    End Structure
+    End Class
 
-    Public Structure cBot
-        Private Shared MyIni As New IniMod
+    Public Class cBot
+
+        Public BotFile As String = ""
         Private Shared _IniFile As String
 
         Public Property IniFile() As String
@@ -348,19 +277,107 @@ Public Class ConfigStructs
             End Set
         End Property
 
-        Public Sub LoadBotSettings()
-            If MyIni.IniRead(SetFile, "Bot", "BotIni") <> "" Then
-                _IniFile = MyIni.IniRead(SetFile, "Bot", "BotIni")
-            Else
-                _IniFile = "-pick"
-            End If
+        Private _lPort As Integer = 6700
+        Public Property lPort() As Integer
+            Get
+                Return _lPort
+            End Get
+            Set(ByVal value As Integer)
+                _lPort = value
+            End Set
+        End Property
+
+        Private _log As Boolean
+        Public Property log() As Boolean
+            Get
+                Return _log
+            End Get
+            Set(ByVal value As Boolean)
+                _log = value
+            End Set
+        End Property
+
+        Private _logNamebase As String = "Default"
+        Public Property LogNameBase As String
+            Get
+                Return _logNamebase
+            End Get
+            Set(value As String)
+                _logNamebase = value
+            End Set
+        End Property
+
+        Private _logPath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\Silver Monkey\Logs"
+        Public Property LogPath As String
+            Get
+                Return _logPath
+            End Get
+            Set(value As String)
+                _logPath = value
+            End Set
+        End Property
+
+        Private _logOption As Short
+        Public Property LogOption As Short
+            Get
+                Return _logOption
+            End Get
+            Set(value As Short)
+                _logOption = value
+            End Set
+        End Property
+
+        Private _logIdx As Integer
+        Public Property LogIdx As Integer
+            Get
+                Return _logIdx
+            End Get
+            Set(value As Integer)
+                _logIdx = value
+            End Set
+        End Property
+
+        Public Sub New()
+            'do nothing for defaults
         End Sub
 
+        Public Sub New(ByRef BFile As String)
+            If File.Exists(BFile) Then BotIni.Load(BFile)
+            BotFile = BFile
+            Dim s As String = ""
+
+            s = BotIni.GetKeyValue("Main", "Log")
+            If Not String.IsNullOrEmpty(s) Then _log = Convert.ToBoolean(s)
+
+            s = BotIni.GetKeyValue("Main", "LogOption")
+            If Not String.IsNullOrEmpty(s) Then _logOption = Convert.ToInt16(s)
+
+            s = BotIni.GetKeyValue("Main", "LogNameBase")
+            If Not String.IsNullOrEmpty(s) Then _logNamebase = s
+
+            s = BotIni.GetKeyValue("Main", "LogNamePath")
+            If Not String.IsNullOrEmpty(s) Then _logPath = s
+
+
+            s = BotIni.GetKeyValue("Bot", "BotIni")
+            If Not String.IsNullOrEmpty(s) Then _IniFile = s
+
+            s = BotIni.GetKeyValue("Bot", "LPort")
+            If Not String.IsNullOrEmpty(s) Then _lPort = s.ToInteger
+
+
+        End Sub
         Public Sub SaveBotSettings()
-            MyIni.IniWrite(SetFile, "Bot", "BotIni", _IniFile)
+            BotIni.SetKeyValue("Main", "Log", _log.ToString)
+            BotIni.SetKeyValue("Main", "LogNameBase", _logNamebase)
+            BotIni.SetKeyValue("Main", "LogOption", _logOption.ToString)
+            BotIni.SetKeyValue("Main", "LogNamePath", _logPath)
+            BotIni.SetKeyValue("Bot", "BotIni", _IniFile)
+
+
+            BotIni.Save(BotFile)
         End Sub
-    End Structure
 
-
+    End Class
 
 End Class

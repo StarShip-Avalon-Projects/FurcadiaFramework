@@ -26,6 +26,7 @@
     <SccProvider>
     </SccProvider>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -38,7 +39,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -71,9 +71,6 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Nini">
-      <HintPath>dll\Nini.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -89,6 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BotSetup.Designer.vb">
+      <DependentUpon>BotSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BotSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Debug.Designer.vb">
       <DependentUpon>Debug.vb</DependentUpon>
     </Compile>
@@ -97,9 +100,10 @@
     </Compile>
     <Compile Include="Helper Classes\DownLoadImage.vb" />
     <Compile Include="Helper Classes\ErrorLogging.vb" />
+    <Compile Include="Helper Classes\IniFile.vb" />
+    <Compile Include="Helper Classes\LogStream.vb" />
     <Compile Include="Helper Classes\PictureToRTF.vb" />
     <Compile Include="Helper Classes\RTFtoHTML.vb" />
-    <Compile Include="Ini.vb" />
     <Compile Include="Config.Designer.vb">
       <DependentUpon>Config.vb</DependentUpon>
     </Compile>
@@ -133,8 +137,12 @@
     <Compile Include="Controls\RichTextBoxEx.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Helper Classes\TextWriter.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BotSetup.resx">
+      <DependentUpon>BotSetup.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Config.resx">
       <DependentUpon>Config.vb</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -173,7 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Changes.txt" />
-    <Content Include="dll\Nini.dll" />
     <Content Include="Format Notes.txt" />
     <Content Include="images\green_hand.png" />
     <Content Include="images\grey_hand.png" />
