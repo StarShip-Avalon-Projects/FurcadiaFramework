@@ -1,7 +1,8 @@
 ﻿/*Log Header
  *Format: (date,Version) AuthorName, Changes.
  * (Oct 27,2009,0.1) Squizzle, Initial Developer.
- * 
+ * (Unknown) Gerolkae, Switched proxy.ini to settings.ini firewall settings to support Vista+
+ * (Mar 12,2014,0.2.12) Gerolkae, Adapted Paths to wirk with a Supplied path
 */
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,8 @@ namespace Furcadia
         /// setting file
         /// setting fields
         /// 
+
+
         static Paths FurcPath = new Paths();
         static string sPath = FurcPath.GetLocalSettingsPath();
         static string sFile = "/settings.ini";
@@ -35,8 +38,9 @@ namespace Furcadia
         static string[] values = new string[8] { "Yes", "localhost", NetProxy._lport.ToString(), "no", "0", "0", "CONNECT %host% %port%", "no"  };
 
           /// Load and Store settings.ini with backup
-        public static string[] InitializeFurcadiaSettings()
+        public static string[] InitializeFurcadiaSettings(string path = null)
         {
+            FurcPath = new Paths(path);
            string[] FurcSettings = FurcIni.LoadFurcadiaSettings(sPath, sFile);
            string[] Backup = FurcIni.LoadFurcadiaSettings(sPath, sFile);
            for (int Key = 0; Key < Keys.Length; Key++)

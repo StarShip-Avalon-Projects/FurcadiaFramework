@@ -3,6 +3,7 @@
  * (?,2007) Kylix, Initial Coder and SimpleProxy project manager
  * (Oct 27,2009) Squizzle, Added NetMessage, delegates, and NetProxy wrapper class.
  * (July 26, 2011) Gerolkae, added setting.ini switch for proxy.ini
+ * (Mar 12,2014,0.2.12) Gerolkae, Adapted Paths to wirk with a Supplied path
  */
 
 using System;
@@ -229,7 +230,7 @@ namespace Furcadia.Net
             }
 			set
             {
-                FurcPath = new Paths(_procpath);
+                FurcPath = new Paths(value);
                 _procpath = value; 
             }
 		}
@@ -309,7 +310,7 @@ namespace Furcadia.Net
 			try
 			{
 				string proxyIni = "localhost " + _lport.ToString();
-
+               //FurcPath = new Paths(_procpath);
 				/// UAC Perms Needed to Create proxy.ini
 				/// Win 7 Change your UAC Level or add file create Permissions to [%program files%/furcadia]
 				/// Maybe Do this at install
@@ -320,7 +321,7 @@ namespace Furcadia.Net
 				if (File.Exists(proxyIni))
 					File.Delete(proxyIni);
 				UseProxyIni = false;
-				BackupSettings = Settings.InitializeFurcadiaSettings();
+				BackupSettings = Settings.InitializeFurcadiaSettings(_procpath);
 
 				
 				if (listen != null)
@@ -525,17 +526,13 @@ namespace Furcadia.Net
 					{
 						File.Delete(FurcPath.GetInstallPath() + "proxy.ini");
 					}
-					else
-					{
-						/// reset settings.ini
-						/// 10second delay timer
-						NewsTimer = new System.Timers.Timer();
-						NewsTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
-						NewsTimer.Enabled = true;
-						NewsTimer.Interval = 10000;
-						NewsTimer.AutoReset = false;
-						///GC.KeepAlive(NewsTimer);
-					}
+					/// reset settings.ini
+					/// 10second delay timer
+					NewsTimer = new System.Timers.Timer();
+					NewsTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+					NewsTimer.Enabled = true;
+					NewsTimer.Interval = 10000;
+					NewsTimer.AutoReset = false;
 					
 				}
 			}

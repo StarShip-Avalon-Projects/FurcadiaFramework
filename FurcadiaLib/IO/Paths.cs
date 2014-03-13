@@ -1,8 +1,11 @@
 /****NOTICE: DO NOT REMOVE
  * Credits go to Artex for helping me fix Path issues and
  * contributing his code.
- ****NOTICE: DO NOT REMOVE.*/
-
+ ****NOTICE: DO NOT REMOVE.*
+*Log Header
+ *Format: (date,Version) AuthorName, Changes.
+ * (Mar 12,2014,0.2.12) Gerolkae, Adapted Paths to work with a Supplied path
+*/
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -199,7 +202,7 @@ namespace Furcadia.IO
 		{
             if (!string.IsNullOrEmpty(_localsettingspath)) return _localsettingspath;
             else _localsettingspath = GetLocaldirPath() + "settings/";
-			if (String.IsNullOrEmpty(_localsettingspath))
+            if (String.IsNullOrEmpty(GetLocaldirPath()))
 				_localsettingspath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
 												  "Dragon's Eye Productions/Furcadia");
 			return _localsettingspath;
