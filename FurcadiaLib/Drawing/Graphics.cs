@@ -114,7 +114,7 @@ namespace Furcadia.Drawing.Graphics
 		{
 			/* Don't fiddle with extensions */
 			System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.StreamReader(path).BaseStream);
-			string header = System.Text.ASCIIEncoding.ASCII.GetString(br.ReadBytes(4)).ToLower();
+			string header = System.Text.Encoding.GetEncoding(1252).GetString(br.ReadBytes(4)).ToLower();
 			br.Close();
 			switch (header)
 			{
@@ -135,7 +135,7 @@ namespace Furcadia.Drawing.Graphics
 			System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.StreamReader(path).BaseStream);
 
 			/* Retrieve header information */
-			Header = System.Text.ASCIIEncoding.ASCII.GetString(br.ReadBytes(4));
+			Header = System.Text.Encoding.GetEncoding(1252).GetString(br.ReadBytes(4));
 			Version = br.ReadInt32();
 			NumShapes = br.ReadInt32();
 			Generator = br.ReadInt32();
@@ -235,8 +235,8 @@ namespace Furcadia.Drawing.Graphics
 			System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.StreamReader(path).BaseStream);
 
 			/* Assume/retrieve header information */
-			Header = System.Text.ASCIIEncoding.ASCII.GetString(br.ReadBytes(4)); br.ReadByte();
-			Version = Convert.ToInt32(System.Text.ASCIIEncoding.ASCII.GetString(br.ReadBytes(3)));
+			Header = System.Text.Encoding.GetEncoding(1252).GetString(br.ReadBytes(4)); br.ReadByte();
+			Version = Convert.ToInt32(System.Text.Encoding.GetEncoding(1252).GetString(br.ReadBytes(3)));
 			NumShapes = br.ReadInt32();
 			Generator = 0;
 			Encryption = br.ReadInt32();

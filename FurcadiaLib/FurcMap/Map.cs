@@ -6,12 +6,14 @@ using System.IO;
 
 namespace Furcadia.FurcMap
 {
-    public class Map
+   public class Map
     {
         private List<String> headerLines = new List<String>();
         private Dictionary<String, String> mapData = new Dictionary<String, String>();
 
-        private int width, height;
+        private String name, patchs, rating;
+        private int width, height, revision, patcht;
+        private bool allowjs, allowlf, allowfurl, nowho, forcesittable, allowshouts, allowlarge, notab, nonovelty, swearfilter, parentalcontrols, encoded;
 
         private byte[] mapMatrix, floors, objects, walls, regions, effects;
 
@@ -23,8 +25,10 @@ namespace Furcadia.FurcMap
             }
         }
 
+        #region Public Variables
+
         /// <summary>
-        /// The actual width of the map
+        /// The actual width of the map (READ-ONLY)
         /// </summary>
         public int Width
         {
@@ -32,12 +36,117 @@ namespace Furcadia.FurcMap
         }
 
         /// <summary>
-        /// The actual height of the map
+        /// The actual height of the map (READ-ONLY)
         /// </summary>
         public int Height
         {
             get { return this.height; }
         }
+
+        public int UsePatch
+        {
+            get { return this.patcht; }
+            set { this.patcht = value; }
+        }
+
+        public bool AllowJoinSummon
+        {
+            get { return this.allowjs; }
+            set { this.allowjs = value; }
+        }
+
+        public bool AllowLeadFollow
+        {
+            get { return this.allowlf; }
+            set { this.allowlf = value; }
+        }
+
+        public bool AllowDreamURL
+        {
+            get { return this.allowfurl; }
+            set { this.allowfurl = value; }
+        }
+
+        public bool UseSwearFilter
+        {
+            get { return this.swearfilter; }
+            set { this.swearfilter = value; }
+        }
+
+        public bool PreventPlayerListing
+        {
+            get { return this.nowho; }
+            set { this.nowho = value; }
+        }
+
+        public bool ForceSitting
+        {
+            get { return this.forcesittable; }
+            set { this.forcesittable = value; }
+        }
+
+        public bool AllowShouting
+        {
+            get { return this.allowshouts; }
+            set { this.allowshouts = value; }
+        }
+
+        public bool AllowLargeDreamSize
+        {
+            get { return this.allowlarge; }
+            set { this.allowlarge = value; }
+        }
+
+        public bool PreventTabListing
+        {
+            get { return this.notab; }
+            set { this.notab = value; }
+        }
+
+        public bool PreventSeasonalAvatars
+        {
+            get { return this.nonovelty; }
+            set { this.nonovelty = value; }
+        }
+
+        public bool EnforceParentalControls
+        {
+            get { return this.parentalcontrols; }
+            set { this.parentalcontrols = value; }
+        }
+
+        public bool EncodeDream
+        {
+            get { return this.encoded; }
+            set { this.encoded = value; }
+        }
+
+        public String Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
+        }
+
+        public String PatchArchive
+        {
+            get { return this.patchs; }
+            set { this.patchs = value; }
+        }
+
+        public int Revision
+        {
+            get { return this.revision; }
+            set { this.revision = value; }
+        }
+
+        public String Rating
+        {
+            get { return this.rating; }
+            set { this.rating = value; }
+        }
+
+
+        #endregion
 
         internal Map()
         {
@@ -74,11 +183,73 @@ namespace Furcadia.FurcMap
                     break;
             }
 
+            SetMapHeaders(this.mapData);
+
             byte[] mapMatrix = new byte[this.bytesLayerCount * 5];
             this.mapMatrix = mapMatrix;
         }
 
-        internal bool ParseMatrix(byte[] matrix)
+        private void SetMapHeaders(Dictionary<String, String> Values)
+        {
+            if (Values.ContainsKey("height"))
+                this.width = int.Parse(Values["height"]);
+
+            if (Values.ContainsKey("width"))
+                this.width = int.Parse(Values["width"]);
+
+            if (Values.ContainsKey("revision"))
+                this.revision = int.Parse(Values["revision"]);
+
+            if (Values.ContainsKey("patcht"))
+                this.patcht = int.Parse(Values["patcht"]);
+
+            if (Values.ContainsKey("name"))
+                this.name = Values["name"];
+
+            if (Values.ContainsKey("patchs"))
+                this.patchs = Values["patchs"];
+
+            if (Values.ContainsKey("rating"))
+                this.rating = Values["rating"];
+
+            if (Values.ContainsKey("allowjs"))
+                this.allowjs = Values["allowjs"] == "1";
+
+            if (Values.ContainsKey("allowlf"))
+                this.allowlf = Values["allowlf"] == "1";
+
+            if (Values.ContainsKey("allowfurl"))
+                this.allowfurl = Values["allowfurl"] == "1";
+
+            if (Values.ContainsKey("swearfilter"))
+                this.swearfilter = Values["swearfilter"] == "1";
+
+            if (Values.ContainsKey("nowho"))
+                this.nowho = Values["nowho"] == "1";
+
+            if (Values.ContainsKey("forcesittable"))
+                this.forcesittable = Values["forcesittable"] == "1";
+
+            if (Values.ContainsKey("allowlarge"))
+                this.allowlarge = Values["allowlarge"] == "1";
+
+            if (Values.ContainsKey("allowshouts"))
+                this.allowshouts = Values["allowshouts"] == "1";
+
+            if (Values.ContainsKey("notab"))
+                this.notab = Values["notab"] == "1";
+
+            if (Values.ContainsKey("nonovelty"))
+                this.nonovelty = Values["nonovelty"] == "1";
+
+            if (Values.ContainsKey("parentalcontrols"))
+                this.parentalcontrols = Values["parentalcontrols"] == "1";
+
+            if (Values.ContainsKey("encoded"))
+                this.encoded = Values["encoded"] == "1";
+        }
+
+        private bool ParseMatrix(byte[] matrix)
         {
             if (matrix.Length != this.bytesLayerCount * 5)
             {
@@ -125,7 +296,7 @@ namespace Furcadia.FurcMap
             Map m = new Map();
 
             FileStream fs = new FileStream(filename, FileMode.Open);
-            BinaryReader br = new BinaryReader(fs);
+            BinaryReader br = new BinaryReader(fs, Encoding.GetEncoding(1252));
 
             String currentLine = "" + br.ReadChar();
             while (true)
@@ -160,6 +331,8 @@ namespace Furcadia.FurcMap
             {
                 throw new InvalidDataException("Unable to determine width & height of the map");
             }
+
+            m.SetMapHeaders(m.mapData);
 
             m.floors = new byte[m.bytesLayerCount];
             m.objects = new byte[m.bytesLayerCount];
@@ -205,12 +378,12 @@ namespace Furcadia.FurcMap
         }
 
         /// <summary>
-        /// Set the floor number at a tile specified by x & y
+        /// Set the floor number at a tile specified by x and y
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <param name="floorNumber"></param>
-        public void setPosAt(int x, int y, ushort floorNumber)
+        public void setFloorAt(int x, int y, ushort floorNumber)
         {
             int pos = getPosFrom(x, y);
 
@@ -355,13 +528,31 @@ namespace Furcadia.FurcMap
                 return false;
 
             FileStream fs = new FileStream(filename, FileMode.Create);
-            BinaryWriter sw = new BinaryWriter(fs, Encoding.ASCII);
+            BinaryWriter sw = new BinaryWriter(fs, Encoding.GetEncoding(1252));
 
-            String headerData = "";
-            foreach (String line in this.headerLines)
-                headerData += line + "\n";
+            String headerData = "MAP V01.40 Furcadia\n";
+            headerData += "height=" + this.height + "\n";
+            headerData += "width=" + this.width + "\n";
+            headerData += "revision=" + this.revision + "\n";
+            headerData += "patcht=" + this.patcht + "\n";
+            headerData += "name=" + this.name + "\n";
+            headerData += "patchs=" + this.patchs + "\n";
+            headerData += "encoded=" + (this.encoded ? "1" : "0") + "\n";
+            headerData += "allowjs=" + (this.allowjs ? "1" : "0") + "\n";
+            headerData += "allowlf=" + (this.allowlf ? "1" : "0") + "\n";
+            headerData += "allowfurl=" + (this.allowfurl ? "1" : "0") + "\n";
+            headerData += "swearfilter=" + (this.swearfilter ? "1" : "0") + "\n";
+            headerData += "nowho=" + (this.nowho ? "1" : "0") + "\n";
+            headerData += "forcesittable=" + (this.forcesittable ? "1" : "0") + "\n";
+            headerData += "allowshouts=" + (this.allowshouts ? "1" : "0") + "\n";
+            headerData += "rating=" + this.rating + "\n";
+            headerData += "allowlarge=" + (this.allowlarge ? "1" : "0") + "\n";
+            headerData += "notab=" + (this.notab ? "1" : "0") + "\n";
+            headerData += "nonovelty=" + (this.nonovelty ? "1" : "0") + "\n";
+            headerData += "parentalcontrols=" + (this.parentalcontrols ? "1" : "0") + "\n";
+            headerData += "BODY\n";
 
-            byte[] headerDataBytes = Encoding.ASCII.GetBytes(headerData);
+            byte[] headerDataBytes = Encoding.GetEncoding(1252).GetBytes(headerData);
 
             sw.Write(headerDataBytes);
             sw.Write(this.floors);
@@ -376,4 +567,15 @@ namespace Furcadia.FurcMap
             return true;
         }
     }
+
+    public static class MapRating
+    {
+        public const String Everyone = "Everyone";
+        public const String Teen = "Teen+";
+        public const String Mature = "Mature 16+";
+        public const String Adult = "Adult 18+";
+        public const String AdultOnly = "Adults Only";
+        public const String AOClean = "AOClean";
+    }
+
 }

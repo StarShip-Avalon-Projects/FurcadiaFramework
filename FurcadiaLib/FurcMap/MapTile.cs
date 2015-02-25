@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Furcadia.FurcMap
 {
-    public class MapTile
+   public class MapTile
     {
         public ushort floorNumber, objectNumber, wallNENumber, wallNWNumber, regionNumber, effectNumber;
         public int x, y;

@@ -415,7 +415,7 @@ Public Class Main
                 Dim FlagPos As UInteger = data.Length - 5
                 Player.Flag = ConvertFromBase220(data.Substring(FlagPos, 1))
                 Dim AFK_Pos As UInteger = data.Length - 4
-                Player.AFK = New TimeSpan(ConvertFromBase220(ConvertFromBase220(data.Substring(AFK_Pos, 4))) * TimeSpan.TicksPerSecond)
+                Player.AFK = ConvertFromBase220(ConvertFromBase220(data.Substring(AFK_Pos, 4)))
                 Dim FlagCheck As Integer = CType(Flags.CHAR_FLAG_NEW_AVATAR, Integer) - Player.Flag
 
                 ' Add New Arrivals to Dream List

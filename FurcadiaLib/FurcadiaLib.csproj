@@ -87,10 +87,20 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Avatar.cs" />
@@ -112,9 +122,9 @@
     <Compile Include="Compression\Lzw\LzwTests.cs" />
     <Compile Include="Compression\Rch\RchDecoder.cs" />
     <Compile Include="Compression\Rch\RchEncoder.cs" />
-    <Compile Include="FurMap\Map.cs" />
-    <Compile Include="FurMap\MapPosition.cs" />
-    <Compile Include="FurMap\MapTile.cs" />
+    <Compile Include="FurcMap\Map.cs" />
+    <Compile Include="FurcMap\MapPosition.cs" />
+    <Compile Include="FurcMap\MapTile.cs" />
     <Compile Include="Net\NetConnection.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -180,13 +190,15 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <EmbeddedResource Include="Resources\AvatarFrames.csv" />
-    <None Include="Resources\DefaultMapData.txt" />
+    <Resource Include="Resources\DefaultMapData.txt">
+      <LogicalName>DefaultMapData</LogicalName>
+    </Resource>
     <None Include="Resources\furc.pal" />
     <EmbeddedResource Include="Resources\SpeciesTable.csv" />
     <EmbeddedResource Include="Resources\badges.csv" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FurMap" />
+    <Folder Include="FurcMap" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
