@@ -17,7 +17,7 @@ Partial Public Class MainForm
 
   
 
-    Private Sub loadButton_Click(sender As Object, e As EventArgs)
+    Private Sub loadButton_Click(sender As Object, e As EventArgs) Handles loadButton.Click
         LoadINI()
     End Sub
 
@@ -31,6 +31,10 @@ Partial Public Class MainForm
             If line.StartsWith("Colors=") Then
                 LoadColourCode(line.Substring(7))
             End If
+            If line.StartsWith("Desc=") Then
+                TxtBxDescription.Text = line.Substring(5)
+            End If
+
         Next
 
         lastINIPath = chooseIniFileDialog.FileName
@@ -39,7 +43,7 @@ Partial Public Class MainForm
         Return True
     End Function
 
-    Private Sub button4_Click(sender As Object, e As EventArgs)
+    Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click
         saveIniFileDialog.InitialDirectory = System.IO.Path.GetDirectoryName(lastINIPath)
         saveIniFileDialog.FileName = System.IO.Path.GetFileName(lastINIPath)
 
@@ -72,11 +76,8 @@ Partial Public Class MainForm
 
         ColourCode = colourcode__1.Substring(0, 11)
         SpeciesBlock = colourcode__1.Substring(11)
-
-        FurrePreview1.LoadStart(AscW(colourcode__1.Chars(12)) - 35, AscW(colourcode__1.Chars(11)) - 35)
-        FurrePreview2.LoadStart(AscW(colourcode__1.Chars(12)) - 35, AscW(colourcode__1.Chars(11)) - 35)
-        FurrePreview3.LoadStart(AscW(colourcode__1.Chars(12)) - 35, AscW(colourcode__1.Chars(11)) - 35)
-
+        'FurrePreview1.LoadStart(AscW(colourcode__1.Chars(12)) - 35, AscW(colourcode__1.Chars(11)) - 35)
+        CustomFurrePreview1.LoadStart(AscW(colourcode__1.Chars(12)) - 35, AscW(colourcode__1.Chars(11)) - 35)
         Dim FurColour As Integer = AscW(colourcode__1.Chars(1)) - 35
         Dim MarkingsColour As Integer = AscW(colourcode__1.Chars(2)) - 35
         Dim HairColour As Integer = AscW(colourcode__1.Chars(3)) - 35
@@ -101,10 +102,8 @@ Partial Public Class MainForm
         trouserListBox.SelectedIndex = TrousersColour
         UpdatingColours = False
 
-        FurrePreview1.UpdateColourCode(ColourCode)
-        FurrePreview2.UpdateColourCode(ColourCode)
-        FurrePreview3.UpdateColourCode(ColourCode)
-
+        'FurrePreview1.UpdateColourCode(ColourCode)
+        CustomFurrePreview1.UpdateColourCode(ColourCode)
         colourCodeTextBox.Text = ColourCode & SpeciesBlock
         Return True
     End Function
@@ -160,11 +159,14 @@ Partial Public Class MainForm
 
         Dim dX As Integer = e.Bounds.X + 2
         Dim dY As Integer = e.Bounds.Y + 3
+        'For i As Integer = 0 To 7
+        '    e.Graphics.FillRectangle(New SolidBrush(FurrePreview.Palette(Target(i))), dX, dY, (If(big, 8, 4)), 8)
+        '    dX += (If(big, 8, 4))
+        'Next
         For i As Integer = 0 To 7
-            e.Graphics.FillRectangle(New SolidBrush(FurrePreview.Palette(Target(i))), dX, dY, (If(big, 8, 4)), 8)
+            e.Graphics.FillRectangle(New SolidBrush(CustomFurrePreview1.Palette(Target(i))), dX, dY, (If(big, 8, 4)), 8)
             dX += (If(big, 8, 4))
         Next
-
         Dim BorderBrush As Brush = New SolidBrush(e.BackColor)
         e.Graphics.FillRectangle(BorderBrush, e.Bounds.X + 2, e.Bounds.Y + 3, 1, 1)
         e.Graphics.FillRectangle(BorderBrush, e.Bounds.X + 2, e.Bounds.Y + 10, 1, 1)
@@ -211,14 +213,12 @@ Partial Public Class MainForm
         Dim modify As Integer = GetNumberForListBox(giver) + 1
 
         ColourCode = ColourCode.Substring(0, modify) & (ChrW(giver.SelectedIndex + 35)).ToString() & ColourCode.Substring(modify + 1)
-        FurrePreview1.UpdateColourCode(ColourCode)
-        FurrePreview2.UpdateColourCode(ColourCode)
-        FurrePreview3.UpdateColourCode(ColourCode)
-
+        'FurrePreview1.UpdateColourCode(ColourCode)
+        CustomFurrePreview1.UpdateColourCode(ColourCode)
         colourCodeTextBox.Text = ColourCode & SpeciesBlock
     End Sub
 
-    Private Sub button1_Click(sender As Object, e As EventArgs)
+    Private Sub button1_Click(sender As Object, e As EventArgs) Handles loadButton.Click
         LoadColourCode(colourCodeTextBox.Text)
     End Sub
 
@@ -252,35 +252,41 @@ Partial Public Class MainForm
     Private Sub tabControl1_SelectedIndexChanged1(sender As Object, e As System.EventArgs) Handles tabControl1.SelectedIndexChanged
         Dim number As Integer = tabIndicesToNumbers(tabControl1.SelectedIndex)
 
-        FurrePreview1.CurrentRemap = number
-        FurrePreview2.CurrentRemap = number
-        FurrePreview3.CurrentRemap = number
+        'FurrePreview1.CurrentRemap = number
+        CustomFurrePreview1.CurrentRemap = number
     End Sub
 
     Private Sub MainForm_Load1(sender As Object, e As System.EventArgs) Handles Me.Load
         Furcpath = New Furcadia.IO.Paths()
 
-        FurrePreview.Prepare()
+        'FurrePreview.Prepare()
+        CustomFurrePreview1.Prepare()
 
-        Dim path As String = [String].Join(System.IO.Path.DirectorySeparatorChar.ToString(), New String() {Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Furcadia", "Furcadia Characters"})
+        chooseIniFileDialog.InitialDirectory = FurcPath.GetFurcadiaDocPath + "Furcadia Characters"
 
-        If System.IO.Directory.Exists(path) Then
-            chooseIniFileDialog.InitialDirectory = path
-        End If
 
-        If Not LoadINI() Then
-            LoadColourCode("t#############")
-            saveButton.Enabled = False
-        End If
+
+        LoadColourCode("t#############")
+        saveButton.Enabled = False
+
 
         'LoadColourCode("t89J,I@,,&;$%#");
 
         tabControl1.SelectTab(5)
     End Sub
 
-    Private Sub loadButton_Click1(sender As Object, e As System.EventArgs) Handles loadButton.Click
-        LoadINI()
+    Private Sub DreamToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles DreamToolStripMenuItem.Click
+
     End Sub
 
+    Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        With PatchBrowser
+            .SelectedPath = FurcPath.GetFurcadiaDocPath()
+            If .ShowDialog = Windows.Forms.DialogResult.OK Then
+                CustomFurrePreview1.PatchPath = .SelectedPath
+                CustomFurrePreview1.Prepare()
+            End If
+        End With
+    End Sub
 End Class
 

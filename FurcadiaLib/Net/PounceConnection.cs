@@ -125,68 +125,74 @@ namespace Furcadia.Net
         }
         internal void RespCallback(IAsyncResult ar)
         {
-           // UTF8Encoding encoding;
-            byte[] buf = new byte[1024];
-            HttpWebRequest request = (HttpWebRequest)ar.AsyncState;
-            StringBuilder respBody = new StringBuilder();
-            HttpWebResponse resp = (HttpWebResponse)request.EndGetResponse(ar);
-            //Stream streamResponse = resp.GetResponseStream();
-            //StreamReader streamRead = new StreamReader(streamResponse);
-            //string responseString = streamRead.ReadToEnd();
-            Stream respStream = resp.GetResponseStream();
-            // number of bytes read
-            int count = 0;
-            do
+            try
             {
-                count = respStream.Read(buf, 0, buf.Length);
-                if (count != 0)
-                    respBody.Append(System.Text.Encoding.UTF8.GetString(buf, 0, count));
-            }
-            while (count > 0);
-
-            this._responseBody = respBody.ToString();
-            if (_responseBody != string.Empty)
-            {
-                // Not really useful for getting friend online status but store it anyways!
-                this._statusCode = (int)(HttpStatusCode)resp.StatusCode;
-                // Split the responseBody by '\n' into an array
-                string[] onln = this._responseBody.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                List<string> list = new List<string>(onln);
-                List<string> dreams = new List<string>();
-                List<string> friends = new List<string>();
-                if (list.Count >= 3)
+                // UTF8Encoding encoding;
+                byte[] buf = new byte[1024];
+                HttpWebRequest request = (HttpWebRequest)ar.AsyncState;
+                StringBuilder respBody = new StringBuilder();
+                HttpWebResponse resp = (HttpWebResponse)request.EndGetResponse(ar);
+                //Stream streamResponse = resp.GetResponseStream();
+                //StreamReader streamRead = new StreamReader(streamResponse);
+                //string responseString = streamRead.ReadToEnd();
+                Stream respStream = resp.GetResponseStream();
+                // number of bytes read
+                int count = 0;
+                do
                 {
-                    // Remove the first element T30000
-                    list.RemoveAt(0);
-                    for (int i = 0; i <= list.Count - 1; i++)
-                    {
-                        //Must be a dream if it starts with...
-                        if (list[i].StartsWith("#"))
-                        {
-                            list[i] = list[i].Remove(0, 2);
-                            dreams.Add(list[i]);
-                            list.RemoveAt(i);
-                        }
-                        if (list[i].StartsWith("@10"))
-                        {
-                            friends.Add(list[i].Substring(4));
-                            list.RemoveAt(i);
-                        }
-                    }
-                    //friends.ForEach(Console.Write);
-                    _num_dreams_mainmaps = Convert.ToInt32(list[list.Count - 1].Substring(1));
-                    list.RemoveAt(list.Count - 1);
-                    _totalOnline = Convert.ToInt32(list[list.Count - 1].Substring(1));
-                    list.RemoveAt(list.Count - 1);
+                    count = respStream.Read(buf, 0, buf.Length);
+                    if (count != 0)
+                        respBody.Append(System.Text.Encoding.UTF8.GetString(buf, 0, count));
                 }
-                if (Response != null) Response(friends.ToArray(), dreams.ToArray());
-            }
+                while (count > 0);
 
-            respStream.Close();
-      
-            // Release the HttpWebResponse
-            resp.Close();
-            allDone.Set();
+                this._responseBody = respBody.ToString();
+                if (_responseBody != string.Empty)
+                {
+                    // Not really useful for getting friend online status but store it anyways!
+                    this._statusCode = (int)(HttpStatusCode)resp.StatusCode;
+                    // Split the responseBody by '\n' into an array
+                    string[] onln = this._responseBody.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                    List<string> list = new List<string>(onln);
+                    List<string> dreams = new List<string>();
+                    List<string> friends = new List<string>();
+                    if (list.Count >= 3)
+                    {
+                        // Remove the first element T30000
+                        list.RemoveAt(0);
+                        for (int i = 0; i <= list.Count - 1; i++)
+                        {
+                            //Must be a dream if it starts with...
+                            if (list[i].StartsWith("#"))
+                            {
+                                list[i] = list[i].Remove(0, 2);
+                                dreams.Add(list[i]);
+                                list.RemoveAt(i);
+                            }
+                            if (list[i].StartsWith("@10"))
+                            {
+                                friends.Add(list[i].Substring(4));
+                                list.RemoveAt(i);
+                            }
+                        }
+                        //friends.ForEach(Console.Write);
+                        _num_dreams_mainmaps = Convert.ToInt32(list[list.Count - 1].Substring(1));
+                        list.RemoveAt(list.Count - 1);
+                        _totalOnline = Convert.ToInt32(list[list.Count - 1].Substring(1));
+                        list.RemoveAt(list.Count - 1);
+                    }
+                    if (Response != null) Response(friends.ToArray(), dreams.ToArray());
+                }
+
+                respStream.Close();
+
+                // Release the HttpWebResponse
+                resp.Close();
+                allDone.Set();
+            }
+            catch
+            {
+            }
         }
         
         /// <summary>

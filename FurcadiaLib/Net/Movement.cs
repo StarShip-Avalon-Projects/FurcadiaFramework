@@ -85,7 +85,7 @@ namespace Furcadia.Net
             private uint _Position;
             private uint _Shape;
             private int _Flag;
-            private TimeSpan _AFK;
+            private uint _AFK;
             private int _LastStat;
             private int _Wings;
             private bool _Visible;
@@ -117,7 +117,7 @@ namespace Furcadia.Net
                 get
                 {
                     if (!string.IsNullOrEmpty(_Name))
-                        return Regex.Replace(_Name.ToLower(), "[^a-z0-9\0x0020_.]+", "");
+                        return Regex.Replace(_Name.ToLower(), "[^a-z0-9\0x0020_.;&]+", "");
                     else
                         return "";
                 }
@@ -272,7 +272,7 @@ namespace Furcadia.Net
             }
 
 
-            public TimeSpan AFK
+            public uint AFK
             {
                 get { return _AFK; }
                 set { _AFK = value; }
@@ -339,7 +339,7 @@ namespace Furcadia.Net
                 _level = 0;
                 _option = 0;
                 _option1 = 0;
-                _AFK = new TimeSpan(0, 0, 0, 0, 0);
+                _AFK = 0;
 
                 // -1 means these haven't been set yet
                 _Species = -1;

@@ -35,7 +35,7 @@ Public Class ErrorLogging
         'CHANGE FILEPATH/STRUCTURE HERE TO CHANGE FILE NAME & SAVING LOCATION
         Dim strErrorFilePath As String
         strErrorFilePath = Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) & "\" & My.Application.Info.ProductName & "_Error_" & Date.Now().ToString("MM_dd_yyyy_H-mm-ss") & ".txt"
-        Dim ioFile As System.IO.StreamWriter
+        Dim ioFile As System.IO.StreamWriter = Nothing
         Try
             ioFile = New System.IO.StreamWriter(strErrorFilePath, False)
 
@@ -90,7 +90,7 @@ Public Class ErrorLogging
         'CHANGE FILEPATH/STRUCTURE HERE TO CHANGE FILE NAME & SAVING LOCATION
         Dim strErrorFilePath As String
         strErrorFilePath = Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) & "\" & My.Application.Info.ProductName & "_Error_" & Date.Now().ToString("MM_dd_yyyy_H-mm-ss") & ".txt"
-        Dim ioFile As System.IO.StreamWriter
+        Dim ioFile As System.IO.StreamWriter = Nothing
         Try
             ioFile = New System.IO.StreamWriter(strErrorFilePath, False)
 

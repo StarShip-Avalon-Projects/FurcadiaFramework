@@ -30,6 +30,29 @@ namespace Furcadia.IO
             _installpath = path;
         }
 
+        private string _FurcadiaCharactersPath = null;
+
+
+        /// <summary>
+        /// Gets the location of the Furcadia Character Files
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String"/> containing the location of Furcadia Characters folder in "My Documents".
+        /// </returns>
+        public string GetFurcadiaCharactersPath()
+        {
+            if (!String.IsNullOrEmpty(_FurcadiaCharactersPath)) return _FurcadiaCharactersPath;
+            string path = System.IO.Path.Combine(GetFurcadiaDocPath(),"Furcadia Characters");
+            if (!System.IO.Directory.Exists(path))
+                path = GetFurcadiaDocPath();
+            if (Directory.Exists(path))
+            {
+                _FurcadiaCharactersPath = path;
+                return _FurcadiaCharactersPath;
+            }
+            throw new DirectoryNotFoundException("Furcadia Characters path not found.\n" + path);
+        }
+
 
 		private  string _FurcadiaDocpath;
 		/// <summary>
@@ -83,10 +106,10 @@ namespace Furcadia.IO
 			return Environment.GetEnvironmentVariable("ProgramFiles");
 		}
 
-        public  string InstallPath
-        {
-            set { _installpath = value; }
-        }
+        //public  string InstallPath
+        //{
+        //    set { _installpath = value; }
+        //}
 
 
 
@@ -262,7 +285,7 @@ namespace Furcadia.IO
 			// Read localdir.ini for remote path and verify it.
 			StreamReader sr = new StreamReader(ini_path);
 			path = sr.ReadLine();
-            if (path != null)
+            if (!string.IsNullOrEmpty(path))
                 path.Trim();
 			sr.Close();
             if (String.IsNullOrEmpty(path))

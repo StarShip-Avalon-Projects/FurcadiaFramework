@@ -51,9 +51,23 @@ Partial Class MainForm
         Me.eyeListBox = New System.Windows.Forms.ListBox()
         Me.tabPage6 = New System.Windows.Forms.TabPage()
         Me.loadButton = New System.Windows.Forms.Button()
-        Me.FurrePreview3 = New FurEdVB.FurrePreview()
-        Me.FurrePreview2 = New FurEdVB.FurrePreview()
-        Me.FurrePreview1 = New FurEdVB.FurrePreview()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TxtBxDescription = New System.Windows.Forms.TextBox()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DreamToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DefaultToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SelectPatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.CustomFurrePreview1 = New FurEdVB.CustomFurrePreview()
+        Me.PatchBrowser = New FurEdVB.FileFolderDialog()
         Me.tabPage9.SuspendLayout()
         Me.tabPage8.SuspendLayout()
         Me.tabPage10.SuspendLayout()
@@ -65,11 +79,12 @@ Partial Class MainForm
         Me.tabPage4.SuspendLayout()
         Me.tabPage5.SuspendLayout()
         Me.tabPage6.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'saveButton
         '
-        Me.saveButton.Location = New System.Drawing.Point(193, 12)
+        Me.saveButton.Location = New System.Drawing.Point(601, 38)
         Me.saveButton.Name = "saveButton"
         Me.saveButton.Size = New System.Drawing.Size(42, 21)
         Me.saveButton.TabIndex = 15
@@ -168,7 +183,7 @@ Partial Class MainForm
         '
         'aboutButton
         '
-        Me.aboutButton.Location = New System.Drawing.Point(235, 12)
+        Me.aboutButton.Location = New System.Drawing.Point(643, 38)
         Me.aboutButton.Name = "aboutButton"
         Me.aboutButton.Size = New System.Drawing.Size(21, 21)
         Me.aboutButton.TabIndex = 19
@@ -187,7 +202,7 @@ Partial Class MainForm
         '
         'setButton
         '
-        Me.setButton.Location = New System.Drawing.Point(161, 12)
+        Me.setButton.Location = New System.Drawing.Point(569, 38)
         Me.setButton.Name = "setButton"
         Me.setButton.Size = New System.Drawing.Size(32, 21)
         Me.setButton.TabIndex = 18
@@ -196,7 +211,7 @@ Partial Class MainForm
         '
         'colourCodeTextBox
         '
-        Me.colourCodeTextBox.Location = New System.Drawing.Point(55, 13)
+        Me.colourCodeTextBox.Location = New System.Drawing.Point(463, 39)
         Me.colourCodeTextBox.Name = "colourCodeTextBox"
         Me.colourCodeTextBox.Size = New System.Drawing.Size(105, 20)
         Me.colourCodeTextBox.TabIndex = 17
@@ -237,7 +252,7 @@ Partial Class MainForm
         Me.bracerListBox.Items.AddRange(New Object() {"Red", "Horse Brown", "Gray Brown", "Fox Orange", "Cream Brown", "Yellow", "Pea Green", "Grass Green", "Avocado", "Sea Blue", "Blue Gray", "Wolf Gray", "Arctic", "Violet Blue", "Spring Green", "Burgundy", "Green Yellow", "Light Chocolate", "Dark Chocolate", "Light Navy", "Dark Navy", "Light Dust", "Dark Dust", "Gray", "Black", "Light Mule", "Dark Mule", "Violet", "Royal Blue", "White"})
         Me.bracerListBox.Location = New System.Drawing.Point(3, 3)
         Me.bracerListBox.Name = "bracerListBox"
-        Me.bracerListBox.Size = New System.Drawing.Size(229, 1622)
+        Me.bracerListBox.Size = New System.Drawing.Size(229, 2036)
         Me.bracerListBox.TabIndex = 1
         Me.bracerListBox.Tag = ""
         '
@@ -263,7 +278,7 @@ Partial Class MainForm
         Me.badgeListBox.Items.AddRange(New Object() {"Blood Red", "Courage Red", "Merry Red", "Ember Orange", "Hearty Brown", "Burnt Orange", "Busy Orange", "August Orange", "Noble Brown", "Mahogany", "Clever Maize", "Pure Gold", "Moon Yellow", "Sun Yellow", "Tan", "Woodland Green", "Friendly Green", "Lucky Green", "Travelers Green", "Aquacyan", "Deepsea Blue", "Proud Blue", "Lightsky Blue", "Syndira Blue", "Straight Blue", "Royal Purple", "Lonely Orchid", "Spiritual Purple", "Mad Green", "Royal Blue", "Passion", "Bliss Red", "Blush Pink", "Twilight Sigh", "Dreamer Blue", "Shadow Gray", "Neutral Gray", "Tragic Gray", "Winter Gray", "Indigo"})
         Me.badgeListBox.Location = New System.Drawing.Point(3, 3)
         Me.badgeListBox.Name = "badgeListBox"
-        Me.badgeListBox.Size = New System.Drawing.Size(229, 416)
+        Me.badgeListBox.Size = New System.Drawing.Size(229, 356)
         Me.badgeListBox.TabIndex = 0
         Me.badgeListBox.Tag = ""
         '
@@ -320,7 +335,7 @@ Partial Class MainForm
         Me.bootsListBox.Items.AddRange(New Object() {"Red", "Horse Brown", "Gray Brown", "Fox Orange", "Cream Brown", "Yellow", "Pea Green", "Grass Green", "Avocado", "Sea Blue", "Blue Gray", "Wolf Gray", "Arctic", "Violet Blue", "Spring Green", "Burgundy", "Green Yellow", "Light Chocolate", "Dark Chocolate", "Light Navy", "Dark Navy", "Light Dust", "Dark Dust", "Gray", "Black", "Light Mule", "Dark Mule", "Violet", "Royal Blue", "White"})
         Me.bootsListBox.Location = New System.Drawing.Point(3, 3)
         Me.bootsListBox.Name = "bootsListBox"
-        Me.bootsListBox.Size = New System.Drawing.Size(229, 1622)
+        Me.bootsListBox.Size = New System.Drawing.Size(229, 2036)
         Me.bootsListBox.TabIndex = 2
         Me.bootsListBox.Tag = ""
         '
@@ -345,7 +360,7 @@ Partial Class MainForm
         Me.capeListBox.Items.AddRange(New Object() {"Red", "Horse Brown", "Gray Brown", "Fox Orange", "Cream Brown", "Yellow", "Pea Green", "Grass Green", "Avocado", "Sea Blue", "Blue Gray", "Wolf Gray", "Arctic", "Violet Blue", "Spring Green", "Burgundy", "Green Yellow", "Light Chocolate", "Dark Chocolate", "Light Navy", "Dark Navy", "Light Dust", "Dark Dust", "Gray", "Black", "Light Mule", "Dark Mule", "Violet", "Royal Blue", "White"})
         Me.capeListBox.Location = New System.Drawing.Point(3, 3)
         Me.capeListBox.Name = "capeListBox"
-        Me.capeListBox.Size = New System.Drawing.Size(229, 1622)
+        Me.capeListBox.Size = New System.Drawing.Size(229, 2036)
         Me.capeListBox.TabIndex = 3
         Me.capeListBox.Tag = ""
         '
@@ -370,7 +385,7 @@ Partial Class MainForm
         Me.eyeListBox.Items.AddRange(New Object() {"Mahogany", "Tiger Orange", "Moon Yellow", "Warm Gold", "Pond Green", "Light Blue", "Sea Blue", "Storm Gray", "Dust", "China Blue", "Medium Blue", "Dark Blue", "Hazel", "Blue Green", "Royal Blue", "Light Brown", "Medium Brown", "Dark Brown", "Black", "Albino Pink", "Mink Mauve", "Chocolate", "Silver", "Amethyst", "Ember Orange", "Sunshine", "Mad Green", "Gloomy Grey", "Minty Green", "Navy Blue"})
         Me.eyeListBox.Location = New System.Drawing.Point(3, 3)
         Me.eyeListBox.Name = "eyeListBox"
-        Me.eyeListBox.Size = New System.Drawing.Size(229, 1622)
+        Me.eyeListBox.Size = New System.Drawing.Size(229, 2036)
         Me.eyeListBox.TabIndex = 4
         Me.eyeListBox.Tag = ""
         '
@@ -386,52 +401,152 @@ Partial Class MainForm
         '
         'loadButton
         '
-        Me.loadButton.Location = New System.Drawing.Point(12, 12)
+        Me.loadButton.Location = New System.Drawing.Point(364, 38)
         Me.loadButton.Name = "loadButton"
-        Me.loadButton.Size = New System.Drawing.Size(42, 21)
+        Me.loadButton.Size = New System.Drawing.Size(93, 21)
         Me.loadButton.TabIndex = 20
-        Me.loadButton.Text = "Load"
+        Me.loadButton.Text = "Load Character"
         Me.loadButton.UseVisualStyleBackColor = True
         '
-        'FurrePreview3
+        'Label1
         '
-        Me.FurrePreview3.CurrentRemap = 0
-        Me.FurrePreview3.Location = New System.Drawing.Point(255, 345)
-        Me.FurrePreview3.Name = "FurrePreview3"
-        Me.FurrePreview3.Size = New System.Drawing.Size(436, 160)
-        Me.FurrePreview3.TabIndex = 23
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(259, 284)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(63, 13)
+        Me.Label1.TabIndex = 26
+        Me.Label1.Text = " Description"
         '
-        'FurrePreview2
+        'TxtBxDescription
         '
-        Me.FurrePreview2.CurrentRemap = 0
-        Me.FurrePreview2.Location = New System.Drawing.Point(255, 179)
-        Me.FurrePreview2.Name = "FurrePreview2"
-        Me.FurrePreview2.Size = New System.Drawing.Size(436, 160)
-        Me.FurrePreview2.TabIndex = 22
+        Me.TxtBxDescription.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtBxDescription.Location = New System.Drawing.Point(258, 300)
+        Me.TxtBxDescription.MaxLength = 1000
+        Me.TxtBxDescription.Multiline = True
+        Me.TxtBxDescription.Name = "TxtBxDescription"
+        Me.TxtBxDescription.Size = New System.Drawing.Size(436, 205)
+        Me.TxtBxDescription.TabIndex = 25
         '
-        'FurrePreview1
+        'MenuStrip1
         '
-        Me.FurrePreview1.CurrentRemap = 0
-        Me.FurrePreview1.Location = New System.Drawing.Point(255, 13)
-        Me.FurrePreview1.Name = "FurrePreview1"
-        Me.FurrePreview1.Size = New System.Drawing.Size(436, 160)
-        Me.FurrePreview1.TabIndex = 21
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.DreamToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(696, 24)
+        Me.MenuStrip1.TabIndex = 29
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.SaveAsToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
+        Me.OpenToolStripMenuItem.Text = "Open"
+        '
+        'SaveToolStripMenuItem
+        '
+        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
+        Me.SaveToolStripMenuItem.Text = "Save"
+        '
+        'SaveAsToolStripMenuItem
+        '
+        Me.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem"
+        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
+        Me.SaveAsToolStripMenuItem.Text = "Save As"
+        '
+        'EditToolStripMenuItem
+        '
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'DreamToolStripMenuItem
+        '
+        Me.DreamToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DefaultToolStripMenuItem, Me.SelectPatchToolStripMenuItem})
+        Me.DreamToolStripMenuItem.Name = "DreamToolStripMenuItem"
+        Me.DreamToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
+        Me.DreamToolStripMenuItem.Text = "Dream"
+        '
+        'DefaultToolStripMenuItem
+        '
+        Me.DefaultToolStripMenuItem.Name = "DefaultToolStripMenuItem"
+        Me.DefaultToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.DefaultToolStripMenuItem.Text = "Default"
+        '
+        'SelectPatchToolStripMenuItem
+        '
+        Me.SelectPatchToolStripMenuItem.Name = "SelectPatchToolStripMenuItem"
+        Me.SelectPatchToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.SelectPatchToolStripMenuItem.Text = "Select Patch"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(283, 38)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 21)
+        Me.Button1.TabIndex = 30
+        Me.Button1.Text = "Load Dream"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(262, 245)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(35, 13)
+        Me.Label2.TabIndex = 31
+        Me.Label2.Text = "Name"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(262, 261)
+        Me.TextBox1.MaxLength = 75
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(195, 20)
+        Me.TextBox1.TabIndex = 32
+        '
+        'CustomFurrePreview1
+        '
+        Me.CustomFurrePreview1.CurrentRemap = 0
+        Me.CustomFurrePreview1.Location = New System.Drawing.Point(260, 65)
+        Me.CustomFurrePreview1.Name = "CustomFurrePreview1"
+        Me.CustomFurrePreview1.PatchPath = Nothing
+        Me.CustomFurrePreview1.Size = New System.Drawing.Size(436, 160)
+        Me.CustomFurrePreview1.TabIndex = 28
+        '
+        'PatchBrowser
+        '
+        Me.PatchBrowser.SelectedPath = ""
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(696, 507)
-        Me.Controls.Add(Me.FurrePreview3)
-        Me.Controls.Add(Me.FurrePreview2)
-        Me.Controls.Add(Me.FurrePreview1)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.CustomFurrePreview1)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TxtBxDescription)
         Me.Controls.Add(Me.saveButton)
         Me.Controls.Add(Me.aboutButton)
         Me.Controls.Add(Me.setButton)
         Me.Controls.Add(Me.colourCodeTextBox)
         Me.Controls.Add(Me.tabControl1)
         Me.Controls.Add(Me.loadButton)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MainForm"
         Me.Text = "FurEdVB"
         Me.tabPage9.ResumeLayout(False)
@@ -445,6 +560,8 @@ Partial Class MainForm
         Me.tabPage4.ResumeLayout(False)
         Me.tabPage5.ResumeLayout(False)
         Me.tabPage6.ResumeLayout(False)
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -477,8 +594,22 @@ Partial Class MainForm
     Private WithEvents eyeListBox As System.Windows.Forms.ListBox
     Private WithEvents tabPage6 As System.Windows.Forms.TabPage
     Private WithEvents loadButton As System.Windows.Forms.Button
-    Friend WithEvents FurrePreview1 As FurrePreview
-    Friend WithEvents FurrePreview2 As FurrePreview
-    Friend WithEvents FurrePreview3 As FurrePreview
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents TxtBxDescription As System.Windows.Forms.TextBox
+    Friend WithEvents CustomFurrePreview1 As FurEdVB.CustomFurrePreview
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents OpenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SaveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SaveAsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DreamToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DefaultToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SelectPatchToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents PatchBrowser As FurEdVB.FileFolderDialog
 
 End Class
