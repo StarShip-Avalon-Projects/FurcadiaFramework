@@ -69,7 +69,6 @@
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <PlatformTarget>x86</PlatformTarget>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
@@ -88,7 +87,6 @@
     <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -232,16 +230,15 @@
   </ProjectExtensions>
   <PropertyGroup>
     <PostBuildEvent>REM DEL old files
-del "$(SolutionDir)\SRC\$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar"
-del "$(SolutionDir)\SRC\$(TargetDir)$(TargetName)_$(PlatformName)_Binaries.rar"
-REM Create the BIN rar
-cd $(TargetDir)
-"c:/program files/winrar/rar.exe" a -r -x*.tmp "$(TargetDir)$(TargetName)_$(PlatformName)_Binaries.rar" *.*
-move "$(TargetName)_$(PlatformName)_Binaries.rar" "$(SolutionDir)\SRC\"
+del "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar"
+del "*setup*.*"
+
 REM Create the SRC rar
-cd $(ProjectDir)
-"c:/program files/winrar/rar.exe" a -r -x*\.svn\*  -x*\bin\*  -x*\src\ -x*\obj\* -n*.*proj -n*.sln -n*.nsi -n*.vb  -n*.csv -n*.cs -n*.ds -n*.ms -n*.ini -nlicense*.*-n*.sln -n*.resx -n*.txt -n*.dll -n*.config "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" *.*
-move "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" "$(SolutionDir)\SRC"</PostBuildEvent>
+cd $(SolutionDir)
+
+
+"c:/program files/winrar/rar.exe" a -r -x*\.svn\* -x*\build\*  -x*\bin\*  -x*\src\ -x*\obj\* -n*.*proj -n*.sln -n*.nsi -n*.vb  -n*.cs -n*.ds -n*.ms -n*.ini -nlicense*.*-n*.sln -n*.resx -n*.txt -n*.dll -n*.config "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" *.*
+move "$(TargetDir)$(TargetName)_$(PlatformName)_Src.rar" "$(SolutionDir)\SRC\"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>

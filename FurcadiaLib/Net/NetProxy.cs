@@ -71,6 +71,12 @@ namespace Furcadia.Net
 		/// </summary>
 		public event ActionDelegate ClientExited;
 
+		
+		/// <summary>
+		/// This is triggered when t
+		/// client is closed.
+		/// </summary>
+		public event ActionDelegate FurcSettingsRestored;
 		/// <summary>
 		/// This is triggered when a handled Exception is thrown.
 		/// </summary>
@@ -456,6 +462,8 @@ namespace Furcadia.Net
 		{
 			try
 			{
+			   if (BackupSettings != null)
+			   		Settings.RestoreFurcadiaSettings(BackupSettings);
 			   if (listen != null) listen.Stop();
 
 			   if (client != null && client.Connected == true) 
@@ -499,6 +507,8 @@ namespace Furcadia.Net
 		{
 			if (disposing)
 			{
+				if (BackupSettings != null)
+			   		Settings.RestoreFurcadiaSettings(BackupSettings);
 				// Free other state (managed objects).
 			}
 			// Free your own state (unmanaged objects).
@@ -554,10 +564,13 @@ namespace Furcadia.Net
 			catch (Exception e) { if (Error != null) Error(e,this, "AsyncListener()");}
 		}
 
-		private static void OnTimedEvent(object source, ElapsedEventArgs e)
+		private void OnTimedEvent(object source, ElapsedEventArgs e)
 		{
 			/// reset settings.ini
 			Settings.RestoreFurcadiaSettings(BackupSettings);
+			BackupSettings = null;
+			if(this.FurcSettingsRestored != null) 
+				this.FurcSettingsRestored();
 		}
 
 
