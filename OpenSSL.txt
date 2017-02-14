@@ -1,0 +1,8 @@
+[11:01:09 PM] Ninja: SSL is initiated by the `starttls command, valid at any point in the connection, but recommended before `connect/`account/`token.
+[11:01:22 PM] Ninja: There are a range of responses to `starttls:
+[11:02:05 PM] Ninja: ]S0 - SSL is disabled, show the user a warning
+]S1 - SSL is enabled, proceed
+]S2 - SSL is disabled, do NOT show the user a warning
+]S3 - reserved
+]S4 - SSL is enabled, but fall back on insecure connection without warning
+[11:02:23 PM] Ninja: When 31a launches, we will start in ]S4 mode.  After a few more restarts, we'll move into ]S1 mode.

@@ -1,0 +1,30 @@
+Simple Proxy 2.02
++ Added menu Bar
++ Added Status Bar with Client Server Status Icons
++ Revealed Debug Window Option
++ Switched Input Box to RichtextBoxEx
++ Added Bold, Italic, and UnderLine Buttons
+m Applied rtf to FML Conversion for input Text Box
+m Reorganized Configuration Window
+m Finished FontFace and FontSize Config options
++ Added Text Color options to Configuragion and Settings.ini File
++ Enabled TimeStamps and added to Settings.ini
++ Added TextColor Enums and Converter Function as System.drawing.color can't be used in Function Parameters
+m Tweaked Text Parser. cleaned up stray text
++ Added Logfile support for rtf, html and plain text format with Options
++ added Window position saving
+
+
+Simple Proxy 2.01
++ Added RchTextBoxEx control
+m Changed log_ from Rich textBox to RichtextBoxEx Custom Control
+m Added Hyperlink Linking to RichTect Control
+m Tweaked Server Text Parsing
+m Added FML to RTF Parsing <i>, <ul>, <b>, <A href="url">Title</a>
++ Started adding config options Font Face and Font Size
++ Started Adding Main Window Position Saving
+m Tweaked URL Display
+M added Img SRC Handeling
++ added anti flicker code to RichTectBoxEx
+m Fixed a Glitch in Say Display. It was conflicting with Look command
+m Added Anti Flicker Stuff to Dream User List

@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{56340025-F02E-48CA-AF40-7F5D66095656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralTest", "Tests\GeneralTest\GeneralTest.csproj", "{187C221F-6117-45AD-B90B-6F5E52CE16E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurcadiaLib", "FurcLib\FurcadiaLib.csproj", "{156C2AF0-3DA8-4D8C-A525-5400185579B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurcadiaFramework_Example", "Examples\FurcadiaFramework_Example\FurcadiaFramework_Example.csproj", "{C1DCB738-FA04-4C2B-8718-A035AF86758C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{4A9951DF-53F9-4381-9035-F776E4A37C03}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FurEdVB", "Examples\FurEdVB\FurEdVB.vbproj", "{F452D4FA-DD18-460E-AD61-9E6C0C438F30}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SimpleProxy3", "Examples\simpleproxy\SimpleProxy3.vbproj", "{A2C3323D-B8B3-437D-9D56-80CD8ED88281}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Debug|Any CPU.Build.0 = Debug|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Debug|x86.ActiveCfg = Debug|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Debug|x86.Build.0 = Debug|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Release|Any CPU.ActiveCfg = Release|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Release|Any CPU.Build.0 = Release|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Release|Mixed Platforms.Build.0 = Release|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Release|x86.ActiveCfg = Release|x86
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4}.Release|x86.Build.0 = Release|x86
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Debug|x86.Build.0 = Debug|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Release|x86.ActiveCfg = Release|Any CPU
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3}.Release|x86.Build.0 = Release|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Debug|x86.Build.0 = Debug|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Release|x86.ActiveCfg = Release|Any CPU
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C}.Release|x86.Build.0 = Release|Any CPU
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Debug|x86.ActiveCfg = Debug|x86
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Debug|x86.Build.0 = Debug|x86
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Release|Any CPU.ActiveCfg = Release|x86
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Release|Mixed Platforms.Build.0 = Release|x86
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Release|x86.ActiveCfg = Release|x86
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30}.Release|x86.Build.0 = Release|x86
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Debug|x86.Build.0 = Debug|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Release|x86.ActiveCfg = Release|Any CPU
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{187C221F-6117-45AD-B90B-6F5E52CE16E4} = {56340025-F02E-48CA-AF40-7F5D66095656}
+		{C1DCB738-FA04-4C2B-8718-A035AF86758C} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
+		{F452D4FA-DD18-460E-AD61-9E6C0C438F30} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
+		{A2C3323D-B8B3-437D-9D56-80CD8ED88281} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = FurcadiaFramework_Example\FurcadiaFramework_Example.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.VersionControlPolicy = $2
+		$2.inheritsSet = Mono
+		$0.ChangeLogPolicy = $3
+		$3.UpdateMode = None
+		$3.MessageStyle = $4
+		$4.LineAlign = 0
+		$3.inheritsSet = Mono
+		version = 0.3
+	EndGlobalSection
+EndGlobal
