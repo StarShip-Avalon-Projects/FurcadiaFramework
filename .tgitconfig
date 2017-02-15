@@ -1,0 +1,11 @@
+[bugtraq]
+	url = http://bugtraq.tsprojects.org/view.php?id=%BUGID%
+	number = true
+	warnifnoissue = true
+	message = Bug %BUGID%
+	label = ""
+	append = true
+	providerparams = ""
+	provideruuid = 4a0ef128-b692-44ae-a256-0d2178cc87ac
+	provideruuid64 = f828a8a4-9b82-4bf7-b90a-74faae8d71b6
+	logregex = "[Ii]ssue #?(\\d+)(,? ?#?(\\d+))+\n[Bb]ug #?(\\d+)(,? ?#?(\\d+))+"
