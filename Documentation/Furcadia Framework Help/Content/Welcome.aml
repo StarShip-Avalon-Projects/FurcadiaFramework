@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>Welcome to Furcadia Frame Work for Third Party Programs.</para>
+      <para>
+        Furcadia Framework is intended to help the community develop Third Party Application using the .Net Framework
+        It Doesn't matter what kind of project you're working on. This library will include all the basic functionality for working with the Furcadia Client and associated programs and services.
+      </para>
+      <para>
+        Features:
+      </para>
+      <list class="ordered">
+        <listItem>
+          <para>
+            NetProxy: Connect to the Game server
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Drawing: Work with patch and map files
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            ServerParser: Process Server to Client Instructions
+          </para>
+        </listItem>
+        <listItem>
+          <para>PhoenixSpeak: Process interactions with the game server to manage a dreams Phoenix Speak Database.</para>
+        </listItem>
+      </list>
+    </introduction>
+
+    <section>
+      <title>Summary</title>
+      <content>
+        <para>
+          Furcadia&#169; is a game created by Dragon's Eye Productions&#169; and
+          <externalLink>
+            <linkText>Catnip Studios&#169;</linkText>
+            <linkAlternateText>Catnip Studios&#169;</linkAlternateText>
+            <linkUri>http://catnipstudios.com/</linkUri>
+          </externalLink>
+          . Its a 2d isometric MMOG. Visit
+          <externalLink>
+            <linkText>Furcadia&#169;</linkText>
+            <linkAlternateText>Furcadia&#169;</linkAlternateText>
+            <linkUri>http://cms.furcadia.com/</linkUri>
+          </externalLink>
+          for more information.
+        </para>
+
+        <para>
+          Furcadia Framework is a RAD, or Rapid Application Development, library for third party developers. Developed in .NET it can be used with any .NET language (c#,vb.net,cpp,boo,etc). Intended for use on multiple platforms.
+        </para>
+      </content>
+    </section>
+
+    <relatedTopics>
+      <link xlink:href="4340cd61-7802-4111-a144-fc835a39faf6" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

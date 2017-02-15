@@ -1,0 +1,15 @@
+﻿[12:15:23 PM | Edited 12:15:52 PM] Ninja: Some of your code made it into the C# client
+[12:15:52 PM] Gerolkae .: Oh really? WOOT
+[12:16:06 PM] Gerolkae .: OMG
+[12:16:16 PM] Gerolkae .: this is awsome!
+[12:16:45 PM] Ninja: Two things
+[12:17:33 PM] Ninja: First, make sure the library is built under Any CPU
+[12:18:18 PM] Ninja: Second, set the consuming program to prefer 64 bit (look at the build options in project settings of any .exe C# program)
+[12:18:35 PM] Ninja: Third, you'll need an opt-out manifest
+[12:18:45 PM] Ninja: Sorry, I lied.  Three things.
+[12:20:11 PM] Gerolkae .: Oh! Ok!
+[12:21:40 PM] Ninja: http://mobile.codeguru.com/csharp/csharp/cs_misc/designtechniques/article.php/c15455/Tip-To-Disable-Virtualization.htm
+[12:22:51 PM | Edited 12:23:42 PM] Ninja: UAC virtualization is a nightmare to debug -- so much so that the latest build of Win10 disabled it outright (though I don't know if that will remain true on its public release)
+[12:23:32 PM] Gerolkae .: 10 disabled UAC?
+[12:24:04 PM] Ninja: Current beta
+[12:24:38 PM] Gerolkae .: Oh thanks for the heads up

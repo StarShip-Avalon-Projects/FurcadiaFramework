@@ -17,6 +17,14 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FurEdVB", "Examples\FurEdVB
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SimpleProxy3", "Examples\simpleproxy\SimpleProxy3.vbproj", "{A2C3323D-B8B3-437D-9D56-80CD8ED88281}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{C21B09BB-6599-4333-BEC2-3700FCB2356A}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Furcadia Framework Help", "Documentation\Furcadia Framework Help\Furcadia Framework Help.shfbproj", "{B2878B72-7524-40D9-8A4E-53561094567E}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Simple Proxy 3 Documentation", "Simple Proxy 3 Documentation\Simple Proxy 3 Documentation.shfbproj", "{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugProxy", "Examples\BugProxy\BugProxy.csproj", "{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +93,42 @@ Global
 		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Release|x86.ActiveCfg = Release|Any CPU
 		{A2C3323D-B8B3-437D-9D56-80CD8ED88281}.Release|x86.Build.0 = Release|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Debug|x86.Build.0 = Debug|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Release|x86.ActiveCfg = Release|Any CPU
+		{B2878B72-7524-40D9-8A4E-53561094567E}.Release|x86.Build.0 = Release|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Debug|x86.Build.0 = Debug|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811}.Release|x86.Build.0 = Release|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Debug|x86.Build.0 = Debug|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Release|x86.ActiveCfg = Release|Any CPU
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +138,9 @@ Global
 		{C1DCB738-FA04-4C2B-8718-A035AF86758C} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
 		{F452D4FA-DD18-460E-AD61-9E6C0C438F30} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
 		{A2C3323D-B8B3-437D-9D56-80CD8ED88281} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
+		{B2878B72-7524-40D9-8A4E-53561094567E} = {C21B09BB-6599-4333-BEC2-3700FCB2356A}
+		{1D98BCC7-EBF0-4C8A-9C7A-0B132F274811} = {C21B09BB-6599-4333-BEC2-3700FCB2356A}
+		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = FurcadiaFramework_Example\FurcadiaFramework_Example.csproj
