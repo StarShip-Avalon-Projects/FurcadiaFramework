@@ -5,7 +5,22 @@
       <para>Welcome to Furcadia Frame Work for Third Party Programs.</para>
       <para>
         Furcadia Framework is intended to help the community develop Third Party Application using the .Net Framework
-        It Doesn't matter what kind of project you're working on. This library will include all the basic functionality for working with the Furcadia Client and associated programs and services.
+        It Doesn't matter what kind of project you're working on. This library will include all the basic
+        functionality for working with the Furcadia Client and associated programs and services.
+      </para>
+
+      <para>
+        Copies of this document will be included as a Compiled Help File (*.chm) in each release of the SDK. All Current
+        Documentation will be
+        <externalLink>
+          <linkText>Here at the GitHub Repository</linkText>
+          <linkUri>https://starship-avalon-projects.github.io/FurcadiaFramework/</linkUri>
+        </externalLink>
+        Alternatively you can download this document in a Compiled Help File format
+        <externalLink>
+          <linkText>here</linkText>
+          <linkUri>../Furcadia_Framework_Help.chm</linkUri>
+        </externalLink>
       </para>
       <para>
         Features:
@@ -52,12 +67,64 @@
         </para>
 
         <para>
-          Furcadia Framework is a RAD, or Rapid Application Development, library for third party developers. Developed in .NET it can be used with any .NET language (c#,vb.net,cpp,boo,etc). Intended for use on multiple platforms.
+          Furcadia Framework is a RAD, or Rapid Application Development, library for third party developers.
+          Developed in .NET it can be used with any .NET language (c#,vb.net,cpp,boo,etc). Intended for use
+          on multiple platforms.
         </para>
+        <para>
+          We're Currently working on a ProxySession Class. This Class is intended to be a drop in replacement for NetProxy
+          What is will include are the bells and whistles for basic operation.
+        </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              a Client to Server Queue manager. this will Absorb all the SendToServer instructions and spoon feed
+              them to the game server with out overloading the Servers Buffer. In here we'll handle Throat-Tired Syndrome
+              and NoEndurance.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Dream Furre List Manager. This will maintain a list of Furre in the Current Dream and keep track of basic
+              stats such as current Furre Position, Costume settings, Working with
+              <externalLink>
+                <linkText>Dragon Speak Parameters</linkText>
+                <linkAlternateText>Dragon Speak Parameters</linkAlternateText>
+                <linkUri>http://cms.furcadia.com/creations/dreammaking/dragonspeak/dsparams</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Pounce  Connection. Furre On-line detection.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Account Logon: Directly connecting to the Furcadia API We will keep Character.Ini files for legacy support
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Server to Client Instruction Handling. Parsing Server data for basic Proxy operation with events
+              leading out for custom code links. the events will return Server Data and EventArgs. this will apply to
+              Text channel parsing as well
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              SSL/TLS Connection. Handling of game server Security Certificates for an encrypted connection.
+            </para>
+          </listItem>
+        </list>
       </content>
     </section>
 
     <relatedTopics>
+      <externalLink>
+        <linkText>BugTraq at Ts Projects</linkText>
+        <linkUri>http://bugtraq.tsprojects.org</linkUri>
+      </externalLink>
       <link xlink:href="4340cd61-7802-4111-a144-fc835a39faf6" />
     </relatedTopics>
   </developerConceptualDocument>

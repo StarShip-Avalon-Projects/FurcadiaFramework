@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
   <Topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" visible="True" isDefault="true" title="Welcome" />
-  <Topic id="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" visible="True" isSelected="true" title="NetProxy Sample" />
+  <Topic id="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" visible="True" title="NetProxy Sample" />
   <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" isExpanded="true" title="Furcadia Specifications">
     <Topic id="a5f6d9fd-e7ec-4278-97f0-5c6d6535f7f7" visible="True" />
   </Topic>
   <Topic id="65fa49e4-c1d8-4fa4-86d0-12dd7be5dd4d" visible="True" title="Project Credits" />
-  <Topic id="4340cd61-7802-4111-a144-fc835a39faf6" visible="True" isExpanded="true" apiParentMode="InsertAfter">
-    <Topic id="5749a8f1-6f96-43e4-92d4-9010acf9434c" visible="True" />
+  <Topic id="4340cd61-7802-4111-a144-fc835a39faf6" visible="True" apiParentMode="InsertAfter">
+    <Topic id="4eecd606-d5e8-464b-9b2e-8a2bfac50c0a" visible="True" title="Version 2.1.x" />
   </Topic>
+  <Topic id="2d3fdb7f-0542-4fb7-8f0a-a38eda8039f0" visible="True" isSelected="true" title="Glossary" />
+  <Topic id="05d2020c-0adc-4a01-a8dc-62c78634c5fc" visible="True" title="Appendix" />
 </Topics>

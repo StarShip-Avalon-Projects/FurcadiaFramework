@@ -1,18 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="4eecd606-d5e8-464b-9b2e-8a2bfac50c0a" revisionNumber="1">
+<topic id="05d2020c-0adc-4a01-a8dc-62c78634c5fc" revisionNumber="1">
   <developerConceptualDocument
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
+    <!--
     <summary>
-      <para>
-        Welcome to the resurrection of Furcadia Frame Work for Third Party Programs.&#160;
-        We&#39;re hitting the ground running with a massive update. In version 2.1.x we are drastically changing&#160;
-        the Proxy and Server Connection systems. The goal is to provide a fully functional engine to aid in Third Party&#160;
-        Development for Furcadia.
-      </para>
-      <para>Our dream is to build the most complete Furcadia SDK (Software Development Kit) for your .Net programming needs.</para>
+      <para>Optional summary abstract</para>
     </summary>
+    -->
 
     <introduction>
       <!-- Uncomment this to generate an outline of the section and sub-section
@@ -21,17 +17,42 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Version 2.1.x (Back to Basics)</para>
+      <para>Appendix</para>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="changes">
-      <title>Changes in this Update.</title>
+    <section address="Section1">
+      <title>Resource Links</title>
       <content>
-
-        <para>New ProxySession</para>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>
+          these are resource links that were used in the development of this library.
+          We are not necessarily affiliated with any of these  entities.
+        </para>
+        <list class="bullet" address="ResourceLinks">
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Furcadia Technical Resources</linkText>
+                <linkUri>http://ftr.icerealm.org/</linkUri>
+              </externalLink>
+              They have the furcadia protocol broken down into its components.
+              The page it self is outdated but none the less still very useful.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Furcadia Dev Docs</linkText>
+                <linkUri>http://dev.furcadia.com/docs/</linkUri>
+              </externalLink>
+              General Information released to the community by Dragon's Eye Productions
+            </para>
+          </listItem>
+        </list>
       </content>
     </section>
 
@@ -54,7 +75,7 @@
 
       Examples:
 
-      <link xlink:href="4eecd606-d5e8-464b-9b2e-8a2bfac50c0a" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
       <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
 
       <externalLink>

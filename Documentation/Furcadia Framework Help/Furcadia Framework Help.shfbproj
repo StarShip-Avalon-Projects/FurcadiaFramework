@@ -97,11 +97,11 @@
     <Preliminary>True</Preliminary>
     <NamingMethod>Guid</NamingMethod>
     <HelpTitle>Furcadia Framework For Third Party Programs</HelpTitle>
-    <ContentPlacement>AboveNamespaces</ContentPlacement>
-    <HeaderText>It&amp;#39%3bs so easy a cave man can do it.</HeaderText>
+    <ContentPlacement>BelowNamespaces</ContentPlacement>
+    <HeaderText>This stuff is still in the pnanning  stages. Any questions or Comments are welcome.</HeaderText>
     <FeedbackEMailLinkText>Lead Developer Gerolkae</FeedbackEMailLinkText>
     <FeedbackEMailAddress>gerolkae%40hotmail.com</FeedbackEMailAddress>
-    <RootNamespaceTitle>Furcadia Frame Work API</RootNamespaceTitle>
+    <RootNamespaceTitle>Furcadia Frame Work SDK</RootNamespaceTitle>
     <WebsiteSdkLinkType>Msdn</WebsiteSdkLinkType>
     <HtmlSdkLinkType>Msdn</HtmlSdkLinkType>
     <IncludeFavorites>True</IncludeFavorites>
@@ -141,9 +141,11 @@
     <None Include="Content\Furcadia Specifications.aml" />
     <None Include="Content\Furcadia Specifications\Pounce Speciifications.aml" />
     <None Include="Content\Samples\NetProxy ctor.aml" />
-    <None Include="Content\VersionHistory\v1.0.0.0.aml" />
+    <None Include="Content\VersionHistory\Conceptual1.aml" />
+    <None Include="Content\VersionHistory\Glossary1.aml" />
     <None Include="Content\VersionHistory\VersionHistory.aml" />
     <None Include="Content\Welcome.aml" />
+    <None Include="Content\VersionHistory\V2.1.x.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="Content Layout1.content" />
