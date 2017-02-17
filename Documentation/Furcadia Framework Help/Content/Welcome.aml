@@ -22,55 +22,12 @@
           <linkUri>../Furcadia_Framework_Help.chm</linkUri>
         </externalLink>
       </para>
-      <para>
-        Features:
-      </para>
-      <list class="ordered">
-        <listItem>
-          <para>
-            NetProxy: Connect to the Game server
-          </para>
-        </listItem>
-        <listItem>
-          <para>
-            Drawing: Work with patch and map files
-          </para>
-        </listItem>
-        <listItem>
-          <para>
-            ServerParser: Process Server to Client Instructions
-          </para>
-        </listItem>
-        <listItem>
-          <para>PhoenixSpeak: Process interactions with the game server to manage a dreams Phoenix Speak Database.</para>
-        </listItem>
-      </list>
     </introduction>
 
     <section>
-      <title>Summary</title>
+      <title>Project Description</title>
       <content>
-        <para>
-          Furcadia&#169; is a game created by Dragon's Eye Productions&#169; and
-          <externalLink>
-            <linkText>Catnip Studios&#169;</linkText>
-            <linkAlternateText>Catnip Studios&#169;</linkAlternateText>
-            <linkUri>http://catnipstudios.com/</linkUri>
-          </externalLink>
-          . Its a 2d isometric MMOG. Visit
-          <externalLink>
-            <linkText>Furcadia&#169;</linkText>
-            <linkAlternateText>Furcadia&#169;</linkAlternateText>
-            <linkUri>http://cms.furcadia.com/</linkUri>
-          </externalLink>
-          for more information.
-        </para>
 
-        <para>
-          Furcadia Framework is a RAD, or Rapid Application Development, library for third party developers.
-          Developed in .NET it can be used with any .NET language (c#,vb.net,cpp,boo,etc). Intended for use
-          on multiple platforms.
-        </para>
         <para>
           We're Currently working on a ProxySession Class. This Class is intended to be a drop in replacement for NetProxy
           What is will include are the bells and whistles for basic operation.
@@ -101,7 +58,7 @@
           </listItem>
           <listItem>
             <para>
-              Account Logon: Directly connecting to the Furcadia API We will keep Character.Ini files for legacy support
+              Account Log-on: Directly connecting to the Furcadia API We will keep Character.Ini files for legacy support
             </para>
           </listItem>
           <listItem>
@@ -125,7 +82,13 @@
         <linkText>BugTraq at Ts Projects</linkText>
         <linkUri>http://bugtraq.tsprojects.org</linkUri>
       </externalLink>
+      <para>
+        Post bugs Comments and Suggestions here.
+      </para>
+      <link xlink:href="64d441eb-864b-4f9e-994f-2d87632ea597" />
+      <!--About Link-->
       <link xlink:href="4340cd61-7802-4111-a144-fc835a39faf6" />
+      <!--Version History-->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

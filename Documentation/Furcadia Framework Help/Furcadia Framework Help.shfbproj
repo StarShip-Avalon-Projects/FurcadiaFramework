@@ -106,6 +106,15 @@
     <HtmlSdkLinkType>Msdn</HtmlSdkLinkType>
     <IncludeFavorites>True</IncludeFavorites>
     <BinaryTOC>True</BinaryTOC>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="(global)" isDocumented="True" xmlns="" />
+<NamespaceSummaryItem name="Furcadia" isDocumented="True" xmlns="" />
+<NamespaceSummaryItem name="Furcadia.Drawing (Group)" isGroup="True" isDocumented="True" xmlns="" />
+<NamespaceSummaryItem name="Furcadia.Drawing" isDocumented="True" xmlns="" />
+<NamespaceSummaryItem name="Furcadia.Drawing.Graphics" isDocumented="True" xmlns="" />
+<NamespaceSummaryItem name="Furcadia.FurcMap" isDocumented="True" xmlns="" />
+<NamespaceSummaryItem name="Furcadia.IO" isDocumented="True" xmlns="" />
+<NamespaceSummaryItem name="Furcadia.Net" isDocumented="True" xmlns="" /></NamespaceSummaries>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
        the build.  The others are optional common platform types that may appear. -->
@@ -128,6 +137,7 @@
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="Content\Furcadia Specifications" />
+    <Folder Include="Content\FurcReference" />
     <Folder Include="Content\Samples" />
     <Folder Include="Content\VersionHistory\" />
     <Folder Include="icons" />
@@ -136,22 +146,28 @@
     <Content Include="icons\Help.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="About.aml" />
     <None Include="Content\Conceptual1.aml" />
     <None Include="Content\Credits.aml" />
-    <None Include="Content\Furcadia Specifications.aml" />
+    <None Include="Content\Furcadia Specifications\Furcadia Specifications.aml" />
     <None Include="Content\Furcadia Specifications\Pounce Speciifications.aml" />
+    <None Include="Content\FurcReference\Reference.aml" />
     <None Include="Content\Samples\NetProxy ctor.aml" />
-    <None Include="Content\VersionHistory\Conceptual1.aml" />
+    <None Include="Content\VersionHistory\appendix.aml" />
     <None Include="Content\VersionHistory\Glossary1.aml" />
     <None Include="Content\VersionHistory\VersionHistory.aml" />
     <None Include="Content\Welcome.aml" />
     <None Include="Content\VersionHistory\V2.1.x.aml" />
+    <None Include="Contribue.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="Content Layout1.content" />
   </ItemGroup>
   <ItemGroup>
     <CodeSnippets Include="Content\Samples\NetProxySnippet.snippets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Tokens Include="Token File1.tokens" />
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />

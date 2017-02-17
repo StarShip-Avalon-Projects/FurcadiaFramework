@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="05d2020c-0adc-4a01-a8dc-62c78634c5fc" revisionNumber="1">
+<topic id="c7ed588e-a969-400d-8893-39ed661e45a4" revisionNumber="1">
   <developerConceptualDocument
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -11,45 +11,20 @@
     -->
 
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
 
-      <para>Appendix</para>
+      <para>There are several ways the community can contribute to this project.</para>
     </introduction>
 
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Resource Links</title>
+    <section address="contribute">
+      <title>
+        <para>Contribute</para>
+      </title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
         <para>
-          these are resource links that were used in the development of this library.
-          We are not necessarily affiliated with any of these  entities.
         </para>
-        <list class="bullet" address="ResourceLinks">
+        <list class="bullet" address="contriblist">
           <listItem>
             <para>
-              <externalLink>
-                <linkText>Furcadia Technical Resources</linkText>
-                <linkUri>http://ftr.icerealm.org/</linkUri>
-              </externalLink>
-              They have the furcadia protocol broken down into its components.
-              The page it self is outdated but none the less still very useful.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <externalLink>
-                <linkText>Furcadia Dev Docs</linkText>
-                <linkUri>http://dev.furcadia.com/docs/</linkUri>
-              </externalLink>
-              General Information released to the community by Dragon's Eye Productions
             </para>
           </listItem>
         </list>
