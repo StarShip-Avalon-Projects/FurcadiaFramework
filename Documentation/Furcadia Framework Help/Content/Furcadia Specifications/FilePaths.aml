@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a23d6f60-970b-4881-ad5f-077563316c63" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+
+      <para>Furcadia File Paths</para>
+      <para>These are subject to change. As of Furcadia V31b</para>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Win95">
+      <title>Windows 95/98/98SE/ME (No longer supported by Furcadia)</title>
+      <content>
+        <list class="bullet" address="path95">
+          <listItem>
+            <para>
+              Install Path:	c:\Program Files\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	c:\My Documents\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	c:\My Documents\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	c:\My Documents\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Cache:	c:\Program Files\Furcadia\tmp\
+            </para>
+            <para>
+              c:\Program Files\Furcadia\portraits\
+            </para>
+            <para>
+              c:\Program Files\Furcadia\maps\
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="Win2k">
+      <title>Windows 2k, XP, XPsp1, XPsp2, XPsp3 (No longer supported by Furcadia)</title>
+      <content>
+        <list class="bullet" address="path2k">
+          <listItem>
+            <para>
+              Install path:	c:\Program Files\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	c:\Documents and Settings\username\My Documents\Furcadia\
+            </para>
+            <para>
+              %USERPROFILE%\My Documents\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Settings:	c:\Documents and Settings\username\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+            <para>
+              Cache:	c:\Documents and Settings\All Users\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              %USERPROFILE%\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="Vista">
+      <title>Windows Vista, 7, 7sp1, 8, 8.1, 10</title>
+      <content>
+        <list class="bullet" address="path7">
+          <listItem>
+            <para>
+              Install path:	c:\Program Files\Furcadia\
+            </para>
+            <para>
+              c:\Program Files\Furcadia(x86)\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	c:\Documents and Settings\username\My Documents\Furcadia\
+            </para>
+            <para>
+              %USERPROFILE%\My Documents\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Settings:	c:\Users\username\AppData\Local\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              %USERPROFILE%\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Cache:	c:\Documents and Settings\All Users\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+            <para>
+              %USERPROFILE%\AppData\Local\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="nix">
+      <title>Wine (UNIX/Linux/...)</title>
+      <content>
+        <para>
+          NOTE: The following paths were used by default for the past years. However, due to wine's flexibility, your setup could be different!
+        </para>
+        <list class="bullet" address="pathnix">
+          <listItem>
+            <para>
+              Install path:	~/.wine/drive_c/Program\ Files/Furcadia/
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	~/.wine/drive_c/windows/profiles/$USER/My\ Documents/Furcadia/
+            </para>
+            <para>
+              • ASSUMING My Documents MAPPED TO $HOME: ~/Furcadia/
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Settings:	~/.wine/drive_c/windows/profiles/$USER/Local\ Settings/Application\ Data/Dragon\'s\ Eye\ Productions/Furcadia/
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Cache:	~/.wine/drive_c/windows/profiles/All\ Users/Application\ Data/Dragon\'s\ Eye\ Productions/Furcadia/
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <externalLink>
+        <linkText>Credits: Furcadia Technical Resources (Ice Realm)</linkText>
+        <linkAlternateText>Go to FTR</linkAlternateText>
+        <linkUri>http://ftr.icerealm.org/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Credits: Furcadia Forums</linkText>
+        <linkUri>http://forums.furcadia.com/index.php?furcadia_session_id=300293-cdlq-pvp&amp;showtopic=63786</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

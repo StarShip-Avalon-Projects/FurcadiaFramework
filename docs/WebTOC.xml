@@ -1,29 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Title="Welcome" Url="html/8d0a663e-8095-408a-b860-f55d2fc3ccbe.htm" />
-  <HelpTOCNode Title="NetProxy Sample" Url="html/6fdb6471-90ca-4bf7-b380-7b23d1ad6663.htm" />
-  <HelpTOCNode Id="564a9c6d-e6ea-46c8-b239-c4b3dbf6f360" Title="Furcadia Specifications" Url="html/be87ba4e-409e-42eb-929b-c7b131ab1a19.htm">
+  <HelpTOCNode Title="Welcome to FFF3PP" Url="html/8d0a663e-8095-408a-b860-f55d2fc3ccbe.htm" />
+  <HelpTOCNode Id="768d274d-b120-4142-a65d-b66ecd3fde44" Title="Furcadia Specifications" Url="html/be87ba4e-409e-42eb-929b-c7b131ab1a19.htm">
     <HelpTOCNode Title="Pounce Speciifications" Url="html/a5f6d9fd-e7ec-4278-97f0-5c6d6535f7f7.htm" />
+    <HelpTOCNode Title="Furcadia File Paths" Url="html/a23d6f60-970b-4881-ad5f-077563316c63.htm" />
+    <HelpTOCNode Title="Furcadia Popup Dialogs" Url="html/7180cbcd-d0cd-4db5-820b-2255d5764840.htm" />
+    <HelpTOCNode Title="Dragon Speak Constructor" Url="html/c4d53694-c72e-4abc-b376-4cf56d279cbe.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Title="Reference" Url="html/ac0f351b-19c1-47cc-928e-2eeaec33fc51.htm" />
-  <HelpTOCNode Id="6aa189ef-72d1-4c63-bb20-7a207410c66b" Title="VersionHistory" Url="html/4340cd61-7802-4111-a144-fc835a39faf6.htm">
+  <HelpTOCNode Id="a4e4a6f6-ab61-4ea7-9c4f-f1d6f95789d6" Title="FFF3PP Reference" Url="html/ac0f351b-19c1-47cc-928e-2eeaec33fc51.htm">
+    <HelpTOCNode Id="86ba8484-01ca-4b13-bf4e-73c496ede469" Title="Example Usage">
+      <HelpTOCNode Title="NetProxy Sample" Url="html/6fdb6471-90ca-4bf7-b380-7b23d1ad6663.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="Furcadia Text Channels" Url="html/08538137-7c91-4fad-b4dc-287fc6efa298.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="5619a966-5834-4aff-89a8-8b81de61bae7" Title="VersionHistory" Url="html/4340cd61-7802-4111-a144-fc835a39faf6.htm">
     <HelpTOCNode Title="Version 2.1.x" Url="html/4eecd606-d5e8-464b-9b2e-8a2bfac50c0a.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="0400f313-8422-401c-9931-55930e2f6d37" Title="Furcadia Frame Work SDK" Url="html/60c84be5-cd71-4e8f-472f-bf63e4b9ae50.htm">
-    <HelpTOCNode Id="9850bd11-6bee-415d-a7ec-e42bdcc12d73" Title="Furcadia" Url="html/6538f8b6-eef0-2425-a5b4-b3a3e33637d4.htm">
-      <HelpTOCNode Id="af5252ee-8e5c-4de4-81dc-d2f5735cd9c9" Title="Avatar Class" Url="html/9a26bd2b-9149-7beb-2e2b-8aab5e076dc8.htm">
+  <HelpTOCNode Id="e040efc2-14ae-4ccf-93f9-1d7c19becc52" Title="Furcadia Frame Work SDK" Url="html/60c84be5-cd71-4e8f-472f-bf63e4b9ae50.htm">
+    <HelpTOCNode Id="7da0664e-d9d5-455f-b768-1f6c79d5b92d" Title="Furcadia" Url="html/6538f8b6-eef0-2425-a5b4-b3a3e33637d4.htm">
+      <HelpTOCNode Id="dd3c74e4-586c-40ea-9e46-fdb38b56b211" Title="Avatar Class" Url="html/9a26bd2b-9149-7beb-2e2b-8aab5e076dc8.htm">
         <HelpTOCNode Title="Avatar Constructor " Url="html/2ca1f55f-1228-b0ac-075c-1d5c48e4a68d.htm" />
-        <HelpTOCNode Id="1d7e1003-403f-46ac-8aef-22dfac20200b" Title="Avatar Methods" Url="html/408103af-61fc-ac51-9ba1-6a46e2ec9919.htm">
+        <HelpTOCNode Id="f050cd01-609b-403f-9169-0ccae4cb30b5" Title="Avatar Methods" Url="html/408103af-61fc-ac51-9ba1-6a46e2ec9919.htm">
           <HelpTOCNode Title="PrimeTable Method " Url="html/3d3a3cd3-24af-b601-1247-caad87fdbec2.htm" />
           <HelpTOCNode Title="SpecNum Method " Url="html/8555ff08-c943-6f38-e7ad-016d71918f87.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="b8d8eca2-0eeb-445d-b710-b52bb9655fc1" Title="Avatar.Frame Structure" Url="html/11db4999-9832-a695-d764-51eef6f9181a.htm">
-        <HelpTOCNode Id="119baed5-6c6c-4910-a2a5-0ebb0e5fe7d4" Title="Frame Methods" Url="html/07db8872-a376-d4db-e6ad-08ce71a73966.htm">
+      <HelpTOCNode Id="f77840ae-a04d-4677-84fd-c0d7edbc36e3" Title="Avatar.Frame Structure" Url="html/11db4999-9832-a695-d764-51eef6f9181a.htm">
+        <HelpTOCNode Id="b0b12ef1-3d04-4a0c-9f28-7e78fd4dcc22" Title="Frame Methods" Url="html/07db8872-a376-d4db-e6ad-08ce71a73966.htm">
           <HelpTOCNode Title="Clear Method " Url="html/1d656ada-7175-cd1d-fb2f-939be813b68a.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="00ba8983-883e-481e-921f-fe5aa0a3d057" Title="Frame Fields" Url="html/54d28acd-785a-ed74-67d3-d00a28ec46c2.htm">
+        <HelpTOCNode Id="76166a97-edaa-47af-98ff-f57adfc33e90" Title="Frame Fields" Url="html/54d28acd-785a-ed74-67d3-d00a28ec46c2.htm">
           <HelpTOCNode Title="dir Field" Url="html/2135d906-21cc-72e4-9462-5011aac0e9dc.htm" />
           <HelpTOCNode Title="DS_Number Field" Url="html/6e72326e-92fe-6a4e-85dc-702f79038221.htm" />
           <HelpTOCNode Title="gender Field" Url="html/226a31e3-4d34-dc80-acf4-debbb3076dbf.htm" />
@@ -32,9 +39,9 @@
           <HelpTOCNode Title="Wings Field" Url="html/d7b98182-7435-79a4-62ea-c357500ccdcf.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="9e00b26e-94bd-4325-97d7-fee8222099b0" Title="Badges Class" Url="html/6b0707eb-15a6-cbb8-98f9-71eacaad5d1a.htm">
+      <HelpTOCNode Id="626cc3f5-c99b-4e4c-a5ae-9ee91161f659" Title="Badges Class" Url="html/6b0707eb-15a6-cbb8-98f9-71eacaad5d1a.htm">
         <HelpTOCNode Title="Badges Constructor " Url="html/4e089062-653a-b67d-d9a7-6806d124c884.htm" />
-        <HelpTOCNode Id="4ed75cfe-34f0-465f-b360-840f10b55921" Title="Badges Methods" Url="html/315d3069-aa9c-a496-5d99-88cb1bc75fcd.htm">
+        <HelpTOCNode Id="5c8de888-bff0-4da6-bb0a-fc7af5d6c9be" Title="Badges Methods" Url="html/315d3069-aa9c-a496-5d99-88cb1bc75fcd.htm">
           <HelpTOCNode Title="GetGroup Method " Url="html/bf1761dd-1a35-0cf1-7b52-4bd3f6085b14.htm" />
           <HelpTOCNode Title="GetLevel Method " Url="html/2d1f4136-308c-bb10-86ae-4e1ea7a0120b.htm" />
           <HelpTOCNode Title="GetTag Method " Url="html/b1f57ee3-be33-cedd-cdef-ff44c4527544.htm" />
@@ -42,41 +49,41 @@
           <HelpTOCNode Title="PrimeTable Method " Url="html/1ffcab4b-5006-b760-b358-3eb4b4df874b.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="86cbc150-6498-47a1-a297-5d26955567e0" Title="Base220 Class" Url="html/e96e28b6-6ec3-ce1e-8805-7418ccf2dfec.htm">
-        <HelpTOCNode Id="c610c306-8a92-473c-9b4e-101b51e2e78f" Title="Base220 Constructor " Url="html/0e254c2f-581e-704d-eb73-a365b8b2681c.htm">
+      <HelpTOCNode Id="3873fe22-f657-4b46-ad75-de3090e37b94" Title="Base220 Class" Url="html/e96e28b6-6ec3-ce1e-8805-7418ccf2dfec.htm">
+        <HelpTOCNode Id="e277c059-40e1-48b7-8216-d5f41a94aafe" Title="Base220 Constructor " Url="html/0e254c2f-581e-704d-eb73-a365b8b2681c.htm">
           <HelpTOCNode Title="Base220 Constructor " Url="html/590149a3-152b-6bc8-6dab-38500f0dd124.htm" />
           <HelpTOCNode Title="Base220 Constructor (Int32)" Url="html/7d4fe324-f932-4f9b-236f-6f8b7be574fe.htm" />
           <HelpTOCNode Title="Base220 Constructor (String)" Url="html/875c7c9a-bf7e-3b86-dd73-4102176b8783.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="75fc2d39-b056-4541-ba77-2f00cd1d46be" Title="Base220 Methods" Url="html/0acd5d10-85fa-cf6e-2034-7bce312b9f5f.htm">
+        <HelpTOCNode Id="10231f47-0015-4cd9-800e-5b70c71a0283" Title="Base220 Methods" Url="html/0acd5d10-85fa-cf6e-2034-7bce312b9f5f.htm">
           <HelpTOCNode Title="CompareTo Method " Url="html/e9c3a850-7397-fd17-b268-20bb99eff812.htm" />
           <HelpTOCNode Title="ConvertFromBase220 Method " Url="html/8d6282ea-42cb-314f-7b21-1ff9094f7bb4.htm" />
-          <HelpTOCNode Id="1874c6d1-dea1-4efa-a8d4-81c0369b7a3a" Title="ConvertToBase220 Method " Url="html/f56f3d26-3d19-3f08-f5e4-ed05348627c0.htm">
+          <HelpTOCNode Id="1d926c2b-f6c9-41d5-bc0f-1a8d3102eab6" Title="ConvertToBase220 Method " Url="html/f56f3d26-3d19-3f08-f5e4-ed05348627c0.htm">
             <HelpTOCNode Title="ConvertToBase220 Method (Int32)" Url="html/1f61803f-4602-82da-867e-57e990d61883.htm" />
             <HelpTOCNode Title="ConvertToBase220 Method (Int32, Int32)" Url="html/32dea87b-1938-0648-77f4-71e52dba9dca.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="ff90d075-eb0d-4168-955c-c5565858cfc5" Title="Equals Method " Url="html/e72939ed-a4d8-9ee6-c89a-ff033c522c0b.htm">
+          <HelpTOCNode Id="5bd2dfbc-bd9d-433d-b942-6eb2ad1b5630" Title="Equals Method " Url="html/e72939ed-a4d8-9ee6-c89a-ff033c522c0b.htm">
             <HelpTOCNode Title="Equals Method (Int32)" Url="html/761d795a-823b-4e29-d9a8-126a2603ad96.htm" />
             <HelpTOCNode Title="Equals Method (Object)" Url="html/afb59f5f-761d-0a2b-f6dc-9bbe74d7ed76.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="FromString Method " Url="html/1f95e0ce-470b-0df0-dab5-264713bde552.htm" />
           <HelpTOCNode Title="GetHashCode Method " Url="html/c454b4b1-15fd-4381-6125-9e2ab4b0bbe4.htm" />
-          <HelpTOCNode Id="405b355d-9b80-4522-8146-5ae4a3ce5f83" Title="ToByteArray Method " Url="html/4f283df3-2c73-2dbd-fd90-6d2453b45bc4.htm">
+          <HelpTOCNode Id="c9b7dc5b-fef8-4f34-a45f-4a2f453664b2" Title="ToByteArray Method " Url="html/4f283df3-2c73-2dbd-fd90-6d2453b45bc4.htm">
             <HelpTOCNode Title="ToByteArray Method " Url="html/10fe97d2-a896-c770-97a1-e5601d3b9c9c.htm" />
             <HelpTOCNode Title="ToByteArray Method (Int32)" Url="html/1aebd431-3bed-4427-aa80-84894c5e2358.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="70b14a5e-4903-4fd9-a46e-7e471242a12c" Title="ToString Method " Url="html/56c7ae54-a63a-cda5-ada5-9b15fb418562.htm">
+          <HelpTOCNode Id="2847e427-c983-4ecb-a6c9-6b3267280568" Title="ToString Method " Url="html/56c7ae54-a63a-cda5-ada5-9b15fb418562.htm">
             <HelpTOCNode Title="ToString Method " Url="html/11aca32c-6ec9-f452-0f28-e1a637d2d8f2.htm" />
             <HelpTOCNode Title="ToString Method (Int32)" Url="html/b9a53333-9b6d-6146-58e2-e32932a73f8a.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="5df7ad08-b5dd-425a-b22c-2615cc2b277a" Title="Base220 Operators and Type Conversions" Url="html/d09bd86d-da91-1f6a-4b6a-6031d3f7b3a4.htm">
+        <HelpTOCNode Id="f49178de-921a-4a33-bbd0-71525a119f49" Title="Base220 Operators and Type Conversions" Url="html/d09bd86d-da91-1f6a-4b6a-6031d3f7b3a4.htm">
           <HelpTOCNode Title="Addition Operator " Url="html/e7200b1c-f24d-b9ff-2520-0440dcbc0208.htm" />
           <HelpTOCNode Title="Division Operator " Url="html/1fc034ce-fa5b-8ffe-3c1e-62eb37e16360.htm" />
           <HelpTOCNode Title="Equality Operator " Url="html/6e0af32e-91e9-bfca-91ef-4526fa7836af.htm" />
           <HelpTOCNode Title="Explicit Conversion (Base220 to Int16)" Url="html/e0a38801-af57-bbd6-679f-5bb8465359ec.htm" />
           <HelpTOCNode Title="GreaterThan Operator " Url="html/98e1f0d6-30ef-b9b1-0296-d82848f78f9b.htm" />
-          <HelpTOCNode Id="365df09c-54cd-4baf-98dc-6357caf17be7" Title="Implicit Conversion Operators" Url="html/534fd2d2-4ccd-95b1-391b-1fb7db3eb980.htm">
+          <HelpTOCNode Id="4e25bd4f-7297-4ba8-bd81-2c4224aea991" Title="Implicit Conversion Operators" Url="html/534fd2d2-4ccd-95b1-391b-1fb7db3eb980.htm">
             <HelpTOCNode Title="Implicit Conversion (Int16 to Base220)" Url="html/fd9f3086-be8e-5beb-1e66-36f7c3571e30.htm" />
             <HelpTOCNode Title="Implicit Conversion (Int32 to Base220)" Url="html/3c9996fd-364b-2bf9-4798-6f766c480955.htm" />
             <HelpTOCNode Title="Implicit Conversion (String to Base220)" Url="html/5e5f89e9-9b10-e8a5-6b6e-d0ac66e942f2.htm" />
@@ -91,41 +98,41 @@
           <HelpTOCNode Title="Subtraction Operator " Url="html/fd58b51c-02ec-46da-20d5-cdd53aa1ed35.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="f8c11f0b-52b7-4f86-965f-aa0c6e2e338c" Title="Base95 Class" Url="html/1ec1d1a7-eddb-9cc4-ca72-21601e90a73a.htm">
-        <HelpTOCNode Id="e3a2b1c4-50e4-419d-b5fa-c84d25e17684" Title="Base95 Constructor " Url="html/6468d1ab-6b4e-7b00-c3d0-035101176883.htm">
+      <HelpTOCNode Id="4de63f3d-ba2b-4f4f-8332-47555d169c47" Title="Base95 Class" Url="html/1ec1d1a7-eddb-9cc4-ca72-21601e90a73a.htm">
+        <HelpTOCNode Id="eb23cf35-3cf5-4dfb-bfe4-cebb5f943b5d" Title="Base95 Constructor " Url="html/6468d1ab-6b4e-7b00-c3d0-035101176883.htm">
           <HelpTOCNode Title="Base95 Constructor " Url="html/27c8a089-a57d-0eb4-bac5-25c82e219ffd.htm" />
           <HelpTOCNode Title="Base95 Constructor (String)" Url="html/d37083c0-75ad-a83b-8637-5dc5c52ec6a2.htm" />
           <HelpTOCNode Title="Base95 Constructor (UInt32)" Url="html/c2b06b8b-b0e8-3737-f823-49abb2da018a.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="8936043f-1710-424e-9956-e8eae372ddb1" Title="Base95 Methods" Url="html/1205927d-3d89-cd16-6584-c5c36c923490.htm">
+        <HelpTOCNode Id="92b97932-0e3f-436c-a6a8-9f5f26cac46f" Title="Base95 Methods" Url="html/1205927d-3d89-cd16-6584-c5c36c923490.htm">
           <HelpTOCNode Title="CompareTo Method " Url="html/0a107548-15d4-d3a6-9ee4-f04e3b5c358f.htm" />
           <HelpTOCNode Title="ConvertFromBase95 Method " Url="html/6728f4da-cb37-ec6b-9a4a-b6879edf63ed.htm" />
-          <HelpTOCNode Id="60d77475-c894-4c5e-8d86-039ce542390a" Title="ConvertToBase95 Method " Url="html/e0c592f4-b054-4302-d303-aea2f9442f25.htm">
+          <HelpTOCNode Id="4bab93eb-01f5-47d7-9848-330784024d9f" Title="ConvertToBase95 Method " Url="html/e0c592f4-b054-4302-d303-aea2f9442f25.htm">
             <HelpTOCNode Title="ConvertToBase95 Method (UInt32)" Url="html/c5379bd8-89d9-021f-d35a-78fafe71be5e.htm" />
             <HelpTOCNode Title="ConvertToBase95 Method (UInt32, Int32)" Url="html/9ba68615-61ef-d31c-5713-b04496145bfd.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="2799d069-9d71-4c92-9fa6-74400b2f7243" Title="Equals Method " Url="html/4e448e18-20a8-7ab8-6ebe-24b74065d77f.htm">
+          <HelpTOCNode Id="b3ab3629-f79a-4db5-ad01-ed7df6657425" Title="Equals Method " Url="html/4e448e18-20a8-7ab8-6ebe-24b74065d77f.htm">
             <HelpTOCNode Title="Equals Method (Object)" Url="html/c6e263fa-cd5e-d218-92f1-164a3f0206fc.htm" />
             <HelpTOCNode Title="Equals Method (UInt32)" Url="html/81f7e8c7-f326-3707-55f5-040d0cf16ff9.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="FromString Method " Url="html/284abc04-c47e-e656-1dde-a54209753713.htm" />
           <HelpTOCNode Title="GetHashCode Method " Url="html/f2bf9c1b-1b4a-c068-3dfd-c466ef74342e.htm" />
-          <HelpTOCNode Id="4764c7fd-d876-491c-a12c-78992866987c" Title="ToByteArray Method " Url="html/ea7722d9-fb31-7244-cf0c-ff9a7ba637d7.htm">
+          <HelpTOCNode Id="9f406851-5924-49fc-933e-46b7b1aac7ab" Title="ToByteArray Method " Url="html/ea7722d9-fb31-7244-cf0c-ff9a7ba637d7.htm">
             <HelpTOCNode Title="ToByteArray Method " Url="html/92925da6-b9dc-ace4-e42a-79b65fc0a8ca.htm" />
             <HelpTOCNode Title="ToByteArray Method (Int32)" Url="html/fdb92ece-5cc7-e5ec-fb06-bb58dca7a6a2.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="403a273e-f3b6-413c-ab91-7c8fe7675e28" Title="ToString Method " Url="html/2bc995f4-757e-88e5-ffa2-9b917dcec368.htm">
+          <HelpTOCNode Id="527dfe1d-1b77-45c2-bc5d-60a257399411" Title="ToString Method " Url="html/2bc995f4-757e-88e5-ffa2-9b917dcec368.htm">
             <HelpTOCNode Title="ToString Method " Url="html/710b4e2c-489a-b4a7-e701-5f8eb4796026.htm" />
             <HelpTOCNode Title="ToString Method (Int32)" Url="html/043a6d30-e795-eb1d-e0b8-91fcadb57696.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="bb371430-8d0e-4028-939b-654b6083551c" Title="Base95 Operators and Type Conversions" Url="html/a81e6778-c29e-c905-64f5-26dfc0c774a9.htm">
+        <HelpTOCNode Id="8007cb7d-a2f8-4787-9b65-21aac421f470" Title="Base95 Operators and Type Conversions" Url="html/a81e6778-c29e-c905-64f5-26dfc0c774a9.htm">
           <HelpTOCNode Title="Addition Operator " Url="html/a4531de0-7b91-d1b3-0651-d7c530523151.htm" />
           <HelpTOCNode Title="Division Operator " Url="html/cafdb01d-0e5b-7544-0160-848cac3563eb.htm" />
           <HelpTOCNode Title="Equality Operator " Url="html/6d4d9a8e-6194-b267-f451-612fe501579d.htm" />
           <HelpTOCNode Title="Explicit Conversion (Base95 to UInt16)" Url="html/f642ddf4-4546-30b9-7433-e5464009b6ef.htm" />
           <HelpTOCNode Title="GreaterThan Operator " Url="html/3863ba73-bd58-bfeb-1ee7-657e8dbbba42.htm" />
-          <HelpTOCNode Id="33044dfc-568c-4acd-b9f6-b5aef105dd8c" Title="Implicit Conversion Operators" Url="html/1170d84e-21b4-27d0-19c9-0a11d5735ed9.htm">
+          <HelpTOCNode Id="e9c63e57-cf4c-4d85-b4cd-566cce9d94ed" Title="Implicit Conversion Operators" Url="html/1170d84e-21b4-27d0-19c9-0a11d5735ed9.htm">
             <HelpTOCNode Title="Implicit Conversion (String to Base95)" Url="html/df9b2f0d-bebd-5cc6-0eba-fd9302c6b96a.htm" />
             <HelpTOCNode Title="Implicit Conversion (UInt16 to Base95)" Url="html/b756396c-4de1-2e47-2fe9-50209615a4b6.htm" />
             <HelpTOCNode Title="Implicit Conversion (UInt32 to Base95)" Url="html/83fd8490-3f8f-c07b-74d5-8d6ec6d80cfb.htm" />
@@ -139,17 +146,17 @@
           <HelpTOCNode Title="Multiply Operator " Url="html/15892ff2-7004-c9ef-b763-ac65cecf3976.htm" />
           <HelpTOCNode Title="Subtraction Operator " Url="html/883b3b08-5def-2219-77bc-8155ca91773d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="8957e42d-63f6-4a75-b7be-dbf2f67a2e93" Title="Base95 Fields" Url="html/3d1ad7a6-5480-264d-90d0-e9c487afdb31.htm">
+        <HelpTOCNode Id="808be677-676d-4d24-a1b3-3c763782f52d" Title="Base95 Fields" Url="html/3d1ad7a6-5480-264d-90d0-e9c487afdb31.htm">
           <HelpTOCNode Title="BASE Field" Url="html/72fe3193-8f48-bab4-57f7-30f203001c9c.htm" />
           <HelpTOCNode Title="CHAR_OFFSET Field" Url="html/edd2a855-27ca-04ed-4ef9-80b6e42b7ba6.htm" />
           <HelpTOCNode Title="Value Field" Url="html/a73b2eb7-f1fb-b688-ca0f-d2758686861b.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="142e514d-a9dd-4acf-b6de-dc7838f5f153" Title="Character Structure" Url="html/87c3d45e-d06b-ac73-4091-34318a9ec7f6.htm">
-        <HelpTOCNode Id="6e7ad991-fcff-4c77-8fd6-c3a988be9891" Title="Character Methods" Url="html/1978be37-ee37-8d82-6baf-d6d5c2b3dbda.htm">
+      <HelpTOCNode Id="f97bd7c5-598b-449f-8238-4d5f9a986e09" Title="Character Structure" Url="html/87c3d45e-d06b-ac73-4091-34318a9ec7f6.htm">
+        <HelpTOCNode Id="1efda86f-866d-4b5a-b5b1-f661ebb95425" Title="Character Methods" Url="html/1978be37-ee37-8d82-6baf-d6d5c2b3dbda.htm">
           <HelpTOCNode Title="Load Method " Url="html/f855b342-d409-0f5e-7bd9-15f3e289fee0.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="0393f70f-76da-4cad-b534-b6d023f3ed2e" Title="Character Fields" Url="html/50202c8d-d883-fe02-93a4-4b57b0347067.htm">
+        <HelpTOCNode Id="5c04aecd-f0f0-4554-8f46-2056adeb5010" Title="Character Fields" Url="html/50202c8d-d883-fe02-93a4-4b57b0347067.htm">
           <HelpTOCNode Title="ColorString Field" Url="html/5ba7d877-eddb-6e02-cd76-1b639423bdca.htm" />
           <HelpTOCNode Title="Description Field" Url="html/30e3974c-bd28-7ea1-7ba0-d3a1964e4293.htm" />
           <HelpTOCNode Title="LastLogin Field" Url="html/1c6768e0-0476-2e42-8e2d-6ac29b244c1a.htm" />
@@ -157,73 +164,73 @@
           <HelpTOCNode Title="Name Field" Url="html/633911fa-71df-1607-e8b0-47ee33276386.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="0fbade00-d3cc-4bc9-bd87-306c68c2c886" Title="Settings Class" Url="html/43fed4da-d30a-4d49-19ac-cce994a1f205.htm">
-        <HelpTOCNode Id="d5d732f2-5926-471b-b891-af74efc3608c" Title="Settings Methods" Url="html/754997f5-7463-a396-e5bc-d7c726131d2f.htm">
+      <HelpTOCNode Id="67819823-8191-4ced-a3e2-41828b790c72" Title="Settings Class" Url="html/43fed4da-d30a-4d49-19ac-cce994a1f205.htm">
+        <HelpTOCNode Id="83046768-245f-4041-a4db-deb2f9612d83" Title="Settings Methods" Url="html/754997f5-7463-a396-e5bc-d7c726131d2f.htm">
           <HelpTOCNode Title="InitializeFurcadiaSettings Method " Url="html/26a50595-3b90-3cee-6ad0-24073453f747.htm" />
-          <HelpTOCNode Id="2bc3c829-b344-4049-8194-f40836c1266a" Title="Load Method " Url="html/d6275c7f-ebda-eb0c-1ca4-db241c1ec66d.htm">
+          <HelpTOCNode Id="5a231cb2-15b2-4844-9c6d-ea10c6669dc8" Title="Load Method " Url="html/d6275c7f-ebda-eb0c-1ca4-db241c1ec66d.htm">
             <HelpTOCNode Title="Load(T) Method (String)" Url="html/2b11c7b7-cc4e-2cd9-6ba4-fc9aed19e4da.htm" />
             <HelpTOCNode Title="Load Method (String)" Url="html/45d6d9c8-de5e-e309-0b40-9ebd0e3a7844.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="RestoreFurcadiaSettings Method " Url="html/eb79fbfd-be46-11a4-adee-af2a1a1f91dc.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="047eb8c3-9d58-4775-9f53-9a7c19031196" Title="Util Class" Url="html/edc6fdba-0013-53b3-e73d-9688140a0302.htm">
-        <HelpTOCNode Id="d6ed4397-b4f7-47dc-b31d-60408d9e579b" Title="Util Properties" Url="html/a8b0d999-c1e0-2e73-286a-8348dfdd45d6.htm">
+      <HelpTOCNode Id="f40ee8ab-883b-493f-830b-a8cf60cd2183" Title="Util Class" Url="html/edc6fdba-0013-53b3-e73d-9688140a0302.htm">
+        <HelpTOCNode Id="c30ec113-804c-4729-9f6d-2a75a55cf6d1" Title="Util Properties" Url="html/a8b0d999-c1e0-2e73-286a-8348dfdd45d6.htm">
           <HelpTOCNode Title="Host Property " Url="html/477716b9-faee-a9f0-07fa-9d39d8e7a05c.htm" />
           <HelpTOCNode Title="Ip Property " Url="html/39ecc77c-5783-9d83-fc67-e1a5154a4148.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f380021c-f2b2-4f05-8b67-72fcf5eb562b" Title="Util Methods" Url="html/75b0e91f-3a9b-48e6-6a71-713fbde95291.htm">
+        <HelpTOCNode Id="8494ff63-c43a-40d6-8e21-6e8fef13953f" Title="Util Methods" Url="html/75b0e91f-3a9b-48e6-6a71-713fbde95291.htm">
           <HelpTOCNode Title="Base220ToUInt Method " Url="html/aa5acadc-2ab6-9bc2-5289-9532133afc94.htm" />
           <HelpTOCNode Title="FurcadiaShortName Method " Url="html/e288cf0e-ee6d-7f3f-cc90-ade0378b85db.htm" />
           <HelpTOCNode Title="UIntToBase220 Method " Url="html/167f729b-fe52-60a5-8db7-e541470cab14.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="cd83ca19-5ecb-45cf-9233-90b283b0e11a" Title="Furcadia.Drawing Namespaces" Url="html/d700c061-1285-1ee9-6ecf-0a90a23864db.htm">
-      <HelpTOCNode Id="41ce5558-8eb4-49c7-af53-47a267a0a9f3" Title="Furcadia.Drawing" Url="html/6fb92c71-b16f-a247-96d0-e2eb976a67e9.htm">
-        <HelpTOCNode Id="cb7fbc21-4ca8-406a-ab17-5ac795f5948e" Title="FurrePosition Class" Url="html/61951c48-37fc-2991-7126-d828f5b78d7c.htm">
-          <HelpTOCNode Id="81e5880a-53fb-4835-b32a-650525ea41ba" Title="FurrePosition Constructor " Url="html/ef9b83ea-ac23-2034-6330-a4970895b245.htm">
+    <HelpTOCNode Id="80e09afb-d64d-478f-a5b7-242c00cc0e5b" Title="Furcadia.Drawing Namespaces" Url="html/d700c061-1285-1ee9-6ecf-0a90a23864db.htm">
+      <HelpTOCNode Id="10daf1ab-c3d9-439c-962e-933e148d2afa" Title="Furcadia.Drawing" Url="html/6fb92c71-b16f-a247-96d0-e2eb976a67e9.htm">
+        <HelpTOCNode Id="8dff8ad7-5b7f-4b74-b4ea-739f5c9374ed" Title="FurrePosition Class" Url="html/61951c48-37fc-2991-7126-d828f5b78d7c.htm">
+          <HelpTOCNode Id="e49d6d03-6e8c-4389-b677-46f8a80212f1" Title="FurrePosition Constructor " Url="html/ef9b83ea-ac23-2034-6330-a4970895b245.htm">
             <HelpTOCNode Title="FurrePosition Constructor " Url="html/10aae737-4a60-0955-6d63-ad627ae5cd6c.htm" />
             <HelpTOCNode Title="FurrePosition Constructor (FurrePosition)" Url="html/158a32f6-97d4-dcf1-05e3-e086562c0460.htm" />
             <HelpTOCNode Title="FurrePosition Constructor (Int32, Int32)" Url="html/b9d1c5dc-8a5a-a85a-cc11-ca0da6aadc1c.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="966cbde7-31ff-40f1-b08d-ec0abb64c7a4" Title="FurrePosition Properties" Url="html/b230a21d-b490-f9b3-0544-a6cb4503519f.htm">
+          <HelpTOCNode Id="d307a9c1-36e0-417b-a646-106f665ed3f8" Title="FurrePosition Properties" Url="html/b230a21d-b490-f9b3-0544-a6cb4503519f.htm">
             <HelpTOCNode Title="x Property " Url="html/8c720585-8171-b304-86ac-35e6451bb307.htm" />
             <HelpTOCNode Title="y Property " Url="html/878516a3-47e1-c326-d33d-00ad9026bfdf.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="04e6e3c5-f115-4b5b-abc9-e43763946769" Title="FurrePosition Methods" Url="html/0e2168be-2fff-4d08-8fc0-d6f796f39ea8.htm">
+          <HelpTOCNode Id="c8e3700d-1d22-4831-9a14-b29e5ec3c7cf" Title="FurrePosition Methods" Url="html/0e2168be-2fff-4d08-8fc0-d6f796f39ea8.htm">
             <HelpTOCNode Title="Equals Method " Url="html/150770f7-b066-d6d9-d84c-24d5d67f8026.htm" />
             <HelpTOCNode Title="GetHashCode Method " Url="html/c587c5bf-951c-939c-1a5d-e5dfee54d00d.htm" />
             <HelpTOCNode Title="ToString Method " Url="html/8df0b826-712f-066c-3ce6-515ea2a6387e.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="f586d037-2f30-4c3a-bad7-5154430d79bc" Title="Helper Class" Url="html/96ff16f6-f92e-73eb-a417-40dc8026e191.htm">
-          <HelpTOCNode Id="c2e8900b-80e8-4e95-8aa5-90370e9a38f2" Title="Helper Methods" Url="html/a433eaf2-6f37-e9c6-9d8b-d1f031ec3aa8.htm">
+        <HelpTOCNode Id="bf4c8b3e-fa4f-4748-ba18-b38fdb5b0f89" Title="Helper Class" Url="html/96ff16f6-f92e-73eb-a417-40dc8026e191.htm">
+          <HelpTOCNode Id="fd0336d5-1b3b-4387-ac2e-0ef374a4893c" Title="Helper Methods" Url="html/a433eaf2-6f37-e9c6-9d8b-d1f031ec3aa8.htm">
             <HelpTOCNode Title="CharToDescTag Method " Url="html/940bf104-cc09-1441-7967-980f3f660e6f.htm" />
             <HelpTOCNode Title="ToBitmapArray Method " Url="html/8acaff0e-46a0-e35b-7fdf-72b7c123d544.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="b0f3ba89-da18-4001-bc8e-c533e892e9dc" Title="ViewArea Class" Url="html/f1d39c39-df8b-b38d-3c92-0df267ab5a24.htm">
+        <HelpTOCNode Id="e71a7ea9-3db6-4339-b90a-cffdfd3526b6" Title="ViewArea Class" Url="html/f1d39c39-df8b-b38d-3c92-0df267ab5a24.htm">
           <HelpTOCNode Title="ViewArea Constructor " Url="html/5341a639-e022-d7f2-d203-67517d97a2f3.htm" />
           <HelpTOCNode Title="ViewArea Methods" Url="html/dfc79a29-7a22-7d36-5e65-c56f97fe5953.htm" />
-          <HelpTOCNode Id="c11f0ee8-225b-41e9-bf00-3e7e6982ee18" Title="ViewArea Fields" Url="html/08f18a70-74fc-aa32-9850-a853c5f92e21.htm">
+          <HelpTOCNode Id="06fe3f1e-572c-4baf-912a-20c1638e4f66" Title="ViewArea Fields" Url="html/08f18a70-74fc-aa32-9850-a853c5f92e21.htm">
             <HelpTOCNode Title="height Field" Url="html/99d785fc-0d5e-2fe8-641a-922f4c774a30.htm" />
             <HelpTOCNode Title="length Field" Url="html/003960ba-bc5e-acd0-04b2-0634c50250c0.htm" />
             <HelpTOCNode Title="X Field" Url="html/11f40301-7aa5-301a-eb45-03ed56517951.htm" />
             <HelpTOCNode Title="Y Field" Url="html/47c3fdce-53c2-16a2-ff72-1066c1e5cba3.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="1927baca-a06d-4ac3-bd93-c72356159297" Title="VisibleArea Class" Url="html/d9e36ce8-e593-57c7-dfad-d687f3604b88.htm">
-          <HelpTOCNode Id="5d942e4d-fe6d-4ab4-b565-587bf6c95f10" Title="VisibleArea Methods" Url="html/e6701455-ec7a-9a35-ae4a-6475dab6c480.htm">
+        <HelpTOCNode Id="654210ce-7fdf-4e5c-8619-0d3ed155f211" Title="VisibleArea Class" Url="html/d9e36ce8-e593-57c7-dfad-d687f3604b88.htm">
+          <HelpTOCNode Id="6e5d7f6e-3b70-4b0c-badb-17a26df55108" Title="VisibleArea Methods" Url="html/e6701455-ec7a-9a35-ae4a-6475dab6c480.htm">
             <HelpTOCNode Title="getTargetRectFromCenterCoord Method " Url="html/d33c840a-a454-a781-3530-1d2658dcb98c.htm" />
             <HelpTOCNode Title="IsOdd Method " Url="html/800d08a7-c1c3-8721-9c9f-334879b00b7e.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="1410753f-ec20-4f97-bfb0-0bcefa1e0a3f" Title="Furcadia.Drawing.Graphics" Url="html/c579aba4-3392-3ebb-a163-21111460028b.htm">
-        <HelpTOCNode Id="7ccc78d8-b5c3-4cdb-abdc-a41bba1f556d" Title="Frame Structure" Url="html/44987bc5-e03e-5ec7-fe9b-1528bcc5547d.htm">
+      <HelpTOCNode Id="e47d6a5c-ce8b-4a9c-85b7-bad68abe764a" Title="Furcadia.Drawing.Graphics" Url="html/c579aba4-3392-3ebb-a163-21111460028b.htm">
+        <HelpTOCNode Id="a8e2eda7-4dd0-4ed2-a923-fc1348fae819" Title="Frame Structure" Url="html/44987bc5-e03e-5ec7-fe9b-1528bcc5547d.htm">
           <HelpTOCNode Title="Frame Methods" Url="html/cc52ea77-239a-5834-4a13-44101ca98964.htm" />
-          <HelpTOCNode Id="9b0b287f-c405-4328-a3ee-47e55e206ed2" Title="Frame Fields" Url="html/a1db6bbf-bc48-1e38-4fba-f7a2c8c54e5b.htm">
+          <HelpTOCNode Id="6847f2d2-aaf4-4fc0-a1e8-3eda2097b231" Title="Frame Fields" Url="html/a1db6bbf-bc48-1e38-4fba-f7a2c8c54e5b.htm">
             <HelpTOCNode Title="FrameFormat Field" Url="html/2718eb68-aa0c-298e-7b9a-7d47844e4693.htm" />
             <HelpTOCNode Title="FramePos Field" Url="html/6e0e7f97-b2d7-ca88-f28f-c0c48dce4158.htm" />
             <HelpTOCNode Title="FurrePos Field" Url="html/b6d28bf9-efab-a40e-ecbe-7f5aa958f2a6.htm" />
@@ -234,25 +241,25 @@
           </HelpTOCNode>
         </HelpTOCNode>
         <HelpTOCNode Title="Frame.FrameFormats Enumeration" Url="html/7b4fb64f-79d6-f950-1f05-93fc0dbeb343.htm" />
-        <HelpTOCNode Id="294a466d-e396-4314-9803-1a8ff95bfd36" Title="Frame.Pos Structure" Url="html/b605f140-2aab-301b-384a-d8ca97ba5f0d.htm">
+        <HelpTOCNode Id="5963ab78-7d5f-4b84-9028-3aa56d3ad4ca" Title="Frame.Pos Structure" Url="html/b605f140-2aab-301b-384a-d8ca97ba5f0d.htm">
           <HelpTOCNode Title="Pos Methods" Url="html/1819d830-70b2-0698-d311-3c0c0873fc84.htm" />
-          <HelpTOCNode Id="87c4fcbb-50d1-416d-ab0e-c8e317ee6172" Title="Pos Fields" Url="html/1dc6e765-ba68-00ca-b463-7a261aa71488.htm">
+          <HelpTOCNode Id="b54a97b4-1cf8-408b-872f-10e79d57b472" Title="Pos Fields" Url="html/1dc6e765-ba68-00ca-b463-7a261aa71488.htm">
             <HelpTOCNode Title="X Field" Url="html/f90968ac-08e6-601b-fad6-2c51de290092.htm" />
             <HelpTOCNode Title="Y Field" Url="html/bfeae1c7-12de-3b7d-77f0-b0127b784619.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="9389c9f1-1db0-40ed-bf3a-b4dccb966b9c" Title="FurcadiaPaletteException Class" Url="html/4634769d-70b3-2093-6cc5-fee356f40b89.htm">
+        <HelpTOCNode Id="7730c62c-41a4-4589-bc23-80c5c816e903" Title="FurcadiaPaletteException Class" Url="html/4634769d-70b3-2093-6cc5-fee356f40b89.htm">
           <HelpTOCNode Title="FurcadiaPaletteException Constructor " Url="html/b19f646e-82dd-0830-127e-4a186bf0be39.htm" />
           <HelpTOCNode Title="FurcadiaPaletteException Properties" Url="html/0307565a-5c37-6ae9-d77b-af2f115694ea.htm" />
           <HelpTOCNode Title="FurcadiaPaletteException Methods" Url="html/c6d2b1ff-0c55-6e8f-af9b-c7547752f765.htm" />
           <HelpTOCNode Title="FurcadiaPaletteException Events" Url="html/be2f9900-1160-eb0d-1421-b57e1266eb94.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="51a7d34a-f245-460a-bad1-571c0a2f3ae2" Title="FurcadiaShapes Class" Url="html/bbc6f62d-dcfd-b843-b04c-81c33bc41e9c.htm">
+        <HelpTOCNode Id="5b7a55aa-7d2b-4f56-8b54-ce111125f566" Title="FurcadiaShapes Class" Url="html/bbc6f62d-dcfd-b843-b04c-81c33bc41e9c.htm">
           <HelpTOCNode Title="FurcadiaShapes Constructor " Url="html/e5978c9c-49b9-9e5c-6362-61829d7c7843.htm" />
-          <HelpTOCNode Id="c74b6b87-5b57-45cd-ae74-8853d94a6fa5" Title="FurcadiaShapes Methods" Url="html/5c26c17a-36ba-13cf-3d3c-8f9a57047731.htm">
+          <HelpTOCNode Id="7acd4a9a-950a-4f4e-8d5f-a01a78be3ac0" Title="FurcadiaShapes Methods" Url="html/5c26c17a-36ba-13cf-3d3c-8f9a57047731.htm">
             <HelpTOCNode Title="ToBitmap Method " Url="html/dce6f203-a897-527d-884a-31b53560eff3.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="d5a41410-7665-4cf9-ab12-422648f2ae76" Title="FurcadiaShapes Fields" Url="html/572ac53f-66c3-8486-8479-85a49f579e9c.htm">
+          <HelpTOCNode Id="94909b21-d2de-4b79-bd3a-b0fd7ddab0ae" Title="FurcadiaShapes Fields" Url="html/572ac53f-66c3-8486-8479-85a49f579e9c.htm">
             <HelpTOCNode Title="Encryption Field" Url="html/58e6401a-d5c2-f13f-06cc-2b1bdb3abeb2.htm" />
             <HelpTOCNode Title="Generator Field" Url="html/7c137a6e-2bb1-e411-7095-0859bbcbb85b.htm" />
             <HelpTOCNode Title="Header Field" Url="html/af8eba7b-c85e-b245-1ec0-8df93bd35493.htm" />
@@ -263,31 +270,31 @@
             <HelpTOCNode Title="Version Field" Url="html/a98e0309-4707-b5b0-b81a-7aa4593451f0.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="e46a7e82-a625-4fb7-9f84-410035c70c4f" Title="FurcadiaShapesException Class" Url="html/f0eced31-7e9c-5d9c-f445-8d2eeb4046fa.htm">
+        <HelpTOCNode Id="84b5a5de-f2fe-4d24-8ff9-6a604f59c129" Title="FurcadiaShapesException Class" Url="html/f0eced31-7e9c-5d9c-f445-8d2eeb4046fa.htm">
           <HelpTOCNode Title="FurcadiaShapesException Constructor " Url="html/93445c25-7d09-311b-22b7-5860907195eb.htm" />
           <HelpTOCNode Title="FurcadiaShapesException Properties" Url="html/e8b0b119-2ee9-b3b3-426d-9be07478d9d8.htm" />
           <HelpTOCNode Title="FurcadiaShapesException Methods" Url="html/c641716f-11c5-1cee-e44f-5985087296d9.htm" />
           <HelpTOCNode Title="FurcadiaShapesException Events" Url="html/9e561d33-1907-825c-b5f5-358fe8d1869e.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="378c8e3b-f436-4e75-9c62-6ae962c62a6a" Title="Palette Class" Url="html/fe68dc17-600c-7e0f-8af7-3a027f574767.htm">
-          <HelpTOCNode Id="b5616830-b506-415c-91c6-052d73936327" Title="Palette Constructor " Url="html/c7a7b85a-c45c-98c0-6853-bde6bc5c6580.htm">
+        <HelpTOCNode Id="21d8c491-bf7f-4235-a788-f30c67099a92" Title="Palette Class" Url="html/fe68dc17-600c-7e0f-8af7-3a027f574767.htm">
+          <HelpTOCNode Id="ebefab9b-b18f-4ca9-98ec-600b1a25d1a3" Title="Palette Constructor " Url="html/c7a7b85a-c45c-98c0-6853-bde6bc5c6580.htm">
             <HelpTOCNode Title="Palette Constructor (String)" Url="html/df98157d-f783-40b5-b507-d95c106e5bfc.htm" />
             <HelpTOCNode Title="Palette Constructor (String, String)" Url="html/c87a6ffd-e38b-a35e-9820-f94dd55f3574.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="cf161a67-6dd2-423e-b7c9-73e8bfd499a9" Title="Palette Properties" Url="html/b21fa166-8d23-98b3-0ebe-2a3cf7b73dbb.htm">
+          <HelpTOCNode Id="fb2aba06-f605-4137-8581-4d7b55f1fbfc" Title="Palette Properties" Url="html/b21fa166-8d23-98b3-0ebe-2a3cf7b73dbb.htm">
             <HelpTOCNode Title="Default Property " Url="html/084fc517-5846-364c-62ce-c4bcb1100f48.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="Palette Methods" Url="html/2f55ad88-2503-5e3b-8a1a-0d53fba15e06.htm" />
-          <HelpTOCNode Id="1ca9a400-e544-4a29-b440-0eb325a28733" Title="Palette Fields" Url="html/7e1a5ab0-1cf5-2f12-cd9a-dc8fd082f3f3.htm">
+          <HelpTOCNode Id="5794bad2-c7d7-417b-b804-365b19e40cd0" Title="Palette Fields" Url="html/7e1a5ab0-1cf5-2f12-cd9a-dc8fd082f3f3.htm">
             <HelpTOCNode Title="Colors Field" Url="html/b4f54be2-68c5-cd84-ce9d-d12cd95a412e.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="4f4696dd-e8d1-4a17-b077-ae3b7b489c91" Title="Remapper Class" Url="html/6f8b7b15-048c-2337-1d57-f75f5fdadd5a.htm">
+        <HelpTOCNode Id="9e955ace-102d-446e-baad-5d53effb60df" Title="Remapper Class" Url="html/6f8b7b15-048c-2337-1d57-f75f5fdadd5a.htm">
           <HelpTOCNode Title="Remapper Constructor " Url="html/50ea5a39-b527-013b-7e88-76312044fbfc.htm" />
-          <HelpTOCNode Id="c518123d-2189-4977-a385-8ca2d29b88ae" Title="Remapper Methods" Url="html/759e7993-57d3-b383-f7df-8940da23666f.htm">
+          <HelpTOCNode Id="740f077b-4130-4546-8fc5-f87f35f06077" Title="Remapper Methods" Url="html/759e7993-57d3-b383-f7df-8940da23666f.htm">
             <HelpTOCNode Title="Remap Method " Url="html/9a0b0c5a-0827-4222-b966-2948f76be29f.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="0d35d8a5-2ae7-4c80-af26-3d2e9a3e268e" Title="Remapper Fields" Url="html/6617ff1e-a845-6c9e-4c9b-893fc038b961.htm">
+          <HelpTOCNode Id="be4d3fd8-d647-42c2-a61d-22af6b16c006" Title="Remapper Fields" Url="html/6617ff1e-a845-6c9e-4c9b-893fc038b961.htm">
             <HelpTOCNode Title="BadgeRemap Field" Url="html/67cbd4d5-c8b5-7343-781c-3c5be6437283.htm" />
             <HelpTOCNode Title="BootRemap Field" Url="html/412d7b9e-6c45-5190-7eef-04d7d2a8572c.htm" />
             <HelpTOCNode Title="BracersRemap Field" Url="html/88f7672f-262f-74c9-a4ee-00bd332cea47.htm" />
@@ -302,9 +309,9 @@
             <HelpTOCNode Title="VestRemap Field" Url="html/b76f076e-0250-3088-1b82-2b81c3b366ef.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="77e9065a-b144-433d-abd3-53e502c6be60" Title="Shape Structure" Url="html/1acd7b06-fc6d-9b05-3af6-9657a8be0d81.htm">
+        <HelpTOCNode Id="c73233fe-de1b-4e7a-b732-b534ca1f062c" Title="Shape Structure" Url="html/1acd7b06-fc6d-9b05-3af6-9657a8be0d81.htm">
           <HelpTOCNode Title="Shape Methods" Url="html/eb39a521-6d58-6e0b-2393-2c1a8e577da9.htm" />
-          <HelpTOCNode Id="d5df0632-3aeb-4ced-b0b1-37a0a5466305" Title="Shape Fields" Url="html/76ffb6a7-469a-80c9-c2fb-22be05f2447c.htm">
+          <HelpTOCNode Id="1248a507-7e7d-4569-8801-7394ff709677" Title="Shape Fields" Url="html/76ffb6a7-469a-80c9-c2fb-22be05f2447c.htm">
             <HelpTOCNode Title="Flags Field" Url="html/bb06b6ae-0562-6c39-c88a-c27721f72e52.htm" />
             <HelpTOCNode Title="Frames Field" Url="html/1dee7311-23d2-927a-b304-603ab4568342.htm" />
             <HelpTOCNode Title="KitterSpeak Field" Url="html/57e1813b-f971-5aec-c66c-22514db9daca.htm" />
@@ -314,9 +321,9 @@
           </HelpTOCNode>
         </HelpTOCNode>
         <HelpTOCNode Title="Shape.ShapeFlags Enumeration" Url="html/489c31eb-4f70-1fe4-138b-1c8f886eda49.htm" />
-        <HelpTOCNode Id="baff91d5-c9bb-4f57-8a36-5bef0510d075" Title="StepBlock Structure" Url="html/42c83d8a-45ba-6fa4-6c32-bc92110b3a18.htm">
+        <HelpTOCNode Id="cc78ed76-acf8-4353-a402-4b7459b5cb38" Title="StepBlock Structure" Url="html/42c83d8a-45ba-6fa4-6c32-bc92110b3a18.htm">
           <HelpTOCNode Title="StepBlock Methods" Url="html/ba539e4a-348d-4458-ccc9-b785a94896a5.htm" />
-          <HelpTOCNode Id="c6826378-c8f8-4db6-93eb-0d3b10e00989" Title="StepBlock Fields" Url="html/e5d440c5-4a91-b121-8947-7b7b57bb350c.htm">
+          <HelpTOCNode Id="d411efb7-d430-48d6-be0f-c3a82053265e" Title="StepBlock Fields" Url="html/e5d440c5-4a91-b121-8947-7b7b57bb350c.htm">
             <HelpTOCNode Title="CounterMax Field" Url="html/f2fa7093-610e-32fb-9934-c989752803a4.htm" />
             <HelpTOCNode Title="StepType Field" Url="html/1d2ecc15-4a8a-e4c4-8fdc-85c05d0f8c81.htm" />
             <HelpTOCNode Title="Value Field" Url="html/dca1d5ab-58d4-1675-8370-391e79dae03d.htm" />
@@ -325,10 +332,10 @@
         <HelpTOCNode Title="StepBlock.StepBlockStepTypes Enumeration" Url="html/21a656b0-f5e4-54cc-64fe-617018ad5943.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="39095b60-15cd-4aaa-b5bb-aa0da59eaab1" Title="Furcadia.FurcMap" Url="html/5d4b445a-4f05-6c77-f319-acf39348399e.htm">
-      <HelpTOCNode Id="79998559-2283-41c2-8dd1-9398e517e11c" Title="Map Class" Url="html/8476bb33-f467-0840-6c90-f2558f00fb19.htm">
+    <HelpTOCNode Id="de5a63cf-3008-4226-9895-8dd9fee08cbe" Title="Furcadia.FurcMap" Url="html/5d4b445a-4f05-6c77-f319-acf39348399e.htm">
+      <HelpTOCNode Id="1649b5cd-5430-47a5-b64f-f54c14b80dff" Title="Map Class" Url="html/8476bb33-f467-0840-6c90-f2558f00fb19.htm">
         <HelpTOCNode Title="Map Constructor " Url="html/dd028ea5-8959-e7c9-5781-063a3c9a7ad9.htm" />
-        <HelpTOCNode Id="39560555-80aa-4f8e-a9b9-3d062c9aa9df" Title="Map Properties" Url="html/7bdffd74-a4a7-0a90-4c00-46ee45bcad09.htm">
+        <HelpTOCNode Id="a0349fcc-90a4-4c01-b893-0db773b42c9d" Title="Map Properties" Url="html/7bdffd74-a4a7-0a90-4c00-46ee45bcad09.htm">
           <HelpTOCNode Title="AllowDreamURL Property " Url="html/0abd8662-e174-c237-aba1-36134f509f6d.htm" />
           <HelpTOCNode Title="AllowJoinSummon Property " Url="html/a4c3c1fd-6e4d-f2b7-3911-7b9e910f3154.htm" />
           <HelpTOCNode Title="AllowLargeDreamSize Property " Url="html/5d004b2c-30a2-f66f-73d3-903df3951336.htm" />
@@ -349,7 +356,7 @@
           <HelpTOCNode Title="UseSwearFilter Property " Url="html/bd413c5d-87dc-456d-3d77-0f496ae8f8f0.htm" />
           <HelpTOCNode Title="Width Property " Url="html/93aa78bc-618e-0a0a-2057-b5a3ca2fe01f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="83e1ea18-1f33-4987-b004-f52f6d94c04f" Title="Map Methods" Url="html/030c2870-71b8-efa4-4124-0055aa6eada2.htm">
+        <HelpTOCNode Id="7b270df9-0ea1-4eeb-ab23-a9e706dec632" Title="Map Methods" Url="html/030c2870-71b8-efa4-4124-0055aa6eada2.htm">
           <HelpTOCNode Title="getEffectAt Method " Url="html/73a051a7-be78-7b94-e652-5c5621bc0e83.htm" />
           <HelpTOCNode Title="getFloorAt Method " Url="html/c1f78a1b-fe41-33f3-8aaa-50275b65f5df.htm" />
           <HelpTOCNode Title="getMapPos Method " Url="html/893b9630-cfeb-80bb-f56c-dd6e36e3cba9.htm" />
@@ -366,13 +373,13 @@
           <HelpTOCNode Title="setWallAt Method " Url="html/46950f6a-c5d6-7ae1-09d7-a16e1eb9c077.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="d764398b-924b-4392-8d0a-78be86f0012a" Title="MapPosition Class" Url="html/ffb58b90-3bb0-685f-776d-295bd4a34f0a.htm">
-        <HelpTOCNode Id="550cfb64-9689-4ed4-9a13-4dec4f3e116b" Title="MapPosition Constructor " Url="html/7a318ee7-effc-13b5-d16e-866fe5e638c2.htm">
+      <HelpTOCNode Id="8c6fd9aa-0d5a-4bc2-8880-cc97bbac6831" Title="MapPosition Class" Url="html/ffb58b90-3bb0-685f-776d-295bd4a34f0a.htm">
+        <HelpTOCNode Id="1771751b-a646-4ade-8f07-2d60365fe9fc" Title="MapPosition Constructor " Url="html/7a318ee7-effc-13b5-d16e-866fe5e638c2.htm">
           <HelpTOCNode Title="MapPosition Constructor (Int32, Int32)" Url="html/8955623d-e079-4343-7488-f103b965682d.htm" />
           <HelpTOCNode Title="MapPosition Constructor (Int32, Int32, Map)" Url="html/70989923-5429-6aa4-4d6c-02a0be9682f8.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="MapPosition Methods" Url="html/fae92b89-7f7c-18fb-8e88-ae99025c3973.htm" />
-        <HelpTOCNode Id="6d873e8b-c816-48fd-b3c4-17ce4a07314c" Title="MapPosition Fields" Url="html/df7a9d31-9107-d074-5c10-36acfbeedea6.htm">
+        <HelpTOCNode Id="8be40af6-b8cb-4683-8f6e-248125d97d96" Title="MapPosition Fields" Url="html/df7a9d31-9107-d074-5c10-36acfbeedea6.htm">
           <HelpTOCNode Title="effectNumber Field" Url="html/68c4552c-fd37-de3a-47e7-36d439e51298.htm" />
           <HelpTOCNode Title="floorNumber Field" Url="html/5114c568-4d57-fbfd-8a7e-a491fe6c4dee.htm" />
           <HelpTOCNode Title="objectNumber Field" Url="html/faa01fde-e5ac-654f-e820-793991aa5138.htm" />
@@ -382,8 +389,8 @@
           <HelpTOCNode Title="y Field" Url="html/9a4cb014-bcb2-a156-8166-97b123dbbabf.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="11718364-86a1-48ee-8a22-b7f8abacec52" Title="MapRating Class" Url="html/f6696b92-5bb2-d08c-5f2b-4e96e8185e87.htm">
-        <HelpTOCNode Id="15792718-78a4-47c7-ba93-e0c3ea64bb67" Title="MapRating Fields" Url="html/0c834b76-9e9c-4fa8-953d-7e4f3f0a1b63.htm">
+      <HelpTOCNode Id="29c78c5d-381b-43d0-a8f4-c2ad10287096" Title="MapRating Class" Url="html/f6696b92-5bb2-d08c-5f2b-4e96e8185e87.htm">
+        <HelpTOCNode Id="aabf6d63-d01b-4c7d-b3ac-7bf2955ef9a5" Title="MapRating Fields" Url="html/0c834b76-9e9c-4fa8-953d-7e4f3f0a1b63.htm">
           <HelpTOCNode Title="Adult Field" Url="html/2e2e970a-61da-1d40-1cf4-66cbbfe0ba38.htm" />
           <HelpTOCNode Title="AdultOnly Field" Url="html/2b5fa266-f9d1-9ae4-93e9-b9c69810046f.htm" />
           <HelpTOCNode Title="AOClean Field" Url="html/a0ccf48d-9e08-2ee6-ad4d-a685c5b344e5.htm" />
@@ -392,13 +399,13 @@
           <HelpTOCNode Title="Teen Field" Url="html/93811f50-8e43-e7a2-d0f4-27209f5075ac.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="d9c1038f-499d-49d6-a3cf-7259b6ccddee" Title="MapTile Class" Url="html/c09f26a7-3548-ce88-741e-b6055c6a4bdf.htm">
-        <HelpTOCNode Id="677bd1c7-5b88-4f11-b683-b24f847ecbad" Title="MapTile Constructor " Url="html/7e38bea8-e8f6-1a1c-f749-d54a00de47ed.htm">
+      <HelpTOCNode Id="c48a2f19-76fe-489f-8a1d-f41d59f210f3" Title="MapTile Class" Url="html/c09f26a7-3548-ce88-741e-b6055c6a4bdf.htm">
+        <HelpTOCNode Id="5f663b04-52c6-442b-bb86-8b364d9d0c9c" Title="MapTile Constructor " Url="html/7e38bea8-e8f6-1a1c-f749-d54a00de47ed.htm">
           <HelpTOCNode Title="MapTile Constructor (Int32, Int32)" Url="html/7c38abaa-43c6-0e86-0619-1d34f0efc42c.htm" />
           <HelpTOCNode Title="MapTile Constructor (Int32, Int32, Map)" Url="html/473160eb-a154-f4de-ebda-fc4e10b0a94d.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="MapTile Methods" Url="html/38285674-d355-6f4e-a423-8dc4e9f79685.htm" />
-        <HelpTOCNode Id="2fd66391-eaef-46eb-be4a-38fbf62f36a4" Title="MapTile Fields" Url="html/d30edc4d-ade9-48af-072a-06b399c9d2e7.htm">
+        <HelpTOCNode Id="70838fb8-b815-4e50-bf95-59890563db22" Title="MapTile Fields" Url="html/d30edc4d-ade9-48af-072a-06b399c9d2e7.htm">
           <HelpTOCNode Title="effectNumber Field" Url="html/1068be10-65eb-461b-1cde-6bf9bab90436.htm" />
           <HelpTOCNode Title="floorNumber Field" Url="html/a043745c-cd06-f07a-8187-d6c95a4fba95.htm" />
           <HelpTOCNode Title="objectNumber Field" Url="html/2a63e0d8-c096-e214-10b0-8bb1b94ffc68.htm" />
@@ -410,9 +417,9 @@
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a55f8eee-791c-4421-89d2-d81bd49d17a7" Title="Furcadia.IO" Url="html/ab8992d7-e048-d595-c026-e3f4bab6d0fc.htm">
-      <HelpTOCNode Id="be21c7f4-71c4-4d9a-81e4-b5d4eb6c18ab" Title="FurcadiaIOException Class" Url="html/c7b5fcc5-f76b-1a89-8169-82b5a6e6bb71.htm">
-        <HelpTOCNode Id="75c5e5eb-ceb0-4b7f-aae0-d3b95a9cd2f0" Title="FurcadiaIOException Constructor " Url="html/85333c1a-1a4e-1ffe-6fde-96a6115772ea.htm">
+    <HelpTOCNode Id="f2e0fa0c-75fb-4b5b-99ab-6bfde611976f" Title="Furcadia.IO" Url="html/ab8992d7-e048-d595-c026-e3f4bab6d0fc.htm">
+      <HelpTOCNode Id="031ada0a-790c-451f-8b43-ac3fbfd28b20" Title="FurcadiaIOException Class" Url="html/c7b5fcc5-f76b-1a89-8169-82b5a6e6bb71.htm">
+        <HelpTOCNode Id="3f9625b5-d417-4520-bad5-3894e0a83e9d" Title="FurcadiaIOException Constructor " Url="html/85333c1a-1a4e-1ffe-6fde-96a6115772ea.htm">
           <HelpTOCNode Title="FurcadiaIOException Constructor " Url="html/0e6747e3-062e-310e-d29a-5f08935ba1e8.htm" />
           <HelpTOCNode Title="FurcadiaIOException Constructor (String)" Url="html/4e5cf731-ef6f-31c9-28b0-94c1c59d6445.htm" />
           <HelpTOCNode Title="FurcadiaIOException Constructor (SerializationInfo, StreamingContext)" Url="html/75dee3c1-75cc-8237-bd05-c0d277dd341b.htm" />
@@ -422,8 +429,8 @@
         <HelpTOCNode Title="FurcadiaIOException Methods" Url="html/3d3ebb4d-a687-f33d-0467-a7f853c4d76f.htm" />
         <HelpTOCNode Title="FurcadiaIOException Events" Url="html/2fa5cdb5-8f13-8365-e4c5-86e955801f6b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="924b0019-e2ce-4719-a04c-26d0f1ab6765" Title="FurcadiaNotFoundException Class" Url="html/7f6cd266-87f8-a1ba-38c8-579326ff73a9.htm">
-        <HelpTOCNode Id="65bd1d96-74d4-4670-ad10-c8b470ee6b52" Title="FurcadiaNotFoundException Constructor " Url="html/e0dcc9ba-b480-a730-2b52-684ee968a5cf.htm">
+      <HelpTOCNode Id="ffdba61d-103a-43f3-a1b4-9e85fef27a0e" Title="FurcadiaNotFoundException Class" Url="html/7f6cd266-87f8-a1ba-38c8-579326ff73a9.htm">
+        <HelpTOCNode Id="635e4b5e-3edc-44cc-9e1d-f578cc96150e" Title="FurcadiaNotFoundException Constructor " Url="html/e0dcc9ba-b480-a730-2b52-684ee968a5cf.htm">
           <HelpTOCNode Title="FurcadiaNotFoundException Constructor " Url="html/64d7c98a-7fab-39bb-c336-ee750cc7d04e.htm" />
           <HelpTOCNode Title="FurcadiaNotFoundException Constructor (String)" Url="html/7a270311-9e53-6b01-1841-21adda302136.htm" />
           <HelpTOCNode Title="FurcadiaNotFoundException Constructor (SerializationInfo, StreamingContext)" Url="html/3b8438ea-e72c-f0c1-600a-b08542bc6bb6.htm" />
@@ -433,42 +440,42 @@
         <HelpTOCNode Title="FurcadiaNotFoundException Methods" Url="html/9c4bbc79-7541-85a8-6a57-feaa8cdf13d3.htm" />
         <HelpTOCNode Title="FurcadiaNotFoundException Events" Url="html/d3734492-afad-072f-8f05-198d9cf62991.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a213c7b4-b8d4-4ece-8871-1056b9d1f8bc" Title="FurcIni Class" Url="html/348239af-fd7b-d514-73ea-4f1662fa9e0a.htm">
+      <HelpTOCNode Id="24ec060e-6d10-4249-9da6-0c680f2b1d55" Title="FurcIni Class" Url="html/348239af-fd7b-d514-73ea-4f1662fa9e0a.htm">
         <HelpTOCNode Title="FurcIni Constructor " Url="html/d557519c-f38b-75b8-046c-20c51e7ac8e7.htm" />
-        <HelpTOCNode Id="55b377d7-4d99-4fc0-87a8-90a7687d0d5d" Title="FurcIni Methods" Url="html/eb276c9c-4275-233d-e2fe-945f644fe917.htm">
+        <HelpTOCNode Id="96214662-8fe9-417c-a882-ea4d268fd3b2" Title="FurcIni Methods" Url="html/eb276c9c-4275-233d-e2fe-945f644fe917.htm">
           <HelpTOCNode Title="GetUserSetting Method " Url="html/1b57ce52-71f0-5021-b903-1dca9a02421f.htm" />
           <HelpTOCNode Title="LoadFurcadiaSettings Method " Url="html/39703ffa-6294-059c-e577-3ab3b797f330.htm" />
           <HelpTOCNode Title="SaveFurcadiaSettings Method " Url="html/3cc94df9-972f-1347-e9d9-56a30b075e23.htm" />
           <HelpTOCNode Title="SetUserSetting Method " Url="html/03d17490-fb54-b14d-28d0-dd7aeee82b18.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="f3bd0617-97d3-4d1c-a461-c684873edc38" Title="IniParser Class" Url="html/558c0714-fae8-0f7d-524c-f8182c7d96ee.htm">
+      <HelpTOCNode Id="d362eae6-9c88-47db-b4f9-92fb8ba9f08a" Title="IniParser Class" Url="html/558c0714-fae8-0f7d-524c-f8182c7d96ee.htm">
         <HelpTOCNode Title="IniParser Constructor " Url="html/64ff39fd-c74b-ce62-0123-a7dee68f5903.htm" />
-        <HelpTOCNode Id="a70c61af-9ea7-40a8-a268-a24b67870e1e" Title="IniParser Methods" Url="html/fa134365-07e1-2c26-c918-dee2c27404ff.htm">
-          <HelpTOCNode Id="77cab242-7897-42e4-ac5c-aadd47ae2a34" Title="AddSetting Method " Url="html/3b8ee053-035d-4a26-cba6-39a653c26fef.htm">
+        <HelpTOCNode Id="b33ef7b6-1357-4c9e-95e6-c549bd952ba3" Title="IniParser Methods" Url="html/fa134365-07e1-2c26-c918-dee2c27404ff.htm">
+          <HelpTOCNode Id="4136af54-0b93-445e-8376-302769908942" Title="AddSetting Method " Url="html/3b8ee053-035d-4a26-cba6-39a653c26fef.htm">
             <HelpTOCNode Title="AddSetting Method (String, String)" Url="html/4c9b673d-ef51-1f99-ab1a-5a4efbe961b9.htm" />
             <HelpTOCNode Title="AddSetting Method (String, String, String)" Url="html/e5c1f358-a549-b0f3-eeaf-72369a18f9a5.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="DeleteSetting Method " Url="html/59e1c26f-153c-767c-4cd5-ec2fefeb245d.htm" />
           <HelpTOCNode Title="EnumSection Method " Url="html/4cb8f322-8b46-310d-9329-198b2a732934.htm" />
           <HelpTOCNode Title="GetSetting Method " Url="html/2d2a3aa7-ace7-3959-de19-2c2f5a8b9ed2.htm" />
-          <HelpTOCNode Id="d02554f5-686b-4c52-bfcd-cde795500814" Title="SaveSettings Method " Url="html/a12f1fbb-fe08-8782-73e9-332686cafce6.htm">
+          <HelpTOCNode Id="0501f52c-f0b2-4672-a5ff-f3338a38cdeb" Title="SaveSettings Method " Url="html/a12f1fbb-fe08-8782-73e9-332686cafce6.htm">
             <HelpTOCNode Title="SaveSettings Method " Url="html/b7a9b116-8c02-808a-bd58-96e2d23de63d.htm" />
             <HelpTOCNode Title="SaveSettings Method (String)" Url="html/0d8a763a-9eb5-3526-32c1-bc41862e8986.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="75d70230-6cb3-41f8-bdbd-02dcb16d2214" Title="ParseServer Class" Url="html/01ec4cbf-4644-98bc-2e62-be0b0a335d1a.htm">
+      <HelpTOCNode Id="d7a965d5-3df0-45f6-bd58-142cc54f43ed" Title="ParseServer Class" Url="html/01ec4cbf-4644-98bc-2e62-be0b0a335d1a.htm">
         <HelpTOCNode Title="ParseServer Constructor " Url="html/13d5fdd6-508c-3677-5c24-5c18579dbc30.htm" />
-        <HelpTOCNode Id="78ebbf56-02a8-4cfe-b546-a88d1991614c" Title="ParseServer Methods" Url="html/3ed89ae1-9b40-d6b1-8245-5879ee7cff90.htm">
+        <HelpTOCNode Id="36acf028-8ec1-416a-bed1-6186c9047ea9" Title="ParseServer Methods" Url="html/3ed89ae1-9b40-d6b1-8245-5879ee7cff90.htm">
           <HelpTOCNode Title="ParseServerChannel Method " Url="html/d0888982-b11f-a00f-93c3-6dc4f38cf3f0.htm" />
           <HelpTOCNode Title="ParseServerData Method " Url="html/c959465f-26fe-4c80-6dc4-ab4ce938fb34.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="dfb9d5dc-6b1f-4ad6-9c88-7e09e2bdb88e" Title="ParseServer Events" Url="html/b72cead4-4725-895e-561c-956ed32200a3.htm">
+        <HelpTOCNode Id="f3a072bb-77e5-47fb-8953-0922915ccefe" Title="ParseServer Events" Url="html/b72cead4-4725-895e-561c-956ed32200a3.htm">
           <HelpTOCNode Title="ChannelParsed Event" Url="html/7b432979-b9bb-4498-cb00-640e33182542.htm" />
           <HelpTOCNode Title="DataParsed Event" Url="html/232eccc6-be3c-fd1b-dbcf-4b95fdb8ede1.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="3bdf75a2-ad4e-4cef-87b5-61f3d286ad7a" Title="ParseServer Fields" Url="html/c8f43582-b1fc-5262-3bf6-14dc76866b47.htm">
+        <HelpTOCNode Id="c18d29e6-43d9-4ddb-b7a7-a1f0cfaa2950" Title="ParseServer Fields" Url="html/c8f43582-b1fc-5262-3bf6-14dc76866b47.htm">
           <HelpTOCNode Title="Channel Field" Url="html/09abd0a2-269d-ee61-c690-e01c28c27720.htm" />
           <HelpTOCNode Title="FurcadiaDream Field" Url="html/78368a7b-7008-7b5a-9237-e06b67ee20f0.htm" />
           <HelpTOCNode Title="FurcadiaPlayer Field" Url="html/c0a0f2f5-55e3-c136-1c08-a1adf0c07be3.htm" />
@@ -476,12 +483,12 @@
       </HelpTOCNode>
       <HelpTOCNode Title="ParseServer.ParsedChannelEventHandler Delegate" Url="html/a37e2a7e-578d-bf32-f760-e5c6e396cb72.htm" />
       <HelpTOCNode Title="ParseServer.ParsedDataEventHandler Delegate" Url="html/394c4187-7464-4ab1-80a5-20fa9ecf5946.htm" />
-      <HelpTOCNode Id="0121b114-bb92-4f9a-ae9c-4c4fdafdbdab" Title="Paths Class" Url="html/dd46c4a5-ddf9-0ea0-7653-4cf4cc4ceead.htm">
-        <HelpTOCNode Id="a0c2c77c-d715-498e-8dde-b0f97f36222f" Title="Paths Constructor " Url="html/fa365181-297e-1452-958e-0e9da82184ed.htm">
+      <HelpTOCNode Id="5136e073-f7c1-48fe-a637-ccd5af9d7f5e" Title="Paths Class" Url="html/dd46c4a5-ddf9-0ea0-7653-4cf4cc4ceead.htm">
+        <HelpTOCNode Id="f0aecdb5-c436-4fe7-a0fd-6974605d6221" Title="Paths Constructor " Url="html/fa365181-297e-1452-958e-0e9da82184ed.htm">
           <HelpTOCNode Title="Paths Constructor " Url="html/2097f15c-cc27-fe85-40fc-09d8df448738.htm" />
           <HelpTOCNode Title="Paths Constructor (String)" Url="html/d4e8bdad-bd15-0089-4a8e-6881287eeef2.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="08ae8b2e-7121-4c5b-b8fb-746c49cf2ff4" Title="Paths Methods" Url="html/426befe5-4d4c-409f-176f-d8bedc58d049.htm">
+        <HelpTOCNode Id="88ecbff5-f5c7-491e-afca-56df34aee92d" Title="Paths Methods" Url="html/426befe5-4d4c-409f-176f-d8bedc58d049.htm">
           <HelpTOCNode Title="GetCachePath Method " Url="html/3a48d584-c695-87e5-60c5-407a02a6776c.htm" />
           <HelpTOCNode Title="GetDefaultPatchPath Method " Url="html/57d13fe5-b206-a345-abc6-2ab93eb309eb.htm" />
           <HelpTOCNode Title="GetDynAvatarPath Method " Url="html/8419394c-55a1-783c-7b3c-c6d4d3360a58.htm" />
@@ -494,22 +501,22 @@
           <HelpTOCNode Title="ProgramFilesX86 Method " Url="html/b81e24db-6007-b51d-a130-030018af3143.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="ec49186e-7486-4eda-906b-e4dd6a227646" Title="ServerQue Class" Url="html/6b9c60be-39eb-9d37-4d7a-41ad4981f380.htm">
+      <HelpTOCNode Id="415d30a6-f3d2-43a0-a81e-f6b046f31532" Title="ServerQue Class" Url="html/6b9c60be-39eb-9d37-4d7a-41ad4981f380.htm">
         <HelpTOCNode Title="ServerQue Constructor " Url="html/ec5ad9d6-7481-2c54-5f32-54f3a6a1879e.htm" />
-        <HelpTOCNode Id="c70e5fcd-87de-416a-a382-a6d63882283f" Title="ServerQue Properties" Url="html/abd971e5-f7a9-25ad-fab7-27013737cc66.htm">
+        <HelpTOCNode Id="2fade1b8-3e5b-4442-af32-5eaeba2560ce" Title="ServerQue Properties" Url="html/abd971e5-f7a9-25ad-fab7-27013737cc66.htm">
           <HelpTOCNode Title="NoEndurance Property " Url="html/527512e9-e313-b49d-aa64-9e26cdb061c7.htm" />
           <HelpTOCNode Title="ThroatTired Property " Url="html/b8586ca5-8714-ab48-2ad2-013971c1eaaa.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="31763a41-7103-40b9-91ad-8d440ecbced9" Title="ServerQue Methods" Url="html/5f6612e6-a284-2464-be8c-de79a71c606b.htm">
+        <HelpTOCNode Id="5fede8f1-a514-4933-84b4-b35c19ccb1ac" Title="ServerQue Methods" Url="html/5f6612e6-a284-2464-be8c-de79a71c606b.htm">
           <HelpTOCNode Title="on_Tick Method " Url="html/91f97470-bf4b-52cc-6614-21010652de9d.htm" />
           <HelpTOCNode Title="OnServerSent Method " Url="html/38ee0af0-67c9-ead6-1aa7-10b64a92426d.htm" />
           <HelpTOCNode Title="SndToServer Method " Url="html/92ec0505-1858-0758-9685-f2c551476e27.htm" />
           <HelpTOCNode Title="TroatTiredProcTick Method " Url="html/cfa75d33-c762-5577-8670-75fa2a3b1838.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="36835ea8-e129-4cfb-b7f9-2ed64e2baff9" Title="ServerQue Events" Url="html/ab8044e1-66e0-345c-5c09-60ef131b4d7c.htm">
+        <HelpTOCNode Id="6f64db3a-6059-42bb-aafe-23f3ce10d24e" Title="ServerQue Events" Url="html/ab8044e1-66e0-345c-5c09-60ef131b4d7c.htm">
           <HelpTOCNode Title="QueSent Event" Url="html/46564d8d-f3f0-071d-e974-cba4dedb6948.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="887ce059-21b7-468c-8a87-dfcf34f3fbf7" Title="ServerQue Fields" Url="html/1f3c5f00-ecf4-2488-615c-88266f783ecf.htm">
+        <HelpTOCNode Id="9417c21c-e456-4b8d-accc-dfd84f4b34e4" Title="ServerQue Fields" Url="html/1f3c5f00-ecf4-2488-615c-88266f783ecf.htm">
           <HelpTOCNode Title="MASS_CRITICAL Field" Url="html/187c6eeb-5b28-88c6-5a63-ff23c59dddb5.htm" />
           <HelpTOCNode Title="MASS_DEFAULT Field" Url="html/12936ea5-8053-8859-50e1-97eac14ab4e1.htm" />
           <HelpTOCNode Title="MASS_NOENDURANCE Field" Url="html/03854642-c338-b714-a3ee-257cb2577517.htm" />
@@ -517,12 +524,12 @@
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="ServerQue.SendServerEventHandler Delegate" Url="html/dd0194ce-e1ab-10a5-569a-181f128222de.htm" />
-      <HelpTOCNode Id="bfc7fabc-c74a-4246-97a2-ef5207d7a6e5" Title="UserFileAccessRights Class" Url="html/2116064e-d7bb-6abd-e716-ce59603c7e42.htm">
-        <HelpTOCNode Id="635a093b-1107-41bf-83ed-208b279aa0e7" Title="UserFileAccessRights Constructor " Url="html/2f225e25-32b5-4f6f-e268-765e1465bf88.htm">
+      <HelpTOCNode Id="5aca9345-9d5a-4a93-bf91-deb14cc11782" Title="UserFileAccessRights Class" Url="html/2116064e-d7bb-6abd-e716-ce59603c7e42.htm">
+        <HelpTOCNode Id="3564db5a-000b-4870-99c7-199240cc3f5d" Title="UserFileAccessRights Constructor " Url="html/2f225e25-32b5-4f6f-e268-765e1465bf88.htm">
           <HelpTOCNode Title="UserFileAccessRights Constructor (String)" Url="html/4254b0d8-ea30-d785-59a2-7ed950d25431.htm" />
           <HelpTOCNode Title="UserFileAccessRights Constructor (String, WindowsIdentity)" Url="html/3d2f2498-cd6c-a9b4-9026-27f0bff21a6e.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="3b873a6f-9905-46c3-b873-55a2b3f8c939" Title="UserFileAccessRights Methods" Url="html/57ba6925-241e-7008-fd0e-fe57d9df5038.htm">
+        <HelpTOCNode Id="b79bac30-4d9e-46af-9866-a99964955689" Title="UserFileAccessRights Methods" Url="html/57ba6925-241e-7008-fd0e-fe57d9df5038.htm">
           <HelpTOCNode Title="canAppendData Method " Url="html/91723657-eb8f-f216-c05c-7a1f1db99502.htm" />
           <HelpTOCNode Title="canChangePermissions Method " Url="html/de3dfa7d-a19e-2b6c-049e-3eb63aa1e7a4.htm" />
           <HelpTOCNode Title="canCreateDirectories Method " Url="html/1b10ffbb-4a83-fe0a-d7ab-fd0e9c4bab97.htm" />
@@ -553,10 +560,10 @@
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="d47c5600-b471-4470-ab43-1c9707f00379" Title="Furcadia.Net" Url="html/4e92a76c-d566-c370-1485-300da13612df.htm">
-      <HelpTOCNode Id="db1b9fca-f1f1-4b4c-a614-3f37f73a6afe" Title="BotFurre Class" Url="html/d8234ce3-fe16-242e-221f-070c32cc0eed.htm">
+    <HelpTOCNode Id="392f879c-d8dd-4461-a687-0f42a9b9b004" Title="Furcadia.Net" Url="html/4e92a76c-d566-c370-1485-300da13612df.htm">
+      <HelpTOCNode Id="d3bbc73f-ce38-432e-844c-8eeca5df8d14" Title="BotFurre Class" Url="html/d8234ce3-fe16-242e-221f-070c32cc0eed.htm">
         <HelpTOCNode Title="BotFurre Constructor " Url="html/413e817b-43a0-591f-cc33-1b8c2bd85174.htm" />
-        <HelpTOCNode Id="bf8df02d-107c-4cd1-8d9c-8a54043b5bb9" Title="BotFurre Properties" Url="html/fc363e0b-d867-e7fa-dda1-a953ea0fe426.htm">
+        <HelpTOCNode Id="77cd0e0a-6386-4f4f-a427-3761f8973128" Title="BotFurre Properties" Url="html/fc363e0b-d867-e7fa-dda1-a953ea0fe426.htm">
           <HelpTOCNode Title="AFK Property " Url="html/b5cbc8b2-8388-7218-bfb7-596de158fbd2.htm" />
           <HelpTOCNode Title="Color Property " Url="html/14dce92e-7311-197f-d6b0-b72e448ed83e.htm" />
           <HelpTOCNode Title="ColorType Property " Url="html/5a8ba28a-bc2d-8a14-f27a-74276fb487e1.htm" />
@@ -576,9 +583,9 @@
         </HelpTOCNode>
         <HelpTOCNode Title="BotFurre Methods" Url="html/3759ff28-3d12-7a37-9e7e-aa43d4c0f6dc.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="7ce3e818-9d9b-438d-881c-d483d431be91" Title="DREAM Class" Url="html/cd469a91-ff4b-dd1a-d158-7b088579c089.htm">
+      <HelpTOCNode Id="e2f5b216-011f-4025-a382-7589168255ab" Title="DREAM Class" Url="html/cd469a91-ff4b-dd1a-d158-7b088579c089.htm">
         <HelpTOCNode Title="DREAM Constructor " Url="html/042841e5-66d6-801c-7936-7a4305481106.htm" />
-        <HelpTOCNode Id="fa4c0fa3-396a-4712-9522-8df6d47a3dfc" Title="DREAM Properties" Url="html/daf1e3cd-1c9e-2d02-05ea-6bd1cdd6ba37.htm">
+        <HelpTOCNode Id="f65e41f6-d4a7-474c-9678-840e42859fff" Title="DREAM Properties" Url="html/daf1e3cd-1c9e-2d02-05ea-6bd1cdd6ba37.htm">
           <HelpTOCNode Title="Default Property " Url="html/3d0dc415-bcc0-0d88-02e4-a6b82e6f4af6.htm" />
           <HelpTOCNode Title="Lines Property " Url="html/7be87b8f-bfcc-8e13-853b-a95d622081d2.htm" />
           <HelpTOCNode Title="Name Property " Url="html/a0611a56-2d18-9650-827e-57ba1fcd0da0.htm" />
@@ -587,20 +594,20 @@
           <HelpTOCNode Title="Title Property " Url="html/bdb261b1-fcf0-a6c1-721e-c221413d9b60.htm" />
           <HelpTOCNode Title="URL Property " Url="html/2eba76c3-8b24-a792-9fb8-92d6b878ddd7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="4874f78f-f89e-4c5d-a1e2-21df67110f9c" Title="DREAM Methods" Url="html/add2e3b9-eb1f-e2fe-4a38-264b67bfaee5.htm">
+        <HelpTOCNode Id="bec808b1-7d8a-4179-94bf-0ca623a71b6c" Title="DREAM Methods" Url="html/add2e3b9-eb1f-e2fe-4a38-264b67bfaee5.htm">
           <HelpTOCNode Title="Dispose Method " Url="html/dfbd317b-5eb0-b3fb-f714-c55273260b92.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="802a06f0-8502-4696-9b18-2005c1577cab" Title="DREAM Fields" Url="html/d9d0fe4d-136a-7481-fe34-29c0d78347a2.htm">
+        <HelpTOCNode Id="7dafb5c4-8c2b-4392-b472-a292460c3930" Title="DREAM Fields" Url="html/d9d0fe4d-136a-7481-fe34-29c0d78347a2.htm">
           <HelpTOCNode Title="FurreList Field" Url="html/89c1091b-fbe1-5ae1-12a1-0c6390361887.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="8da12393-4948-4ea2-a996-b191a705436b" Title="FURRE Class" Url="html/95c41d5a-3e45-361f-af41-a52c192c229b.htm">
-        <HelpTOCNode Id="919ae1f2-6200-4dc3-8dad-71e6392e1c7d" Title="FURRE Constructor " Url="html/8253e7f0-8b52-bd20-15c2-a09e6d4e5f06.htm">
+      <HelpTOCNode Id="61d64949-ff24-440b-a5f7-f1b7da2d398f" Title="FURRE Class" Url="html/95c41d5a-3e45-361f-af41-a52c192c229b.htm">
+        <HelpTOCNode Id="2af59c92-b75b-4df4-bed2-7ac0e7f88dc0" Title="FURRE Constructor " Url="html/8253e7f0-8b52-bd20-15c2-a09e6d4e5f06.htm">
           <HelpTOCNode Title="FURRE Constructor " Url="html/b79c4abf-c4f7-75d2-1110-3caf611cfb68.htm" />
           <HelpTOCNode Title="FURRE Constructor (Int32)" Url="html/a99a9eff-8e94-fd0b-ed09-951b0dd93cb7.htm" />
           <HelpTOCNode Title="FURRE Constructor (String)" Url="html/c17da85e-2186-f82c-e18b-8605e4405ef7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="bb109df8-9e57-4b2d-adef-18484760b557" Title="FURRE Properties" Url="html/e4e41aa6-8602-9267-5ff3-a2f35ecffbb5.htm">
+        <HelpTOCNode Id="ac270618-d658-4837-83bd-8b366c6b19b0" Title="FURRE Properties" Url="html/e4e41aa6-8602-9267-5ff3-a2f35ecffbb5.htm">
           <HelpTOCNode Title="AFK Property " Url="html/2da6a756-8f98-2302-fe9e-db685df18e74.htm" />
           <HelpTOCNode Title="Badge Property " Url="html/3c4be3a3-abfb-c34f-7914-35bee4a37176.htm" />
           <HelpTOCNode Title="Color Property " Url="html/f8008790-2593-caaa-643b-0097f28bd185.htm" />
@@ -637,36 +644,36 @@
           <HelpTOCNode Title="X Property " Url="html/169916f5-2d4e-2001-2160-7346eef0a3d9.htm" />
           <HelpTOCNode Title="Y Property " Url="html/364762ac-ff9e-7900-d32b-85ef69ae7a1d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="3b33030e-08a1-4abc-b9f7-29f7043566cf" Title="FURRE Methods" Url="html/d8d77945-3dab-9adb-fecb-241173683cc4.htm">
+        <HelpTOCNode Id="8776ed4a-6dc0-4574-beca-17e70595d336" Title="FURRE Methods" Url="html/d8d77945-3dab-9adb-fecb-241173683cc4.htm">
           <HelpTOCNode Title="Equals Method " Url="html/221fc0c9-4311-0722-7818-98b2477f0e9f.htm" />
           <HelpTOCNode Title="GetHashCode Method " Url="html/5bcf35ce-89ce-5a2a-8b46-cc90c1d78da5.htm" />
-          <HelpTOCNode Id="49eb9c08-e2ff-421a-bf5a-0b9a3d865346" Title="ToFurcadiaID Method " Url="html/6f3a749e-7b45-1a8c-274b-4e02b9af53ff.htm">
+          <HelpTOCNode Id="6b73bac6-0264-4d2f-99ea-2993c8c93fba" Title="ToFurcadiaID Method " Url="html/6f3a749e-7b45-1a8c-274b-4e02b9af53ff.htm">
             <HelpTOCNode Title="ToFurcadiaID Method " Url="html/d92c69eb-dbbd-87de-768d-7af3ef8a9789.htm" />
             <HelpTOCNode Title="ToFurcadiaID Method (Func(FURRE, Int32))" Url="html/23e48d9b-fd97-6029-2de4-d1c6b961e521.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="4b6a2843-a9e7-4836-98e5-19581f03b4d2" Title="ToString Method " Url="html/8c18accc-3413-91d5-060f-c1fb78f84aa9.htm">
+          <HelpTOCNode Id="9884adb4-fb16-43d3-b5ae-f61271324543" Title="ToString Method " Url="html/8c18accc-3413-91d5-060f-c1fb78f84aa9.htm">
             <HelpTOCNode Title="ToString Method " Url="html/41867824-c13d-8b89-43ad-eb8c10283720.htm" />
             <HelpTOCNode Title="ToString Method (Func(FURRE, String))" Url="html/31a4de54-398f-aad6-2cca-af105fd3b02a.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="82d64fba-8bac-40e8-be1b-6ceb4f643c4c" Title="FURREList Class" Url="html/40bc19dc-73d9-1ac9-e12d-90ea38801ed6.htm">
+      <HelpTOCNode Id="c32e25b1-f8e2-45c2-bdd8-bda36c72cbaf" Title="FURREList Class" Url="html/40bc19dc-73d9-1ac9-e12d-90ea38801ed6.htm">
         <HelpTOCNode Title="FURREList Constructor " Url="html/fe9a205c-13e8-9256-72ad-15cb2b8cdd1f.htm" />
-        <HelpTOCNode Id="427fd1bb-2e3c-48c7-aec4-f6cf963a620e" Title="FURREList Properties" Url="html/58568de4-e753-2c44-82ec-cfe0db4e519d.htm">
+        <HelpTOCNode Id="fd318187-e65b-44d3-b3c1-e14e749a88df" Title="FURREList Properties" Url="html/58568de4-e753-2c44-82ec-cfe0db4e519d.htm">
           <HelpTOCNode Title="Count Property " Url="html/cbecaaaf-a4ca-ba27-f62f-5f64dfb16095.htm" />
           <HelpTOCNode Title="Current Property " Url="html/40fe499c-85d8-e96f-d7e9-098488bb4a32.htm" />
           <HelpTOCNode Title="IsSynchronized Property " Url="html/6b6d7092-f7bf-d4be-aecd-3a3c24a07bc4.htm" />
-          <HelpTOCNode Id="e6dce301-1d7f-4fda-9faf-38a48864f4c8" Title="Item Property " Url="html/14b01b4d-95d5-f43e-c018-71ba199d57da.htm">
+          <HelpTOCNode Id="fb4628d6-f0a5-4432-a220-9f353dd8aa8f" Title="Item Property " Url="html/14b01b4d-95d5-f43e-c018-71ba199d57da.htm">
             <HelpTOCNode Title="Item Property (Int32)" Url="html/4f6d7177-0b80-5d51-1f9e-f6c0ec250774.htm" />
             <HelpTOCNode Title="Item Property (FURRE)" Url="html/fd5ad397-b985-2e5a-2049-4439e78ccaf4.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="SyncRoot Property " Url="html/f383eef0-6fa8-3ce1-397d-9e8b832bef5f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="345fb4c3-10f9-412d-976b-f739e1d68c81" Title="FURREList Methods" Url="html/fa9a03e2-5aa6-a27c-decf-cf3a59bd4d24.htm">
+        <HelpTOCNode Id="a1b4764a-c4ac-47eb-abea-aa12bd6e4a13" Title="FURREList Methods" Url="html/fa9a03e2-5aa6-a27c-decf-cf3a59bd4d24.htm">
           <HelpTOCNode Title="add Method " Url="html/90b63128-02fd-14b2-28a8-4b11e0a6db21.htm" />
           <HelpTOCNode Title="AddRange Method " Url="html/a0d526ca-3c61-e6e4-4867-52d14f5f3a61.htm" />
           <HelpTOCNode Title="Clear Method " Url="html/db4fa202-d657-21e6-c329-1bdbaf12a16b.htm" />
-          <HelpTOCNode Id="b6f26699-337c-4036-918d-71dfef5d348f" Title="Contains Method " Url="html/c86c94b9-27f5-7d22-6ad2-980482590fc9.htm">
+          <HelpTOCNode Id="a1c256f6-5676-4891-8093-bd2e324ef324" Title="Contains Method " Url="html/c86c94b9-27f5-7d22-6ad2-980482590fc9.htm">
             <HelpTOCNode Title="Contains Method (Int32)" Url="html/3e1b96c0-3835-1b4b-7914-572aad2de014.htm" />
             <HelpTOCNode Title="Contains Method (FURRE)" Url="html/c49893e2-802d-dcac-62fd-bd04c57c2c79.htm" />
           </HelpTOCNode>
@@ -678,73 +685,73 @@
           <HelpTOCNode Title="Remove Method " Url="html/d3d9e818-4141-8f7f-51aa-2513c5c9350b.htm" />
           <HelpTOCNode Title="Reset Method " Url="html/07c34b97-6a22-410f-86da-6756e9f4b909.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="03878c82-0100-4142-8296-7735a386c693" Title="FURREList Fields" Url="html/1eb7a41b-deef-1e36-3c92-57605bbb684f.htm">
+        <HelpTOCNode Id="d10bdaa5-d9f2-4722-9842-45ac078bd144" Title="FURREList Fields" Url="html/1eb7a41b-deef-1e36-3c92-57605bbb684f.htm">
           <HelpTOCNode Title="fList Field" Url="html/4467e2be-d463-05e4-3529-b1feec26c98a.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="d2d609ee-e865-48e2-8ee0-0630eee3f307" Title="INetMessage Interface" Url="html/5098df49-1c63-d9d8-2b2b-54bd2ae877df.htm">
-        <HelpTOCNode Id="7930ee51-0202-403f-a197-8880d7306e74" Title="INetMessage Methods" Url="html/796bfc66-1f08-b07b-365d-1219f6a09bb2.htm">
+      <HelpTOCNode Id="09c1ab37-135e-4bd4-9a83-8e99fd95dd57" Title="INetMessage Interface" Url="html/5098df49-1c63-d9d8-2b2b-54bd2ae877df.htm">
+        <HelpTOCNode Id="097cad86-f577-4964-a8d0-5bd4a124ff3f" Title="INetMessage Methods" Url="html/796bfc66-1f08-b07b-365d-1219f6a09bb2.htm">
           <HelpTOCNode Title="GetString Method " Url="html/818584d4-13ba-ecf4-b119-ca9ed3058bf8.htm" />
-          <HelpTOCNode Id="72a2073c-fc52-4b1e-9443-ee1d551ea943" Title="Write Method " Url="html/042386c9-82ea-cf83-f873-068bf65e03cf.htm">
+          <HelpTOCNode Id="2cc7ccbf-eab4-4638-ae26-699f31efff18" Title="Write Method " Url="html/042386c9-82ea-cf83-f873-068bf65e03cf.htm">
             <HelpTOCNode Title="Write Method (Byte[])" Url="html/f0de8506-0450-0b10-b192-659eabadda9f.htm" />
             <HelpTOCNode Title="Write Method (String)" Url="html/ddd3650f-a0b0-790b-da34-dd2a4e0b6196.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="4afec33d-58ae-4503-bdd3-299b162f887d" Title="Movement Class" Url="html/2e704f1c-e8d0-cfc8-da6d-b7e6cf1fa47a.htm">
+      <HelpTOCNode Id="bbf82168-2404-452c-b2f6-c43d6a9a2ae3" Title="Movement Class" Url="html/2e704f1c-e8d0-cfc8-da6d-b7e6cf1fa47a.htm">
         <HelpTOCNode Title="Movement Constructor " Url="html/76837755-5f52-c15a-5891-8025b0d0f3f3.htm" />
         <HelpTOCNode Title="Movement Methods" Url="html/4c811641-881d-4fba-00d4-8e392eff2361.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="Movement.Flags Enumeration" Url="html/3402967d-61fa-64d5-7807-9ba5710be42c.htm" />
-      <HelpTOCNode Id="9fb69138-2f5d-406a-90c4-d36883936769" Title="NetConnection Class" Url="html/055c1b44-3607-680c-cd03-41c23f3a93df.htm">
-        <HelpTOCNode Id="dfa99660-7443-4306-a333-34089c182c67" Title="NetConnection Constructor " Url="html/a99de0bf-b709-2ff4-df82-3e9e71f3fe1a.htm">
+      <HelpTOCNode Id="8336ed23-db2a-4fef-bd0a-ec24d5151e87" Title="NetConnection Class" Url="html/055c1b44-3607-680c-cd03-41c23f3a93df.htm">
+        <HelpTOCNode Id="66dcc47b-0a62-4171-a657-038a363cabdf" Title="NetConnection Constructor " Url="html/a99de0bf-b709-2ff4-df82-3e9e71f3fe1a.htm">
           <HelpTOCNode Title="NetConnection Constructor " Url="html/274cea87-aea0-c6b6-ce90-d861c471b826.htm" />
           <HelpTOCNode Title="NetConnection Constructor (Int32)" Url="html/2090cee5-d984-98f4-3b03-50230a1fe980.htm" />
           <HelpTOCNode Title="NetConnection Constructor (IPAddress, Int32)" Url="html/b47323f4-9af0-ab57-32d8-1ed28391ed06.htm" />
           <HelpTOCNode Title="NetConnection Constructor (String, Int32)" Url="html/ee34022a-69eb-32ba-0db4-80b687f9395e.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f7dcdc95-ba92-4209-9659-2cf544618ab0" Title="NetConnection Properties" Url="html/3f9fba9d-93cc-ad4b-9b2a-94459e73396e.htm">
+        <HelpTOCNode Id="ec595d9c-74b3-4279-9376-3d93a7e52777" Title="NetConnection Properties" Url="html/3f9fba9d-93cc-ad4b-9b2a-94459e73396e.htm">
           <HelpTOCNode Title="BufferCapacity Property " Url="html/8baeefcc-a958-f802-0107-8f2297abfa75.htm" />
           <HelpTOCNode Title="EncoderPage Property " Url="html/f58281ad-7e6c-d1a1-2ecc-f7137741d5d8.htm" />
           <HelpTOCNode Title="IsServerConnected Property " Url="html/dbe6cff3-cd26-a2c2-9b06-c90fdf749405.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="915ed8fa-a020-4998-916e-e04ff8b5056a" Title="NetConnection Methods" Url="html/4c752021-f4cf-9b32-3949-4c1ff388a1c8.htm">
+        <HelpTOCNode Id="5633deb3-683f-4d6a-91b3-a9f1ffb55ced" Title="NetConnection Methods" Url="html/4c752021-f4cf-9b32-3949-4c1ff388a1c8.htm">
           <HelpTOCNode Title="Connect Method " Url="html/49cb5f39-354c-e329-e263-b243ef72f968.htm" />
-          <HelpTOCNode Id="e833a40f-316e-4cba-9245-119d410186c1" Title="Dispose Method " Url="html/3de2eb56-03ad-30a8-7a60-8c1969c39219.htm">
+          <HelpTOCNode Id="4fa180ab-1cfb-4c5e-be63-255af866bf25" Title="Dispose Method " Url="html/3de2eb56-03ad-30a8-7a60-8c1969c39219.htm">
             <HelpTOCNode Title="Dispose Method " Url="html/0d44bd94-638d-3ec7-da05-72273775c934.htm" />
             <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/390cdab5-9043-1a29-f698-b1e72370add1.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="Kill Method " Url="html/7d132e46-06ec-a954-d0fa-52e8df05666f.htm" />
-          <HelpTOCNode Id="9b3a1fc4-b845-4e63-8cd0-d0e845f2ab0a" Title="SendServer Method " Url="html/9888b56f-e393-8ff7-5b36-37790c65a7c4.htm">
+          <HelpTOCNode Id="825ebc09-4db7-4e23-ad9c-2d3376c28a2a" Title="SendServer Method " Url="html/9888b56f-e393-8ff7-5b36-37790c65a7c4.htm">
             <HelpTOCNode Title="SendServer Method (String)" Url="html/70e2ed35-2530-8043-0c3a-0873b6b35952.htm" />
             <HelpTOCNode Title="SendServer Method (INetMessage)" Url="html/a50e5781-6719-1305-ff47-ee64fbce38dd.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="0b8cb079-3409-428f-9307-771d3b6c0d9b" Title="NetConnection Events" Url="html/3c56ab48-799d-d8ff-d6a2-6abc35b82808.htm">
+        <HelpTOCNode Id="e9eae2a6-b409-41c3-b6a2-7b8500eec5ae" Title="NetConnection Events" Url="html/3c56ab48-799d-d8ff-d6a2-6abc35b82808.htm">
           <HelpTOCNode Title="Connected Event" Url="html/79eb7a4c-ecfc-77e9-d559-f1680c6adbc7.htm" />
           <HelpTOCNode Title="Error Event" Url="html/9de0f9be-a127-269e-4749-e5784822f239.htm" />
           <HelpTOCNode Title="ServerData Event" Url="html/4c06634c-9f60-49e3-6c88-a0c2e4b8dd5d.htm" />
           <HelpTOCNode Title="ServerDisConnected Event" Url="html/ea0452b0-9105-53d5-aa89-308132e0fa23.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a0962e4f-4ed1-45b6-a3b8-4ef67a0a2cfa" Title="NetConnection Fields" Url="html/f4122857-10b1-c783-5fd7-1849e4297106.htm">
+        <HelpTOCNode Id="9ec36872-2e68-41a5-b6c0-8bab223e1ba8" Title="NetConnection Fields" Url="html/f4122857-10b1-c783-5fd7-1849e4297106.htm">
           <HelpTOCNode Title="FurcPath Field" Url="html/4abd679a-e1e4-06d1-52db-2b21d1c4c508.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="NetConnection.ActionDelegate Delegate" Url="html/a9f5f5d8-3254-5b31-4c50-c9e0c9f84f22.htm" />
       <HelpTOCNode Title="NetConnection.DataEventHandler2 Delegate" Url="html/9f349382-98dc-ac28-3edd-187c07fea73b.htm" />
       <HelpTOCNode Title="NetConnection.ErrorEventHandler Delegate" Url="html/3bf54f7e-ae7a-5d41-2353-83d11811d7ea.htm" />
-      <HelpTOCNode Id="ca96600e-bcdf-461f-acb4-ce1c28db0408" Title="NetMessage Class" Url="html/114803de-6c69-4f8e-ba4b-649f0957c95d.htm">
+      <HelpTOCNode Id="6336654e-bd8b-447e-b05b-9fbeb6941f72" Title="NetMessage Class" Url="html/114803de-6c69-4f8e-ba4b-649f0957c95d.htm">
         <HelpTOCNode Title="NetMessage Constructor " Url="html/c76eef2a-299c-3108-d065-07644ff7e5ac.htm" />
-        <HelpTOCNode Id="be3c961b-9409-4757-a0ae-0ace2fb83456" Title="NetMessage Methods" Url="html/e3688a92-6db8-3a82-c0cb-83a8b4b8c31a.htm">
+        <HelpTOCNode Id="28eac9fd-d46d-4e43-bd42-5fe9faf98070" Title="NetMessage Methods" Url="html/e3688a92-6db8-3a82-c0cb-83a8b4b8c31a.htm">
           <HelpTOCNode Title="GetString Method " Url="html/b70a8e2d-0ff4-edc2-07da-7e90bb9b0f4e.htm" />
-          <HelpTOCNode Id="310f1ba7-18fe-4175-9a51-045e772aadc5" Title="Write Method " Url="html/4ad3a167-310a-6bf6-5f16-53b0c39d8842.htm">
+          <HelpTOCNode Id="1a51ff4a-7c92-41c8-9c7e-7aeaeabb2dfc" Title="Write Method " Url="html/4ad3a167-310a-6bf6-5f16-53b0c39d8842.htm">
             <HelpTOCNode Title="Write Method (Byte[])" Url="html/98a91150-4d2e-beb4-4ffc-5b621bbbe269.htm" />
             <HelpTOCNode Title="Write Method (String)" Url="html/b8fa1bc3-71d1-6fe3-866a-bea96e413f82.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="618e888f-4dd8-4e9e-9336-4dfd1a340225" Title="NetProxy Class" Url="html/573497a5-b078-f0a2-4910-284e2282fbfc.htm">
-        <HelpTOCNode Id="2ddd83f4-8f0c-4a58-935d-8dc2a68761b6" Title="NetProxy Constructor " Url="html/23799e7e-cadc-c021-bf04-d2e2476daed5.htm">
+      <HelpTOCNode Id="565b4be4-6660-4334-9a3a-d612620ce2df" Title="NetProxy Class" Url="html/573497a5-b078-f0a2-4910-284e2282fbfc.htm">
+        <HelpTOCNode Id="52c13e9a-edde-4e6e-96e1-ef038e917f93" Title="NetProxy Constructor " Url="html/23799e7e-cadc-c021-bf04-d2e2476daed5.htm">
           <HelpTOCNode Title="NetProxy Constructor " Url="html/8103b951-6c1c-f28f-9001-2f8f6e260218.htm" />
           <HelpTOCNode Title="NetProxy Constructor (Int32)" Url="html/c39f5b18-f75a-281d-98e5-a5b5fb4c4283.htm" />
           <HelpTOCNode Title="NetProxy Constructor (Int32, Int32)" Url="html/6bd745f9-99ac-f694-8461-cb58fc8fd5db.htm" />
@@ -754,7 +761,7 @@
           <HelpTOCNode Title="NetProxy Constructor (IPAddress, Int32, Int32)" Url="html/49f917f8-2b89-e118-a10a-e415f3171284.htm" />
           <HelpTOCNode Title="NetProxy Constructor (String, Int32, Int32)" Url="html/7ff3751f-e5f1-8d71-b7fe-ad8ccb68c4a4.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="053eb1d4-df17-4266-9c2f-62bcb73a55f6" Title="NetProxy Properties" Url="html/4ba34a79-944f-b0ca-30b4-fda4fe939c89.htm">
+        <HelpTOCNode Id="e8c6be65-5a3d-4e6d-b978-bfd921294d0b" Title="NetProxy Properties" Url="html/4ba34a79-944f-b0ca-30b4-fda4fe939c89.htm">
           <HelpTOCNode Title="BufferCapacity Property " Url="html/9b8fdfb3-e93f-31f7-80d0-dbef13e903bd.htm" />
           <HelpTOCNode Title="EncoderPage Property " Url="html/be607ff7-ddb2-07af-62ae-3bf1eb872327.htm" />
           <HelpTOCNode Title="IsClientConnected Property " Url="html/ee1e579a-a9c9-9f90-bd67-06ffcc787221.htm" />
@@ -765,25 +772,25 @@
           <HelpTOCNode Title="ProcID Property " Url="html/45658fd0-b5e9-e601-bb79-7c5e799e56c0.htm" />
           <HelpTOCNode Title="StandAloneMode Property " Url="html/86c25f59-49d8-836d-ff6f-07bcc2a43ca3.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="dc25581f-3038-4c36-ba96-3223db565558" Title="NetProxy Methods" Url="html/cc0e9af4-cb19-fe71-2cc2-4be4b267db4e.htm">
+        <HelpTOCNode Id="03498f6c-546b-4ae5-9819-6c8813b3734d" Title="NetProxy Methods" Url="html/cc0e9af4-cb19-fe71-2cc2-4be4b267db4e.htm">
           <HelpTOCNode Title="CloseClient Method " Url="html/1bb14efc-d265-6817-8516-e7a8977af23a.htm" />
           <HelpTOCNode Title="Connect Method " Url="html/2ee496c8-b181-f2d7-b854-9a83bdff86e8.htm" />
-          <HelpTOCNode Id="43197679-24e8-438c-af10-9bd638838c98" Title="Dispose Method " Url="html/89425b4b-99e3-b69f-5ad7-b93f4dcb3436.htm">
+          <HelpTOCNode Id="dfdb5a2d-8e28-4d7e-bf54-334fa8e1c540" Title="Dispose Method " Url="html/89425b4b-99e3-b69f-5ad7-b93f4dcb3436.htm">
             <HelpTOCNode Title="Dispose Method " Url="html/30bdea55-d0c9-c51a-d937-78e492839b3f.htm" />
             <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/d004da4c-5f1a-c9af-6db2-00d57fc39157.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="Kill Method " Url="html/2f52926b-9cca-1dfa-68e7-590cf533f654.htm" />
-          <HelpTOCNode Id="c88d201a-0793-4fef-85bd-b1eeb5914c41" Title="SendClient Method " Url="html/98e72e26-73ae-74e0-e101-b64274edb1ca.htm">
+          <HelpTOCNode Id="53de1b85-965e-434e-92b4-52191ef5aab8" Title="SendClient Method " Url="html/98e72e26-73ae-74e0-e101-b64274edb1ca.htm">
             <HelpTOCNode Title="SendClient Method (String)" Url="html/8a4f3b24-e9fa-edaa-665c-dd9b75948efa.htm" />
             <HelpTOCNode Title="SendClient Method (INetMessage)" Url="html/a388c1ae-5cf8-ca00-5fd7-27e3a0351288.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="c3b88e8e-ca54-405c-9196-611a242e35eb" Title="SendServer Method " Url="html/98a96325-8e15-0933-b5dc-139970f63f25.htm">
+          <HelpTOCNode Id="27eb1d18-8fc8-4386-b30f-edb24f3a7506" Title="SendServer Method " Url="html/98a96325-8e15-0933-b5dc-139970f63f25.htm">
             <HelpTOCNode Title="SendServer Method (String)" Url="html/039eee9e-d18b-2179-11a8-e70abb334020.htm" />
             <HelpTOCNode Title="SendServer Method (INetMessage)" Url="html/4aa674cf-2af0-9a6f-7576-f79f38b6f4c2.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="SetProcess Method " Url="html/568424b2-35ff-8e8b-6cbe-6c4faa84e2ec.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="3f0b4489-d79c-4e2e-af30-a30a794e06bd" Title="NetProxy Events" Url="html/7b4f0971-7dce-b3f1-0eec-450d45450d8d.htm">
+        <HelpTOCNode Id="804abf6c-5eb5-4c3e-979b-da255d12671e" Title="NetProxy Events" Url="html/7b4f0971-7dce-b3f1-0eec-450d45450d8d.htm">
           <HelpTOCNode Title="ClientData Event" Url="html/2200db5e-7ecc-0592-51b5-00ae8bddaa21.htm" />
           <HelpTOCNode Title="ClientData2 Event" Url="html/c07bf9b3-80d0-2980-1b24-5556a80b4a5e.htm" />
           <HelpTOCNode Title="ClientDisConnected Event" Url="html/4eb0ee3b-7d26-a032-77eb-4b52a12dc99d.htm" />
@@ -795,7 +802,7 @@
           <HelpTOCNode Title="ServerData2 Event" Url="html/60b5575b-3627-679b-4b1a-234c13710941.htm" />
           <HelpTOCNode Title="ServerDisConnected Event" Url="html/3644d44c-e4ad-259f-07b7-8afe5dc3eb11.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a4950cf5-93d5-4a30-a9fb-96238bf7089d" Title="NetProxy Fields" Url="html/04b87847-9d93-f9d7-5de2-dd3ebcde2414.htm">
+        <HelpTOCNode Id="ee5f088f-4006-4465-85fa-e17ab86a0eff" Title="NetProxy Fields" Url="html/04b87847-9d93-f9d7-5de2-dd3ebcde2414.htm">
           <HelpTOCNode Title="_lport Field" Url="html/8a09188a-93b2-7816-f5d7-a6c6204c5445.htm" />
           <HelpTOCNode Title="FurcPath Field" Url="html/c60b7d7b-b05b-4ccb-1098-177165aadc37.htm" />
         </HelpTOCNode>
@@ -804,8 +811,8 @@
       <HelpTOCNode Title="NetProxy.DataEventHandler Delegate" Url="html/38a29d9e-e348-ae3a-f514-08a27d55e073.htm" />
       <HelpTOCNode Title="NetProxy.DataEventHandler2 Delegate" Url="html/258cccf8-5252-32bd-88bf-fea1613eb8e9.htm" />
       <HelpTOCNode Title="NetProxy.ErrorEventHandler Delegate" Url="html/127a0dff-fac4-d998-d4a9-78d03e02c2a6.htm" />
-      <HelpTOCNode Id="02db7ac4-3d63-450f-902b-de5513d513e1" Title="NetProxyException Class" Url="html/0b246e09-75c6-ed5c-636b-f2e74386897a.htm">
-        <HelpTOCNode Id="95a6eb5a-cdd5-4d74-9ae3-1e85592f1434" Title="NetProxyException Constructor " Url="html/ee4a0c02-5de4-30a6-ace7-02f5e37b7950.htm">
+      <HelpTOCNode Id="82e38b59-0476-472b-b86e-6ae7ebceaa8e" Title="NetProxyException Class" Url="html/0b246e09-75c6-ed5c-636b-f2e74386897a.htm">
+        <HelpTOCNode Id="f22d99bb-b2a7-4f94-971e-c7cc7fbe7c29" Title="NetProxyException Constructor " Url="html/ee4a0c02-5de4-30a6-ace7-02f5e37b7950.htm">
           <HelpTOCNode Title="NetProxyException Constructor " Url="html/6000fb25-e4f9-cf79-19ba-f13a9a51dda6.htm" />
           <HelpTOCNode Title="NetProxyException Constructor (String)" Url="html/aab08e4f-9893-c9b5-e038-4e5e2c03dea0.htm" />
           <HelpTOCNode Title="NetProxyException Constructor (SerializationInfo, StreamingContext)" Url="html/c21bb9b1-d11c-9d0c-e257-aeb38baabcd1.htm" />
@@ -815,14 +822,14 @@
         <HelpTOCNode Title="NetProxyException Methods" Url="html/5e393038-1dee-9ca8-1c67-564e49460b5c.htm" />
         <HelpTOCNode Title="NetProxyException Events" Url="html/300d8ecf-e1bb-3d46-3d98-5e9f6c08e2d7.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="76172ab8-fc0b-481c-9d94-0ac600fa78c6" Title="PounceConnection Class" Url="html/cc2832ee-c0dd-7ae2-e261-1d5b8b8bb1d8.htm">
+      <HelpTOCNode Id="c0b9f02f-4f4b-4ca8-beb2-2aa5e3cc6e7c" Title="PounceConnection Class" Url="html/cc2832ee-c0dd-7ae2-e261-1d5b8b8bb1d8.htm">
         <HelpTOCNode Title="PounceConnection Constructor " Url="html/5a516464-14a9-b845-78ec-a60b5bcce663.htm" />
-        <HelpTOCNode Id="0a8855e8-1e13-4e0c-a6ff-523d0157788b" Title="PounceConnection Properties" Url="html/8a878b9c-2afb-f6b8-d17a-d6f4216d2349.htm">
+        <HelpTOCNode Id="7660aafc-caf2-453f-87df-b4d482643810" Title="PounceConnection Properties" Url="html/8a878b9c-2afb-f6b8-d17a-d6f4216d2349.htm">
           <HelpTOCNode Title="NumberOfDreamsOnMainMaps Property " Url="html/29e481f9-56dc-2790-d0bb-e3506a483873.htm" />
           <HelpTOCNode Title="RawResponse Property " Url="html/dd984735-e278-a3c2-ad40-e990b230b628.htm" />
           <HelpTOCNode Title="TotalFurresOnline Property " Url="html/54ee3aad-7c66-96ab-2fde-e4fa7802eeae.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="124b499e-60cb-473c-80bf-8c22ee560921" Title="PounceConnection Methods" Url="html/9c9c2b78-6ffd-d1fc-0968-5efbd664408c.htm">
+        <HelpTOCNode Id="3d75a86d-f5de-4fde-81a8-08882af714b8" Title="PounceConnection Methods" Url="html/9c9c2b78-6ffd-d1fc-0968-5efbd664408c.htm">
           <HelpTOCNode Title="AddFriend Method " Url="html/ad7d9f2a-4d81-be91-64ad-7c4307def915.htm" />
           <HelpTOCNode Title="CheckFriendName Method " Url="html/9369fce6-8043-e85f-d33e-a13c7f5f1be9.htm" />
           <HelpTOCNode Title="CheckFriendNames Method " Url="html/02fe2f36-ff3a-2814-2f28-0123e229c610.htm" />
@@ -832,22 +839,22 @@
           <HelpTOCNode Title="RemoveFriend Method " Url="html/c9b026c4-6174-0e27-4daf-48a14bd377da.htm" />
           <HelpTOCNode Title="RemoveFriends Method " Url="html/5379e214-0d3c-4b0a-84dc-13f6c789f2ba.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f22fd59a-4140-49f1-b4e8-fe226a0fd6f0" Title="PounceConnection Events" Url="html/35201cae-ccc3-4f3a-812d-15e5ff099754.htm">
+        <HelpTOCNode Id="80818622-8f8a-4054-8c51-7801ff8679ac" Title="PounceConnection Events" Url="html/35201cae-ccc3-4f3a-812d-15e5ff099754.htm">
           <HelpTOCNode Title="Response Event" Url="html/7faa2f4a-12a0-4d03-840e-9ebf1f559793.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="666efca5-c164-4080-ba98-eb833f23a391" Title="PounceConnection Fields" Url="html/b0f35bd6-aabf-860b-8a26-77d6bbd381d4.htm">
+        <HelpTOCNode Id="cb20d1ea-c718-4d92-bc0c-7333bd16a130" Title="PounceConnection Fields" Url="html/b0f35bd6-aabf-860b-8a26-77d6bbd381d4.htm">
           <HelpTOCNode Title="_dreams Field" Url="html/728aa80c-98fd-4286-4ddd-a23b5d079d9d.htm" />
           <HelpTOCNode Title="_friends Field" Url="html/1488a632-3aea-79aa-e435-789c8327c9d0.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="PounceConnection.PounceResponse Delegate" Url="html/8c7fa72f-5886-f86e-2ae6-aa91f96a1e81.htm" />
-      <HelpTOCNode Id="5e45a97d-52b0-49b8-b23f-26249f783381" Title="ProxySession Class" Url="html/a7fcfd72-f8f0-86ee-e363-2259033aed6a.htm">
+      <HelpTOCNode Id="45d20f9b-a72f-45fe-829e-7388b8db804f" Title="ProxySession Class" Url="html/a7fcfd72-f8f0-86ee-e363-2259033aed6a.htm">
         <HelpTOCNode Title="ProxySession Constructor " Url="html/be9bd900-5ba9-e0e0-b9c2-3dcb86d2407b.htm" />
-        <HelpTOCNode Id="02fab998-fa1b-41fc-8605-a37e61657d0c" Title="ProxySession Properties" Url="html/9a7b8851-fe3c-4124-bb6b-bc3d824f7015.htm">
+        <HelpTOCNode Id="f8c13385-9f23-4e38-9947-31e386eff73e" Title="ProxySession Properties" Url="html/9a7b8851-fe3c-4124-bb6b-bc3d824f7015.htm">
           <HelpTOCNode Title="FurcProcessId Property " Url="html/ee799480-1592-ace3-9ab7-f3549994b7c7.htm" />
           <HelpTOCNode Title="LoggingIn Property " Url="html/12c2de18-bcb0-8937-e1e1-0dfbe0cf71f3.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="ca2beff0-3048-439b-b223-9a34244a6790" Title="ProxySession Methods" Url="html/aa0f219c-76dc-d8fa-2f7a-8f9b2b64532a.htm">
+        <HelpTOCNode Id="f781d33d-ccf2-4ae6-8fca-98a3b3e00b9c" Title="ProxySession Methods" Url="html/aa0f219c-76dc-d8fa-2f7a-8f9b2b64532a.htm">
           <HelpTOCNode Title="Dispose Method " Url="html/97e3f86a-d62f-b5f2-5fb8-1a198caf93c4.htm" />
           <HelpTOCNode Title="fIDtoFurre Method " Url="html/177c5724-7c7d-3d07-72ed-e30b103dba2c.htm" />
           <HelpTOCNode Title="OnServerSent Method " Url="html/44af4620-989c-f596-6e05-02a8e73bf673.htm" />
@@ -855,7 +862,7 @@
           <HelpTOCNode Title="SendServer Method " Url="html/e99b4dda-5ac5-6861-1b11-2b03a1091d30.htm" />
           <HelpTOCNode Title="TroatTiredDelayTick Method " Url="html/a088cb66-e979-56ee-0637-411eca1a8be5.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f4a40007-2125-4c26-aa46-acfeffcfa392" Title="ProxySession Events" Url="html/a86cc667-ffb5-8fa6-13a5-f1c2f559b09c.htm">
+        <HelpTOCNode Id="d2e0877b-e120-4411-aef2-066e471cd91e" Title="ProxySession Events" Url="html/a86cc667-ffb5-8fa6-13a5-f1c2f559b09c.htm">
           <HelpTOCNode Title="ClientDataReceived Event" Url="html/5da892ac-3641-77ce-443c-1aaf22430efc.htm" />
           <HelpTOCNode Title="ClientExited Event" Url="html/f31f5d68-dcea-e438-38dd-f7e3473566c3.htm" />
           <HelpTOCNode Title="Connected Event" Url="html/1fe2efb4-eec4-82e4-08f0-721342d5fda4.htm" />
@@ -863,7 +870,7 @@
           <HelpTOCNode Title="ServerDataReceived Event" Url="html/61e38b4c-c64b-f70a-1db6-a268a8b30e71.htm" />
           <HelpTOCNode Title="ServerDisConnected Event" Url="html/fcaddbfd-2839-8c4b-f799-77fef7c2717d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="e088e114-354e-467e-90f3-02a69f9c910e" Title="ProxySession Fields" Url="html/bc0da9c3-a478-d0c6-907c-70f5335506b5.htm">
+        <HelpTOCNode Id="13e1b096-2560-4eef-b5e0-74bc1175d48e" Title="ProxySession Fields" Url="html/bc0da9c3-a478-d0c6-907c-70f5335506b5.htm">
           <HelpTOCNode Title="BadgeTag Field" Url="html/c4ae91a8-5666-c608-bb8d-76840919001a.htm" />
           <HelpTOCNode Title="Dream Field" Url="html/16e80ef0-0bfa-8e4f-8e8f-246863db8a87.htm" />
           <HelpTOCNode Title="FurcadiaProxy Field" Url="html/aa4af922-f4a4-bac2-e76d-53f1e1288253.htm" />
@@ -887,7 +894,7 @@
   </HelpTOCNode>
   <HelpTOCNode Title="Glossary" Url="html/2d3fdb7f-0542-4fb7-8f0a-a38eda8039f0.htm" />
   <HelpTOCNode Title="Appendix" Url="html/05d2020c-0adc-4a01-a8dc-62c78634c5fc.htm" />
-  <HelpTOCNode Id="098e88a0-7944-4a60-a2a9-70435498398c" Title="About" Url="html/64d441eb-864b-4f9e-994f-2d87632ea597.htm">
+  <HelpTOCNode Id="885aca93-d5c2-4405-9f9d-217492076adf" Title="About" Url="html/64d441eb-864b-4f9e-994f-2d87632ea597.htm">
     <HelpTOCNode Title="Project Credits" Url="html/65fa49e4-c1d8-4fa4-86d0-12dd7be5dd4d.htm" />
     <HelpTOCNode Title="Contribue" Url="html/c7ed588e-a969-400d-8893-39ed661e45a4.htm" />
   </HelpTOCNode>

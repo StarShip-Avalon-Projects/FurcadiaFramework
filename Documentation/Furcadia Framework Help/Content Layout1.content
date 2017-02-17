@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" visible="True" isDefault="true" title="Welcome" />
-  <Topic id="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" visible="True" title="NetProxy Sample" />
-  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" isExpanded="true" title="Furcadia Specifications">
+  <Topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" visible="True" title="Welcome to FFF3PP" />
+  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" title="Furcadia Specifications">
     <Topic id="a5f6d9fd-e7ec-4278-97f0-5c6d6535f7f7" visible="True" />
+    <Topic id="a23d6f60-970b-4881-ad5f-077563316c63" visible="True" title="Furcadia File Paths" />
+    <Topic id="7180cbcd-d0cd-4db5-820b-2255d5764840" visible="True" />
+    <Topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" visible="True" />
   </Topic>
-  <Topic id="ac0f351b-19c1-47cc-928e-2eeaec33fc51" visible="True" />
-  <Topic id="4340cd61-7802-4111-a144-fc835a39faf6" visible="True" isSelected="true" apiParentMode="InsertAfter">
+  <Topic id="ac0f351b-19c1-47cc-928e-2eeaec33fc51" visible="True" isExpanded="true" title="FFF3PP Reference">
+    <Topic id="06b51167-42c8-4e64-b22f-a52d06ed56a9" visible="True" noFile="true" isExpanded="true" title="Example Usage">
+      <Topic id="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" visible="True" title="NetProxy Sample" />
+    </Topic>
+    <Topic id="08538137-7c91-4fad-b4dc-287fc6efa298" visible="True" isSelected="true" />
+  </Topic>
+  <Topic id="4340cd61-7802-4111-a144-fc835a39faf6" visible="True" apiParentMode="InsertAfter">
     <Topic id="4eecd606-d5e8-464b-9b2e-8a2bfac50c0a" visible="True" title="Version 2.1.x" />
   </Topic>
   <Topic id="2d3fdb7f-0542-4fb7-8f0a-a38eda8039f0" visible="True" title="Glossary" />
