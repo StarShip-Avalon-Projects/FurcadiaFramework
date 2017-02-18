@@ -61,13 +61,17 @@
           This section determines how your default Untitled document would be set up.
           You might have noticed that your document has a header, footer, and a default
           comment area for the author. It also specifies that for a new user, the default DS l
-          level is 0 (Cause/Effect).
+          level is 0 (Cause/Effect). Additional Levels can be added by increasing the number.
         </para>
         <mediaLink>
           <image xlink:href="DS File" />
         </mediaLink>
         <para>H0 = Line 002, the first header line</para>
         <para>H1 = Line 003, the second header line, the author line by default</para>
+        <para>
+          H# = add additional lines by adding additional H tags with Numbers. Useful for customizing
+          the DS file with personal scripts
+        </para>
         <para>
           InitLineSpaces = Line 004 &#8208; Line 009, how many blank lines should be included for a new file
         </para>
