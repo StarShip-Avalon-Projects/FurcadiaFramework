@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="3661a2f8-dfd3-4c4c-8f36-2ebf0e5cf409" revisionNumber="1">
+<topic id="c66c6136-b446-4383-9f4d-4212fbeb1ea1" revisionNumber="1">
   <developerConceptualDocument
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -11,11 +11,13 @@
     -->
 
     <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
 
-      <para>
-        There's a lot of dreams still out there that were built with the legacy tools.
-        The material remains here for compatibility reasons.
-      </para>
+      <para>Required introduction</para>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
@@ -52,7 +54,7 @@
            - An external link
            - A code entity reference
 
-      <link xlink:href="Other Topic's ID" />
+      <link xlink:href="Other Topic's ID"/>
       <link xlink:href="Other Topic's ID">Link inner text</link>
 
       <externalLink>

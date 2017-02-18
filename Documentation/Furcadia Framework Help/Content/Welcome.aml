@@ -27,23 +27,32 @@
     <section>
       <title>Project Description</title>
       <content>
-
         <para>
-          We're Currently working on a ProxySession Class. This Class is intended to be a drop in replacement for NetProxy
-          What is will include are the bells and whistles for basic operation.
+          We're Currently working on a ProxySession Class in the Furcadia FramewWork Library. This
+          Class is intended to be a drop in replacement for NetProxy.  What is will include are the
+          bells and whistles for basic operation. To assist us in further development of the library,
+          we have under taken a mission to Document what we understand of any and all parts of Furcadia
+          we can. It doesn't matter if its a file specification  or if it's which items are what.
+          Does any one remember the legacy portal objects in the items file?  We Do and will include
+          that documentation in the Furcadia legacy  section.
+        </para>
+        <para>
+          Any one is welcome to contribute to this Project. Our aim is to support the Community
+          in any area we can. That means updating old documentation thats out there loose on the Inter-Net
+          and bring it to one community supported arena.
         </para>
         <list class="ordered">
           <listItem>
             <para>
-              a Client to Server Queue manager. this will Absorb all the SendToServer instructions and spoon feed
-              them to the game server with out overloading the Servers Buffer. In here we'll handle Throat-Tired Syndrome
-              and NoEndurance.
+              a Client to Server Queue manager. this will Absorb all the SendToServer instructions and spoon
+              feed  them to the game server with out overloading the Servers Buffer. In here we'll handle
+              Throat-Tired Syndrome  and NoEndurance.
             </para>
           </listItem>
           <listItem>
             <para>
-              Dream Furre List Manager. This will maintain a list of Furre in the Current Dream and keep track of basic
-              stats such as current Furre Position, Costume settings, Working with
+              Dream Furre List Manager. This will maintain a list of Furre in the Current Dream and keep
+              track of basic stats such as current Furre Position, Costume settings, Working with
               <externalLink>
                 <linkText>Dragon Speak Parameters</linkText>
                 <linkAlternateText>Dragon Speak Parameters</linkAlternateText>
@@ -64,8 +73,8 @@
           <listItem>
             <para>
               Server to Client Instruction Handling. Parsing Server data for basic Proxy operation with events
-              leading out for custom code links. the events will return Server Data and EventArgs. this will apply to
-              Text channel parsing as well
+              leading out for custom code links. the events will return Server Data and EventArgs. this will
+              apply to Text channel parsing as well.
             </para>
           </listItem>
           <listItem>
@@ -78,17 +87,12 @@
     </section>
 
     <relatedTopics>
-      <externalLink>
-        <linkText>BugTraq at Ts Projects</linkText>
-        <linkUri>http://bugtraq.tsprojects.org</linkUri>
-      </externalLink>
-      <para>
-        Post bugs Comments and Suggestions here.
-      </para>
-      <link xlink:href="64d441eb-864b-4f9e-994f-2d87632ea597" />
+      <!--ButgTraq-->
+      <link xlink:href="1711b873-c91f-4780-8e67-6c39206cb317" />
       <!--About Link-->
-      <link xlink:href="4340cd61-7802-4111-a144-fc835a39faf6" />
+      <link xlink:href="64d441eb-864b-4f9e-994f-2d87632ea597" />
       <!--Version History-->
+      <link xlink:href="4340cd61-7802-4111-a144-fc835a39faf6" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

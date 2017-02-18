@@ -1,27 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" visible="True" isDefault="true" isSelected="true" title="Welcome to FFF3PP" />
-  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" title="Furcadia Specifications">
+  <Topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" visible="True" isDefault="true" title="Welcome to FFF3PP" />
+  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" isExpanded="true" title="Furcadia Specifications">
     <Topic id="a5f6d9fd-e7ec-4278-97f0-5c6d6535f7f7" visible="True" />
     <Topic id="a23d6f60-970b-4881-ad5f-077563316c63" visible="True" title="Furcadia File Paths" />
     <Topic id="7180cbcd-d0cd-4db5-820b-2255d5764840" visible="True" />
-    <Topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" visible="True">
+    <Topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" visible="True" isExpanded="true" title="Dragon Speak Constructor">
       <Topic id="c64fbfff-bfc3-42dc-bd67-21400a69023c" visible="True" title="DSC Hot Keys" />
       <Topic id="8c924167-6c3d-41dc-a8bb-b7f21f34830c" visible="True" title="DSC File Paths" />
-      <Topic id="52f92ba7-b964-4377-9336-d1a664365e40" visible="True" isExpanded="true">
+      <Topic id="52f92ba7-b964-4377-9336-d1a664365e40" visible="True" isExpanded="true" title="Configuration Files">
         <Topic id="9c6d643d-eca5-406a-ab49-464fbadbe83f" visible="True" />
-        <Topic id="95db5c29-0875-459d-b4f1-fd3c35c37fa7" visible="True" title="Draconic Magician (DS Wizard) Script format" />
         <Topic id="d03ce0b6-5d09-4a5d-bb98-1b73d880ab93" visible="True" title="DSC Help URLs" />
       </Topic>
-    </Topic>
-    <Topic id="ace0106b-f963-47f6-8be8-7c2fa78d223a" visible="True" />
-    <Topic id="3661a2f8-dfd3-4c4c-8f36-2ebf0e5cf409" visible="True" isExpanded="true">
-      <Topic id="c6406f52-f5e9-4a8e-8c24-559773867a8a" visible="True" isExpanded="true">
-        <Topic id="2e782621-dd7d-4bc1-92b6-1057df3af49f" visible="True" />
+      <Topic id="c66c6136-b446-4383-9f4d-4212fbeb1ea1" visible="True" isExpanded="true">
+        <Topic id="95db5c29-0875-459d-b4f1-fd3c35c37fa7" visible="True" title="Draconic Magician (DS Wizard) Script format" />
+        <Topic id="c8a00a7c-d0f8-4c4d-b392-710c441dab68" visible="True" />
+        <Topic id="02986d13-4fb6-41e9-8259-5a6aba51839d" visible="True" />
       </Topic>
     </Topic>
+    <Topic id="ace0106b-f963-47f6-8be8-7c2fa78d223a" visible="True" title="Server To Client Instructions (Game Server)" />
+    <Topic id="3661a2f8-dfd3-4c4c-8f36-2ebf0e5cf409" visible="True">
+      <Topic id="c6406f52-f5e9-4a8e-8c24-559773867a8a" visible="True" isExpanded="true">
+        <Topic id="2e782621-dd7d-4bc1-92b6-1057df3af49f" visible="True" />
+        <Topic id="3169fab2-9b67-4b16-9bdf-7dd5e952c280" visible="True" />
+        <Topic id="0050c021-7874-45a1-8a39-e250a8043e6f" visible="True" />
+      </Topic>
+    </Topic>
+    <Topic id="7ab28031-468f-4031-a08d-999012bf2eee" visible="True" />
   </Topic>
-  <Topic id="ac0f351b-19c1-47cc-928e-2eeaec33fc51" visible="True" isExpanded="true" title="FFF3PP Reference">
+  <Topic id="ac0f351b-19c1-47cc-928e-2eeaec33fc51" visible="True" title="FFF3PP Reference">
     <Topic id="06b51167-42c8-4e64-b22f-a52d06ed56a9" visible="True" noFile="true" isExpanded="true" title="Example Usage">
       <Topic id="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" visible="True" title="NetProxy Sample" />
     </Topic>
@@ -36,5 +43,6 @@
     <Topic id="65fa49e4-c1d8-4fa4-86d0-12dd7be5dd4d" visible="True" title="Project Credits" />
     <Topic id="c7ed588e-a969-400d-8893-39ed661e45a4" visible="True" />
     <Topic id="9fbfdcb2-e20d-4006-b879-31ec0c08346d" visible="True" />
+    <Topic id="1711b873-c91f-4780-8e67-6c39206cb317" visible="False" isSelected="true" title="BugTraq (Bug Reports)" />
   </Topic>
 </Topics>
