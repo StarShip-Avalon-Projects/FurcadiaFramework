@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" revisionNumber="1">
+<topic id="9c6d643d-eca5-406a-ab49-464fbadbe83f" revisionNumber="1">
   <developerConceptualDocument
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -18,6 +18,19 @@
       <!-- <autoOutline /> -->
 
       <para>Required introduction</para>
+      <para>Credits:</para>
+      <list class="nobullet">
+        <listItem>
+          <para>
+            Author: Iced
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Edited by: Gerolkae
+          </para>
+        </listItem>
+      </list>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
@@ -50,16 +63,10 @@
 
     <relatedTopics>
       <externalLink>
-        <linkText>Official Furcadia Dragon Speak Constructor Tutorial</linkText>
-        <linkAlternateText>http://cms.furcadia.com/creations/dreammaking/dreamtutorials/ds-ed</linkAlternateText>
-        <linkUri>URI</linkUri>
-      </externalLink>
-      <externalLink>
         <linkText>Furcadia Forums (DSC Development Thread)</linkText>
         <linkAlternateText>http://forums.furcadia.com/index.php?furcadia_session_id=150039-kelj-urj&amp;showtopic=51315</linkAlternateText>
         <linkUri>URI</linkUri>
       </externalLink>
-
       <!-- One or more of the following:
            - A local link
            - An external link

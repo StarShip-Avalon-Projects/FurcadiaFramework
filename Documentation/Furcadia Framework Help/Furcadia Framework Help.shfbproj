@@ -138,24 +138,33 @@
     <Folder Include="Content\" />
     <Folder Include="Content\Furcadia Specifications" />
     <Folder Include="Content\Furcadia Specifications\Dragon Speak Constructor" />
+    <Folder Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles" />
     <Folder Include="Content\FurcReference" />
     <Folder Include="Content\FurcReference\Samples\" />
     <Folder Include="Content\VersionHistory\" />
     <Folder Include="icons" />
+    <Folder Include="images" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons\Help.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="About.aml" />
+    <None Include="Bibilography.aml" />
     <None Include="Content\Conceptual1.aml" />
     <None Include="Content\Credits.aml" />
+    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\Configuration Files.aml" />
+    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\DSCUrls.ini.aml" />
+    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\Keys.ini.aml" />
+    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\Script.ini.aml" />
     <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\Dragon Speak Constructor.aml" />
     <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\DSC File Paths.aml" />
+    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\DSC Hot Keys.aml" />
     <None Include="Content\Furcadia Specifications\FilePaths.aml" />
     <None Include="Content\Furcadia Specifications\Furcadia Popup Dialogs.aml" />
     <None Include="Content\Furcadia Specifications\Furcadia Specifications.aml" />
     <None Include="Content\Furcadia Specifications\Pounce Speciifications.aml" />
+    <None Include="Content\Furcadia Specifications\ServerToClientInstructions.aml" />
     <None Include="Content\FurcReference\Furcadia Text Channels.aml" />
     <None Include="Content\FurcReference\Reference.aml" />
     <None Include="Content\FurcReference\Samples\NetProxy ctor.aml" />

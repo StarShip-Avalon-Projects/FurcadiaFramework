@@ -20,6 +20,25 @@
 
       <para>Furcadia File Paths</para>
       <para>These are subject to change. As of Furcadia V31b</para>
+      <para>Credits:</para>
+      <list class="nobullet">
+        <listItem>
+          <para>
+            Author: Artex
+            <externalLink>
+              <linkText>
+                Ice Realm (Furcadia Technical Resources)
+              </linkText>
+              <linkUri>http://ftr.icerealm.org/</linkUri>
+            </externalLink>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Edited by: Gerolkae
+          </para>
+        </listItem>
+      </list>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
@@ -174,11 +193,7 @@
       </content>
     </section>
     <relatedTopics>
-      <externalLink>
-        <linkText>Credits: Furcadia Technical Resources (Ice Realm)</linkText>
-        <linkAlternateText>Go to FTR</linkAlternateText>
-        <linkUri>http://ftr.icerealm.org/</linkUri>
-      </externalLink>
+      <link xlink:href="8c924167-6c3d-41dc-a8bb-b7f21f34830c" />
       <externalLink>
         <linkText>Credits: Furcadia Forums</linkText>
         <linkUri>http://forums.furcadia.com/index.php?furcadia_session_id=300293-cdlq-pvp&amp;showtopic=63786</linkUri>

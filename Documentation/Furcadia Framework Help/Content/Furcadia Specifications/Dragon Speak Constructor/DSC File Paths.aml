@@ -18,43 +18,44 @@
       <!-- <autoOutline /> -->
 
       <para>Required introduction</para>
+      <para>Credits:</para>
+      <list class="nobullet">
+        <listItem>
+          <para>
+            Author: Gerolkae
+          </para>
+        </listItem>
+      </list>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Dragon Speak Constructor (Pre-Furcadia Integration)</title>
       <content>
         <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
         <para>Add one or more sections with content</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+    </section>
+    <section address="Section2">
+      <title>Dragon Speak Constructor (Post-Furcadia Integration)</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>Add one or more sections with content</para>
+      </content>
     </section>
 
     <relatedTopics>
+      <link xlink:href="a23d6f60-970b-4881-ad5f-077563316c63" />
       <!-- One or more of the following:
            - A local link
            - An external link
            - A code entity reference
 
-      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID" />
       <link xlink:href="Other Topic's ID">Link inner text</link>
 
       <externalLink>
