@@ -1,17 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" visible="True" title="Welcome to FFF3PP" />
-  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" isExpanded="true" isSelected="true" title="Furcadia Specifications">
+  <Topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" visible="True" isDefault="true" isSelected="true" title="Welcome to FFF3PP" />
+  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" title="Furcadia Specifications">
     <Topic id="a5f6d9fd-e7ec-4278-97f0-5c6d6535f7f7" visible="True" />
     <Topic id="a23d6f60-970b-4881-ad5f-077563316c63" visible="True" title="Furcadia File Paths" />
     <Topic id="7180cbcd-d0cd-4db5-820b-2255d5764840" visible="True" />
-    <Topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" visible="True" isExpanded="true">
-      <Topic id="c64fbfff-bfc3-42dc-bd67-21400a69023c" visible="True" />
-      <Topic id="8c924167-6c3d-41dc-a8bb-b7f21f34830c" visible="True" />
+    <Topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" visible="True">
+      <Topic id="c64fbfff-bfc3-42dc-bd67-21400a69023c" visible="True" title="DSC Hot Keys" />
+      <Topic id="8c924167-6c3d-41dc-a8bb-b7f21f34830c" visible="True" title="DSC File Paths" />
       <Topic id="52f92ba7-b964-4377-9336-d1a664365e40" visible="True" isExpanded="true">
         <Topic id="9c6d643d-eca5-406a-ab49-464fbadbe83f" visible="True" />
-        <Topic id="95db5c29-0875-459d-b4f1-fd3c35c37fa7" visible="True" />
-        <Topic id="d03ce0b6-5d09-4a5d-bb98-1b73d880ab93" visible="True" />
+        <Topic id="95db5c29-0875-459d-b4f1-fd3c35c37fa7" visible="True" title="Draconic Magician (DS Wizard) Script format" />
+        <Topic id="d03ce0b6-5d09-4a5d-bb98-1b73d880ab93" visible="True" title="DSC Help URLs" />
+      </Topic>
+    </Topic>
+    <Topic id="ace0106b-f963-47f6-8be8-7c2fa78d223a" visible="True" />
+    <Topic id="3661a2f8-dfd3-4c4c-8f36-2ebf0e5cf409" visible="True" isExpanded="true">
+      <Topic id="c6406f52-f5e9-4a8e-8c24-559773867a8a" visible="True" isExpanded="true">
+        <Topic id="2e782621-dd7d-4bc1-92b6-1057df3af49f" visible="True" />
       </Topic>
     </Topic>
   </Topic>

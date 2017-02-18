@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="df5cf333-0d3b-46c1-a0fa-8a3d256118fd" revisionNumber="1">
+<topic id="2e782621-dd7d-4bc1-92b6-1057df3af49f" revisionNumber="1">
   <developerConceptualDocument
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -54,7 +54,7 @@
            - An external link
            - A code entity reference
 
-      <link xlink:href="Other Topic's ID" />
+      <link xlink:href="Other Topic's ID"/>
       <link xlink:href="Other Topic's ID">Link inner text</link>
 
       <externalLink>
