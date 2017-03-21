@@ -32,7 +32,7 @@ namespace Furcadia.Net
 
         public void Write(byte[] data)
         {
-            _data.Append(Encoding.GetEncoding(NetProxy.EncoderPage).GetString(data));
+            _data.Append(Encoding.GetEncoding(BaseProxy.EncoderPage).GetString(data));
         }
     }
 }

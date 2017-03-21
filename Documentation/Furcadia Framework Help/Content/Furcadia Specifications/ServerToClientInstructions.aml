@@ -18,30 +18,107 @@
            Glossary divisions will appear in the order defined in the topic.
            Glossary entries will be sorted by the first term for the entry.
            Terms are sorted by their value. -->
-      <glossaryDiv address="Group1">
-        <title>Group #1</title>
-
+      <glossaryDiv address="PrefixLineCv28">
+        <title>Prefix Next Line (Client V28)</title>
         <glossaryEntry>
           <terms>
-            <!-- One or more terms associated with the definition.  Add a termId
-               attribute if you need to link to it from a relatedEntry element.
-               Otherwise, it can be omitted.  Terms appear as a comma-separated
-               list above the definition. -->
-            <term termId="xyz">1st term</term>
-            <term>Other term (if any)</term>
+            <term termId="PreFixOld">	Prefix the following text line</term>
+            <term> ]- Prefix Text[*]</term>
           </terms>
 
           <definition>
-            <para>The definition of the term(s)</para>
+            <para>
+              This instruction is commonly used in its two forms: ]-#A and ]-#B that perpend a specitag/beekin
+              badge to the next text line shown by the instruction.
+            </para>
+            <para>
+              In essence, this instruction can pretty much perpend any desired string to the next text line
+              if specified.
+            </para>
+            <para>Credits:</para>
+            <para>
+              <externalLink>
+                <linkText>Furcadia Technical Resources</linkText>
+                <linkAlternateText>Vist FTR</linkAlternateText>
+                <linkUri>http://ftr.icerealm.org/ref-instructions/</linkUri>
+              </externalLink>
+            </para>
+            <para></para>
+          </definition>
+          <!-- One or more optional related entries.  Creates a "See Also"
+               line after the definition with links to each related term. -->
+          <relatedEntry termId="PrefixSpecitag" />
+          <relatedEntry termId="PreFixBadgeOld" />
+        </glossaryEntry>
+        <glossaryEntry>
+
+          <terms>
+            <term termId="PrefixSpecitag">Prefix Specitag</term>
+            <term>]-#AColors[14 - 30]</term>
+          </terms>
+
+          <definition>
+            <para>
+              This instruction is used with the text output instruction to display a
+              specitag of whoever sent the following message. It is a sub-instruction to ]-.
+            </para>
+
+            <para>Credits:</para>
+            <para>
+              <externalLink>
+                <linkText>Furcadia Technical Resources</linkText>
+                <linkAlternateText>Vist FTR</linkAlternateText>
+                <linkUri>http://ftr.icerealm.org/ref-instructions/</linkUri>
+              </externalLink>
+            </para>
+            <para></para>
+          </definition>
+          <relatedEntry termId="PreFixOld" />
+          <relatedEntry termId="PreFixBadgeOld" />
+          <!-- One or more optional related entries.  Creates a "See Also"
+               line after the definition with links to each related term. -->
+          <!-- <relatedEntry termId="xyz" /> -->
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termId="PreFixBadgeOld">	Prefix With Beekin Badge</term>
+            <term> ]-#BLast byte of badge tag[1]</term>
+          </terms>
+
+          <definition>
+            <para>
+              This instruction is used with the text output instruction to display a specitag
+              of whoever sent the following message. It is a sub-instruction to ]-.
+            </para>
+
+            <para>Credits:</para>
+            <para>
+              <externalLink>
+                <linkText>Furcadia Technical Resources</linkText>
+                <linkAlternateText>Vist FTR</linkAlternateText>
+                <linkUri>http://ftr.icerealm.org/ref-instructions/</linkUri>
+              </externalLink>
+            </para>
           </definition>
 
           <!-- One or more optional related entries.  Creates a "See Also"
                line after the definition with links to each related term. -->
           <!-- <relatedEntry termId="xyz" /> -->
+          <relatedEntry termId="PrefixSpecitag" />
+          <relatedEntry termId="PreFixOld" />
         </glossaryEntry>
 
+        <!--<glossaryEntry>
+          <terms>
+            <term termId=""></term>
+          </terms>
+          <definition>
+            <para>
+            </para>
+          </definition>
+          <relatedEntry termId="" />
+        </glossaryEntry>-->
       </glossaryDiv>
-
     </glossary>
   </developerGlossaryDocument>
 </topic>

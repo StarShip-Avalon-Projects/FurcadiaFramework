@@ -156,6 +156,7 @@
     <None Include="About.aml" />
     <None Include="Bibilography.aml" />
     <None Include="BugTraq.aml" />
+    <None Include="ColorCode.aml" />
     <None Include="Content\Credits.aml" />
     <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\Configuration Files.aml" />
     <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\DSCUrls.ini.aml" />
@@ -190,6 +191,7 @@
     <None Include="Content\Welcome.aml" />
     <None Include="Content\VersionHistory\V2.1.x.aml" />
     <None Include="Contribue.aml" />
+    <None Include="FurcadiaMarkupLanguage.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="Content Layout1.content" />

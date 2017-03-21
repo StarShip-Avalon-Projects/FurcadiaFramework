@@ -137,16 +137,18 @@
     <Compile Include="IO\FurcadiaNotFoundException.cs" />
     <Compile Include="IO\ParseClient.cs" />
     <Compile Include="IO\ParseServer.cs" />
-    <Compile Include="IO\ServerQue.cs" />
+    <Compile Include="Net\Proxy\ProxyReconnect.cs" />
+    <Compile Include="Net\Proxy\ServerQue.cs" />
     <Compile Include="IO\SubSystem\PhoenixSpeakParser.cs" />
     <Compile Include="Net\Dream\DREAM.cs" />
     <Compile Include="Net\Dream\FURRE.cs" />
     <Compile Include="Net\Dream\FURREList.cs" />
     <Compile Include="Net\NetClient.cs" />
     <Compile Include="Net\NetConnection.cs" />
-    <Compile Include="Net\NetProxyException.cs" />
+    <Compile Include="Net\Proxy\NetProxyException.cs" />
     <Compile Include="Net\NetServer.cs" />
-    <Compile Include="Net\ProxySession.cs" />
+    <Compile Include="Net\Proxy\NetProxy.cs" />
+    <Compile Include="Net\Proxy\ProxySession.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -163,7 +165,7 @@
     <Compile Include="Net\Dream\BotFurre.cs" />
     <Compile Include="Net\INetMessage.cs" />
     <Compile Include="Net\Movement.cs" />
-    <Compile Include="Net\NetProxy.cs" />
+    <Compile Include="Net\Proxy\BaseProxy.cs" />
     <Compile Include="Net\NetMessage.cs" />
     <Compile Include="Net\PounceConnection.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

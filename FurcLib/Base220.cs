@@ -196,7 +196,7 @@ namespace Furcadia
         {
             // System.Text.Encoding.GetEncoding(EncoderPage).GetBytes
 
-            return System.Text.Encoding.GetEncoding(NetProxy.EncoderPage).GetBytes(ToString(nDigits));
+            return System.Text.Encoding.GetEncoding(BaseProxy.EncoderPage).GetBytes(ToString(nDigits));
         }
 
         public override string ToString()

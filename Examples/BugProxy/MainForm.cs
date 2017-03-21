@@ -12,7 +12,7 @@ namespace BugProxy
     /// </summary>
     public partial class MainForm : Form
     {
-        private NetProxy proxy;
+        private BaseProxy proxy;
 
         /// <summary>
         /// </summary>
@@ -69,7 +69,7 @@ namespace BugProxy
                 }
             }
 
-            proxy = new NetProxy("lightbringer.furcadia.com", 6500, port);
+            proxy = new BaseProxy("lightbringer.furcadia.com", 6500, port);
             proxy.ClientData2 += onClientDataReceived;
             proxy.ServerData2 += onServerDataReceived;
 

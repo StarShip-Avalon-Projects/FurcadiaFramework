@@ -8,9 +8,15 @@ namespace FurcadiaFramework_Example.Demo
 
     public class NetworkDemo : IDemo
     {
+        #region Public Constructors
+
         public NetworkDemo()
         {
         }
+
+        #endregion Public Constructors
+
+        #region Public Methods
 
         public void Run()
         {
@@ -26,7 +32,7 @@ namespace FurcadiaFramework_Example.Demo
             output.Top = tBox.Height;
             output.Dock = DockStyle.Bottom;
 
-            NetProxy proxy = new NetProxy(6500);
+            BaseProxy proxy = new BaseProxy(6500);
 
             proxy.Connected += delegate
             {
@@ -116,5 +122,7 @@ namespace FurcadiaFramework_Example.Demo
             }
             else control.Text = text;
         }
+
+        #endregion Public Methods
     }
 }

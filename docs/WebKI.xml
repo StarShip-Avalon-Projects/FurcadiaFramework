@@ -56,7 +56,7 @@
   <HelpKINode Title="Badges.NumToEnum(Of T) method" Url="html/3a23cb65-8dc4-3a25-d4f2-318d44db3960.htm" />
   <HelpKINode Title="Badges.NumToEnum&lt;T&gt; method" Url="html/3a23cb65-8dc4-3a25-d4f2-318d44db3960.htm" />
   <HelpKINode Title="Badges.PrimeTable method" Url="html/1ffcab4b-5006-b760-b358-3eb4b4df874b.htm" />
-  <HelpKINode Title="BadgeTag field" Url="html/c4ae91a8-5666-c608-bb8d-76840919001a.htm" />
+  <HelpKINode Title="BadgeTag field" Url="html/2e57517b-8186-1c8d-d634-f2931fffcd09.htm" />
   <HelpKINode Title="BASE field" Url="html/72fe3193-8f48-bab4-57f7-30f203001c9c.htm" />
   <HelpKINode Title="Base220 class">
     <HelpKINode Title="Base220 Class" Url="html/e96e28b6-6ec3-ce1e-8805-7418ccf2dfec.htm" />
@@ -123,6 +123,48 @@
   <HelpKINode Title="Base95.ToByteArray method" Url="html/ea7722d9-fb31-7244-cf0c-ff9a7ba637d7.htm" />
   <HelpKINode Title="Base95.ToString method" Url="html/2bc995f4-757e-88e5-ffa2-9b917dcec368.htm" />
   <HelpKINode Title="Base95.Value field" Url="html/a73b2eb7-f1fb-b688-ca0f-d2758686861b.htm" />
+  <HelpKINode Title="BaseProxy class">
+    <HelpKINode Title="BaseProxy Class" Url="html/ae447268-91ed-7364-d4b9-640e36715723.htm" />
+    <HelpKINode Title="about BaseProxy class" Url="html/ae447268-91ed-7364-d4b9-640e36715723.htm" />
+    <HelpKINode Title="constructor" Url="html/1318a307-9ded-0664-92aa-f0b68aef38c1.htm" />
+    <HelpKINode Title="events" Url="html/f7837b6f-5b36-9539-f869-0ac7f30d8813.htm" />
+    <HelpKINode Title="fields" Url="html/39858095-5ad4-9977-d239-fc305630dd55.htm" />
+    <HelpKINode Title="methods" Url="html/640fe720-ffd2-3cf3-ebef-f327a02a7e74.htm" />
+    <HelpKINode Title="properties" Url="html/ded5c32d-935d-2ee7-1608-1073d21d0732.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseProxy.ActionDelegate delegate" Url="html/4fac9a8a-24ec-0d21-5574-849f17512610.htm" />
+  <HelpKINode Title="BaseProxy.BaseProxy constructor" Url="html/1318a307-9ded-0664-92aa-f0b68aef38c1.htm" />
+  <HelpKINode Title="BaseProxy.BufferCapacity property" Url="html/1bd0a6b6-f638-3967-7f13-41d63cac51ba.htm" />
+  <HelpKINode Title="BaseProxy.ClientData event" Url="html/c1753069-d4a7-9b64-3b0e-71699714bcd9.htm" />
+  <HelpKINode Title="BaseProxy.ClientData2 event" Url="html/98e28e40-2bed-51be-c76e-b8bf8e106962.htm" />
+  <HelpKINode Title="BaseProxy.ClientDisConnected event" Url="html/594b9fc7-4755-65b7-8bf9-38da3125f280.htm" />
+  <HelpKINode Title="BaseProxy.ClientExited event" Url="html/126d8348-c5be-78d9-b313-14cb74b8e9e0.htm" />
+  <HelpKINode Title="BaseProxy.CloseClient method" Url="html/258021b8-41c2-6ae9-a9a0-9ed8dc03fa90.htm" />
+  <HelpKINode Title="BaseProxy.Connect method" Url="html/fbd8949b-d7d6-578b-560f-2128e0036439.htm" />
+  <HelpKINode Title="BaseProxy.Connected event" Url="html/3ee7976c-2608-7dcd-e143-5753dd68e9f4.htm" />
+  <HelpKINode Title="BaseProxy.DataEventHandler delegate" Url="html/1c5c0889-7f94-d714-08bd-28c2e6bc3729.htm" />
+  <HelpKINode Title="BaseProxy.DataEventHandler2 delegate" Url="html/1c1210c6-af87-534a-7a55-86444ed6bbff.htm" />
+  <HelpKINode Title="BaseProxy.Dispose method" Url="html/6a1f6013-6ff4-e969-d1a3-d15effcc0417.htm" />
+  <HelpKINode Title="BaseProxy.EncoderPage property" Url="html/c5ef6aac-43a3-d3ee-c716-33321f3a86cb.htm" />
+  <HelpKINode Title="BaseProxy.Error event" Url="html/2efad831-7cf0-7a1e-3b86-23e5464d6b92.htm" />
+  <HelpKINode Title="BaseProxy.ErrorEventHandler delegate" Url="html/df305d36-4148-8d04-2849-31ecf7e2d853.htm" />
+  <HelpKINode Title="BaseProxy.FurcPath field" Url="html/2485a612-5d2a-08db-ec24-ea2ed82d0cd8.htm" />
+  <HelpKINode Title="BaseProxy.FurcSettingsRestored event" Url="html/73411d40-7ea1-688a-321f-7e99ae17c7fa.htm" />
+  <HelpKINode Title="BaseProxy.IsClientConnected property" Url="html/ec2359bb-4f15-95b7-ff7f-80d2d39fe047.htm" />
+  <HelpKINode Title="BaseProxy.IsServerConnected property" Url="html/9f5ebc0b-5498-152c-721f-4c564617f130.htm" />
+  <HelpKINode Title="BaseProxy.Kill method" Url="html/b8bbd66e-c64e-6cf9-9523-f7a2266af06d.htm" />
+  <HelpKINode Title="BaseProxy.Process property" Url="html/24b6995f-a9bf-cab5-056c-6f388478e324.htm" />
+  <HelpKINode Title="BaseProxy.ProcessCMD property" Url="html/a2e2fe1a-2f92-7a4e-75cd-304c8d27ccca.htm" />
+  <HelpKINode Title="BaseProxy.ProcessPath property" Url="html/5a572740-8121-4e22-ca33-47eb1af1862f.htm" />
+  <HelpKINode Title="BaseProxy.ProcID property" Url="html/ccaa0d1f-90af-1b2b-38fd-11f1ef96e16c.htm" />
+  <HelpKINode Title="BaseProxy.SendClient method" Url="html/96e014b9-2771-c6e7-52da-b23b07b101dc.htm" />
+  <HelpKINode Title="BaseProxy.SendServer method" Url="html/7be41410-f28d-c0de-d3ad-f39af56892ae.htm" />
+  <HelpKINode Title="BaseProxy.ServerData event" Url="html/be592312-40f7-8a18-57d2-c9831b83b72f.htm" />
+  <HelpKINode Title="BaseProxy.ServerData2 event" Url="html/530f2316-8f39-1110-8578-e75b8fa973d0.htm" />
+  <HelpKINode Title="BaseProxy.ServerDisConnected event" Url="html/e5e6276f-3613-a262-6ab2-5c5ff07d0c33.htm" />
+  <HelpKINode Title="BaseProxy.SetProcess method" Url="html/baf3d7fe-0b15-5f82-fdc8-84c0042bbf4f.htm" />
+  <HelpKINode Title="BaseProxy.StandAloneMode property" Url="html/a6a0bc28-53ab-f558-5b1f-57d0066db01c.htm" />
+  <HelpKINode Title="BaseProxy._lport field" Url="html/eb28dbbb-c836-59c6-a559-c6ed5afab7d0.htm" />
   <HelpKINode Title="BootRemap field" Url="html/412d7b9e-6c45-5190-7eef-04d7d2a8572c.htm" />
   <HelpKINode Title="BotFurre class">
     <HelpKINode Title="BotFurre Class" Url="html/d8234ce3-fe16-242e-221f-070c32cc0eed.htm" />
@@ -150,8 +192,8 @@
   <HelpKINode Title="BotFurre.Y property" Url="html/0763eea7-9d96-8688-e065-01d6703f881e.htm" />
   <HelpKINode Title="BracersRemap field" Url="html/88f7672f-262f-74c9-a4ee-00bd332cea47.htm" />
   <HelpKINode Title="BufferCapacity property">
+    <HelpKINode Title="BaseProxy.BufferCapacity Property " Url="html/1bd0a6b6-f638-3967-7f13-41d63cac51ba.htm" />
     <HelpKINode Title="NetConnection.BufferCapacity Property " Url="html/8baeefcc-a958-f802-0107-8f2297abfa75.htm" />
-    <HelpKINode Title="NetProxy.BufferCapacity Property " Url="html/9b8fdfb3-e93f-31f7-80d0-dbef13e903bd.htm" />
   </HelpKINode>
   <HelpKINode Title="CameraState enumeration member" Url="html/21a656b0-f5e4-54cc-64fe-617018ad5943.htm" />
   <HelpKINode Title="canAppendData method" Url="html/91723657-eb8f-f216-c05c-7a1f1db99502.htm" />
@@ -203,15 +245,15 @@
     <HelpKINode Title="Avatar.Frame.Clear Method " Url="html/1d656ada-7175-cd1d-fb2f-939be813b68a.htm" />
     <HelpKINode Title="FURREList.Clear Method " Url="html/db4fa202-d657-21e6-c329-1bdbaf12a16b.htm" />
   </HelpKINode>
-  <HelpKINode Title="ClientData event" Url="html/2200db5e-7ecc-0592-51b5-00ae8bddaa21.htm" />
-  <HelpKINode Title="ClientData2 event" Url="html/c07bf9b3-80d0-2980-1b24-5556a80b4a5e.htm" />
-  <HelpKINode Title="ClientDataReceived event" Url="html/5da892ac-3641-77ce-443c-1aaf22430efc.htm" />
-  <HelpKINode Title="ClientDisConnected event" Url="html/4eb0ee3b-7d26-a032-77eb-4b52a12dc99d.htm" />
+  <HelpKINode Title="ClientData event" Url="html/c1753069-d4a7-9b64-3b0e-71699714bcd9.htm" />
+  <HelpKINode Title="ClientData2 event" Url="html/98e28e40-2bed-51be-c76e-b8bf8e106962.htm" />
+  <HelpKINode Title="ClientDataReceived event" Url="html/b1e46932-b80c-63cc-ed47-fe8852a5793c.htm" />
+  <HelpKINode Title="ClientDisConnected event" Url="html/594b9fc7-4755-65b7-8bf9-38da3125f280.htm" />
   <HelpKINode Title="ClientExited event">
+    <HelpKINode Title="BaseProxy.ClientExited Event" Url="html/126d8348-c5be-78d9-b313-14cb74b8e9e0.htm" />
     <HelpKINode Title="NetProxy.ClientExited Event" Url="html/f97f3b6d-e59d-5400-9bfc-64c2b4053662.htm" />
-    <HelpKINode Title="ProxySession.ClientExited Event" Url="html/f31f5d68-dcea-e438-38dd-f7e3473566c3.htm" />
   </HelpKINode>
-  <HelpKINode Title="CloseClient method" Url="html/1bb14efc-d265-6817-8516-e7a8977af23a.htm" />
+  <HelpKINode Title="CloseClient method" Url="html/258021b8-41c2-6ae9-a9a0-9ed8dc03fa90.htm" />
   <HelpKINode Title="Color property">
     <HelpKINode Title="BotFurre.Color Property " Url="html/14dce92e-7311-197f-d6b0-b72e448ed83e.htm" />
     <HelpKINode Title="FURRE.Color Property " Url="html/f8008790-2593-caaa-643b-0097f28bd185.htm" />
@@ -227,15 +269,15 @@
     <HelpKINode Title="Base95.CompareTo Method " Url="html/0a107548-15d4-d3a6-9ee4-f04e3b5c358f.htm" />
   </HelpKINode>
   <HelpKINode Title="Connect method">
+    <HelpKINode Title="BaseProxy.Connect Method " Url="html/fbd8949b-d7d6-578b-560f-2128e0036439.htm" />
     <HelpKINode Title="NetConnection.Connect Method " Url="html/49cb5f39-354c-e329-e263-b243ef72f968.htm" />
-    <HelpKINode Title="NetProxy.Connect Method " Url="html/2ee496c8-b181-f2d7-b854-9a83bdff86e8.htm" />
     <HelpKINode Title="PounceConnection.Connect Method " Url="html/8c447462-b33c-7f76-5749-be28c93d2f4f.htm" />
   </HelpKINode>
   <HelpKINode Title="ConnectAsync method" Url="html/b261a250-61be-0136-0109-ff6fc4d6a6e5.htm" />
   <HelpKINode Title="Connected event">
+    <HelpKINode Title="BaseProxy.Connected Event" Url="html/3ee7976c-2608-7dcd-e143-5753dd68e9f4.htm" />
     <HelpKINode Title="NetConnection.Connected Event" Url="html/79eb7a4c-ecfc-77e9-d559-f1680c6adbc7.htm" />
     <HelpKINode Title="NetProxy.Connected Event" Url="html/27e6c131-bf03-3767-ad0f-f5c164b14eb8.htm" />
-    <HelpKINode Title="ProxySession.Connected Event" Url="html/1fe2efb4-eec4-82e4-08f0-721342d5fda4.htm" />
   </HelpKINode>
   <HelpKINode Title="Contains method" Url="html/c86c94b9-27f5-7d22-6ad2-980482590fc9.htm" />
   <HelpKINode Title="contains method" Url="html/c305754d-452a-111d-a53a-0b429643f069.htm" />
@@ -248,10 +290,7 @@
   <HelpKINode Title="CounterMax field" Url="html/f2fa7093-610e-32fb-9934-c989752803a4.htm" />
   <HelpKINode Title="Current property" Url="html/40fe499c-85d8-e96f-d7e9-098488bb4a32.htm" />
   <HelpKINode Title="DataParsed event" Url="html/232eccc6-be3c-fd1b-dbcf-4b95fdb8ede1.htm" />
-  <HelpKINode Title="Default property">
-    <HelpKINode Title="DREAM.Default Property " Url="html/3d0dc415-bcc0-0d88-02e4-a6b82e6f4af6.htm" />
-    <HelpKINode Title="Palette.Default Property " Url="html/084fc517-5846-364c-62ce-c4bcb1100f48.htm" />
-  </HelpKINode>
+  <HelpKINode Title="Default property" Url="html/084fc517-5846-364c-62ce-c4bcb1100f48.htm" />
   <HelpKINode Title="Delay enumeration member" Url="html/21a656b0-f5e4-54cc-64fe-617018ad5943.htm" />
   <HelpKINode Title="DeleteSetting method" Url="html/59e1c26f-153c-767c-4cd5-ec2fefeb245d.htm" />
   <HelpKINode Title="Desc property">
@@ -261,11 +300,12 @@
   <HelpKINode Title="Description field" Url="html/30e3974c-bd28-7ea1-7ba0-d3a1964e4293.htm" />
   <HelpKINode Title="dir field" Url="html/2135d906-21cc-72e4-9462-5011aac0e9dc.htm" />
   <HelpKINode Title="Dispose method">
+    <HelpKINode Title="BaseProxy.Dispose Method " Url="html/6a1f6013-6ff4-e969-d1a3-d15effcc0417.htm" />
     <HelpKINode Title="DREAM.Dispose Method " Url="html/dfbd317b-5eb0-b3fb-f714-c55273260b92.htm" />
     <HelpKINode Title="FURREList.Dispose Method " Url="html/8a66b191-fefc-40c8-5ec7-be120d4591b3.htm" />
     <HelpKINode Title="NetConnection.Dispose Method " Url="html/3de2eb56-03ad-30a8-7a60-8c1969c39219.htm" />
     <HelpKINode Title="NetProxy.Dispose Method " Url="html/89425b4b-99e3-b69f-5ad7-b93f4dcb3436.htm" />
-    <HelpKINode Title="ProxySession.Dispose Method " Url="html/97e3f86a-d62f-b5f2-5fb8-1a198caf93c4.htm" />
+    <HelpKINode Title="ServerQue.Dispose Method " Url="html/6a05aa9f-8ec3-74f4-f160-82333d9f7c80.htm" />
   </HelpKINode>
   <HelpKINode Title="Division operator">
     <HelpKINode Title="Base220.Division Operator " Url="html/1fc034ce-fa5b-8ffe-3c1e-62eb37e16360.htm" />
@@ -281,8 +321,7 @@
     <HelpKINode Title="methods" Url="html/add2e3b9-eb1f-e2fe-4a38-264b67bfaee5.htm" />
     <HelpKINode Title="properties" Url="html/daf1e3cd-1c9e-2d02-05ea-6bd1cdd6ba37.htm" />
   </HelpKINode>
-  <HelpKINode Title="Dream field" Url="html/16e80ef0-0bfa-8e4f-8e8f-246863db8a87.htm" />
-  <HelpKINode Title="DREAM.Default property" Url="html/3d0dc415-bcc0-0d88-02e4-a6b82e6f4af6.htm" />
+  <HelpKINode Title="Dream field" Url="html/f41e7b4f-f6dd-26ca-3a4c-ec25491ea7b2.htm" />
   <HelpKINode Title="DREAM.Dispose method" Url="html/dfbd317b-5eb0-b3fb-f714-c55273260b92.htm" />
   <HelpKINode Title="DREAM.DREAM constructor" Url="html/042841e5-66d6-801c-7936-7a4305481106.htm" />
   <HelpKINode Title="DREAM.FurreList field" Url="html/89c1091b-fbe1-5ae1-12a1-0c6390361887.htm" />
@@ -300,8 +339,8 @@
   </HelpKINode>
   <HelpKINode Title="EncodeDream property" Url="html/ceb34e70-94ca-5a04-7000-e1077a3c7ba9.htm" />
   <HelpKINode Title="EncoderPage property">
+    <HelpKINode Title="BaseProxy.EncoderPage Property " Url="html/c5ef6aac-43a3-d3ee-c716-33321f3a86cb.htm" />
     <HelpKINode Title="NetConnection.EncoderPage Property " Url="html/f58281ad-7e6c-d1a1-2ecc-f7137741d5d8.htm" />
-    <HelpKINode Title="NetProxy.EncoderPage Property " Url="html/be607ff7-ddb2-07af-62ae-3bf1eb872327.htm" />
   </HelpKINode>
   <HelpKINode Title="Encryption field" Url="html/58e6401a-d5c2-f13f-06cc-2b1bdb3abeb2.htm" />
   <HelpKINode Title="EnforceParentalControls property" Url="html/67d39426-c4b1-2d47-06a3-15b0c095e0b5.htm" />
@@ -317,13 +356,13 @@
     <HelpKINode Title="FurrePosition.Equals Method " Url="html/150770f7-b066-d6d9-d84c-24d5d67f8026.htm" />
   </HelpKINode>
   <HelpKINode Title="Error event">
-    <HelpKINode Title="NetProxy.Error Event" Url="html/ef1d146f-a937-0ba1-c86f-f9805f0d1073.htm" />
+    <HelpKINode Title="BaseProxy.Error Event" Url="html/2efad831-7cf0-7a1e-3b86-23e5464d6b92.htm" />
     <HelpKINode Title="NetConnection.Error Event" Url="html/9de0f9be-a127-269e-4749-e5784822f239.htm" />
   </HelpKINode>
-  <HelpKINode Title="error event" Url="html/8a8e9431-7f11-5913-4d11-a25d200ac328.htm" />
+  <HelpKINode Title="error event" Url="html/14dab5a3-55b4-4f5f-bb39-7fa5fb1799fa.htm" />
   <HelpKINode Title="Everyone field" Url="html/c7e77753-4de8-bec5-db83-30b14cb00c5f.htm" />
   <HelpKINode Title="EyeRemap field" Url="html/80c14d78-1c5f-dd8e-0ae5-c9b7eadfb609.htm" />
-  <HelpKINode Title="fIDtoFurre method" Url="html/177c5724-7c7d-3d07-72ed-e30b103dba2c.htm" />
+  <HelpKINode Title="fIDtoFurre method" Url="html/8b454486-0cdb-aaf2-a2b3-693f8e89d72f.htm" />
   <HelpKINode Title="Flag property">
     <HelpKINode Title="BotFurre.Flag Property " Url="html/0a330fce-8191-6322-8d17-6d1443c80236.htm" />
     <HelpKINode Title="FURRE.Flag Property " Url="html/735b4e8b-0e19-0bd8-dab9-2362376870f6.htm" />
@@ -413,6 +452,11 @@
   <HelpKINode Title="Furcadia.IO.ServerQue.SendServerEventHandler delegate" Url="html/dd0194ce-e1ab-10a5-569a-181f128222de.htm" />
   <HelpKINode Title="Furcadia.IO.UserFileAccessRights class" Url="html/2116064e-d7bb-6abd-e716-ce59603c7e42.htm" />
   <HelpKINode Title="Furcadia.Net namespace" Url="html/4e92a76c-d566-c370-1485-300da13612df.htm" />
+  <HelpKINode Title="Furcadia.Net.BaseProxy class" Url="html/ae447268-91ed-7364-d4b9-640e36715723.htm" />
+  <HelpKINode Title="Furcadia.Net.BaseProxy.ActionDelegate delegate" Url="html/4fac9a8a-24ec-0d21-5574-849f17512610.htm" />
+  <HelpKINode Title="Furcadia.Net.BaseProxy.DataEventHandler delegate" Url="html/1c5c0889-7f94-d714-08bd-28c2e6bc3729.htm" />
+  <HelpKINode Title="Furcadia.Net.BaseProxy.DataEventHandler2 delegate" Url="html/1c1210c6-af87-534a-7a55-86444ed6bbff.htm" />
+  <HelpKINode Title="Furcadia.Net.BaseProxy.ErrorEventHandler delegate" Url="html/df305d36-4148-8d04-2849-31ecf7e2d853.htm" />
   <HelpKINode Title="Furcadia.Net.BotFurre class" Url="html/d8234ce3-fe16-242e-221f-070c32cc0eed.htm" />
   <HelpKINode Title="Furcadia.Net.DREAM class" Url="html/cd469a91-ff4b-dd1a-d158-7b088579c089.htm" />
   <HelpKINode Title="Furcadia.Net.FURRE class" Url="html/95c41d5a-3e45-361f-af41-a52c192c229b.htm" />
@@ -426,14 +470,11 @@
   <HelpKINode Title="Furcadia.Net.NetConnection.ErrorEventHandler delegate" Url="html/3bf54f7e-ae7a-5d41-2353-83d11811d7ea.htm" />
   <HelpKINode Title="Furcadia.Net.NetMessage class" Url="html/114803de-6c69-4f8e-ba4b-649f0957c95d.htm" />
   <HelpKINode Title="Furcadia.Net.NetProxy class" Url="html/573497a5-b078-f0a2-4910-284e2282fbfc.htm" />
-  <HelpKINode Title="Furcadia.Net.NetProxy.ActionDelegate delegate" Url="html/a21f9c36-37e5-7caa-9176-c6044c548d69.htm" />
-  <HelpKINode Title="Furcadia.Net.NetProxy.DataEventHandler delegate" Url="html/38a29d9e-e348-ae3a-f514-08a27d55e073.htm" />
-  <HelpKINode Title="Furcadia.Net.NetProxy.DataEventHandler2 delegate" Url="html/258cccf8-5252-32bd-88bf-fea1613eb8e9.htm" />
-  <HelpKINode Title="Furcadia.Net.NetProxy.ErrorEventHandler delegate" Url="html/127a0dff-fac4-d998-d4a9-78d03e02c2a6.htm" />
   <HelpKINode Title="Furcadia.Net.NetProxyException class" Url="html/0b246e09-75c6-ed5c-636b-f2e74386897a.htm" />
   <HelpKINode Title="Furcadia.Net.PounceConnection class" Url="html/cc2832ee-c0dd-7ae2-e261-1d5b8b8bb1d8.htm" />
   <HelpKINode Title="Furcadia.Net.PounceConnection.PounceResponse delegate" Url="html/8c7fa72f-5886-f86e-2ae6-aa91f96a1e81.htm" />
-  <HelpKINode Title="Furcadia.Net.ProxySession class" Url="html/a7fcfd72-f8f0-86ee-e363-2259033aed6a.htm" />
+  <HelpKINode Title="Furcadia.Net.Proxy namespace" Url="html/6a190ee9-b41f-3b71-663b-2de73790319e.htm" />
+  <HelpKINode Title="Furcadia.Net.Proxy.ProxySession class" Url="html/42b6e22d-2cd4-4f4a-5928-e3956fa7a027.htm" />
   <HelpKINode Title="Furcadia.Net.ServerDisConnectedHandler delegate" Url="html/197b653e-bfc2-e423-953a-19f3a087b777.htm" />
   <HelpKINode Title="Furcadia.Settings class" Url="html/43fed4da-d30a-4d49-19ac-cce994a1f205.htm" />
   <HelpKINode Title="Furcadia.Util class" Url="html/edc6fdba-0013-53b3-e73d-9688140a0302.htm" />
@@ -466,7 +507,6 @@
   </HelpKINode>
   <HelpKINode Title="FurcadiaPaletteException.FurcadiaPaletteException constructor" Url="html/b19f646e-82dd-0830-127e-4a186bf0be39.htm" />
   <HelpKINode Title="FurcadiaPlayer field" Url="html/c0a0f2f5-55e3-c136-1c08-a1adf0c07be3.htm" />
-  <HelpKINode Title="FurcadiaProxy field" Url="html/aa4af922-f4a4-bac2-e76d-53f1e1288253.htm" />
   <HelpKINode Title="FurcadiaShapes class">
     <HelpKINode Title="FurcadiaShapes Class" Url="html/bbc6f62d-dcfd-b843-b04c-81c33bc41e9c.htm" />
     <HelpKINode Title="about FurcadiaShapes class" Url="html/bbc6f62d-dcfd-b843-b04c-81c33bc41e9c.htm" />
@@ -505,13 +545,12 @@
   <HelpKINode Title="FurcIni.LoadFurcadiaSettings method" Url="html/39703ffa-6294-059c-e577-3ab3b797f330.htm" />
   <HelpKINode Title="FurcIni.SaveFurcadiaSettings method" Url="html/3cc94df9-972f-1347-e9d9-56a30b075e23.htm" />
   <HelpKINode Title="FurcIni.SetUserSetting method" Url="html/03d17490-fb54-b14d-28d0-dd7aeee82b18.htm" />
-  <HelpKINode Title="FurcMutex field" Url="html/c864eaa3-f4f0-4075-665a-ff07882828bc.htm" />
   <HelpKINode Title="FurcPath field">
+    <HelpKINode Title="BaseProxy.FurcPath Field" Url="html/2485a612-5d2a-08db-ec24-ea2ed82d0cd8.htm" />
     <HelpKINode Title="NetConnection.FurcPath Field" Url="html/4abd679a-e1e4-06d1-52db-2b21d1c4c508.htm" />
-    <HelpKINode Title="NetProxy.FurcPath Field" Url="html/c60b7d7b-b05b-4ccb-1098-177165aadc37.htm" />
   </HelpKINode>
-  <HelpKINode Title="FurcProcessId property" Url="html/ee799480-1592-ace3-9ab7-f3549994b7c7.htm" />
-  <HelpKINode Title="FurcSettingsRestored event" Url="html/8af7f323-97d1-2609-d9f3-c110a476a3d0.htm" />
+  <HelpKINode Title="FurcProcessId property" Url="html/1da85f71-e1e8-b84b-8b27-89f5d6194001.htm" />
+  <HelpKINode Title="FurcSettingsRestored event" Url="html/73411d40-7ea1-688a-321f-7e99ae17c7fa.htm" />
   <HelpKINode Title="FURRE class">
     <HelpKINode Title="FURRE Class" Url="html/95c41d5a-3e45-361f-af41-a52c192c229b.htm" />
     <HelpKINode Title="about FURRE class" Url="html/95c41d5a-3e45-361f-af41-a52c192c229b.htm" />
@@ -694,19 +733,19 @@
   <HelpKINode Title="Int16 to Base220 conversion" Url="html/fd9f3086-be8e-5beb-1e66-36f7c3571e30.htm" />
   <HelpKINode Title="Int32 to Base220 conversion" Url="html/3c9996fd-364b-2bf9-4798-6f766c480955.htm" />
   <HelpKINode Title="Ip property" Url="html/39ecc77c-5783-9d83-fc67-e1a5154a4148.htm" />
-  <HelpKINode Title="IsClientConnected property" Url="html/ee1e579a-a9c9-9f90-bd67-06ffcc787221.htm" />
+  <HelpKINode Title="IsClientConnected property" Url="html/ec2359bb-4f15-95b7-ff7f-80d2d39fe047.htm" />
   <HelpKINode Title="IsOdd method" Url="html/800d08a7-c1c3-8721-9c9f-334879b00b7e.htm" />
   <HelpKINode Title="IsServerConnected property">
+    <HelpKINode Title="BaseProxy.IsServerConnected Property " Url="html/9f5ebc0b-5498-152c-721f-4c564617f130.htm" />
     <HelpKINode Title="NetConnection.IsServerConnected Property " Url="html/dbe6cff3-cd26-a2c2-9b06-c90fdf749405.htm" />
-    <HelpKINode Title="NetProxy.IsServerConnected Property " Url="html/75208390-e9a7-be61-a5d0-3e8c8d4ae6b3.htm" />
   </HelpKINode>
   <HelpKINode Title="IsSynchronized property" Url="html/6b6d7092-f7bf-d4be-aecd-3a3c24a07bc4.htm" />
   <HelpKINode Title="ITEM property" Url="html/c7e8daa9-4bdc-0373-3b05-96c0a7a301fb.htm" />
   <HelpKINode Title="Item property" Url="html/14b01b4d-95d5-f43e-c018-71ba199d57da.htm" />
   <HelpKINode Title="Jump enumeration member" Url="html/21a656b0-f5e4-54cc-64fe-617018ad5943.htm" />
   <HelpKINode Title="Kill method">
+    <HelpKINode Title="BaseProxy.Kill Method " Url="html/b8bbd66e-c64e-6cf9-9523-f7a2266af06d.htm" />
     <HelpKINode Title="NetConnection.Kill Method " Url="html/7d132e46-06ec-a954-d0fa-52e8df05666f.htm" />
-    <HelpKINode Title="NetProxy.Kill Method " Url="html/2f52926b-9cca-1dfa-68e7-590cf533f654.htm" />
     <HelpKINode Title="PounceConnection.Kill Method " Url="html/f461a8e3-cd7b-048d-e82f-255660643f2f.htm" />
   </HelpKINode>
   <HelpKINode Title="KitterSpeak field" Url="html/57e1813b-f971-5aec-c66c-22514db9daca.htm" />
@@ -726,11 +765,11 @@
   </HelpKINode>
   <HelpKINode Title="LoadFrom method" Url="html/47b74a81-3682-8b5f-0b6d-612fafdaccdd.htm" />
   <HelpKINode Title="LoadFurcadiaSettings method" Url="html/39703ffa-6294-059c-e577-3ab3b797f330.htm" />
-  <HelpKINode Title="loggingin field" Url="html/3d16e644-cffc-5ad7-9ebc-b45c30a0c954.htm" />
-  <HelpKINode Title="LoggingIn property" Url="html/12c2de18-bcb0-8937-e1e1-0dfbe0cf71f3.htm" />
+  <HelpKINode Title="loggingIn field" Url="html/a5d43683-8e8e-5e20-c2ba-2a0285dac40b.htm" />
+  <HelpKINode Title="LoggingIn property" Url="html/6a98a933-19ea-090f-fe11-d8d58c3194ad.htm" />
   <HelpKINode Title="Logins field" Url="html/2e3249bc-2502-bdcc-2728-b49a7dc4483c.htm" />
   <HelpKINode Title="LOGINS property" Url="html/9c2e13d1-f077-e6ad-f1bd-430fd58c063d.htm" />
-  <HelpKINode Title="LookQue field" Url="html/2c9f4b57-b13f-5e06-d2a1-9c98e58cd7f3.htm" />
+  <HelpKINode Title="LookQue field" Url="html/7442d106-b24d-b4d4-f2f4-cd3441518522.htm" />
   <HelpKINode Title="Loop enumeration member" Url="html/21a656b0-f5e4-54cc-64fe-617018ad5943.htm" />
   <HelpKINode Title="Map class">
     <HelpKINode Title="Map Class" Url="html/8476bb33-f467-0840-6c90-f2558f00fb19.htm" />
@@ -816,10 +855,6 @@
   <HelpKINode Title="MapTile.x field" Url="html/c7efa888-3216-ece4-a416-e9ca3658ae0a.htm" />
   <HelpKINode Title="MapTile.y field" Url="html/7961a27f-51d0-9f3f-9d50-5659af9c0fef.htm" />
   <HelpKINode Title="MarkingsRemap field" Url="html/09a4a920-a1c3-46e6-6355-c90e2462d568.htm" />
-  <HelpKINode Title="MASS_CRITICAL field" Url="html/187c6eeb-5b28-88c6-5a63-ff23c59dddb5.htm" />
-  <HelpKINode Title="MASS_DEFAULT field" Url="html/12936ea5-8053-8859-50e1-97eac14ab4e1.htm" />
-  <HelpKINode Title="MASS_NOENDURANCE field" Url="html/03854642-c338-b714-a3ee-257cb2577517.htm" />
-  <HelpKINode Title="MASS_SPEECH field" Url="html/64f59655-5d5c-d08c-fd63-126f46377629.htm" />
   <HelpKINode Title="Mature field" Url="html/4d221ca2-f69f-3123-07b2-dd45c45a8af5.htm" />
   <HelpKINode Title="Message property" Url="html/7696c3c2-4af3-45f1-9f9a-d6501e0db8d5.htm" />
   <HelpKINode Title="Modulus operator">
@@ -884,45 +919,41 @@
   <HelpKINode Title="NetProxy class">
     <HelpKINode Title="NetProxy Class" Url="html/573497a5-b078-f0a2-4910-284e2282fbfc.htm" />
     <HelpKINode Title="about NetProxy class" Url="html/573497a5-b078-f0a2-4910-284e2282fbfc.htm" />
-    <HelpKINode Title="constructor" Url="html/23799e7e-cadc-c021-bf04-d2e2476daed5.htm" />
+    <HelpKINode Title="constructor" Url="html/8103b951-6c1c-f28f-9001-2f8f6e260218.htm" />
     <HelpKINode Title="events" Url="html/7b4f0971-7dce-b3f1-0eec-450d45450d8d.htm" />
     <HelpKINode Title="fields" Url="html/04b87847-9d93-f9d7-5de2-dd3ebcde2414.htm" />
     <HelpKINode Title="methods" Url="html/cc0e9af4-cb19-fe71-2cc2-4be4b267db4e.htm" />
     <HelpKINode Title="properties" Url="html/4ba34a79-944f-b0ca-30b4-fda4fe939c89.htm" />
   </HelpKINode>
-  <HelpKINode Title="NetProxy.ActionDelegate delegate" Url="html/a21f9c36-37e5-7caa-9176-c6044c548d69.htm" />
-  <HelpKINode Title="NetProxy.BufferCapacity property" Url="html/9b8fdfb3-e93f-31f7-80d0-dbef13e903bd.htm" />
-  <HelpKINode Title="NetProxy.ClientData event" Url="html/2200db5e-7ecc-0592-51b5-00ae8bddaa21.htm" />
-  <HelpKINode Title="NetProxy.ClientData2 event" Url="html/c07bf9b3-80d0-2980-1b24-5556a80b4a5e.htm" />
-  <HelpKINode Title="NetProxy.ClientDisConnected event" Url="html/4eb0ee3b-7d26-a032-77eb-4b52a12dc99d.htm" />
+  <HelpKINode Title="NetProxy.BadgeTag field" Url="html/2e57517b-8186-1c8d-d634-f2931fffcd09.htm" />
+  <HelpKINode Title="NetProxy.ClientDataReceived event" Url="html/b1e46932-b80c-63cc-ed47-fe8852a5793c.htm" />
   <HelpKINode Title="NetProxy.ClientExited event" Url="html/f97f3b6d-e59d-5400-9bfc-64c2b4053662.htm" />
-  <HelpKINode Title="NetProxy.CloseClient method" Url="html/1bb14efc-d265-6817-8516-e7a8977af23a.htm" />
-  <HelpKINode Title="NetProxy.Connect method" Url="html/2ee496c8-b181-f2d7-b854-9a83bdff86e8.htm" />
   <HelpKINode Title="NetProxy.Connected event" Url="html/27e6c131-bf03-3767-ad0f-f5c164b14eb8.htm" />
-  <HelpKINode Title="NetProxy.DataEventHandler delegate" Url="html/38a29d9e-e348-ae3a-f514-08a27d55e073.htm" />
-  <HelpKINode Title="NetProxy.DataEventHandler2 delegate" Url="html/258cccf8-5252-32bd-88bf-fea1613eb8e9.htm" />
   <HelpKINode Title="NetProxy.Dispose method" Url="html/89425b4b-99e3-b69f-5ad7-b93f4dcb3436.htm" />
-  <HelpKINode Title="NetProxy.EncoderPage property" Url="html/be607ff7-ddb2-07af-62ae-3bf1eb872327.htm" />
-  <HelpKINode Title="NetProxy.Error event" Url="html/ef1d146f-a937-0ba1-c86f-f9805f0d1073.htm" />
-  <HelpKINode Title="NetProxy.ErrorEventHandler delegate" Url="html/127a0dff-fac4-d998-d4a9-78d03e02c2a6.htm" />
-  <HelpKINode Title="NetProxy.FurcPath field" Url="html/c60b7d7b-b05b-4ccb-1098-177165aadc37.htm" />
-  <HelpKINode Title="NetProxy.FurcSettingsRestored event" Url="html/8af7f323-97d1-2609-d9f3-c110a476a3d0.htm" />
-  <HelpKINode Title="NetProxy.IsClientConnected property" Url="html/ee1e579a-a9c9-9f90-bd67-06ffcc787221.htm" />
-  <HelpKINode Title="NetProxy.IsServerConnected property" Url="html/75208390-e9a7-be61-a5d0-3e8c8d4ae6b3.htm" />
-  <HelpKINode Title="NetProxy.Kill method" Url="html/2f52926b-9cca-1dfa-68e7-590cf533f654.htm" />
-  <HelpKINode Title="NetProxy.NetProxy constructor" Url="html/23799e7e-cadc-c021-bf04-d2e2476daed5.htm" />
-  <HelpKINode Title="NetProxy.Process property" Url="html/97ef8e08-e7a3-c29f-d428-31bd5d0f2742.htm" />
-  <HelpKINode Title="NetProxy.ProcessCMD property" Url="html/303c65b4-6b69-0a26-9264-92375281ae9f.htm" />
-  <HelpKINode Title="NetProxy.ProcessPath property" Url="html/53d95141-7657-09ba-50d1-c043d0da6101.htm" />
-  <HelpKINode Title="NetProxy.ProcID property" Url="html/45658fd0-b5e9-e601-bb79-7c5e799e56c0.htm" />
-  <HelpKINode Title="NetProxy.SendClient method" Url="html/98e72e26-73ae-74e0-e101-b64274edb1ca.htm" />
+  <HelpKINode Title="NetProxy.Dream field" Url="html/f41e7b4f-f6dd-26ca-3a4c-ec25491ea7b2.htm" />
+  <HelpKINode Title="NetProxy.error event" Url="html/14dab5a3-55b4-4f5f-bb39-7fa5fb1799fa.htm" />
+  <HelpKINode Title="NetProxy.fIDtoFurre method" Url="html/8b454486-0cdb-aaf2-a2b3-693f8e89d72f.htm" />
+  <HelpKINode Title="NetProxy.FurcProcessId property" Url="html/1da85f71-e1e8-b84b-8b27-89f5d6194001.htm" />
+  <HelpKINode Title="NetProxy.loggingIn field" Url="html/a5d43683-8e8e-5e20-c2ba-2a0285dac40b.htm" />
+  <HelpKINode Title="NetProxy.LoggingIn property" Url="html/6a98a933-19ea-090f-fe11-d8d58c3194ad.htm" />
+  <HelpKINode Title="NetProxy.LookQue field" Url="html/7442d106-b24d-b4d4-f2f4-cd3441518522.htm" />
+  <HelpKINode Title="NetProxy.NetProxy constructor" Url="html/8103b951-6c1c-f28f-9001-2f8f6e260218.htm" />
+  <HelpKINode Title="NetProxy.NoEndurance field" Url="html/b5c0037f-e9da-f081-a7f9-732d5f78101e.htm" />
+  <HelpKINode Title="NetProxy.OnServerSent method" Url="html/c751f573-783f-d701-4536-1bd0c6b72ef9.htm" />
+  <HelpKINode Title="NetProxy.Player field" Url="html/b3a13f6e-9817-563e-e268-3f7fc1b7ad1b.htm" />
+  <HelpKINode Title="NetProxy.ReconnectMax property" Url="html/d2fe8876-36bb-3991-1c5b-988907a3d061.htm" />
+  <HelpKINode Title="NetProxy.ReconnectTick method" Url="html/5cfb2ca8-f442-b9f9-f332-63bfa4a8c39c.htm" />
+  <HelpKINode Title="NetProxy.ReconnectTimeOutTimer field" Url="html/7b9d4bcb-7138-535a-80c5-448fccf4a5a6.htm" />
+  <HelpKINode Title="NetProxy.ReconnectTimer field" Url="html/1ee4df4a-903c-36fb-3220-8a4e4fbc28a9.htm" />
   <HelpKINode Title="NetProxy.SendServer method" Url="html/98a96325-8e15-0933-b5dc-139970f63f25.htm" />
-  <HelpKINode Title="NetProxy.ServerData event" Url="html/dd62eba4-21a3-ebc0-9aab-7b4eedef1835.htm" />
-  <HelpKINode Title="NetProxy.ServerData2 event" Url="html/60b5575b-3627-679b-4b1a-234c13710941.htm" />
+  <HelpKINode Title="NetProxy.ServerDataReceived event" Url="html/a8690ef8-eae4-1468-16cc-5bc51a00b830.htm" />
   <HelpKINode Title="NetProxy.ServerDisConnected event" Url="html/3644d44c-e4ad-259f-07b7-8afe5dc3eb11.htm" />
-  <HelpKINode Title="NetProxy.SetProcess method" Url="html/568424b2-35ff-8e8b-6cbe-6c4faa84e2ec.htm" />
-  <HelpKINode Title="NetProxy.StandAloneMode property" Url="html/86c25f59-49d8-836d-ff6f-07bcc2a43ca3.htm" />
-  <HelpKINode Title="NetProxy._lport field" Url="html/8a09188a-93b2-7816-f5d7-a6c6204c5445.htm" />
+  <HelpKINode Title="NetProxy.ServerParser field" Url="html/6f26ffbf-97ea-7f05-c349-1a2a401252e5.htm" />
+  <HelpKINode Title="NetProxy.ServQue field" Url="html/cfaabead-19bb-21b6-94d5-a6aaa92f5117.htm" />
+  <HelpKINode Title="NetProxy.SpeciesTag field" Url="html/580cd5a2-4ffc-8e54-98ce-74f5ac8986a2.htm" />
+  <HelpKINode Title="NetProxy.ThroatTired field" Url="html/bd10ac50-d92a-3427-cff5-8a85334e95ed.htm" />
+  <HelpKINode Title="NetProxy.TroatTiredDelay field" Url="html/4fc2f78c-ba7b-73b7-febd-6fbe80ab7245.htm" />
+  <HelpKINode Title="NetProxy.TroatTiredDelayTick method" Url="html/51bceef2-06aa-f965-bada-3ddab6ad7195.htm" />
   <HelpKINode Title="NetProxyException class">
     <HelpKINode Title="NetProxyException Class" Url="html/0b246e09-75c6-ed5c-636b-f2e74386897a.htm" />
     <HelpKINode Title="about NetProxyException class" Url="html/0b246e09-75c6-ed5c-636b-f2e74386897a.htm" />
@@ -932,7 +963,7 @@
     <HelpKINode Title="properties" Url="html/0b2c5ae9-9339-a1f9-7426-4f5a7f4f76e2.htm" />
   </HelpKINode>
   <HelpKINode Title="NetProxyException.NetProxyException constructor" Url="html/ee4a0c02-5de4-30a6-ace7-02f5e37b7950.htm" />
-  <HelpKINode Title="NoEndurance field" Url="html/f72baa76-8dd1-21e9-f6f6-9d61b4b337bd.htm" />
+  <HelpKINode Title="NoEndurance field" Url="html/b5c0037f-e9da-f081-a7f9-732d5f78101e.htm" />
   <HelpKINode Title="NoEndurance property" Url="html/527512e9-e313-b49d-aa64-9e26cdb061c7.htm" />
   <HelpKINode Title="NumberOfDreamsOnMainMaps property" Url="html/29e481f9-56dc-2790-d0bb-e3506a483873.htm" />
   <HelpKINode Title="NumFrames field" Url="html/10148a91-a8cd-3dbc-0eb3-b95cd02f0cfd.htm" />
@@ -945,10 +976,9 @@
     <HelpKINode Title="MapTile.objectNumber Field" Url="html/2a63e0d8-c096-e214-10b0-8bb1b94ffc68.htm" />
   </HelpKINode>
   <HelpKINode Title="OnServerSent method">
-    <HelpKINode Title="ProxySession.OnServerSent Method " Url="html/44af4620-989c-f596-6e05-02a8e73bf673.htm" />
+    <HelpKINode Title="NetProxy.OnServerSent Method " Url="html/c751f573-783f-d701-4536-1bd0c6b72ef9.htm" />
     <HelpKINode Title="ServerQue.OnServerSent Method " Url="html/38ee0af0-67c9-ead6-1aa7-10b64a92426d.htm" />
   </HelpKINode>
-  <HelpKINode Title="on_Tick method" Url="html/91f97470-bf4b-52cc-6614-21010652de9d.htm" />
   <HelpKINode Title="Option property" Url="html/a8b949ed-20ea-52f4-f795-aa27054ec918.htm" />
   <HelpKINode Title="Option1 property" Url="html/e6b985a0-3073-ef21-4d87-0fe74303de25.htm" />
   <HelpKINode Title="Owner property">
@@ -1009,7 +1039,7 @@
   <HelpKINode Title="Paths.ProgramFilesX86 method" Url="html/b81e24db-6007-b51d-a130-030018af3143.htm" />
   <HelpKINode Title="PawObjectCurrent property" Url="html/e5db3b61-9ebe-3ad3-5463-4c4130808b39.htm" />
   <HelpKINode Title="PawObjectOld property" Url="html/66a1b890-de6a-10fc-0727-19afca9a7b72.htm" />
-  <HelpKINode Title="Player field" Url="html/5c032bf6-f9fd-8e39-b7de-d9c6bdee9705.htm" />
+  <HelpKINode Title="Player field" Url="html/b3a13f6e-9817-563e-e268-3f7fc1b7ad1b.htm" />
   <HelpKINode Title="Pos structure">
     <HelpKINode Title="fields" Url="html/1dc6e765-ba68-00ca-b463-7a261aa71488.htm" />
     <HelpKINode Title="methods" Url="html/1819d830-70b2-0698-d311-3c0c0873fc84.htm" />
@@ -1050,64 +1080,36 @@
     <HelpKINode Title="Avatar.PrimeTable Method " Url="html/3d3a3cd3-24af-b601-1247-caad87fdbec2.htm" />
     <HelpKINode Title="Badges.PrimeTable Method " Url="html/1ffcab4b-5006-b760-b358-3eb4b4df874b.htm" />
   </HelpKINode>
-  <HelpKINode Title="Process property" Url="html/97ef8e08-e7a3-c29f-d428-31bd5d0f2742.htm" />
-  <HelpKINode Title="ProcessCMD property" Url="html/303c65b4-6b69-0a26-9264-92375281ae9f.htm" />
-  <HelpKINode Title="ProcessPath property" Url="html/53d95141-7657-09ba-50d1-c043d0da6101.htm" />
-  <HelpKINode Title="ProcID property" Url="html/45658fd0-b5e9-e601-bb79-7c5e799e56c0.htm" />
+  <HelpKINode Title="Process property" Url="html/24b6995f-a9bf-cab5-056c-6f388478e324.htm" />
+  <HelpKINode Title="ProcessCMD property" Url="html/a2e2fe1a-2f92-7a4e-75cd-304c8d27ccca.htm" />
+  <HelpKINode Title="ProcessPath property" Url="html/5a572740-8121-4e22-ca33-47eb1af1862f.htm" />
+  <HelpKINode Title="ProcID property" Url="html/ccaa0d1f-90af-1b2b-38fd-11f1ef96e16c.htm" />
   <HelpKINode Title="ProgramFilesX86 method" Url="html/b81e24db-6007-b51d-a130-030018af3143.htm" />
   <HelpKINode Title="ProxySession class">
-    <HelpKINode Title="ProxySession Class" Url="html/a7fcfd72-f8f0-86ee-e363-2259033aed6a.htm" />
-    <HelpKINode Title="about ProxySession class" Url="html/a7fcfd72-f8f0-86ee-e363-2259033aed6a.htm" />
-    <HelpKINode Title="constructor" Url="html/be9bd900-5ba9-e0e0-b9c2-3dcb86d2407b.htm" />
-    <HelpKINode Title="events" Url="html/a86cc667-ffb5-8fa6-13a5-f1c2f559b09c.htm" />
-    <HelpKINode Title="fields" Url="html/bc0da9c3-a478-d0c6-907c-70f5335506b5.htm" />
-    <HelpKINode Title="methods" Url="html/aa0f219c-76dc-d8fa-2f7a-8f9b2b64532a.htm" />
-    <HelpKINode Title="properties" Url="html/9a7b8851-fe3c-4124-bb6b-bc3d824f7015.htm" />
+    <HelpKINode Title="ProxySession Class" Url="html/42b6e22d-2cd4-4f4a-5928-e3956fa7a027.htm" />
+    <HelpKINode Title="about ProxySession class" Url="html/42b6e22d-2cd4-4f4a-5928-e3956fa7a027.htm" />
+    <HelpKINode Title="constructor" Url="html/e6251f02-2400-dade-6ca8-1b2ecccff890.htm" />
+    <HelpKINode Title="events" Url="html/05c28c3e-ccb4-5a6e-f5df-944dd0b5e258.htm" />
+    <HelpKINode Title="fields" Url="html/907d969c-88e1-6f61-c6ca-3fcc1dd21a3c.htm" />
+    <HelpKINode Title="methods" Url="html/7c07c24a-1d85-9c61-6ab8-3cbc552115a3.htm" />
+    <HelpKINode Title="properties" Url="html/2b8170fb-0cdb-4d32-a6de-9bf15c9914a0.htm" />
   </HelpKINode>
-  <HelpKINode Title="ProxySession.BadgeTag field" Url="html/c4ae91a8-5666-c608-bb8d-76840919001a.htm" />
-  <HelpKINode Title="ProxySession.ClientDataReceived event" Url="html/5da892ac-3641-77ce-443c-1aaf22430efc.htm" />
-  <HelpKINode Title="ProxySession.ClientExited event" Url="html/f31f5d68-dcea-e438-38dd-f7e3473566c3.htm" />
-  <HelpKINode Title="ProxySession.Connected event" Url="html/1fe2efb4-eec4-82e4-08f0-721342d5fda4.htm" />
-  <HelpKINode Title="ProxySession.Dispose method" Url="html/97e3f86a-d62f-b5f2-5fb8-1a198caf93c4.htm" />
-  <HelpKINode Title="ProxySession.Dream field" Url="html/16e80ef0-0bfa-8e4f-8e8f-246863db8a87.htm" />
-  <HelpKINode Title="ProxySession.error event" Url="html/8a8e9431-7f11-5913-4d11-a25d200ac328.htm" />
-  <HelpKINode Title="ProxySession.fIDtoFurre method" Url="html/177c5724-7c7d-3d07-72ed-e30b103dba2c.htm" />
-  <HelpKINode Title="ProxySession.FurcadiaProxy field" Url="html/aa4af922-f4a4-bac2-e76d-53f1e1288253.htm" />
-  <HelpKINode Title="ProxySession.FurcMutex field" Url="html/c864eaa3-f4f0-4075-665a-ff07882828bc.htm" />
-  <HelpKINode Title="ProxySession.FurcProcessId property" Url="html/ee799480-1592-ace3-9ab7-f3549994b7c7.htm" />
-  <HelpKINode Title="ProxySession.loggingin field" Url="html/3d16e644-cffc-5ad7-9ebc-b45c30a0c954.htm" />
-  <HelpKINode Title="ProxySession.LoggingIn property" Url="html/12c2de18-bcb0-8937-e1e1-0dfbe0cf71f3.htm" />
-  <HelpKINode Title="ProxySession.LookQue field" Url="html/2c9f4b57-b13f-5e06-d2a1-9c98e58cd7f3.htm" />
-  <HelpKINode Title="ProxySession.NoEndurance field" Url="html/f72baa76-8dd1-21e9-f6f6-9d61b4b337bd.htm" />
-  <HelpKINode Title="ProxySession.OnServerSent method" Url="html/44af4620-989c-f596-6e05-02a8e73bf673.htm" />
-  <HelpKINode Title="ProxySession.Player field" Url="html/5c032bf6-f9fd-8e39-b7de-d9c6bdee9705.htm" />
-  <HelpKINode Title="ProxySession.ProxySession constructor" Url="html/be9bd900-5ba9-e0e0-b9c2-3dcb86d2407b.htm" />
-  <HelpKINode Title="ProxySession.ReconnectTimeOutTimer field" Url="html/20260d31-558f-9305-28fb-d16e9345b729.htm" />
-  <HelpKINode Title="ProxySession.ReconnectTimer field" Url="html/27c2182f-11d0-6f86-ecd2-ea6e41e9766d.htm" />
-  <HelpKINode Title="ProxySession.RelogCounter field" Url="html/3e9f3bc0-7f6c-245c-210f-22d048dcd604.htm" />
-  <HelpKINode Title="ProxySession.SendClient method" Url="html/9d87c161-7386-af78-957e-8b781de00eac.htm" />
-  <HelpKINode Title="ProxySession.SendServer method" Url="html/e99b4dda-5ac5-6861-1b11-2b03a1091d30.htm" />
-  <HelpKINode Title="ProxySession.ServerDataReceived event" Url="html/61e38b4c-c64b-f70a-1db6-a268a8b30e71.htm" />
-  <HelpKINode Title="ProxySession.ServerDisConnected event" Url="html/fcaddbfd-2839-8c4b-f799-77fef7c2717d.htm" />
-  <HelpKINode Title="ProxySession.ServerParser field" Url="html/21868be2-2075-ed15-b1e0-37dfde0e9a10.htm" />
-  <HelpKINode Title="ProxySession.ServQue field" Url="html/16e16f98-0dd2-d18d-892e-a55b9c357cdf.htm" />
-  <HelpKINode Title="ProxySession.SpeciesTag field" Url="html/4d105044-1a9e-085a-6fcc-5c73b1a0bfd3.htm" />
-  <HelpKINode Title="ProxySession.ThroatTired field" Url="html/6ec2c4f4-1f4b-74ad-73b8-7f880296fbcc.htm" />
-  <HelpKINode Title="ProxySession.TroatTiredDelay field" Url="html/9aaa11fd-35b5-5ece-924a-5c5032c269fb.htm" />
-  <HelpKINode Title="ProxySession.TroatTiredDelayTick method" Url="html/a088cb66-e979-56ee-0637-411eca1a8be5.htm" />
+  <HelpKINode Title="ProxySession.ProxySession constructor" Url="html/e6251f02-2400-dade-6ca8-1b2ecccff890.htm" />
   <HelpKINode Title="QueSent event" Url="html/46564d8d-f3f0-071d-e974-cba4dedb6948.htm" />
+  <HelpKINode Title="QueueTick method" Url="html/5690dbcc-471d-8d84-12c3-5773cc38f86c.htm" />
   <HelpKINode Title="Rating property">
     <HelpKINode Title="DREAM.Rating Property " Url="html/bde57f89-1d5c-b6ed-31be-f9d0e4487eb6.htm" />
     <HelpKINode Title="Map.Rating Property " Url="html/dd61125e-7cfc-c3c3-6b1c-5fc70b77ce57.htm" />
   </HelpKINode>
   <HelpKINode Title="RawResponse property" Url="html/dd984735-e278-a3c2-ad40-e990b230b628.htm" />
-  <HelpKINode Title="ReconnectTimeOutTimer field" Url="html/20260d31-558f-9305-28fb-d16e9345b729.htm" />
-  <HelpKINode Title="ReconnectTimer field" Url="html/27c2182f-11d0-6f86-ecd2-ea6e41e9766d.htm" />
+  <HelpKINode Title="ReconnectMax property" Url="html/d2fe8876-36bb-3991-1c5b-988907a3d061.htm" />
+  <HelpKINode Title="ReconnectTick method" Url="html/5cfb2ca8-f442-b9f9-f332-63bfa4a8c39c.htm" />
+  <HelpKINode Title="ReconnectTimeOutTimer field" Url="html/7b9d4bcb-7138-535a-80c5-448fccf4a5a6.htm" />
+  <HelpKINode Title="ReconnectTimer field" Url="html/1ee4df4a-903c-36fb-3220-8a4e4fbc28a9.htm" />
   <HelpKINode Title="regionNumber field">
     <HelpKINode Title="MapPosition.regionNumber Field" Url="html/ac499cf7-dc21-c950-329f-728c6bc4019c.htm" />
     <HelpKINode Title="MapTile.regionNumber Field" Url="html/a4f6ebe7-dfa8-2b79-a64a-ef5f01691465.htm" />
   </HelpKINode>
-  <HelpKINode Title="RelogCounter field" Url="html/3e9f3bc0-7f6c-245c-210f-22d048dcd604.htm" />
   <HelpKINode Title="Remap method" Url="html/9a0b0c5a-0827-4222-b966-2948f76be29f.htm" />
   <HelpKINode Title="Remapper class">
     <HelpKINode Title="Remapper Class" Url="html/6f8b7b15-048c-2337-1d57-f75f5fdadd5a.htm" />
@@ -1143,55 +1145,49 @@
   <HelpKINode Title="SaveFurcadiaSettings method" Url="html/3cc94df9-972f-1347-e9d9-56a30b075e23.htm" />
   <HelpKINode Title="SaveSettings method" Url="html/a12f1fbb-fe08-8782-73e9-332686cafce6.htm" />
   <HelpKINode Title="Script property" Url="html/c265ebfd-6c0e-66af-4813-b69268f97365.htm" />
-  <HelpKINode Title="SendClient method">
-    <HelpKINode Title="NetProxy.SendClient Method " Url="html/98e72e26-73ae-74e0-e101-b64274edb1ca.htm" />
-    <HelpKINode Title="ProxySession.SendClient Method " Url="html/9d87c161-7386-af78-957e-8b781de00eac.htm" />
-  </HelpKINode>
+  <HelpKINode Title="SendClient method" Url="html/96e014b9-2771-c6e7-52da-b23b07b101dc.htm" />
   <HelpKINode Title="SendServer method">
+    <HelpKINode Title="BaseProxy.SendServer Method " Url="html/7be41410-f28d-c0de-d3ad-f39af56892ae.htm" />
     <HelpKINode Title="NetConnection.SendServer Method " Url="html/9888b56f-e393-8ff7-5b36-37790c65a7c4.htm" />
     <HelpKINode Title="NetProxy.SendServer Method " Url="html/98a96325-8e15-0933-b5dc-139970f63f25.htm" />
-    <HelpKINode Title="ProxySession.SendServer Method " Url="html/e99b4dda-5ac5-6861-1b11-2b03a1091d30.htm" />
   </HelpKINode>
+  <HelpKINode Title="SendToServer method" Url="html/63789117-291e-3774-becc-2f33116b2df8.htm" />
   <HelpKINode Title="ServerData event">
+    <HelpKINode Title="BaseProxy.ServerData Event" Url="html/be592312-40f7-8a18-57d2-c9831b83b72f.htm" />
     <HelpKINode Title="NetConnection.ServerData Event" Url="html/4c06634c-9f60-49e3-6c88-a0c2e4b8dd5d.htm" />
-    <HelpKINode Title="NetProxy.ServerData Event" Url="html/dd62eba4-21a3-ebc0-9aab-7b4eedef1835.htm" />
   </HelpKINode>
-  <HelpKINode Title="ServerData2 event" Url="html/60b5575b-3627-679b-4b1a-234c13710941.htm" />
-  <HelpKINode Title="ServerDataReceived event" Url="html/61e38b4c-c64b-f70a-1db6-a268a8b30e71.htm" />
+  <HelpKINode Title="ServerData2 event" Url="html/530f2316-8f39-1110-8578-e75b8fa973d0.htm" />
+  <HelpKINode Title="ServerDataReceived event" Url="html/a8690ef8-eae4-1468-16cc-5bc51a00b830.htm" />
   <HelpKINode Title="ServerDisConnected event">
+    <HelpKINode Title="BaseProxy.ServerDisConnected Event" Url="html/e5e6276f-3613-a262-6ab2-5c5ff07d0c33.htm" />
     <HelpKINode Title="NetConnection.ServerDisConnected Event" Url="html/ea0452b0-9105-53d5-aa89-308132e0fa23.htm" />
     <HelpKINode Title="NetProxy.ServerDisConnected Event" Url="html/3644d44c-e4ad-259f-07b7-8afe5dc3eb11.htm" />
-    <HelpKINode Title="ProxySession.ServerDisConnected Event" Url="html/fcaddbfd-2839-8c4b-f799-77fef7c2717d.htm" />
   </HelpKINode>
   <HelpKINode Title="ServerDisConnectedHandler delegate" Url="html/197b653e-bfc2-e423-953a-19f3a087b777.htm" />
-  <HelpKINode Title="ServerParser field" Url="html/21868be2-2075-ed15-b1e0-37dfde0e9a10.htm" />
+  <HelpKINode Title="ServerParser field" Url="html/6f26ffbf-97ea-7f05-c349-1a2a401252e5.htm" />
   <HelpKINode Title="ServerQue class">
     <HelpKINode Title="ServerQue Class" Url="html/6b9c60be-39eb-9d37-4d7a-41ad4981f380.htm" />
     <HelpKINode Title="about ServerQue class" Url="html/6b9c60be-39eb-9d37-4d7a-41ad4981f380.htm" />
     <HelpKINode Title="constructor" Url="html/ec5ad9d6-7481-2c54-5f32-54f3a6a1879e.htm" />
     <HelpKINode Title="events" Url="html/ab8044e1-66e0-345c-5c09-60ef131b4d7c.htm" />
-    <HelpKINode Title="fields" Url="html/1f3c5f00-ecf4-2488-615c-88266f783ecf.htm" />
     <HelpKINode Title="methods" Url="html/5f6612e6-a284-2464-be8c-de79a71c606b.htm" />
     <HelpKINode Title="properties" Url="html/abd971e5-f7a9-25ad-fab7-27013737cc66.htm" />
   </HelpKINode>
-  <HelpKINode Title="ServerQue.MASS_CRITICAL field" Url="html/187c6eeb-5b28-88c6-5a63-ff23c59dddb5.htm" />
-  <HelpKINode Title="ServerQue.MASS_DEFAULT field" Url="html/12936ea5-8053-8859-50e1-97eac14ab4e1.htm" />
-  <HelpKINode Title="ServerQue.MASS_NOENDURANCE field" Url="html/03854642-c338-b714-a3ee-257cb2577517.htm" />
-  <HelpKINode Title="ServerQue.MASS_SPEECH field" Url="html/64f59655-5d5c-d08c-fd63-126f46377629.htm" />
+  <HelpKINode Title="ServerQue.Dispose method" Url="html/6a05aa9f-8ec3-74f4-f160-82333d9f7c80.htm" />
   <HelpKINode Title="ServerQue.NoEndurance property" Url="html/527512e9-e313-b49d-aa64-9e26cdb061c7.htm" />
   <HelpKINode Title="ServerQue.OnServerSent method" Url="html/38ee0af0-67c9-ead6-1aa7-10b64a92426d.htm" />
-  <HelpKINode Title="ServerQue.on_Tick method" Url="html/91f97470-bf4b-52cc-6614-21010652de9d.htm" />
   <HelpKINode Title="ServerQue.QueSent event" Url="html/46564d8d-f3f0-071d-e974-cba4dedb6948.htm" />
+  <HelpKINode Title="ServerQue.QueueTick method" Url="html/5690dbcc-471d-8d84-12c3-5773cc38f86c.htm" />
   <HelpKINode Title="ServerQue.SendServerEventHandler delegate" Url="html/dd0194ce-e1ab-10a5-569a-181f128222de.htm" />
+  <HelpKINode Title="ServerQue.SendToServer method" Url="html/63789117-291e-3774-becc-2f33116b2df8.htm" />
   <HelpKINode Title="ServerQue.ServerQue constructor" Url="html/ec5ad9d6-7481-2c54-5f32-54f3a6a1879e.htm" />
-  <HelpKINode Title="ServerQue.SndToServer method" Url="html/92ec0505-1858-0758-9685-f2c551476e27.htm" />
   <HelpKINode Title="ServerQue.ThroatTired property" Url="html/b8586ca5-8714-ab48-2ad2-013971c1eaaa.htm" />
-  <HelpKINode Title="ServerQue.TroatTiredProcTick method" Url="html/cfa75d33-c762-5577-8670-75fa2a3b1838.htm" />
-  <HelpKINode Title="ServQue field" Url="html/16e16f98-0dd2-d18d-892e-a55b9c357cdf.htm" />
+  <HelpKINode Title="ServerQue.TroatTiredProcessTick method" Url="html/d1adfd2a-7f6c-e14a-9e16-50d8c21e48c7.htm" />
+  <HelpKINode Title="ServQue field" Url="html/cfaabead-19bb-21b6-94d5-a6aaa92f5117.htm" />
   <HelpKINode Title="setEffectAt method" Url="html/cdc3d843-53f1-8c91-eb85-0abb58d2ba61.htm" />
   <HelpKINode Title="setFloorAt method" Url="html/36a2af03-5dab-48a7-b86a-b958d1eb0e4c.htm" />
   <HelpKINode Title="setObjectAt method" Url="html/c41e35f3-0b80-8b1c-2f80-ea11bf049354.htm" />
-  <HelpKINode Title="SetProcess method" Url="html/568424b2-35ff-8e8b-6cbe-6c4faa84e2ec.htm" />
+  <HelpKINode Title="SetProcess method" Url="html/baf3d7fe-0b15-5f82-fdc8-84c0042bbf4f.htm" />
   <HelpKINode Title="setRegionAt method" Url="html/665a69af-e89c-c452-c5a9-a9f9a5a45fff.htm" />
   <HelpKINode Title="Settings class">
     <HelpKINode Title="Settings Class" Url="html/43fed4da-d30a-4d49-19ac-cce994a1f205.htm" />
@@ -1224,15 +1220,14 @@
   <HelpKINode Title="Shapes field" Url="html/8c00e155-dd58-25cd-b6bc-458838fb7b78.htm" />
   <HelpKINode Title="ShortName property" Url="html/c9ac3976-936c-f367-0c2d-e656b2f96591.htm" />
   <HelpKINode Title="Sittable enumeration member" Url="html/489c31eb-4f70-1fe4-138b-1c8f886eda49.htm" />
-  <HelpKINode Title="SndToServer method" Url="html/92ec0505-1858-0758-9685-f2c551476e27.htm" />
   <HelpKINode Title="SourceX property" Url="html/0fc96dd7-9847-0d9d-d0f2-a20012058f48.htm" />
   <HelpKINode Title="SourceY property" Url="html/740573f4-3d6d-12f8-be30-ac7722aede6b.htm" />
   <HelpKINode Title="Spec field" Url="html/443b09be-ed2e-9517-11df-415a7bebd9fa.htm" />
   <HelpKINode Title="Special property" Url="html/3f5768bb-982a-2d37-3a84-087788cbf43d.htm" />
   <HelpKINode Title="Species property" Url="html/a340bc14-bbb6-ef51-b3a7-80992d552a88.htm" />
-  <HelpKINode Title="SpeciesTag field" Url="html/4d105044-1a9e-085a-6fcc-5c73b1a0bfd3.htm" />
+  <HelpKINode Title="SpeciesTag field" Url="html/580cd5a2-4ffc-8e54-98ce-74f5ac8986a2.htm" />
   <HelpKINode Title="SpecNum method" Url="html/8555ff08-c943-6f38-e7ad-016d71918f87.htm" />
-  <HelpKINode Title="StandAloneMode property" Url="html/86c25f59-49d8-836d-ff6f-07bcc2a43ca3.htm" />
+  <HelpKINode Title="StandAloneMode property" Url="html/a6a0bc28-53ab-f558-5b1f-57d0066db01c.htm" />
   <HelpKINode Title="StepBlock structure">
     <HelpKINode Title="StepBlock Structure" Url="html/42c83d8a-45ba-6fa4-6c32-bc92110b3a18.htm" />
     <HelpKINode Title="about StepBlock structure" Url="html/42c83d8a-45ba-6fa4-6c32-bc92110b3a18.htm" />
@@ -1254,7 +1249,7 @@
   <HelpKINode Title="SyncRoot property" Url="html/f383eef0-6fa8-3ce1-397d-9e8b832bef5f.htm" />
   <HelpKINode Title="Tag property" Url="html/4fd2bd68-3ebe-6b5f-e310-a65e43001b00.htm" />
   <HelpKINode Title="Teen field" Url="html/93811f50-8e43-e7a2-d0f4-27209f5075ac.htm" />
-  <HelpKINode Title="ThroatTired field" Url="html/6ec2c4f4-1f4b-74ad-73b8-7f880296fbcc.htm" />
+  <HelpKINode Title="ThroatTired field" Url="html/bd10ac50-d92a-3427-cff5-8a85334e95ed.htm" />
   <HelpKINode Title="ThroatTired property" Url="html/b8586ca5-8714-ab48-2ad2-013971c1eaaa.htm" />
   <HelpKINode Title="Title property" Url="html/bdb261b1-fcf0-a6c1-721e-c221413d9b60.htm" />
   <HelpKINode Title="ToBitmap method" Url="html/dce6f203-a897-527d-884a-31b53560eff3.htm" />
@@ -1272,9 +1267,9 @@
     <HelpKINode Title="UserFileAccessRights.ToString Method " Url="html/466f5026-3fb2-3d7e-175f-ab91d6520c82.htm" />
   </HelpKINode>
   <HelpKINode Title="TotalFurresOnline property" Url="html/54ee3aad-7c66-96ab-2fde-e4fa7802eeae.htm" />
-  <HelpKINode Title="TroatTiredDelay field" Url="html/9aaa11fd-35b5-5ece-924a-5c5032c269fb.htm" />
-  <HelpKINode Title="TroatTiredDelayTick method" Url="html/a088cb66-e979-56ee-0637-411eca1a8be5.htm" />
-  <HelpKINode Title="TroatTiredProcTick method" Url="html/cfa75d33-c762-5577-8670-75fa2a3b1838.htm" />
+  <HelpKINode Title="TroatTiredDelay field" Url="html/4fc2f78c-ba7b-73b7-febd-6fbe80ab7245.htm" />
+  <HelpKINode Title="TroatTiredDelayTick method" Url="html/51bceef2-06aa-f965-bada-3ddab6ad7195.htm" />
+  <HelpKINode Title="TroatTiredProcessTick method" Url="html/d1adfd2a-7f6c-e14a-9e16-50d8c21e48c7.htm" />
   <HelpKINode Title="TrousersRemap field" Url="html/03dff5bc-7461-95f2-9ac2-03338b1c55ee.htm" />
   <HelpKINode Title="UInt16 to Base95 conversion" Url="html/b756396c-4de1-2e47-2fe9-50209615a4b6.htm" />
   <HelpKINode Title="UInt32 to Base95 conversion" Url="html/83fd8490-3f8f-c07b-74d5-8d6ec6d80cfb.htm" />
@@ -1366,26 +1361,26 @@
     <HelpKINode Title="INetMessage.Write Method " Url="html/042386c9-82ea-cf83-f873-068bf65e03cf.htm" />
     <HelpKINode Title="NetMessage.Write Method " Url="html/4ad3a167-310a-6bf6-5f16-53b0c39d8842.htm" />
   </HelpKINode>
+  <HelpKINode Title="X field">
+    <HelpKINode Title="Frame.Pos.X Field" Url="html/f90968ac-08e6-601b-fad6-2c51de290092.htm" />
+    <HelpKINode Title="ViewArea.X Field" Url="html/11f40301-7aa5-301a-eb45-03ed56517951.htm" />
+  </HelpKINode>
   <HelpKINode Title="x field">
     <HelpKINode Title="MapPosition.x Field" Url="html/7dc78a1c-fdb1-fdbe-4209-1834c37efc10.htm" />
     <HelpKINode Title="MapTile.x Field" Url="html/c7efa888-3216-ece4-a416-e9ca3658ae0a.htm" />
-  </HelpKINode>
-  <HelpKINode Title="X field">
-    <HelpKINode Title="ViewArea.X Field" Url="html/11f40301-7aa5-301a-eb45-03ed56517951.htm" />
-    <HelpKINode Title="Frame.Pos.X Field" Url="html/f90968ac-08e6-601b-fad6-2c51de290092.htm" />
   </HelpKINode>
   <HelpKINode Title="x property" Url="html/8c720585-8171-b304-86ac-35e6451bb307.htm" />
   <HelpKINode Title="X property">
     <HelpKINode Title="BotFurre.X Property " Url="html/996fe533-6c3d-23c2-7014-614c71194dbc.htm" />
     <HelpKINode Title="FURRE.X Property " Url="html/169916f5-2d4e-2001-2160-7346eef0a3d9.htm" />
   </HelpKINode>
-  <HelpKINode Title="y field">
-    <HelpKINode Title="MapTile.y Field" Url="html/7961a27f-51d0-9f3f-9d50-5659af9c0fef.htm" />
-    <HelpKINode Title="MapPosition.y Field" Url="html/9a4cb014-bcb2-a156-8166-97b123dbbabf.htm" />
-  </HelpKINode>
   <HelpKINode Title="Y field">
     <HelpKINode Title="Frame.Pos.Y Field" Url="html/bfeae1c7-12de-3b7d-77f0-b0127b784619.htm" />
     <HelpKINode Title="ViewArea.Y Field" Url="html/47c3fdce-53c2-16a2-ff72-1066c1e5cba3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="y field">
+    <HelpKINode Title="MapTile.y Field" Url="html/7961a27f-51d0-9f3f-9d50-5659af9c0fef.htm" />
+    <HelpKINode Title="MapPosition.y Field" Url="html/9a4cb014-bcb2-a156-8166-97b123dbbabf.htm" />
   </HelpKINode>
   <HelpKINode Title="Y property">
     <HelpKINode Title="BotFurre.Y Property " Url="html/0763eea7-9d96-8688-e065-01d6703f881e.htm" />
@@ -1394,5 +1389,5 @@
   <HelpKINode Title="y property" Url="html/878516a3-47e1-c326-d33d-00ad9026bfdf.htm" />
   <HelpKINode Title="_dreams field" Url="html/728aa80c-98fd-4286-4ddd-a23b5d079d9d.htm" />
   <HelpKINode Title="_friends field" Url="html/1488a632-3aea-79aa-e435-789c8327c9d0.htm" />
-  <HelpKINode Title="_lport field" Url="html/8a09188a-93b2-7816-f5d7-a6c6204c5445.htm" />
+  <HelpKINode Title="_lport field" Url="html/eb28dbbb-c836-59c6-a559-c6ed5afab7d0.htm" />
 </HelpKI>
