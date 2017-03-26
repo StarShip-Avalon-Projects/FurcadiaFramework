@@ -2140,34 +2140,18 @@
     </member>
     <member name="M:Furcadia.Settings.InitializeFurcadiaSettings(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Settings.InitializeFurcadiaSettings(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
+            Lets back up our Proxy/Firewall settings and then set the new settings for the Furcadia Client
+            </summary>
       <param name="path">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>path</parameter>
-            <parameter>M:Furcadia.Settings.InitializeFurcadiaSettings(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Furcadia Settings.ini path
+            </param>
       <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Settings.InitializeFurcadiaSettings(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
+            Backup Settings for restoring later
+            </returns>
     </member>
     <member name="M:Furcadia.Settings.Load``1(System.String)">
       <summary>
-            Loads a xml file and returns a new instance of T. T must be Xml Deserializable!
+            Loads a xml file and returns a new instance of T. T must be XML Deserializable!
             </summary>
       <param name="file">
         <markup>
@@ -2187,13 +2171,14 @@
           </include>
         </markup>
       </typeparam>
-      <returns>Default of T (default(T)) on file not found.  Else it returns a instance of T.</returns>
+      <returns>
+            Default of T (default(T)) on file not found. Else it returns a instance of T.
+            </returns>
     </member>
     <member name="M:Furcadia.Settings.Load(System.String)">
       <summary>
-            Loads an ini file and returns a key/value pair of values.
-            (Note: It reads Key=Value pairs only.)
-            (Add: Also the ini must be proper, one key/value per line. No section garbage.)
+            Loads an ini file and returns a key/value pair of values. (Note: It reads Key=Value pairs
+            only.) (Add: Also the ini must be proper, one key/value per line. No section garbage.)
             </summary>
       <param name="file">
         <markup>
@@ -2204,26 +2189,17 @@
           </include>
         </markup>
       </param>
-      <returns>A new Hashtable, or a empty Hashtable on file not found.</returns>
+      <returns>
+            A new Hashtable, or a empty Hashtable on file not found.
+            </returns>
     </member>
     <member name="M:Furcadia.Settings.RestoreFurcadiaSettings(System.String[])">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Settings.RestoreFurcadiaSettings(System.String[])</parameter>
-          </include>
-        </markup>
-      </summary>
+            Restores the Furcadia Settings we backed up earlier.
+            </summary>
       <param name="BackupSettings">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>BackupSettings</parameter>
-            <parameter>M:Furcadia.Settings.RestoreFurcadiaSettings(System.String[])</parameter>
-          </include>
-        </markup>
-      </param>
+            Backed up settings array
+            </param>
     </member>
     <member name="T:Furcadia.Util">
       <summary>
@@ -4732,117 +4708,6 @@
             </summary>
       <param name="newFilePath">New file path.</param>
     </member>
-    <member name="T:Furcadia.IO.ParseServer">
-      <summary>
-            Parsing Server Data with Events
-            </summary>
-    </member>
-    <member name="M:Furcadia.IO.ParseServer.#ctor(Furcadia.Net.DREAM@,Furcadia.Net.FURRE@)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.IO.ParseServer</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="Dream">
-            Current Furcadia Dream
-            </param>
-      <param name="Player">
-            Current Triggering Furre
-            </param>
-    </member>
-    <member name="F:Furcadia.IO.ParseServer.Channel">
-      <summary>
-            Furcadia text channel
-            </summary>
-    </member>
-    <member name="E:Furcadia.IO.ParseServer.ChannelParsed">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>E:Furcadia.IO.ParseServer.ChannelParsed</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="E:Furcadia.IO.ParseServer.DataParsed">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>E:Furcadia.IO.ParseServer.DataParsed</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.IO.ParseServer.FurcadiaDream">
-      <summary>
-            Current Furcadia Dream
-            </summary>
-    </member>
-    <member name="F:Furcadia.IO.ParseServer.FurcadiaPlayer">
-      <summary>
-            Current Triggering Furre
-            </summary>
-    </member>
-    <member name="M:Furcadia.IO.ParseServer.ParseServerChannel(System.String,System.Boolean@)">
-      <summary>
-            Parse the text channels coming from the server
-            </summary>
-      <param name="data">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>data</parameter>
-            <parameter>M:Furcadia.IO.ParseServer.ParseServerChannel(System.String,System.Boolean@)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="handled">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>handled</parameter>
-            <parameter>M:Furcadia.IO.ParseServer.ParseServerChannel(System.String,System.Boolean@)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.IO.ParseServer.ParseServerData(System.String,System.Boolean@)">
-      <summary>
-            Parse the raw data coming from the Game Server
-            </summary>
-      <param name="data">
-            Raw Server Data aka Server Instruction
-            <para>
-            ref=http://ftr.icerealm.org/ref-instructions/
-            </para></param>
-      <param name="handled">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>handled</parameter>
-            <parameter>M:Furcadia.IO.ParseServer.ParseServerData(System.String,System.Boolean@)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="T:Furcadia.IO.ParseServer.ParsedChannelEventHandler">
-      <summary>
-            Event fired when we have successful parsed Channel Data
-            </summary>
-      <param name="o"></param>
-      <param name="e"></param>
-    </member>
-    <member name="T:Furcadia.IO.ParseServer.ParsedDataEventHandler">
-      <summary>
-            Fired when we have parsed channel data
-            </summary>
-      <param name="o"></param>
-      <param name="e"></param>
-    </member>
     <member name="T:Furcadia.IO.Paths">
       <summary>
              This class contains all the paths related to the users furcadia installation.
@@ -4949,680 +4814,12 @@
             A path to the Furcadia registry folder or NullReferenceException.
             </returns>
     </member>
-    <member name="T:Furcadia.IO.ServerQue">
-      <summary>
-            Balance the load to the server
-            <para>
-            Handles Throat-Tired and No Endurance
-            </para></summary>
-    </member>
-    <member name="M:Furcadia.IO.ServerQue.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.IO.ServerQue</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.IO.ServerQue.Dispose">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocDispose">
-            <parameter>Furcadia.IO.ServerQue</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.IO.ServerQue.Dispose(System.Boolean)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocDisposeBool">
-            <parameter>Furcadia.IO.ServerQue</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="disposing">
-        <markup>
-          <include item="SMCAutoDocDisposeParam">
-            <parameter>Furcadia.IO.ServerQue</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.IO.ServerQue.NoEndurance">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.ServerQue.NoEndurance</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.IO.ServerQue.OnServerSent">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.ServerQue.OnServerSent</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="E:Furcadia.IO.ServerQue.QueSent">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>E:Furcadia.IO.ServerQue.QueSent</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.IO.ServerQue.QueueTick(System.Double)">
-      <summary>
-            Load Balancing Function
-            <para>
-            this makes sure we don't over load what the server can handle
-            </para><para>
-            Proxy has 2 modes of operation
-            </para><para>
-            Mode 1 Normal. handles Throat Tired syndrome with a time out timer to resume
-            </para><para>
-            Mode 2 NoEndurance. Send data to server as fast as it can handle with out overloading its buffer
-            </para></summary>
-      <param name="DelayTime">
-            Delay Time in Milliseconds
-            </param>
-    </member>
-    <member name="M:Furcadia.IO.ServerQue.SendToServer(System.String)">
-      <summary>
-            Incoming Messages for server processing
-            </summary>
-      <param name="data">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>data</parameter>
-            <parameter>M:Furcadia.IO.ServerQue.SendToServer(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.IO.ServerQue.ThroatTired">
-      <summary>
-            If Proxy get "Your throat is tired" Pause for a number of seconds
-            </summary>
-    </member>
-    <member name="M:Furcadia.IO.ServerQue.TroatTiredProcessTick(System.Object)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.ServerQue.TroatTiredProcessTick(System.Object)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="state">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>state</parameter>
-            <parameter>M:Furcadia.IO.ServerQue.TroatTiredProcessTick(System.Object)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="T:Furcadia.IO.ServerQue.SendServerEventHandler">
-      <summary>
-            Event Handler to notify calling class data has been sent to the game server
-            </summary>
-      <param name="message"></param>
-      <param name="args"></param>
-    </member>
-    <member name="T:Furcadia.IO.UserFileAccessRights">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.IO.UserFileAccessRights</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.#ctor(System.String)">
-      <summary>
-            Convenience constructor assumes the current user
-            </summary>
-      <param name="path">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>path</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.#ctor(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.#ctor(System.String,System.Security.Principal.WindowsIdentity)">
-      <summary>
-            Supply the path to the file or directory and a user or group.
-            Access checks are done
-            during instantiation to ensure we always have a valid object
-            </summary>
-      <param name="path">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>path</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.#ctor(System.String,System.Security.Principal.WindowsIdentity)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="principal">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>principal</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.#ctor(System.String,System.Security.Principal.WindowsIdentity)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canAppendData">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canAppendData</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canAppendData</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canChangePermissions">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canChangePermissions</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canChangePermissions</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canCreateDirectories">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canCreateDirectories</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canCreateDirectories</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canCreateFiles">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canCreateFiles</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canCreateFiles</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canDelete">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canDelete</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canDelete</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canDeleteSubdirectoriesAndFiles">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canDeleteSubdirectoriesAndFiles</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canDeleteSubdirectoriesAndFiles</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canExecuteFile">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canExecuteFile</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canExecuteFile</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canFullControl">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canFullControl</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canFullControl</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canListDirectory">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canListDirectory</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canListDirectory</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canModify">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canModify</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canModify</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canRead">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canRead</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canRead</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canReadAndExecute">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadAndExecute</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadAndExecute</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canReadAttributes">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadAttributes</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadAttributes</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canReadData">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadData</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadData</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canReadExtendedAttributes">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadExtendedAttributes</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadExtendedAttributes</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canReadPermissions">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadPermissions</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canReadPermissions</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canSynchronize">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canSynchronize</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canSynchronize</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canTakeOwnership">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canTakeOwnership</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canTakeOwnership</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canTraverse">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canTraverse</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canTraverse</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canWrite">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canWrite</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canWrite</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canWriteAttributes">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canWriteAttributes</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canWriteAttributes</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canWriteData">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canWriteData</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canWriteData</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.canWriteExtendedAttributes">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canWriteExtendedAttributes</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.canWriteExtendedAttributes</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.contains(System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.FileSystemAccessRule)">
-      <summary>
-            Convenience method to test if the right exists within the given rights
-            </summary>
-      <param name="right">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>right</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.contains(System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.FileSystemAccessRule)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="rule">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>rule</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.contains(System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.FileSystemAccessRule)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.contains(System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.FileSystemAccessRule)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.getPath">
-      <summary>
-            Simple accessor
-            </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.getPath</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.getWindowsIdentity">
-      <summary>
-            Simple accessor
-            </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.getWindowsIdentity</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.UserFileAccessRights.ToString">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.ToString</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.UserFileAccessRights.ToString</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
     <member name="T:Furcadia.Net.BaseProxy">
       <summary>
             Base proxy class to connect to Furcadia game server.
-            </summary>
+            <para>
+            Currently only a furcadia character.ini file is supported.
+            </para></summary>
     </member>
     <member name="M:Furcadia.Net.BaseProxy.#ctor">
       <summary>
@@ -5773,13 +4970,8 @@
     </member>
     <member name="F:Furcadia.Net.BaseProxy._lport">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.BaseProxy._lport</parameter>
-          </include>
-        </markup>
-      </summary>
+            Local host TCP Port
+            </summary>
     </member>
     <member name="P:Furcadia.Net.BaseProxy.BufferCapacity">
       <summary>
@@ -5796,19 +4988,9 @@
             This is triggered when the Client sends data to the server.
             </summary>
     </member>
-    <member name="E:Furcadia.Net.BaseProxy.ClientData2">
+    <member name="F:Furcadia.Net.BaseProxy.ClientData2">
       <summary>
             This is triggered when the Client sends data to the server. Expects a return value.
-            </summary>
-    </member>
-    <member name="E:Furcadia.Net.BaseProxy.ClientDisConnected">
-      <summary>
-            This is triggered when the Client Disconnects
-             </summary>
-    </member>
-    <member name="E:Furcadia.Net.BaseProxy.ClientExited">
-      <summary>
-            This is triggered when the user has exited/logoff Furcadia and the Furcadia client is closed.
             </summary>
     </member>
     <member name="M:Furcadia.Net.BaseProxy.CloseClient">
@@ -5820,11 +5002,6 @@
       <summary>
             Connects to the Furcadia Server and starts the mini proxy.
             </summary>
-    </member>
-    <member name="E:Furcadia.Net.BaseProxy.Connected">
-      <summary>
-            This is triggered when the
-             </summary>
     </member>
     <member name="M:Furcadia.Net.BaseProxy.Dispose">
       <summary>
@@ -5869,18 +5046,14 @@
     </member>
     <member name="E:Furcadia.Net.BaseProxy.FurcSettingsRestored">
       <summary>
-            This is triggered when t client is closed.
+            This is Triggered when Furcadia "settings.ini" is restored to previous settings before
+            proxy was used.
             </summary>
     </member>
     <member name="P:Furcadia.Net.BaseProxy.IsClientConnected">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.BaseProxy.IsClientConnected</parameter>
-          </include>
-        </markup>
-      </summary>
+            Is the Furcadia Client connected to our proxy?
+            </summary>
     </member>
     <member name="P:Furcadia.Net.BaseProxy.IsServerConnected">
       <summary>
@@ -5890,6 +5063,16 @@
     <member name="M:Furcadia.Net.BaseProxy.Kill">
       <summary>
             Terminates the connection.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.BaseProxy.OnClientStatusChanged">
+      <summary>
+            Furcadia Client connection status event
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.BaseProxy.OnServerStatusChanged">
+      <summary>
+            Furcadia Server Connection status event
             </summary>
     </member>
     <member name="P:Furcadia.Net.BaseProxy.Process">
@@ -5972,11 +5155,6 @@
             This is triggered when the Server sends data to the client. Doesn't expect a return value.
             </summary>
     </member>
-    <member name="E:Furcadia.Net.BaseProxy.ServerDisConnected">
-      <summary>
-            This is triggered when the Server Disconnects
-             </summary>
-    </member>
     <member name="M:Furcadia.Net.BaseProxy.SetProcess(System.String)">
       <summary>
             Sets the startup Process to the associated file. (default: %FurcadiaInstallPath%/Furcadia.exe)
@@ -6031,6 +5209,13 @@
           </include>
         </markup>
       </summary>
+      <param name="e">
+            Executing Exeception
+            </param>
+      <param name="o">
+            Object
+            </param>
+      <param name="n"></param>
     </member>
     <member name="T:Furcadia.Net.BotFurre">
       <summary>
@@ -7468,62 +6653,13 @@
     </member>
     <member name="T:Furcadia.Net.NetProxy">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.NetProxy</parameter>
-          </include>
-        </markup>
-      </summary>
+            Generic Proxy handler for any derived Proxy.
+            </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxy.#ctor">
       <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.NetProxy</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Net.NetProxy.BadgeTag">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.BadgeTag</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="E:Furcadia.Net.NetProxy.ClientDataReceived">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>E:Furcadia.Net.NetProxy.ClientDataReceived</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="E:Furcadia.Net.NetProxy.ClientExited">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>E:Furcadia.Net.NetProxy.ClientExited</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="E:Furcadia.Net.NetProxy.Connected">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>E:Furcadia.Net.NetProxy.Connected</parameter>
-          </include>
-        </markup>
-      </summary>
+            NetProxy Constructor with defaults
+            </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxy.Dispose(System.Boolean)">
       <summary>
@@ -7543,23 +6679,8 @@
     </member>
     <member name="F:Furcadia.Net.NetProxy.Dream">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.Dream</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="E:Furcadia.Net.NetProxy.error">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>E:Furcadia.Net.NetProxy.error</parameter>
-          </include>
-        </markup>
-      </summary>
+            Current active dream info our proxy is in.
+            </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxy.fIDtoFurre(System.Int32)">
       <summary>
@@ -7596,46 +6717,6 @@
             Furcadia Process Id
             </returns>
     </member>
-    <member name="F:Furcadia.Net.NetProxy.loggingIn">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.loggingIn</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.NetProxy.LoggingIn">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.NetProxy.LoggingIn</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Net.NetProxy.LookQue">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.LookQue</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Net.NetProxy.NoEndurance">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.NoEndurance</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
     <member name="M:Furcadia.Net.NetProxy.OnServerSent(System.Object,System.EventArgs)">
       <summary>
             Server Que handler
@@ -7657,57 +6738,8 @@
     </member>
     <member name="F:Furcadia.Net.NetProxy.Player">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.Player</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.NetProxy.ReconnectMax">
-      <summary>
-            Maximum tries to reconnect to the server
+            Current triggering furre
             </summary>
-    </member>
-    <member name="M:Furcadia.Net.NetProxy.ReconnectTick(System.Object)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.ReconnectTick(System.Object)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="state">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>state</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.ReconnectTick(System.Object)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="F:Furcadia.Net.NetProxy.ReconnectTimeOutTimer">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.ReconnectTimeOutTimer</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Net.NetProxy.ReconnectTimer">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.ReconnectTimer</parameter>
-          </include>
-        </markup>
-      </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxy.SendServer(System.String)">
       <summary>
@@ -7723,26 +6755,6 @@
         </markup>
       </param>
     </member>
-    <member name="E:Furcadia.Net.NetProxy.ServerDataReceived">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>E:Furcadia.Net.NetProxy.ServerDataReceived</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="E:Furcadia.Net.NetProxy.ServerDisConnected">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>E:Furcadia.Net.NetProxy.ServerDisConnected</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
     <member name="F:Furcadia.Net.NetProxy.ServerParser">
       <summary>
             ServerData Parser
@@ -7752,55 +6764,6 @@
       <summary>
             Snap in Send to server Buffer
             </summary>
-    </member>
-    <member name="F:Furcadia.Net.NetProxy.SpeciesTag">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.SpeciesTag</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Net.NetProxy.ThroatTired">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.ThroatTired</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Net.NetProxy.TroatTiredDelay">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.NetProxy.TroatTiredDelay</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.NetProxy.TroatTiredDelayTick(System.Object)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.TroatTiredDelayTick(System.Object)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="state">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>state</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.TroatTiredDelayTick(System.Object)</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="T:Furcadia.Net.NetProxyException">
       <summary>
@@ -8052,6 +7015,111 @@
         </markup>
       </summary>
     </member>
+    <member name="T:Furcadia.Net.ProxySession">
+      <summary>
+            Base Furcadia Session Class
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.ProxySession.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.ProxySession</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.ProxySession.BadgeTag">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.ProxySession.BadgeTag</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.ProxySession.Connect">
+      <summary>
+            Connect to the Furcadia Server.
+            <para>
+            Overrides base Connect() to use out Reconnect system.
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.ProxySession.Connect(System.Object,System.EventArgs)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.ProxySession.Connect(System.Object,System.EventArgs)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sender">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sender</parameter>
+            <parameter>M:Furcadia.Net.ProxySession.Connect(System.Object,System.EventArgs)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="e">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>e</parameter>
+            <parameter>M:Furcadia.Net.ProxySession.Connect(System.Object,System.EventArgs)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.ProxySession.Dispose(System.Boolean)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocDisposeBool">
+            <parameter>Furcadia.Net.ProxySession</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="disposing">
+        <markup>
+          <include item="SMCAutoDocDisposeParam">
+            <parameter>Furcadia.Net.ProxySession</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="F:Furcadia.Net.ProxySession.LookQue">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.ProxySession.LookQue</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.ProxySession.NewFurcReconnect">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.ProxySession.NewFurcReconnect</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.ProxySession.SpeciesTag">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.ProxySession.SpeciesTag</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="T:Furcadia.Net.ServerDisConnectedHandler">
       <summary>
         <markup>
@@ -8062,25 +7130,384 @@
         </markup>
       </summary>
     </member>
-    <member name="T:Furcadia.Net.Proxy.ProxySession">
+    <member name="T:Furcadia.Net.Utils.NetClientArgs">
       <summary>
-            Generic Proxy handler
-            <para>
-            Full functional proxy engine
-            </para><para>
-            Tracks the Furcadia Connection
-            </para><para>
-            Dream Status? FurreList DreamOwner Dream Title
-            </para></summary>
+            Client Status Event Arguments.
+            </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.#ctor">
+    <member name="M:Furcadia.Net.Utils.NetClientArgs.#ctor(Furcadia.Net.Utils.Phase,System.String)">
+      <summary>
+            Constructor
+            </summary>
+      <param name="message">
+            Optional Message
+            </param>
+      <param name="phase">
+            Connection Phase
+            </param>
+    </member>
+    <member name="F:Furcadia.Net.Utils.NetClientArgs.ConnectionPhase">
+      <summary>
+            Status of the Furcadia Client Connection
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.NetClientArgs.Message">
+      <summary>
+            optional string message
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.NetServerArgs">
+      <summary>
+            Server Status Event Arguments
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.NetServerArgs.#ctor(Furcadia.Net.Utils.Phase,System.String)">
+      <summary>
+            Constructor
+            </summary>
+      <param name="phase">
+            Server Connection Phase
+            </param>
+      <param name="message">
+            Optional Message
+            </param>
+    </member>
+    <member name="F:Furcadia.Net.Utils.NetServerArgs.ConnectionPhase">
+      <summary>
+            Status of the Server Connection
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.NetServerArgs.Message">
+      <summary>
+            optional string message
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ParseServer">
+      <summary>
+            Parsing Server Data with Events
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ParseServer.#ctor(Furcadia.Net.DREAM@,Furcadia.Net.FURRE@)">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Proxy.ProxySession</parameter>
+            <parameter>Furcadia.Net.Utils.ParseServer</parameter>
           </include>
         </markup>
       </summary>
+      <param name="Dream">
+            Current Furcadia Dream
+            </param>
+      <param name="Player">
+            Current Triggering Furre
+            </param>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ParseServer.Channel">
+      <summary>
+            Furcadia text channel
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.Utils.ParseServer.ChannelParsed">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:Furcadia.Net.Utils.ParseServer.ChannelParsed</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="E:Furcadia.Net.Utils.ParseServer.DataParsed">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:Furcadia.Net.Utils.ParseServer.DataParsed</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ParseServer.FurcadiaDream">
+      <summary>
+            Current Furcadia Dream
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ParseServer.FurcadiaPlayer">
+      <summary>
+            Current Triggering Furre
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ParseServer.ParseServerChannel(System.String,System.Boolean@)">
+      <summary>
+            Parse the text channels coming from the server
+            </summary>
+      <param name="data">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>data</parameter>
+            <parameter>M:Furcadia.Net.Utils.ParseServer.ParseServerChannel(System.String,System.Boolean@)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="handled">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>handled</parameter>
+            <parameter>M:Furcadia.Net.Utils.ParseServer.ParseServerChannel(System.String,System.Boolean@)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ParseServer.ParseServerData(System.String,System.Boolean@)">
+      <summary>
+            Parse the raw data coming from the Game Server
+            </summary>
+      <param name="data">
+            Raw Server Data aka Server Instruction
+            <para>
+            ref=http://ftr.icerealm.org/ref-instructions/
+            </para></param>
+      <param name="handled">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>handled</parameter>
+            <parameter>M:Furcadia.Net.Utils.ParseServer.ParseServerData(System.String,System.Boolean@)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ParseServer.ParsedChannelEventHandler">
+      <summary>
+            Event fired when we have successful parsed Channel Data
+            </summary>
+      <param name="o"></param>
+      <param name="e"></param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ParseServer.ParsedDataEventHandler">
+      <summary>
+            Fired when we have parsed channel data
+            </summary>
+      <param name="o"></param>
+      <param name="e"></param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.Phase">
+      <summary>
+            Connection Status
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.error">
+      <summary>
+            Default errof
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.Init">
+      <summary>
+            Initialize Connection
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.Connecting">
+      <summary>
+            Connection started
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.Reconnection">
+      <summary>
+            Reconnection flag
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.MOTD">
+      <summary>
+            Message of the Day
+            <para>
+            IE: Good Morning Dave...
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.Auth">
+      <summary>
+            Login Account,Password, Character Name
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.Connected">
+      <summary>
+            Connection established
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.Disconnected">
+      <summary>
+            Connection lost
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.SettingsSet">
+      <summary>
+            Setting Furcadia Proxy/Firewall settings
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.SettingsRestore">
+      <summary>
+            Furcadia Settings restored
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.ClientDisconnected">
+      <summary>
+            Furcadia Client has Disconnected from the proxy
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Phase.ClientClosed">
+      <summary>
+            Furcadia Client has closed.
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerInstruction">
+      <summary>
+            Server Instruction Object
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerInstruction.#ctor(Furcadia.Net.Utils.ServerInstructionType,System.String)">
+      <summary>
+            Constructor
+            </summary>
+      <param name="sType">
+            Instruction Type.
+            </param>
+      <param name="Raw">
+            Raw Instruction
+            </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerInstructionType">
+      <summary>
+            Server to Client Instructions
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerInstructionType.Unknown">
+      <summary>
+            Unknown Instruction,
+            <para>
+            Needs further research
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerInstructionType.SpawnAvatar">
+      <summary>
+            Spawns a new Furre in the dream
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerInstructionType.DisplayText">
+      <summary>
+            Display formated Text.
+            <para>
+            Mostly Furcadia Markup but other stuff too
+            </para></summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerQue">
+      <summary>
+            Balance the load to the server
+            <para>
+            Handles Throat-Tired and No Endurance
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.#ctor">
+      <summary>
+            Constructor
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.Dispose">
+      <summary>
+            This code added to correctly implement the disposable pattern.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.Dispose(System.Boolean)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocDisposeBool">
+            <parameter>Furcadia.Net.Utils.ServerQue</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="disposing">
+        <markup>
+          <include item="SMCAutoDocDisposeParam">
+            <parameter>Furcadia.Net.Utils.ServerQue</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerQue.NoEndurance">
+      <summary>
+            Is the connect `noendurance enabled?
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerQue.OnServerSendMessage">
+      <summary>
+            Message to Server Event.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.QueueTick(System.Double)">
+      <summary>
+            Load Balancing Function
+            <para>
+            this makes sure we don't over load what the server can handle
+            </para><para>
+            Proxy has 2 modes of operation
+            </para><para>
+            Mode 1 Normal. handles Throat Tired syndrome with a time out timer to resume
+            </para><para>
+            Mode 2 NoEndurance. Send data to server as fast as it can handle with out overloading its buffer
+            </para></summary>
+      <param name="DelayTime">
+            Delay Time in Milliseconds
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.SendToServer(System.String)">
+      <summary>
+            Incoming Messages for server processing
+            </summary>
+      <param name="data">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>data</parameter>
+            <parameter>M:Furcadia.Net.Utils.ServerQue.SendToServer(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerQue.ThroatTired">
+      <summary>
+            If Proxy get "Your throat is tired" Pause for a number of seconds
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.TroatTiredProcessTick(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Utils.ServerQue.TroatTiredProcessTick(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="state">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>state</parameter>
+            <parameter>M:Furcadia.Net.Utils.ServerQue.TroatTiredProcessTick(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerQue.SendServerEventHandler">
+      <summary>
+            Event Handler to notify calling class data has been sent to the game server
+            </summary>
+      <param name="message"></param>
+      <param name="args"></param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.Utilities">
+      <summary>
+            Generic Furcadia Network Utilities
+            </summary>
     </member>
   </members>
 </doc>

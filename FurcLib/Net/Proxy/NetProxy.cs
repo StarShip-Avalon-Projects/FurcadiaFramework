@@ -1,40 +1,32 @@
-﻿using Furcadia.IO;
+﻿using Furcadia.Net.Utils;
 using System;
-using System.Threading;
 
 namespace Furcadia.Net
 {
+    /// <summary>
+    /// Generic Proxy handler for any derived Proxy.
+    /// </summary>
+    /// <remarks>
+    /// Here we manage the Current Dream infomation and the Triggering Furre as part of our proxy connection.
+    /// </remarks>
     [CLSCompliant(true)]
     public class NetProxy : BaseProxy, IDisposable
     {
         #region Public Fields
 
         /// <summary>
+        /// Current active dream info our proxy is in.
         /// </summary>
         public static DREAM Dream = new DREAM();
 
+        /// <summary>
+        /// Current triggering furre
+        /// </summary>
         public static FURRE Player = new FURRE();
-
-        private int reconnectmax = 5;
-
-        /// <summary>
-        /// </summary>
-        private int RelogCounter;
-
-        /// <summary>
-        /// Maximum tries to reconnect to the server
-        /// </summary>
-        public int ReconnectMax
-        {
-            get { return reconnectmax; }
-            set { reconnectmax = value; }
-        }
 
         #endregion Public Fields
 
         #region Protected Fields
-
-        protected short loggingIn = 0;
 
         /// <summary>
         /// ServerData Parser
@@ -51,19 +43,19 @@ namespace Furcadia.Net
         #region Private Fields
 
         private static int _FurcProcessId;
-        private Mutex FurcMutex;
 
         #endregion Private Fields
 
         #region Public Constructors
 
         /// <summary>
+        /// NetProxy Constructor with defaults
         /// </summary>
         public NetProxy()
         {
-            ServerParser = new ParseServer(ref Dream, ref Player);
+            ServerParser = new Net.Utils.ParseServer(ref Dream, ref Player);
             ServQue = new ServerQue();
-            ServQue.QueSent += OnServerSent;
+            ServQue.OnServerSendMessage += OnServerSent;
         }
 
         #endregion Public Constructors
@@ -80,12 +72,6 @@ namespace Furcadia.Net
         {
             get { return _FurcProcessId; }
             set { _FurcProcessId = value; }
-        }
-
-        public short LoggingIn
-        {
-            get { return loggingIn; }
-            set { loggingIn = value; }
         }
 
         #endregion Public Properties
@@ -138,8 +124,6 @@ namespace Furcadia.Net
 
         #endregion Public Methods
 
-
-
         #region IDisposable Support
 
         private bool disposedValue = false; // To detect redundant calls
@@ -162,8 +146,8 @@ namespace Furcadia.Net
             {
                 if (disposing)
                 {
-                    if (FurcMutex != null) FurcMutex.Dispose();
-
+                    if (ServQue != null)
+                        ServQue.Dispose(disposing);
                     base.Dispose(disposing);
                 }
 

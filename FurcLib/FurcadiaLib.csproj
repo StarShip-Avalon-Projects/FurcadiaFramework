@@ -129,16 +129,16 @@
     <Compile Include="Base95.cs" />
     <Compile Include="Drawing\FurrePosition.cs" />
     <Compile Include="Drawing\ViewArea.cs" />
-    <Compile Include="EventArgs\NetServerArgs.cs" />
+    <Compile Include="Net\Utils\NetServerArgs.cs" />
     <Compile Include="FurcMap\Map.cs" />
     <Compile Include="FurcMap\MapPosition.cs" />
     <Compile Include="FurcMap\MapTile.cs" />
     <Compile Include="IO\FurcadiaIOException.cs" />
     <Compile Include="IO\FurcadiaNotFoundException.cs" />
-    <Compile Include="IO\ParseClient.cs" />
-    <Compile Include="IO\ParseServer.cs" />
-    <Compile Include="Net\Proxy\ProxyReconnect.cs" />
-    <Compile Include="Net\Proxy\ServerQue.cs" />
+    <Compile Include="Net\Utils\ParseClient.cs" />
+    <Compile Include="Net\Utils\ParseServer.cs" />
+    <Compile Include="Net\Utils\ProxyReconnect.cs" />
+    <Compile Include="Net\Utils\ServerQue.cs" />
     <Compile Include="IO\SubSystem\PhoenixSpeakParser.cs" />
     <Compile Include="Net\Dream\DREAM.cs" />
     <Compile Include="Net\Dream\FURRE.cs" />
@@ -149,13 +149,13 @@
     <Compile Include="Net\NetServer.cs" />
     <Compile Include="Net\Proxy\NetProxy.cs" />
     <Compile Include="Net\Proxy\ProxySession.cs" />
+    <Compile Include="Net\Utils\Utilities.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SpeciesTable.cs" />
-    <Compile Include="IO\GCAWeb.Utils.cs" />
     <Compile Include="Drawing\Graphics.cs" />
     <Compile Include="Drawing\Helper.cs" />
     <Compile Include="IO\FurcIni.cs" />
@@ -224,6 +224,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Net\Account\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
