@@ -12,8 +12,22 @@ using System.Reflection;
 
 namespace Furcadia
 {
+    /// <summary>
+    /// Beekin Badges
+    /// </summary>
     public class Badges
     {
+        #region Private Fields
+
+        private static DataTable dt = null;
+
+        #endregion Private Fields
+
+        #region Private Enums
+
+        /// <summary>
+        /// Beekin Group
+        /// </summary>
         private enum Group
         {
             none,
@@ -32,6 +46,9 @@ namespace Furcadia
             Eventer
         };
 
+        /// <summary>
+        /// Group Rank
+        /// </summary>
         private enum Level
         {
             none,
@@ -44,37 +61,9 @@ namespace Furcadia
             Creator
         };
 
-        private static DataTable dt = null;
+        #endregion Private Enums
 
-        public static void PrimeTable()
-        {
-            try
-            {
-                Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Furcadia.Resources.badges.csv");
-                using (StreamReader reader = new StreamReader(stream))
-                {
-                    string result = reader.ReadToEnd();
-                    result = result.Replace("\r", "");
-                    result = result.Replace("\"", "");
-                    string[] csvRows = result.Split('\n');
-                    string[] fields = null;
-                    dt = new DataTable();
-
-                    foreach (string Field in csvRows[0].Split(new char[] { ',' }))
-                        dt.Columns.Add(new DataColumn(Field, typeof(string)));
-                    for (int i = 1; i < csvRows.Length; i++)
-                    {
-                        fields = csvRows[i].Split(',');
-                        DataRow row = dt.NewRow();
-                        row.ItemArray = fields;
-                        dt.Rows.Add(row);
-                    }
-                }
-            }
-            catch
-            {
-            }
-        }
+        #region Public Methods
 
         public static int GetGroup(string tag)
         {
@@ -120,11 +109,6 @@ namespace Furcadia
             return result;
         }
 
-        public static T NumToEnum<T>(int number)
-        {
-            return (T)Enum.ToObject(typeof(T), number);
-        }
-
         public static string GetTag(string tag)
         {
             string result = null;
@@ -150,5 +134,42 @@ namespace Furcadia
             }
             return result;
         }
+
+        public static T NumToEnum<T>(int number)
+        {
+            return (T)Enum.ToObject(typeof(T), number);
+        }
+
+        public static void PrimeTable()
+        {
+            try
+            {
+                Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Furcadia.Resources.badges.csv");
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    string result = reader.ReadToEnd();
+                    result = result.Replace("\r", "");
+                    result = result.Replace("\"", "");
+                    string[] csvRows = result.Split('\n');
+                    string[] fields = null;
+                    dt = new DataTable();
+
+                    foreach (string Field in csvRows[0].Split(new char[] { ',' }))
+                        dt.Columns.Add(new DataColumn(Field, typeof(string)));
+                    for (int i = 1; i < csvRows.Length; i++)
+                    {
+                        fields = csvRows[i].Split(',');
+                        DataRow row = dt.NewRow();
+                        row.ItemArray = fields;
+                        dt.Rows.Add(row);
+                    }
+                }
+            }
+            catch
+            {
+            }
+        }
+
+        #endregion Public Methods
     }
 }

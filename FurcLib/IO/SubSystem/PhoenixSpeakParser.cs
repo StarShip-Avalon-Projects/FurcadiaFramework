@@ -5,5 +5,12 @@
     /// </summary>
     internal class PhoenixSpeakParser
     {
+        #region Public Constructors
+
+        public PhoenixSpeakParser()
+        {
+        }
+
+        #endregion Public Constructors
     }
 }

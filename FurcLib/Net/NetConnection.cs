@@ -1,4 +1,5 @@
 using Furcadia.IO;
+using Furcadia.Text;
 using System;
 using System.Collections.Generic;
 

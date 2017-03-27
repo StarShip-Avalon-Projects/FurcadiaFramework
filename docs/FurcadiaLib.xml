@@ -124,13 +124,8 @@
     </member>
     <member name="T:Furcadia.Badges">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Badges</parameter>
-          </include>
-        </markup>
-      </summary>
+            Beekin Badges
+            </summary>
     </member>
     <member name="M:Furcadia.Badges.#ctor">
       <summary>
@@ -267,1939 +262,6 @@
           </include>
         </markup>
       </summary>
-    </member>
-    <member name="T:Furcadia.Base220">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Base220.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Base220.#ctor(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n</parameter>
-            <parameter>M:Furcadia.Base220.#ctor(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Base220.#ctor(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="s">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>s</parameter>
-            <parameter>M:Furcadia.Base220.#ctor(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Base220.CompareTo(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.CompareTo(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="other">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>other</parameter>
-            <parameter>M:Furcadia.Base220.CompareTo(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.CompareTo(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.ConvertFromBase220(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.ConvertFromBase220(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b220str">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b220str</parameter>
-            <parameter>M:Furcadia.Base220.ConvertFromBase220(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.ConvertFromBase220(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.ConvertToBase220(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.ConvertToBase220(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="num">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>num</parameter>
-            <parameter>M:Furcadia.Base220.ConvertToBase220(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.ConvertToBase220(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.ConvertToBase220(System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.ConvertToBase220(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="num">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>num</parameter>
-            <parameter>M:Furcadia.Base220.ConvertToBase220(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="nDigits">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>nDigits</parameter>
-            <parameter>M:Furcadia.Base220.ConvertToBase220(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.ConvertToBase220(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.Equals(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.Equals(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="other">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>other</parameter>
-            <parameter>M:Furcadia.Base220.Equals(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.Equals(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.Equals(System.Object)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="obj">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>obj</parameter>
-            <parameter>M:Furcadia.Base220.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.FromString(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.FromString(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="s">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>s</parameter>
-            <parameter>M:Furcadia.Base220.FromString(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.FromString(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.GetHashCode">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.GetHashCode</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.GetHashCode</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Addition(Furcadia.Base220,Furcadia.Base220)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Addition(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base220.op_Addition(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base220.op_Addition(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Addition(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Division(Furcadia.Base220,Furcadia.Base220)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Division(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base220.op_Division(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base220.op_Division(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Division(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Equality(Furcadia.Base220,Furcadia.Base220)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Equality(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base220.op_Equality(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base220.op_Equality(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Equality(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Explicit(Furcadia.Base220)~System.Int16">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Explicit(Furcadia.Base220)~System.Int16</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b220n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b220n</parameter>
-            <parameter>M:Furcadia.Base220.op_Explicit(Furcadia.Base220)~System.Int16</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Explicit(Furcadia.Base220)~System.Int16</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_GreaterThan(Furcadia.Base220,Furcadia.Base220)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_GreaterThan(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base220.op_GreaterThan(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base220.op_GreaterThan(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_GreaterThan(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.Byte[]">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.Byte[]</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b220n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b220n</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.Byte[]</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.Byte[]</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.Int32">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.Int32</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b220n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b220n</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.Int32</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.Int32</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.String">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.String</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b220n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b220n</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.String</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(Furcadia.Base220)~System.String</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Implicit(System.Int16)~Furcadia.Base220">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(System.Int16)~Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(System.Int16)~Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(System.Int16)~Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Implicit(System.Int32)~Furcadia.Base220">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(System.Int32)~Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(System.Int32)~Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(System.Int32)~Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Implicit(System.String)~Furcadia.Base220">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(System.String)~Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="s">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>s</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(System.String)~Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Implicit(System.String)~Furcadia.Base220</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Inequality(Furcadia.Base220,Furcadia.Base220)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Inequality(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base220.op_Inequality(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base220.op_Inequality(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Inequality(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_LessThan(Furcadia.Base220,Furcadia.Base220)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_LessThan(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base220.op_LessThan(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base220.op_LessThan(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_LessThan(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Modulus(Furcadia.Base220,Furcadia.Base220)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Modulus(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base220.op_Modulus(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base220.op_Modulus(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Modulus(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Multiply(Furcadia.Base220,Furcadia.Base220)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Multiply(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base220.op_Multiply(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base220.op_Multiply(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Multiply(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.op_Subtraction(Furcadia.Base220,Furcadia.Base220)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.op_Subtraction(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base220.op_Subtraction(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base220.op_Subtraction(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.op_Subtraction(Furcadia.Base220,Furcadia.Base220)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.ToByteArray">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.ToByteArray</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.ToByteArray</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.ToByteArray(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.ToByteArray(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="nDigits">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>nDigits</parameter>
-            <parameter>M:Furcadia.Base220.ToByteArray(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.ToByteArray(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.ToString">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.ToString</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.ToString</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base220.ToString(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base220.ToString(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="nDigits">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>nDigits</parameter>
-            <parameter>M:Furcadia.Base220.ToString(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base220.ToString(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="T:Furcadia.Base95">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Base95.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Base95.#ctor(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="s">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>s</parameter>
-            <parameter>M:Furcadia.Base95.#ctor(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Base95.#ctor(System.UInt32)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n</parameter>
-            <parameter>M:Furcadia.Base95.#ctor(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="F:Furcadia.Base95.BASE">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Base95.BASE</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Base95.CHAR_OFFSET">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Base95.CHAR_OFFSET</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Base95.CompareTo(System.UInt32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.CompareTo(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="other">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>other</parameter>
-            <parameter>M:Furcadia.Base95.CompareTo(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.CompareTo(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.ConvertFromBase95(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.ConvertFromBase95(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b95str">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b95str</parameter>
-            <parameter>M:Furcadia.Base95.ConvertFromBase95(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.ConvertFromBase95(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.ConvertToBase95(System.UInt32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.ConvertToBase95(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="num">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>num</parameter>
-            <parameter>M:Furcadia.Base95.ConvertToBase95(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.ConvertToBase95(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.ConvertToBase95(System.UInt32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.ConvertToBase95(System.UInt32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="num">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>num</parameter>
-            <parameter>M:Furcadia.Base95.ConvertToBase95(System.UInt32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="nDigits">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>nDigits</parameter>
-            <parameter>M:Furcadia.Base95.ConvertToBase95(System.UInt32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.ConvertToBase95(System.UInt32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.Equals(System.Object)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="obj">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>obj</parameter>
-            <parameter>M:Furcadia.Base95.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.Equals(System.UInt32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.Equals(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="other">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>other</parameter>
-            <parameter>M:Furcadia.Base95.Equals(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.Equals(System.UInt32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.FromString(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.FromString(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="s">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>s</parameter>
-            <parameter>M:Furcadia.Base95.FromString(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.FromString(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.GetHashCode">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.GetHashCode</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.GetHashCode</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Addition(Furcadia.Base95,Furcadia.Base95)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Addition(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base95.op_Addition(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base95.op_Addition(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Addition(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Division(Furcadia.Base95,Furcadia.Base95)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Division(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base95.op_Division(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base95.op_Division(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Division(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Equality(Furcadia.Base95,Furcadia.Base95)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Equality(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base95.op_Equality(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base95.op_Equality(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Equality(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Explicit(Furcadia.Base95)~System.UInt16">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Explicit(Furcadia.Base95)~System.UInt16</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b95n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b95n</parameter>
-            <parameter>M:Furcadia.Base95.op_Explicit(Furcadia.Base95)~System.UInt16</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Explicit(Furcadia.Base95)~System.UInt16</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_GreaterThan(Furcadia.Base95,Furcadia.Base95)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_GreaterThan(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base95.op_GreaterThan(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base95.op_GreaterThan(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_GreaterThan(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.UInt32">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.UInt32</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b95n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b95n</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.UInt32</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.UInt32</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.String">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.String</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b95n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b95n</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.String</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.String</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.Byte[]">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.Byte[]</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="b95n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>b95n</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.Byte[]</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(Furcadia.Base95)~System.Byte[]</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Implicit(System.String)~Furcadia.Base95">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(System.String)~Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="s">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>s</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(System.String)~Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(System.String)~Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Implicit(System.UInt16)~Furcadia.Base95">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(System.UInt16)~Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(System.UInt16)~Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(System.UInt16)~Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Implicit(System.UInt32)~Furcadia.Base95">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(System.UInt32)~Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(System.UInt32)~Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Implicit(System.UInt32)~Furcadia.Base95</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Inequality(Furcadia.Base95,Furcadia.Base95)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Inequality(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base95.op_Inequality(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base95.op_Inequality(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Inequality(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_LessThan(Furcadia.Base95,Furcadia.Base95)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_LessThan(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base95.op_LessThan(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base95.op_LessThan(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_LessThan(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Modulus(Furcadia.Base95,Furcadia.Base95)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Modulus(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base95.op_Modulus(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base95.op_Modulus(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Modulus(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Multiply(Furcadia.Base95,Furcadia.Base95)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Multiply(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base95.op_Multiply(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base95.op_Multiply(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Multiply(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.op_Subtraction(Furcadia.Base95,Furcadia.Base95)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.op_Subtraction(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="n1">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n1</parameter>
-            <parameter>M:Furcadia.Base95.op_Subtraction(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="n2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>n2</parameter>
-            <parameter>M:Furcadia.Base95.op_Subtraction(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.op_Subtraction(Furcadia.Base95,Furcadia.Base95)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.ToByteArray">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.ToByteArray</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.ToByteArray</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.ToByteArray(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.ToByteArray(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="nDigits">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>nDigits</parameter>
-            <parameter>M:Furcadia.Base95.ToByteArray(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.ToByteArray(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.ToString">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.ToString</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.ToString</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Base95.ToString(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Base95.ToString(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="nDigits">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>nDigits</parameter>
-            <parameter>M:Furcadia.Base95.ToString(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Base95.ToString(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="F:Furcadia.Base95.Value">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Base95.Value</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="T:Furcadia.Character">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Character</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Character.ColorString">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Character.ColorString</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Character.Description">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Character.Description</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Character.LastLogin">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Character.LastLogin</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Character.Load(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Character.Load(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="iniFile">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>iniFile</parameter>
-            <parameter>M:Furcadia.Character.Load(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Character.Load(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="F:Furcadia.Character.Logins">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Character.Logins</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Character.Name">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Character.Name</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="T:Furcadia.Settings">
-      <summary>
-            A simple way to load settings whether from ini or xml.
-            </summary>
-    </member>
-    <member name="M:Furcadia.Settings.InitializeFurcadiaSettings(System.String)">
-      <summary>
-            Lets back up our Proxy/Firewall settings and then set the new settings for the Furcadia Client
-            </summary>
-      <param name="path">
-            Furcadia Settings.ini path
-            </param>
-      <returns>
-            Backup Settings for restoring later
-            </returns>
-    </member>
-    <member name="M:Furcadia.Settings.Load``1(System.String)">
-      <summary>
-            Loads a xml file and returns a new instance of T. T must be XML Deserializable!
-            </summary>
-      <param name="file">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>file</parameter>
-            <parameter>M:Furcadia.Settings.Load``1(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <typeparam name="T">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>typeparam</parameter>
-            <parameter>T</parameter>
-            <parameter>M:Furcadia.Settings.Load``1(System.String)</parameter>
-          </include>
-        </markup>
-      </typeparam>
-      <returns>
-            Default of T (default(T)) on file not found. Else it returns a instance of T.
-            </returns>
-    </member>
-    <member name="M:Furcadia.Settings.Load(System.String)">
-      <summary>
-            Loads an ini file and returns a key/value pair of values. (Note: It reads Key=Value pairs
-            only.) (Add: Also the ini must be proper, one key/value per line. No section garbage.)
-            </summary>
-      <param name="file">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>file</parameter>
-            <parameter>M:Furcadia.Settings.Load(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-            A new Hashtable, or a empty Hashtable on file not found.
-            </returns>
-    </member>
-    <member name="M:Furcadia.Settings.RestoreFurcadiaSettings(System.String[])">
-      <summary>
-            Restores the Furcadia Settings we backed up earlier.
-            </summary>
-      <param name="BackupSettings">
-            Backed up settings array
-            </param>
     </member>
     <member name="T:Furcadia.Util">
       <summary>
@@ -4485,229 +2547,6 @@
         </markup>
       </param>
     </member>
-    <member name="T:Furcadia.IO.FurcIni">
-      <summary>
-            Furcadia configuration class to backup/set firewall setting and restore them after we have
-            connected to the game server
-            <para>
-            Author Gerolkae
-            </para><para>
-            Courtesy to Dream Dancer for helping me with this
-            </para></summary>
-    </member>
-    <member name="M:Furcadia.IO.FurcIni.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.IO.FurcIni</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.IO.FurcIni.GetUserSetting(System.String,System.String[])">
-      <summary>
-            Retrieves a feild setting in the FurcSettings array
-            </summary>
-      <param name="file"></param>
-      <param name="WhichSetting">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>WhichSetting</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.GetUserSetting(System.String,System.String[])</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="SettingFile">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>SettingFile</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.GetUserSetting(System.String,System.String[])</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-            Value
-            </returns>
-    </member>
-    <member name="M:Furcadia.IO.FurcIni.LoadFurcadiaSettings(System.String,System.String)">
-      <summary>
-            Backs up the current Furcadia Settings
-            </summary>
-      <param name="path">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>path</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.LoadFurcadiaSettings(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="file">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>file</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.LoadFurcadiaSettings(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.LoadFurcadiaSettings(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])">
-      <summary>
-            Save the furcadia configuration to settings.ini
-            </summary>
-      <param name="path">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>path</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="file">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>file</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="SettingFile">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>SettingFile</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.IO.FurcIni.SetUserSetting(System.String,System.String,System.String[])">
-      <summary>
-            sets feilds in the FurcSettings array
-            </summary>
-      <param name="file"></param>
-      <param name="WhichSetting">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>WhichSetting</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.SetUserSetting(System.String,System.String,System.String[])</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="WhichValue">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>WhichValue</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.SetUserSetting(System.String,System.String,System.String[])</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="SettingFile">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>SettingFile</parameter>
-            <parameter>M:Furcadia.IO.FurcIni.SetUserSetting(System.String,System.String,System.String[])</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-            true on success.
-            </returns>
-    </member>
-    <member name="T:Furcadia.IO.IniParser">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.IO.IniParser</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.IO.IniParser.#ctor(System.String)">
-      <summary>
-            Opens the INI file at the given path and enumerates the values in the IniParser.
-            </summary>
-      <param name="iniPath">Full path to INI file.</param>
-    </member>
-    <member name="M:Furcadia.IO.IniParser.AddSetting(System.String,System.String)">
-      <summary>
-            Adds or replaces a setting to the table to be saved with a null value.
-            </summary>
-      <param name="sectionName">Section to add under.</param>
-      <param name="settingName">Key name to add.</param>
-    </member>
-    <member name="M:Furcadia.IO.IniParser.AddSetting(System.String,System.String,System.String)">
-      <summary>
-            Adds or replaces a setting to the table to be saved.
-            </summary>
-      <param name="sectionName">Section to add under.</param>
-      <param name="settingName">Key name to add.</param>
-      <param name="settingValue">Value of key.</param>
-    </member>
-    <member name="M:Furcadia.IO.IniParser.DeleteSetting(System.String,System.String)">
-      <summary>
-            Remove a setting.
-            </summary>
-      <param name="sectionName">Section to add under.</param>
-      <param name="settingName">Key name to add.</param>
-    </member>
-    <member name="M:Furcadia.IO.IniParser.EnumSection(System.String)">
-      <summary>
-            Enumerates all lines for given section.
-            </summary>
-      <param name="sectionName">Section to enum.</param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.IniParser.EnumSection(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.IniParser.GetSetting(System.String,System.String)">
-      <summary>
-            Returns the value for the given section, key pair.
-            </summary>
-      <param name="sectionName">Section name.</param>
-      <param name="settingName">Key name.</param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.IO.IniParser.GetSetting(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.IO.IniParser.SaveSettings">
-      <summary>
-            Save settings back to ini file.
-            </summary>
-    </member>
-    <member name="M:Furcadia.IO.IniParser.SaveSettings(System.String)">
-      <summary>
-            Save settings to new file.
-            </summary>
-      <param name="newFilePath">New file path.</param>
-    </member>
     <member name="T:Furcadia.IO.Paths">
       <summary>
              This class contains all the paths related to the users furcadia installation.
@@ -6319,30 +4158,6 @@
         </markup>
       </param>
     </member>
-    <member name="T:Furcadia.Net.Movement">
-      <summary>
-            Furcadia reconmended Material to support thier Protocol Standards
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.Movement.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Movement</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="T:Furcadia.Net.Movement.Flags">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.Movement.Flags</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
     <member name="T:Furcadia.Net.NetConnection">
       <summary>
              NetConnection
@@ -7130,6 +4945,37 @@
         </markup>
       </summary>
     </member>
+    <member name="T:Furcadia.Net.Utils.Movement">
+      <summary>
+            Furcadia reconmended Material to support thier Protocol Standards
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.Movement.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Utils.Movement</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.Movement.Flags">
+      <summary>
+            Character Flags
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Movement.Flags.CHAR_FLAG_HAS_PROFILE">
+      <summary>
+            Character has a Web Profile page.
+            <para>
+            As of Furcadia V31 This is not yet used
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Movement.Flags.CHAR_FLAG_NEW_AVATAR">
+      <summary>
+            Shown for new arrivals to the dream
+            </summary>
+    </member>
     <member name="T:Furcadia.Net.Utils.NetClientArgs">
       <summary>
             Client Status Event Arguments.
@@ -7508,6 +5354,2165 @@
       <summary>
             Generic Furcadia Network Utilities
             </summary>
+    </member>
+    <member name="T:Furcadia.Text.Base220">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.Base220.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.Base220.#ctor(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n</parameter>
+            <parameter>M:Furcadia.Text.Base220.#ctor(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.#ctor(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="s">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>s</parameter>
+            <parameter>M:Furcadia.Text.Base220.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.CompareTo(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.CompareTo(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="other">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>other</parameter>
+            <parameter>M:Furcadia.Text.Base220.CompareTo(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.CompareTo(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ConvertFromBase220(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertFromBase220(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b220str">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b220str</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertFromBase220(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertFromBase220(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ConvertToBase220(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertToBase220(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="num">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>num</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertToBase220(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertToBase220(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ConvertToBase220(System.Int32,System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertToBase220(System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="num">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>num</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertToBase220(System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="nDigits">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>nDigits</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertToBase220(System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.ConvertToBase220(System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.Equals(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.Equals(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="other">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>other</parameter>
+            <parameter>M:Furcadia.Text.Base220.Equals(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.Equals(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.Equals(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="obj">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>obj</parameter>
+            <parameter>M:Furcadia.Text.Base220.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.FromString(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.FromString(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="s">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>s</parameter>
+            <parameter>M:Furcadia.Text.Base220.FromString(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.FromString(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.GetHashCode">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.GetHashCode</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.GetHashCode</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Addition(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Addition(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Addition(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Addition(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Addition(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Division(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Division(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Division(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Division(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Division(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Equality(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Equality(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Equality(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Equality(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Equality(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Explicit(Furcadia.Text.Base220)~System.Int16">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Explicit(Furcadia.Text.Base220)~System.Int16</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b220n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b220n</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Explicit(Furcadia.Text.Base220)~System.Int16</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Explicit(Furcadia.Text.Base220)~System.Int16</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_GreaterThan(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_GreaterThan(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_GreaterThan(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_GreaterThan(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_GreaterThan(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Byte[]">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Byte[]</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b220n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b220n</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Byte[]</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Byte[]</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Int32">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Int32</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b220n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b220n</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Int32</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Int32</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.String">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.String</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b220n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b220n</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.String</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.String</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(System.Int16)~Furcadia.Text.Base220">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(System.Int16)~Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(System.Int16)~Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(System.Int16)~Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(System.Int32)~Furcadia.Text.Base220">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(System.Int32)~Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(System.Int32)~Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(System.Int32)~Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(System.String)~Furcadia.Text.Base220">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(System.String)~Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="s">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>s</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(System.String)~Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Implicit(System.String)~Furcadia.Text.Base220</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Inequality(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Inequality(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Inequality(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Inequality(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Inequality(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_LessThan(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_LessThan(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_LessThan(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_LessThan(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_LessThan(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Modulus(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Modulus(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Modulus(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Modulus(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Modulus(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Multiply(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Multiply(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Multiply(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Multiply(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Multiply(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Subtraction(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Subtraction(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Subtraction(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Subtraction(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.op_Subtraction(Furcadia.Text.Base220,Furcadia.Text.Base220)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ToByteArray">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToByteArray</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToByteArray</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ToByteArray(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToByteArray(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="nDigits">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>nDigits</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToByteArray(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToByteArray(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ToString">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToString</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToString</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ToString(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToString(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="nDigits">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>nDigits</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToString(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base220.ToString(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Text.Base95">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.Base95.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.Base95.#ctor(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="s">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>s</parameter>
+            <parameter>M:Furcadia.Text.Base95.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.#ctor(System.UInt32)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n</parameter>
+            <parameter>M:Furcadia.Text.Base95.#ctor(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="F:Furcadia.Text.Base95.BASE">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Text.Base95.BASE</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.Base95.CHAR_OFFSET">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Text.Base95.CHAR_OFFSET</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.Base95.CompareTo(System.UInt32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.CompareTo(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="other">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>other</parameter>
+            <parameter>M:Furcadia.Text.Base95.CompareTo(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.CompareTo(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ConvertFromBase95(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertFromBase95(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b95str">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b95str</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertFromBase95(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertFromBase95(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="num">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>num</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32,System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32,System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="num">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>num</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32,System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="nDigits">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>nDigits</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32,System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32,System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.Equals(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="obj">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>obj</parameter>
+            <parameter>M:Furcadia.Text.Base95.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.Equals(System.UInt32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.Equals(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="other">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>other</parameter>
+            <parameter>M:Furcadia.Text.Base95.Equals(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.Equals(System.UInt32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.FromString(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.FromString(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="s">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>s</parameter>
+            <parameter>M:Furcadia.Text.Base95.FromString(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.FromString(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.GetHashCode">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.GetHashCode</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.GetHashCode</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Addition(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Addition(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Addition(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Addition(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Addition(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Division(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Division(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Division(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Division(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Division(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Equality(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Equality(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Equality(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Equality(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Equality(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Explicit(Furcadia.Text.Base95)~System.UInt16">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Explicit(Furcadia.Text.Base95)~System.UInt16</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b95n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b95n</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Explicit(Furcadia.Text.Base95)~System.UInt16</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Explicit(Furcadia.Text.Base95)~System.UInt16</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_GreaterThan(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_GreaterThan(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_GreaterThan(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_GreaterThan(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_GreaterThan(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.Byte[]">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.Byte[]</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b95n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b95n</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.Byte[]</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.Byte[]</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.String">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.String</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b95n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b95n</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.String</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.String</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.UInt32">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.UInt32</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="b95n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b95n</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.UInt32</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.UInt32</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(System.String)~Furcadia.Text.Base95">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(System.String)~Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="s">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>s</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(System.String)~Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(System.String)~Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(System.UInt16)~Furcadia.Text.Base95">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(System.UInt16)~Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(System.UInt16)~Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(System.UInt16)~Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(System.UInt32)~Furcadia.Text.Base95">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(System.UInt32)~Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(System.UInt32)~Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Implicit(System.UInt32)~Furcadia.Text.Base95</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Inequality(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Inequality(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Inequality(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Inequality(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Inequality(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_LessThan(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_LessThan(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_LessThan(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_LessThan(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_LessThan(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Modulus(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Modulus(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Modulus(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Modulus(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Modulus(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Multiply(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Multiply(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Multiply(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Multiply(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Multiply(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Subtraction(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Subtraction(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="n1">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n1</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Subtraction(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="n2">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>n2</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Subtraction(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.op_Subtraction(Furcadia.Text.Base95,Furcadia.Text.Base95)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ToByteArray">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToByteArray</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToByteArray</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ToByteArray(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToByteArray(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="nDigits">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>nDigits</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToByteArray(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToByteArray(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ToString">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToString</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToString</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ToString(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToString(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="nDigits">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>nDigits</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToString(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Base95.ToString(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="F:Furcadia.Text.Base95.Value">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Text.Base95.Value</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Text.Character">
+      <summary>
+            Furcadia Character.ini
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.Character.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Text.Character</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.ColorString">
+      <summary>
+            Furcadia Color String
+            </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.Description">
+      <summary>
+            Description text
+            </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.LastLogin">
+      <summary>
+            Last time the character logged in (unix Timestamp)
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.Character.Load(System.String)">
+      <summary>
+            Loads a Character.Ini file
+            </summary>
+      <param name="iniFile">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>iniFile</parameter>
+            <parameter>M:Furcadia.Text.Character.Load(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+            Character Class
+            </returns>
+    </member>
+    <member name="P:Furcadia.Text.Character.Logins">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Text.Character.Logins</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.Name">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Text.Character.Name</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Text.FurcIni">
+      <summary>
+            Furcadia configuration class to backup/set Proxy/firewall settings and restore them after we
+            have connected to the game server.
+            <para>
+            Author Gerolkae
+            </para><para>
+            Courtesy to Dream Dancer for helping me with this.
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Text.FurcIni.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Text.FurcIni</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.FurcIni.GetUserSetting(System.String,System.String[])">
+      <summary>
+            Retrieves a field setting in the FurcSettings array
+            </summary>
+      <param name="SettingFile">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>SettingFile</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.GetUserSetting(System.String,System.String[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="WhichSetting">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>WhichSetting</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.GetUserSetting(System.String,System.String[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.GetUserSetting(System.String,System.String[])</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.FurcIni.LoadFurcadiaSettings(System.String,System.String)">
+      <summary>
+            Backs up the current Furcadia Settings
+            </summary>
+      <param name="path">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>path</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.LoadFurcadiaSettings(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="file">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>file</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.LoadFurcadiaSettings(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.LoadFurcadiaSettings(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])">
+      <summary>
+            Save the furcadia configuration to settings.ini
+            </summary>
+      <param name="path">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>path</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="file">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>file</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="SettingFile">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>SettingFile</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.FurcIni.SetUserSetting(System.String,System.String,System.String[])">
+      <summary>
+            sets feilds in the FurcSettings array
+            </summary>
+      <param name="WhichSetting">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>WhichSetting</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.SetUserSetting(System.String,System.String,System.String[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="WhichValue">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>WhichValue</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.SetUserSetting(System.String,System.String,System.String[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="SettingFile">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>SettingFile</parameter>
+            <parameter>M:Furcadia.Text.FurcIni.SetUserSetting(System.String,System.String,System.String[])</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="T:Furcadia.Text.IniParser">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Text.IniParser</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.#ctor(System.String)">
+      <summary>
+            Opens the INI file at the given path and enumerates the values in the IniParser.
+            </summary>
+      <param name="iniPath">
+            Full path to INI file.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.AddSetting(System.String,System.String)">
+      <summary>
+            Adds or replaces a setting to the table to be saved with a null value.
+            </summary>
+      <param name="sectionName">
+            Section to add under.
+            </param>
+      <param name="settingName">
+            Key name to add.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.AddSetting(System.String,System.String,System.String)">
+      <summary>
+            Adds or replaces a setting to the table to be saved.
+            </summary>
+      <param name="sectionName">
+            Section to add under.
+            </param>
+      <param name="settingName">
+            Key name to add.
+            </param>
+      <param name="settingValue">
+            Value of key.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.DeleteSetting(System.String,System.String)">
+      <summary>
+            Remove a setting.
+            </summary>
+      <param name="sectionName">
+            Section to add under.
+            </param>
+      <param name="settingName">
+            Key name to add.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.EnumSection(System.String)">
+      <summary>
+            Enumerates all lines for given section.
+            </summary>
+      <param name="sectionName">
+            Section to enum.
+            </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.IniParser.EnumSection(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.GetSetting(System.String,System.String)">
+      <summary>
+            Returns the value for the given section, key pair.
+            </summary>
+      <param name="sectionName">
+            Section name.
+            </param>
+      <param name="settingName">
+            Key name.
+            </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.IniParser.GetSetting(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.SaveSettings">
+      <summary>
+            Save settings back to ini file.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.SaveSettings(System.String)">
+      <summary>
+            Save settings to new file.
+            </summary>
+      <param name="newFilePath">
+            New file path.
+            </param>
+    </member>
+    <member name="T:Furcadia.Text.Settings">
+      <summary>
+            A simple way to load settings whether from ini or xml.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.Settings.InitializeFurcadiaSettings(System.String)">
+      <summary>
+            Lets back up our Proxy/Firewall settings and then set the new settings for the Furcadia Client
+            </summary>
+      <param name="path">
+            Furcadia Settings.ini path
+            </param>
+      <returns>
+            Backup Settings for restoring later
+            </returns>
+    </member>
+    <member name="M:Furcadia.Text.Settings.Load``1(System.String)">
+      <summary>
+            Loads a xml file and returns a new instance of T. T must be XML Deserializable!
+            </summary>
+      <param name="file">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>file</parameter>
+            <parameter>M:Furcadia.Text.Settings.Load``1(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Text.Settings.Load``1(System.String)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+      <returns>
+            Default of T (default(T)) on file not found. Else it returns a instance of T.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Text.Settings.Load(System.String)">
+      <summary>
+            Loads an ini file and returns a key/value pair of values. (Note: It reads Key=Value pairs
+            only.) (Add: Also the ini must be proper, one key/value per line. No section garbage.)
+            </summary>
+      <param name="file">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>file</parameter>
+            <parameter>M:Furcadia.Text.Settings.Load(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+            A new Hashtable, or a empty Hashtable on file not found.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Text.Settings.RestoreFurcadiaSettings(System.String[])">
+      <summary>
+            Restores the Furcadia Settings we backed up earlier.
+            </summary>
+      <param name="BackupSettings">
+            Backed up settings array
+            </param>
     </member>
   </members>
 </doc>

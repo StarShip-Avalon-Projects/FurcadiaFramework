@@ -1,4 +1,5 @@
 ﻿using Furcadia.Drawing;
+using Furcadia.Text;
 using System;
 using static Furcadia.Util;
 
@@ -9,385 +10,41 @@ namespace Furcadia.Net
     /// </summary>
     public class FURRE
     {
-        private string _Name;
-        private string _Color;
-        private string _Desc;
-        private string _Message;
-        private char _ColorType;
-        private FurrePosition Location;
-        private FurrePosition SourceLocation;
-        private int _ID;
-        private int _Gender;
-        private int _Species;
-        private int _Special;
-        private int _DSSpecies;
-        private int _Shape;
-        private int _Flag;
+        #region Private Fields
+
         private int _AFK;
-        private int _LastStat;
-        private int _Wings;
-        private bool _Visible;
-        private bool _WasVisible;
         private string _badge;
-        private string _tag;
+        private string _Color;
+        private char _ColorType;
+        private string _Desc;
+        private int _DSSpecies;
+        private int _Flag;
+        private uint _FloorObjectCurrent;
+        private uint _FloorObjectOld;
+        private int _Gender;
         private int _group;
+        private int _ID;
+        private int _LastStat;
         private int _level;
+        private string _Message;
+        private string _Name;
         private int _option;
         private int _option1;
-
-        private uint _PawObjectOld;
         private uint _PawObjectCurrent;
-        private uint _FloorObjectOld;
-        private uint _FloorObjectCurrent;
+        private uint _PawObjectOld;
+        private int _Shape;
+        private int _Special;
+        private int _Species;
+        private string _tag;
+        private bool _Visible;
+        private bool _WasVisible;
+        private int _Wings;
+        private FurrePosition Location;
+        private FurrePosition SourceLocation;
 
-        /// <summary>
-        /// Furcadia Name
-        /// </summary>
-        public string Name
-        {
-            get { return _Name; }
-            set { _Name = value; }
-        }
+        #endregion Private Fields
 
-        /// <summary>
-        /// Last Message Furre had
-        /// </summary>
-        public string Message
-        {
-            get { return _Message; }
-            set { _Message = value; }
-        }
-
-        /// <summary>
-        /// Furcadia Shortname format for Furre Name
-        /// </summary>
-        public string ShortName
-        {
-            get
-            {
-                return FurcadiaShortName(_Name);
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public char ColorType
-        {
-            get { return _ColorType; }
-            set { _ColorType = value; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Shape
-        {
-            get { return _Shape; }
-            set
-            {
-                _LastStat = 1;
-                _Shape = value;
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public Avatar.Frame FrameInfo
-        {
-            get
-            {
-                return Avatar.SpecNum(_Shape);
-            }
-        }
-
-        /// <summary>
-        /// Furcadia Color Code
-        /// </summary>
-        public string Color
-        {
-            //TODO: Move section to a Costume Sub Class
-            // Furcadia now supports Costumes through Online FurEd
-            get { return _Color; }
-            set
-            {
-                _Color = value;
-
-                // Color Tag expanded 2 bytes
-                if (_Color.Length == 14)
-                {
-                    _Species = Base220.ConvertFromBase220(_Color.Substring(12, 1));
-                    _Gender = Base220.ConvertFromBase220(_Color.Substring(11, 1));
-                    _Special = Base220.ConvertFromBase220(_Color.Substring(13, 1));
-
-                    _DSSpecies = SpeciesTable.SpecNum(_Species, _Special);
-                    _Wings = SpeciesTable.WingsNum(_Species, _Special);
-                    _LastStat = 0;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Furcadia Description
-        /// </summary>
-        public string Desc
-        {
-            get { return _Desc; }
-            set { _Desc = value; }
-        }
-
-        /// <summary>
-        /// Current position where the Furre is standing
-        /// </summary>
-        public FurrePosition Position
-        {
-            get
-            {
-                return Location;
-            }
-            set
-            {
-                Location = value;
-            }
-        }
-
-        /// <summary>
-        /// the X Position the Furre moved from
-        /// <para>
-        /// Obsolete. Use LasPosition as FurrePosition
-        /// </para>
-        /// </summary>
-        [Obsolete]
-        public int SourceX
-        {
-            get { return LastPosition.x; }
-            set { LastPosition.x = value; }
-        }
-
-        /// <summary>
-        /// the Y Position the Furre moved from
-        /// <para>
-        /// Obsolete. Use LasPosition as FurrePosition
-        /// </para>
-        /// </summary>
-        [Obsolete]
-        public int SourceY
-        {
-            get { return LastPosition.y; }
-            set { LastPosition.y = value; }
-        }
-
-        /// <summary>
-        /// the X Position the Furre is currently standing at
-        /// <para>
-        /// Obsolete. Use Position as FurrePosition
-        /// </para>
-        /// </summary>
-        [Obsolete]
-        public int X
-        {
-            get { return Position.x; }
-            set { Position.x = value; }
-        }
-
-        /// <summary>
-        /// the Y Position the Furre Standing At
-        /// <para>
-        /// Obsolete. Use Position as FurrePosition
-        /// </para>
-        /// </summary>
-        [Obsolete]
-        public int Y
-        {
-            get { return Position.y; }
-            set { Position.y = value; }
-        }
-
-        /// <summary>
-        /// The Position the Furre Moved from
-        /// </summary>
-        public FurrePosition LastPosition
-        {
-            get { return SourceLocation; }
-            set { SourceLocation = value; }
-        }
-
-        /// <summary>
-        /// Furre ID
-        /// </summary>
-        public int ID
-        {
-            get { return _ID; }
-            set { _ID = value; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Flag
-        {
-            get { return _Flag; }
-            set { _Flag = value; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public string Badge
-        {
-            get { return _badge; }
-            set
-            {
-                _badge = value;
-                _tag = Badges.GetTag(_badge);
-                _group = Badges.GetGroup(_badge);
-                _level = Badges.GetLevel(_badge);
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public string Tag
-        {
-            get { return _tag; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Group
-        {
-            get { return _group; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Level
-        {
-            get { return _level; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Option
-        {
-            get { return _option; }
-            set { _option = value; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Option1
-        {
-            get { return _option1; }
-            set { _option1 = value; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public uint PawObjectCurrent
-        {
-            get { return _PawObjectCurrent; }
-            set
-            {
-                _PawObjectOld = _PawObjectCurrent;
-                _PawObjectCurrent = value;
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public uint PawObjectOld
-        {
-            get { return _PawObjectOld; }
-            set { _PawObjectOld = value; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public uint FloorObjectCurrent
-        {
-            get { return _FloorObjectCurrent; }
-            set
-            {
-                _FloorObjectOld = _FloorObjectCurrent;
-                _FloorObjectCurrent = value;
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public uint FloorObjectOld
-        {
-            get { return _FloorObjectOld; }
-            set { _FloorObjectOld = value; }
-        }
-
-        /// <summary>
-        /// Away from keyboard time
-        /// </summary>
-        public int AFK
-        {
-            get { return _AFK; }
-            set { _AFK = value; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int LastStat
-        {
-            get { return _LastStat; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Gender
-        {
-            get { return _Gender; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Species
-        {
-            get { return _Species; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int DSSpecies
-        {
-            get { return _DSSpecies; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Wings
-        {
-            get { return _Wings; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public int Special
-        {
-            get { return _Special; }
-            set { _Special = value; }
-        }
-
-        /// <summary>
-        /// </summary>
-        public bool Visible
-        {
-            get { return _Visible; }
-            set
-            {
-                _WasVisible = _Visible;
-                _Visible = value;
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public bool WasVisible
-        {
-            get { return _WasVisible; }
-        }
+        #region Public Constructors
 
         /// <summary>
         /// </summary>
@@ -447,49 +104,362 @@ namespace Furcadia.Net
             _Wings = -1;
         }
 
+        #endregion Public Constructors
+
+        #region Public Properties
+
         /// <summary>
+        /// Away from keyboard time
         /// </summary>
-        /// <returns>
-        /// </returns>
-        public override string ToString()
+        public int AFK
         {
-            return string.Format("{0}", Name);
+            get { return _AFK; }
+            set { _AFK = value; }
         }
 
         /// <summary>
         /// </summary>
-        /// <param name="format">
-        /// </param>
-        /// <returns>
-        /// </returns>
-        public string ToString(Func<FURRE, string> format)
+        public string Badge
         {
-            if (format != null)
-                return format(this);
-            return this.ToString();
+            get { return _badge; }
+            set
+            {
+                _badge = value;
+                _tag = Badges.GetTag(_badge);
+                _group = Badges.GetGroup(_badge);
+                _level = Badges.GetLevel(_badge);
+            }
+        }
+
+        /// <summary>
+        /// Furcadia Color Code
+        /// </summary>
+        public string Color
+        {
+            //TODO: Move section to a Costume Sub Class
+            // Furcadia now supports Costumes through Online FurEd
+            get { return _Color; }
+            set
+            {
+                _Color = value;
+
+                // Color Tag expanded 2 bytes
+                if (_Color.Length == 14)
+                {
+                    _Species = Base220.ConvertFromBase220(_Color.Substring(12, 1));
+                    _Gender = Base220.ConvertFromBase220(_Color.Substring(11, 1));
+                    _Special = Base220.ConvertFromBase220(_Color.Substring(13, 1));
+
+                    _DSSpecies = SpeciesTable.SpecNum(_Species, _Special);
+                    _Wings = SpeciesTable.WingsNum(_Species, _Special);
+                    _LastStat = 0;
+                }
+            }
         }
 
         /// <summary>
         /// </summary>
-        /// <returns>
-        /// </returns>
-        public int ToFurcadiaID()
+        public char ColorType
         {
-            return _ID;
+            get { return _ColorType; }
+            set { _ColorType = value; }
+        }
+
+        /// <summary>
+        /// Furcadia Description
+        /// </summary>
+        public string Desc
+        {
+            get { return _Desc; }
+            set { _Desc = value; }
         }
 
         /// <summary>
         /// </summary>
-        /// <param name="format">
-        /// </param>
-        /// <returns>
-        /// </returns>
-        public int ToFurcadiaID(Func<FURRE, int> format)
+        public int DSSpecies
         {
-            if (format != null)
-                return format(this);
-            return ToFurcadiaID();
+            get { return _DSSpecies; }
         }
+
+        /// <summary>
+        /// </summary>
+        public int Flag
+        {
+            get { return _Flag; }
+            set { _Flag = value; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public uint FloorObjectCurrent
+        {
+            get { return _FloorObjectCurrent; }
+            set
+            {
+                _FloorObjectOld = _FloorObjectCurrent;
+                _FloorObjectCurrent = value;
+            }
+        }
+
+        /// <summary>
+        /// </summary>
+        public uint FloorObjectOld
+        {
+            get { return _FloorObjectOld; }
+            set { _FloorObjectOld = value; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public Avatar.Frame FrameInfo
+        {
+            get
+            {
+                return Avatar.SpecNum(_Shape);
+            }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int Gender
+        {
+            get { return _Gender; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int Group
+        {
+            get { return _group; }
+        }
+
+        /// <summary>
+        /// Furre ID
+        /// </summary>
+        public int ID
+        {
+            get { return _ID; }
+            set { _ID = value; }
+        }
+
+        /// <summary>
+        /// The Position the Furre Moved from
+        /// </summary>
+        public FurrePosition LastPosition
+        {
+            get { return SourceLocation; }
+            set { SourceLocation = value; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int LastStat
+        {
+            get { return _LastStat; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int Level
+        {
+            get { return _level; }
+        }
+
+        /// <summary>
+        /// Last Message Furre had
+        /// </summary>
+        public string Message
+        {
+            get { return _Message; }
+            set { _Message = value; }
+        }
+
+        /// <summary>
+        /// Furcadia Name
+        /// </summary>
+        public string Name
+        {
+            get { return _Name; }
+            set { _Name = value; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int Option
+        {
+            get { return _option; }
+            set { _option = value; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int Option1
+        {
+            get { return _option1; }
+            set { _option1 = value; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public uint PawObjectCurrent
+        {
+            get { return _PawObjectCurrent; }
+            set
+            {
+                _PawObjectOld = _PawObjectCurrent;
+                _PawObjectCurrent = value;
+            }
+        }
+
+        /// <summary>
+        /// </summary>
+        public uint PawObjectOld
+        {
+            get { return _PawObjectOld; }
+            set { _PawObjectOld = value; }
+        }
+
+        /// <summary>
+        /// Current position where the Furre is standing
+        /// </summary>
+        public FurrePosition Position
+        {
+            get
+            {
+                return Location;
+            }
+            set
+            {
+                Location = value;
+            }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int Shape
+        {
+            get { return _Shape; }
+            set
+            {
+                _LastStat = 1;
+                _Shape = value;
+            }
+        }
+
+        /// <summary>
+        /// Furcadia Shortname format for Furre Name
+        /// </summary>
+        public string ShortName
+        {
+            get
+            {
+                return FurcadiaShortName(_Name);
+            }
+        }
+
+        /// <summary>
+        /// the X Position the Furre moved from
+        /// <para>
+        /// Obsolete. Use LasPosition as FurrePosition
+        /// </para>
+        /// </summary>
+        [Obsolete]
+        public int SourceX
+        {
+            get { return LastPosition.x; }
+            set { LastPosition.x = value; }
+        }
+
+        /// <summary>
+        /// the Y Position the Furre moved from
+        /// <para>
+        /// Obsolete. Use LasPosition as FurrePosition
+        /// </para>
+        /// </summary>
+        [Obsolete]
+        public int SourceY
+        {
+            get { return LastPosition.y; }
+            set { LastPosition.y = value; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int Special
+        {
+            get { return _Special; }
+            set { _Special = value; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int Species
+        {
+            get { return _Species; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public string Tag
+        {
+            get { return _tag; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public bool Visible
+        {
+            get { return _Visible; }
+            set
+            {
+                _WasVisible = _Visible;
+                _Visible = value;
+            }
+        }
+
+        /// <summary>
+        /// </summary>
+        public bool WasVisible
+        {
+            get { return _WasVisible; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int Wings
+        {
+            get { return _Wings; }
+        }
+
+        /// <summary>
+        /// the X Position the Furre is currently standing at
+        /// <para>
+        /// Obsolete. Use Position as FurrePosition
+        /// </para>
+        /// </summary>
+        [Obsolete]
+        public int X
+        {
+            get { return Position.x; }
+            set { Position.x = value; }
+        }
+
+        /// <summary>
+        /// the Y Position the Furre Standing At
+        /// <para>
+        /// Obsolete. Use Position as FurrePosition
+        /// </para>
+        /// </summary>
+        [Obsolete]
+        public int Y
+        {
+            get { return Position.y; }
+            set { Position.y = value; }
+        }
+
+        #endregion Public Properties
+
+        #region Public Methods
 
         /// <summary>
         /// </summary>
@@ -519,5 +489,51 @@ namespace Furcadia.Net
         {
             return base.GetHashCode();
         }
+
+        /// <summary>
+        /// </summary>
+        /// <returns>
+        /// </returns>
+        public int ToFurcadiaID()
+        {
+            return _ID;
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <param name="format">
+        /// </param>
+        /// <returns>
+        /// </returns>
+        public int ToFurcadiaID(Func<FURRE, int> format)
+        {
+            if (format != null)
+                return format(this);
+            return ToFurcadiaID();
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <returns>
+        /// </returns>
+        public override string ToString()
+        {
+            return string.Format("{0}", Name);
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <param name="format">
+        /// </param>
+        /// <returns>
+        /// </returns>
+        public string ToString(Func<FURRE, string> format)
+        {
+            if (format != null)
+                return format(this);
+            return this.ToString();
+        }
+
+        #endregion Public Methods
     }
 }

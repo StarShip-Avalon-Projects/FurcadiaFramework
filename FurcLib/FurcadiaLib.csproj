@@ -122,11 +122,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyFileVersion.cs" />
+    <Compile Include="AssemblyFileVersion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssemblyFileVersion.tt</DependentUpon>
+    </Compile>
     <Compile Include="Avatar.cs" />
     <Compile Include="Badges.cs" />
-    <Compile Include="Base220.cs" />
-    <Compile Include="Base95.cs" />
+    <Compile Include="LegacyAttribute.cs" />
+    <Compile Include="Security\SSL.cs" />
+    <Compile Include="Text\Base220.cs" />
+    <Compile Include="Text\Base95.cs" />
     <Compile Include="Drawing\FurrePosition.cs" />
     <Compile Include="Drawing\ViewArea.cs" />
     <Compile Include="Net\Utils\NetServerArgs.cs" />
@@ -158,13 +164,13 @@
     <Compile Include="SpeciesTable.cs" />
     <Compile Include="Drawing\Graphics.cs" />
     <Compile Include="Drawing\Helper.cs" />
-    <Compile Include="IO\FurcIni.cs" />
-    <Compile Include="IO\IniParser.cs" />
+    <Compile Include="Text\FurcIni.cs" />
+    <Compile Include="Text\IniParser.cs" />
     <Compile Include="IO\Paths.cs" />
     <Compile Include="IO\RegistryExplorer.cs" />
     <Compile Include="Net\Dream\BotFurre.cs" />
     <Compile Include="Net\INetMessage.cs" />
-    <Compile Include="Net\Movement.cs" />
+    <Compile Include="Net\Utils\Movement.cs" />
     <Compile Include="Net\Proxy\BaseProxy.cs" />
     <Compile Include="Net\NetMessage.cs" />
     <Compile Include="Net\PounceConnection.cs" />
@@ -173,10 +179,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Settings.cs" />
+    <Compile Include="Text\Settings.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Character.cs" />
+    <Compile Include="Text\Character.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -203,7 +209,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="AssemblyFileVersion.tt" />
+    <DesignData Include="AssemblyFileVersion.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AssemblyFileVersion.cs</LastGenOutput>
+    </DesignData>
     <Content Include="Changes.txt" />
     <Content Include="ToDo.txt" />
   </ItemGroup>
@@ -229,7 +238,7 @@
     <Folder Include="Net\Account\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

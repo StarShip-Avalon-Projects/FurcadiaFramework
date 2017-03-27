@@ -9,6 +9,7 @@
 
 using Furcadia.IO;
 using Furcadia.Net.Utils;
+using Furcadia.Text;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
