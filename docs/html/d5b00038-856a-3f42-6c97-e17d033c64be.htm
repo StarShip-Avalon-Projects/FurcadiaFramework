@@ -12,7 +12,7 @@
     <meta name="System.Keywords" content="ParseServer.ParseServerData method" />
     <meta name="Microsoft.Help.F1" content="Furcadia.Net.Utils.ParseServer.ParseServerData" />
     <meta name="Microsoft.Help.Id" content="M:Furcadia.Net.Utils.ParseServer.ParseServerData(System.String,System.Boolean@)" />
-    <meta name="Description" content="Parse the raw data coming from the Game Server" />
+    <meta name="Description" content="Parse the raw data coming from the Game Server if the Data is a instruction, send the data to" />
     <meta name="Microsoft.Help.ContentType" content="Reference" />
     <meta name="BrandingAware" content="true" />
     
@@ -42,7 +42,9 @@
         </table>
         <span class="introStyle">This stuff is still in the pnanning  stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">
             Parse the raw data coming from the Game Server
-            </div><p> </p>
+            <p>
+            if the Data is a <a href="77e0ba66-9648-935f-2efa-6b9d5418081c.htm">DisplayText</a> instruction, send the
+            data to <a href="c11e1379-d4f4-e2f2-401a-221501b35ba3.htm">ParseServerChannel(String, Boolean<span id="LST517A30CB_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST517A30CB_1?cpp=%");</script>)</a></p></div><p> </p>
     <strong>Namespace:</strong> 
    <a href="0171818a-b020-3297-6608-d3aba03b3b7b.htm">Furcadia.Net.Utils</a><br />
     <strong>Assembly:</strong>
@@ -67,11 +69,11 @@ instance.<span class="identifier">ParseServerData</span>(<span class="parameter"
         <span class="parameter">handled</span> : <span class="identifier">bool</span> <span class="keyword">byref</span> <span class="keyword">-&gt;</span> <span class="keyword">unit</span> 
 <span class="keyword">override</span> <span class="identifier">ParseServerData</span> : 
         <span class="parameter">data</span> : <span class="identifier">string</span> * 
-        <span class="parameter">handled</span> : <span class="identifier">bool</span> <span class="keyword">byref</span> <span class="keyword">-&gt;</span> <span class="keyword">unit</span> </pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><h4 class="subHeading">Parameters</h4><dl><dt><span class="parameter">data</span></dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="LST517A30CB_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST517A30CB_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>String</a><br />
+        <span class="parameter">handled</span> : <span class="identifier">bool</span> <span class="keyword">byref</span> <span class="keyword">-&gt;</span> <span class="keyword">unit</span> </pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><h4 class="subHeading">Parameters</h4><dl><dt><span class="parameter">data</span></dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="LST517A30CB_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST517A30CB_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>String</a><br />
             Raw Server Data aka Server Instruction
             <p>
             ref=http://ftr.icerealm.org/ref-instructions/
-            </p></dd><dt><span class="parameter">handled</span></dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">System<span id="LST517A30CB_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST517A30CB_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Boolean</a><span id="LST517A30CB_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST517A30CB_3?cpp=%");</script><br /><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[Missing &lt;param name="handled"/&gt; documentation for "M:Furcadia.Net.Utils.ParseServer.ParseServerData(System.String,System.Boolean@)"]</p></dd></dl></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="62904148-6825-61da-592c-f9bab197a056.htm">ParseServer Class</a></div><div class="seeAlsoStyle"><a href="0171818a-b020-3297-6608-d3aba03b3b7b.htm">Furcadia.Net.Utils Namespace</a></div></div></div>
+            </p></dd><dt><span class="parameter">handled</span></dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">System<span id="LST517A30CB_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST517A30CB_3?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Boolean</a><span id="LST517A30CB_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST517A30CB_4?cpp=%");</script><br /></dd></dl></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID2RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="62904148-6825-61da-592c-f9bab197a056.htm">ParseServer Class</a></div><div class="seeAlsoStyle"><a href="0171818a-b020-3297-6608-d3aba03b3b7b.htm">Furcadia.Net.Utils Namespace</a></div></div></div>
     </div>
     <div id="pageFooter" class="pageFooter">
       <div class="feedbackLink">Send comments on this topic to
