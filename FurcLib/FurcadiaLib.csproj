@@ -169,6 +169,7 @@
     <Compile Include="SpeciesTable.cs" />
     <Compile Include="Drawing\Graphics.cs" />
     <Compile Include="Drawing\Helper.cs" />
+    <Compile Include="Text\ColorString.cs" />
     <Compile Include="Text\FurcIni.cs" />
     <Compile Include="Text\IniParser.cs" />
     <Compile Include="IO\Paths.cs" />

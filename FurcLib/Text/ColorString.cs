@@ -30,17 +30,19 @@
         {
             if (Colors.StartsWith("w"))
                 colorstring = Colors;
-            else if (Colors.StartsWith(""))
+            else if (Colors.StartsWith("t"))
             {
                 colorstring = ConvertString(Colors);
             }
+            else
+            {
+                colorstring = "default";
+            }
 
-            _Gender = Base220.ConvertFromBase220(colorstring.Substring(11, 1));
             _Special = Base220.ConvertFromBase220(colorstring.Substring(13, 1));
 
             _DSSpecies = SpeciesTable.SpecNum(colorstring, _Special);
             _Wings = SpeciesTable.WingsNum(colorstring, _Special);
-            _LastStat = 0;
         }
 
         #endregion Public Constructors
@@ -82,7 +84,13 @@
         /// <summary>
         /// Avatar Gender
         /// </summary>
-        public int Gender { get; set; }
+        public int Gender
+        {
+            get
+            {
+                return Base220.ConvertFromBase220(colorstring[11].ToString());
+            }
+        }
 
         /// <summary>
         /// Avatar Species

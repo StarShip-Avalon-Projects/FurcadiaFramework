@@ -134,6 +134,7 @@ namespace Furcadia.Net
         /// <summary>
         /// Furcadia Color Code
         /// </summary>
+        [Obsolete("Outdated as Furcadia v31 strings are now prefixed with \"w\" and contain two extra bytes for the new fox v5+` layers")]
         public string Color
         {
             //TODO: Move section to a Costume Sub Class
@@ -191,6 +192,7 @@ namespace Furcadia.Net
 
         /// <summary>
         /// </summary>
+        [CLSCompliant(false)]
         public uint FloorObjectCurrent
         {
             get { return _FloorObjectCurrent; }
@@ -203,6 +205,7 @@ namespace Furcadia.Net
 
         /// <summary>
         /// </summary>
+        [CLSCompliant(false)]
         public uint FloorObjectOld
         {
             get { return _FloorObjectOld; }
@@ -301,6 +304,7 @@ namespace Furcadia.Net
 
         /// <summary>
         /// </summary>
+        [CLSCompliant(false)]
         public uint PawObjectCurrent
         {
             get { return _PawObjectCurrent; }
@@ -313,6 +317,7 @@ namespace Furcadia.Net
 
         /// <summary>
         /// </summary>
+        [CLSCompliant(false)]
         public uint PawObjectOld
         {
             get { return _PawObjectOld; }
@@ -363,7 +368,7 @@ namespace Furcadia.Net
         /// Obsolete. Use LasPosition as FurrePosition
         /// </para>
         /// </summary>
-        [Obsolete]
+        [Obsolete("use LasPosition as FurrePosition", false)]
         public int SourceX
         {
             get { return LastPosition.x; }
@@ -376,7 +381,7 @@ namespace Furcadia.Net
         /// Obsolete. Use LasPosition as FurrePosition
         /// </para>
         /// </summary>
-        [Obsolete]
+        [Obsolete("use LasPosition as FurrePosition", false)]
         public int SourceY
         {
             get { return LastPosition.y; }
@@ -433,11 +438,8 @@ namespace Furcadia.Net
 
         /// <summary>
         /// the X Position the Furre is currently standing at
-        /// <para>
-        /// Obsolete. Use Position as FurrePosition
-        /// </para>
         /// </summary>
-        [Obsolete]
+        [Obsolete("use Position as FurrePosition", false)]
         public int X
         {
             get { return Position.x; }
@@ -446,11 +448,8 @@ namespace Furcadia.Net
 
         /// <summary>
         /// the Y Position the Furre Standing At
-        /// <para>
-        /// Obsolete. Use Position as FurrePosition
-        /// </para>
         /// </summary>
-        [Obsolete]
+        [Obsolete("use Position as FurrePosition", false)]
         public int Y
         {
             get { return Position.y; }

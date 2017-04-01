@@ -13,6 +13,11 @@
         public enum Flags
         {
             /// <summary>
+            /// Character has no Flags set
+            /// </summary>
+            CHAR_FLAG_NONE,
+
+            /// <summary>
             /// Character has a Web Profile page.
             /// <para>
             /// As of Furcadia V31 This is not yet used
@@ -20,6 +25,8 @@
             /// </summary>
             CHAR_FLAG_HAS_PROFILE = 1,
 
+            /// <summary>
+            /// </summary>
             CHAR_FLAG_SET_VISIBLE = 2,
 
             /// <summary>

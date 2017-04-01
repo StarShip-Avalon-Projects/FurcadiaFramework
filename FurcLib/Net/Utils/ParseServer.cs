@@ -1,7 +1,13 @@
 ﻿namespace Furcadia.Net.Utils
 {
     /// <summary>
-    /// Server to Client Instructions
+    /// Server to Client Instruction set. (Furcadia v31c)
+    /// <para>
+    /// This is the set that FF3PP understands and uses.
+    /// </para>
+    /// <para>
+    /// these can change with each Furcadia update.
+    /// </para>
     /// </summary>
     public enum ServerInstructionType
     {
@@ -186,13 +192,24 @@
         #region Public Constructors
 
         /// <summary>
+        /// Default Constructor with <see cref="ServerInstructionType.Unknown"/>
+        /// </summary>
+        /// <param name="Raw">
+        /// Raw Server Instruction
+        /// </param>
+        public ServerInstruction(string Raw)
+        {
+            new ServerInstruction(ServerInstructionType.Unknown, Raw);
+        }
+
+        /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="sType">
-        /// Instruction Type.
+        /// Instruction Type. <see cref="ServerInstructionType"/>
         /// </param>
         /// <param name="Raw">
-        /// Raw Instruction
+        /// Raw Server Instruction
         /// </param>
         public ServerInstruction(ServerInstructionType sType, string Raw)
         {
