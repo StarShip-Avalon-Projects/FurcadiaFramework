@@ -141,8 +141,6 @@ namespace Furcadia.Net
         /// </summary>
         private static int BUFFER_CAP = 2048;
 
-        private static int ENCODE_PAGE = 1252;
-
         private static System.Timers.Timer NewsTimer;
 
         private IPEndPoint _endpoint;
@@ -199,7 +197,7 @@ namespace Furcadia.Net
             int port = Convert.ToInt32(FurcIni.GetUserSetting("PreferredServerPort", sett));
             try
             {
-                _endpoint = new IPEndPoint(Dns.GetHostEntry(Util.Host).AddressList[0], port);
+                _endpoint = new IPEndPoint(Dns.GetHostEntry(Utilities.GameServerHost).AddressList[0], port);
             }
             catch { }
         }
@@ -215,7 +213,7 @@ namespace Furcadia.Net
             FurcPath = new Paths();
             try
             {
-                _endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
+                _endpoint = new IPEndPoint(Dns.GetHostEntry(Utilities.GameServerHost).AddressList[0], port);
             }
             catch { }
         }
@@ -235,7 +233,7 @@ namespace Furcadia.Net
             _lport = lport;
             try
             {
-                _endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
+                _endpoint = new IPEndPoint(Dns.GetHostEntry(Utilities.GameServerHost).AddressList[0], port);
             }
             catch { }
         }
@@ -411,12 +409,13 @@ namespace Furcadia.Net
         }
 
         /// <summary>
+        /// Set the Encoder to win 1252 encoding
         /// </summary>
         public static int EncoderPage
         {
             get
             {
-                return ENCODE_PAGE;
+                return Utilities.GetEncoding;// ENCODE_PAGE;
             }
         }
 
@@ -724,7 +723,7 @@ namespace Furcadia.Net
                 }
                 //listen.Stop();
                 // Connects to the server
-                server = new TcpClient(Util.Host, _endpoint.Port);
+                server = new TcpClient(Utilities.GameServerHost, _endpoint.Port);
                 if (!server.Connected) throw new Exception("There was a problem connecting to the server.");
 
                 client.GetStream().BeginRead(clientBuffer, 0, clientBuffer.Length, new AsyncCallback(GetClientData), client);

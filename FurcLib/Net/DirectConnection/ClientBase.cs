@@ -1,28 +1,21 @@
 using Furcadia.IO;
+using Furcadia.Net.Utils;
 using Furcadia.Text;
 using System;
 using System.Collections.Generic;
 
-//using System.ComponentModel;
 using System.Net;
 using System.Net.Sockets;
 
-/// using System.Timers.Timer;
-
-namespace Furcadia.Net
+namespace Furcadia.Net.DirectConnection
 {
     /// <summary>
     /// NetConnection
-    /// <para>Derived from NetProxy for Stand a lone connections</para>
-    ///
-    ///<para>Log Header</para>
-    ///<para>Format: (date,Version) AuthorName, Changes.</para>
-    ///<para> (?,2007) Kylix, Initial Coder and SimpleProxy project manager</para>
-    ///<para> (Oct 27,2009) Squizzle, Added NetMessage, delegates, and NetProxy wrapper class.</para>
-    ///<para>(July 26, 2011) Gerolkae, added setting.ini switch for proxy.ini</para>
-    ///<para> (Mar 12,2014,0.2.12) Gerolkae, Adapted Paths to work with a Supplied path</para>
+    /// <para>
+    /// Derived from ProxyBase for Stand alone connections
+    /// </para>
     /// </summary>
-    public class NetConnection
+    public class ClientBase
     {
         #region Event Handling
 
@@ -76,25 +69,43 @@ namespace Furcadia.Net
         /// </summary>
         private static int BUFFER_CAP = 1024;
 
-        private static int ENCODE_PAGE = 1252;
         private IPEndPoint _endpoint;
+
         private string _ServerLeftOvers;
+
         private bool CConnected = false;
+
         private TcpClient server;
+
         private byte[] serverBuffer = new byte[BUFFER_CAP];
+
         private string serverBuild;
+
+        /// <summary>
+        /// Game Server IP/Port
+        /// </summary>
+        public IPEndPoint EndPoint
+        {
+            get { return _endpoint; }
+            set { _endpoint = value; }
+        }
 
         #endregion Private Declarations
 
         #region Constructors
 
         /// <summary>
+        /// Furcadia Path Collection
         /// </summary>
         public Paths FurcPath;
 
         /// <summary>
+        /// Default Constructor
+        /// <para>
+        /// Load furcadia defaults from %appData%\settings.ini
+        /// </para>
         /// </summary>
-        public NetConnection()
+        public ClientBase()
         {
             FurcPath = new Paths();
             string SetPath = FurcPath.GetLocalSettingsPath();
@@ -103,7 +114,7 @@ namespace Furcadia.Net
             int port = Convert.ToInt32(FurcIni.GetUserSetting("PreferredServerPort", sett));
             try
             {
-                _endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
+                _endpoint = new IPEndPoint(Dns.GetHostEntry(Utilities.GameServerHost).AddressList[0], port);
             }
             catch { }
         }
@@ -112,12 +123,12 @@ namespace Furcadia.Net
         /// </summary>
         /// <param name="port">
         /// </param>
-        public NetConnection(int port)
+        public ClientBase(int port)
         {
             FurcPath = new Paths();
             try
             {
-                _endpoint = new IPEndPoint(Dns.GetHostEntry(Furcadia.Util.Host).AddressList[0], port);
+                _endpoint = new IPEndPoint(Dns.GetHostEntry(Utilities.GameServerHost).AddressList[0], port);
             }
             catch { }
         }
@@ -128,7 +139,7 @@ namespace Furcadia.Net
         /// </param>
         /// <param name="port">
         /// </param>
-        public NetConnection(string host, int port)
+        public ClientBase(string host, int port)
         {
             FurcPath = new Paths();
             try
@@ -144,7 +155,7 @@ namespace Furcadia.Net
         /// </param>
         /// <param name="port">
         /// </param>
-        public NetConnection(IPAddress ip, int port)
+        public ClientBase(IPAddress ip, int port)
         {
             FurcPath = new Paths();
             try
@@ -187,12 +198,13 @@ namespace Furcadia.Net
         }
 
         /// <summary>
+        /// Set the Encoder to win 1252 encoding
         /// </summary>
         public static int EncoderPage
         {
             get
             {
-                return ENCODE_PAGE;
+                return Utilities.GetEncoding;// ENCODE_PAGE;
             }
         }
 
@@ -203,40 +215,19 @@ namespace Furcadia.Net
         /// <summary>
         /// Connects to the Furcadia Server and starts the mini proxy.
         /// </summary>
-        public void Connect()
+        public virtual void Connect()
         {
             //Start the async connect operation
             server = new TcpClient();
             server.BeginConnect(_endpoint.Address, _endpoint.Port, new AsyncCallback(AsyncListener), server);
         }
 
-        //Implement IDisposable.
+        /// <summary>
+        /// </summary>
         public void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);
-        }
-
-        /// <summary>
-        /// Terminates the connection.
-        /// </summary>
-        public void Kill()
-        {
-            try
-            {
-                if (server != null && server.Connected == true)
-                {
-                    NetworkStream serverStream = server.GetStream();
-                    if (serverStream != null)
-                    {
-                        serverStream.Flush();
-                        serverStream.Dispose();
-                        serverStream.Close();
-                    }
-                    server.Close();
-                }
-            }
-            catch (Exception e) { Error?.Invoke(e, this, "Kill()"); }
         }
 
         /// <summary>
@@ -253,11 +244,14 @@ namespace Furcadia.Net
         /// Sends Data to the Game server
         /// </summary>
         /// <param name="message">
+        /// string to send to game server
         /// </param>
-        public void SendServer(string message)
+        public virtual void SendServer(string message)
         {
             try
             {
+                if (!message.EndsWith("\n"))
+                    message += "\n";
                 if (server.GetStream().CanWrite)
                     server.GetStream().Write(System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message), 0, System.Text.Encoding.GetEncoding(EncoderPage).GetBytes(message).Length);
             }
@@ -276,6 +270,18 @@ namespace Furcadia.Net
         {
             if (disposing)
             {
+                if (server != null && server.Connected == true)
+                {
+                    NetworkStream serverStream = server.GetStream();
+                    if (serverStream != null)
+                    {
+                        serverStream.Flush();
+                        serverStream.Dispose();
+                        serverStream.Close();
+                    }
+                    server.Close();
+                    server.Dispose();
+                }
                 // Free other state (managed objects).
             }
             // Free your own state (unmanaged objects). Set large fields to null.
@@ -292,7 +298,7 @@ namespace Furcadia.Net
             try
             {
                 // Connects to the server
-                server = new TcpClient(Util.Host, _endpoint.Port);
+                server = new TcpClient(Utilities.GameServerHost, _endpoint.Port);
                 if (!server.Connected) throw new Exception("There was a problem connecting to the server.");
 
                 server.GetStream().BeginRead(serverBuffer, 0, serverBuffer.Length, new AsyncCallback(GetServerData), server);

@@ -104,8 +104,14 @@
 
         #region Public Events
 
+        /// <summary>
+        /// Text Channels have been parsed <seealso cref="ServerInstructionType.DisplayText"/>
+        /// </summary>
         public event ParsedChannelEventHandler ChannelParsed;
 
+        /// <summary>
+        /// Generic Server Instruction Parsed event <seealso cref="ServerInstructionType"/>
+        /// </summary>
         public event ParsedDataEventHandler DataParsed;
 
         #endregion Public Events
@@ -116,8 +122,10 @@
         /// Parse the text channels coming from the server
         /// </summary>
         /// <param name="data">
+        /// Raw server data for channels
         /// </param>
         /// <param name="handled">
+        /// Is the current channel Handled properly?
         /// </param>
         public virtual void ParseServerChannel(string data, out bool handled)
         {
@@ -133,6 +141,10 @@
 
         /// <summary>
         /// Parse the raw data coming from the Game Server
+        /// <para>
+        /// if the Data is a <see cref="ServerInstructionType.DisplayText"/> instruction, send the
+        /// data to <see cref="ParseServerChannel"/>
+        /// </para>
         /// </summary>
         /// <param name="data">
         /// Raw Server Data aka Server Instruction

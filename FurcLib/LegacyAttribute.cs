@@ -7,6 +7,8 @@ namespace Furcadia
     {
         #region Private Fields
 
+        private const string FurcVersion = "29";
+
         /// <summary>
         /// Furcadia Release version.
         /// </summary>
@@ -23,10 +25,13 @@ namespace Furcadia
 
         public LegacyAttribute()
         {
+            this.furcadiaversion = FurcVersion;
+            this.Reason = "No reason given";
         }
 
         public LegacyAttribute(string reason)
         {
+            this.furcadiaversion = FurcVersion;
             this.Reason = reason;
         }
 
@@ -34,6 +39,16 @@ namespace Furcadia
         {
             this.Reason = reason;
             this.furcadiaversion = Version;
+        }
+
+        public override string ToString()
+        {
+            string value = string.Format("Furcadia Version : {0}", furcadiaversion);
+            if (!string.IsNullOrEmpty(furcadiaversion))
+            {
+                value += string.Format("\n\rReason: {0}", Reason);
+            }
+            return value;
         }
 
         #endregion Public Constructors

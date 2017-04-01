@@ -130,7 +130,13 @@
     <Compile Include="Avatar.cs" />
     <Compile Include="Badges.cs" />
     <Compile Include="LegacyAttribute.cs" />
+    <Compile Include="Net\Account\AccountInfo.cs" />
+    <Compile Include="Net\Account\CharacterInfo.cs" />
+    <Compile Include="Net\DirectConnection\NetConnection.cs" />
+    <Compile Include="Net\Pounce\PounceClient.cs" />
+    <Compile Include="Net\Pounce\PounceIni.cs" />
     <Compile Include="Security\SSL.cs" />
+    <Compile Include="Security\SslCert.cs" />
     <Compile Include="Text\Base220.cs" />
     <Compile Include="Text\Base95.cs" />
     <Compile Include="Drawing\FurrePosition.cs" />
@@ -149,10 +155,9 @@
     <Compile Include="Net\Dream\DREAM.cs" />
     <Compile Include="Net\Dream\FURRE.cs" />
     <Compile Include="Net\Dream\FURREList.cs" />
-    <Compile Include="Net\NetClient.cs" />
-    <Compile Include="Net\NetConnection.cs" />
+    <Compile Include="Net\DirectConnection\NetClient.cs" />
+    <Compile Include="Net\DirectConnection\ClientBase.cs" />
     <Compile Include="Net\Proxy\NetProxyException.cs" />
-    <Compile Include="Net\NetServer.cs" />
     <Compile Include="Net\Proxy\NetProxy.cs" />
     <Compile Include="Net\Proxy\ProxySession.cs" />
     <Compile Include="Net\Utils\Utilities.cs" />
@@ -173,7 +178,7 @@
     <Compile Include="Net\Utils\Movement.cs" />
     <Compile Include="Net\Proxy\BaseProxy.cs" />
     <Compile Include="Net\NetMessage.cs" />
-    <Compile Include="Net\PounceConnection.cs" />
+    <Compile Include="Net\Pounce\PounceConnection.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -234,9 +239,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Net\Account\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

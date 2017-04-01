@@ -1,8 +1,11 @@
+using System;
+
 namespace Furcadia.Text
 {
     /// <summary>
     /// Furcadia Character.ini
     /// </summary>
+    [Obsolete("Furcadia has switched to Account Login", false)]
     [Legacy("Character.ini files are being replaced with the Furcadia Account System", "v30")]
     public class Character
     {
@@ -25,7 +28,7 @@ namespace Furcadia.Text
         { get; set; }
 
         /// <summary>
-        /// Last time the character logged in (unix Timestamp)
+        /// Last time the character logged in (UNIX Time stamp?)
         /// </summary>
         public int LastLogin
         { get { return lastlogin; } set { lastlogin = value; } }
@@ -40,6 +43,12 @@ namespace Furcadia.Text
         public string Name
         { get; set; }
 
+        /// <summary>
+        /// Character Password
+        /// </summary>
+        public string Password
+        { get; set; }
+
         #endregion Public Fields
 
         #region Public Methods
@@ -52,7 +61,7 @@ namespace Furcadia.Text
         /// <returns>
         /// Character Class
         /// </returns>
-        public static Character Load(string iniFile)
+        public Character Load(string iniFile)
         {
             Character newToon = new Character();
             try
@@ -61,6 +70,7 @@ namespace Furcadia.Text
                 newToon.Name = (string)iniData["Name"];
                 newToon.Description = (string)iniData["Desc"];
                 newToon.ColorString = (string)iniData["Color"];
+                newToon.Password = (string)iniData["Password"];
                 int.TryParse((string)iniData["Logins"], out newToon.logins);
                 int.TryParse((string)iniData["LastLogin"], out newToon.lastlogin);
             }
