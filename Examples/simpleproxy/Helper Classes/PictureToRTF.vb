@@ -7,120 +7,117 @@ Imports SimpleProxy2.Controls
 Public Class PictureToRTF
     'Attribute VB_Name = "modRTFpic"
 
+#Region "Public Fields"
+
     Public Const vbSrcCopy = &HCC0020
 
+#End Region
+
     Private Declare Function CreateDC Lib "gdi32" Alias "CreateDCA" _
-       (ByVal lpDriverName As String, ByVal lpDeviceName As String, _
+       (ByVal lpDriverName As String, ByVal lpDeviceName As String,
        ByVal lpOutput As Long, ByVal lpInitData As Long) As Long
 
-
-    Private Declare Function BitBlt Lib "gdi32" ( _
-        ByVal hDestDC As Long, _
-        ByVal x As Long, _
-        ByVal y As Long, _
-        ByVal nWidth As Long, _
-        ByVal nHeight As Long, _
-        ByVal hSrcDC As Long, _
-        ByVal xSrc As Long, _
-        ByVal ySrc As Long, _
-        ByVal dwRop As Long _
+    Private Declare Function BitBlt Lib "gdi32" (
+        ByVal hDestDC As Long,
+        ByVal x As Long,
+        ByVal y As Long,
+        ByVal nWidth As Long,
+        ByVal nHeight As Long,
+        ByVal hSrcDC As Long,
+        ByVal xSrc As Long,
+        ByVal ySrc As Long,
+        ByVal dwRop As Long
     ) As Long
 
-    Private Declare Function CreateCompatibleDC Lib "gdi32" ( _
-        ByVal hdc As Long _
+    Private Declare Function CreateCompatibleDC Lib "gdi32" (
+        ByVal hdc As Long
     ) As Long
 
-    Private Declare Function CreateMetaFile Lib "gdi32" Alias "CreateMetaFileA" ( _
-        ByVal lpString As String _
+    Private Declare Function CreateMetaFile Lib "gdi32" Alias "CreateMetaFileA" (
+        ByVal lpString As String
     ) As Long
 
-    Private Declare Function CloseMetaFile Lib "gdi32" ( _
-        ByVal hDCMF As Long _
+    Private Declare Function CloseMetaFile Lib "gdi32" (
+        ByVal hDCMF As Long
     ) As Long
 
-    Private Declare Function DeleteMetaFile Lib "gdi32" ( _
-        ByVal hMF As Long _
+    Private Declare Function DeleteMetaFile Lib "gdi32" (
+        ByVal hMF As Long
     ) As Long
 
-    Private Declare Function DeleteDC Lib "gdi32" ( _
-        ByVal hdc As Long _
+    Private Declare Function DeleteDC Lib "gdi32" (
+        ByVal hdc As Long
     ) As Long
 
-    Private Declare Function DeleteObject Lib "gdi32" ( _
-        ByVal hObject As Long _
+    Private Declare Function DeleteObject Lib "gdi32" (
+        ByVal hObject As Long
     ) As Long
 
-    Private Declare Function GetObject Lib "gdi32" Alias "GetObjectA" ( _
-        ByVal hObject As Long, _
-        ByVal nCount As Long, _
-        ByVal lpObject As Object _
+    Private Declare Function GetObject Lib "gdi32" Alias "GetObjectA" (
+        ByVal hObject As Long,
+        ByVal nCount As Long,
+        ByVal lpObject As Object
     ) As Long
 
-    Private Declare Function GetDC Lib "user32" ( _
-        ByVal hwnd As Long _
+    Private Declare Function GetDC Lib "user32" (
+        ByVal hwnd As Long
     ) As Long
 
-    Private Declare Function ReleaseDC Lib "user32" ( _
-        ByVal hwnd As Long, _
-        ByVal hdc As Long _
+    Private Declare Function ReleaseDC Lib "user32" (
+        ByVal hwnd As Long,
+        ByVal hdc As Long
     ) As Long
 
-    Private Declare Function RestoreDC Lib "gdi32" ( _
-        ByVal hdc As Long, _
-        ByVal nSavedDC As Long _
+    Private Declare Function RestoreDC Lib "gdi32" (
+        ByVal hdc As Long,
+        ByVal nSavedDC As Long
     ) As Long
 
-    Private Declare Function SetMapMode Lib "gdi32" ( _
-        ByVal hdc As Long, _
-        ByVal nMapMode As Long _
+    Private Declare Function SetMapMode Lib "gdi32" (
+        ByVal hdc As Long,
+        ByVal nMapMode As Long
     ) As Long
 
-    Private Declare Function SetWindowExtEx Lib "gdi32" ( _
-        ByVal hdc As Long, _
-        ByVal nX As Long, _
-        ByVal nY As Long, _
-        ByVal lpSize As Size _
+    Private Declare Function SetWindowExtEx Lib "gdi32" (
+        ByVal hdc As Long,
+        ByVal nX As Long,
+        ByVal nY As Long,
+        ByVal lpSize As Size
     ) As Long
 
-    Private Declare Function SetWindowOrgEx Lib "gdi32" ( _
-        ByVal hdc As Long, _
-        ByVal nX As Long, _
-        ByVal nY As Long, _
-        ByVal lpPoint As POINTAPI _
+    Private Declare Function SetWindowOrgEx Lib "gdi32" (
+        ByVal hdc As Long,
+        ByVal nX As Long,
+        ByVal nY As Long,
+        ByVal lpPoint As POINTAPI
     ) As Long
 
-    Private Declare Function SaveDC Lib "gdi32" ( _
-        ByVal hdc As Long _
+    Private Declare Function SaveDC Lib "gdi32" (
+        ByVal hdc As Long
     ) As Long
 
-    Private Declare Function SelectObject Lib "gdi32" ( _
-        ByVal hdc As Long, _
-        ByVal hObject As Long _
+    Private Declare Function SelectObject Lib "gdi32" (
+        ByVal hdc As Long,
+        ByVal hObject As Long
     ) As Long
+
+#Region "Private Fields"
 
     Private Const MM_ANISOTROPIC = 8
 
-    Private Structure Size
-        Public x As Long
-        Public y As Long
-    End Structure
+#End Region
 
-    Private Structure POINTAPI
-        Public x As Long
-        Public y As Long
-    End Structure
+#Region "Public Methods"
 
-    Private Structure BITMAP
+    Public Shared Function StrToByteArray(ByVal str As String) As Byte()
+        Dim encoding As New System.Text.UTF8Encoding()
+        Return encoding.GetBytes(str)
+    End Function
 
-
-        Public Type As Long
-        Public Width As Long
-        Public Height As Long
-        Public WidthB As Long
-        Public Planes As Long
-        Public BitsPx As Long
-        Public Bits As Long
-    End Structure
+    'adds leading zero to hex value if needed.
+    Public Function Hex00(ByVal icolor As Byte) As String
+        Hex00 = Right("0" & Hex(icolor), 2)
+    End Function
 
     'Inserts the picture at the current insertion point
     Public Sub InsertPicture(ByVal RTB As RichTextBoxEx, ByVal pic As Image)
@@ -184,10 +181,10 @@ Public Class PictureToRTF
         DeleteMetaFile(hMeta)
 
         'header to string we want to insert
-        headerStr = "{\pict\wmetafile8" & _
-                    "\picw" & pic.Width & "\pich" & pic.Height & _
-                    "\picwgoal" & Bmp.Width & _
-                    "\pichgoal" & Bmp.Height & _
+        headerStr = "{\pict\wmetafile8" &
+                    "\picw" & pic.Width & "\pich" & pic.Height &
+                    "\picwgoal" & Bmp.Width &
+                    "\pichgoal" & Bmp.Height &
                     " "
 
         'read metafile from disk into byte array
@@ -195,7 +192,6 @@ Public Class PictureToRTF
         ReDim ByteArr(0 To nBytes)
 
         ByteArr = StrToByteArray(sTempFile)
-
 
         'turn each byte into two char hex value
         i = 0
@@ -218,19 +214,49 @@ Public Class PictureToRTF
 
     End Function
 
-    Public Shared Function StrToByteArray(ByVal str As String) As Byte()
-        Dim encoding As New System.Text.UTF8Encoding()
-        Return encoding.GetBytes(str)
-    End Function 'StrToByteArray
+#End Region
 
-    'adds leading zero to hex value if needed.
-    Public Function Hex00(ByVal icolor As Byte) As String
-        Hex00 = Right("0" & Hex(icolor), 2)
-    End Function
+#Region "Private Structs"
 
+    Private Structure BITMAP
 
+#Region "Public Fields"
 
+        Public Bits As Long
+        Public BitsPx As Long
+        Public Height As Long
+        Public Planes As Long
+        Public Type As Long
+        Public Width As Long
+        Public WidthB As Long
 
+#End Region
 
+    End Structure
 
+    Private Structure POINTAPI
+
+#Region "Public Fields"
+
+        Public x As Long
+        Public y As Long
+
+#End Region
+
+    End Structure
+
+    Private Structure Size
+
+#Region "Public Fields"
+
+        Public x As Long
+        Public y As Long
+
+#End Region
+
+    End Structure
+
+#End Region
+
+    'StrToByteArray
 End Class

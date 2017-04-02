@@ -8,10 +8,14 @@ namespace Furcadia.Net
 {
     public interface INetMessage
     {
+        #region Public Methods
+
         string GetString();
 
         void Write(string data);
 
         void Write(byte[] data);
+
+        #endregion Public Methods
     }
 }

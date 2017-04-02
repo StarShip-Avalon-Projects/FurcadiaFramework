@@ -8,25 +8,85 @@ Imports System.Collections
 
 ' IniFile class used to read and write ini files by loading the file into memory
 Public Class IniFile
+
+#Region "Private Fields"
+
+    Private _code As String
+
     ' List of IniSection objects keeps track of all the sections in the INI file
     Private m_sections As Hashtable
-    Private _code As String
+
+#End Region
+
+#Region "Public Constructors"
+
+    ' Public constructor
+    Public Sub New()
+        m_sections = New Hashtable(StringComparer.InvariantCultureIgnoreCase)
+    End Sub
+
+#End Region
+
+#Region "Public Properties"
+
     Public ReadOnly Property Code As String
         Get
             Return _code
         End Get
     End Property
-    ' Public constructor
-    Public Sub New()
-        m_sections = New Hashtable(StringComparer.InvariantCultureIgnoreCase)
-    End Sub
+    ' Gets all the sections
+    Public ReadOnly Property Sections() As System.Collections.ICollection
+        Get
+            Return m_sections.Values
+        End Get
+    End Property
+
+#End Region
+
+#Region "Public Methods"
+
+    ' Adds a section to the IniFile object, returns a IniSection object to the new or existing object
+    Public Function AddSection(ByVal sSection As String) As IniSection
+        Dim s As IniSection = Nothing
+        sSection = sSection.Trim()
+        ' Trim spaces
+        If m_sections.ContainsKey(sSection) Then
+            s = DirectCast(m_sections(sSection), IniSection)
+        Else
+            s = New IniSection(Me, sSection)
+            m_sections(sSection) = s
+        End If
+        Return s
+    End Function
+
+    '  Returns a KeyValue in a certain section
+    Public Function GetKeyValue(ByVal sSection As String, ByVal sKey As String) As String
+        Dim s As IniSection = GetSection(sSection)
+        If s IsNot Nothing Then
+            Dim k As IniSection.IniKey = s.GetKey(sKey)
+            If k IsNot Nothing Then
+                Return k.Value
+            End If
+        End If
+        Return String.Empty
+    End Function
+
+    ' Returns an IniSection to the section by name, NULL if it was not found
+    Public Function GetSection(ByVal sSection As String) As IniSection
+        sSection = sSection.Trim()
+        ' Trim spaces
+        If m_sections.ContainsKey(sSection) Then
+            Return DirectCast(m_sections(sSection), IniSection)
+        End If
+        Return Nothing
+    End Function
 
     ' Loads the Reads the data in the ini file into the IniFile object
     Public Sub Load(ByVal sFileName As String, Optional ByVal bMerge As Boolean = False)
         If Not bMerge Then
             RemoveAllSections()
         End If
-        '  Clear the object... 
+        '  Clear the object...
         Dim tempsection As IniSection = Nothing
         Dim oReader As New StreamReader(sFileName)
         Dim regexcomment As New Regex("^([\s]*#.*)", (RegexOptions.Singleline Or RegexOptions.IgnoreCase))
@@ -42,7 +102,6 @@ Public Class IniFile
                     m = regexcomment.Match(line)
 
                     System.Diagnostics.Debug.Print(String.Format("Skipping Comment: {0}", m.Groups(0).Value))
-
 
                 ElseIf regexsection.Match(line).Success Then
                     m = regexsection.Match(line)
@@ -80,6 +139,64 @@ Public Class IniFile
         oReader.Close()
     End Sub
 
+    '  Removes all existing sections, returns trus on success
+    Public Function RemoveAllSections() As Boolean
+        m_sections.Clear()
+        Return (m_sections.Count = 0)
+    End Function
+
+    ' Remove a key by section name and key name
+    Public Function RemoveKey(ByVal sSection As String, ByVal sKey As String) As Boolean
+        Dim s As IniSection = GetSection(sSection)
+        If s IsNot Nothing Then
+            Return s.RemoveKey(sKey)
+        End If
+        Return False
+    End Function
+
+    ' Removes a section by its name sSection, returns trus on success
+    Public Function RemoveSection(ByVal sSection As String) As Boolean
+        sSection = sSection.Trim()
+        Return RemoveSection(GetSection(sSection))
+    End Function
+
+    ' Removes section by object, returns trus on success
+    Public Function RemoveSection(ByVal Section As IniSection) As Boolean
+        If Section IsNot Nothing Then
+            Try
+                m_sections.Remove(Section.Name)
+                Return True
+            Catch ex As Exception
+                System.Diagnostics.Debug.Print(ex.Message)
+            End Try
+        End If
+        Return False
+    End Function
+
+    ' Renames an existing key returns true on success, false if the key didn't exist or there was another section with the same sNewKey
+    Public Function RenameKey(ByVal sSection As String, ByVal sKey As String, ByVal sNewKey As String) As Boolean
+        '  Note string trims are done in lower calls.
+        Dim s As IniSection = GetSection(sSection)
+        If s IsNot Nothing Then
+            Dim k As IniSection.IniKey = s.GetKey(sKey)
+            If k IsNot Nothing Then
+                Return k.SetName(sNewKey)
+            End If
+        End If
+        Return False
+    End Function
+
+    ' Renames an existing section returns true on success, false if the section didn't exist or there was another section with the same sNewSection
+    Public Function RenameSection(ByVal sSection As String, ByVal sNewSection As String) As Boolean
+        '  Note string trims are done in lower calls.
+        Dim bRval As Boolean = False
+        Dim s As IniSection = GetSection(sSection)
+        If s IsNot Nothing Then
+            bRval = s.SetName(sNewSection)
+        End If
+        Return bRval
+    End Function
+
     ' Used to save the data back to the file or your choice
     Public Sub Save(ByVal sFileName As String)
         Dim oWriter As New StreamWriter(sFileName, False)
@@ -104,75 +221,6 @@ Public Class IniFile
         Next
         oWriter.Close()
     End Sub
-
-    ' Gets all the sections
-    Public ReadOnly Property Sections() As System.Collections.ICollection
-        Get
-            Return m_sections.Values
-        End Get
-    End Property
-
-    ' Adds a section to the IniFile object, returns a IniSection object to the new or existing object
-    Public Function AddSection(ByVal sSection As String) As IniSection
-        Dim s As IniSection = Nothing
-        sSection = sSection.Trim()
-        ' Trim spaces
-        If m_sections.ContainsKey(sSection) Then
-            s = DirectCast(m_sections(sSection), IniSection)
-        Else
-            s = New IniSection(Me, sSection)
-            m_sections(sSection) = s
-        End If
-        Return s
-    End Function
-
-    ' Removes a section by its name sSection, returns trus on success
-    Public Function RemoveSection(ByVal sSection As String) As Boolean
-        sSection = sSection.Trim()
-        Return RemoveSection(GetSection(sSection))
-    End Function
-
-    ' Removes section by object, returns trus on success
-    Public Function RemoveSection(ByVal Section As IniSection) As Boolean
-        If Section IsNot Nothing Then
-            Try
-                m_sections.Remove(Section.Name)
-                Return True
-            Catch ex As Exception
-                System.Diagnostics.Debug.Print(ex.Message)
-            End Try
-        End If
-        Return False
-    End Function
-
-    '  Removes all existing sections, returns trus on success
-    Public Function RemoveAllSections() As Boolean
-        m_sections.Clear()
-        Return (m_sections.Count = 0)
-    End Function
-
-    ' Returns an IniSection to the section by name, NULL if it was not found
-    Public Function GetSection(ByVal sSection As String) As IniSection
-        sSection = sSection.Trim()
-        ' Trim spaces
-        If m_sections.ContainsKey(sSection) Then
-            Return DirectCast(m_sections(sSection), IniSection)
-        End If
-        Return Nothing
-    End Function
-
-    '  Returns a KeyValue in a certain section
-    Public Function GetKeyValue(ByVal sSection As String, ByVal sKey As String) As String
-        Dim s As IniSection = GetSection(sSection)
-        If s IsNot Nothing Then
-            Dim k As IniSection.IniKey = s.GetKey(sKey)
-            If k IsNot Nothing Then
-                Return k.Value
-            End If
-        End If
-        Return String.Empty
-    End Function
-
     ' Sets a KeyValuePair in a certain section
     Public Function SetKeyValue(ByVal sSection As String, ByVal sKey As String, ByVal sValue As String) As Boolean
         Dim s As IniSection = AddSection(sSection)
@@ -186,47 +234,26 @@ Public Class IniFile
         Return False
     End Function
 
-    ' Renames an existing section returns true on success, false if the section didn't exist or there was another section with the same sNewSection
-    Public Function RenameSection(ByVal sSection As String, ByVal sNewSection As String) As Boolean
-        '  Note string trims are done in lower calls.
-        Dim bRval As Boolean = False
-        Dim s As IniSection = GetSection(sSection)
-        If s IsNot Nothing Then
-            bRval = s.SetName(sNewSection)
-        End If
-        Return bRval
-    End Function
+#End Region
 
-    ' Renames an existing key returns true on success, false if the key didn't exist or there was another section with the same sNewKey
-    Public Function RenameKey(ByVal sSection As String, ByVal sKey As String, ByVal sNewKey As String) As Boolean
-        '  Note string trims are done in lower calls.
-        Dim s As IniSection = GetSection(sSection)
-        If s IsNot Nothing Then
-            Dim k As IniSection.IniKey = s.GetKey(sKey)
-            If k IsNot Nothing Then
-                Return k.SetName(sNewKey)
-            End If
-        End If
-        Return False
-    End Function
+#Region "Public Classes"
 
-    ' Remove a key by section name and key name
-    Public Function RemoveKey(ByVal sSection As String, ByVal sKey As String) As Boolean
-        Dim s As IniSection = GetSection(sSection)
-        If s IsNot Nothing Then
-            Return s.RemoveKey(sKey)
-        End If
-        Return False
-    End Function
-
-    ' IniSection class 
+    ' IniSection class
     Public Class IniSection
+
+#Region "Private Fields"
+
+        '  List of IniKeys in the section
+        Private m_keys As Hashtable
+
         '  IniFile IniFile object instance
         Private m_pIniFile As IniFile
         '  Name of the section
         Private m_sSection As String
-        '  List of IniKeys in the section
-        Private m_keys As Hashtable
+
+#End Region
+
+#Region "Protected Internal Constructors"
 
         ' Constuctor so objects are internally managed
         Protected Friend Sub New(ByVal parent As IniFile, ByVal sSection As String)
@@ -234,6 +261,10 @@ Public Class IniFile
             m_sSection = sSection
             m_keys = New Hashtable(StringComparer.InvariantCultureIgnoreCase)
         End Sub
+
+#End Region
+
+#Region "Public Properties"
 
         ' Returns all the keys in a section
         Public ReadOnly Property Keys() As System.Collections.ICollection
@@ -249,6 +280,10 @@ Public Class IniFile
             End Get
         End Property
 
+#End Region
+
+#Region "Public Methods"
+
         ' Adds a key to the IniSection object, returns a IniKey object to the new or existing object
         Public Function AddKey(ByVal sKey As String) As IniKey
             sKey = sKey.Trim()
@@ -262,6 +297,26 @@ Public Class IniFile
                 End If
             End If
             Return k
+        End Function
+
+        ' Returns a IniKey object to the key by name, NULL if it was not found
+        Public Function GetKey(ByVal sKey As String) As IniKey
+            sKey = sKey.Trim()
+            If m_keys.ContainsKey(sKey) Then
+                Return DirectCast(m_keys(sKey), IniKey)
+            End If
+            Return Nothing
+        End Function
+
+        ' Returns the section name
+        Public Function GetName() As String
+            Return m_sSection
+        End Function
+
+        ' Removes all the keys in the section
+        Public Function RemoveAllKeys() As Boolean
+            m_keys.Clear()
+            Return (m_keys.Count = 0)
         End Function
 
         ' Removes a single key by string
@@ -281,22 +336,6 @@ Public Class IniFile
             End If
             Return False
         End Function
-
-        ' Removes all the keys in the section
-        Public Function RemoveAllKeys() As Boolean
-            m_keys.Clear()
-            Return (m_keys.Count = 0)
-        End Function
-
-        ' Returns a IniKey object to the key by name, NULL if it was not found
-        Public Function GetKey(ByVal sKey As String) As IniKey
-            sKey = sKey.Trim()
-            If m_keys.ContainsKey(sKey) Then
-                Return DirectCast(m_keys(sKey), IniKey)
-            End If
-            Return Nothing
-        End Function
-
         ' Sets the section name, returns true on success, fails if the section
         ' name sSection already exists
         Public Function SetName(ByVal sSection As String) As Boolean
@@ -322,25 +361,36 @@ Public Class IniFile
             Return False
         End Function
 
-        ' Returns the section name
-        Public Function GetName() As String
-            Return m_sSection
-        End Function
+#End Region
+
+#Region "Public Classes"
 
         ' IniKey class
         Public Class IniKey
+
+#Region "Private Fields"
+
+            '  Pointer to the parent CIniSection
+            Private m_section As IniSection
+
             '  Name of the Key
             Private m_sKey As String
             '  Value associated
             Private m_sValue As String
-            '  Pointer to the parent CIniSection
-            Private m_section As IniSection
+
+#End Region
+
+#Region "Protected Internal Constructors"
 
             ' Constuctor so objects are internally managed
             Protected Friend Sub New(ByVal parent As IniSection, ByVal sKey As String)
                 m_section = parent
                 m_sKey = sKey
             End Sub
+
+#End Region
+
+#Region "Public Properties"
 
             ' Returns the name of the Key
             Public ReadOnly Property Name() As String
@@ -359,10 +409,15 @@ Public Class IniFile
                 End Set
             End Property
 
-            ' Sets the value of the key
-            Public Sub SetValue(ByVal sValue As String)
-                m_sValue = sValue
-            End Sub
+#End Region
+
+#Region "Public Methods"
+
+            ' Returns the name of the Key
+            Public Function GetName() As String
+                Return m_sKey
+            End Function
+
             ' Returns the value of the Key
             Public Function GetValue() As String
                 Return m_sValue
@@ -392,13 +447,22 @@ Public Class IniFile
                 Return False
             End Function
 
-            ' Returns the name of the Key
-            Public Function GetName() As String
-                Return m_sKey
-            End Function
+            ' Sets the value of the key
+            Public Sub SetValue(ByVal sValue As String)
+                m_sValue = sValue
+            End Sub
+
+#End Region
+
         End Class
+
+#End Region
+
         ' End of IniKey class
     End Class
+
+#End Region
+
     ' End of IniSection class
 End Class
 ' End of IniFile class

@@ -1,26 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Furcadia.Drawing
+﻿namespace Furcadia.Drawing
 {
-    public class ViewArea
-    {
-        public int X;
-        public int Y;
-        public int length;
-        public int height;
-    }
-
     public static class VisibleArea
     {
+        #region Public Methods
+
         //Reference http://pastebin.com/QbnjwjNc
         public static ViewArea getTargetRectFromCenterCoord(int X, int Y)
         {
-            // Set the size of the rectangle drawn around the player.
-            // The +1 is the tile the player is on.
+            // Set the size of the rectangle drawn around the player. The +1 is the tile the player
+            // is on.
             ViewArea rec = null;
             //Dim tilesWide As UInt32 = extraTilesLeft + 7 + 1 + 7 + extraTilesRight
             //Dim tilesHigh As UInt32 = extraTilesTop + 8 + 1 + 8 + extraTilesBottom
@@ -48,5 +36,19 @@ namespace Furcadia.Drawing
         {
             return value % 2 != 0;
         }
+
+        #endregion Public Methods
+    }
+
+    public class ViewArea
+    {
+        #region Public Fields
+
+        public int height;
+        public int length;
+        public int X;
+        public int Y;
+
+        #endregion Public Fields
     }
 }

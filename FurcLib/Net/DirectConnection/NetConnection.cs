@@ -1,5 +1,6 @@
 ﻿using Furcadia.Net.Utils;
 using System;
+using System.Net;
 
 namespace Furcadia.Net.DirectConnection
 {
@@ -8,10 +9,16 @@ namespace Furcadia.Net.DirectConnection
     /// </summary>
     public class NetConnection : ClientBase
     {
+        #region Private Fields
+
         /// <summary>
         /// Message to server load balancing.
         /// </summary>
         private ServerQue ServerBalancer;
+
+        #endregion Private Fields
+
+        #region Public Constructors
 
         /// <summary>
         /// Default Constructor
@@ -36,6 +43,23 @@ namespace Furcadia.Net.DirectConnection
         }
 
         /// <summary>
+        /// Connect to game server with Host IP address and Specified port
+        /// </summary>
+        /// <param name="ip">
+        /// Game Server IP
+        /// </param>
+        /// <param name="port">
+        /// Game Server port
+        /// </param>
+        public NetConnection(IPAddress ip, int port) : base(ip, port)
+        {
+        }
+
+        #endregion Public Constructors
+
+        #region Public Methods
+
+        /// <summary>
         /// Connect to game server
         /// </summary>
         public override void Connect()
@@ -53,11 +77,15 @@ namespace Furcadia.Net.DirectConnection
             ServerBalancer.SendToServer(message);
         }
 
+        #endregion Public Methods
+
+        #region Private Methods
+
         /// <summary>
         /// Let the Server Balancer control the message load to the server
         /// </summary>
         /// <param name="message">
-        /// 0Message from the Server Queue
+        /// Message from the Server Queue
         /// </param>
         /// <param name="e">
         /// event Arguments
@@ -66,5 +94,7 @@ namespace Furcadia.Net.DirectConnection
         {
             base.SendServer((string)message);
         }
+
+        #endregion Private Methods
     }
 }

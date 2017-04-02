@@ -14,24 +14,28 @@ using System.IO;
 
 namespace Furcadia.Drawing.Graphics
 {
-    public class FurcadiaShapesException : System.ApplicationException
-    {
-        public FurcadiaShapesException(string msg)
-            : base(msg)
-        {
-        }
-    }
-
-    public class FurcadiaPaletteException : System.ApplicationException
-    {
-        public FurcadiaPaletteException(string msg)
-            : base(msg)
-        {
-        }
-    }
-
     public struct Frame
     {
+        #region Public Fields
+
+        public FrameFormats FrameFormat;
+
+        public Pos FramePos;
+
+        public Pos FurrePos;
+
+        public ushort Height;
+
+        public byte[] ImageData;
+
+        public uint ImageDataSize;
+
+        public ushort Width;
+
+        #endregion Public Fields
+
+        #region Public Enums
+
         [Flags]
         public enum FrameFormats : ushort
         {
@@ -39,23 +43,43 @@ namespace Furcadia.Drawing.Graphics
             FormatRGB
         }
 
+        #endregion Public Enums
+
+        #region Public Structs
+
         public struct Pos
         {
+            #region Public Fields
+
             public short X;
             public short Y;
+
+            #endregion Public Fields
         }
 
-        public FrameFormats FrameFormat;
-        public ushort Width;
-        public ushort Height;
-        public Pos FramePos;
-        public Pos FurrePos;
-        public uint ImageDataSize;
-        public byte[] ImageData;
+        #endregion Public Structs
     }
 
     public struct Shape
     {
+        #region Public Fields
+
+        public ShapeFlags Flags;
+
+        public Frame[] Frames;
+
+        public StepBlock[] KitterSpeak;
+
+        public ushort NumFrames;
+
+        public ushort NumSteps;
+
+        public short ShapeNum;
+
+        #endregion Public Fields
+
+        #region Public Enums
+
         [Flags]
         public enum ShapeFlags : ushort
         {
@@ -64,17 +88,23 @@ namespace Furcadia.Drawing.Graphics
             Sittable = 4
         }
 
-        public ShapeFlags Flags;
-        public short ShapeNum;
-        public ushort NumFrames;
-        public ushort NumSteps;
-
-        public Frame[] Frames;
-        public StepBlock[] KitterSpeak;
+        #endregion Public Enums
     }
 
     public struct StepBlock
     {
+        #region Public Fields
+
+        public short CounterMax;
+
+        public StepBlockStepTypes StepType;
+
+        public short Value;
+
+        #endregion Public Fields
+
+        #region Public Enums
+
         public enum StepBlockStepTypes : ushort
         {
             Frame = 1,
@@ -92,21 +122,37 @@ namespace Furcadia.Drawing.Graphics
             CameraState
         }
 
-        public StepBlockStepTypes StepType;
-        public short Value;
-        public short CounterMax;
+        #endregion Public Enums
+    }
+
+    public class FurcadiaPaletteException : System.ApplicationException
+    {
+        #region Public Constructors
+
+        public FurcadiaPaletteException(string msg)
+            : base(msg)
+        {
+        }
+
+        #endregion Public Constructors
     }
 
     public class FurcadiaShapes
     {
-        public string Header;
-        public int Version;
-        public int NumShapes;
-        public int Generator;
+        #region Public Fields
+
         public int Encryption;
+        public int Generator;
+        public string Header;
+        public int NumShapes;
         public int Reserved1;
         public int Reserved2;
         public Shape[] Shapes;
+        public int Version;
+
+        #endregion Public Fields
+
+        #region Public Constructors
 
         public FurcadiaShapes(string path)
         {
@@ -128,6 +174,121 @@ namespace Furcadia.Drawing.Graphics
                     loadFSH(path);
                     break;
             }
+        }
+
+        #endregion Public Constructors
+
+        #region Private Enums
+
+        [FlagsAttribute]
+        private enum FBJFlags : byte
+        {
+            Walkable = 1,
+            Gettable = 2,
+            Sittable = 4,
+            FurreX = 8,
+            FurreY = 16
+        }
+
+        #endregion Private Enums
+
+        #region Public Methods
+
+        public System.Drawing.Bitmap ToBitmap(Furcadia.Drawing.Graphics.Frame frame, Palette pal)
+        {
+            /* Create a new bitmap */
+            try
+            {
+                System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(frame.Width, frame.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+                System.Drawing.Rectangle rect = new System.Drawing.Rectangle(0, 0, bmp.Width, bmp.Height);
+                System.Drawing.Imaging.BitmapData bmpData =
+                    bmp.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadWrite,
+                    bmp.PixelFormat);
+
+                /* Set up the bitmap data for use */
+                IntPtr ptr = bmpData.Scan0;
+                int bytes = bmpData.Stride * bmp.Height;
+                byte[] rgbValues = new byte[bytes];
+
+                /* Copy the image data over */
+                if (frame.FrameFormat == Frame.FrameFormats.Format8Bit)
+                {
+                    int bpos, ipos = (int)frame.ImageDataSize - 1;
+                    for (int y = 0; y < bmpData.Height; y++)
+                    {
+                        /* Alignment and flip */
+                        bpos = bmpData.Stride * (y + 1) - (bmpData.Stride - bmpData.Width * 4) - 1;
+
+                        /* Pixel assignment */
+                        for (int x = 0; x < bmpData.Width; x++)
+                        {
+                            rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos]].A;
+                            rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos]].R;
+                            rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos]].G;
+                            rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos--]].B;
+                        }
+                    }
+                    /* Save the bitmap */
+                    System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
+                    bmp.UnlockBits(bmpData);
+                }
+                else if (frame.FrameFormat == Frame.FrameFormats.FormatRGB)
+                {
+#warning 24-bit is not supported in this version. For updates: http://furcadia.codeplex.com/
+                    //24 bit support
+                }
+                return bmp;
+            }
+            catch
+            {
+                /* Because we don't care if it didn't render */
+                return null;
+            }
+        }
+
+        #endregion Public Methods
+
+        #region Private Methods
+
+        private string changeExtension(string path, string newExtension)
+        {
+            char[] delims = { '/', '\\' };
+            string[] structure = path.Split(delims);
+            string fullfile = structure[structure.GetUpperBound(0)];
+            string filename = fullfile.Substring(0, fullfile.LastIndexOf('.'));
+            string filepath = path.Substring(0, path.LastIndexOfAny(delims) + 1);
+            return (filepath + filename + "." + newExtension);
+        }
+
+        private void loadFBJ(string path)
+        {
+            string file = changeExtension(path, "fbj");
+            if (!File.Exists(file)) return;
+            System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.StreamReader(file).BaseStream);
+
+            /* Ignore header */
+            br.ReadBytes(4);
+            int chunkCount = br.ReadInt32();
+
+            /* Read object definitions */
+            for (int f = 0; f < chunkCount; f++)
+            {
+                byte thisFlag = br.ReadByte();
+                Shapes[f].Flags = (Shape.ShapeFlags)(thisFlag & 0x07);
+
+                if ((thisFlag & ((byte)FBJFlags.FurreX)) > 0)
+                {
+                    Shapes[f].Frames[0].FurrePos.X = (short)br.ReadSByte();
+
+                    if ((thisFlag & ((byte)FBJFlags.FurreY)) > 0) Shapes[f].Frames[0].FurrePos.Y = (short)br.ReadSByte();
+                }
+                else if ((thisFlag & ((byte)FBJFlags.FurreY)) > 0)
+                {
+                    Shapes[f].Frames[0].FurrePos.Y = (short)br.ReadSByte();
+                }
+            }
+
+            br.Close();
         }
 
         private void loadFOX(string path)
@@ -188,48 +349,6 @@ namespace Furcadia.Drawing.Graphics
             br.Close();
         }
 
-        private void loadFSH(string path)
-        {
-            System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.StreamReader(path).BaseStream);
-
-            /* Assume/retrieve header information */
-            Header = "FSH1";
-            Version = 1;
-            NumShapes = (int)br.ReadUInt16();
-            Generator = 0;
-            Encryption = 0;
-            Reserved1 = 0;
-            Reserved2 = 0;
-
-            /* Skip over chunk sizes */
-            for (int s = 0; s < NumShapes; s++) br.ReadUInt16();
-
-            /* Loop through the shapes */
-            Shapes = new Shape[NumShapes];
-            for (int s = 0; s < NumShapes; s++)
-            {
-                Shapes[s].Flags = 0;
-                Shapes[s].ShapeNum = 0;
-                Shapes[s].NumFrames = 1;
-                Shapes[s].NumSteps = 0;
-
-                Shapes[s].Frames = new Frame[1];
-                Shapes[s].Frames[0].FrameFormat = Frame.FrameFormats.Format8Bit;
-                Shapes[s].Frames[0].Width = (ushort)br.ReadByte();
-                Shapes[s].Frames[0].Height = (ushort)br.ReadByte();
-                Shapes[s].Frames[0].FramePos.X = (short)br.ReadSByte();
-                Shapes[s].Frames[0].FramePos.Y = (short)br.ReadSByte();
-                Shapes[s].Frames[0].FurrePos.X = (short)0;
-                Shapes[s].Frames[0].FurrePos.Y = (short)0;
-                Shapes[s].Frames[0].ImageDataSize = (uint)(Shapes[s].Frames[0].Width * Shapes[s].Frames[0].Height);
-                Shapes[s].Frames[0].ImageData = br.ReadBytes((int)Shapes[s].Frames[0].ImageDataSize);
-            }
-
-            br.Close();
-
-            loadFBJ(path);
-        }
-
         private void loadFS2(string path)
         {
             System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.StreamReader(path).BaseStream);
@@ -281,123 +400,78 @@ namespace Furcadia.Drawing.Graphics
             }
         }
 
-        [FlagsAttribute]
-        private enum FBJFlags : byte
+        private void loadFSH(string path)
         {
-            Walkable = 1,
-            Gettable = 2,
-            Sittable = 4,
-            FurreX = 8,
-            FurreY = 16
-        }
+            System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.StreamReader(path).BaseStream);
 
-        private void loadFBJ(string path)
-        {
-            string file = changeExtension(path, "fbj");
-            if (!File.Exists(file)) return;
-            System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.StreamReader(file).BaseStream);
+            /* Assume/retrieve header information */
+            Header = "FSH1";
+            Version = 1;
+            NumShapes = (int)br.ReadUInt16();
+            Generator = 0;
+            Encryption = 0;
+            Reserved1 = 0;
+            Reserved2 = 0;
 
-            /* Ignore header */
-            br.ReadBytes(4);
-            int chunkCount = br.ReadInt32();
+            /* Skip over chunk sizes */
+            for (int s = 0; s < NumShapes; s++) br.ReadUInt16();
 
-            /* Read object definitions */
-            for (int f = 0; f < chunkCount; f++)
+            /* Loop through the shapes */
+            Shapes = new Shape[NumShapes];
+            for (int s = 0; s < NumShapes; s++)
             {
-                byte thisFlag = br.ReadByte();
-                Shapes[f].Flags = (Shape.ShapeFlags)(thisFlag & 0x07);
+                Shapes[s].Flags = 0;
+                Shapes[s].ShapeNum = 0;
+                Shapes[s].NumFrames = 1;
+                Shapes[s].NumSteps = 0;
 
-                if ((thisFlag & ((byte)FBJFlags.FurreX)) > 0)
-                {
-                    Shapes[f].Frames[0].FurrePos.X = (short)br.ReadSByte();
-
-                    if ((thisFlag & ((byte)FBJFlags.FurreY)) > 0) Shapes[f].Frames[0].FurrePos.Y = (short)br.ReadSByte();
-                }
-                else if ((thisFlag & ((byte)FBJFlags.FurreY)) > 0)
-                {
-                    Shapes[f].Frames[0].FurrePos.Y = (short)br.ReadSByte();
-                }
+                Shapes[s].Frames = new Frame[1];
+                Shapes[s].Frames[0].FrameFormat = Frame.FrameFormats.Format8Bit;
+                Shapes[s].Frames[0].Width = (ushort)br.ReadByte();
+                Shapes[s].Frames[0].Height = (ushort)br.ReadByte();
+                Shapes[s].Frames[0].FramePos.X = (short)br.ReadSByte();
+                Shapes[s].Frames[0].FramePos.Y = (short)br.ReadSByte();
+                Shapes[s].Frames[0].FurrePos.X = (short)0;
+                Shapes[s].Frames[0].FurrePos.Y = (short)0;
+                Shapes[s].Frames[0].ImageDataSize = (uint)(Shapes[s].Frames[0].Width * Shapes[s].Frames[0].Height);
+                Shapes[s].Frames[0].ImageData = br.ReadBytes((int)Shapes[s].Frames[0].ImageDataSize);
             }
 
             br.Close();
+
+            loadFBJ(path);
         }
 
-        private string changeExtension(string path, string newExtension)
+        #endregion Private Methods
+    }
+
+    public class FurcadiaShapesException : System.ApplicationException
+    {
+        #region Public Constructors
+
+        public FurcadiaShapesException(string msg)
+            : base(msg)
         {
-            char[] delims = { '/', '\\' };
-            string[] structure = path.Split(delims);
-            string fullfile = structure[structure.GetUpperBound(0)];
-            string filename = fullfile.Substring(0, fullfile.LastIndexOf('.'));
-            string filepath = path.Substring(0, path.LastIndexOfAny(delims) + 1);
-            return (filepath + filename + "." + newExtension);
         }
 
-        public System.Drawing.Bitmap ToBitmap(Furcadia.Drawing.Graphics.Frame frame, Palette pal)
-        {
-            /* Create a new bitmap */
-            try
-            {
-                System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(frame.Width, frame.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
-                System.Drawing.Rectangle rect = new System.Drawing.Rectangle(0, 0, bmp.Width, bmp.Height);
-                System.Drawing.Imaging.BitmapData bmpData =
-                    bmp.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadWrite,
-                    bmp.PixelFormat);
-
-                /* Set up the bitmap data for use */
-                IntPtr ptr = bmpData.Scan0;
-                int bytes = bmpData.Stride * bmp.Height;
-                byte[] rgbValues = new byte[bytes];
-
-                /* Copy the image data over */
-                if (frame.FrameFormat == Frame.FrameFormats.Format8Bit)
-                {
-                    int bpos, ipos = (int)frame.ImageDataSize - 1;
-                    for (int y = 0; y < bmpData.Height; y++)
-                    {
-                        /* Alignment and flip */
-                        bpos = bmpData.Stride * (y + 1) - (bmpData.Stride - bmpData.Width * 4) - 1;
-
-                        /* Pixel assignment */
-                        for (int x = 0; x < bmpData.Width; x++)
-                        {
-                            rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos]].A;
-                            rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos]].R;
-                            rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos]].G;
-                            rgbValues[bpos--] = pal.Colors[frame.ImageData[ipos--]].B;
-                        }
-                    }
-                    /* Save the bitmap */
-                    System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
-                    bmp.UnlockBits(bmpData);
-                }
-                else if (frame.FrameFormat == Frame.FrameFormats.FormatRGB)
-                {
-#warning 24-bit is not supported in this version. For updates: http://furcadia.codeplex.com/
-                    //24 bit support
-                }
-                return bmp;
-            }
-            catch
-            {
-                /* Because we don't care if it didn't render */
-                return null;
-            }
-        }
+        #endregion Public Constructors
     }
 
     public class Palette
     {
+        #region Public Fields
+
         public readonly Color[] Colors;
 
-        /// <summary>
-        /// title261.pcx
-        /// </summary>
-        public static Palette Default
-        {
-            get { return new Palette(Furcpath.GetDefaultPatchPath() + "/title261.pcx"); }
-        }
+        #endregion Public Fields
+
+        #region Private Fields
 
         private static Paths Furcpath;
+
+        #endregion Private Fields
+
+        #region Public Constructors
 
         public Palette(string pcxPath)
         {
@@ -452,120 +526,25 @@ namespace Furcadia.Drawing.Graphics
             }
             Colors = cols;
         }
+
+        #endregion Public Constructors
+
+        #region Public Properties
+
+        /// <summary>
+        /// title261.pcx
+        /// </summary>
+        public static Palette Default
+        {
+            get { return new Palette(Furcpath.GetDefaultPatchPath() + "/title261.pcx"); }
+        }
+
+        #endregion Public Properties
     }
 
     public class Remapper
     {
         #region Remaps
-
-        public static byte[][] FurRemap = new byte[][] {
-            new byte[] { 199, 200, 201, 202, 203, 204, 205, 206 },
-            new byte[] { 89, 90, 91, 92, 93, 94, 95, 174 },
-            new byte[] { 204, 204, 205, 205, 206, 206, 207, 207 },
-            new byte[] { 216, 217, 218, 219, 220, 221, 222, 223 },
-            new byte[] { 184, 185, 186, 187, 188, 189, 190, 191 },
-            new byte[] { 152, 153, 154, 155, 156, 157, 158, 159 },
-            new byte[] { 104, 105, 106, 107, 108, 109, 110, 111 },
-            new byte[] { 96, 97, 98, 99, 100, 101, 102, 103 },
-            new byte[] { 32, 33, 34, 35, 36, 37, 38, 39 },
-            new byte[] { 16, 17, 18, 19, 20, 21, 22, 23 },
-            new byte[] { 40, 42, 44, 47, 25, 28, 153, 152 },
-            new byte[] { 146, 147, 149, 150, 151, 152, 153, 155 },
-            new byte[] { 33, 34, 35, 36, 37, 12, 38, 20 },
-            new byte[] { 177, 178, 179, 180, 181, 182, 148, 150 },
-            new byte[] { 48, 49, 50, 51, 52, 53, 54, 55 },
-            new byte[] { 72, 73, 74, 75, 76, 77, 78, 79 },
-            new byte[] { 128, 129, 130, 131, 132, 133, 134, 135 },
-            new byte[] { 144, 145, 146, 148, 150, 152, 153, 154 },
-            new byte[] { 80, 81, 82, 83, 84, 85, 86, 87 },
-            new byte[] { 224, 225, 226, 227, 228, 229, 230, 231 },
-            new byte[] { 10, 10, 11, 11, 12, 13, 14, 15 },
-            new byte[] { 120, 192, 209, 193, 194, 213, 216, 219 },
-            new byte[] { 162, 164, 166, 168, 170, 171, 173, 175 },
-            new byte[] { 195, 196, 197, 198, 199, 200, 201, 202 },
-            new byte[] { 232, 233, 234, 235, 236, 237, 238, 239 },
-        };
-
-        public static byte[][] MarkingsRemap = new byte[][] {
-            new byte[] { 199, 200, 201, 202, 203, 204, 205, 206 },
-            new byte[] { 89, 90, 91, 92, 93, 94, 95, 174 },
-            new byte[] { 204, 204, 205, 205, 206, 206, 207, 207 },
-            new byte[] { 216, 217, 218, 219, 220, 221, 222, 223 },
-            new byte[] { 184, 185, 186, 187, 188, 189, 190, 191 },
-            new byte[] { 152, 153, 154, 155, 156, 157, 158, 159 },
-            new byte[] { 104, 105, 106, 107, 108, 109, 110, 111 },
-            new byte[] { 96, 97, 98, 99, 100, 101, 102, 103 },
-            new byte[] { 32, 33, 34, 35, 36, 37, 38, 39 },
-            new byte[] { 16, 17, 18, 19, 20, 21, 22, 23 },
-            new byte[] { 40, 42, 44, 47, 25, 28, 153, 152 },
-            new byte[] { 146, 147, 149, 150, 151, 152, 153, 155 },
-            new byte[] { 33, 34, 35, 36, 37, 12, 38, 20 },
-            new byte[] { 177, 178, 179, 180, 181, 182, 148, 150 },
-            new byte[] { 48, 49, 50, 51, 52, 53, 54, 55 },
-            new byte[] { 72, 73, 74, 75, 76, 77, 78, 79 },
-            new byte[] { 128, 129, 130, 131, 132, 133, 134, 135 },
-            new byte[] { 144, 145, 146, 148, 150, 152, 153, 154 },
-            new byte[] { 80, 81, 82, 83, 84, 85, 86, 87 },
-            new byte[] { 224, 225, 226, 227, 228, 229, 230, 231 },
-            new byte[] { 10, 10, 11, 11, 12, 13, 14, 15 },
-            new byte[] { 120, 192, 209, 193, 194, 213, 216, 219 },
-            new byte[] { 162, 164, 166, 168, 170, 171, 173, 175 },
-            new byte[] { 195, 196, 197, 198, 199, 200, 201, 202 },
-            new byte[] { 232, 233, 234, 235, 236, 237, 238, 239 },
-        };
-
-        public static byte[][] HairRemap = new byte[][] {
-            new byte[] { 12, 13, 14, 15, 159, 159, 159, 159 },
-            new byte[] { 10, 11, 12, 13, 14, 14, 14, 14 },
-            new byte[] { 10, 10, 10, 11, 12, 12, 12, 12 },
-            new byte[] { 34, 35, 240, 37, 38, 38, 38, 38 },
-            new byte[] { 133, 134, 135, 158, 159, 159, 159, 159 },
-            new byte[] { 37, 38, 39, 155, 156, 156, 156, 156 },
-            new byte[] { 35, 36, 37, 38, 39, 39, 39, 39 },
-            new byte[] { 33, 34, 35, 36, 37, 37, 37, 37 },
-            new byte[] { 24, 26, 27, 154, 156, 156, 156, 156 },
-            new byte[] { 19, 20, 21, 22, 23, 23, 23, 23 },
-            new byte[] { 53, 54, 55, 61, 62, 62, 62, 62 },
-            new byte[] { 49, 50, 51, 52, 53, 53, 53, 53 },
-            new byte[] { 48, 49, 49, 50, 52, 52, 52, 52 },
-            new byte[] { 48, 49, 241, 52, 53, 53, 53, 53 },
-            new byte[] { 141, 56, 56, 57, 58, 58, 58, 58 },
-            new byte[] { 68, 69, 70, 71, 79, 79, 79, 79 },
-            new byte[] { 73, 74, 75, 76, 77, 77, 77, 77 },
-            new byte[] { 64, 72, 73, 74, 75, 75, 75, 75 },
-            new byte[] { 64, 64, 242, 66, 67, 67, 67, 67 },
-            new byte[] { 244, 244, 244, 84, 85, 85, 85, 85 },
-            new byte[] { 84, 85, 86, 87, 175, 175, 175, 175 },
-            new byte[] { 83, 84, 85, 86, 87, 87, 87, 87 },
-            new byte[] { 81, 82, 83, 84, 85, 85, 85, 85 },
-            new byte[] { 234, 245, 245, 236, 237, 237, 237, 237 },
-            new byte[] { 236, 237, 238, 239, 239, 239, 239, 239 },
-            new byte[] { 228, 229, 230, 205, 206, 206, 206, 206 },
-            new byte[] { 226, 227, 228, 229, 230, 230, 230, 230 },
-            new byte[] { 224, 225, 226, 227, 228, 228, 228, 228 },
-            new byte[] { 137, 242, 242, 67, 69, 69, 69, 69 },
-            new byte[] { 235, 236, 237, 238, 239, 239, 239, 239 },
-            new byte[] { 131, 132, 133, 134, 135, 135, 135, 135 },
-            new byte[] { 129, 130, 131, 132, 133, 133, 133, 133 },
-            new byte[] { 32, 128, 129, 130, 131, 131, 131, 131 },
-            new byte[] { 97, 98, 99, 100, 101, 101, 101, 101 },
-            new byte[] { 234, 234, 235, 236, 236, 236, 236, 236 },
-            new byte[] { 109, 110, 111, 204, 205, 205, 205, 205 },
-            new byte[] { 108, 109, 110, 111, 204, 204, 204, 204 },
-            new byte[] { 107, 108, 109, 110, 111, 111, 111, 111 },
-            new byte[] { 113, 114, 115, 116, 118, 118, 118, 118 },
-            new byte[] { 173, 174, 175, 175, 207, 207, 207, 207 },
-            new byte[] { 200, 202, 204, 205, 207, 207, 207, 207 },
-            new byte[] { 195, 197, 198, 200, 202, 202, 202, 202 },
-            new byte[] { 120, 209, 194, 216, 219, 219, 219, 219 },
-            new byte[] { 144, 146, 150, 153, 154, 154, 154, 154 },
-            new byte[] { 120, 122, 124, 126, 127, 127, 127, 127 },
-        };
-
-        public static byte[] EyeRemap = new byte[] {
-            23, 37, 50, 52, 67, 83, 86, 110, 185, 234, 236, 238, 243, 244, 245, 150,
-            153, 156, 207, 129, 10, 159, 90, 230, 240, 241, 242, 202, 127, 172
-        };
 
         public static byte[] BadgeRemap = new byte[] {
             14, 12, 10, 240, 135, 39, 37, 35, 27, 21, 55, 51, 49, 241, 56, 70,
@@ -573,7 +552,7 @@ namespace Furcadia.Drawing.Graphics
             129, 99, 235, 111, 110, 109, 115, 175
         };
 
-        public static byte[][] VestRemap = new byte[][] {
+        public static byte[][] BootRemap = new byte[][] {
             new byte[] { 10, 10, 11, 12, 13, 14, 15, 15 },
             new byte[] { 16, 17, 18, 19, 20, 21, 22, 23 },
             new byte[] { 24, 25, 26, 27, 28, 29, 30, 31 },
@@ -672,37 +651,113 @@ namespace Furcadia.Drawing.Graphics
             new byte[] { 88, 88, 89, 90, 90, 91, 91, 92 },
         };
 
-        public static byte[][] BootRemap = new byte[][] {
-            new byte[] { 10, 10, 11, 12, 13, 14, 15, 15 },
-            new byte[] { 16, 17, 18, 19, 20, 21, 22, 23 },
-            new byte[] { 24, 25, 26, 27, 28, 29, 30, 31 },
-            new byte[] { 32, 33, 34, 35, 36, 37, 38, 39 },
-            new byte[] { 40, 41, 42, 43, 44, 45, 46, 47 },
-            new byte[] { 48, 49, 50, 51, 52, 53, 54, 55 },
-            new byte[] { 56, 57, 58, 59, 60, 61, 62, 63 },
-            new byte[] { 64, 65, 66, 67, 68, 69, 70, 71 },
-            new byte[] { 72, 73, 74, 75, 76, 77, 78, 79 },
-            new byte[] { 80, 81, 82, 83, 84, 85, 86, 87 },
-            new byte[] { 88, 89, 90, 91, 92, 93, 94, 95 },
-            new byte[] { 96, 97, 98, 99, 100, 101, 102, 103 },
-            new byte[] { 104, 105, 106, 107, 108, 109, 110, 111 },
-            new byte[] { 112, 113, 114, 115, 116, 117, 118, 119 },
-            new byte[] { 120, 121, 122, 123, 124, 125, 126, 127 },
-            new byte[] { 128, 129, 130, 131, 132, 133, 134, 135 },
-            new byte[] { 136, 137, 138, 139, 140, 141, 142, 143 },
-            new byte[] { 144, 145, 146, 147, 148, 149, 150, 151 },
-            new byte[] { 152, 153, 154, 155, 156, 157, 158, 159 },
-            new byte[] { 160, 161, 162, 163, 164, 165, 166, 167 },
-            new byte[] { 168, 169, 170, 171, 172, 173, 174, 175 },
-            new byte[] { 176, 177, 178, 179, 180, 181, 182, 183 },
-            new byte[] { 184, 185, 186, 187, 188, 189, 190, 191 },
-            new byte[] { 192, 193, 194, 195, 196, 197, 198, 199 },
-            new byte[] { 200, 201, 202, 203, 204, 205, 206, 207 },
-            new byte[] { 120, 209, 210, 211, 212, 213, 214, 215 },
+        public static byte[] EyeRemap = new byte[] {
+            23, 37, 50, 52, 67, 83, 86, 110, 185, 234, 236, 238, 243, 244, 245, 150,
+            153, 156, 207, 129, 10, 159, 90, 230, 240, 241, 242, 202, 127, 172
+        };
+
+        public static byte[][] FurRemap = new byte[][] {
+            new byte[] { 199, 200, 201, 202, 203, 204, 205, 206 },
+            new byte[] { 89, 90, 91, 92, 93, 94, 95, 174 },
+            new byte[] { 204, 204, 205, 205, 206, 206, 207, 207 },
             new byte[] { 216, 217, 218, 219, 220, 221, 222, 223 },
+            new byte[] { 184, 185, 186, 187, 188, 189, 190, 191 },
+            new byte[] { 152, 153, 154, 155, 156, 157, 158, 159 },
+            new byte[] { 104, 105, 106, 107, 108, 109, 110, 111 },
+            new byte[] { 96, 97, 98, 99, 100, 101, 102, 103 },
+            new byte[] { 32, 33, 34, 35, 36, 37, 38, 39 },
+            new byte[] { 16, 17, 18, 19, 20, 21, 22, 23 },
+            new byte[] { 40, 42, 44, 47, 25, 28, 153, 152 },
+            new byte[] { 146, 147, 149, 150, 151, 152, 153, 155 },
+            new byte[] { 33, 34, 35, 36, 37, 12, 38, 20 },
+            new byte[] { 177, 178, 179, 180, 181, 182, 148, 150 },
+            new byte[] { 48, 49, 50, 51, 52, 53, 54, 55 },
+            new byte[] { 72, 73, 74, 75, 76, 77, 78, 79 },
+            new byte[] { 128, 129, 130, 131, 132, 133, 134, 135 },
+            new byte[] { 144, 145, 146, 148, 150, 152, 153, 154 },
+            new byte[] { 80, 81, 82, 83, 84, 85, 86, 87 },
             new byte[] { 224, 225, 226, 227, 228, 229, 230, 231 },
-            new byte[] { 234, 234, 235, 236, 237, 238, 239, 239 },
-            new byte[] { 88, 88, 89, 90, 90, 91, 91, 92 },
+            new byte[] { 10, 10, 11, 11, 12, 13, 14, 15 },
+            new byte[] { 120, 192, 209, 193, 194, 213, 216, 219 },
+            new byte[] { 162, 164, 166, 168, 170, 171, 173, 175 },
+            new byte[] { 195, 196, 197, 198, 199, 200, 201, 202 },
+            new byte[] { 232, 233, 234, 235, 236, 237, 238, 239 },
+        };
+
+        public static byte[][] HairRemap = new byte[][] {
+            new byte[] { 12, 13, 14, 15, 159, 159, 159, 159 },
+            new byte[] { 10, 11, 12, 13, 14, 14, 14, 14 },
+            new byte[] { 10, 10, 10, 11, 12, 12, 12, 12 },
+            new byte[] { 34, 35, 240, 37, 38, 38, 38, 38 },
+            new byte[] { 133, 134, 135, 158, 159, 159, 159, 159 },
+            new byte[] { 37, 38, 39, 155, 156, 156, 156, 156 },
+            new byte[] { 35, 36, 37, 38, 39, 39, 39, 39 },
+            new byte[] { 33, 34, 35, 36, 37, 37, 37, 37 },
+            new byte[] { 24, 26, 27, 154, 156, 156, 156, 156 },
+            new byte[] { 19, 20, 21, 22, 23, 23, 23, 23 },
+            new byte[] { 53, 54, 55, 61, 62, 62, 62, 62 },
+            new byte[] { 49, 50, 51, 52, 53, 53, 53, 53 },
+            new byte[] { 48, 49, 49, 50, 52, 52, 52, 52 },
+            new byte[] { 48, 49, 241, 52, 53, 53, 53, 53 },
+            new byte[] { 141, 56, 56, 57, 58, 58, 58, 58 },
+            new byte[] { 68, 69, 70, 71, 79, 79, 79, 79 },
+            new byte[] { 73, 74, 75, 76, 77, 77, 77, 77 },
+            new byte[] { 64, 72, 73, 74, 75, 75, 75, 75 },
+            new byte[] { 64, 64, 242, 66, 67, 67, 67, 67 },
+            new byte[] { 244, 244, 244, 84, 85, 85, 85, 85 },
+            new byte[] { 84, 85, 86, 87, 175, 175, 175, 175 },
+            new byte[] { 83, 84, 85, 86, 87, 87, 87, 87 },
+            new byte[] { 81, 82, 83, 84, 85, 85, 85, 85 },
+            new byte[] { 234, 245, 245, 236, 237, 237, 237, 237 },
+            new byte[] { 236, 237, 238, 239, 239, 239, 239, 239 },
+            new byte[] { 228, 229, 230, 205, 206, 206, 206, 206 },
+            new byte[] { 226, 227, 228, 229, 230, 230, 230, 230 },
+            new byte[] { 224, 225, 226, 227, 228, 228, 228, 228 },
+            new byte[] { 137, 242, 242, 67, 69, 69, 69, 69 },
+            new byte[] { 235, 236, 237, 238, 239, 239, 239, 239 },
+            new byte[] { 131, 132, 133, 134, 135, 135, 135, 135 },
+            new byte[] { 129, 130, 131, 132, 133, 133, 133, 133 },
+            new byte[] { 32, 128, 129, 130, 131, 131, 131, 131 },
+            new byte[] { 97, 98, 99, 100, 101, 101, 101, 101 },
+            new byte[] { 234, 234, 235, 236, 236, 236, 236, 236 },
+            new byte[] { 109, 110, 111, 204, 205, 205, 205, 205 },
+            new byte[] { 108, 109, 110, 111, 204, 204, 204, 204 },
+            new byte[] { 107, 108, 109, 110, 111, 111, 111, 111 },
+            new byte[] { 113, 114, 115, 116, 118, 118, 118, 118 },
+            new byte[] { 173, 174, 175, 175, 207, 207, 207, 207 },
+            new byte[] { 200, 202, 204, 205, 207, 207, 207, 207 },
+            new byte[] { 195, 197, 198, 200, 202, 202, 202, 202 },
+            new byte[] { 120, 209, 194, 216, 219, 219, 219, 219 },
+            new byte[] { 144, 146, 150, 153, 154, 154, 154, 154 },
+            new byte[] { 120, 122, 124, 126, 127, 127, 127, 127 },
+        };
+
+        public static byte[][] MarkingsRemap = new byte[][] {
+            new byte[] { 199, 200, 201, 202, 203, 204, 205, 206 },
+            new byte[] { 89, 90, 91, 92, 93, 94, 95, 174 },
+            new byte[] { 204, 204, 205, 205, 206, 206, 207, 207 },
+            new byte[] { 216, 217, 218, 219, 220, 221, 222, 223 },
+            new byte[] { 184, 185, 186, 187, 188, 189, 190, 191 },
+            new byte[] { 152, 153, 154, 155, 156, 157, 158, 159 },
+            new byte[] { 104, 105, 106, 107, 108, 109, 110, 111 },
+            new byte[] { 96, 97, 98, 99, 100, 101, 102, 103 },
+            new byte[] { 32, 33, 34, 35, 36, 37, 38, 39 },
+            new byte[] { 16, 17, 18, 19, 20, 21, 22, 23 },
+            new byte[] { 40, 42, 44, 47, 25, 28, 153, 152 },
+            new byte[] { 146, 147, 149, 150, 151, 152, 153, 155 },
+            new byte[] { 33, 34, 35, 36, 37, 12, 38, 20 },
+            new byte[] { 177, 178, 179, 180, 181, 182, 148, 150 },
+            new byte[] { 48, 49, 50, 51, 52, 53, 54, 55 },
+            new byte[] { 72, 73, 74, 75, 76, 77, 78, 79 },
+            new byte[] { 128, 129, 130, 131, 132, 133, 134, 135 },
+            new byte[] { 144, 145, 146, 148, 150, 152, 153, 154 },
+            new byte[] { 80, 81, 82, 83, 84, 85, 86, 87 },
+            new byte[] { 224, 225, 226, 227, 228, 229, 230, 231 },
+            new byte[] { 10, 10, 11, 11, 12, 13, 14, 15 },
+            new byte[] { 120, 192, 209, 193, 194, 213, 216, 219 },
+            new byte[] { 162, 164, 166, 168, 170, 171, 173, 175 },
+            new byte[] { 195, 196, 197, 198, 199, 200, 201, 202 },
+            new byte[] { 232, 233, 234, 235, 236, 237, 238, 239 },
         };
 
         public static byte[][] TrousersRemap = new byte[][] {
@@ -738,10 +793,49 @@ namespace Furcadia.Drawing.Graphics
             new byte[] { 88, 88, 89, 90, 90, 91, 91, 92 },
         };
 
+        public static byte[][] VestRemap = new byte[][] {
+            new byte[] { 10, 10, 11, 12, 13, 14, 15, 15 },
+            new byte[] { 16, 17, 18, 19, 20, 21, 22, 23 },
+            new byte[] { 24, 25, 26, 27, 28, 29, 30, 31 },
+            new byte[] { 32, 33, 34, 35, 36, 37, 38, 39 },
+            new byte[] { 40, 41, 42, 43, 44, 45, 46, 47 },
+            new byte[] { 48, 49, 50, 51, 52, 53, 54, 55 },
+            new byte[] { 56, 57, 58, 59, 60, 61, 62, 63 },
+            new byte[] { 64, 65, 66, 67, 68, 69, 70, 71 },
+            new byte[] { 72, 73, 74, 75, 76, 77, 78, 79 },
+            new byte[] { 80, 81, 82, 83, 84, 85, 86, 87 },
+            new byte[] { 88, 89, 90, 91, 92, 93, 94, 95 },
+            new byte[] { 96, 97, 98, 99, 100, 101, 102, 103 },
+            new byte[] { 104, 105, 106, 107, 108, 109, 110, 111 },
+            new byte[] { 112, 113, 114, 115, 116, 117, 118, 119 },
+            new byte[] { 120, 121, 122, 123, 124, 125, 126, 127 },
+            new byte[] { 128, 129, 130, 131, 132, 133, 134, 135 },
+            new byte[] { 136, 137, 138, 139, 140, 141, 142, 143 },
+            new byte[] { 144, 145, 146, 147, 148, 149, 150, 151 },
+            new byte[] { 152, 153, 154, 155, 156, 157, 158, 159 },
+            new byte[] { 160, 161, 162, 163, 164, 165, 166, 167 },
+            new byte[] { 168, 169, 170, 171, 172, 173, 174, 175 },
+            new byte[] { 176, 177, 178, 179, 180, 181, 182, 183 },
+            new byte[] { 184, 185, 186, 187, 188, 189, 190, 191 },
+            new byte[] { 192, 193, 194, 195, 196, 197, 198, 199 },
+            new byte[] { 200, 201, 202, 203, 204, 205, 206, 207 },
+            new byte[] { 120, 209, 210, 211, 212, 213, 214, 215 },
+            new byte[] { 216, 217, 218, 219, 220, 221, 222, 223 },
+            new byte[] { 224, 225, 226, 227, 228, 229, 230, 231 },
+            new byte[] { 234, 234, 235, 236, 237, 238, 239, 239 },
+            new byte[] { 88, 88, 89, 90, 90, 91, 91, 92 },
+        };
+
         #endregion Remaps
 
-        public static bool PalLoaded = false;
+        #region Public Fields
+
         public static Color[] Palette;
+        public static bool PalLoaded = false;
+
+        #endregion Public Fields
+
+        #region Public Methods
 
         public static Bitmap Remap(byte[] source, int width, int height, string colourcode, int highlight)
         {
@@ -952,5 +1046,7 @@ namespace Furcadia.Drawing.Graphics
 
             return Output;
         }
+
+        #endregion Public Methods
     }
 }

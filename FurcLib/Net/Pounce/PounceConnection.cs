@@ -42,8 +42,7 @@ namespace Furcadia.Net
 
         /// <summary>
         /// </summary>
-        [CLSCompliant(false)]
-        public List<string> _friends = new List<string>(), _dreams = new List<string>();
+        internal List<string> _friends = new List<string>(), _dreams = new List<string>(), _channels = new List<string>();
 
         #endregion Public Fields
 
@@ -95,6 +94,7 @@ namespace Furcadia.Net
         /// </summary>
         public PounceConnection()
         {
+            // TODO: Load Online.ini (uses Players List as default
         }
 
         #endregion Public Constructors

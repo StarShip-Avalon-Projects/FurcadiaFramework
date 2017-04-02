@@ -2,13 +2,18 @@
 
 Public Class LogStream
 
+#Region "Private Fields"
+
     Private Const Iconfilter As String = "<img src='fsh://system.fsh:([^']*)'(.*?)/>"
+    Private Const IMGFILTER As String = "<img src='?""?(.*?)'?""? ?/?>"
     Private Const NameFilter As String = "<name shortname='([^']*)' ?(.*?)?>([\x21-\x3B\=\x3F-\x7E]+)</name>"
     Private Const URLFILTER As String = "<a href='?""?(.*?)'?""?>(.*?)</a>"
-    Private Const IMGFILTER As String = "<img src='?""?(.*?)'?""? ?/?>"
+
+#End Region
+
 #Region "logging functions"
-    Dim strErrorFilePath As String
     Dim Stack As New ArrayList
+    Dim strErrorFilePath As String
     Public Sub New(FileName As String, FilePath As String)
 
         strErrorFilePath = FilePath & "\" & FileName & ".log"
@@ -19,7 +24,7 @@ Public Class LogStream
         Try
             Dim contents() As String = IO.File.ReadAllLines(filePath)
         Catch ex As IO.IOException
-            Return (ex.Message.StartsWith("The process cannot access the file") AndAlso _
+            Return (ex.Message.StartsWith("The process cannot access the file") AndAlso
                     ex.Message.EndsWith("because it is being used by another process."))
         Catch ex As Exception
             Return False
@@ -70,7 +75,7 @@ Public Class LogStream
 
             ioFile.Close()
         Catch ex As IO.IOException
-            If (ex.Message.StartsWith("The process cannot access the file") AndAlso _
+            If (ex.Message.StartsWith("The process cannot access the file") AndAlso
                     ex.Message.EndsWith("because it is being used by another process.")) Then
                 Stack.Add(Message)
             End If
@@ -81,8 +86,6 @@ Public Class LogStream
             End If
         End Try
     End Sub
-
-
 
 #End Region
 End Class

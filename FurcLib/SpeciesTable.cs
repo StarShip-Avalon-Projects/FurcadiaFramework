@@ -6,7 +6,13 @@ namespace Furcadia
 {
     internal class SpeciesTable
     {
+        #region Private Fields
+
         private static DataTable dt = null;
+
+        #endregion Private Fields
+
+        #region Public Methods
 
         public static void PrimeTable()
         {
@@ -154,6 +160,8 @@ namespace Furcadia
 
             return result;
         }
+
+        #endregion Public Methods
 
         ////convert Species to name
         //public static string SpecName(int species, int special)

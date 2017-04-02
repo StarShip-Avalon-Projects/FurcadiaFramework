@@ -6,6 +6,20 @@ namespace Furcadia.Drawing
 {
     public static class Helper
     {
+        #region Public Methods
+
+        /// <summary>
+        /// Converts a Char to Desc Tag
+        /// </summary>
+        /// <param name="c">
+        /// </param>
+        /// <returns>
+        /// </returns>
+        public static int CharToDescTag(char c)
+        {
+            return (int)(c - 33);
+        }
+
         public static Bitmap[] ToBitmapArray(FurcadiaShapes toConvert)
         {
             List<Bitmap> bitmaps = new List<Bitmap>();
@@ -22,14 +36,6 @@ namespace Furcadia.Drawing
             return bitmaps.ToArray();
         }
 
-        /// <summary>
-        /// Converts a Char to Desc Tag
-        /// </summary>
-        /// <param name="c"></param>
-        /// <returns></returns>
-        public static int CharToDescTag(char c)
-        {
-            return (int)(c - 33);
-        }
+        #endregion Public Methods
     }
 }

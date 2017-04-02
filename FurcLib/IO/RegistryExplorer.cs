@@ -8,6 +8,8 @@ namespace Furcadia.IO
 {
     internal class RegistryExplorerForWine
     {
+        #region Internal Methods
+
         internal static string FormatWineHDDir(string path)
         {
             string _s = path.Substring(0, 1);
@@ -48,6 +50,8 @@ namespace Furcadia.IO
             }
             return path;
         }
+
+        #endregion Internal Methods
 
         #region UGLY Wine Registry Code
 

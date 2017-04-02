@@ -2,8 +2,14 @@
 {
     public class MapTile
     {
+        #region Public Fields
+
         public int floorNumber, objectNumber, wallNENumber, wallNWNumber, regionNumber, effectNumber;
         public int x, y;
+
+        #endregion Public Fields
+
+        #region Public Constructors
 
         public MapTile(int x, int y)
         {
@@ -31,5 +37,7 @@
                 this.wallNWNumber = map.getWallAt(x - 1, y);
             }
         }
+
+        #endregion Public Constructors
     }
 }

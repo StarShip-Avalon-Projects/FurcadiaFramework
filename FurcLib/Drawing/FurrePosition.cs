@@ -2,8 +2,7 @@
 {
     public class FurrePosition
     {
-        public int x { get; set; }
-        public int y { get; set; }
+        #region Public Constructors
 
         public FurrePosition()
         {
@@ -21,10 +20,16 @@
             y = Position.y;
         }
 
-        public override string ToString()
-        {
-            return string.Format("({0}, {1})", x.ToString(), y.ToString());
-        }
+        #endregion Public Constructors
+
+        #region Public Properties
+
+        public int x { get; set; }
+        public int y { get; set; }
+
+        #endregion Public Properties
+
+        #region Public Methods
 
         public override bool Equals(object obj)
         {
@@ -42,5 +47,12 @@
         {
             return base.GetHashCode();
         }
+
+        public override string ToString()
+        {
+            return string.Format("({0}, {1})", x.ToString(), y.ToString());
+        }
+
+        #endregion Public Methods
     }
 }

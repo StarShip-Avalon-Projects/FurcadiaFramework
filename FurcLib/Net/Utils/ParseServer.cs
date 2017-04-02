@@ -23,8 +23,23 @@
         /// Spawns a new Furre in the dream
         /// </summary>
         /// <remarks>
+        /// Prefix "&gt;"
+        /// <para>
+        /// </para>
         /// </remarks>
         SpawnAvatar,
+
+        /// <summary>
+        /// </summary>
+        RemoveAvatar,
+
+        /// <summary>
+        /// </summary>
+        AnimatedMoveAvatar,
+
+        /// <summary>
+        /// </summary>
+        MoveAvatar,
 
         /// <summary>
         /// Display formated Text.
@@ -35,7 +50,7 @@
         /// <remarks>
         /// Prefix "("
         /// <para>
-        /// This instruction displays the specific text in the user's chatbox. The data may be
+        /// This instruction displays the specific text in the user's chat-box. The data may be
         /// formatted with HTML-equivalent and Furcadia-specific tags, as well as emoticons (stuff
         /// like "#SA").
         /// </para>
@@ -69,7 +84,6 @@
 
         #region Public Constructors
 
-        //protected FURRE FurcadiaBot;
         /// <summary>
         /// </summary>
         /// <param name="Dream">

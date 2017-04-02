@@ -4,36 +4,36 @@ Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
-' General Information about an assembly is controlled through the following 
+' General Information about an assembly is controlled through the following
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("SimpleProxy2")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("SimpleProxy2")> 
-<Assembly: AssemblyCopyright("Copyright ©  2011")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("SimpleProxy2")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("SimpleProxy2")>
+<Assembly: AssemblyCopyright("Copyright ©  2011")>
+<Assembly: AssemblyTrademark("")>
 
-<Assembly: ComVisible(False)> 
+<Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("13477681-8d61-4358-a42e-f47275647cfc")> 
+<Assembly: Guid("13477681-8d61-4358-a42e-f47275647cfc")>
 
 ' Version information for an assembly consists of the following four values:
 '
 '      Major Version
-'      Minor Version 
+'      Minor Version
 '      Build Number
 '      Revision
 '
-' You can specify all the values or you can default the Build and Revision Numbers 
+' You can specify all the values or you can default the Build and Revision Numbers
 ' by using the '*' as shown below:
-' <Assembly: AssemblyVersion("1.0.*")> 
+' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("2.3.0.0")> 
-<Assembly: AssemblyFileVersion("2.3.0.0")> 
+<Assembly: AssemblyVersion("2.3.0.0")>
+<Assembly: AssemblyFileVersion("2.3.0.0")>
 
-<Assembly: NeutralResourcesLanguageAttribute("en-US")> 
+<Assembly: NeutralResourcesLanguageAttribute("en-US")>

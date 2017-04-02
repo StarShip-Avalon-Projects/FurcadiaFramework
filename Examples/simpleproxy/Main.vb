@@ -52,9 +52,16 @@ Public Class Main
     Delegate Sub UpDateBtn_StandCallback(ByRef [furre] As FURRE)
     Delegate Sub UpDateDreamListCaller(ByRef [dummy] As String) 'ByVal [dummy] As String
 #End Region
+
+#Region "Public Fields"
+
     Public LogStream As LogStream
     Public NewBot As Boolean
     Public writer As TextBoxWriter = Nothing
+
+#End Region
+
+#Region "Protected Destructors"
 
     Protected Overrides Sub Finalize()
         Try
@@ -66,6 +73,10 @@ Public Class Main
         MyBase.Finalize()
     End Sub
 
+#End Region
+
+#Region "Public Enums"
+
     Public Enum fColorEnum
         DefaultColor
         Say
@@ -74,6 +85,10 @@ Public Class Main
         Emote
         Emit
     End Enum
+
+#End Region
+
+#Region "Public Methods"
 
     Public Function fColor(Optional ByVal MyColor As fColorEnum = fColorEnum.DefaultColor) As System.Drawing.Color
         Try
@@ -98,6 +113,8 @@ Public Class Main
         End Try
         ' Return
     End Function
+
+#End Region
 
 #Region "RegEx filters"
     Private Const ChannelNameFilter As String = "<channel name='([^']*)' />"
@@ -666,6 +683,10 @@ Public Class Main
             Dim logError As New ErrorLogging(eX, Me)
         End Try
     End Sub
+#End Region
+
+#Region "Private Methods"
+
 #End Region
 
     Public Sub FormatRichTectBox(ByRef TB As SimpleProxy2.Controls.RichTextBoxEx,

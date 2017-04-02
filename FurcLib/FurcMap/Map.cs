@@ -5,156 +5,45 @@ using System.Text;
 
 namespace Furcadia.FurcMap
 {
+    public static class MapRating
+    {
+        #region Public Fields
+
+        public const String Adult = "Adult 18+";
+        public const String AdultOnly = "Adults Only";
+        public const String AOClean = "AOClean";
+        public const String Everyone = "Everyone";
+        public const String Mature = "Mature 16+";
+        public const String Teen = "Teen+";
+
+        #endregion Public Fields
+    }
+
     public class Map
     {
+        #region Private Fields
+
+        private bool allowjs, allowlf, allowfurl, nowho, forcesittable, allowshouts, allowlarge, notab, nonovelty, swearfilter, parentalcontrols, encoded;
         private List<String> headerLines = new List<String>();
         private Dictionary<String, String> mapData = new Dictionary<String, String>();
 
+        private byte[] mapMatrix, floors, objects, walls, regions, effects;
         private String name, patchs, rating;
         private int width, height, revision, patcht;
-        private bool allowjs, allowlf, allowfurl, nowho, forcesittable, allowshouts, allowlarge, notab, nonovelty, swearfilter, parentalcontrols, encoded;
 
-        private byte[] mapMatrix, floors, objects, walls, regions, effects;
+        #endregion Private Fields
 
-        internal int bytesLayerCount
-        {
-            get
-            {
-                return ((width * 2) * height);
-            }
-        }
-
-        #region Public Variables
-
-        /// <summary>
-        /// The actual width of the map (READ-ONLY)
-        /// </summary>
-        public int Width
-        {
-            get { return this.width * 2; }
-        }
-
-        /// <summary>
-        /// The actual height of the map (READ-ONLY)
-        /// </summary>
-        public int Height
-        {
-            get { return this.height; }
-        }
-
-        public int UsePatch
-        {
-            get { return this.patcht; }
-            set { this.patcht = value; }
-        }
-
-        public bool AllowJoinSummon
-        {
-            get { return this.allowjs; }
-            set { this.allowjs = value; }
-        }
-
-        public bool AllowLeadFollow
-        {
-            get { return this.allowlf; }
-            set { this.allowlf = value; }
-        }
-
-        public bool AllowDreamURL
-        {
-            get { return this.allowfurl; }
-            set { this.allowfurl = value; }
-        }
-
-        public bool UseSwearFilter
-        {
-            get { return this.swearfilter; }
-            set { this.swearfilter = value; }
-        }
-
-        public bool PreventPlayerListing
-        {
-            get { return this.nowho; }
-            set { this.nowho = value; }
-        }
-
-        public bool ForceSitting
-        {
-            get { return this.forcesittable; }
-            set { this.forcesittable = value; }
-        }
-
-        public bool AllowShouting
-        {
-            get { return this.allowshouts; }
-            set { this.allowshouts = value; }
-        }
-
-        public bool AllowLargeDreamSize
-        {
-            get { return this.allowlarge; }
-            set { this.allowlarge = value; }
-        }
-
-        public bool PreventTabListing
-        {
-            get { return this.notab; }
-            set { this.notab = value; }
-        }
-
-        public bool PreventSeasonalAvatars
-        {
-            get { return this.nonovelty; }
-            set { this.nonovelty = value; }
-        }
-
-        public bool EnforceParentalControls
-        {
-            get { return this.parentalcontrols; }
-            set { this.parentalcontrols = value; }
-        }
-
-        public bool EncodeDream
-        {
-            get { return this.encoded; }
-            set { this.encoded = value; }
-        }
-
-        public String Name
-        {
-            get { return this.name; }
-            set { this.name = value; }
-        }
-
-        public String PatchArchive
-        {
-            get { return this.patchs; }
-            set { this.patchs = value; }
-        }
-
-        public int Revision
-        {
-            get { return this.revision; }
-            set { this.revision = value; }
-        }
-
-        public String Rating
-        {
-            get { return this.rating; }
-            set { this.rating = value; }
-        }
-
-        #endregion Public Variables
-
-        internal Map()
-        {
-        }
+        #region Public Constructors
 
         /// <summary>
         /// Creates a new empty map with the specified width and height
         /// </summary>
-        /// <param name="width">The width of the map</param>
-        /// <param name="height">The height of the map</param>
+        /// <param name="width">
+        /// The width of the map
+        /// </param>
+        /// <param name="height">
+        /// The height of the map
+        /// </param>
         public Map(int width, int height)
         {
             this.width = width / 2;
@@ -186,107 +75,164 @@ namespace Furcadia.FurcMap
             this.mapMatrix = mapMatrix;
         }
 
-        private void SetMapHeaders(Dictionary<String, String> Values)
+        #endregion Public Constructors
+
+        #region Internal Constructors
+
+        internal Map()
         {
-            if (Values.ContainsKey("height"))
-                this.width = int.Parse(Values["height"]);
-
-            if (Values.ContainsKey("width"))
-                this.width = int.Parse(Values["width"]);
-
-            if (Values.ContainsKey("revision"))
-                this.revision = int.Parse(Values["revision"]);
-
-            if (Values.ContainsKey("patcht"))
-                this.patcht = int.Parse(Values["patcht"]);
-
-            if (Values.ContainsKey("name"))
-                this.name = Values["name"];
-
-            if (Values.ContainsKey("patchs"))
-                this.patchs = Values["patchs"];
-
-            if (Values.ContainsKey("rating"))
-                this.rating = Values["rating"];
-
-            if (Values.ContainsKey("allowjs"))
-                this.allowjs = Values["allowjs"] == "1";
-
-            if (Values.ContainsKey("allowlf"))
-                this.allowlf = Values["allowlf"] == "1";
-
-            if (Values.ContainsKey("allowfurl"))
-                this.allowfurl = Values["allowfurl"] == "1";
-
-            if (Values.ContainsKey("swearfilter"))
-                this.swearfilter = Values["swearfilter"] == "1";
-
-            if (Values.ContainsKey("nowho"))
-                this.nowho = Values["nowho"] == "1";
-
-            if (Values.ContainsKey("forcesittable"))
-                this.forcesittable = Values["forcesittable"] == "1";
-
-            if (Values.ContainsKey("allowlarge"))
-                this.allowlarge = Values["allowlarge"] == "1";
-
-            if (Values.ContainsKey("allowshouts"))
-                this.allowshouts = Values["allowshouts"] == "1";
-
-            if (Values.ContainsKey("notab"))
-                this.notab = Values["notab"] == "1";
-
-            if (Values.ContainsKey("nonovelty"))
-                this.nonovelty = Values["nonovelty"] == "1";
-
-            if (Values.ContainsKey("parentalcontrols"))
-                this.parentalcontrols = Values["parentalcontrols"] == "1";
-
-            if (Values.ContainsKey("encoded"))
-                this.encoded = Values["encoded"] == "1";
         }
 
-        private bool ParseMatrix(byte[] matrix)
+        #endregion Internal Constructors
+
+        #region Internal Properties
+
+        internal int bytesLayerCount
         {
-            if (matrix.Length != this.bytesLayerCount * 5)
+            get
             {
-                Console.WriteLine("Something is wrong here...");
-                return false;
+                return ((width * 2) * height);
             }
-            this.mapMatrix = matrix;
-
-            for (int i = 0; i < this.bytesLayerCount; i++)
-                floors[i] = matrix[i];
-
-            for (int i = 0; i < this.bytesLayerCount; i++)
-            {
-                objects[i] = matrix[i + this.bytesLayerCount];
-            }
-
-            for (int i = 0; i < this.bytesLayerCount; i++)
-            {
-                walls[i] = matrix[i + (this.bytesLayerCount * 2)];
-            }
-
-            for (int i = 0; i < this.bytesLayerCount; i++)
-            {
-                regions[i] = matrix[i + (this.bytesLayerCount * 3)];
-            }
-
-            for (int i = 0; i < this.bytesLayerCount; i++)
-            {
-                effects[i] = matrix[i + (this.bytesLayerCount * 4)];
-            }
-
-            return true;
         }
+
+        #endregion Internal Properties
+
+        #region Public Variables
+
+        public bool AllowDreamURL
+        {
+            get { return this.allowfurl; }
+            set { this.allowfurl = value; }
+        }
+
+        public bool AllowJoinSummon
+        {
+            get { return this.allowjs; }
+            set { this.allowjs = value; }
+        }
+
+        public bool AllowLargeDreamSize
+        {
+            get { return this.allowlarge; }
+            set { this.allowlarge = value; }
+        }
+
+        public bool AllowLeadFollow
+        {
+            get { return this.allowlf; }
+            set { this.allowlf = value; }
+        }
+
+        public bool AllowShouting
+        {
+            get { return this.allowshouts; }
+            set { this.allowshouts = value; }
+        }
+
+        public bool EncodeDream
+        {
+            get { return this.encoded; }
+            set { this.encoded = value; }
+        }
+
+        public bool EnforceParentalControls
+        {
+            get { return this.parentalcontrols; }
+            set { this.parentalcontrols = value; }
+        }
+
+        public bool ForceSitting
+        {
+            get { return this.forcesittable; }
+            set { this.forcesittable = value; }
+        }
+
+        /// <summary>
+        /// The actual height of the map (READ-ONLY)
+        /// </summary>
+        public int Height
+        {
+            get { return this.height; }
+        }
+
+        public String Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
+        }
+
+        public String PatchArchive
+        {
+            get { return this.patchs; }
+            set { this.patchs = value; }
+        }
+
+        public bool PreventPlayerListing
+        {
+            get { return this.nowho; }
+            set { this.nowho = value; }
+        }
+
+        public bool PreventSeasonalAvatars
+        {
+            get { return this.nonovelty; }
+            set { this.nonovelty = value; }
+        }
+
+        public bool PreventTabListing
+        {
+            get { return this.notab; }
+            set { this.notab = value; }
+        }
+
+        public String Rating
+        {
+            get { return this.rating; }
+            set { this.rating = value; }
+        }
+
+        public int Revision
+        {
+            get { return this.revision; }
+            set { this.revision = value; }
+        }
+
+        public int UsePatch
+        {
+            get { return this.patcht; }
+            set { this.patcht = value; }
+        }
+
+        public bool UseSwearFilter
+        {
+            get { return this.swearfilter; }
+            set { this.swearfilter = value; }
+        }
+
+        /// <summary>
+        /// The actual width of the map (READ-ONLY)
+        /// </summary>
+        public int Width
+        {
+            get { return this.width * 2; }
+        }
+
+        #endregion Public Variables
+
+        #region Public Methods
 
         /// <summary>
         /// Loads a map from a file
         /// </summary>
-        /// <param name="filename">The file to load the map from</param>
-        /// <exception cref="InvalidDataException">Thrown if the width and height of the map is not known (corrupt file)</exception>
-        /// <returns>The map</returns>
+        /// <param name="filename">
+        /// The file to load the map from
+        /// </param>
+        /// <exception cref="InvalidDataException">
+        /// Thrown if the width and height of the map is not known (corrupt file)
+        /// </exception>
+        /// <returns>
+        /// The map
+        /// </returns>
         public static Map LoadFrom(String filename)
         {
             Map m = new Map();
@@ -354,121 +300,16 @@ namespace Furcadia.FurcMap
             return m;
         }
 
-        private int getPosFrom(int x, int y)
-        {
-            return ((this.height * (x / 2) + y) * 2);
-        }
-
-        /// <summary>
-        /// Get the floor number from a tile
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns>The floor number</returns>
-        public int getFloorAt(int x, int y)
-        {
-            int pos = getPosFrom(x, y);
-
-            return (int)floors[pos];
-        }
-
-        /// <summary>
-        /// Set the floor number at a tile specified by x and y
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <param name="floorNumber"></param>
-        public void setFloorAt(int x, int y, int floorNumber)
-        {
-            int pos = getPosFrom(x, y);
-
-            floors[pos] = (byte)floorNumber;
-        }
-
-        /// <summary>
-        /// Get the object number from a tile
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns>The object number</returns>
-        public int getObjectAt(int x, int y)
-        {
-            int pos = getPosFrom(x, y);
-
-            return (int)objects[pos];
-        }
-
-        /// <summary>
-        /// Set the object number at a tile specified by x & y
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <param name="floorNumber"></param>
-        public void setObjectAt(int x, int y, int objectNumber)
-        {
-            int pos = getPosFrom(x, y);
-
-            objects[pos] = (byte)objectNumber;
-        }
-
-        /// <summary>
-        /// Get the wall number from a tile
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns>The wall number</returns>
-        public int getWallAt(int x, int y)
-        {
-            int pos = (this.height * x + y);
-
-            return (int)walls[pos];
-        }
-
-        /// <summary>
-        /// Set the wall number at a tile specified by x & y
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <param name="floorNumber"></param>
-        public void setWallAt(int x, int y, int wallNumber)
-        {
-            int pos = (this.height * x + y);
-
-            walls[pos] = (byte)wallNumber;
-        }
-
-        /// <summary>
-        /// Get the region number from a tile
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns>The region number</returns>
-        public int getRegionAt(int x, int y)
-        {
-            int pos = getPosFrom(x, y);
-
-            return (int)regions[pos];
-        }
-
-        /// <summary>
-        /// Set the region number at a tile specified by x & y
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <param name="floorNumber"></param>
-        public void setRegionAt(int x, int y, int regionNumber)
-        {
-            int pos = getPosFrom(x, y);
-
-            regions[pos] = (byte)regionNumber;
-        }
-
         /// <summary>
         /// Get the effect number from a tile
         /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns>The effect number</returns>
+        /// <param name="x">
+        /// </param>
+        /// <param name="y">
+        /// </param>
+        /// <returns>
+        /// The effect number
+        /// </returns>
         public int getEffectAt(int x, int y)
         {
             int pos = getPosFrom(x, y);
@@ -477,46 +318,99 @@ namespace Furcadia.FurcMap
         }
 
         /// <summary>
-        /// Set the effect number at a tile specified by x & y
+        /// Get the floor number from a tile
         /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <param name="floorNumber"></param>
-        public void setEffectAt(int x, int y, int effectNumber)
+        /// <param name="x">
+        /// </param>
+        /// <param name="y">
+        /// </param>
+        /// <returns>
+        /// The floor number
+        /// </returns>
+        public int getFloorAt(int x, int y)
         {
             int pos = getPosFrom(x, y);
 
-            effects[pos] = (byte)effectNumber;
+            return (int)floors[pos];
         }
 
-        /// <summary>
-        /// Get a MapPosition object from the position specified by x & y
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns></returns>
+        /// <summary> Get a MapPosition object from the position specified by x & y </summary> <param
+        /// name="x"></param> <param name="y"></param> <returns></returns>
         public MapPosition getMapPos(int x, int y)
         {
             return new MapPosition(x, y, this);
         }
 
-        /// <summary>
-        /// Get a MapTile object from the position specified by x & y
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns></returns>
+        /// <summary> Get a MapTile object from the position specified by x & y </summary> <param
+        /// name="x"></param> <param name="y"></param> <returns></returns>
         public MapTile getMapTile(int x, int y)
         {
             return new MapTile(x, y, this);
         }
 
         /// <summary>
+        /// Get the object number from a tile
+        /// </summary>
+        /// <param name="x">
+        /// </param>
+        /// <param name="y">
+        /// </param>
+        /// <returns>
+        /// The object number
+        /// </returns>
+        public int getObjectAt(int x, int y)
+        {
+            int pos = getPosFrom(x, y);
+
+            return (int)objects[pos];
+        }
+
+        /// <summary>
+        /// Get the region number from a tile
+        /// </summary>
+        /// <param name="x">
+        /// </param>
+        /// <param name="y">
+        /// </param>
+        /// <returns>
+        /// The region number
+        /// </returns>
+        public int getRegionAt(int x, int y)
+        {
+            int pos = getPosFrom(x, y);
+
+            return (int)regions[pos];
+        }
+
+        /// <summary>
+        /// Get the wall number from a tile
+        /// </summary>
+        /// <param name="x">
+        /// </param>
+        /// <param name="y">
+        /// </param>
+        /// <returns>
+        /// The wall number
+        /// </returns>
+        public int getWallAt(int x, int y)
+        {
+            int pos = (this.height * x + y);
+
+            return (int)walls[pos];
+        }
+
+        /// <summary>
         /// Save the map to a file
         /// </summary>
-        /// <param name="filename">The filename to save to</param>
-        /// <param name="overwrite">If a file with that name already exist, should we overwrite it?</param>
-        /// <returns>True if the save was a success, False if not</returns>
+        /// <param name="filename">
+        /// The filename to save to
+        /// </param>
+        /// <param name="overwrite">
+        /// If a file with that name already exist, should we overwrite it?
+        /// </param>
+        /// <returns>
+        /// True if the save was a success, False if not
+        /// </returns>
         public bool Save(String filename, bool overwrite = true)
         {
             if (File.Exists(filename) && !overwrite)
@@ -561,15 +455,163 @@ namespace Furcadia.FurcMap
 
             return true;
         }
-    }
 
-    public static class MapRating
-    {
-        public const String Everyone = "Everyone";
-        public const String Teen = "Teen+";
-        public const String Mature = "Mature 16+";
-        public const String Adult = "Adult 18+";
-        public const String AdultOnly = "Adults Only";
-        public const String AOClean = "AOClean";
+        /// <summary> Set the effect number at a tile specified by x & y </summary> <param
+        /// name="x"></param> <param name="y"></param> <param name="floorNumber"></param>
+        public void setEffectAt(int x, int y, int effectNumber)
+        {
+            int pos = getPosFrom(x, y);
+
+            effects[pos] = (byte)effectNumber;
+        }
+
+        /// <summary>
+        /// Set the floor number at a tile specified by x and y
+        /// </summary>
+        /// <param name="x">
+        /// </param>
+        /// <param name="y">
+        /// </param>
+        /// <param name="floorNumber">
+        /// </param>
+        public void setFloorAt(int x, int y, int floorNumber)
+        {
+            int pos = getPosFrom(x, y);
+
+            floors[pos] = (byte)floorNumber;
+        }
+
+        /// <summary> Set the object number at a tile specified by x & y </summary> <param
+        /// name="x"></param> <param name="y"></param> <param name="floorNumber"></param>
+        public void setObjectAt(int x, int y, int objectNumber)
+        {
+            int pos = getPosFrom(x, y);
+
+            objects[pos] = (byte)objectNumber;
+        }
+
+        /// <summary> Set the region number at a tile specified by x & y </summary> <param
+        /// name="x"></param> <param name="y"></param> <param name="floorNumber"></param>
+        public void setRegionAt(int x, int y, int regionNumber)
+        {
+            int pos = getPosFrom(x, y);
+
+            regions[pos] = (byte)regionNumber;
+        }
+
+        /// <summary> Set the wall number at a tile specified by x & y </summary> <param
+        /// name="x"></param> <param name="y"></param> <param name="floorNumber"></param>
+        public void setWallAt(int x, int y, int wallNumber)
+        {
+            int pos = (this.height * x + y);
+
+            walls[pos] = (byte)wallNumber;
+        }
+
+        #endregion Public Methods
+
+        #region Private Methods
+
+        private int getPosFrom(int x, int y)
+        {
+            return ((this.height * (x / 2) + y) * 2);
+        }
+
+        private bool ParseMatrix(byte[] matrix)
+        {
+            if (matrix.Length != this.bytesLayerCount * 5)
+            {
+                Console.WriteLine("Something is wrong here...");
+                return false;
+            }
+            this.mapMatrix = matrix;
+
+            for (int i = 0; i < this.bytesLayerCount; i++)
+                floors[i] = matrix[i];
+
+            for (int i = 0; i < this.bytesLayerCount; i++)
+            {
+                objects[i] = matrix[i + this.bytesLayerCount];
+            }
+
+            for (int i = 0; i < this.bytesLayerCount; i++)
+            {
+                walls[i] = matrix[i + (this.bytesLayerCount * 2)];
+            }
+
+            for (int i = 0; i < this.bytesLayerCount; i++)
+            {
+                regions[i] = matrix[i + (this.bytesLayerCount * 3)];
+            }
+
+            for (int i = 0; i < this.bytesLayerCount; i++)
+            {
+                effects[i] = matrix[i + (this.bytesLayerCount * 4)];
+            }
+
+            return true;
+        }
+
+        private void SetMapHeaders(Dictionary<String, String> Values)
+        {
+            if (Values.ContainsKey("height"))
+                this.width = int.Parse(Values["height"]);
+
+            if (Values.ContainsKey("width"))
+                this.width = int.Parse(Values["width"]);
+
+            if (Values.ContainsKey("revision"))
+                this.revision = int.Parse(Values["revision"]);
+
+            if (Values.ContainsKey("patcht"))
+                this.patcht = int.Parse(Values["patcht"]);
+
+            if (Values.ContainsKey("name"))
+                this.name = Values["name"];
+
+            if (Values.ContainsKey("patchs"))
+                this.patchs = Values["patchs"];
+
+            if (Values.ContainsKey("rating"))
+                this.rating = Values["rating"];
+
+            if (Values.ContainsKey("allowjs"))
+                this.allowjs = Values["allowjs"] == "1";
+
+            if (Values.ContainsKey("allowlf"))
+                this.allowlf = Values["allowlf"] == "1";
+
+            if (Values.ContainsKey("allowfurl"))
+                this.allowfurl = Values["allowfurl"] == "1";
+
+            if (Values.ContainsKey("swearfilter"))
+                this.swearfilter = Values["swearfilter"] == "1";
+
+            if (Values.ContainsKey("nowho"))
+                this.nowho = Values["nowho"] == "1";
+
+            if (Values.ContainsKey("forcesittable"))
+                this.forcesittable = Values["forcesittable"] == "1";
+
+            if (Values.ContainsKey("allowlarge"))
+                this.allowlarge = Values["allowlarge"] == "1";
+
+            if (Values.ContainsKey("allowshouts"))
+                this.allowshouts = Values["allowshouts"] == "1";
+
+            if (Values.ContainsKey("notab"))
+                this.notab = Values["notab"] == "1";
+
+            if (Values.ContainsKey("nonovelty"))
+                this.nonovelty = Values["nonovelty"] == "1";
+
+            if (Values.ContainsKey("parentalcontrols"))
+                this.parentalcontrols = Values["parentalcontrols"] == "1";
+
+            if (Values.ContainsKey("encoded"))
+                this.encoded = Values["encoded"] == "1";
+        }
+
+        #endregion Private Methods
     }
 }

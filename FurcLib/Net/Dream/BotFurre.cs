@@ -7,10 +7,16 @@ namespace Furcadia.Net
     /// </summary>
     public class BotFurre
     {
+        #region Private Fields
+
         private TimeSpan _AFK;
         private string _ColorType, _Color, _Desc, _Name, _Owner, _Msg, _Password, _Script;
         private uint _ID, _Shape, _ITEM, _Logins, _Flag;
         private int _X, _Y;
+
+        #endregion Private Fields
+
+        #region Public Constructors
 
         /// <summary>
         /// </summary>
@@ -30,6 +36,10 @@ namespace Furcadia.Net
             _Logins = 0;
             _ColorType = string.Empty;
         }
+
+        #endregion Public Constructors
+
+        #region Public Properties
 
         public TimeSpan AFK
         {
@@ -126,5 +136,7 @@ namespace Furcadia.Net
             get { return _Y; }
             set { _Y = value; }
         }
+
+        #endregion Public Properties
     }
 }

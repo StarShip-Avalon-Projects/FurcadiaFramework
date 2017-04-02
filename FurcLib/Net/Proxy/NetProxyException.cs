@@ -10,31 +10,59 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Furcadia.Net
+namespace Furcadia.Net.Proxy
 {
     /// <summary>
-    /// Desctiption of NetProxyException.
+    /// </summary>
+    public delegate void ServerDisConnectedHandler();
+
+    /// <summary>
+    /// Description of NetProxyException.
     /// </summary>
     [Serializable]
     public class NetProxyException : Exception, ISerializable
     {
+        #region Public Constructors
+
+        /// <summary>
+        /// </summary>
         public NetProxyException()
         {
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="message">
+        /// </param>
         public NetProxyException(string message) : base(message)
         {
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="message">
+        /// </param>
+        /// <param name="innerException">
+        /// </param>
         public NetProxyException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
-        // This constructor is needed for serialization.
+        #endregion Public Constructors
+
+        #region Protected Constructors
+
+        /// <summary>
+        /// This constructor is needed for serialization.
+        /// </summary>
+        /// <param name="info">
+        /// </param>
+        /// <param name="context">
+        /// </param>
         protected NetProxyException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
-    }
 
-    public delegate void ServerDisConnectedHandler();
+        #endregion Protected Constructors
+    }
 }

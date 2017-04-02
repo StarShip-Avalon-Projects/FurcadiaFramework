@@ -139,7 +139,7 @@ namespace Furcadia.Text
             // Conversion
             for (int i = b95str.Length - 1; i >= 0; i--)
             {
-                num += (uint)(((int)b95str[i] - CHAR_OFFSET) * mod);
+                num += (uint)((b95str[i] - CHAR_OFFSET) * mod);
                 mod *= 95;
             }
 
@@ -167,9 +167,9 @@ namespace Furcadia.Text
             if (nDigits > 0)
             {
                 if (b95str.Length < nDigits)
-                    return b95str.Insert(0, new String((char)CHAR_OFFSET, nDigits - b95str.Length)).ToString();
+                    return b95str.Insert(0, new string((char)CHAR_OFFSET, nDigits - b95str.Length)).ToString();
                 if (b95str.Length > nDigits)
-                    return new String((char)(CHAR_OFFSET + BASE - 1), nDigits);
+                    return new string((char)(CHAR_OFFSET + BASE - 1), nDigits);
             }
 
             return b95str.ToString();

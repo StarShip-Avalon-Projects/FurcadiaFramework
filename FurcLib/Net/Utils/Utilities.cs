@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using System.Net.NetworkInformation;
 
 namespace Furcadia.Net.Utils
 {
@@ -15,6 +16,39 @@ namespace Furcadia.Net.Utils
         private const int EncoderPage = 1252;
 
         #endregion Private Fields
+
+        #region Public Methods
+
+        /// <summary>
+        /// Checks TCP port and scans for an available TCP port on the host system
+        /// </summary>
+        /// <param name="port">
+        /// ref TCP Port
+        /// </param>
+        /// <returns>
+        /// True when a port is found available
+        /// </returns>
+        public bool PortOpen(ref int port)
+        {
+            // Evaluate current system tcp connections. This is the same information provided by the
+            // netstat command line application, just in .Net strongly-typed object form. We will
+            // look through the list, and if our port we would like to use in our TcpClient is
+            // occupied, we will set isAvailable to false.
+            IPGlobalProperties ipGlobalProperties__1 = IPGlobalProperties.GetIPGlobalProperties();
+            TcpConnectionInformation[] tcpConnInfoArray = ipGlobalProperties__1.GetActiveTcpConnections();
+
+            foreach (TcpConnectionInformation tcpi in tcpConnInfoArray)
+            {
+                if (tcpi.LocalEndPoint.Port == port)
+                {
+                    return false;
+                }
+            }
+            return true;
+            // At this point, if isAvailable is true, we can proceed accordingly.
+        }
+
+        #endregion Public Methods
 
         #region Public Constructors
 

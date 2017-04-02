@@ -21,7 +21,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Timers;
 
-namespace Furcadia.Net
+namespace Furcadia.Net.Proxy
 {
     /// <summary>
     /// Base proxy class to connect to Furcadia game server.

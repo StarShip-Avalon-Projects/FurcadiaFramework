@@ -8,6 +8,8 @@ namespace BugProxy
     /// </summary>
     internal sealed class Program
     {
+        #region Private Methods
+
         /// <summary>
         /// Program entry point.
         /// </summary>
@@ -18,5 +20,7 @@ namespace BugProxy
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
         }
+
+        #endregion Private Methods
     }
 }

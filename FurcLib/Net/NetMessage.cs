@@ -13,12 +13,22 @@ namespace Furcadia.Net
     /// </summary>
     public class NetMessage : INetMessage
     {
+        #region Private Fields
+
         private StringBuilder _data;
+
+        #endregion Private Fields
+
+        #region Public Constructors
 
         public NetMessage()
         {
             _data = new StringBuilder();
         }
+
+        #endregion Public Constructors
+
+        #region Public Methods
 
         public string GetString()
         {
@@ -34,5 +44,7 @@ namespace Furcadia.Net
         {
             _data.Append(Encoding.GetEncoding(BaseProxy.EncoderPage).GetString(data));
         }
+
+        #endregion Public Methods
     }
 }
