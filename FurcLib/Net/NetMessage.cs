@@ -4,6 +4,7 @@
  *
 */
 
+using Furcadia.Net.Utils;
 using System.Text;
 
 namespace Furcadia.Net
@@ -42,7 +43,7 @@ namespace Furcadia.Net
 
         public void Write(byte[] data)
         {
-            _data.Append(Encoding.GetEncoding(BaseProxy.EncoderPage).GetString(data));
+            _data.Append(Encoding.GetEncoding(Utilities.GetEncoding).GetString(data));
         }
 
         #endregion Public Methods

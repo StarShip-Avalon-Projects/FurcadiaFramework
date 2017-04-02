@@ -39,10 +39,10 @@
                 colorstring = "default";
             }
 
-            _Special = Base220.ConvertFromBase220(colorstring.Substring(13, 1));
+            //_Special = Base220.ConvertFromBase220(colorstring.Substring(13, 1));
 
-            _DSSpecies = SpeciesTable.SpecNum(colorstring, _Special);
-            _Wings = SpeciesTable.WingsNum(colorstring, _Special);
+            //_DSSpecies = SpeciesTable.SpecNum(colorstring, _Special);
+            //_Wings = SpeciesTable.WingsNum(colorstring, _Special);
         }
 
         #endregion Public Constructors

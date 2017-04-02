@@ -121,6 +121,8 @@
     <Compile Include="Net\Account\AccountInfo.cs" />
     <Compile Include="Net\Account\CharacterInfo.cs" />
     <Compile Include="Net\DirectConnection\NetConnection.cs" />
+    <Compile Include="Net\NetProxy.cs" />
+    <Compile Include="Net\PounceConnection.cs" />
     <Compile Include="Net\Pounce\PounceClient.cs" />
     <Compile Include="Net\Pounce\PounceIni.cs" />
     <Compile Include="Security\SSL.cs" />

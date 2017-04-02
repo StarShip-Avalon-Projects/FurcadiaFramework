@@ -1,4 +1,5 @@
 ﻿using Furcadia.IO;
+using Furcadia.Net;
 using System;
 using System.IO;
 using System.Net.NetworkInformation;
@@ -13,7 +14,7 @@ namespace BugProxy
     {
         #region Private Fields
 
-        private BaseProxy proxy;
+        private NetProxy proxy;
 
         #endregion Private Fields
 
@@ -82,7 +83,7 @@ namespace BugProxy
                 }
             }
 
-            proxy = new BaseProxy("lightbringer.furcadia.com", 6500, port);
+            proxy = new NetProxy("lightbringer.furcadia.com", 6500, port);
             proxy.ClientData2 += onClientDataReceived;
             proxy.ServerData2 += onServerDataReceived;
 

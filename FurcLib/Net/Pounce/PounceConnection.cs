@@ -16,7 +16,7 @@ using System.Text;
 using System.Threading;
 using static Furcadia.Util;
 
-namespace Furcadia.Net
+namespace Furcadia.Net.Pounce
 {
     /// <summary>
     /// Base class for handling the Pounce Server Connections

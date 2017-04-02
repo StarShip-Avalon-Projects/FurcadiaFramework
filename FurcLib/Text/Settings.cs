@@ -6,7 +6,6 @@
 */
 
 using Furcadia.IO;
-using Furcadia.Net;
 using System;
 using System.Collections;
 using System.IO;
@@ -17,8 +16,39 @@ namespace Furcadia.Text
     /// <summary>
     /// A simple way to load settings whether from ini or xml.
     /// </summary>
-    public static class Settings
+    public class Settings
     {
+        #region Public Constructors
+
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        public Settings()
+        {
+            LocalPort = 6700;
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <param name="Port">
+        /// Local TCP Port
+        /// </param>
+        public Settings(int Port)
+        {
+            LocalPort = Port;
+        }
+
+        #endregion Public Constructors
+
+        #region Public Properties
+
+        /// <summary>
+        /// Local TCP Port
+        /// </summary>
+        public static int LocalPort { get; set; }
+
+        #endregion Public Properties
+
         #region Private Fields
 
         /// <summary>
@@ -44,7 +74,7 @@ namespace Furcadia.Text
         /// <summary>
         /// Our Proxy/Firewall Values
         /// </summary>
-        private static string[] values = new string[9] { "Yes", "localhost", BaseProxy._lport.ToString(), "no", "0", "0", "CONNECT %host% %port%", "no", "no" };
+        private static string[] values = new string[9] { "Yes", "localhost", LocalPort.ToString(), "no", "0", "0", "CONNECT %host% %port%", "no", "no" };
 
         #endregion Private Fields
 

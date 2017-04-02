@@ -4,7 +4,7 @@
  * P.S: jk above...
 */
 
-using Furcadia.Net;
+using Furcadia.Net.Utils;
 using System;
 using System.Text;
 
@@ -206,7 +206,7 @@ namespace Furcadia.Text
         {
             // System.Text.Encoding.GetEncoding(EncoderPage).GetBytes
 
-            return System.Text.Encoding.GetEncoding(BaseProxy.EncoderPage).GetBytes(ToString(nDigits));
+            return System.Text.Encoding.GetEncoding(Utilities.GetEncoding).GetBytes(ToString(nDigits));
         }
 
         public override string ToString()
