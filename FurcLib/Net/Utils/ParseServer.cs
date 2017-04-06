@@ -85,6 +85,15 @@
         #region Public Constructors
 
         /// <summary>
+        /// Default Constructor
+        /// </summary>
+        public ParseServer()
+        {
+            FurcadiaDream = new DREAM();
+            FurcadiaPlayer = new FURRE();
+        }
+
+        /// <summary>
         /// </summary>
         /// <param name="Dream">
         /// Current Furcadia Dream

@@ -36,11 +36,45 @@ namespace Furcadia.Net.Pounce
             }
         }
 
+        /// <summary>
+        /// Pounce HTTP Status
+        /// </summary>
+        public static int Status
+        {
+            get
+            {
+                return _statusCode;
+            }
+        }
+
+        /// <summary>
+        /// Total on-line Furre count retrieved from an on-line check request
+        /// </summary>
+        public static int TotalFurresOnline
+        {
+            get { return _totalOnline; }
+        }
+
+        /// <summary>
+        /// </summary>
+        public int NumberOfDreamsOnMainMaps
+        {
+            get { return _num_dreams_mainmaps; }
+        }
+
+        /// <summary>
+        /// When a response from the server is received this property will
+        /// contain the raw HTTP string.
+        /// </summary>
+        public string RawResponse
+        { get { return _responseBody; } }
+
         #endregion Public Properties
 
         #region Public Fields
 
         /// <summary>
+        /// Stat Lists
         /// </summary>
         internal List<string> _friends = new List<string>(), _dreams = new List<string>(), _channels = new List<string>();
 
@@ -48,6 +82,12 @@ namespace Furcadia.Net.Pounce
 
         #region Private Fields
 
+        /// <summary>
+        /// Status Code returned by Pounce
+        /// </summary>
+        private static int _statusCode;
+
+        private static int _totalOnline;
         private static ManualResetEvent allDone = new ManualResetEvent(false);
 
         private int _num_dreams_mainmaps;
@@ -55,12 +95,9 @@ namespace Furcadia.Net.Pounce
         private string _responseBody;
 
         /// <summary>
+        /// Default URL "http://on.furcadia.com/q
         /// </summary>
-        private int _statusCode;
-
-        private int _totalOnline;
-
-        private string _url = string.Format("http://{0}", Utilities.PounceServerHost);
+        private string _url = string.Format("http://{0}/q", Utilities.PounceServerHost);
 
         #endregion Private Fields
 
@@ -70,12 +107,16 @@ namespace Furcadia.Net.Pounce
         /// A HTTP web request
         /// </summary>
         /// <param name="url">
-        /// Url (i.e http://on.furcadia.com) or if you have a custom on-line check server use that instead
+        /// Url (i.e http://on.furcadia.com) or if you have a custom on-line
+        /// check server use that instead
         /// </param>
         /// <param name="shortN_friends">
         /// Friends (shortname) (i.e emeraldflame instead of Emerald|Flame)
         /// </param>
-        public PounceConnection(string url, params string[] shortN_friends)
+        /// <param name="Dreams">
+        /// String Array of Dreams
+        /// </param>
+        public PounceConnection(string url, string[] shortN_friends, string[] Dreams)
         {
             if (!string.IsNullOrEmpty(url))
                 _url = url;
@@ -116,51 +157,25 @@ namespace Furcadia.Net.Pounce
         #region Public Events
 
         /// <summary>
-        /// Called when a on-line check request sends a response. First argument is a list of players on-line.
+        /// Called when a on-line check request sends a response. First
+        /// argument is a list of players on-line.
         /// </summary>
         public event PounceResponse Response;
 
         #endregion Public Events
 
-
-
-        #region Public Properties
-
-        /// <summary>
-        /// </summary>
-        public int NumberOfDreamsOnMainMaps
-        {
-            get { return _num_dreams_mainmaps; }
-        }
-
-        /// <summary>
-        /// When a response from the server is received this property will contain the raw HTTP string.
-        /// </summary>
-        public string RawResponse
-        { get { return _responseBody; } }
-
-        /// <summary>
-        /// Total on-line Furre count retrieved from an on-line check request
-        /// </summary>
-        public int TotalFurresOnline
-        {
-            get { return _totalOnline; }
-            set { _totalOnline = value; }
-        }
-
-        #endregion Public Properties
-
         #region Public Methods
 
         /// <summary>
-        /// Adds a friend to a list of friends. Throws a Exception on non alphanumeric string.
+        /// Adds a friend to a list of friends. Throws a Exception on non
+        /// alphanumeric string.
         /// </summary>
         /// <param name="name">
         /// A <see cref="System.String"/>
         /// </param>
         /// <returns>
-        /// A <see cref="System.Boolean"/>. True if successfully added friend name. False if name
-        /// already added.
+        /// A <see cref="System.Boolean"/>. True if successfully added
+        /// friend name. False if name already added.
         /// </returns>
         public bool AddFriend(string name)
         {
@@ -178,7 +193,8 @@ namespace Furcadia.Net.Pounce
         }
 
         /// <summary>
-        /// Iterates through friend's names to make sure they are valid alpha numeric (a-z0-9).
+        /// Iterates through friend's names to make sure they are valid
+        /// alpha numeric (a-z0-9).
         /// </summary>
         /// <returns>
         /// True: All friends names are fine. False otherwise.
@@ -203,16 +219,19 @@ namespace Furcadia.Net.Pounce
         /// </summary>
         public void Connect()
         {
-            if (!string.IsNullOrEmpty(_url) && Uri.IsWellFormedUriString(_url, UriKind.RelativeOrAbsolute)) this.Request(_url);
+            if (!string.IsNullOrEmpty(_url) &&
+                Uri.IsWellFormedUriString(_url, UriKind.RelativeOrAbsolute))
+                this.Request(_url);
         }
 
         /// <summary>
-        /// Connects asynchronously to the on-line check server and sends a request without affecting
-        /// the executing thread.
+        /// Connects asynchronously to the on-line check server and sends a
+        /// request without affecting the executing thread.
         /// </summary>
         public void ConnectAsync()
         {
-            if (!string.IsNullOrEmpty(_url) && Uri.IsWellFormedUriString(_url, UriKind.RelativeOrAbsolute))
+            if (!string.IsNullOrEmpty(_url) &&
+                Uri.IsWellFormedUriString(_url, UriKind.RelativeOrAbsolute))
             {
                 ThreadPool.QueueUserWorkItem(
                     new WaitCallback(delegate { this.Request(_url); }));
@@ -363,8 +382,9 @@ namespace Furcadia.Net.Pounce
 
                         if (_responseBody != string.Empty)
                         {
-                            // Not really useful for getting friend on-line status but store it anyways!
-                            this._statusCode = (int)resp.StatusCode;
+                            // Not really useful for getting friend on-line
+                            // status but store it anyways!
+                            _statusCode = (int)resp.StatusCode;
                             // Split the responseBody by '\n' into an array
                             string[] onln = this._responseBody.Split(new char[] { '\n', 'r' }, StringSplitOptions.RemoveEmptyEntries);
                             List<string> list = new List<string>(onln);
@@ -423,9 +443,11 @@ namespace Furcadia.Net.Pounce
         /// </summary>
         public void Dispose()
         {
-            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            // Do not change this code. Put cleanup code in Dispose(bool
+            // disposing) above.
             Dispose(true);
-            // TODO: uncomment the following line if the finalizer is overridden above. GC.SuppressFinalize(this);
+            // TODO: uncomment the following line if the finalizer is
+            //       overridden above. GC.SuppressFinalize(this);
         }
 
         /// <summary>
@@ -441,16 +463,18 @@ namespace Furcadia.Net.Pounce
                     // TODO: dispose managed state (managed objects).
                 }
 
-                // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
+                // TODO: free unmanaged resources (unmanaged objects) and
+                //       override a finalizer below.
                 // TODO: set large fields to null.
 
                 disposedValue = true;
             }
         }
 
-        // TODO: override a finalizer only if Dispose(bool disposing) above has code to free
-        //       unmanaged resources. ~PounceConnection() { // Do not change this code. Put cleanup
-        // code in Dispose(bool disposing) above. Dispose(false); }
+        // TODO: override a finalizer only if Dispose(bool disposing) above
+        //       has code to free unmanaged resources. ~PounceConnection() {
+        //       // Do not change this code. Put cleanup code in
+        // Dispose(bool disposing) above. Dispose(false); }
 
         #endregion IDisposable Support
     }

@@ -6,14 +6,28 @@
 
 namespace Furcadia.Net
 {
+    /// <summary>
+    /// </summary>
     public interface INetMessage
     {
         #region Public Methods
 
+        /// <summary>
+        /// </summary>
+        /// <returns>
+        /// </returns>
         string GetString();
 
+        /// <summary>
+        /// </summary>
+        /// <param name="data">
+        /// </param>
         void Write(string data);
 
+        /// <summary>
+        /// </summary>
+        /// <param name="data">
+        /// </param>
         void Write(byte[] data);
 
         #endregion Public Methods

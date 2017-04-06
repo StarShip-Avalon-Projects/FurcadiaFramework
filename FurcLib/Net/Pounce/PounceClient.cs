@@ -1,104 +1,132 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading;
+using static Furcadia.Util;
 
 namespace Furcadia.Net.Pounce
 {
     /// <summary>
-    /// Generic Pounce Client class.
+    /// Generic Class to use the Pounce server
     /// <para>
-    /// Pounce Server runs on a 30 second Cron-Job
+    /// TODO: Read default lists(Furres, Dreams, Channels) from Furcadia Online.ini
     /// </para>
     /// </summary>
     public class PounceClient : PounceConnection, IDisposable
     {
-        #region Private Fields
-
-        /// <summary>
-        /// Pounce Timer on 30 second Interval
-        /// </summary>
-        private Timer PounceTimer;
-
-        #endregion Private Fields
-
         #region Public Constructors
 
         /// <summary>
-        /// Defailt Constructor
+        /// Default Constructor
+        /// <para>
+        /// Pounce server updates on a 30 second cron-job
+        /// </para>
         /// </summary>
-        public PounceClient() : base()
+        public PounceClient() : base("http://on.furcadia.com/q/", null, null)
         {
-            PounceTimer = new Timer(PounceCallBack, null, 0, 3000);
-        }
-
-        /// <summary>
-        /// </summary>
-        /// <param name="url">
-        /// Pounce Server URL IE: on.furcadia.com
-        /// </param>
-        /// <param name="shortN_friends">
-        /// Friends List in Furcadia Short-name format
-        /// </param>
-        public PounceClient(string url, params string[] shortN_friends) : base(url, shortN_friends)
-        {
-            // Initialize Defaults
-            new PounceClient();
+            PounceTimer = new Timer(smPounceSend, this,
+                TimeSpan.FromSeconds(30), TimeSpan.FromSeconds(30));
         }
 
         #endregion Public Constructors
 
+        #region Private Fields
+
+        private Dictionary<string, PounceFurre> _furreList = new Dictionary<string, PounceFurre>();
+
+        private string _onlineList;
+
+        private System.DateTime lastaccess;
+
+        private Timer PounceTimer;
+
+        private int usingPounce = 0;
+        private int UsingPounce1;
+
+        #endregion Private Fields
+
+        #region Public Properties
+
+        private string onlinelist;
+
+        /// <summary>
+        /// </summary>
+        public List<PounceFurre> FurreList { get; private set; }
+
+        /// <summary>
+        /// File path to List of furres to check online status
+        /// </summary>
+        public string OnlineList
+        {
+            get { return onlinelist; }
+            set { onlinelist = value; }
+        }
+
+        #endregion Public Properties
+
         #region Private Methods
 
         /// <summary>
-        /// Process Our Lists to see whose on or off line
+        /// Send request to Pounce server at 30 second interval
         /// </summary>
-        /// <param name="state">
+        /// <param name="sender">
         /// </param>
-        private void PounceCallBack(object state)
+        private void smPounceSend(object sender)
         {
-            ConnectAsync();
+            if ((0 == Interlocked.Exchange(ref UsingPounce1, 1)))
+            {
+                ClearFriends();
+                foreach (PounceFurre Furre in FurreList)
+                {
+                    if (!string.IsNullOrEmpty(Furre.Name))
+                    {
+                        AddFriend(FurcadiaShortName(Furre.Name));
+                    }
+                }
+                ConnectAsync();
+                Interlocked.Exchange(ref UsingPounce1, 0);
+            }
         }
 
         #endregion Private Methods
 
-        #region IDisposable Support
-
-        private bool disposedValue = false; // To detect redundant calls
-
-        // This code added to correctly implement the disposable pattern.
-        void IDisposable.Dispose()
-        {
-            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
-            Dispose(true);
-            // TODO: uncomment the following line if the finalizer is overridden above. GC.SuppressFinalize(this);
-        }
+        #region Public Classes
 
         /// <summary>
         /// </summary>
-        /// <param name="disposing">
-        /// </param>
-        protected override void Dispose(bool disposing)
+        public class PounceFurre
         {
-            if (!disposedValue)
+            #region "Public Fields"
+
+            private bool _online;
+
+            private bool _wasOnline;
+
+            /// <summary>
+            /// Furre Name
+            /// </summary>
+            public string Name { get; set; }
+
+            /// <summary>
+            /// Furre Currently online
+            /// </summary>
+            public bool Online
             {
-                if (disposing)
-                {
-                    if (PounceTimer != null)
-                        PounceTimer.Dispose();
-                    base.Dispose(disposing);
-                }
-
-                // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-                // TODO: set large fields to null.
-
-                disposedValue = true;
+                get { return _online; }
+                set { this._online = value; }
             }
+
+            /// <summary>
+            /// Furre Previous Online State
+            /// </summary>
+            public bool WasOnline
+            {
+                get { return _wasOnline; }
+                set { this._wasOnline = value; }
+            }
+
+            #endregion "Public Fields"
         }
 
-        // TODO: override a finalizer only if Dispose(bool disposing) above has code to free
-        //       unmanaged resources. ~ProxySession() { // Do not change this code. Put cleanup code
-        //       in Dispose(bool
-        // disposing) above. Dispose(false); }
-
-        #endregion IDisposable Support
+        #endregion Public Classes
     }
 }

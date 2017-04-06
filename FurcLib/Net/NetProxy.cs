@@ -443,7 +443,9 @@ namespace Furcadia.Net
             catch (Exception e) { if (Error != null) Error(e, this, "Connect()"); else throw e; }
         }
 
-        //Implement IDisposable.
+        /// <summary>
+        /// Implement IDisposable.
+        /// </summary>
         public void Dispose()
         {
             Dispose(true);
@@ -489,13 +491,22 @@ namespace Furcadia.Net
             catch (Exception e) { if (Error != null) Error(e, this, "Kill()"); }
         }
 
-        public void SendClient(INetMessage message)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="message"></param>
+        public virtual void SendClient(INetMessage message)
         {
             SendClient(message.GetString());
         }
-
-        public void SendClient(string message)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="message"></param>
+        public virtual void SendClient(string message)
         {
+            if (!message.EndsWith("\n"))
+                message += '\n';
             try
             {
                 if (client.Client != null && client.GetStream().CanWrite == true && client.Connected == true)
@@ -504,13 +515,23 @@ namespace Furcadia.Net
             catch (Exception e) { if (Error != null) Error(e, this, "SendClient()"); }
         }
 
-        public void SendServer(INetMessage message)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="message"></param>
+        public virtual void SendServer(INetMessage message)
         {
             SendServer(message.GetString());
         }
 
-        public void SendServer(string message)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="message"></param>
+        public virtual void SendServer(string message)
         {
+            if(!message.EndsWith("\n"))
+                message += '\n';
             try
             {
                 if (server.GetStream().CanWrite)
@@ -536,6 +557,10 @@ namespace Furcadia.Net
             Process = Path.GetFileName(file);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="disposing"></param>
         protected virtual void Dispose(bool disposing)
         {
             if (disposing)
@@ -552,7 +577,10 @@ namespace Furcadia.Net
         #region Private Methods
 
         private object lck = new object();
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ar"></param>
         private void AsyncListener(IAsyncResult ar)
         {
             try
@@ -595,6 +623,10 @@ namespace Furcadia.Net
             catch (Exception e) { if (Error != null) Error(e, this, "AsyncListener()"); }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ar"></param>
         private void GetClientData(IAsyncResult ar)
         {
             lock (lck)

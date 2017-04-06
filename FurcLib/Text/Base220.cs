@@ -26,15 +26,25 @@ namespace Furcadia.Text
 
         #region Public Constructors
 
+        /// <summary>
+        /// </summary>
         public Base220() : this(0)
         {
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="n">
+        /// </param>
         public Base220(int n)
         {
             Value = n;
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="s">
+        /// </param>
         public Base220(string s)
         {
             FromString(s);
@@ -44,36 +54,64 @@ namespace Furcadia.Text
 
         #region Conversion Operators
 
+        /// <summary>
+        /// </summary>
+        /// <param name="b220n">
+        /// </param>
         public static explicit operator short(Base220 b220n)
         {
             return (short)b220n.Value;
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="n">
+        /// </param>
         public static implicit operator Base220(int n)
         {
             return new Base220(n);
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="n">
+        /// </param>
         public static implicit operator Base220(short n)
         {
             return new Base220(n);
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="s">
+        /// </param>
         public static implicit operator Base220(string s)
         {
             return new Base220(s);
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="b220n">
+        /// </param>
         public static implicit operator byte[] (Base220 b220n)
         {
             return b220n.ToByteArray();
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="b220n">
+        /// </param>
         public static implicit operator int(Base220 b220n)
         {
             return b220n.Value;
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="b220n">
+        /// </param>
         public static implicit operator string(Base220 b220n)
         {
             return b220n.ToString();
@@ -149,11 +187,25 @@ namespace Furcadia.Text
             return num;
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="num">
+        /// </param>
+        /// <returns>
+        /// </returns>
         public static string ConvertToBase220(int num)
         {
             return ConvertToBase220(num, 0);
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="num">
+        /// </param>
+        /// <param name="nDigits">
+        /// </param>
+        /// <returns>
+        /// </returns>
         public static string ConvertToBase220(int num, int nDigits)
         {
             StringBuilder b220str = new StringBuilder("");
@@ -180,6 +232,12 @@ namespace Furcadia.Text
 
         /*** Methods ***/
 
+        /// <summary>
+        /// </summary>
+        /// <param name="obj">
+        /// </param>
+        /// <returns>
+        /// </returns>
         public override bool Equals(object obj)
         {
             if (!(obj is Base220))
@@ -187,21 +245,41 @@ namespace Furcadia.Text
             return this.Value == ((Base220)obj).Value;
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="s">
+        /// </param>
+        /// <returns>
+        /// </returns>
         public int FromString(string s)
         {
             return Value = ConvertFromBase220(s);
         }
 
+        /// <summary>
+        /// </summary>
+        /// <returns>
+        /// </returns>
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
 
+        /// <summary>
+        /// </summary>
+        /// <returns>
+        /// </returns>
         public byte[] ToByteArray()
         {
             return ToByteArray(0);
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="nDigits">
+        /// </param>
+        /// <returns>
+        /// </returns>
         public byte[] ToByteArray(int nDigits)
         {
             // System.Text.Encoding.GetEncoding(EncoderPage).GetBytes
@@ -209,11 +287,21 @@ namespace Furcadia.Text
             return System.Text.Encoding.GetEncoding(Utilities.GetEncoding).GetBytes(ToString(nDigits));
         }
 
+        /// <summary>
+        /// </summary>
+        /// <returns>
+        /// </returns>
         public override string ToString()
         {
             return ConvertToBase220(Value);
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="nDigits">
+        /// </param>
+        /// <returns>
+        /// </returns>
         public string ToString(int nDigits)
         {
             return ConvertToBase220(Value, nDigits);
@@ -223,11 +311,23 @@ namespace Furcadia.Text
 
         #region Interface Implementation
 
+        /// <summary>
+        /// </summary>
+        /// <param name="other">
+        /// </param>
+        /// <returns>
+        /// </returns>
         public int CompareTo(int other)
         {
             return Value.CompareTo(other);
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="other">
+        /// </param>
+        /// <returns>
+        /// </returns>
         public bool Equals(int other)
         {
             return Value.Equals(other);

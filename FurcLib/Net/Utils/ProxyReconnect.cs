@@ -3,7 +3,10 @@ using System.Threading;
 
 namespace Furcadia.Net.Utils
 {
-    internal class ProxyReconnect : IDisposable
+    /// <summary>
+    /// Furcadia Reconnection Manager
+    /// </summary>
+    public class ProxyReconnect : IDisposable
     {
         #region Private Fields
 
