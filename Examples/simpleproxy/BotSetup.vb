@@ -5,41 +5,19 @@ Imports System.IO
 
 Public Class BotSetup
 
-    Dim pPath As String = ConfigStructs.pPath()
+#Region "Public Fields"
 
     Public BFile As New cBot
 
+#End Region
 
-    Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
-        Me.DialogResult = System.Windows.Forms.DialogResult.OK
-        BFile.BotFile = TxtBxBotIni.Text
-        Dim BotFileName As String = ""
+#Region "Private Fields"
 
-        BFile.lPort = Convert.ToInt32(TxtHPort.Text)
-        BFile.IniFile = TxtBx_CharIni.Text
+    Dim pPath As String = ConfigStructs.pPath()
 
+#End Region
 
-
-        BFile.LogOption = LogOption()
-        BFile.LogNameBase = TxtBxLogName.Text
-        BFile.LogPath = TxtBxLogPath.Text
-        BFile.log = ChckSaveToLog.Checked
-        If BFile.log And IsNothing(callbk.LogStream) Then
-            callbk.LogStream = New LogStream(callbk.setLogName(), BFile.LogPath)
-        End If
-        BFile.SaveBotSettings()
-
-        Me.Close()
-
-    End Sub
-
-
-
-    Private Sub Cancel_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel_Button.Click
-        Me.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Close()
-    End Sub
-
+#Region "Public Methods"
 
     Public Function LogOption() As Short
         Dim Opt As Short = 0
@@ -73,15 +51,15 @@ Public Class BotSetup
         End Select
     End Sub
 
+#End Region
+
+#Region "Private Methods"
 
     Private Sub BotSetup_Load(sender As Object, e As System.EventArgs) Handles Me.Load
-
- 
 
         TxtHPort.Text = BFile.lPort.ToString
         TxtBx_CharIni.Text = BFile.IniFile
         TxtBxBotIni.Text = BFile.BotFile
-
 
         ChckSaveToLog.Checked = BFile.log
         setLogOptions()
@@ -105,7 +83,6 @@ Public Class BotSetup
         End With
     End Sub
 
-
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         With IniBrowse
             ' Select Character ini file
@@ -120,9 +97,35 @@ Public Class BotSetup
         End With
     End Sub
 
+    Private Sub Cancel_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel_Button.Click
+        Me.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.Close()
+    End Sub
 
+    Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
+        Me.DialogResult = System.Windows.Forms.DialogResult.OK
+        BFile.BotFile = TxtBxBotIni.Text
+        Dim BotFileName As String = ""
+
+        BFile.lPort = Convert.ToInt32(TxtHPort.Text)
+        BFile.IniFile = TxtBx_CharIni.Text
+
+        BFile.LogOption = LogOption()
+        BFile.LogNameBase = TxtBxLogName.Text
+        BFile.LogPath = TxtBxLogPath.Text
+        BFile.log = ChckSaveToLog.Checked
+        If BFile.log And IsNothing(callbk.LogStream) Then
+            callbk.LogStream = New LogStream(callbk.setLogName(), BFile.LogPath)
+        End If
+        BFile.SaveBotSettings()
+
+        Me.Close()
+
+    End Sub
     Private Sub RadioNewFile_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RadioNewFile.CheckedChanged
         ChkBxTimeStampLog.Enabled = RadioNewFile.Checked
     End Sub
+
+#End Region
 
 End Class

@@ -15,7 +15,6 @@ Imports SimpleProxy2.ErrorLogging
 
 Public Class Debug
 
-
 #Region "Properties"
 
 #End Region
@@ -25,22 +24,8 @@ Public Class Debug
 
 #End Region
 
+#Region "Public Methods"
 
-
-
-    Private Sub Debug_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
-        My.Settings.Debug = Me.Location
-        Me.Dispose()
-
-    End Sub
-
-    Private Sub Debug_Load(sender As Object, e As System.EventArgs) Handles Me.Load
-        Me.Location = My.Settings.Debug
-    End Sub
-
-    Private Sub RadioButton1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RadioButton1.CheckedChanged
-
-    End Sub
     Public Sub AddDataToList(ByRef lb As Object, ByRef obj As Object, ByRef newColor As Main.fColorEnum)
         If InvokeRequired Then
             Dim dataArray() As Object = {lb, obj, newColor}
@@ -68,7 +53,6 @@ Public Class Debug
                 build = build.Replace("&gt;", ">")
                 lb.SelectedRtf = Main.FormatText(build.ToString, newColor)
 
-
                 'since we Put the Data in the RTB now we Finish Setting the Links
                 Dim param() As String = {"<a.*?href=['""](.*?)['""].*?>(.*?)</a>", "<a.*?href=(.*?)>(.*?)</a>"}
                 For i As Integer = 0 To param.Length - 1
@@ -91,4 +75,25 @@ Public Class Debug
             End If
         End If
     End Sub
+
+#End Region
+
+#Region "Private Methods"
+
+    Private Sub Debug_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        My.Settings.Debug = Me.Location
+        Me.Dispose()
+
+    End Sub
+
+    Private Sub Debug_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+        Me.Location = My.Settings.Debug
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RadioButton1.CheckedChanged
+
+    End Sub
+
+#End Region
+
 End Class

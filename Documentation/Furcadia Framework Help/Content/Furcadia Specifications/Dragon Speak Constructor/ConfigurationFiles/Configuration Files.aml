@@ -17,7 +17,11 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Required introduction</para>
+      <para>
+        Dragon Speak Constructor is  little different then the rest of the Furcadia package.
+        This is because DSC was developed separately as a Third Party application that Later was
+        later integrated into the Furcadia Package. DSC was developed to uphold Furcadia's standards.
+      </para>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
@@ -30,22 +34,6 @@
         <autoOutline /> -->
         <para>Add one or more sections with content</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
 
     <relatedTopics>
@@ -54,7 +42,7 @@
            - An external link
            - A code entity reference
 
-      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID" />
       <link xlink:href="Other Topic's ID">Link inner text</link>
 
       <externalLink>

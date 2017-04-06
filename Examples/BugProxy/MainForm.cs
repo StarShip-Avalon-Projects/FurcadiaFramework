@@ -12,7 +12,13 @@ namespace BugProxy
     /// </summary>
     public partial class MainForm : Form
     {
+        #region Private Fields
+
         private NetProxy proxy;
+
+        #endregion Private Fields
+
+        #region Public Constructors
 
         /// <summary>
         /// </summary>
@@ -24,6 +30,10 @@ namespace BugProxy
             // TODO: Add constructor code after the InitializeComponent() call.
         }
 
+        #endregion Public Constructors
+
+        #region Public Methods
+
         /// <summary>
         /// Checks TCP port and scans for an available TCP port on the host system
         /// </summary>
@@ -31,7 +41,7 @@ namespace BugProxy
         /// ref int
         /// </param>
         /// <returns>
-        /// Available Port
+        /// True when a port is found available
         /// </returns>
         public bool PortOpen(ref int port)
         {
@@ -52,6 +62,10 @@ namespace BugProxy
             return true;
             // At this point, if isAvailable is true, we can proceed accordingly.
         }
+
+        #endregion Public Methods
+
+        #region Private Methods
 
         private void Button1Click(object sender, EventArgs e)
         {
@@ -80,6 +94,10 @@ namespace BugProxy
             proxy.Connect();
         }
 
+        private void MainFormLoad(object sender, EventArgs e)
+        {
+        }
+
         private void onClientDataReceived(string data)
         {
             Console.WriteLine(data);
@@ -92,8 +110,6 @@ namespace BugProxy
             proxy.SendClient(data + "\n");
         }
 
-        private void MainFormLoad(object sender, EventArgs e)
-        {
-        }
+        #endregion Private Methods
     }
 }

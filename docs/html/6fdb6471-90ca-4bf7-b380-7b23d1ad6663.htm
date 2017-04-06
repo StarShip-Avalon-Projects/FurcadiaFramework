@@ -1,48 +1,91 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NetProxy Sample</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" /><meta name="Description" content="Starting a proxy is simple." /><meta name="Microsoft.Help.ContentType" content="Samples" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Furcadia Framework For Third Party Programs<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="8d0a663e-8095-408a-b860-f55d2fc3ccbe.htm" title="Furcadia Framework For Third Party Programs" tocid="roottoc">Furcadia Framework For Third Party Programs</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="ac0f351b-19c1-47cc-928e-2eeaec33fc51.htm" title="FFF3PP Reference" tocid="ac0f351b-19c1-47cc-928e-2eeaec33fc51">FFF3PP Reference</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="6fdb6471-90ca-4bf7-b380-7b23d1ad6663.htm" title="Example Usage" tocid="c2b8008a-968f-4e62-b35f-a201b063146b">Example Usage</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="6fdb6471-90ca-4bf7-b380-7b23d1ad6663.htm" title="NetProxy Sample" tocid="6fdb6471-90ca-4bf7-b380-7b23d1ad6663">NetProxy Sample</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="../icons/Help.png" /></td><td class="titleColumn"><h1>NetProxy Sample</h1></td></tr></table><span class="introStyle">This stuff is still in the pnanning  stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="introduction"><p>Starting a proxy is simple.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EDAAHAAA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDAAHAAA','cs','1','4');return false;">C#</a></div><div id="ID0EDAAHAAA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDAAHAAA','vb','2','4');return false;">VB</a></div><div id="ID0EDAAHAAA_tab3" class="codeSnippetContainerTabPhantom"><a href="#" onclick="javascript:ChangeTab('ID0EDAAHAAA','cpp','3','4');return false;">C++</a></div><div id="ID0EDAAHAAA_tab4" class="codeSnippetContainerTabPhantom"><a href="#" onclick="javascript:ChangeTab('ID0EDAAHAAA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> Furcadia.Net;
-<span class="highlight-keyword">using</span> System;
-
-<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> Class1
-{
-<span class="highlight-keyword">public</span> Class1()
-{
-}
-proxy = <span class="highlight-keyword">new</span> NetProxy(<span class="highlight-literal">"lightbringer.furcadia.com"</span>, <span class="highlight-number">6500</span>, port);
-proxy.ClientData2 += onClientDataReceived;
-proxy.ServerData2 += onServerDataReceived;
-
-<span class="highlight-comment">// We need a Character.ini file to work with -Gerolkae</span>
-Paths furcpath = <span class="highlight-keyword">new</span> Paths();
-proxy.ProcessCMD = Path.Combine(furcpath.GetFurcadiaCharactersPath(), <span class="highlight-literal">"Furcadia.ini"</span>);
-
-};
-
-proxy.ClientExited += <span class="highlight-keyword">delegate</span> {
-Console.WriteLine(<span class="highlight-literal">"Client exited."</span>);
-proxy.Kill();
-};
-proxy.Error += <span class="highlight-keyword">delegate</span>(Exception e) {
-Console.WriteLine(e.Message);
-};
-proxy.Connect();
-}</pre></div><div id="ID0EDAAHAAA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="highlight-keyword">Dim</span> proxy <span class="highlight-keyword">As</span> <span class="highlight-keyword">New</span> NetProxy()
-
-proxy.ServerData += <span class="highlight-keyword">Sub</span>(data <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
-Console.WriteLine(Convert.ToString(<span class="highlight-literal">"SERVER: "</span>) &amp; data)
-<span class="highlight-keyword">Return</span> data
-
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span>
-
-proxy.ClientExited += <span class="highlight-keyword">Sub</span>()
-Console.WriteLine(<span class="highlight-literal">"Client exited."</span>)
-proxy.Kill()
-
-<span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span>
-proxy.[<span class="highlight-keyword">Error</span>] += <span class="highlight-keyword">Sub</span>(e <span class="highlight-keyword">As</span> Exception) Console.WriteLine(e.Message)
-proxy.Connect()</pre></div><div id="ID0EDAAHAAA_code_Div3" class="codeSnippetContainerCode" style="display: none"><p>No code example is currently available or this language may not be supported.</p></div><div id="ID0EDAAHAAA_code_Div4" class="codeSnippetContainerCode" style="display: none"><p>No code example is currently available or this language may not be supported.</p></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDAAHAAA");</script></div><div class="collapsibleAreaRegion" id="Section1"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Optional section title</span></div><div id="ID1RBSection" class="collapsibleSection"><p>Add one or more sections with content</p></div></div></div><div id="pageFooter" class="pageFooter"><div class="feedbackLink">Send comments on this topic to
+﻿<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
+    <script type="text/javascript" src="../scripts/branding.js"> </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>NetProxy Sample</title>
+    <meta name="Language" content="en-us" />
+    <meta name="Microsoft.Help.Id" content="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" />
+    <meta name="Description" content="Starting a proxy is simple." />
+    <meta name="Microsoft.Help.ContentType" content="Samples" />
+    <meta name="BrandingAware" content="true" />
+    
+    
+    <link type="text/css" rel="stylesheet" href="../styles/highlight.css" />
+    <script type="text/javascript" src="../scripts/highlight.js"> </script>
+    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
+    <script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
+    <script type="text/javascript" src="../scripts/clipboard.min.js"></script>
+  </head>
+  <body onload="OnLoad('cs')">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <div class="pageHeader" id="PageHeader">Furcadia Framework For Third Party Programs<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
+    <div class="pageBody">
+      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="8d0a663e-8095-408a-b860-f55d2fc3ccbe.htm" title="Furcadia Framework For Third Party Programs" tocid="roottoc">Furcadia Framework For Third Party Programs</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="ac0f351b-19c1-47cc-928e-2eeaec33fc51.htm" title="FFF3PP Reference" tocid="ac0f351b-19c1-47cc-928e-2eeaec33fc51">FFF3PP Reference</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="6fdb6471-90ca-4bf7-b380-7b23d1ad6663.htm" title="Example Usage" tocid="7498ca1a-dba9-4253-a675-cc6d1ad17499">Example Usage</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="6fdb6471-90ca-4bf7-b380-7b23d1ad6663.htm" title="NetProxy Sample" tocid="6fdb6471-90ca-4bf7-b380-7b23d1ad6663">NetProxy Sample</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent">
+        <table class="titleTable">
+          <tr>
+            <td class="logoColumn">
+              <img src="../icons/Help.png" />
+            </td>
+            <td class="titleColumn">
+              <h1>NetProxy Sample</h1>
+            </td>
+          </tr>
+        </table>
+        <span class="introStyle">This stuff is still in the pnanning  stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="introduction"><p>Starting a proxy is simple.</p><p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EDAAAHAAA_tab1" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDAAAHAAA','cs','1','4');return false;">C#</a></div><div id="ID0EDAAAHAAA_tab2" class="codeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDAAAHAAA','vb','2','4');return false;">VB</a></div><div id="ID0EDAAAHAAA_tab3" class="codeSnippetContainerTabPhantom"><a href="#" onclick="javascript:ChangeTab('ID0EDAAAHAAA','cpp','3','4');return false;">C++</a></div><div id="ID0EDAAAHAAA_tab4" class="codeSnippetContainerTabPhantom"><a href="#" onclick="javascript:ChangeTab('ID0EDAAAHAAA','fs','4','4');return false;">F#</a></div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDAAAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDAAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDAAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-lineno"> 1</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">using</span> Furcadia.Net;
+<span class="highlight-lineno"> 2</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">using</span> System;
+<span class="highlight-lineno"> 3</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno"> 4</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> Class1
+<span class="highlight-lineno"> 5</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>{
+<span class="highlight-lineno"> 6</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">public</span> Class1()
+<span class="highlight-lineno"> 7</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>{
+<span class="highlight-lineno"> 8</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>}
+<span class="highlight-lineno"> 9</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy = <span class="highlight-keyword">new</span> NetProxy(<span class="highlight-literal">"lightbringer.furcadia.com"</span>, <span class="highlight-number">6500</span>, port);
+<span class="highlight-lineno">10</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.ClientData2 += onClientDataReceived;
+<span class="highlight-lineno">11</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.ServerData2 += onServerDataReceived;
+<span class="highlight-lineno">12</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno">13</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-comment">// We need a Character.ini file to work with -Gerolkae</span>
+<span class="highlight-lineno">14</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>Paths furcpath = <span class="highlight-keyword">new</span> Paths();
+<span class="highlight-lineno">15</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.ProcessCMD = Path.Combine(furcpath.GetFurcadiaCharactersPath(), <span class="highlight-literal">"Furcadia.ini"</span>);
+<span class="highlight-lineno">16</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno">17</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>};
+<span class="highlight-lineno">18</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno">19</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.ClientExited += <span class="highlight-keyword">delegate</span> {
+<span class="highlight-lineno">20</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>Console.WriteLine(<span class="highlight-literal">"Client exited."</span>);
+<span class="highlight-lineno">21</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.Kill();
+<span class="highlight-lineno">22</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>};
+<span class="highlight-lineno">23</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.Error += <span class="highlight-keyword">delegate</span>(Exception e) {
+<span class="highlight-lineno">24</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>Console.WriteLine(e.Message);
+<span class="highlight-lineno">25</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>};
+<span class="highlight-lineno">26</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.Connect();
+<span class="highlight-lineno">27</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>}</pre></div><div id="ID0EDAAAHAAA_code_Div2" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="highlight-lineno"> 1</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">Dim</span> proxy <span class="highlight-keyword">As</span> <span class="highlight-keyword">New</span> NetProxy()
+<span class="highlight-lineno"> 2</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno"> 3</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.ServerData += <span class="highlight-keyword">Sub</span>(data <span class="highlight-keyword">As</span> <span class="highlight-keyword">String</span>)
+<span class="highlight-lineno"> 4</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>Console.WriteLine(Convert.ToString(<span class="highlight-literal">"SERVER: "</span>) &amp; data)
+<span class="highlight-lineno"> 5</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">Return</span> data
+<span class="highlight-lineno"> 6</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno"> 7</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span>
+<span class="highlight-lineno"> 8</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno"> 9</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.ClientExited += <span class="highlight-keyword">Sub</span>()
+<span class="highlight-lineno">10</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>Console.WriteLine(<span class="highlight-literal">"Client exited."</span>)
+<span class="highlight-lineno">11</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.Kill()
+<span class="highlight-lineno">12</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno">13</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">End</span> <span class="highlight-keyword">Sub</span>
+<span class="highlight-lineno">14</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.[<span class="highlight-keyword">Error</span>] += <span class="highlight-keyword">Sub</span>(e <span class="highlight-keyword">As</span> Exception) Console.WriteLine(e.Message)
+<span class="highlight-lineno">15</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>proxy.Connect()</pre></div><div id="ID0EDAAAHAAA_code_Div3" class="codeSnippetContainerCode" style="display: none"><p>No code example is currently available or this language may not be supported.</p></div><div id="ID0EDAAAHAAA_code_Div4" class="codeSnippetContainerCode" style="display: none"><p>No code example is currently available or this language may not be supported.</p></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDAAAHAAA");</script></p></div><div class="collapsibleAreaRegion" id="Section1"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Optional section title</span></div><div id="ID1RBSection" class="collapsibleSection"><p>Add one or more sections with content</p></div></div>
+    </div>
+    <div id="pageFooter" class="pageFooter">
+      <div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:gerolkae%40hotmail.com?Subject=Furcadia Framework For Third Party Programs">Lead Developer Gerolkae</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         var HT_mailLinkText = HT_mailLink.innerHTML;
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
         HT_mailLink.innerHTML = HT_mailLinkText;
-        </script></div></body></html>
+        </script></div>
+  </body>
+</html>

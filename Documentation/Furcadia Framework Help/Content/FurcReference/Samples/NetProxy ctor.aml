@@ -18,56 +18,57 @@
       <!-- <autoOutline /> -->
 
       <para>Starting a proxy is simple.</para>
+      <para>
+        <example>
+          <code  language="csharp">
+            using Furcadia.Net;
+            using System;
 
-      <example>
-        <code  language="csharp">
-          using Furcadia.Net;
-          using System;
+            public class Class1
+            {
+            public Class1()
+            {
+            }
+            proxy = new NetProxy("lightbringer.furcadia.com", 6500, port);
+            proxy.ClientData2 += onClientDataReceived;
+            proxy.ServerData2 += onServerDataReceived;
 
-          public class Class1
-          {
-          public Class1()
-          {
-          }
-          proxy = new NetProxy("lightbringer.furcadia.com", 6500, port);
-          proxy.ClientData2 += onClientDataReceived;
-          proxy.ServerData2 += onServerDataReceived;
+            // We need a Character.ini file to work with -Gerolkae
+            Paths furcpath = new Paths();
+            proxy.ProcessCMD = Path.Combine(furcpath.GetFurcadiaCharactersPath(), "Furcadia.ini");
 
-          // We need a Character.ini file to work with -Gerolkae
-          Paths furcpath = new Paths();
-          proxy.ProcessCMD = Path.Combine(furcpath.GetFurcadiaCharactersPath(), "Furcadia.ini");
+            };
 
-          };
+            proxy.ClientExited += delegate {
+            Console.WriteLine("Client exited.");
+            proxy.Kill();
+            };
+            proxy.Error += delegate(Exception e) {
+            Console.WriteLine(e.Message);
+            };
+            proxy.Connect();
+            }
+          </code>
+          <code language="vb.net">
 
-          proxy.ClientExited += delegate {
-          Console.WriteLine("Client exited.");
-          proxy.Kill();
-          };
-          proxy.Error += delegate(Exception e) {
-          Console.WriteLine(e.Message);
-          };
-          proxy.Connect();
-          }
-        </code>
-        <code language="vb.net">
+            Dim proxy As New NetProxy()
 
-          Dim proxy As New NetProxy()
+            proxy.ServerData += Sub(data As String)
+            Console.WriteLine(Convert.ToString("SERVER: ") &amp; data)
+            Return data
 
-          proxy.ServerData += Sub(data As String)
-          Console.WriteLine(Convert.ToString("SERVER: ") &amp; data)
-          Return data
+            End Sub
 
-          End Sub
+            proxy.ClientExited += Sub()
+            Console.WriteLine("Client exited.")
+            proxy.Kill()
 
-          proxy.ClientExited += Sub()
-          Console.WriteLine("Client exited.")
-          proxy.Kill()
-
-          End Sub
-          proxy.[Error] += Sub(e As Exception) Console.WriteLine(e.Message)
-          proxy.Connect()
-        </code>
-      </example>
+            End Sub
+            proxy.[Error] += Sub(e As Exception) Console.WriteLine(e.Message)
+            proxy.Connect()
+          </code>
+        </example>
+      </para>
     </introduction>
     <!-- <procedure>Optional procedures.  See How To document for procedure layout example.</procedure> -->
     <!-- <requirements>Optional requirements section</requirements> -->

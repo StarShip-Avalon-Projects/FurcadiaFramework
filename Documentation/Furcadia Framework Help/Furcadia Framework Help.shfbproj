@@ -14,7 +14,7 @@
     <Name>Furcadia_Framework_Help</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.6</FrameworkVersion>
-    <OutputPath>..\..\..\..\..\Bitnami\wampstack-5.6.29-1\apps\silvermonkey\htdocs\help\devdocs\furcadiaframework\</OutputPath>
+    <OutputPath>..\..\docs\</OutputPath>
     <HtmlHelpName>Furcadia_Framework_Help</HtmlHelpName>
     <Language>en-US</Language>
     <TransformComponentArguments>
@@ -37,65 +37,56 @@
           <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
           <allowMissingSource value="false" />
           <removeRegionMarkers value="false" />
-          <colorizer syntaxFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xml" styleFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xsl" stylesheet="{@SHFBFolder}PresentationStyles\Colorizer\highlight.css" scriptFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.js" disabled="{@DisableCodeBlockComponent}" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
+          <colorizer syntaxFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xml" styleFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xsl" stylesheet="{@SHFBFolder}PresentationStyles\Colorizer\highlight.css" scriptFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.js" disabled="{@DisableCodeBlockComponent}" language="cs" tabSize="0" numberLines="true" outlining="true" keepSeeTags="false" defaultTitle="true" />
         </component>
       </ComponentConfig>
-      <ComponentConfig id="Syntax Component" enabled="True">
-        <component id="Syntax Component">
-          <syntax input="/document/reference" output="/document/syntax" renderReferenceLinks="false" />
-          <generators>
+<ComponentConfig id="Syntax Component" enabled="True"><component id="Syntax Component"><syntax input="/document/reference" output="/document/syntax" renderReferenceLinks="false" /><generators>
     {@SyntaxFilters}
-</generators>
-          <containerElement name="codeSnippetGroup" addNoExampleTabs="true" includeOnSingleSnippets="false" groupingEnabled="{@CodeSnippetGrouping}" />
-          <configurations>
-            <generator id="C#" />
-            <generator id="Visual Basic">
-              <includeLineContinuation value="false" />
-            </generator>
-            <generator id="Visual Basic Usage">
-              <includeLineContinuation value="false" />
-            </generator>
-            <generator id="Managed C++" />
-            <generator id="F#" />
-            <generator id="J#" />
-            <generator id="JScript" />
-            <generator id="JavaScript" />
-            <generator id="XAML Usage" />
-            <generator id="ASP.NET" />
-          </configurations>
-        </component>
-      </ComponentConfig>
-      <ComponentConfig id="IntelliSense Component" enabled="True">
-        <component id="IntelliSense Component">
-          <!-- Output options (optional)
+</generators><containerElement name="codeSnippetGroup" addNoExampleTabs="true" includeOnSingleSnippets="false" groupingEnabled="{@CodeSnippetGrouping}" /><configurations><generator id="C#" /><generator id="Visual Basic"><includeLineContinuation value="false" /></generator><generator id="Visual Basic Usage"><includeLineContinuation value="false" /></generator><generator id="Managed C++" /><generator id="F#" /><generator id="J#" /><generator id="JScript" /><generator id="JavaScript" /><generator id="XAML Usage" /><generator id="ASP.NET" /></configurations></component></ComponentConfig>
+<ComponentConfig id="IntelliSense Component" enabled="True"><component id="IntelliSense Component"><!-- Output options (optional)
   Attributes:
     Include namespaces (false by default)
     Namespaces comments filename ("Namespaces" if not specified or empty)
-    Output folder (current folder if not specified or empty) -->
-          <output includeNamespaces="false" namespacesFile="Namespaces" folder="{@OutputFolder}" boundedCapacity="100" />
-        </component>
-      </ComponentConfig>
-      <ComponentConfig id="API Token Resolution" enabled="True">
-        <component id="API Token Resolution">{@TokenFiles}
-<replace elements="/*//token" item="string(.)" /></component>
-      </ComponentConfig>
-    </ComponentConfigurations>
-    <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
+    Output folder (current folder if not specified or empty) --><output includeNamespaces="false" namespacesFile="Namespaces" folder="{@OutputFolder}" boundedCapacity="100" /></component></ComponentConfig>
+<ComponentConfig id="API Token Resolution" enabled="True"><component id="API Token Resolution">{@TokenFiles}
+<replace elements="/*//token" item="string(.)" /></component></ComponentConfig>
+<ComponentConfig id="Resolve Reference Links (ESENT Cache)" enabled="True"><component id="Resolve Reference Links (ESENT Cache)">{@HRefFormat}
+<locale value="{@Locale}" /><linkTarget value="{@SdkLinkTarget}" /><helpOutput format="HtmlHelp1"><msdnContentIdCache path="{@LocalDataFolder}Cache\MsdnContentId.cache" cachePath="{@LocalDataFolder}Cache\ESentMsdnContentIdCache" localCacheSize="2500" /><targets base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" type="{@HtmlSdkLinkType}" id="FrameworkTargets" cachePath="{@LocalDataFolder}Cache\ESentFrameworkTargetCache" localCacheSize="2500">
+		{@ReferenceLinkNamespaceFiles}
+	</targets><targets files="reflection.xml" type="Local" id="ProjectTargets" cachePath="" localCacheSize="2500" noReload="true" /></helpOutput><helpOutput format="MSHelpViewer"><msdnContentIdCache path="{@LocalDataFolder}Cache\MsdnContentId.cache" cachePath="{@LocalDataFolder}Cache\ESentMsdnContentIdCache" localCacheSize="2500" /><targets base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" type="{@MSHelpViewerSdkLinkType}" id="FrameworkTargets" cachePath="{@LocalDataFolder}Cache\ESentFrameworkTargetCache" localCacheSize="2500">
+		{@ReferenceLinkNamespaceFiles}
+	</targets><targets files="reflection.xml" type="Id" id="ProjectTargets" cachePath="" localCacheSize="2500" noReload="true" /></helpOutput><helpOutput format="Website"><msdnContentIdCache path="{@LocalDataFolder}Cache\MsdnContentId.cache" cachePath="{@LocalDataFolder}Cache\ESentMsdnContentIdCache" localCacheSize="2500" /><targets base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" type="{@WebsiteSdkLinkType}" id="FrameworkTargets" cachePath="{@LocalDataFolder}Cache\ESentFrameworkTargetCache" localCacheSize="2500">
+		{@ReferenceLinkNamespaceFiles}
+	</targets><targets files="reflection.xml" type="Local" id="ProjectTargets" cachePath="" localCacheSize="2500" noReload="true" /></helpOutput><helpOutput format="OpenXml"><msdnContentIdCache path="{@LocalDataFolder}Cache\MsdnContentId.cache" cachePath="{@LocalDataFolder}Cache\ESentMsdnContentIdCache" localCacheSize="2500" /><targets base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" type="{@WebsiteSdkLinkType}" id="FrameworkTargets" cachePath="{@LocalDataFolder}Cache\ESentFrameworkTargetCache" localCacheSize="2500">
+		{@ReferenceLinkNamespaceFiles}
+	</targets><targets files="reflection.xml" type="Local" id="ProjectTargets" cachePath="" localCacheSize="2500" noReload="true" /></helpOutput><helpOutput format="Markdown"><msdnContentIdCache path="{@LocalDataFolder}Cache\MsdnContentId.cache" cachePath="{@LocalDataFolder}Cache\ESentMsdnContentIdCache" localCacheSize="2500" /><targets base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" type="{@WebsiteSdkLinkType}" id="FrameworkTargets" cachePath="{@LocalDataFolder}Cache\ESentFrameworkTargetCache" localCacheSize="2500">
+		{@ReferenceLinkNamespaceFiles}
+	</targets><targets files="reflection.xml" type="Local" id="ProjectTargets" cachePath="" localCacheSize="2500" noReload="true" /></helpOutput></component></ComponentConfig>
+<ComponentConfig id="Reflection Index Data (ESENT Cache)" enabled="True"><component id="Reflection Index Data (ESENT Cache)">
+  <index name="reflection" value="/reflection/apis/api" key="@id" cache="15" localCacheSize="2500" frameworkCachePath="{@LocalDataFolder}Cache\ReflectionIndexCache" projectCachePath="">
+    <data base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" duplicateWarning="false" groupId="ReflectionIndexCache">
+		{@ReferenceLinkNamespaceFiles}
+	</data>
+    <data files="reflection.xml" groupId="Project_Ref_{@UniqueID}" />
+  </index>
+  <copy name="reflection" source="*" target="/document/reference" />
+</component></ComponentConfig></ComponentConfigurations>
+    <SaveComponentCacheCapacity>1200</SaveComponentCacheCapacity>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
-    <IndentHtml>False</IndentHtml>
+    <IndentHtml>True</IndentHtml>
     <KeepLogFile>True</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
     <CleanIntermediates>True</CleanIntermediates>
-    <HelpFileVersion>1.0.0.0</HelpFileVersion>
-    <MaximumGroupParts>2</MaximumGroupParts>
+    <HelpFileVersion>2.0.0.0</HelpFileVersion>
+    <MaximumGroupParts>10</MaximumGroupParts>
     <NamespaceGrouping>True</NamespaceGrouping>
-    <SyntaxFilters>Standard</SyntaxFilters>
+    <SyntaxFilters>C#, Visual Basic, Visual Basic Usage, Managed C++, F#</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>True</RootNamespaceContainer>
     <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>True</Preliminary>
-    <NamingMethod>Guid</NamingMethod>
+    <NamingMethod>MemberName</NamingMethod>
     <HelpTitle>Furcadia Framework For Third Party Programs</HelpTitle>
     <ContentPlacement>BelowNamespaces</ContentPlacement>
     <HeaderText>This stuff is still in the pnanning  stages. Any questions or Comments are welcome.</HeaderText>
@@ -107,15 +98,20 @@
     <IncludeFavorites>True</IncludeFavorites>
     <BinaryTOC>True</BinaryTOC>
     <NamespaceSummaries>
-      <NamespaceSummaryItem name="(global)" isDocumented="True" xmlns="" />
-      <NamespaceSummaryItem name="Furcadia" isDocumented="True" xmlns="" />
-      <NamespaceSummaryItem name="Furcadia.Drawing (Group)" isGroup="True" isDocumented="True" xmlns="" />
-      <NamespaceSummaryItem name="Furcadia.Drawing" isDocumented="True" xmlns="" />
-      <NamespaceSummaryItem name="Furcadia.Drawing.Graphics" isDocumented="True" xmlns="" />
-      <NamespaceSummaryItem name="Furcadia.FurcMap" isDocumented="True" xmlns="" />
-      <NamespaceSummaryItem name="Furcadia.IO" isDocumented="True" xmlns="" />
-      <NamespaceSummaryItem name="Furcadia.Net" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="(global)" isDocumented="False" />
+      <NamespaceSummaryItem name="Furcadia" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.Drawing (Group)" isGroup="True" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.Drawing" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.Drawing.Graphics" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.FurcMap" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.IO" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.Net" isDocumented="True" />
     </NamespaceSummaries>
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter, AutoDocumentDispose</MissingTags>
+    <VisibleItems>Attributes, InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
+    <NewProperty1 />
+    <WorkingPath>
+    </WorkingPath>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
        the build.  The others are optional common platform types that may appear. -->
@@ -156,6 +152,7 @@
     <None Include="About.aml" />
     <None Include="Bibilography.aml" />
     <None Include="BugTraq.aml" />
+    <None Include="ColorCode.aml" />
     <None Include="Content\Credits.aml" />
     <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\Configuration Files.aml" />
     <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\DSCUrls.ini.aml" />
@@ -170,13 +167,16 @@
     <None Include="Content\Furcadia Specifications\FilePaths.aml" />
     <None Include="Content\Furcadia Specifications\Furcadia Popup Dialogs.aml" />
     <None Include="Content\Furcadia Specifications\Furcadia Specifications.aml" />
+    <None Include="Content\Furcadia Specifications\Internet Servers.aml" />
     <None Include="Content\Furcadia Specifications\Legacy\File Types\Character.ini.aml" />
     <None Include="Content\Furcadia Specifications\Legacy\File Types\DS File.aml" />
     <None Include="Content\Furcadia Specifications\Legacy\File Types\DS Template.aml" />
     <None Include="Content\Furcadia Specifications\Legacy\File Types\File Types.aml" />
     <None Include="Content\Furcadia Specifications\Legacy\Legacy Material.aml" />
+    <None Include="Content\Furcadia Specifications\localdir.ini.aml" />
     <None Include="Content\Furcadia Specifications\Modern Mode.aml" />
     <None Include="Content\Furcadia Specifications\Pounce Speciifications.aml" />
+    <None Include="Content\Furcadia Specifications\Registry Paths.aml" />
     <None Include="Content\Furcadia Specifications\ServerToClientInstructions.aml" />
     <None Include="Content\FurcReference\Furcadia Text Channels.aml" />
     <None Include="Content\FurcReference\Reference.aml" />
@@ -187,6 +187,7 @@
     <None Include="Content\Welcome.aml" />
     <None Include="Content\VersionHistory\V2.1.x.aml" />
     <None Include="Contribue.aml" />
+    <None Include="FurcadiaMarkupLanguage.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="Content Layout1.content" />
@@ -195,14 +196,20 @@
     <CodeSnippets Include="Content\FurcReference\Samples\NetProxySnippet.snippets" />
   </ItemGroup>
   <ItemGroup>
-    <Tokens Include="Token File1.tokens" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="images\DS File.png">
       <ImageId>DS File</ImageId>
       <AlternateText>DS File</AlternateText>
       <CopyToMedia>True</CopyToMedia>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <SiteMap Include="Site Map1.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamlConfiguration Include="XAML Syntax1.xamlcfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceItems Include="Resource Items1.items" />
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
