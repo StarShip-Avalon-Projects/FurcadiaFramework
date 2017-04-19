@@ -1,6 +1,6 @@
 # Furcadia Framework for Third Party Programs
-Furcadia Documentaion Project and 3rd Party Development Kit
+Furcadia Documentation Project and 3rd Party Development Kit
 
 ## Disclaimer
-Furcadia Framework and it's Documentation is not supported by Furcadia, Dragon's Eye Production or Catnip Studios. This poroject is developed and maintained indepentaly by and for the Furcadia Community
+Furcadia Framework and its Documentation is not supported by Furcadia, Dragon's Eye Production or Catnip Studios. This project is developed and maintained independently by and for the Furcadia Community.
 
