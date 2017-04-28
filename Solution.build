@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" >
+
+
+<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- Define default target with name 'Build' -->
+  <Target Name="Build">
+    <!-- Compile whole solution in release mode -->
+    <MSBuild
+        Projects="FurcadiaFramework.sln"
+        Targets="Build"
+        Properties="Configuration=Debug;Platform=Any CPU"
+
+				/>
+
+  </Target>
+
+  <Target Name="BuildALL">
+
+    <MSBuild
+        Projects="FurcadiaFramework.sln"
+        Targets="Build"
+        Properties="Configuration=Release;Platform=Any CPU" 
+
+        />
+
+  </Target>
+</Project>
