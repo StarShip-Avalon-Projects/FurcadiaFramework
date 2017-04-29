@@ -35,13 +35,17 @@ namespace BugProxy
 
         private void Button1Click(object sender, EventArgs e)
         {
-            if (ProxyOptions == null)
+            if (proxy == null)
             {
                 ProxyOptions = new BugProxyOptions();
                 proxy = new BugProxySession(ProxyOptions);
                 proxy.ClientData2 += onClientDataReceived;
                 proxy.ServerData2 += onServerDataReceived;
                 // We need a Character.ini file to work with -Gerolkae
+                proxy.Connect();
+            }
+            else if (!proxy.IsServerConnected)
+            {
                 proxy.Connect();
             }
         }
@@ -52,13 +56,13 @@ namespace BugProxy
 
         private void onClientDataReceived(string data)
         {
-            Console.WriteLine(data);
+            Console.WriteLine("<C>: " + data);
             proxy.SendToServer(data);
         }
 
         private void onServerDataReceived(string data)
         {
-            Console.WriteLine(data);
+            Console.WriteLine("<S>: " + data);
             proxy.SendToClient(data);
         }
 

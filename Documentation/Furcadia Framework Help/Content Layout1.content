@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
   <Topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" visible="True" isDefault="true" title="Welcome to FFF3PP" />
-  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" isExpanded="true" title="Furcadia Specifications">
-    <Topic id="061a27f3-3740-48cd-93a1-206c51823e5a" visible="True" noFile="true" isExpanded="true" title="Client Server Communications">
+  <Topic id="21d8ef06-9093-4ab1-8f3b-a6ffb0e38dc7" visible="True" noFile="true" isExpanded="true" title="FF3PP Code Samples">
+    <Topic id="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" visible="True" />
+    <Topic id="9a6827e6-8a7b-45a1-9a20-7aaee6f5a481" visible="True" />
+  </Topic>
+  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" title="Furcadia Specifications">
+    <Topic id="061a27f3-3740-48cd-93a1-206c51823e5a" visible="True" noFile="true" title="Client Server Communications">
       <Topic id="ace0106b-f963-47f6-8be8-7c2fa78d223a" visible="True" title="Server To Client Instructions (Game Server)" />
       <Topic id="14d9e4be-5faf-4a40-85a0-b0129610103c" visible="True" title="Furcadia Markup Language (FML)" />
       <Topic id="e897d816-e829-4b4b-b4a5-41ce6cac22ec" visible="True" />
-      <Topic id="7180cbcd-d0cd-4db5-820b-2255d5764840" visible="True" isSelected="true" />
+      <Topic id="7180cbcd-d0cd-4db5-820b-2255d5764840" visible="True" />
     </Topic>
     <Topic id="a5f6d9fd-e7ec-4278-97f0-5c6d6535f7f7" visible="True" />
     <Topic id="a23d6f60-970b-4881-ad5f-077563316c63" visible="True" title="Furcadia File Paths">
@@ -36,10 +40,7 @@
     <Topic id="b1a197eb-c497-4e39-9065-f47dfdb7ed58" visible="True" />
     <Topic id="8da986c1-199a-45be-80fc-f42ab218868c" visible="True" />
   </Topic>
-  <Topic id="ac0f351b-19c1-47cc-928e-2eeaec33fc51" visible="True" title="FFF3PP Reference">
-    <Topic id="06b51167-42c8-4e64-b22f-a52d06ed56a9" visible="True" noFile="true" isExpanded="true" title="Example Usage">
-      <Topic id="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" visible="True" title="NetProxy Sample" />
-    </Topic>
+  <Topic id="ac0f351b-19c1-47cc-928e-2eeaec33fc51" visible="True" isExpanded="true" isSelected="true" title="FFF3PP Reference">
     <Topic id="08538137-7c91-4fad-b4dc-287fc6efa298" visible="True" />
   </Topic>
   <Topic id="4340cd61-7802-4111-a144-fc835a39faf6" visible="True" apiParentMode="InsertAfter">
