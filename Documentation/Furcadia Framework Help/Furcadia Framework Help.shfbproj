@@ -13,7 +13,7 @@
     <RootNamespace>Furcadia_Framework_Help</RootNamespace>
     <Name>Furcadia_Framework_Help</Name>
     <!-- SHFB properties -->
-    <FrameworkVersion>.NET Framework 4.6</FrameworkVersion>
+    <FrameworkVersion>.NET Framework 4.6.1</FrameworkVersion>
     <OutputPath>..\..\docs\</OutputPath>
     <HtmlHelpName>Furcadia_Framework_Help</HtmlHelpName>
     <Language>en-US</Language>
@@ -215,6 +215,7 @@
     <None Include="Content\FurcReference\Furcadia Text Channels.aml" />
     <None Include="Content\FurcReference\Reference.aml" />
     <None Include="Content\FurcReference\Samples\NetProxy ctor.aml" />
+    <None Include="Content\FurcReference\Samples\ProxySession.aml" />
     <None Include="Content\VersionHistory\appendix.aml" />
     <None Include="Content\VersionHistory\Glossary1.aml" />
     <None Include="Content\VersionHistory\VersionHistory.aml" />
