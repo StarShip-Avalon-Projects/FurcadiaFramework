@@ -3992,7 +3992,7 @@
     </member>
     <member name="M:Furcadia.Net.NetProxy.CloseClient">
       <summary>
-            Closes the Client Connection
+            Disconnects the furcadia client and Closes the application
             </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxy.Connect">
@@ -4017,12 +4017,8 @@
     </member>
     <member name="M:Furcadia.Net.NetProxy.Dispose(System.Boolean)">
       <summary>
-        <markup>
-          <include item="SMCAutoDocDisposeBool">
-            <parameter>Furcadia.Net.NetProxy</parameter>
-          </include>
-        </markup>
-      </summary>
+            Dispose all our Disposable objects
+            </summary>
       <param name="disposing">
         <markup>
           <include item="SMCAutoDocDisposeParam">
@@ -4061,7 +4057,7 @@
             Check our connection status to the game server
             </summary>
     </member>
-    <member name="P:Furcadia.Net.NetProxy.ProcID">
+    <member name="P:Furcadia.Net.NetProxy.ProcessID">
       <summary>
             Process ID for closing Furcadia.exe
             </summary>
@@ -4766,8 +4762,10 @@
     </member>
     <member name="M:Furcadia.Net.Options.ProxyOptions.#ctor">
       <summary>
-            Deault settingds
-            </summary>
+            Deault settings
+            <para><see cref="F:Furcadia.Net.Options.ProxyOptions.localhostport" /> = 6700
+            </para><para><see cref="F:Furcadia.Net.Options.ProxyOptions.furcprocess" /> = "Furcadia.exe"
+            </para></summary>
     </member>
     <member name="P:Furcadia.Net.Options.ProxyOptions.CharacterIniFile">
       <summary>
@@ -4781,13 +4779,8 @@
     </member>
     <member name="P:Furcadia.Net.Options.ProxyOptions.FurcadiaInstallPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.Options.ProxyOptions.FurcadiaInstallPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Furcadia working folder path to the Client install we want to use
+            </summary>
     </member>
     <member name="P:Furcadia.Net.Options.ProxyOptions.FurcadiaProcess">
       <summary>
@@ -5387,7 +5380,7 @@
             Error Event Handler
             </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerChannel(System.String@,System.Boolean)">
+    <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerChannel(System.String,System.Boolean)">
       <summary>
             Parse Channel Data
             </summary>
@@ -5866,7 +5859,7 @@
             Master Config set Encoders to Win 1252 encoding.
             </summary>
     </member>
-    <member name="M:Furcadia.Net.Utils.Utilities.PortOpen(System.Int32@)">
+    <member name="M:Furcadia.Net.Utils.Utilities.PortOpen(System.Int32)">
       <summary>
             Checks TCP port and scans for an available TCP port on the host
             system <paraa>
