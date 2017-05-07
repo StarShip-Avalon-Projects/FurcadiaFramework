@@ -2487,26 +2487,246 @@
     </member>
     <member name="M:Furcadia.IO.Paths.#ctor">
       <summary>
-            Defines the base path for the Furcadia Directory
-            </summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.IO.Paths</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="M:Furcadia.IO.Paths.#ctor(System.String)">
       <summary>
-            Defines the base path for the Furcadia Directory Throws
-            FurcadiaNotFound exception if furcadia.exe cannot be found in
-            specified path
-            </summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.IO.Paths</parameter>
+          </include>
+        </markup>
+      </summary>
       <param name="path">
-            the selected filepath for the Furcadia Installation.
-            </param>
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>path</parameter>
+            <parameter>M:Furcadia.IO.Paths.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
     </member>
-    <member name="M:Furcadia.IO.Paths.GetCachePath">
+    <member name="P:Furcadia.IO.Paths.CachePath">
       <summary>
-            Get the All Users Application Data path for Furcadia.
+             Cache path - contains all the Furcadia cache and resides in the
+             global user space.
+            
+             Default: %ALLUSERSPROFILE%\Dragon's Eye Productions\Furcadia
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.CharacterPath">
+      <summary>
+             Character file path - contains furcadia.ini files with login
+             information for each character.
+            
+             Default: My Documents\Furcadia\Furcadia Characters\
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultCachePath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultCachePath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultCharacterPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultCharacterPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultDreamsPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultDreamsPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultFurcadiaPath">
+      <summary>
+             Default Furcadia install folder - this path is used by default
+             to install Furcadia to.
+            
+             Default: c:\Program Files\Furcadia
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultGlobalMapsPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultGlobalMapsPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultGlobalSkinsPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultGlobalSkinsPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultLocalSkinsPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultLocalSkinsPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultLogsPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultLogsPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultPatchPath">
+      <summary>
+             Path to the default patch (graphics, sounds, layout) folder used
+             to display Furcadia itself, its tools and environment.
+            
+             Default: c:\Program Files\Furcadia\patches\default
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultPermanentMapsCachePath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultPermanentMapsCachePath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultPersonalDataPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultPersonalDataPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultPortraitCachePath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultPortraitCachePath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultScreenshotsPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultScreenshotsPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultSettingsPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultSettingsPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultTemporaryDreamsPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultTemporaryDreamsPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultTemporaryFilesPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultTemporaryFilesPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultTemporaryPatchesPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultTemporaryPatchesPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultWhisperLogsPath">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.DefaultWhisperLogsPath</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DreamsPath">
+      <summary>
+             Dreams path - contains Furcadia dreams made by the player.
+            
+             Default: My Documents\Furcadia\Dreams
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.FurcadiaLocaldirPath">
+      <summary>
+             Furcadia Localdir path - this path (when explicitly set),
+             indicates the whereabouts of the data files used in Furcadia. If
+             localdir.ini is present in the Furcadia folder, Furcadia.exe
+             will load those files from the specific path and not the regular ones.
+            
+             Default: -NONE-
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.FurcadiaPath">
+      <summary>
+            Furcadia install path - this path corresponds to the path where
+            Furcadia is installed on the current machine. If Furcadia is not
+            found, this property will be null.
             </summary>
-      <returns>
-            All Users Application Data path for Furcadia.
-            </returns>
     </member>
     <member name="M:Furcadia.IO.Paths.GetDefaultPatchPath">
       <summary>
@@ -2516,33 +2736,7 @@
             Path to the default patch folder or null if not found.
             </returns>
     </member>
-    <member name="M:Furcadia.IO.Paths.GetDynAvatarPath">
-      <summary>
-            Get the All Dynamic Avatar path for Furcadia.
-            </summary>
-      <returns>
-            All Dynamic Avatar path for Furcadia.
-            </returns>
-    </member>
-    <member name="M:Furcadia.IO.Paths.GetFurcadiaCharactersPath">
-      <summary>
-            Gets the location of the Furcadia Character Files
-            </summary>
-      <returns>
-            A <see cref="T:System.String" /> containing the location of
-            Furcadia Characters folder in "My Documents".
-            </returns>
-    </member>
-    <member name="M:Furcadia.IO.Paths.GetFurcadiaDocPath">
-      <summary>
-            Gets the location of the Furcadia folder located in "My Documents"
-            </summary>
-      <returns>
-            A <see cref="T:System.String" /> containing the location of
-            Furcadia folder in "My Documents".
-            </returns>
-    </member>
-    <member name="M:Furcadia.IO.Paths.GetInstallPath">
+    <member name="M:Furcadia.IO.Paths.GetFurcadiaInstallPath">
       <summary>
             Find the path to Furcadia data files currently installed on this system.
             </summary>
@@ -2550,7 +2744,7 @@
             Path to the Furcadia program folder or null if not found/not installed.
             </returns>
     </member>
-    <member name="M:Furcadia.IO.Paths.GetLocaldirPath">
+    <member name="M:Furcadia.IO.Paths.GetFurcadiaLocaldirPath">
       <summary>
             Find the current localdir path where data files would be stored
             on the current machine.
@@ -2559,31 +2753,132 @@
             Path to the data folder from localdir.ini or null if not found.
             </returns>
     </member>
-    <member name="M:Furcadia.IO.Paths.GetLocalSettingsPath">
+    <member name="P:Furcadia.IO.Paths.GlobalMapsPath">
       <summary>
-            Get the path to the Local settings directory for Furcadia.
-            </summary>
-      <returns>
-            Furcadia local settings directory.
-            </returns>
+             Path to the global maps, distributed with Furcadia and loadable
+             during gameplay in some main dreams.
+            
+             Default: c:\Program Files\Furcadia\maps
+             </summary>
     </member>
-    <member name="M:Furcadia.IO.Paths.GetRegistryPath">
+    <member name="P:Furcadia.IO.Paths.GlobalSkinsPath">
       <summary>
-            Determines the registry path by platform. (x32/x64) Thanks to
-            Ioka for this one.
-            </summary>
-      <returns>
-            A path to the Furcadia registry folder.
-            </returns>
+             Path to the global skins that change Furcadia's graphical
+             layout. They are stored in the Furcadia program files folder.
+            
+             Default: c:\Program Files\Furcadia\skins
+             </summary>
     </member>
-    <member name="M:Furcadia.IO.Paths.ProgramFilesX86">
+    <member name="P:Furcadia.IO.Paths.LocaldirPath">
       <summary>
-            Determines the registry path by platform. (x32/x64) Thanks to
-            Ioka for this one.
+            LocalDir path - a specific path where all the player-specific
+            and cache data is stored in its classic form. Used mainly to
+            retain the classic path structure or to run Furcadia from a
+            removable disk.
             </summary>
-      <returns>
-            A path to the Furcadia registry folder or NullReferenceException.
-            </returns>
+    </member>
+    <member name="P:Furcadia.IO.Paths.LocalSkinsPath">
+      <summary>
+             Local skins path - contains Furcadia skins used locally by each user.
+            
+             Default: My Documents\Furcadia\Skins
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.LogsPath">
+      <summary>
+             Logs path - contains session logs for each character and a
+             subfolder with whisper logs, should Pounce be enabled.
+            
+             Default: My Documents\Furcadia\Logs
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.PermanentMapsCachePath">
+      <summary>
+             Permanent Maps cache path - contains downloaded main maps such
+             as the festival maps or other DEP-specific customized dreams.
+            
+             Default: %ALLUSERSPROFILE%\Dragon's Eye
+                      Productions\Furcadia\Permanent Maps
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.PersonalDataPath">
+      <summary>
+             Personal data path - contains user-specific files such as logs,
+             patches, screenshots and character files.
+            
+             Default: My Documents\Furcadia\
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.PortraitCachePath">
+      <summary>
+             Portrait cache path - contains downloaded portraits and desctags
+             cache for faster loading and bandwidth optimization.
+            
+             Default: %ALLUSERSPROFILE%\Dragon's Eye
+                      Productions\Furcadia\Portrait Cache
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.ScreenshotsPath">
+      <summary>
+             Screenshots path - contains screen shot files taken by Furcadia
+             with the CTRL+F1 hotkey. At the time of writing, in PNG format.
+            
+             Default: My Documents\Furcadia\Screenshots
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.SettingsPath">
+      <summary>
+             Personal settings path - contains all the Furcadia settings for
+             each user that uses it.
+            
+             Default (VISTA+): %USERPROFILE%\Local\AppData\Dragon's Eye Productions\Furcadia
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.TemporaryDreamsPath">
+      <summary>
+             Temporary dreams path - contains downloaded player dreams for
+             subsequent loading.
+            
+             Default: %ALLUSERSPROFILE%\Dragon's Eye
+                      Productions\Furcadia\Temporary Dreams
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.TemporaryFilesPath">
+      <summary>
+             Temporary files path - contains downloaded and uploaded files
+             that are either used to upload packages or download them for extraction.
+            
+             Default: %ALLUSERSPROFILE%\Dragon's Eye
+                      Productions\Furcadia\Temporary Files
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.TemporaryPatchesPath">
+      <summary>
+             Temporary patch path - contains downloaded temporary patches.
+             This technology is never in use, yet supported, so this folder
+             is always empty.
+            
+             Default: %ALLUSERSPROFILE%\Dragon's Eye
+                      Productions\Furcadia\Temporary Patches
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.UsingLocaldir">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.Paths.UsingLocaldir</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.WhisperLogsPath">
+      <summary>
+             Whisper logs path - contains whisper logs for each character
+             whispered, recorded by Pounce with the whisper windows.
+            
+             Default: My Documents\Furcadia\Logs\Whispers
+             </summary>
     </member>
     <member name="T:Furcadia.Movement.CharacterFlags">
       <summary>
@@ -4042,6 +4337,11 @@
             This is triggered when a handled Exception is thrown.
             </summary>
     </member>
+    <member name="F:Furcadia.Net.NetProxy.FurcadiaUtilities">
+      <summary>
+            Furcadia Utilities
+            </summary>
+    </member>
     <member name="E:Furcadia.Net.NetProxy.FurcSettingsRestored">
       <summary>
             This is triggered when t client is closed.
@@ -4603,6 +4903,11 @@
             This is triggered when a handled Exception is thrown.
             </summary>
     </member>
+    <member name="F:Furcadia.Net.DirectConnection.ClientBase.FurcadiaUtilities">
+      <summary>
+            Furcadia Utilities
+            </summary>
+    </member>
     <member name="F:Furcadia.Net.DirectConnection.ClientBase.FurcPath">
       <summary>
             Furcadia Path Collection
@@ -4745,6 +5050,21 @@
         </markup>
       </summary>
     </member>
+    <member name="F:Furcadia.Net.Options.ClientOptions.FurcadiaFilePaths">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Options.ClientOptions.FurcadiaFilePaths</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.ClientOptions.FurcadiaUtilities">
+      <summary>
+            Furcadia Utilities
+            </summary>
+    </member>
     <member name="P:Furcadia.Net.Options.ClientOptions.GameServerHost">
       <summary>
             Host name or IP of the game server
@@ -4770,11 +5090,6 @@
     <member name="P:Furcadia.Net.Options.ProxyOptions.CharacterIniFile">
       <summary>
             Character Ini file to connect to the Game server with
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Options.ProxyOptions.FurcadiaFilePaths">
-      <summary>
-            Furcadia File Paths
             </summary>
     </member>
     <member name="P:Furcadia.Net.Options.ProxyOptions.FurcadiaInstallPath">
@@ -5841,6 +6156,11 @@
             Default Constructor
             </summary>
     </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.DefaultClient">
+      <summary>
+            Furcadia Client Executable
+            </summary>
+    </member>
     <member name="P:Furcadia.Net.Utils.Utilities.GameServerHost">
       <summary>
             Gets or sets the Furcadia server host (i.e
@@ -5875,6 +6195,21 @@
       <summary>
             Gets or sets the Furcadia Pounce Server host (IE
             on.furcadia.com). (Furcadia v31c)
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.ReggistryPathMono">
+      <summary>
+            Mono Registry Path
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.ReggistryPathX64">
+      <summary>
+            Windows x64 Registry path
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.ReggistryPathX86">
+      <summary>
+            Windows 32 Registry path
             </summary>
     </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.BaseServerInstruction">

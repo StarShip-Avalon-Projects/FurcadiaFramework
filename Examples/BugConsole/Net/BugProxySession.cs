@@ -56,7 +56,6 @@ namespace BugProxy.Net
         public BugProxySession(BugProxyOptions Options) : base(Options)
         {
             options = Options;
-            FurcPath = options.FurcadiaFilePaths;
         }
 
         #endregion Public Constructors

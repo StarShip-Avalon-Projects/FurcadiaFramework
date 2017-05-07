@@ -19,7 +19,7 @@ namespace BugProxy.IO
 
         public CharacterIniList()
         {
-            string[] CharacterFiles = Directory.GetFiles(FurcPath.GetFurcadiaCharactersPath(), "*.ini");
+            string[] CharacterFiles = Directory.GetFiles(FurcPath.CharacterPath, "*.ini");
             foreach (var character in CharacterFiles)
             {
                 Character Char = new Character();

@@ -162,6 +162,7 @@
     <HelpKINode Title="ClientBase.BufferCapacity Property " Url="html/P_Furcadia_Net_DirectConnection_ClientBase_BufferCapacity.htm" />
     <HelpKINode Title="NetProxy.BufferCapacity Property " Url="html/P_Furcadia_Net_NetProxy_BufferCapacity.htm" />
   </HelpKINode>
+  <HelpKINode Title="CachePath property" Url="html/P_Furcadia_IO_Paths_CachePath.htm" />
   <HelpKINode Title="CameraState enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="Cape property" Url="html/P_Furcadia_Movement_ColorString_Cape.htm" />
   <HelpKINode Title="CapeRemap field" Url="html/F_Furcadia_Drawing_Graphics_Remapper_CapeRemap.htm" />
@@ -221,6 +222,7 @@
   <HelpKINode Title="CharacterInfo.Costume property" Url="html/P_Furcadia_Net_Account_CharacterInfo_Costume.htm" />
   <HelpKINode Title="CharacterIniFile property" Url="html/P_Furcadia_Net_Options_ProxyOptions_CharacterIniFile.htm" />
   <HelpKINode Title="CharacterName property" Url="html/P_Furcadia_Net_Account_CharacterInfo_CharacterName.htm" />
+  <HelpKINode Title="CharacterPath property" Url="html/P_Furcadia_IO_Paths_CharacterPath.htm" />
   <HelpKINode Title="CharToDescTag method" Url="html/M_Furcadia_Drawing_Helper_CharToDescTag.htm" />
   <HelpKINode Title="CHAR_FLAG_HAS_PROFILE field" Url="html/F_Furcadia_Movement_CharacterFlags_CHAR_FLAG_HAS_PROFILE.htm" />
   <HelpKINode Title="CHAR_FLAG_NEW_AVATAR field" Url="html/F_Furcadia_Movement_CharacterFlags_CHAR_FLAG_NEW_AVATAR.htm" />
@@ -254,6 +256,7 @@
   <HelpKINode Title="ClientBase.EndPoint property" Url="html/P_Furcadia_Net_DirectConnection_ClientBase_EndPoint.htm" />
   <HelpKINode Title="ClientBase.Error event" Url="html/E_Furcadia_Net_DirectConnection_ClientBase_Error.htm" />
   <HelpKINode Title="ClientBase.ErrorEventHandler delegate" Url="html/T_Furcadia_Net_DirectConnection_ClientBase_ErrorEventHandler.htm" />
+  <HelpKINode Title="ClientBase.FurcadiaUtilities field" Url="html/F_Furcadia_Net_DirectConnection_ClientBase_FurcadiaUtilities.htm" />
   <HelpKINode Title="ClientBase.FurcPath field" Url="html/F_Furcadia_Net_DirectConnection_ClientBase_FurcPath.htm" />
   <HelpKINode Title="ClientBase.IsServerConnected property" Url="html/P_Furcadia_Net_DirectConnection_ClientBase_IsServerConnected.htm" />
   <HelpKINode Title="ClientBase.SendServer method" Url="html/Overload_Furcadia_Net_DirectConnection_ClientBase_SendServer.htm" />
@@ -270,10 +273,13 @@
     <HelpKINode Title="ClientOptions Class" Url="html/T_Furcadia_Net_Options_ClientOptions.htm" />
     <HelpKINode Title="about ClientOptions class" Url="html/T_Furcadia_Net_Options_ClientOptions.htm" />
     <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_Options_ClientOptions__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_Options_ClientOptions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Options_ClientOptions.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Options_ClientOptions.htm" />
   </HelpKINode>
   <HelpKINode Title="ClientOptions.ClientOptions constructor" Url="html/M_Furcadia_Net_Options_ClientOptions__ctor.htm" />
+  <HelpKINode Title="ClientOptions.FurcadiaFilePaths field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaFilePaths.htm" />
+  <HelpKINode Title="ClientOptions.FurcadiaUtilities field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaUtilities.htm" />
   <HelpKINode Title="ClientOptions.GameServerHost property" Url="html/P_Furcadia_Net_Options_ClientOptions_GameServerHost.htm" />
   <HelpKINode Title="ClientOptions.GameServerPort property" Url="html/P_Furcadia_Net_Options_ClientOptions_GameServerPort.htm" />
   <HelpKINode Title="ClientStatus property" Url="html/P_Furcadia_Net_Proxy_ProxySession_ClientStatus.htm" />
@@ -346,6 +352,25 @@
   <HelpKINode Title="Count property" Url="html/P_Furcadia_Net_FURREList_Count.htm" />
   <HelpKINode Title="CounterMax field" Url="html/F_Furcadia_Drawing_Graphics_StepBlock_CounterMax.htm" />
   <HelpKINode Title="Default property" Url="html/P_Furcadia_Drawing_Graphics_Palette_Default.htm" />
+  <HelpKINode Title="DefaultCachePath property" Url="html/P_Furcadia_IO_Paths_DefaultCachePath.htm" />
+  <HelpKINode Title="DefaultCharacterPath property" Url="html/P_Furcadia_IO_Paths_DefaultCharacterPath.htm" />
+  <HelpKINode Title="DefaultClient property" Url="html/P_Furcadia_Net_Utils_Utilities_DefaultClient.htm" />
+  <HelpKINode Title="DefaultDreamsPath property" Url="html/P_Furcadia_IO_Paths_DefaultDreamsPath.htm" />
+  <HelpKINode Title="DefaultFurcadiaPath property" Url="html/P_Furcadia_IO_Paths_DefaultFurcadiaPath.htm" />
+  <HelpKINode Title="DefaultGlobalMapsPath property" Url="html/P_Furcadia_IO_Paths_DefaultGlobalMapsPath.htm" />
+  <HelpKINode Title="DefaultGlobalSkinsPath property" Url="html/P_Furcadia_IO_Paths_DefaultGlobalSkinsPath.htm" />
+  <HelpKINode Title="DefaultLocalSkinsPath property" Url="html/P_Furcadia_IO_Paths_DefaultLocalSkinsPath.htm" />
+  <HelpKINode Title="DefaultLogsPath property" Url="html/P_Furcadia_IO_Paths_DefaultLogsPath.htm" />
+  <HelpKINode Title="DefaultPatchPath property" Url="html/P_Furcadia_IO_Paths_DefaultPatchPath.htm" />
+  <HelpKINode Title="DefaultPermanentMapsCachePath property" Url="html/P_Furcadia_IO_Paths_DefaultPermanentMapsCachePath.htm" />
+  <HelpKINode Title="DefaultPersonalDataPath property" Url="html/P_Furcadia_IO_Paths_DefaultPersonalDataPath.htm" />
+  <HelpKINode Title="DefaultPortraitCachePath property" Url="html/P_Furcadia_IO_Paths_DefaultPortraitCachePath.htm" />
+  <HelpKINode Title="DefaultScreenshotsPath property" Url="html/P_Furcadia_IO_Paths_DefaultScreenshotsPath.htm" />
+  <HelpKINode Title="DefaultSettingsPath property" Url="html/P_Furcadia_IO_Paths_DefaultSettingsPath.htm" />
+  <HelpKINode Title="DefaultTemporaryDreamsPath property" Url="html/P_Furcadia_IO_Paths_DefaultTemporaryDreamsPath.htm" />
+  <HelpKINode Title="DefaultTemporaryFilesPath property" Url="html/P_Furcadia_IO_Paths_DefaultTemporaryFilesPath.htm" />
+  <HelpKINode Title="DefaultTemporaryPatchesPath property" Url="html/P_Furcadia_IO_Paths_DefaultTemporaryPatchesPath.htm" />
+  <HelpKINode Title="DefaultWhisperLogsPath property" Url="html/P_Furcadia_IO_Paths_DefaultWhisperLogsPath.htm" />
   <HelpKINode Title="Delay enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="DeleteSetting method" Url="html/M_Furcadia_Text_IniParser_DeleteSetting.htm" />
   <HelpKINode Title="Desc property" Url="html/P_Furcadia_Net_FURRE_Desc.htm" />
@@ -409,6 +434,7 @@
   <HelpKINode Title="DREAM.Rating property" Url="html/P_Furcadia_Net_DREAM_Rating.htm" />
   <HelpKINode Title="DREAM.Title property" Url="html/P_Furcadia_Net_DREAM_Title.htm" />
   <HelpKINode Title="DREAM.URL property" Url="html/P_Furcadia_Net_DREAM_URL.htm" />
+  <HelpKINode Title="DreamsPath property" Url="html/P_Furcadia_IO_Paths_DreamsPath.htm" />
   <HelpKINode Title="DS_Number field" Url="html/F_Furcadia_Avatar_Frame_DS_Number.htm" />
   <HelpKINode Title="effectNumber field">
     <HelpKINode Title="MapPosition.effectNumber Field" Url="html/F_Furcadia_FurcMap_MapPosition_effectNumber.htm" />
@@ -463,8 +489,8 @@
     <HelpKINode Title="about Frame structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Avatar_Frame.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Avatar_Frame.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
   </HelpKINode>
   <HelpKINode Title="Frame.FrameFormat field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FrameFormat.htm" />
   <HelpKINode Title="Frame.FrameFormats enumeration" Url="html/T_Furcadia_Drawing_Graphics_Frame_FrameFormats.htm" />
@@ -589,7 +615,7 @@
   <HelpKINode Title="Furcadia.Text.IniParser class" Url="html/T_Furcadia_Text_IniParser.htm" />
   <HelpKINode Title="Furcadia.Text.Settings class" Url="html/T_Furcadia_Text_Settings.htm" />
   <HelpKINode Title="Furcadia.Util class" Url="html/T_Furcadia_Util.htm" />
-  <HelpKINode Title="FurcadiaFilePaths property" Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaFilePaths.htm" />
+  <HelpKINode Title="FurcadiaFilePaths field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaFilePaths.htm" />
   <HelpKINode Title="FurcadiaInstallPath property" Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaInstallPath.htm" />
   <HelpKINode Title="FurcadiaIOException class">
     <HelpKINode Title="FurcadiaIOException Class" Url="html/T_Furcadia_IO_FurcadiaIOException.htm" />
@@ -600,6 +626,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_IO_FurcadiaIOException.htm" />
   </HelpKINode>
   <HelpKINode Title="FurcadiaIOException.FurcadiaIOException constructor" Url="html/Overload_Furcadia_IO_FurcadiaIOException__ctor.htm" />
+  <HelpKINode Title="FurcadiaLocaldirPath property" Url="html/P_Furcadia_IO_Paths_FurcadiaLocaldirPath.htm" />
   <HelpKINode Title="FurcadiaMarkup class">
     <HelpKINode Title="FurcadiaMarkup Class" Url="html/T_Furcadia_Text_FurcadiaMarkup.htm" />
     <HelpKINode Title="about FurcadiaMarkup class" Url="html/T_Furcadia_Text_FurcadiaMarkup.htm" />
@@ -635,6 +662,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Drawing_Graphics_FurcadiaPaletteException.htm" />
   </HelpKINode>
   <HelpKINode Title="FurcadiaPaletteException.FurcadiaPaletteException constructor" Url="html/M_Furcadia_Drawing_Graphics_FurcadiaPaletteException__ctor.htm" />
+  <HelpKINode Title="FurcadiaPath property" Url="html/P_Furcadia_IO_Paths_FurcadiaPath.htm" />
   <HelpKINode Title="FurcadiaProcess property" Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaProcess.htm" />
   <HelpKINode Title="FurcadiaShapes class">
     <HelpKINode Title="FurcadiaShapes Class" Url="html/T_Furcadia_Drawing_Graphics_FurcadiaShapes.htm" />
@@ -663,6 +691,11 @@
   </HelpKINode>
   <HelpKINode Title="FurcadiaShapesException.FurcadiaShapesException constructor" Url="html/M_Furcadia_Drawing_Graphics_FurcadiaShapesException__ctor.htm" />
   <HelpKINode Title="FurcadiaShortName method" Url="html/M_Furcadia_Util_FurcadiaShortName.htm" />
+  <HelpKINode Title="FurcadiaUtilities field">
+    <HelpKINode Title="ClientBase.FurcadiaUtilities Field" Url="html/F_Furcadia_Net_DirectConnection_ClientBase_FurcadiaUtilities.htm" />
+    <HelpKINode Title="ClientOptions.FurcadiaUtilities Field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaUtilities.htm" />
+    <HelpKINode Title="NetProxy.FurcadiaUtilities Field" Url="html/F_Furcadia_Net_NetProxy_FurcadiaUtilities.htm" />
+  </HelpKINode>
   <HelpKINode Title="FurcIni class">
     <HelpKINode Title="FurcIni Class" Url="html/T_Furcadia_Text_FurcIni.htm" />
     <HelpKINode Title="about FurcIni class" Url="html/T_Furcadia_Text_FurcIni.htm" />
@@ -768,17 +801,15 @@
   <HelpKINode Title="Gender property" Url="html/P_Furcadia_Movement_ColorString_Gender.htm" />
   <HelpKINode Title="Generator field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_Generator.htm" />
   <HelpKINode Title="GerFurreByName method" Url="html/M_Furcadia_Net_FURREList_GerFurreByName.htm" />
-  <HelpKINode Title="GetCachePath method" Url="html/M_Furcadia_IO_Paths_GetCachePath.htm" />
   <HelpKINode Title="GetDefaultPatchPath method" Url="html/M_Furcadia_IO_Paths_GetDefaultPatchPath.htm" />
-  <HelpKINode Title="GetDynAvatarPath method" Url="html/M_Furcadia_IO_Paths_GetDynAvatarPath.htm" />
   <HelpKINode Title="getEffectAt method" Url="html/M_Furcadia_FurcMap_Map_getEffectAt.htm" />
   <HelpKINode Title="GetEncoding property" Url="html/P_Furcadia_Net_Utils_Utilities_GetEncoding.htm" />
   <HelpKINode Title="GetEnumerator method" Url="html/M_Furcadia_Net_FURREList_GetEnumerator.htm" />
   <HelpKINode Title="GetEnumInt(Of T) method" Url="html/M_Furcadia_Net_Proxy_ProxySession_GetEnumInt__1.htm" />
   <HelpKINode Title="GetEnumInt&lt;T&gt; method" Url="html/M_Furcadia_Net_Proxy_ProxySession_GetEnumInt__1.htm" />
   <HelpKINode Title="getFloorAt method" Url="html/M_Furcadia_FurcMap_Map_getFloorAt.htm" />
-  <HelpKINode Title="GetFurcadiaCharactersPath method" Url="html/M_Furcadia_IO_Paths_GetFurcadiaCharactersPath.htm" />
-  <HelpKINode Title="GetFurcadiaDocPath method" Url="html/M_Furcadia_IO_Paths_GetFurcadiaDocPath.htm" />
+  <HelpKINode Title="GetFurcadiaInstallPath method" Url="html/M_Furcadia_IO_Paths_GetFurcadiaInstallPath.htm" />
+  <HelpKINode Title="GetFurcadiaLocaldirPath method" Url="html/M_Furcadia_IO_Paths_GetFurcadiaLocaldirPath.htm" />
   <HelpKINode Title="GetFurreByID method" Url="html/Overload_Furcadia_Net_FURREList_GetFurreByID.htm" />
   <HelpKINode Title="GetGroup method" Url="html/M_Furcadia_Badges_GetGroup.htm" />
   <HelpKINode Title="GetHashCode method">
@@ -787,15 +818,11 @@
     <HelpKINode Title="FURRE.GetHashCode Method " Url="html/M_Furcadia_Net_FURRE_GetHashCode.htm" />
     <HelpKINode Title="FurrePosition.GetHashCode Method " Url="html/M_Furcadia_Drawing_FurrePosition_GetHashCode.htm" />
   </HelpKINode>
-  <HelpKINode Title="GetInstallPath method" Url="html/M_Furcadia_IO_Paths_GetInstallPath.htm" />
   <HelpKINode Title="GetLevel method" Url="html/M_Furcadia_Badges_GetLevel.htm" />
-  <HelpKINode Title="GetLocaldirPath method" Url="html/M_Furcadia_IO_Paths_GetLocaldirPath.htm" />
-  <HelpKINode Title="GetLocalSettingsPath method" Url="html/M_Furcadia_IO_Paths_GetLocalSettingsPath.htm" />
   <HelpKINode Title="getMapPos method" Url="html/M_Furcadia_FurcMap_Map_getMapPos.htm" />
   <HelpKINode Title="getMapTile method" Url="html/M_Furcadia_FurcMap_Map_getMapTile.htm" />
   <HelpKINode Title="getObjectAt method" Url="html/M_Furcadia_FurcMap_Map_getObjectAt.htm" />
   <HelpKINode Title="getRegionAt method" Url="html/M_Furcadia_FurcMap_Map_getRegionAt.htm" />
-  <HelpKINode Title="GetRegistryPath method" Url="html/M_Furcadia_IO_Paths_GetRegistryPath.htm" />
   <HelpKINode Title="GetSetting method" Url="html/M_Furcadia_Text_IniParser_GetSetting.htm" />
   <HelpKINode Title="GetString method">
     <HelpKINode Title="INetMessage.GetString Method " Url="html/M_Furcadia_Net_INetMessage_GetString.htm" />
@@ -806,6 +833,8 @@
   <HelpKINode Title="getTargetRectFromCenterCoord method" Url="html/M_Furcadia_Drawing_VisibleArea_getTargetRectFromCenterCoord.htm" />
   <HelpKINode Title="GetUserSetting method" Url="html/M_Furcadia_Text_FurcIni_GetUserSetting.htm" />
   <HelpKINode Title="getWallAt method" Url="html/M_Furcadia_FurcMap_Map_getWallAt.htm" />
+  <HelpKINode Title="GlobalMapsPath property" Url="html/P_Furcadia_IO_Paths_GlobalMapsPath.htm" />
+  <HelpKINode Title="GlobalSkinsPath property" Url="html/P_Furcadia_IO_Paths_GlobalSkinsPath.htm" />
   <HelpKINode Title="GreaterThan operator">
     <HelpKINode Title="Base220.GreaterThan Operator " Url="html/M_Furcadia_Text_Base220_op_GreaterThan.htm" />
     <HelpKINode Title="Base95.GreaterThan Operator " Url="html/M_Furcadia_Text_Base95_op_GreaterThan.htm" />
@@ -894,10 +923,13 @@
   </HelpKINode>
   <HelpKINode Title="LoadFrom method" Url="html/M_Furcadia_FurcMap_Map_LoadFrom.htm" />
   <HelpKINode Title="LoadFurcadiaSettings method" Url="html/M_Furcadia_Text_FurcIni_LoadFurcadiaSettings.htm" />
+  <HelpKINode Title="LocaldirPath property" Url="html/P_Furcadia_IO_Paths_LocaldirPath.htm" />
   <HelpKINode Title="Localhost property" Url="html/P_Furcadia_Text_Settings_Localhost.htm" />
   <HelpKINode Title="LocalhostPort property" Url="html/P_Furcadia_Net_Options_ProxyOptions_LocalhostPort.htm" />
   <HelpKINode Title="LocalPort property" Url="html/P_Furcadia_Text_Settings_LocalPort.htm" />
+  <HelpKINode Title="LocalSkinsPath property" Url="html/P_Furcadia_IO_Paths_LocalSkinsPath.htm" />
   <HelpKINode Title="Logins property" Url="html/P_Furcadia_Text_Character_Logins.htm" />
+  <HelpKINode Title="LogsPath property" Url="html/P_Furcadia_IO_Paths_LogsPath.htm" />
   <HelpKINode Title="Loop enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="Map class">
     <HelpKINode Title="Map Class" Url="html/T_Furcadia_FurcMap_Map.htm" />
@@ -1041,6 +1073,7 @@
     <HelpKINode Title="about NetProxy class" Url="html/T_Furcadia_Net_NetProxy.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_Furcadia_Net_NetProxy__ctor.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Furcadia_Net_NetProxy.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_NetProxy.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_NetProxy.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_NetProxy.htm" />
   </HelpKINode>
@@ -1061,6 +1094,7 @@
   <HelpKINode Title="NetProxy.EncoderPage property" Url="html/P_Furcadia_Net_NetProxy_EncoderPage.htm" />
   <HelpKINode Title="NetProxy.Error event" Url="html/E_Furcadia_Net_NetProxy_Error.htm" />
   <HelpKINode Title="NetProxy.ErrorEventHandler delegate" Url="html/T_Furcadia_Net_NetProxy_ErrorEventHandler.htm" />
+  <HelpKINode Title="NetProxy.FurcadiaUtilities field" Url="html/F_Furcadia_Net_NetProxy_FurcadiaUtilities.htm" />
   <HelpKINode Title="NetProxy.FurcSettingsRestored event" Url="html/E_Furcadia_Net_NetProxy_FurcSettingsRestored.htm" />
   <HelpKINode Title="NetProxy.IsClientConnected property" Url="html/P_Furcadia_Net_NetProxy_IsClientConnected.htm" />
   <HelpKINode Title="NetProxy.IsServerConnected property" Url="html/P_Furcadia_Net_NetProxy_IsServerConnected.htm" />
@@ -1145,20 +1179,54 @@
     <HelpKINode Title="about Paths class" Url="html/T_Furcadia_IO_Paths.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_Furcadia_IO_Paths__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_IO_Paths.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_IO_Paths.htm" />
   </HelpKINode>
-  <HelpKINode Title="Paths.GetCachePath method" Url="html/M_Furcadia_IO_Paths_GetCachePath.htm" />
+  <HelpKINode Title="Paths.CachePath property" Url="html/P_Furcadia_IO_Paths_CachePath.htm" />
+  <HelpKINode Title="Paths.CharacterPath property" Url="html/P_Furcadia_IO_Paths_CharacterPath.htm" />
+  <HelpKINode Title="Paths.DefaultCachePath property" Url="html/P_Furcadia_IO_Paths_DefaultCachePath.htm" />
+  <HelpKINode Title="Paths.DefaultCharacterPath property" Url="html/P_Furcadia_IO_Paths_DefaultCharacterPath.htm" />
+  <HelpKINode Title="Paths.DefaultDreamsPath property" Url="html/P_Furcadia_IO_Paths_DefaultDreamsPath.htm" />
+  <HelpKINode Title="Paths.DefaultFurcadiaPath property" Url="html/P_Furcadia_IO_Paths_DefaultFurcadiaPath.htm" />
+  <HelpKINode Title="Paths.DefaultGlobalMapsPath property" Url="html/P_Furcadia_IO_Paths_DefaultGlobalMapsPath.htm" />
+  <HelpKINode Title="Paths.DefaultGlobalSkinsPath property" Url="html/P_Furcadia_IO_Paths_DefaultGlobalSkinsPath.htm" />
+  <HelpKINode Title="Paths.DefaultLocalSkinsPath property" Url="html/P_Furcadia_IO_Paths_DefaultLocalSkinsPath.htm" />
+  <HelpKINode Title="Paths.DefaultLogsPath property" Url="html/P_Furcadia_IO_Paths_DefaultLogsPath.htm" />
+  <HelpKINode Title="Paths.DefaultPatchPath property" Url="html/P_Furcadia_IO_Paths_DefaultPatchPath.htm" />
+  <HelpKINode Title="Paths.DefaultPermanentMapsCachePath property" Url="html/P_Furcadia_IO_Paths_DefaultPermanentMapsCachePath.htm" />
+  <HelpKINode Title="Paths.DefaultPersonalDataPath property" Url="html/P_Furcadia_IO_Paths_DefaultPersonalDataPath.htm" />
+  <HelpKINode Title="Paths.DefaultPortraitCachePath property" Url="html/P_Furcadia_IO_Paths_DefaultPortraitCachePath.htm" />
+  <HelpKINode Title="Paths.DefaultScreenshotsPath property" Url="html/P_Furcadia_IO_Paths_DefaultScreenshotsPath.htm" />
+  <HelpKINode Title="Paths.DefaultSettingsPath property" Url="html/P_Furcadia_IO_Paths_DefaultSettingsPath.htm" />
+  <HelpKINode Title="Paths.DefaultTemporaryDreamsPath property" Url="html/P_Furcadia_IO_Paths_DefaultTemporaryDreamsPath.htm" />
+  <HelpKINode Title="Paths.DefaultTemporaryFilesPath property" Url="html/P_Furcadia_IO_Paths_DefaultTemporaryFilesPath.htm" />
+  <HelpKINode Title="Paths.DefaultTemporaryPatchesPath property" Url="html/P_Furcadia_IO_Paths_DefaultTemporaryPatchesPath.htm" />
+  <HelpKINode Title="Paths.DefaultWhisperLogsPath property" Url="html/P_Furcadia_IO_Paths_DefaultWhisperLogsPath.htm" />
+  <HelpKINode Title="Paths.DreamsPath property" Url="html/P_Furcadia_IO_Paths_DreamsPath.htm" />
+  <HelpKINode Title="Paths.FurcadiaLocaldirPath property" Url="html/P_Furcadia_IO_Paths_FurcadiaLocaldirPath.htm" />
+  <HelpKINode Title="Paths.FurcadiaPath property" Url="html/P_Furcadia_IO_Paths_FurcadiaPath.htm" />
   <HelpKINode Title="Paths.GetDefaultPatchPath method" Url="html/M_Furcadia_IO_Paths_GetDefaultPatchPath.htm" />
-  <HelpKINode Title="Paths.GetDynAvatarPath method" Url="html/M_Furcadia_IO_Paths_GetDynAvatarPath.htm" />
-  <HelpKINode Title="Paths.GetFurcadiaCharactersPath method" Url="html/M_Furcadia_IO_Paths_GetFurcadiaCharactersPath.htm" />
-  <HelpKINode Title="Paths.GetFurcadiaDocPath method" Url="html/M_Furcadia_IO_Paths_GetFurcadiaDocPath.htm" />
-  <HelpKINode Title="Paths.GetInstallPath method" Url="html/M_Furcadia_IO_Paths_GetInstallPath.htm" />
-  <HelpKINode Title="Paths.GetLocaldirPath method" Url="html/M_Furcadia_IO_Paths_GetLocaldirPath.htm" />
-  <HelpKINode Title="Paths.GetLocalSettingsPath method" Url="html/M_Furcadia_IO_Paths_GetLocalSettingsPath.htm" />
-  <HelpKINode Title="Paths.GetRegistryPath method" Url="html/M_Furcadia_IO_Paths_GetRegistryPath.htm" />
+  <HelpKINode Title="Paths.GetFurcadiaInstallPath method" Url="html/M_Furcadia_IO_Paths_GetFurcadiaInstallPath.htm" />
+  <HelpKINode Title="Paths.GetFurcadiaLocaldirPath method" Url="html/M_Furcadia_IO_Paths_GetFurcadiaLocaldirPath.htm" />
+  <HelpKINode Title="Paths.GlobalMapsPath property" Url="html/P_Furcadia_IO_Paths_GlobalMapsPath.htm" />
+  <HelpKINode Title="Paths.GlobalSkinsPath property" Url="html/P_Furcadia_IO_Paths_GlobalSkinsPath.htm" />
+  <HelpKINode Title="Paths.LocaldirPath property" Url="html/P_Furcadia_IO_Paths_LocaldirPath.htm" />
+  <HelpKINode Title="Paths.LocalSkinsPath property" Url="html/P_Furcadia_IO_Paths_LocalSkinsPath.htm" />
+  <HelpKINode Title="Paths.LogsPath property" Url="html/P_Furcadia_IO_Paths_LogsPath.htm" />
   <HelpKINode Title="Paths.Paths constructor" Url="html/Overload_Furcadia_IO_Paths__ctor.htm" />
-  <HelpKINode Title="Paths.ProgramFilesX86 method" Url="html/M_Furcadia_IO_Paths_ProgramFilesX86.htm" />
+  <HelpKINode Title="Paths.PermanentMapsCachePath property" Url="html/P_Furcadia_IO_Paths_PermanentMapsCachePath.htm" />
+  <HelpKINode Title="Paths.PersonalDataPath property" Url="html/P_Furcadia_IO_Paths_PersonalDataPath.htm" />
+  <HelpKINode Title="Paths.PortraitCachePath property" Url="html/P_Furcadia_IO_Paths_PortraitCachePath.htm" />
+  <HelpKINode Title="Paths.ScreenshotsPath property" Url="html/P_Furcadia_IO_Paths_ScreenshotsPath.htm" />
+  <HelpKINode Title="Paths.SettingsPath property" Url="html/P_Furcadia_IO_Paths_SettingsPath.htm" />
+  <HelpKINode Title="Paths.TemporaryDreamsPath property" Url="html/P_Furcadia_IO_Paths_TemporaryDreamsPath.htm" />
+  <HelpKINode Title="Paths.TemporaryFilesPath property" Url="html/P_Furcadia_IO_Paths_TemporaryFilesPath.htm" />
+  <HelpKINode Title="Paths.TemporaryPatchesPath property" Url="html/P_Furcadia_IO_Paths_TemporaryPatchesPath.htm" />
+  <HelpKINode Title="Paths.UsingLocaldir property" Url="html/P_Furcadia_IO_Paths_UsingLocaldir.htm" />
+  <HelpKINode Title="Paths.WhisperLogsPath property" Url="html/P_Furcadia_IO_Paths_WhisperLogsPath.htm" />
   <HelpKINode Title="PawObjectCurrent property" Url="html/P_Furcadia_Net_FURRE_PawObjectCurrent.htm" />
   <HelpKINode Title="PawObjectOld property" Url="html/P_Furcadia_Net_FURRE_PawObjectOld.htm" />
+  <HelpKINode Title="PermanentMapsCachePath property" Url="html/P_Furcadia_IO_Paths_PermanentMapsCachePath.htm" />
+  <HelpKINode Title="PersonalDataPath property" Url="html/P_Furcadia_IO_Paths_PersonalDataPath.htm" />
   <HelpKINode Title="PingDelayTime property" Url="html/P_Furcadia_Net_Utils_ServerQue_PingDelayTime.htm" />
   <HelpKINode Title="player field">
     <HelpKINode Title="SpawnAvatar.player Field" Url="html/F_Furcadia_Net_Utils_ServerParser_SpawnAvatar_player.htm" />
@@ -1170,6 +1238,7 @@
   </HelpKINode>
   <HelpKINode Title="PlayerFlags field" Url="html/F_Furcadia_Net_Utils_ServerParser_SpawnAvatar_PlayerFlags.htm" />
   <HelpKINode Title="PortOpen method" Url="html/M_Furcadia_Net_Utils_Utilities_PortOpen.htm" />
+  <HelpKINode Title="PortraitCachePath property" Url="html/P_Furcadia_IO_Paths_PortraitCachePath.htm" />
   <HelpKINode Title="Pos structure">
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame_Pos.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame_Pos.htm" />
@@ -1244,16 +1313,15 @@
   <HelpKINode Title="ProcessID property" Url="html/P_Furcadia_Net_NetProxy_ProcessID.htm" />
   <HelpKINode Title="ProcessServerChannelData event" Url="html/E_Furcadia_Net_Proxy_ProxySession_ProcessServerChannelData.htm" />
   <HelpKINode Title="ProcessServerInstruction event" Url="html/E_Furcadia_Net_Proxy_ProxySession_ProcessServerInstruction.htm" />
-  <HelpKINode Title="ProgramFilesX86 method" Url="html/M_Furcadia_IO_Paths_ProgramFilesX86.htm" />
   <HelpKINode Title="ProxyOptions class">
     <HelpKINode Title="ProxyOptions Class" Url="html/T_Furcadia_Net_Options_ProxyOptions.htm" />
     <HelpKINode Title="about ProxyOptions class" Url="html/T_Furcadia_Net_Options_ProxyOptions.htm" />
     <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_Options_ProxyOptions__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_Options_ProxyOptions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Options_ProxyOptions.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Options_ProxyOptions.htm" />
   </HelpKINode>
   <HelpKINode Title="ProxyOptions.CharacterIniFile property" Url="html/P_Furcadia_Net_Options_ProxyOptions_CharacterIniFile.htm" />
-  <HelpKINode Title="ProxyOptions.FurcadiaFilePaths property" Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaFilePaths.htm" />
   <HelpKINode Title="ProxyOptions.FurcadiaInstallPath property" Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaInstallPath.htm" />
   <HelpKINode Title="ProxyOptions.FurcadiaProcess property" Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaProcess.htm" />
   <HelpKINode Title="ProxyOptions.LocalhostPort property" Url="html/P_Furcadia_Net_Options_ProxyOptions_LocalhostPort.htm" />
@@ -1339,6 +1407,7 @@
     <HelpKINode Title="ProxySessionOptions Class" Url="html/T_Furcadia_Net_Options_ProxySessionOptions.htm" />
     <HelpKINode Title="about ProxySessionOptions class" Url="html/T_Furcadia_Net_Options_ProxySessionOptions.htm" />
     <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_Options_ProxySessionOptions__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_Options_ProxySessionOptions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Options_ProxySessionOptions.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Options_ProxySessionOptions.htm" />
   </HelpKINode>
@@ -1356,6 +1425,9 @@
   <HelpKINode Title="ReconnectMax property" Url="html/P_Furcadia_Net_Utils_ProxyReconnect_ReconnectMax.htm" />
   <HelpKINode Title="ReconnectTimeOutDelay property" Url="html/P_Furcadia_Net_Options_ProxySessionOptions_ReconnectTimeOutDelay.htm" />
   <HelpKINode Title="RegExName field" Url="html/F_Furcadia_Text_FurcadiaMarkup_RegExName.htm" />
+  <HelpKINode Title="ReggistryPathMono property" Url="html/P_Furcadia_Net_Utils_Utilities_ReggistryPathMono.htm" />
+  <HelpKINode Title="ReggistryPathX64 property" Url="html/P_Furcadia_Net_Utils_Utilities_ReggistryPathX64.htm" />
+  <HelpKINode Title="ReggistryPathX86 property" Url="html/P_Furcadia_Net_Utils_Utilities_ReggistryPathX86.htm" />
   <HelpKINode Title="regionNumber field">
     <HelpKINode Title="MapPosition.regionNumber Field" Url="html/F_Furcadia_FurcMap_MapPosition_regionNumber.htm" />
     <HelpKINode Title="MapTile.regionNumber Field" Url="html/F_Furcadia_FurcMap_MapTile_regionNumber.htm" />
@@ -1409,6 +1481,7 @@
   <HelpKINode Title="Save method" Url="html/M_Furcadia_FurcMap_Map_Save.htm" />
   <HelpKINode Title="SaveFurcadiaSettings method" Url="html/M_Furcadia_Text_FurcIni_SaveFurcadiaSettings.htm" />
   <HelpKINode Title="SaveSettings method" Url="html/Overload_Furcadia_Text_IniParser_SaveSettings.htm" />
+  <HelpKINode Title="ScreenshotsPath property" Url="html/P_Furcadia_IO_Paths_ScreenshotsPath.htm" />
   <HelpKINode Title="SendServer method">
     <HelpKINode Title="ClientBase.SendServer Method " Url="html/Overload_Furcadia_Net_DirectConnection_ClientBase_SendServer.htm" />
     <HelpKINode Title="NetConnection.SendServer Method " Url="html/Overload_Furcadia_Net_DirectConnection_NetConnection_SendServer.htm" />
@@ -1481,6 +1554,7 @@
   <HelpKINode Title="Settings.LocalPort property" Url="html/P_Furcadia_Text_Settings_LocalPort.htm" />
   <HelpKINode Title="Settings.RestoreFurcadiaSettings method" Url="html/M_Furcadia_Text_Settings_RestoreFurcadiaSettings.htm" />
   <HelpKINode Title="Settings.Settings constructor" Url="html/Overload_Furcadia_Text_Settings__ctor.htm" />
+  <HelpKINode Title="SettingsPath property" Url="html/P_Furcadia_IO_Paths_SettingsPath.htm" />
   <HelpKINode Title="SetUserSetting method" Url="html/M_Furcadia_Text_FurcIni_SetUserSetting.htm" />
   <HelpKINode Title="setWallAt method" Url="html/M_Furcadia_FurcMap_Map_setWallAt.htm" />
   <HelpKINode Title="Shape property" Url="html/P_Furcadia_Net_FURRE_Shape.htm" />
@@ -1544,6 +1618,9 @@
   </HelpKINode>
   <HelpKINode Title="SyncRoot property" Url="html/P_Furcadia_Net_FURREList_SyncRoot.htm" />
   <HelpKINode Title="Teen field" Url="html/F_Furcadia_FurcMap_MapRating_Teen.htm" />
+  <HelpKINode Title="TemporaryDreamsPath property" Url="html/P_Furcadia_IO_Paths_TemporaryDreamsPath.htm" />
+  <HelpKINode Title="TemporaryFilesPath property" Url="html/P_Furcadia_IO_Paths_TemporaryFilesPath.htm" />
+  <HelpKINode Title="TemporaryPatchesPath property" Url="html/P_Furcadia_IO_Paths_TemporaryPatchesPath.htm" />
   <HelpKINode Title="TextToServer method" Url="html/M_Furcadia_Net_Proxy_ProxySession_TextToServer.htm" />
   <HelpKINode Title="ThroatTired property">
     <HelpKINode Title="ProxySession.ThroatTired Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_ThroatTired.htm" />
@@ -1587,6 +1664,7 @@
   <HelpKINode Title="URL property" Url="html/P_Furcadia_Net_DREAM_URL.htm" />
   <HelpKINode Title="UsePatch property" Url="html/P_Furcadia_FurcMap_Map_UsePatch.htm" />
   <HelpKINode Title="UseSwearFilter property" Url="html/P_Furcadia_FurcMap_Map_UseSwearFilter.htm" />
+  <HelpKINode Title="UsingLocaldir property" Url="html/P_Furcadia_IO_Paths_UsingLocaldir.htm" />
   <HelpKINode Title="Util class">
     <HelpKINode Title="Util Class" Url="html/T_Furcadia_Util.htm" />
     <HelpKINode Title="about Util class" Url="html/T_Furcadia_Util.htm" />
@@ -1602,11 +1680,15 @@
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Utils_Utilities.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Utils_Utilities.htm" />
   </HelpKINode>
+  <HelpKINode Title="Utilities.DefaultClient property" Url="html/P_Furcadia_Net_Utils_Utilities_DefaultClient.htm" />
   <HelpKINode Title="Utilities.GameServerHost property" Url="html/P_Furcadia_Net_Utils_Utilities_GameServerHost.htm" />
   <HelpKINode Title="Utilities.GameServerIp property" Url="html/P_Furcadia_Net_Utils_Utilities_GameServerIp.htm" />
   <HelpKINode Title="Utilities.GetEncoding property" Url="html/P_Furcadia_Net_Utils_Utilities_GetEncoding.htm" />
   <HelpKINode Title="Utilities.PortOpen method" Url="html/M_Furcadia_Net_Utils_Utilities_PortOpen.htm" />
   <HelpKINode Title="Utilities.PounceServerHost property" Url="html/P_Furcadia_Net_Utils_Utilities_PounceServerHost.htm" />
+  <HelpKINode Title="Utilities.ReggistryPathMono property" Url="html/P_Furcadia_Net_Utils_Utilities_ReggistryPathMono.htm" />
+  <HelpKINode Title="Utilities.ReggistryPathX64 property" Url="html/P_Furcadia_Net_Utils_Utilities_ReggistryPathX64.htm" />
+  <HelpKINode Title="Utilities.ReggistryPathX86 property" Url="html/P_Furcadia_Net_Utils_Utilities_ReggistryPathX86.htm" />
   <HelpKINode Title="Utilities.Utilities constructor" Url="html/M_Furcadia_Net_Utils_Utilities__ctor.htm" />
   <HelpKINode Title="Value field">
     <HelpKINode Title="Base95.Value Field" Url="html/F_Furcadia_Text_Base95_Value.htm" />
@@ -1641,6 +1723,7 @@
   <HelpKINode Title="wallNWNumber field" Url="html/F_Furcadia_FurcMap_MapTile_wallNWNumber.htm" />
   <HelpKINode Title="WasOnline property" Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_WasOnline.htm" />
   <HelpKINode Title="WasVisible property" Url="html/P_Furcadia_Net_FURRE_WasVisible.htm" />
+  <HelpKINode Title="WhisperLogsPath property" Url="html/P_Furcadia_IO_Paths_WhisperLogsPath.htm" />
   <HelpKINode Title="Width field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Width.htm" />
   <HelpKINode Title="Width property" Url="html/P_Furcadia_FurcMap_Map_Width.htm" />
   <HelpKINode Title="Wings field" Url="html/F_Furcadia_Avatar_Frame_Wings.htm" />
@@ -1660,14 +1743,14 @@
   <HelpKINode Title="X property" Url="html/P_Furcadia_Net_FURRE_X.htm" />
   <HelpKINode Title="x property" Url="html/P_Furcadia_Drawing_FurrePosition_x.htm" />
   <HelpKINode Title="y field">
-    <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
     <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
+    <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
   </HelpKINode>
   <HelpKINode Title="Y field">
-    <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
     <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
+    <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
   </HelpKINode>
-  <HelpKINode Title="Y property" Url="html/P_Furcadia_Net_FURRE_Y.htm" />
   <HelpKINode Title="y property" Url="html/P_Furcadia_Drawing_FurrePosition_y.htm" />
+  <HelpKINode Title="Y property" Url="html/P_Furcadia_Net_FURRE_Y.htm" />
   <HelpKINode Title="YouSayFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouSayFilter.htm" />
 </HelpKI>

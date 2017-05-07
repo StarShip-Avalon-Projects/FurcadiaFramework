@@ -1,5 +1,4 @@
-﻿using Furcadia.IO;
-using Furcadia.Net.Proxy;
+﻿using Furcadia.Net.Proxy;
 using System;
 using System.Net.NetworkInformation;
 
@@ -12,7 +11,6 @@ namespace BugProxy.Net
     {
         #region Private Fields
 
-        private Paths FurcPath;
         private BugProxyOptions options;
 
         #endregion Private Fields
@@ -56,7 +54,6 @@ namespace BugProxy.Net
         public BugProxySession(BugProxyOptions Options) : base(Options)
         {
             options = Options;
-            FurcPath = options.FurcadiaFilePaths;
         }
 
         #endregion Public Constructors
