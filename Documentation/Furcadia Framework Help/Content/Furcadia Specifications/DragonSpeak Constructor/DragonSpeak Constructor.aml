@@ -17,20 +17,23 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Required introduction</para>
+      <para>DragonSpeak Constructor is a script-editting program originally created by Mercenary Enclave Productions. 
+      It's overwhelming popularity among dreamweavers and additional features over the original DragonSpeak Editor make it an excellent choice for scripting your creations.
+      Since its creation as a third party tool, DSC has been included in the Furcadia installer as the default DS editor.
+      </para>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
+    <!--<section address="Section1">
       <title>Optional section title</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
+        --><!-- Uncomment this to create a sub-section outline
+        <autoOutline /> --><!--
         <para>Add one or more sections with content</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
+      --><!-- If a section contains a sections element, its content creates
            sub-sections.  These are not collapsible.
       <sections>
           <section address="SubSection1">
@@ -45,17 +48,17 @@
                   <para>Sub-section content.</para>
               </content>
           </section>
-      </sections> -->
-    </section>
+      </sections> --><!--
+    </section>-->
 
     <relatedTopics>
       <externalLink>
-        <linkText>Official Furcadia Dragon Speak Constructor Tutorial</linkText>
+        <linkText>Official Furcadia DragonSpeak Constructor Tutorial</linkText>
         <linkAlternateText></linkAlternateText>
         <linkUri>http://cms.furcadia.com/creations/dreammaking/dreamtutorials/ds-ed</linkUri>
       </externalLink>
       <externalLink>
-        <linkText>Furcadia Forums (DSC Development Thread)</linkText>
+        <linkText>DSC Development Thread (Furcadia Forums)</linkText>
         <linkAlternateText></linkAlternateText>
         <linkUri>http://forums.furcadia.com/index.php?furcadia_session_id=150039-kelj-urj&amp;showtopic=51315</linkUri>
       </externalLink>
