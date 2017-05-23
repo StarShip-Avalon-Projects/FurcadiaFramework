@@ -43,13 +43,13 @@ namespace BugConsole
 
         static private void onClientDataReceived(string data)
         {
-            Console.WriteLine("<C>: " + data);
+            Console.Write("C>: " + data);
             proxy.SendToServer(data);
         }
 
         static private void onServerDataReceived(string data)
         {
-            Console.WriteLine("S>: " + data);
+            Console.Write("S>: " + data);
             proxy.SendToClient(data);
         }
 
