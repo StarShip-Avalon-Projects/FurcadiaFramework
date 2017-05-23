@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
   <Topic id="8d0a663e-8095-408a-b860-f55d2fc3ccbe" visible="True" isDefault="true" title="Welcome to FFF3PP" />
-  <Topic id="58f7dfdd-6211-418e-b517-a62391d011a6" visible="True" noFile="true" isExpanded="true" isSelected="true" title="FF3PP Code Samples">
+  <Topic id="58f7dfdd-6211-418e-b517-a62391d011a6" visible="True" noFile="true" isExpanded="true" title="FF3PP Code Samples">
     <Topic id="6fdb6471-90ca-4bf7-b380-7b23d1ad6663" visible="True" />
     <Topic id="9a6827e6-8a7b-45a1-9a20-7aaee6f5a481" visible="True" />
   </Topic>
-  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" title="Furcadia Specifications">
+  <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" isExpanded="true" title="Furcadia Specifications">
     <Topic id="061a27f3-3740-48cd-93a1-206c51823e5a" visible="True" noFile="true" title="Client Server Communications">
       <Topic id="ace0106b-f963-47f6-8be8-7c2fa78d223a" visible="True" title="Server To Client Instructions (Game Server)" />
       <Topic id="14d9e4be-5faf-4a40-85a0-b0129610103c" visible="True" title="Furcadia Markup Language (FML)" />
@@ -16,12 +16,12 @@
     <Topic id="a23d6f60-970b-4881-ad5f-077563316c63" visible="True" title="Furcadia File Paths">
       <Topic id="0622bf6b-9933-4acb-95eb-b5ddfa4be5e7" visible="True" />
     </Topic>
-    <Topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" visible="True" title="Dragon Speak Constructor">
+    <Topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" visible="True" isExpanded="true" title="DragonSpeak Constructor">
       <Topic id="c64fbfff-bfc3-42dc-bd67-21400a69023c" visible="True" title="DSC Hot Keys" />
       <Topic id="8c924167-6c3d-41dc-a8bb-b7f21f34830c" visible="True" title="DSC File Paths" />
       <Topic id="52f92ba7-b964-4377-9336-d1a664365e40" visible="True" isExpanded="true" title="Configuration Files">
         <Topic id="9c6d643d-eca5-406a-ab49-464fbadbe83f" visible="True" title="Keys.ini" />
-        <Topic id="d03ce0b6-5d09-4a5d-bb98-1b73d880ab93" visible="True" title="DSC Help URLs" />
+        <Topic id="d03ce0b6-5d09-4a5d-bb98-1b73d880ab93" visible="True" isSelected="true" title="DSCUrls.ini" />
       </Topic>
       <Topic id="c66c6136-b446-4383-9f4d-4212fbeb1ea1" visible="True" isExpanded="true">
         <Topic id="95db5c29-0875-459d-b4f1-fd3c35c37fa7" visible="True" title="Draconic Magician (DS Wizard) Script format" />

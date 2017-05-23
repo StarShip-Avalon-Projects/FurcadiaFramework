@@ -40,26 +40,58 @@
           <colorizer syntaxFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xml" styleFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xsl" stylesheet="{@SHFBFolder}PresentationStyles\Colorizer\highlight.css" scriptFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.js" disabled="{@DisableCodeBlockComponent}" language="cs" tabSize="0" numberLines="true" outlining="true" keepSeeTags="false" defaultTitle="true" />
         </component>
       </ComponentConfig>
-<ComponentConfig id="Syntax Component" enabled="True"><component id="Syntax Component"><syntax input="/document/reference" output="/document/syntax" renderReferenceLinks="false" /><generators>
+      <ComponentConfig id="Syntax Component" enabled="True">
+        <component id="Syntax Component">
+          <syntax input="/document/reference" output="/document/syntax" renderReferenceLinks="false" />
+          <generators>
     {@SyntaxFilters}
-</generators><containerElement name="codeSnippetGroup" addNoExampleTabs="true" includeOnSingleSnippets="false" groupingEnabled="{@CodeSnippetGrouping}" /><configurations><generator id="C#" /><generator id="Visual Basic"><includeLineContinuation value="false" /></generator><generator id="Visual Basic Usage"><includeLineContinuation value="false" /></generator><generator id="Managed C++" /><generator id="F#" /><generator id="J#" /><generator id="JScript" /><generator id="JavaScript" /><generator id="XAML Usage" /><generator id="ASP.NET" /></configurations></component></ComponentConfig>
-<ComponentConfig id="IntelliSense Component" enabled="True"><component id="IntelliSense Component"><!-- Output options (optional)
+</generators>
+          <containerElement name="codeSnippetGroup" addNoExampleTabs="true" includeOnSingleSnippets="false" groupingEnabled="{@CodeSnippetGrouping}" />
+          <configurations>
+            <generator id="C#" />
+            <generator id="Visual Basic">
+              <includeLineContinuation value="false" />
+            </generator>
+            <generator id="Visual Basic Usage">
+              <includeLineContinuation value="false" />
+            </generator>
+            <generator id="Managed C++" />
+            <generator id="F#" />
+            <generator id="J#" />
+            <generator id="JScript" />
+            <generator id="JavaScript" />
+            <generator id="XAML Usage" />
+            <generator id="ASP.NET" />
+          </configurations>
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="IntelliSense Component" enabled="True">
+        <component id="IntelliSense Component">
+          <!-- Output options (optional)
   Attributes:
     Include namespaces (false by default)
     Namespaces comments filename ("Namespaces" if not specified or empty)
-    Output folder (current folder if not specified or empty) --><output includeNamespaces="false" namespacesFile="Namespaces" folder="{@OutputFolder}" boundedCapacity="100" /></component></ComponentConfig>
-<ComponentConfig id="API Token Resolution" enabled="True"><component id="API Token Resolution">{@TokenFiles}
-<replace elements="/*//token" item="string(.)" /></component></ComponentConfig>
-<ComponentConfig id="Reflection Index Data (ESENT Cache)" enabled="True"><component id="Reflection Index Data (ESENT Cache)">
-  <index name="reflection" value="/reflection/apis/api" key="@id" cache="15" localCacheSize="2500" frameworkCachePath="{@LocalDataFolder}Cache\ReflectionIndexCache" projectCachePath="">
-    <data base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" duplicateWarning="false" groupId="ReflectionIndexCache">
+    Output folder (current folder if not specified or empty) -->
+          <output includeNamespaces="false" namespacesFile="Namespaces" folder="{@OutputFolder}" boundedCapacity="100" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="API Token Resolution" enabled="True">
+        <component id="API Token Resolution">{@TokenFiles}
+<replace elements="/*//token" item="string(.)" /></component>
+      </ComponentConfig>
+      <ComponentConfig id="Reflection Index Data (ESENT Cache)" enabled="True">
+        <component id="Reflection Index Data (ESENT Cache)">
+          <index name="reflection" value="/reflection/apis/api" key="@id" cache="15" localCacheSize="2500" frameworkCachePath="{@LocalDataFolder}Cache\ReflectionIndexCache" projectCachePath="">
+            <data base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" duplicateWarning="false" groupId="ReflectionIndexCache">
 		{@ReferenceLinkNamespaceFiles}
 	</data>
-    <data files="reflection.xml" groupId="Project_Ref_{@UniqueID}" />
-  </index>
-  <copy name="reflection" source="*" target="/document/reference" />
-</component></ComponentConfig>
-<ComponentConfig id="Resolve Reference Links (ESENT Cache)" enabled="True"><component id="Resolve Reference Links (ESENT Cache)">{@HRefFormat}
+            <data files="reflection.xml" groupId="Project_Ref_{@UniqueID}" />
+          </index>
+          <copy name="reflection" source="*" target="/document/reference" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Resolve Reference Links (ESENT Cache)" enabled="True">
+        <component id="Resolve Reference Links (ESENT Cache)">{@HRefFormat}
 <locale value="{@Locale}" /><linkTarget value="{@SdkLinkTarget}" /><helpOutput format="HtmlHelp1"><msdnContentIdCache path="{@LocalDataFolder}Cache\MsdnContentId.cache" cachePath="{@LocalDataFolder}Cache\ESentMsdnContentIdCache" localCacheSize="2500" /><targets base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" type="{@HtmlSdkLinkType}" id="FrameworkTargets" cachePath="{@LocalDataFolder}Cache\ESentFrameworkTargetCache" localCacheSize="2500">
 		{@ReferenceLinkNamespaceFiles}
 	</targets><targets files="reflection.xml" type="Local" id="ProjectTargets" cachePath="" localCacheSize="2500" noReload="true" /></helpOutput><helpOutput format="MSHelpViewer"><msdnContentIdCache path="{@LocalDataFolder}Cache\MsdnContentId.cache" cachePath="{@LocalDataFolder}Cache\ESentMsdnContentIdCache" localCacheSize="2500" /><targets base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" type="{@MSHelpViewerSdkLinkType}" id="FrameworkTargets" cachePath="{@LocalDataFolder}Cache\ESentFrameworkTargetCache" localCacheSize="2500">
@@ -70,14 +102,18 @@
 		{@ReferenceLinkNamespaceFiles}
 	</targets><targets files="reflection.xml" type="Local" id="ProjectTargets" cachePath="" localCacheSize="2500" noReload="true" /></helpOutput><helpOutput format="Markdown"><msdnContentIdCache path="{@LocalDataFolder}Cache\MsdnContentId.cache" cachePath="{@LocalDataFolder}Cache\ESentMsdnContentIdCache" localCacheSize="2500" /><targets base="{@FrameworkReflectionDataFolder}" recurse="true" files="*.xml" type="{@WebsiteSdkLinkType}" id="FrameworkTargets" cachePath="{@LocalDataFolder}Cache\ESentFrameworkTargetCache" localCacheSize="2500">
 		{@ReferenceLinkNamespaceFiles}
-	</targets><targets files="reflection.xml" type="Local" id="ProjectTargets" cachePath="" localCacheSize="2500" noReload="true" /></helpOutput></component></ComponentConfig>
-<ComponentConfig id="Comments Index Data (ESENT Cache)" enabled="True"><component id="Comments Index Data (ESENT Cache)">
-  <index name="comments" value="/doc/members/member" key="@name" cache="30" localCacheSize="2500" frameworkCachePath="{@LocalDataFolder}Cache\CommentsIndexCache" projectCachePath="">
+	</targets><targets files="reflection.xml" type="Local" id="ProjectTargets" cachePath="" localCacheSize="2500" noReload="true" /></helpOutput></component>
+      </ComponentConfig>
+      <ComponentConfig id="Comments Index Data (ESENT Cache)" enabled="True">
+        <component id="Comments Index Data (ESENT Cache)">
+          <index name="comments" value="/doc/members/member" key="@name" cache="30" localCacheSize="2500" frameworkCachePath="{@LocalDataFolder}Cache\CommentsIndexCache" projectCachePath="">
 	{@FrameworkCommentList}
 	{@CommentFileList}
 </index>
-  <copy name="comments" source="*" target="/document/comments" />
-</component></ComponentConfig></ComponentConfigurations>
+          <copy name="comments" source="*" target="/document/comments" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
     <SaveComponentCacheCapacity>1200</SaveComponentCacheCapacity>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
@@ -142,9 +178,9 @@
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="Content\Furcadia Specifications" />
-    <Folder Include="Content\Furcadia Specifications\Dragon Speak Constructor" />
-    <Folder Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles" />
-    <Folder Include="Content\Furcadia Specifications\Dragon Speak Constructor\File Types" />
+    <Folder Include="Content\Furcadia Specifications\DragonSpeak Constructor" />
+    <Folder Include="Content\Furcadia Specifications\DragonSpeak Constructor\ConfigurationFiles" />
+    <Folder Include="Content\Furcadia Specifications\DragonSpeak Constructor\File Types" />
     <Folder Include="Content\Furcadia Specifications\Legacy" />
     <Folder Include="Content\Furcadia Specifications\Legacy\File Types" />
     <Folder Include="Content\FurcReference" />
@@ -162,16 +198,16 @@
     <None Include="BugTraq.aml" />
     <None Include="ColorCode.aml" />
     <None Include="Content\Credits.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\Configuration Files.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\DSCUrls.ini.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\ConfigurationFiles\Keys.ini.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\Dragon Speak Constructor.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\DSC File Paths.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\DSC Hot Keys.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\File Types\DS File.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\File Types\DS Template.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\File Types\FileTypes.aml" />
-    <None Include="Content\Furcadia Specifications\Dragon Speak Constructor\File Types\Script.ini.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\ConfigurationFiles\Configuration Files.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\ConfigurationFiles\DSCUrls.ini.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\ConfigurationFiles\Keys.ini.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\DragonSpeak Constructor.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\DSC File Paths.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\DSC Hot Keys.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\File Types\DS File.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\File Types\DS Template.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\File Types\FileTypes.aml" />
+    <None Include="Content\Furcadia Specifications\DragonSpeak Constructor\File Types\Script.ini.aml" />
     <None Include="Content\Furcadia Specifications\FilePaths.aml" />
     <None Include="Content\Furcadia Specifications\Furcadia Popup Dialogs.aml" />
     <None Include="Content\Furcadia Specifications\Furcadia Specifications.aml" />
@@ -195,7 +231,7 @@
     <None Include="Content\VersionHistory\VersionHistory.aml" />
     <None Include="Content\Welcome.aml" />
     <None Include="Content\VersionHistory\V2.1.x.aml" />
-    <None Include="Contribue.aml" />
+    <None Include="Contribute.aml" />
     <None Include="FurcadiaMarkupLanguage.aml" />
   </ItemGroup>
   <ItemGroup>
