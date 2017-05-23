@@ -257,13 +257,8 @@
     </member>
     <member name="M:Furcadia.Badges.PrimeTable">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Badges.PrimeTable</parameter>
-          </include>
-        </markup>
-      </summary>
+            Preload the badge table
+            </summary>
     </member>
     <member name="T:Furcadia.Util">
       <summary>
@@ -2475,6 +2470,783 @@
         </markup>
       </param>
     </member>
+    <member name="T:Furcadia.IO.IniFile">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.IO.IniFile</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.IO.IniFile</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.AddSection(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.AddSection(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.AddSection(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.AddSection(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.Code">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.IniFile.Code</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.GetSection(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.GetSection(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.GetSection(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.GetSection(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.Load(System.String,System.Boolean)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.Load(System.String,System.Boolean)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sFileName">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sFileName</parameter>
+            <parameter>M:Furcadia.IO.IniFile.Load(System.String,System.Boolean)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="bMerge">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>bMerge</parameter>
+            <parameter>M:Furcadia.IO.IniFile.Load(System.String,System.Boolean)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RemoveAllSections">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveAllSections</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveAllSections</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RemoveSection(Furcadia.IO.IniFile.IniSection)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveSection(Furcadia.IO.IniFile.IniSection)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="Section">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Section</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveSection(Furcadia.IO.IniFile.IniSection)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveSection(Furcadia.IO.IniFile.IniSection)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RemoveSection(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveSection(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveSection(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RemoveSection(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sNewKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sNewKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sNewSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sNewSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.Save(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.Save(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sFileName">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sFileName</parameter>
+            <parameter>M:Furcadia.IO.IniFile.Save(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.Sections">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.IniFile.Sections</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sValue">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sValue</parameter>
+            <parameter>M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="T:Furcadia.IO.IniFile.IniSection">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.IO.IniFile.IniSection</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.#ctor(Furcadia.IO.IniFile,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.IO.IniFile.IniSection</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="parent">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>parent</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.#ctor(Furcadia.IO.IniFile,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.#ctor(Furcadia.IO.IniFile,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.AddKey(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.AddKey(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.AddKey(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.AddKey(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.GetKey(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.GetKey(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.GetKey(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.GetKey(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.GetName">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.GetName</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.GetName</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.IniSection.Keys">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.IniFile.IniSection.Keys</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.IniSection.Name">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.IniFile.IniSection.Name</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.RemoveAllKeys">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveAllKeys</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveAllKeys</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.RemoveKey(Furcadia.IO.IniFile.IniSection.IniKey)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(Furcadia.IO.IniFile.IniSection.IniKey)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="Key">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Key</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(Furcadia.IO.IniFile.IniSection.IniKey)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(Furcadia.IO.IniFile.IniSection.IniKey)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.RemoveKey(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.SetName(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.SetName(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sSection">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sSection</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.SetName(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.SetName(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="T:Furcadia.IO.IniFile.IniSection.IniKey">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.IO.IniFile.IniSection.IniKey</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.#ctor(Furcadia.IO.IniFile.IniSection,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.IO.IniFile.IniSection.IniKey</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="parent">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>parent</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.#ctor(Furcadia.IO.IniFile.IniSection,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.#ctor(Furcadia.IO.IniFile.IniSection,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.GetName">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.GetName</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.GetName</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.GetValue">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.GetValue</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.GetValue</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.IniSection.IniKey.Name">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.IniFile.IniSection.IniKey.Name</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.SetName(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.SetName(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sKey">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sKey</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.SetName(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.SetName(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.SetValue(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.SetValue(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sValue">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sValue</parameter>
+            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.SetValue(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.IniSection.IniKey.Value">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.IO.IniFile.IniSection.IniKey.Value</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="T:Furcadia.IO.Paths">
       <summary>
         <markup>
@@ -2885,19 +3657,6 @@
             Furcadia reconmended Material to support thier Protocol Standards
             </summary>
     </member>
-    <member name="M:Furcadia.Movement.CharacterFlags.#ctor">
-      <summary>
-            default construtor
-            </summary>
-    </member>
-    <member name="M:Furcadia.Movement.CharacterFlags.#ctor(System.Int32)">
-      <summary>
-            Using flags with integer
-            </summary>
-      <param name="flags">
-            Integer Flags
-            </param>
-    </member>
     <member name="M:Furcadia.Movement.CharacterFlags.#ctor(System.String)">
       <summary>
             Build Flags with Base220 string
@@ -3010,6 +3769,11 @@
     <member name="P:Furcadia.Movement.ColorString.Hair">
       <summary>
             Hair color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Length">
+      <summary>
+            ColorString String Lengeth
             </summary>
     </member>
     <member name="P:Furcadia.Movement.ColorString.Markings">
@@ -3136,6 +3900,11 @@
             </para><para>
             As of V31, Color code has changed.
             </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.DREAM.IsModern">
+      <summary>
+            Is this dream Modern Mode?
+            </summary>
     </member>
     <member name="P:Furcadia.Net.DREAM.Lines">
       <summary>
@@ -3858,6 +4627,15 @@
         </markup>
       </summary>
     </member>
+    <member name="P:Furcadia.Net.FURREList.Item(Furcadia.Net.FURRE)">
+      <summary>
+            Gets or set the furre at index of fur
+            </summary>
+      <param name="fur">
+            Furre
+            </param>
+      <returns></returns>
+    </member>
     <member name="P:Furcadia.Net.FURREList.Item(System.Int32)">
       <summary>
         <markup>
@@ -4361,6 +5139,14 @@
       <summary>
             Process ID for closing Furcadia.exe
             </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.SendLineToServer(System.String)">
+      <summary>
+            Send Message to Server through the Load Ballancer
+            </summary>
+      <param name="message">
+            Client to server Instruction
+            </param>
     </member>
     <member name="M:Furcadia.Net.NetProxy.SendToClient(Furcadia.Net.INetMessage)">
       <summary>
@@ -5112,6 +5898,45 @@
              Allow the connection to stay open after the client drops?
              </summary>
     </member>
+    <member name="T:Furcadia.Net.Options.ProxyReconnectOptions">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Options.ProxyReconnectOptions</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Options.ProxyReconnectOptions.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Options.ProxyReconnectOptions</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyReconnectOptions.ConnectionTimeOut">
+      <summary>
+            the time delay for the current connection attempt in seconds.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyReconnectOptions.ReconnectMax">
+      <summary>
+            Maximum tries to reconnect to the server
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyReconnectOptions.TimeOutTimeSpan">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Options.ProxyReconnectOptions.TimeOutTimeSpan</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="T:Furcadia.Net.Options.ProxySessionOptions">
       <summary>
         <markup>
@@ -5127,14 +5952,27 @@
             default Options
             </summary>
     </member>
-    <member name="P:Furcadia.Net.Options.ProxySessionOptions.ReconnectAttempts">
+    <member name="M:Furcadia.Net.Options.ProxySessionOptions.#ctor(Furcadia.Net.Options.ProxyReconnectOptions)">
       <summary>
-            number of connection attempts to connect to the game server
-            </summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Options.ProxySessionOptions</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="reconnectoptions">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>reconnectoptions</parameter>
+            <parameter>M:Furcadia.Net.Options.ProxySessionOptions.#ctor(Furcadia.Net.Options.ProxyReconnectOptions)</parameter>
+          </include>
+        </markup>
+      </param>
     </member>
-    <member name="P:Furcadia.Net.Options.ProxySessionOptions.ReconnectTimeOutDelay">
+    <member name="P:Furcadia.Net.Options.ProxySessionOptions.ReconnectOptions">
       <summary>
-            Reconnection Delay between attempts in seconds
+            reconnection manager options
             </summary>
     </member>
     <member name="T:Furcadia.Net.Options.ServerOptions">
@@ -5446,60 +6284,6 @@
             ProxySession Options
             </param>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Proxy.ProxySession</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="ServerHost">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>ServerHost</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="ServerPort">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>ServerPort</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="LocalHostPort">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>LocalHostPort</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="ReconnectAttempts">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>ReconnectAttempts</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="ReconnectTimeOutDelay">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>ReconnectTimeOutDelay</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.BadgeTag">
       <summary>
             Beekin Badge
@@ -5547,6 +6331,12 @@
             Current Connection Phase
             </summary>
     </member>
+    <member name="E:Furcadia.Net.Proxy.ProxySession.ClientData2">
+      <summary>
+            This is triggered when the Client sends data to the server.
+            Expects a return value.
+            </summary>
+    </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ClientStatus">
       <summary>
             Client Connection status
@@ -5560,19 +6350,29 @@
             Track the Furcadia Client status
             </summary>
     </member>
-    <member name="P:Furcadia.Net.Proxy.ProxySession.ConnectedCharacterFurcadiaID">
+    <member name="M:Furcadia.Net.Proxy.ProxySession.Connect">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.Proxy.ProxySession.ConnectedCharacterFurcadiaID</parameter>
+            <parameter>M:Furcadia.Net.Proxy.ProxySession.Connect</parameter>
           </include>
         </markup>
       </summary>
     </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ConnectedCharacterFurcadiaID">
+      <summary>
+            Connected Characters Furcadia ID
+            </summary>
+    </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ConnectedCharacterName">
       <summary>
             Our Connected Character name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ConnectedFurre">
+      <summary>
+            Connected Furre (Who we are)
             </summary>
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.Dispose">
@@ -5616,6 +6416,20 @@
           </include>
         </markup>
       </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.FormatSpokenCommandForServer(System.String@)">
+      <summary>
+            Text Channel Prefixes (shout,whisper emote, Raw Server command)
+            </summary>
+      <param name="arg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>arg</parameter>
+            <parameter>M:Furcadia.Net.Proxy.ProxySession.FormatSpokenCommandForServer(System.String@)</parameter>
+          </include>
+        </markup>
+      </param>
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.GetEnumInt``1(``0)">
       <summary>
@@ -5668,34 +6482,17 @@
         </markup>
       </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.IsBot(Furcadia.Net.FURRE@)">
+    <member name="P:Furcadia.Net.Proxy.ProxySession.IsConnectedCharacter">
       <summary>
-            Are we the Current triggering furre?
+            Are we the current executing character?
             </summary>
-      <param name="player">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>player</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.IsBot(Furcadia.Net.FURRE@)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.IsBot(Furcadia.Net.FURRE@)</parameter>
-          </include>
-        </markup>
-      </returns>
     </member>
     <member name="E:Furcadia.Net.Proxy.ProxySession.OnError">
       <summary>
             Error Event Handler
             </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerChannel(System.String,System.Boolean)">
+    <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerChannel(System.String,System.Boolean@)">
       <summary>
             Parse Channel Data
             </summary>
@@ -5749,6 +6546,18 @@
         </markup>
       </summary>
     </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.ProcessSpokenCommands(System.String@)">
+      <summary>
+            Format basic furcadia commands and send to server
+            <para>
+            We also mirror the client to server banish system.
+            </para><para>
+            This maybe a good place to place Proxy/Bot commands for controls
+            </para></summary>
+      <param name="data">
+            Raw Client to Server instruction
+            </param>
+    </member>
     <member name="F:Furcadia.Net.Proxy.ProxySession.Repq">
       <summary>
         <markup>
@@ -5758,6 +6567,14 @@
           </include>
         </markup>
       </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.SendLineToServer(System.String)">
+      <summary>
+            Send a Message with line terminator to Server through the Load Ballancer
+            </summary>
+      <param name="message">
+            Client to server Instruction
+            </param>
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.SendToClient(System.String)">
       <summary>
@@ -5780,7 +6597,8 @@
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.SendToServer(System.String)">
       <summary>
-            Send Message to Server through the Load Ballancer
+            Send a message with out a line terminator to Server through the
+            Load Ballancer
             </summary>
       <param name="message">
             Client to server Instruction
@@ -5789,6 +6607,12 @@
     <member name="P:Furcadia.Net.Proxy.ProxySession.ServerConnectPhase">
       <summary>
             Curent server connection phase
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.Proxy.ProxySession.ServerData2">
+      <summary>
+            This is triggered when the Server sends data to the client.
+            Doesn't expect a return value.
             </summary>
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ServerStatus">
@@ -5804,31 +6628,11 @@
             Track the Server Status
             </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.sndServer(System.String@)">
+    <member name="P:Furcadia.Net.Proxy.ProxySession.StandAlone">
       <summary>
-            Format basic furcadia commands and send to server
-            <para>
-            We also mirror the client to server banish system.
-            </para><para>
-            This maybe a good place to place Proxy/Bot commands for controls
-            </para></summary>
-      <param name="data">
-            Raw Client to Server instruction
-            </param>
-    </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.TextToServer(System.String@)">
-      <summary>
-            Text Channel Prefixes (shout,whisper emote, Raw Server command)
+            Allows the Furcadia Client to Disconnect from the session,
+            allowing the session to remain connected to the game server
             </summary>
-      <param name="arg">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>arg</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.TextToServer(System.String@)</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ThroatTired">
       <summary>
@@ -5945,7 +6749,7 @@
             Defaults to max 5 connects and delay cycle of 45 seconds.
             </summary>
     </member>
-    <member name="M:Furcadia.Net.Utils.ProxyReconnect.#ctor(System.Int32,System.Int32)">
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.#ctor(Furcadia.Net.Options.ProxyReconnectOptions)">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
@@ -5953,17 +6757,15 @@
           </include>
         </markup>
       </summary>
-      <param name="Attempts">
-            Number of max reconnect attempts
-            </param>
-      <param name="TimeOutDelay">
-            Cycle delay in seconds
-            </param>
-    </member>
-    <member name="P:Furcadia.Net.Utils.ProxyReconnect.ConnectionTimeOut">
-      <summary>
-            the time delay for the current connection attempt in seconds.
-            </summary>
+      <param name="options">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>options</parameter>
+            <parameter>M:Furcadia.Net.Utils.ProxyReconnect.#ctor(Furcadia.Net.Options.ProxyReconnectOptions)</parameter>
+          </include>
+        </markup>
+      </param>
     </member>
     <member name="M:Furcadia.Net.Utils.ProxyReconnect.Dispose">
       <summary>
@@ -6031,11 +6833,6 @@
           </include>
         </markup>
       </param>
-    </member>
-    <member name="P:Furcadia.Net.Utils.ProxyReconnect.ReconnectMax">
-      <summary>
-            Maximum tries to reconnect to the server
-            </summary>
     </member>
     <member name="M:Furcadia.Net.Utils.ProxyReconnect.SkipAttempt">
       <summary>
@@ -6442,6 +7239,260 @@
       <summary>
             the Active Player
             </summary>
+    </member>
+    <member name="T:Furcadia.Security.SecureTcpClient">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Security.SecureTcpClient</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Security.SecureTcpClient</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="callback">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>callback</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Security.SecureTcpClient</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="callback">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>callback</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="certValidationCallback">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>certValidationCallback</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback,System.Security.Authentication.SslProtocols)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Security.SecureTcpClient</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="callback">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>callback</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback,System.Security.Authentication.SslProtocols)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="certValidationCallback">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>certValidationCallback</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback,System.Security.Authentication.SslProtocols)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sslProtocols">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sslProtocols</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback,System.Security.Authentication.SslProtocols)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Security.SecureTcpClient.CheckCertificateRevocation">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Security.SecureTcpClient.CheckCertificateRevocation</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Security.SecureTcpClient.Close">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.Close</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Security.SecureTcpClient.Dispose">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocDispose">
+            <parameter>Furcadia.Security.SecureTcpClient</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Security.SecureTcpClient.Finalize">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.Finalize</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="remoteHostName">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>remoteHostName</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="remoteEndPoint">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>remoteEndPoint</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="remoteHostName">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>remoteHostName</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="remoteEndPoint">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>remoteEndPoint</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="clientCertificates">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>clientCertificates</parameter>
+            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="T:Furcadia.Security.SSL">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Security.SSL</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Security.SSL.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Security.SSL</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Security.SSL.SecureConnectionResults">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Security.SSL.SecureConnectionResults</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Security.SSL.SecureConnectionResults.AsyncException">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Security.SSL.SecureConnectionResults.AsyncException</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Security.SSL.SecureConnectionResults.SecureStream">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Security.SSL.SecureConnectionResults.SecureStream</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Security.SSL.SecureConnectionResultsCallback">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Security.SSL.SecureConnectionResultsCallback</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="T:Furcadia.Text.Base220">
       <summary>
