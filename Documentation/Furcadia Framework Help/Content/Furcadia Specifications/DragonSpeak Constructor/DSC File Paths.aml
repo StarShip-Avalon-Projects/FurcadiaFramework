@@ -32,16 +32,36 @@
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Dragon Speak Constructor (Pre-Furcadia Integration)</title>
+      <title>Dragon Speak Constructor</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-    </section>
-    <section address="Section2">
-      <title>Dragon Speak Constructor (Post-Furcadia Integration)</title>
-      <content>
+        <section>
+          <title>User Configuration</title>
+          <content>
+            <para>%USERPROFILE%\Local Settings\Application Data\MEP\DSConstructor</para>
+            <para>C:\Users\UserName\AppData\Local\MEP\DSConstructor</para>
+          </content>
+          </section>
+        <section>
+          <title>Install Path</title>
+          <content>
+            <para>Windows x86: c:\Program Files\Furcadia\ </para>
+            <para>Windows x64: c:\Program Files (x86)\Furcadia\ </para>
+          </content>
+        </section>
+        <section>
+          <title>DS Template</title>
+          <content>
+            <para>%USERPROFILE%\My Documents\Furcadia\Templates </para>
+            <para>c:\Documents and Settings\username\My Documents\Furcadia\Templates </para>
+          </content>
+        </section>
+        <section>
+          <title>DS Wizard Scripts</title>
+          <content>
+            <para>%USERPROFILE%\My Documents\Furcadia\Scripts </para>
+            <para>c:\Documents and Settings\username\My Documents\Furcadia\Scripts </para>
+          </content>
+        </section>
         <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
         <para>Add one or more sections with content</para>
@@ -50,6 +70,7 @@
 
     <relatedTopics>
       <link xlink:href="a23d6f60-970b-4881-ad5f-077563316c63" />
+      
       <!-- One or more of the following:
            - A local link
            - An external link

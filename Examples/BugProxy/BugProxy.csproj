@@ -114,4 +114,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(SolutionDir)docs\Furcadia_Framework_Help.chm" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

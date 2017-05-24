@@ -878,8 +878,8 @@
   <HelpKINode Title="HasFlag method" Url="html/M_Furcadia_Movement_CharacterFlags_HasFlag.htm" />
   <HelpKINode Title="HasShare property" Url="html/P_Furcadia_Net_Proxy_ProxySession_HasShare.htm" />
   <HelpKINode Title="Header field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_Header.htm" />
-  <HelpKINode Title="height field" Url="html/F_Furcadia_Drawing_ViewArea_height.htm" />
   <HelpKINode Title="Height field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Height.htm" />
+  <HelpKINode Title="height field" Url="html/F_Furcadia_Drawing_ViewArea_height.htm" />
   <HelpKINode Title="Height property" Url="html/P_Furcadia_FurcMap_Map_Height.htm" />
   <HelpKINode Title="Helper class">
     <HelpKINode Title="Helper Class" Url="html/T_Furcadia_Drawing_Helper.htm" />
@@ -1760,8 +1760,8 @@
   <HelpKINode Title="SSL.SecureConnectionResults.SecureStream property" Url="html/P_Furcadia_Security_SSL_SecureConnectionResults_SecureStream.htm" />
   <HelpKINode Title="SSL.SecureConnectionResultsCallback delegate" Url="html/T_Furcadia_Security_SSL_SecureConnectionResultsCallback.htm" />
   <HelpKINode Title="SSL.SSL constructor" Url="html/M_Furcadia_Security_SSL__ctor.htm" />
-  <HelpKINode Title="StandAlone property" Url="html/P_Furcadia_Net_Proxy_ProxySession_StandAlone.htm" />
   <HelpKINode Title="Standalone property" Url="html/P_Furcadia_Net_Options_ProxyOptions_Standalone.htm" />
+  <HelpKINode Title="StandAlone property" Url="html/P_Furcadia_Net_Proxy_ProxySession_StandAlone.htm" />
   <HelpKINode Title="Start method" Url="html/M_Furcadia_Net_Utils_ProxyReconnect_Start.htm" />
   <HelpKINode Title="StartConnecting method" Url="html/Overload_Furcadia_Security_SecureTcpClient_StartConnecting.htm" />
   <HelpKINode Title="Status property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_Status.htm" />
@@ -1916,8 +1916,8 @@
     <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
   </HelpKINode>
   <HelpKINode Title="Y field">
-    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
     <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
+    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
   </HelpKINode>
   <HelpKINode Title="Y property" Url="html/P_Furcadia_Net_FURRE_Y.htm" />
   <HelpKINode Title="y property" Url="html/P_Furcadia_Drawing_FurrePosition_y.htm" />

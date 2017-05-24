@@ -2,36 +2,37 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Welcome to FFF3PP" Url="html/8d0a663e-8095-408a-b860-f55d2fc3ccbe.htm" />
-  <HelpTOCNode Id="ef769529-de17-49b3-9323-b8f5515ab571" Title="FF3PP Code Samples">
+  <HelpTOCNode Id="bba9924d-29ea-4507-a398-296b300c8b57" Title="FF3PP Code Samples">
     <HelpTOCNode Title="NetProxy ctor" Url="html/6fdb6471-90ca-4bf7-b380-7b23d1ad6663.htm" />
     <HelpTOCNode Title="ProxySession" Url="html/9a6827e6-8a7b-45a1-9a20-7aaee6f5a481.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="cd28dd79-1d6a-451e-b93a-f9264d66d450" Title="Furcadia Specifications" Url="html/be87ba4e-409e-42eb-929b-c7b131ab1a19.htm">
-    <HelpTOCNode Id="1c4f7dc4-1804-4686-8b98-91ba92f5d7b8" Title="Client Server Communications">
+  <HelpTOCNode Id="abdbee3a-8761-4902-8085-c8fb93531eda" Title="Furcadia Specifications" Url="html/be87ba4e-409e-42eb-929b-c7b131ab1a19.htm">
+    <HelpTOCNode Id="0eacecb0-4082-4f0e-bcb1-d62bddd436aa" Title="Client Server Communications">
       <HelpTOCNode Title="Server To Client Instructions (Game Server)" Url="html/ace0106b-f963-47f6-8be8-7c2fa78d223a.htm" />
       <HelpTOCNode Title="Furcadia Markup Language (FML)" Url="html/14d9e4be-5faf-4a40-85a0-b0129610103c.htm" />
       <HelpTOCNode Title="ColorCode" Url="html/e897d816-e829-4b4b-b4a5-41ce6cac22ec.htm" />
       <HelpTOCNode Title="Furcadia Popup Dialogs" Url="html/7180cbcd-d0cd-4db5-820b-2255d5764840.htm" />
     </HelpTOCNode>
     <HelpTOCNode Title="Pounce Speciifications" Url="html/a5f6d9fd-e7ec-4278-97f0-5c6d6535f7f7.htm" />
-    <HelpTOCNode Id="13fa5b53-4a79-4923-9bb5-0a77e3a3d4e9" Title="Furcadia File Paths" Url="html/a23d6f60-970b-4881-ad5f-077563316c63.htm">
+    <HelpTOCNode Id="2e1c1387-2b3c-481d-a6e5-c4d84a90b4ff" Title="Furcadia File Paths" Url="html/a23d6f60-970b-4881-ad5f-077563316c63.htm">
       <HelpTOCNode Title="localdir.ini" Url="html/0622bf6b-9933-4acb-95eb-b5ddfa4be5e7.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="483e1f37-8cb9-46d2-a0fe-4649a35dafea" Title="DragonSpeak Constructor" Url="html/c4d53694-c72e-4abc-b376-4cf56d279cbe.htm">
+    <HelpTOCNode Id="eb1c6748-3f51-4b2a-99de-117f554ab2eb" Title="DragonSpeak Constructor" Url="html/c4d53694-c72e-4abc-b376-4cf56d279cbe.htm">
       <HelpTOCNode Title="DSC Hot Keys" Url="html/c64fbfff-bfc3-42dc-bd67-21400a69023c.htm" />
       <HelpTOCNode Title="DSC File Paths" Url="html/8c924167-6c3d-41dc-a8bb-b7f21f34830c.htm" />
-      <HelpTOCNode Id="7c25b583-15d7-41bf-ab5d-7376c9913ec4" Title="Configuration Files" Url="html/52f92ba7-b964-4377-9336-d1a664365e40.htm">
+      <HelpTOCNode Id="f0e66ec9-a6eb-47f4-88c3-74aa61afe849" Title="Configuration Files" Url="html/52f92ba7-b964-4377-9336-d1a664365e40.htm">
         <HelpTOCNode Title="Keys.ini" Url="html/9c6d643d-eca5-406a-ab49-464fbadbe83f.htm" />
         <HelpTOCNode Title="DSCUrls.ini" Url="html/d03ce0b6-5d09-4a5d-bb98-1b73d880ab93.htm" />
+        <HelpTOCNode Title="DSC.ini" Url="html/1bcad125-6ef3-43dd-8b7e-7141797c7667.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="05e34ef6-b8a7-4249-8e2c-c7cfdbd82608" Title="FileTypes" Url="html/c66c6136-b446-4383-9f4d-4212fbeb1ea1.htm">
+      <HelpTOCNode Id="92f448b9-8c98-45ad-b87c-67c527e2b552" Title="FileTypes" Url="html/c66c6136-b446-4383-9f4d-4212fbeb1ea1.htm">
         <HelpTOCNode Title="Draconic Magician (DS Wizard) Script format" Url="html/95db5c29-0875-459d-b4f1-fd3c35c37fa7.htm" />
         <HelpTOCNode Title="DS File" Url="html/c8a00a7c-d0f8-4c4d-b392-710c441dab68.htm" />
         <HelpTOCNode Title="DS Template" Url="html/02986d13-4fb6-41e9-8259-5a6aba51839d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="31f0cc68-739f-4496-928e-3d49fdb06cbd" Title="Legacy Material" Url="html/3661a2f8-dfd3-4c4c-8f36-2ebf0e5cf409.htm">
-      <HelpTOCNode Id="667c43bb-07e4-4237-9c1d-cbbadea95052" Title="File Types" Url="html/c6406f52-f5e9-4a8e-8c24-559773867a8a.htm">
+    <HelpTOCNode Id="c5cbd6a6-89d7-4e70-8606-255cc8c16254" Title="Legacy Material" Url="html/3661a2f8-dfd3-4c4c-8f36-2ebf0e5cf409.htm">
+      <HelpTOCNode Id="957b188b-fd11-4594-8a53-b75582791b30" Title="File Types" Url="html/c6406f52-f5e9-4a8e-8c24-559773867a8a.htm">
         <HelpTOCNode Title="Character.ini" Url="html/2e782621-dd7d-4bc1-92b6-1057df3af49f.htm" />
         <HelpTOCNode Title="DS File" Url="html/3169fab2-9b67-4b16-9bdf-7dd5e952c280.htm" />
         <HelpTOCNode Title="DS Template" Url="html/0050c021-7874-45a1-8a39-e250a8043e6f.htm" />
@@ -41,26 +42,26 @@
     <HelpTOCNode Title="Registry Paths" Url="html/b1a197eb-c497-4e39-9065-f47dfdb7ed58.htm" />
     <HelpTOCNode Title="Internet Servers" Url="html/8da986c1-199a-45be-80fc-f42ab218868c.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="a7410730-9fc4-4977-b35f-d6cf0f2e22cc" Title="FFF3PP Reference" Url="html/ac0f351b-19c1-47cc-928e-2eeaec33fc51.htm">
+  <HelpTOCNode Id="af5d5797-9d7d-46fa-9328-4842faa6f726" Title="FFF3PP Reference" Url="html/ac0f351b-19c1-47cc-928e-2eeaec33fc51.htm">
     <HelpTOCNode Title="Furcadia Text Channels" Url="html/08538137-7c91-4fad-b4dc-287fc6efa298.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="48c2878e-7c9e-4e9d-8a12-d0171fde9dae" Title="VersionHistory" Url="html/4340cd61-7802-4111-a144-fc835a39faf6.htm">
+  <HelpTOCNode Id="e9bbf462-b0b5-4440-b3d3-7cc802d87476" Title="VersionHistory" Url="html/4340cd61-7802-4111-a144-fc835a39faf6.htm">
     <HelpTOCNode Title="Version 2.1.x" Url="html/4eecd606-d5e8-464b-9b2e-8a2bfac50c0a.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="a35b6bd2-32e6-482e-80ff-012e96da527a" Title="Furcadia Frame Work SDK" Url="html/R_Project_Furcadia_Framework_Help.htm">
-    <HelpTOCNode Id="83ff4b2d-de07-4bfb-8dc9-f686d1f3ad1c" Title="Furcadia" Url="html/N_Furcadia.htm">
-      <HelpTOCNode Id="f9112259-8428-4350-bfe6-3cbdd0577f91" Title="Avatar Class" Url="html/T_Furcadia_Avatar.htm">
+  <HelpTOCNode Id="1a9b1d31-0c02-4ac3-a809-b54cbdf19c99" Title="Furcadia Frame Work SDK" Url="html/R_Project_Furcadia_Framework_Help.htm">
+    <HelpTOCNode Id="690b06be-4252-4a68-8424-f419c77f8a4b" Title="Furcadia" Url="html/N_Furcadia.htm">
+      <HelpTOCNode Id="2ecc6441-e82d-493b-8ba9-dc047f05c446" Title="Avatar Class" Url="html/T_Furcadia_Avatar.htm">
         <HelpTOCNode Title="Avatar Constructor " Url="html/M_Furcadia_Avatar__ctor.htm" />
-        <HelpTOCNode Id="47fd3d10-a43f-4375-9177-5b648f4eff0d" Title="Avatar Methods" Url="html/Methods_T_Furcadia_Avatar.htm">
+        <HelpTOCNode Id="d5418aaf-170e-408d-9544-f9d6486c869e" Title="Avatar Methods" Url="html/Methods_T_Furcadia_Avatar.htm">
           <HelpTOCNode Title="PrimeTable Method " Url="html/M_Furcadia_Avatar_PrimeTable.htm" />
           <HelpTOCNode Title="SpecNum Method " Url="html/M_Furcadia_Avatar_SpecNum.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="2cbd0735-86cf-4d92-b7b3-7d99002bd960" Title="Avatar.Frame Structure" Url="html/T_Furcadia_Avatar_Frame.htm">
-        <HelpTOCNode Id="81f19715-84e2-40c3-b7d1-5c9ff995f291" Title="Frame Methods" Url="html/Methods_T_Furcadia_Avatar_Frame.htm">
+      <HelpTOCNode Id="fbfcc4fa-5af0-4dc5-8109-6e037f6c43ad" Title="Avatar.Frame Structure" Url="html/T_Furcadia_Avatar_Frame.htm">
+        <HelpTOCNode Id="e44c2d6b-2420-49a8-a200-47d9617aaf96" Title="Frame Methods" Url="html/Methods_T_Furcadia_Avatar_Frame.htm">
           <HelpTOCNode Title="Clear Method " Url="html/M_Furcadia_Avatar_Frame_Clear.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="2a486e5a-d662-4155-b8b6-498933da77a6" Title="Frame Fields" Url="html/Fields_T_Furcadia_Avatar_Frame.htm">
+        <HelpTOCNode Id="5804c1cb-914c-4dc3-a037-233bbfa01257" Title="Frame Fields" Url="html/Fields_T_Furcadia_Avatar_Frame.htm">
           <HelpTOCNode Title="dir Field" Url="html/F_Furcadia_Avatar_Frame_dir.htm" />
           <HelpTOCNode Title="DS_Number Field" Url="html/F_Furcadia_Avatar_Frame_DS_Number.htm" />
           <HelpTOCNode Title="gender Field" Url="html/F_Furcadia_Avatar_Frame_gender.htm" />
@@ -69,9 +70,9 @@
           <HelpTOCNode Title="Wings Field" Url="html/F_Furcadia_Avatar_Frame_Wings.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="0baa1680-d421-45e9-b52d-aed397ea9a67" Title="Badges Class" Url="html/T_Furcadia_Badges.htm">
+      <HelpTOCNode Id="f5dfd27e-9e03-4c2c-8e3b-621f87b07d6c" Title="Badges Class" Url="html/T_Furcadia_Badges.htm">
         <HelpTOCNode Title="Badges Constructor " Url="html/M_Furcadia_Badges__ctor.htm" />
-        <HelpTOCNode Id="fe2a1c3c-1521-444b-a37a-7777c6c906c8" Title="Badges Methods" Url="html/Methods_T_Furcadia_Badges.htm">
+        <HelpTOCNode Id="9b242b4a-2902-4ae0-abd8-ce6ebfc9755e" Title="Badges Methods" Url="html/Methods_T_Furcadia_Badges.htm">
           <HelpTOCNode Title="GetGroup Method " Url="html/M_Furcadia_Badges_GetGroup.htm" />
           <HelpTOCNode Title="GetLevel Method " Url="html/M_Furcadia_Badges_GetLevel.htm" />
           <HelpTOCNode Title="GetTag Method " Url="html/M_Furcadia_Badges_GetTag.htm" />
@@ -79,59 +80,59 @@
           <HelpTOCNode Title="PrimeTable Method " Url="html/M_Furcadia_Badges_PrimeTable.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="cde1d241-5107-4854-9d53-aef05afb818e" Title="Util Class" Url="html/T_Furcadia_Util.htm">
+      <HelpTOCNode Id="7915c330-a64d-416a-a810-451c2f39abd4" Title="Util Class" Url="html/T_Furcadia_Util.htm">
         <HelpTOCNode Title="Util Constructor " Url="html/M_Furcadia_Util__ctor.htm" />
-        <HelpTOCNode Id="92e0ae87-bb25-4567-bdfa-16e9c81d7b4c" Title="Util Methods" Url="html/Methods_T_Furcadia_Util.htm">
+        <HelpTOCNode Id="e175b8d0-2f84-483b-a4fa-eb495d41956b" Title="Util Methods" Url="html/Methods_T_Furcadia_Util.htm">
           <HelpTOCNode Title="FurcadiaShortName Method " Url="html/M_Furcadia_Util_FurcadiaShortName.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5fbc87fb-f682-428b-a072-cefec9a32944" Title="Furcadia.Drawing Namespaces" Url="html/G_Furcadia_Drawing.htm">
-      <HelpTOCNode Id="85db65dd-82aa-496e-93b5-fb4b33a97904" Title="Furcadia.Drawing" Url="html/N_Furcadia_Drawing.htm">
-        <HelpTOCNode Id="74872a26-1ac4-465c-bea1-9266766678fc" Title="FurrePosition Class" Url="html/T_Furcadia_Drawing_FurrePosition.htm">
-          <HelpTOCNode Id="08de6c95-77b3-452e-9e81-6aa08d191c66" Title="FurrePosition Constructor " Url="html/Overload_Furcadia_Drawing_FurrePosition__ctor.htm">
+    <HelpTOCNode Id="9e5f37c3-515b-445a-8861-17cb52101388" Title="Furcadia.Drawing Namespaces" Url="html/G_Furcadia_Drawing.htm">
+      <HelpTOCNode Id="995c18c4-3022-4396-aa3d-d2ea3f0f5d44" Title="Furcadia.Drawing" Url="html/N_Furcadia_Drawing.htm">
+        <HelpTOCNode Id="35845328-2eed-4629-be9a-de97679a2516" Title="FurrePosition Class" Url="html/T_Furcadia_Drawing_FurrePosition.htm">
+          <HelpTOCNode Id="cd31e688-ec46-42d0-b1cc-0c4eed7865db" Title="FurrePosition Constructor " Url="html/Overload_Furcadia_Drawing_FurrePosition__ctor.htm">
             <HelpTOCNode Title="FurrePosition Constructor " Url="html/M_Furcadia_Drawing_FurrePosition__ctor.htm" />
             <HelpTOCNode Title="FurrePosition Constructor (FurrePosition)" Url="html/M_Furcadia_Drawing_FurrePosition__ctor_1.htm" />
             <HelpTOCNode Title="FurrePosition Constructor (Int32, Int32)" Url="html/M_Furcadia_Drawing_FurrePosition__ctor_2.htm" />
             <HelpTOCNode Title="FurrePosition Constructor (String, String)" Url="html/M_Furcadia_Drawing_FurrePosition__ctor_3.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="7f13ffeb-0982-40ee-94e9-2e5255e58014" Title="FurrePosition Properties" Url="html/Properties_T_Furcadia_Drawing_FurrePosition.htm">
+          <HelpTOCNode Id="ed4cb518-3834-4297-afe6-9809934f23d1" Title="FurrePosition Properties" Url="html/Properties_T_Furcadia_Drawing_FurrePosition.htm">
             <HelpTOCNode Title="x Property " Url="html/P_Furcadia_Drawing_FurrePosition_x.htm" />
             <HelpTOCNode Title="y Property " Url="html/P_Furcadia_Drawing_FurrePosition_y.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="392d38e5-3014-4296-882d-c52e77c782d0" Title="FurrePosition Methods" Url="html/Methods_T_Furcadia_Drawing_FurrePosition.htm">
+          <HelpTOCNode Id="42f87bff-3bdd-4645-8e13-b5dfee19c115" Title="FurrePosition Methods" Url="html/Methods_T_Furcadia_Drawing_FurrePosition.htm">
             <HelpTOCNode Title="Equals Method " Url="html/M_Furcadia_Drawing_FurrePosition_Equals.htm" />
             <HelpTOCNode Title="GetHashCode Method " Url="html/M_Furcadia_Drawing_FurrePosition_GetHashCode.htm" />
             <HelpTOCNode Title="ToString Method " Url="html/M_Furcadia_Drawing_FurrePosition_ToString.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="750afd1e-13d6-41a3-9bd3-fd6a4c16c197" Title="Helper Class" Url="html/T_Furcadia_Drawing_Helper.htm">
-          <HelpTOCNode Id="7f5773ec-6226-41a0-b75f-3662862fd70d" Title="Helper Methods" Url="html/Methods_T_Furcadia_Drawing_Helper.htm">
+        <HelpTOCNode Id="11e49c61-a74e-4eb3-ba9b-8570cd1725bd" Title="Helper Class" Url="html/T_Furcadia_Drawing_Helper.htm">
+          <HelpTOCNode Id="c26ca567-0c61-45ac-ae06-9912d7f82526" Title="Helper Methods" Url="html/Methods_T_Furcadia_Drawing_Helper.htm">
             <HelpTOCNode Title="CharToDescTag Method " Url="html/M_Furcadia_Drawing_Helper_CharToDescTag.htm" />
             <HelpTOCNode Title="ToBitmapArray Method " Url="html/M_Furcadia_Drawing_Helper_ToBitmapArray.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="20527056-00ed-4315-9a64-1f4195ba1d18" Title="ViewArea Class" Url="html/T_Furcadia_Drawing_ViewArea.htm">
+        <HelpTOCNode Id="2d410b7c-128a-4697-b63a-d10a3b8ef0a1" Title="ViewArea Class" Url="html/T_Furcadia_Drawing_ViewArea.htm">
           <HelpTOCNode Title="ViewArea Constructor " Url="html/M_Furcadia_Drawing_ViewArea__ctor.htm" />
           <HelpTOCNode Title="ViewArea Methods" Url="html/Methods_T_Furcadia_Drawing_ViewArea.htm" />
-          <HelpTOCNode Id="aedef46f-dae5-42c7-9af0-cd7f15718c06" Title="ViewArea Fields" Url="html/Fields_T_Furcadia_Drawing_ViewArea.htm">
+          <HelpTOCNode Id="20702247-3b03-4839-9bf6-c1017e5572ce" Title="ViewArea Fields" Url="html/Fields_T_Furcadia_Drawing_ViewArea.htm">
             <HelpTOCNode Title="height Field" Url="html/F_Furcadia_Drawing_ViewArea_height.htm" />
             <HelpTOCNode Title="length Field" Url="html/F_Furcadia_Drawing_ViewArea_length.htm" />
             <HelpTOCNode Title="X Field" Url="html/F_Furcadia_Drawing_ViewArea_X.htm" />
             <HelpTOCNode Title="Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="a9683eb6-61ed-4d94-ba59-ae98a361933a" Title="VisibleArea Class" Url="html/T_Furcadia_Drawing_VisibleArea.htm">
-          <HelpTOCNode Id="bb106788-b1fc-476a-a494-e24cb7af26f9" Title="VisibleArea Methods" Url="html/Methods_T_Furcadia_Drawing_VisibleArea.htm">
+        <HelpTOCNode Id="600af790-0fc0-4dd9-8b19-004b0eaebcda" Title="VisibleArea Class" Url="html/T_Furcadia_Drawing_VisibleArea.htm">
+          <HelpTOCNode Id="6f789fbe-7708-44e4-bdb2-ad8d2c5d7d00" Title="VisibleArea Methods" Url="html/Methods_T_Furcadia_Drawing_VisibleArea.htm">
             <HelpTOCNode Title="getTargetRectFromCenterCoord Method " Url="html/M_Furcadia_Drawing_VisibleArea_getTargetRectFromCenterCoord.htm" />
             <HelpTOCNode Title="IsOdd Method " Url="html/M_Furcadia_Drawing_VisibleArea_IsOdd.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="49ca8e18-9ff5-4791-8a5f-a54fd8085a73" Title="Furcadia.Drawing.Graphics" Url="html/N_Furcadia_Drawing_Graphics.htm">
-        <HelpTOCNode Id="d195cda4-99a7-4609-a1ef-90cb4f9a9c40" Title="Frame Structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm">
+      <HelpTOCNode Id="fa6d8136-753b-455a-8084-f48907503197" Title="Furcadia.Drawing.Graphics" Url="html/N_Furcadia_Drawing_Graphics.htm">
+        <HelpTOCNode Id="61af1a0b-08ae-483a-a1b1-f5fb5983183b" Title="Frame Structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm">
           <HelpTOCNode Title="Frame Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
-          <HelpTOCNode Id="bb2ca19b-cc80-46b4-ad1e-f2735cd4df0b" Title="Frame Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm">
+          <HelpTOCNode Id="fb442c57-ae3e-4359-b114-18218b001995" Title="Frame Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm">
             <HelpTOCNode Title="FrameFormat Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FrameFormat.htm" />
             <HelpTOCNode Title="FramePos Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FramePos.htm" />
             <HelpTOCNode Title="FurrePos Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FurrePos.htm" />
@@ -142,25 +143,25 @@
           </HelpTOCNode>
         </HelpTOCNode>
         <HelpTOCNode Title="Frame.FrameFormats Enumeration" Url="html/T_Furcadia_Drawing_Graphics_Frame_FrameFormats.htm" />
-        <HelpTOCNode Id="0e9e425d-d7ea-41ac-a9b3-8d94d01594f6" Title="Frame.Pos Structure" Url="html/T_Furcadia_Drawing_Graphics_Frame_Pos.htm">
+        <HelpTOCNode Id="2c88d4ae-609b-4391-9ad1-f53cb39f7593" Title="Frame.Pos Structure" Url="html/T_Furcadia_Drawing_Graphics_Frame_Pos.htm">
           <HelpTOCNode Title="Pos Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame_Pos.htm" />
-          <HelpTOCNode Id="e7e5361e-3447-45a5-9631-613f7306b7ef" Title="Pos Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame_Pos.htm">
+          <HelpTOCNode Id="43a2383b-cb98-4ded-be24-6ebb94e257c0" Title="Pos Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame_Pos.htm">
             <HelpTOCNode Title="X Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
             <HelpTOCNode Title="Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="c91ff0ef-958a-4129-9001-973f5d7da7b1" Title="FurcadiaPaletteException Class" Url="html/T_Furcadia_Drawing_Graphics_FurcadiaPaletteException.htm">
+        <HelpTOCNode Id="ed25e02e-e148-4964-a929-c0fb5b3b0fe7" Title="FurcadiaPaletteException Class" Url="html/T_Furcadia_Drawing_Graphics_FurcadiaPaletteException.htm">
           <HelpTOCNode Title="FurcadiaPaletteException Constructor " Url="html/M_Furcadia_Drawing_Graphics_FurcadiaPaletteException__ctor.htm" />
           <HelpTOCNode Title="FurcadiaPaletteException Properties" Url="html/Properties_T_Furcadia_Drawing_Graphics_FurcadiaPaletteException.htm" />
           <HelpTOCNode Title="FurcadiaPaletteException Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_FurcadiaPaletteException.htm" />
           <HelpTOCNode Title="FurcadiaPaletteException Events" Url="html/Events_T_Furcadia_Drawing_Graphics_FurcadiaPaletteException.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="0dfd0c48-f903-4e38-a166-a18dda876a76" Title="FurcadiaShapes Class" Url="html/T_Furcadia_Drawing_Graphics_FurcadiaShapes.htm">
+        <HelpTOCNode Id="43b1f0f3-9906-4b8d-b621-57d5efee690f" Title="FurcadiaShapes Class" Url="html/T_Furcadia_Drawing_Graphics_FurcadiaShapes.htm">
           <HelpTOCNode Title="FurcadiaShapes Constructor " Url="html/M_Furcadia_Drawing_Graphics_FurcadiaShapes__ctor.htm" />
-          <HelpTOCNode Id="7ddabbf0-da1b-48d1-b6eb-3f4fa22107cf" Title="FurcadiaShapes Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_FurcadiaShapes.htm">
+          <HelpTOCNode Id="e0a6b958-7cb4-4ccd-b5d7-d72a5fe990c9" Title="FurcadiaShapes Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_FurcadiaShapes.htm">
             <HelpTOCNode Title="ToBitmap Method " Url="html/M_Furcadia_Drawing_Graphics_FurcadiaShapes_ToBitmap.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="78d7150d-bae0-48a3-95f8-03e1f5143b95" Title="FurcadiaShapes Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_FurcadiaShapes.htm">
+          <HelpTOCNode Id="72f97dbf-087d-494a-bde7-6744761b028f" Title="FurcadiaShapes Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_FurcadiaShapes.htm">
             <HelpTOCNode Title="Encryption Field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_Encryption.htm" />
             <HelpTOCNode Title="Generator Field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_Generator.htm" />
             <HelpTOCNode Title="Header Field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_Header.htm" />
@@ -171,31 +172,31 @@
             <HelpTOCNode Title="Version Field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_Version.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="3ed71add-7f2b-4b35-8ee3-361dc5bf0ff1" Title="FurcadiaShapesException Class" Url="html/T_Furcadia_Drawing_Graphics_FurcadiaShapesException.htm">
+        <HelpTOCNode Id="a125c079-6d8f-4f72-826c-b82d19164fc3" Title="FurcadiaShapesException Class" Url="html/T_Furcadia_Drawing_Graphics_FurcadiaShapesException.htm">
           <HelpTOCNode Title="FurcadiaShapesException Constructor " Url="html/M_Furcadia_Drawing_Graphics_FurcadiaShapesException__ctor.htm" />
           <HelpTOCNode Title="FurcadiaShapesException Properties" Url="html/Properties_T_Furcadia_Drawing_Graphics_FurcadiaShapesException.htm" />
           <HelpTOCNode Title="FurcadiaShapesException Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_FurcadiaShapesException.htm" />
           <HelpTOCNode Title="FurcadiaShapesException Events" Url="html/Events_T_Furcadia_Drawing_Graphics_FurcadiaShapesException.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="8a7debc3-66e1-400f-ac4f-ba1a4d0de637" Title="Palette Class" Url="html/T_Furcadia_Drawing_Graphics_Palette.htm">
-          <HelpTOCNode Id="db746fa6-bc7c-44e8-80c9-ddfbfd2d5a5f" Title="Palette Constructor " Url="html/Overload_Furcadia_Drawing_Graphics_Palette__ctor.htm">
+        <HelpTOCNode Id="dadc090e-9de5-4fb2-8270-c691edba0b6f" Title="Palette Class" Url="html/T_Furcadia_Drawing_Graphics_Palette.htm">
+          <HelpTOCNode Id="13ce0788-5ba0-4e8c-a7cf-016cfa4fb96d" Title="Palette Constructor " Url="html/Overload_Furcadia_Drawing_Graphics_Palette__ctor.htm">
             <HelpTOCNode Title="Palette Constructor (String)" Url="html/M_Furcadia_Drawing_Graphics_Palette__ctor.htm" />
             <HelpTOCNode Title="Palette Constructor (String, String)" Url="html/M_Furcadia_Drawing_Graphics_Palette__ctor_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="914814f7-e8c8-4b89-bde8-3b774bdf8eeb" Title="Palette Properties" Url="html/Properties_T_Furcadia_Drawing_Graphics_Palette.htm">
+          <HelpTOCNode Id="d4a0c969-6651-4864-9ceb-7ca7bacaf70b" Title="Palette Properties" Url="html/Properties_T_Furcadia_Drawing_Graphics_Palette.htm">
             <HelpTOCNode Title="Default Property " Url="html/P_Furcadia_Drawing_Graphics_Palette_Default.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="Palette Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Palette.htm" />
-          <HelpTOCNode Id="56e3737a-91fd-4352-9360-496520e38351" Title="Palette Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Palette.htm">
+          <HelpTOCNode Id="747b2b9a-32f4-4d6e-8672-c23fe37442c0" Title="Palette Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Palette.htm">
             <HelpTOCNode Title="Colors Field" Url="html/F_Furcadia_Drawing_Graphics_Palette_Colors.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="0d6d55bb-55fe-4fe5-9207-bc7acdfba65b" Title="Remapper Class" Url="html/T_Furcadia_Drawing_Graphics_Remapper.htm">
+        <HelpTOCNode Id="f8d0133b-8e26-4e46-a69d-1b4bab76cb2b" Title="Remapper Class" Url="html/T_Furcadia_Drawing_Graphics_Remapper.htm">
           <HelpTOCNode Title="Remapper Constructor " Url="html/M_Furcadia_Drawing_Graphics_Remapper__ctor.htm" />
-          <HelpTOCNode Id="79691893-e777-49e5-8c2d-a65f28b54fba" Title="Remapper Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Remapper.htm">
+          <HelpTOCNode Id="f4968cef-7d7a-4a4f-a105-e8063e5d573c" Title="Remapper Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Remapper.htm">
             <HelpTOCNode Title="Remap Method " Url="html/M_Furcadia_Drawing_Graphics_Remapper_Remap.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="5445983b-2839-4c93-af6a-0d013219eed8" Title="Remapper Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Remapper.htm">
+          <HelpTOCNode Id="76b3cb30-4104-46f2-befa-8c9b6956b66b" Title="Remapper Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Remapper.htm">
             <HelpTOCNode Title="BadgeRemap Field" Url="html/F_Furcadia_Drawing_Graphics_Remapper_BadgeRemap.htm" />
             <HelpTOCNode Title="BootRemap Field" Url="html/F_Furcadia_Drawing_Graphics_Remapper_BootRemap.htm" />
             <HelpTOCNode Title="BracersRemap Field" Url="html/F_Furcadia_Drawing_Graphics_Remapper_BracersRemap.htm" />
@@ -210,9 +211,9 @@
             <HelpTOCNode Title="VestRemap Field" Url="html/F_Furcadia_Drawing_Graphics_Remapper_VestRemap.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="85ffa83d-02ed-4a83-865a-2992b86b908d" Title="Shape Structure" Url="html/T_Furcadia_Drawing_Graphics_Shape.htm">
+        <HelpTOCNode Id="ec022eb6-dc9f-41ed-abc4-6e4a1f787ed9" Title="Shape Structure" Url="html/T_Furcadia_Drawing_Graphics_Shape.htm">
           <HelpTOCNode Title="Shape Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Shape.htm" />
-          <HelpTOCNode Id="4e4ac303-f4a7-4d3f-866f-0ddd3fe66ea7" Title="Shape Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Shape.htm">
+          <HelpTOCNode Id="a30513ef-25b1-448b-9fd6-bc8a30eb498c" Title="Shape Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Shape.htm">
             <HelpTOCNode Title="Flags Field" Url="html/F_Furcadia_Drawing_Graphics_Shape_Flags.htm" />
             <HelpTOCNode Title="Frames Field" Url="html/F_Furcadia_Drawing_Graphics_Shape_Frames.htm" />
             <HelpTOCNode Title="KitterSpeak Field" Url="html/F_Furcadia_Drawing_Graphics_Shape_KitterSpeak.htm" />
@@ -222,9 +223,9 @@
           </HelpTOCNode>
         </HelpTOCNode>
         <HelpTOCNode Title="Shape.ShapeFlags Enumeration" Url="html/T_Furcadia_Drawing_Graphics_Shape_ShapeFlags.htm" />
-        <HelpTOCNode Id="cd219346-280f-4361-9a55-e53862d47594" Title="StepBlock Structure" Url="html/T_Furcadia_Drawing_Graphics_StepBlock.htm">
+        <HelpTOCNode Id="9f592a15-b75b-4b2f-9035-2293616c0611" Title="StepBlock Structure" Url="html/T_Furcadia_Drawing_Graphics_StepBlock.htm">
           <HelpTOCNode Title="StepBlock Methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_StepBlock.htm" />
-          <HelpTOCNode Id="07dc1098-b92c-4788-9795-b6844ad54dd5" Title="StepBlock Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_StepBlock.htm">
+          <HelpTOCNode Id="8bc909a5-59de-4063-9a19-73e355e45f25" Title="StepBlock Fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_StepBlock.htm">
             <HelpTOCNode Title="CounterMax Field" Url="html/F_Furcadia_Drawing_Graphics_StepBlock_CounterMax.htm" />
             <HelpTOCNode Title="StepType Field" Url="html/F_Furcadia_Drawing_Graphics_StepBlock_StepType.htm" />
             <HelpTOCNode Title="Value Field" Url="html/F_Furcadia_Drawing_Graphics_StepBlock_Value.htm" />
@@ -233,10 +234,10 @@
         <HelpTOCNode Title="StepBlock.StepBlockStepTypes Enumeration" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e9010e60-18a6-4795-9bcb-12afeeba0f82" Title="Furcadia.FurcMap" Url="html/N_Furcadia_FurcMap.htm">
-      <HelpTOCNode Id="64ecc61e-71d2-48b9-8895-5d430d2f9055" Title="Map Class" Url="html/T_Furcadia_FurcMap_Map.htm">
+    <HelpTOCNode Id="5ade3a7b-8eaf-407b-930c-0b60c8ced73a" Title="Furcadia.FurcMap" Url="html/N_Furcadia_FurcMap.htm">
+      <HelpTOCNode Id="090956fd-e7c1-423e-b207-65d3574433e3" Title="Map Class" Url="html/T_Furcadia_FurcMap_Map.htm">
         <HelpTOCNode Title="Map Constructor " Url="html/M_Furcadia_FurcMap_Map__ctor.htm" />
-        <HelpTOCNode Id="caa0c090-6cd2-4c08-87f2-fe5e7e68b200" Title="Map Properties" Url="html/Properties_T_Furcadia_FurcMap_Map.htm">
+        <HelpTOCNode Id="5e570bf6-acf8-44e3-b8a0-9dd91d812893" Title="Map Properties" Url="html/Properties_T_Furcadia_FurcMap_Map.htm">
           <HelpTOCNode Title="AllowDreamURL Property " Url="html/P_Furcadia_FurcMap_Map_AllowDreamURL.htm" />
           <HelpTOCNode Title="AllowJoinSummon Property " Url="html/P_Furcadia_FurcMap_Map_AllowJoinSummon.htm" />
           <HelpTOCNode Title="AllowLargeDreamSize Property " Url="html/P_Furcadia_FurcMap_Map_AllowLargeDreamSize.htm" />
@@ -257,7 +258,7 @@
           <HelpTOCNode Title="UseSwearFilter Property " Url="html/P_Furcadia_FurcMap_Map_UseSwearFilter.htm" />
           <HelpTOCNode Title="Width Property " Url="html/P_Furcadia_FurcMap_Map_Width.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="8960f238-c4a1-4137-b94d-0e0dda9e0e25" Title="Map Methods" Url="html/Methods_T_Furcadia_FurcMap_Map.htm">
+        <HelpTOCNode Id="6049df46-4285-4857-b211-d13fb0c0e442" Title="Map Methods" Url="html/Methods_T_Furcadia_FurcMap_Map.htm">
           <HelpTOCNode Title="getEffectAt Method " Url="html/M_Furcadia_FurcMap_Map_getEffectAt.htm" />
           <HelpTOCNode Title="getFloorAt Method " Url="html/M_Furcadia_FurcMap_Map_getFloorAt.htm" />
           <HelpTOCNode Title="getMapPos Method " Url="html/M_Furcadia_FurcMap_Map_getMapPos.htm" />
@@ -274,13 +275,13 @@
           <HelpTOCNode Title="setWallAt Method " Url="html/M_Furcadia_FurcMap_Map_setWallAt.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="333788d7-1633-4e06-934a-7751b3b7799a" Title="MapPosition Class" Url="html/T_Furcadia_FurcMap_MapPosition.htm">
-        <HelpTOCNode Id="52e0afb7-31a2-4081-9495-bd28f66877bb" Title="MapPosition Constructor " Url="html/Overload_Furcadia_FurcMap_MapPosition__ctor.htm">
+      <HelpTOCNode Id="344ca9c6-2f83-494b-b8d5-92c59ca28c72" Title="MapPosition Class" Url="html/T_Furcadia_FurcMap_MapPosition.htm">
+        <HelpTOCNode Id="5be4c6f2-ab4e-4f0a-b2d3-f4f2ad7fc3c5" Title="MapPosition Constructor " Url="html/Overload_Furcadia_FurcMap_MapPosition__ctor.htm">
           <HelpTOCNode Title="MapPosition Constructor (Int32, Int32)" Url="html/M_Furcadia_FurcMap_MapPosition__ctor.htm" />
           <HelpTOCNode Title="MapPosition Constructor (Int32, Int32, Map)" Url="html/M_Furcadia_FurcMap_MapPosition__ctor_1.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="MapPosition Methods" Url="html/Methods_T_Furcadia_FurcMap_MapPosition.htm" />
-        <HelpTOCNode Id="d110c254-09eb-461f-83c4-8609e5823768" Title="MapPosition Fields" Url="html/Fields_T_Furcadia_FurcMap_MapPosition.htm">
+        <HelpTOCNode Id="70272f1f-4263-4576-a41f-4ede6b495f7c" Title="MapPosition Fields" Url="html/Fields_T_Furcadia_FurcMap_MapPosition.htm">
           <HelpTOCNode Title="effectNumber Field" Url="html/F_Furcadia_FurcMap_MapPosition_effectNumber.htm" />
           <HelpTOCNode Title="floorNumber Field" Url="html/F_Furcadia_FurcMap_MapPosition_floorNumber.htm" />
           <HelpTOCNode Title="objectNumber Field" Url="html/F_Furcadia_FurcMap_MapPosition_objectNumber.htm" />
@@ -290,8 +291,8 @@
           <HelpTOCNode Title="y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="79d918fa-cc90-4efd-8929-4367b5922618" Title="MapRating Class" Url="html/T_Furcadia_FurcMap_MapRating.htm">
-        <HelpTOCNode Id="feb2520e-7b59-44d5-9cd1-f6fd2a0fd373" Title="MapRating Fields" Url="html/Fields_T_Furcadia_FurcMap_MapRating.htm">
+      <HelpTOCNode Id="d1c20525-64a4-43f3-b38e-57a316b4100f" Title="MapRating Class" Url="html/T_Furcadia_FurcMap_MapRating.htm">
+        <HelpTOCNode Id="0142c327-c1c9-45d2-884a-aeb909a47d8a" Title="MapRating Fields" Url="html/Fields_T_Furcadia_FurcMap_MapRating.htm">
           <HelpTOCNode Title="Adult Field" Url="html/F_Furcadia_FurcMap_MapRating_Adult.htm" />
           <HelpTOCNode Title="AdultOnly Field" Url="html/F_Furcadia_FurcMap_MapRating_AdultOnly.htm" />
           <HelpTOCNode Title="AOClean Field" Url="html/F_Furcadia_FurcMap_MapRating_AOClean.htm" />
@@ -300,13 +301,13 @@
           <HelpTOCNode Title="Teen Field" Url="html/F_Furcadia_FurcMap_MapRating_Teen.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="c4405740-50a2-4167-965f-425794015b0c" Title="MapTile Class" Url="html/T_Furcadia_FurcMap_MapTile.htm">
-        <HelpTOCNode Id="c9b34860-2543-4c46-a8fe-a425eec0975e" Title="MapTile Constructor " Url="html/Overload_Furcadia_FurcMap_MapTile__ctor.htm">
+      <HelpTOCNode Id="3683d6e1-c70c-43c9-9c1b-7a1fd418bdcc" Title="MapTile Class" Url="html/T_Furcadia_FurcMap_MapTile.htm">
+        <HelpTOCNode Id="f691e517-f728-48a9-bbca-e0ecfee93c94" Title="MapTile Constructor " Url="html/Overload_Furcadia_FurcMap_MapTile__ctor.htm">
           <HelpTOCNode Title="MapTile Constructor (Int32, Int32)" Url="html/M_Furcadia_FurcMap_MapTile__ctor.htm" />
           <HelpTOCNode Title="MapTile Constructor (Int32, Int32, Map)" Url="html/M_Furcadia_FurcMap_MapTile__ctor_1.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="MapTile Methods" Url="html/Methods_T_Furcadia_FurcMap_MapTile.htm" />
-        <HelpTOCNode Id="52296022-3166-4753-a642-5c7e3bec3d99" Title="MapTile Fields" Url="html/Fields_T_Furcadia_FurcMap_MapTile.htm">
+        <HelpTOCNode Id="f949cc2e-b8c9-4048-9b7e-13581a863e2b" Title="MapTile Fields" Url="html/Fields_T_Furcadia_FurcMap_MapTile.htm">
           <HelpTOCNode Title="effectNumber Field" Url="html/F_Furcadia_FurcMap_MapTile_effectNumber.htm" />
           <HelpTOCNode Title="floorNumber Field" Url="html/F_Furcadia_FurcMap_MapTile_floorNumber.htm" />
           <HelpTOCNode Title="objectNumber Field" Url="html/F_Furcadia_FurcMap_MapTile_objectNumber.htm" />
@@ -318,9 +319,9 @@
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="462dc3aa-0e47-4205-ba1e-b462b86f01fd" Title="Furcadia.IO" Url="html/N_Furcadia_IO.htm">
-      <HelpTOCNode Id="3e40ed00-fc8b-4e27-b58d-298d8160167c" Title="FurcadiaIOException Class" Url="html/T_Furcadia_IO_FurcadiaIOException.htm">
-        <HelpTOCNode Id="dba86a55-73ce-48f3-b386-f89ba93cdaea" Title="FurcadiaIOException Constructor " Url="html/Overload_Furcadia_IO_FurcadiaIOException__ctor.htm">
+    <HelpTOCNode Id="01f03a4e-1142-44fe-9e8b-2bd9e3ecc771" Title="Furcadia.IO" Url="html/N_Furcadia_IO.htm">
+      <HelpTOCNode Id="096a9b73-a42f-4455-9495-65941604bebd" Title="FurcadiaIOException Class" Url="html/T_Furcadia_IO_FurcadiaIOException.htm">
+        <HelpTOCNode Id="2be2e17d-5de4-4f30-a067-23283269c54d" Title="FurcadiaIOException Constructor " Url="html/Overload_Furcadia_IO_FurcadiaIOException__ctor.htm">
           <HelpTOCNode Title="FurcadiaIOException Constructor " Url="html/M_Furcadia_IO_FurcadiaIOException__ctor.htm" />
           <HelpTOCNode Title="FurcadiaIOException Constructor (String)" Url="html/M_Furcadia_IO_FurcadiaIOException__ctor_2.htm" />
           <HelpTOCNode Title="FurcadiaIOException Constructor (SerializationInfo, StreamingContext)" Url="html/M_Furcadia_IO_FurcadiaIOException__ctor_1.htm" />
@@ -330,8 +331,8 @@
         <HelpTOCNode Title="FurcadiaIOException Methods" Url="html/Methods_T_Furcadia_IO_FurcadiaIOException.htm" />
         <HelpTOCNode Title="FurcadiaIOException Events" Url="html/Events_T_Furcadia_IO_FurcadiaIOException.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="33bf0845-9010-408b-b901-1924d1706a11" Title="FurcadiaNotFoundException Class" Url="html/T_Furcadia_IO_FurcadiaNotFoundException.htm">
-        <HelpTOCNode Id="dd14052a-9b1f-4bb7-8a01-a464c96b3beb" Title="FurcadiaNotFoundException Constructor " Url="html/Overload_Furcadia_IO_FurcadiaNotFoundException__ctor.htm">
+      <HelpTOCNode Id="9c9dd3eb-91e4-4b61-91ac-7b5df05602f2" Title="FurcadiaNotFoundException Class" Url="html/T_Furcadia_IO_FurcadiaNotFoundException.htm">
+        <HelpTOCNode Id="4574a993-1391-4499-abad-3a03c666be5e" Title="FurcadiaNotFoundException Constructor " Url="html/Overload_Furcadia_IO_FurcadiaNotFoundException__ctor.htm">
           <HelpTOCNode Title="FurcadiaNotFoundException Constructor " Url="html/M_Furcadia_IO_FurcadiaNotFoundException__ctor.htm" />
           <HelpTOCNode Title="FurcadiaNotFoundException Constructor (String)" Url="html/M_Furcadia_IO_FurcadiaNotFoundException__ctor_2.htm" />
           <HelpTOCNode Title="FurcadiaNotFoundException Constructor (SerializationInfo, StreamingContext)" Url="html/M_Furcadia_IO_FurcadiaNotFoundException__ctor_1.htm" />
@@ -341,20 +342,20 @@
         <HelpTOCNode Title="FurcadiaNotFoundException Methods" Url="html/Methods_T_Furcadia_IO_FurcadiaNotFoundException.htm" />
         <HelpTOCNode Title="FurcadiaNotFoundException Events" Url="html/Events_T_Furcadia_IO_FurcadiaNotFoundException.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="58745cf5-cbd7-40c5-91d6-ed52433b8cd3" Title="IniFile Class" Url="html/T_Furcadia_IO_IniFile.htm">
+      <HelpTOCNode Id="a1053b92-53d0-4472-9ad0-6cd8c15094a2" Title="IniFile Class" Url="html/T_Furcadia_IO_IniFile.htm">
         <HelpTOCNode Title="IniFile Constructor " Url="html/M_Furcadia_IO_IniFile__ctor.htm" />
-        <HelpTOCNode Id="562e6a2e-cac1-4644-ab06-8c50b0208b82" Title="IniFile Properties" Url="html/Properties_T_Furcadia_IO_IniFile.htm">
+        <HelpTOCNode Id="f35e11e4-2545-4c8d-955c-65f33f540606" Title="IniFile Properties" Url="html/Properties_T_Furcadia_IO_IniFile.htm">
           <HelpTOCNode Title="Code Property " Url="html/P_Furcadia_IO_IniFile_Code.htm" />
           <HelpTOCNode Title="Sections Property " Url="html/P_Furcadia_IO_IniFile_Sections.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="08f5f06e-524d-4085-8e03-efa3d9d88160" Title="IniFile Methods" Url="html/Methods_T_Furcadia_IO_IniFile.htm">
+        <HelpTOCNode Id="43dcbb18-483b-4e22-acbd-74f99c8b35fd" Title="IniFile Methods" Url="html/Methods_T_Furcadia_IO_IniFile.htm">
           <HelpTOCNode Title="AddSection Method " Url="html/M_Furcadia_IO_IniFile_AddSection.htm" />
           <HelpTOCNode Title="GetKeyValue Method " Url="html/M_Furcadia_IO_IniFile_GetKeyValue.htm" />
           <HelpTOCNode Title="GetSection Method " Url="html/M_Furcadia_IO_IniFile_GetSection.htm" />
           <HelpTOCNode Title="Load Method " Url="html/M_Furcadia_IO_IniFile_Load.htm" />
           <HelpTOCNode Title="RemoveAllSections Method " Url="html/M_Furcadia_IO_IniFile_RemoveAllSections.htm" />
           <HelpTOCNode Title="RemoveKey Method " Url="html/M_Furcadia_IO_IniFile_RemoveKey.htm" />
-          <HelpTOCNode Id="08fe1a4e-8f3d-4dfd-86f5-296c94df3a0b" Title="RemoveSection Method " Url="html/Overload_Furcadia_IO_IniFile_RemoveSection.htm">
+          <HelpTOCNode Id="3d7dbf8a-f468-43e3-8abd-40754e1ad6bc" Title="RemoveSection Method " Url="html/Overload_Furcadia_IO_IniFile_RemoveSection.htm">
             <HelpTOCNode Title="RemoveSection Method (String)" Url="html/M_Furcadia_IO_IniFile_RemoveSection_1.htm" />
             <HelpTOCNode Title="RemoveSection Method (IniFile.IniSection)" Url="html/M_Furcadia_IO_IniFile_RemoveSection.htm" />
           </HelpTOCNode>
@@ -364,43 +365,43 @@
           <HelpTOCNode Title="SetKeyValue Method " Url="html/M_Furcadia_IO_IniFile_SetKeyValue.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="5b989195-e96b-4929-bf11-65a584f578bf" Title="IniFile.IniSection Class" Url="html/T_Furcadia_IO_IniFile_IniSection.htm">
+      <HelpTOCNode Id="39d06495-5bf5-4821-af9c-da3c8903c2b6" Title="IniFile.IniSection Class" Url="html/T_Furcadia_IO_IniFile_IniSection.htm">
         <HelpTOCNode Title="IniFile.IniSection Constructor " Url="html/M_Furcadia_IO_IniFile_IniSection__ctor.htm" />
-        <HelpTOCNode Id="f51608f4-bfc1-4bb1-968e-973d32ebe594" Title="IniSection Properties" Url="html/Properties_T_Furcadia_IO_IniFile_IniSection.htm">
+        <HelpTOCNode Id="b574a114-42e7-4dcd-acc5-b6bf63abd95e" Title="IniSection Properties" Url="html/Properties_T_Furcadia_IO_IniFile_IniSection.htm">
           <HelpTOCNode Title="Keys Property " Url="html/P_Furcadia_IO_IniFile_IniSection_Keys.htm" />
           <HelpTOCNode Title="Name Property " Url="html/P_Furcadia_IO_IniFile_IniSection_Name.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="d17160e3-4eb4-4f34-91e5-b98e29f9ffb1" Title="IniSection Methods" Url="html/Methods_T_Furcadia_IO_IniFile_IniSection.htm">
+        <HelpTOCNode Id="d100ed5c-b2ba-419e-bb57-cdeac914e3fc" Title="IniSection Methods" Url="html/Methods_T_Furcadia_IO_IniFile_IniSection.htm">
           <HelpTOCNode Title="AddKey Method " Url="html/M_Furcadia_IO_IniFile_IniSection_AddKey.htm" />
           <HelpTOCNode Title="GetKey Method " Url="html/M_Furcadia_IO_IniFile_IniSection_GetKey.htm" />
           <HelpTOCNode Title="GetName Method " Url="html/M_Furcadia_IO_IniFile_IniSection_GetName.htm" />
           <HelpTOCNode Title="RemoveAllKeys Method " Url="html/M_Furcadia_IO_IniFile_IniSection_RemoveAllKeys.htm" />
-          <HelpTOCNode Id="562d9820-91f9-4536-b7a2-f2505a2abc78" Title="RemoveKey Method " Url="html/Overload_Furcadia_IO_IniFile_IniSection_RemoveKey.htm">
+          <HelpTOCNode Id="3c9e444a-2909-4210-bdec-a168bddb9191" Title="RemoveKey Method " Url="html/Overload_Furcadia_IO_IniFile_IniSection_RemoveKey.htm">
             <HelpTOCNode Title="RemoveKey Method (String)" Url="html/M_Furcadia_IO_IniFile_IniSection_RemoveKey_1.htm" />
             <HelpTOCNode Title="RemoveKey Method (IniFile.IniSection.IniKey)" Url="html/M_Furcadia_IO_IniFile_IniSection_RemoveKey.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="SetName Method " Url="html/M_Furcadia_IO_IniFile_IniSection_SetName.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="63c94e97-4470-42d2-8c6a-831ef1eddb29" Title="IniFile.IniSection.IniKey Class" Url="html/T_Furcadia_IO_IniFile_IniSection_IniKey.htm">
+      <HelpTOCNode Id="f3e1dfca-1db8-4f66-bc9f-ca317d317f8d" Title="IniFile.IniSection.IniKey Class" Url="html/T_Furcadia_IO_IniFile_IniSection_IniKey.htm">
         <HelpTOCNode Title="IniFile.IniSection.IniKey Constructor " Url="html/M_Furcadia_IO_IniFile_IniSection_IniKey__ctor.htm" />
-        <HelpTOCNode Id="09572f04-dadd-4784-a158-809d3e970cfe" Title="IniKey Properties" Url="html/Properties_T_Furcadia_IO_IniFile_IniSection_IniKey.htm">
+        <HelpTOCNode Id="2597982a-9c3f-41be-ab56-06905ee28eb3" Title="IniKey Properties" Url="html/Properties_T_Furcadia_IO_IniFile_IniSection_IniKey.htm">
           <HelpTOCNode Title="Name Property " Url="html/P_Furcadia_IO_IniFile_IniSection_IniKey_Name.htm" />
           <HelpTOCNode Title="Value Property " Url="html/P_Furcadia_IO_IniFile_IniSection_IniKey_Value.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f7e347a0-7f61-4134-8f31-8efe22f5682d" Title="IniKey Methods" Url="html/Methods_T_Furcadia_IO_IniFile_IniSection_IniKey.htm">
+        <HelpTOCNode Id="fca41e0d-73ba-48f8-9e03-e40abc47676e" Title="IniKey Methods" Url="html/Methods_T_Furcadia_IO_IniFile_IniSection_IniKey.htm">
           <HelpTOCNode Title="GetName Method " Url="html/M_Furcadia_IO_IniFile_IniSection_IniKey_GetName.htm" />
           <HelpTOCNode Title="GetValue Method " Url="html/M_Furcadia_IO_IniFile_IniSection_IniKey_GetValue.htm" />
           <HelpTOCNode Title="SetName Method " Url="html/M_Furcadia_IO_IniFile_IniSection_IniKey_SetName.htm" />
           <HelpTOCNode Title="SetValue Method " Url="html/M_Furcadia_IO_IniFile_IniSection_IniKey_SetValue.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="3cc5d19c-ee91-4f0b-99fd-af16f99bf1a4" Title="Paths Class" Url="html/T_Furcadia_IO_Paths.htm">
-        <HelpTOCNode Id="8fb666d0-3b10-46d0-a687-2f469a7235fe" Title="Paths Constructor " Url="html/Overload_Furcadia_IO_Paths__ctor.htm">
+      <HelpTOCNode Id="4c5c4593-2d48-40f6-ac9a-a51426398de9" Title="Paths Class" Url="html/T_Furcadia_IO_Paths.htm">
+        <HelpTOCNode Id="b33d46db-63b0-43ea-ae9e-70e0043e211e" Title="Paths Constructor " Url="html/Overload_Furcadia_IO_Paths__ctor.htm">
           <HelpTOCNode Title="Paths Constructor " Url="html/M_Furcadia_IO_Paths__ctor.htm" />
           <HelpTOCNode Title="Paths Constructor (String)" Url="html/M_Furcadia_IO_Paths__ctor_1.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="6edb3b8b-813d-432a-97d4-4d79d36f006f" Title="Paths Properties" Url="html/Properties_T_Furcadia_IO_Paths.htm">
+        <HelpTOCNode Id="8c0d7be9-bf85-4168-a2d7-5589b1897a33" Title="Paths Properties" Url="html/Properties_T_Furcadia_IO_Paths.htm">
           <HelpTOCNode Title="CachePath Property " Url="html/P_Furcadia_IO_Paths_CachePath.htm" />
           <HelpTOCNode Title="CharacterPath Property " Url="html/P_Furcadia_IO_Paths_CharacterPath.htm" />
           <HelpTOCNode Title="DefaultCachePath Property " Url="html/P_Furcadia_IO_Paths_DefaultCachePath.htm" />
@@ -440,32 +441,32 @@
           <HelpTOCNode Title="UsingLocaldir Property " Url="html/P_Furcadia_IO_Paths_UsingLocaldir.htm" />
           <HelpTOCNode Title="WhisperLogsPath Property " Url="html/P_Furcadia_IO_Paths_WhisperLogsPath.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="247437f7-ac15-49ff-bd3b-abb1c7ed04ed" Title="Paths Methods" Url="html/Methods_T_Furcadia_IO_Paths.htm">
+        <HelpTOCNode Id="6454ba24-10d3-48b5-8db6-79dd869d7897" Title="Paths Methods" Url="html/Methods_T_Furcadia_IO_Paths.htm">
           <HelpTOCNode Title="GetDefaultPatchPath Method " Url="html/M_Furcadia_IO_Paths_GetDefaultPatchPath.htm" />
           <HelpTOCNode Title="GetFurcadiaInstallPath Method " Url="html/M_Furcadia_IO_Paths_GetFurcadiaInstallPath.htm" />
           <HelpTOCNode Title="GetFurcadiaLocaldirPath Method " Url="html/M_Furcadia_IO_Paths_GetFurcadiaLocaldirPath.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a01de3ae-14c8-41c2-be0b-4c045252a74c" Title="Furcadia.Movement" Url="html/N_Furcadia_Movement.htm">
-      <HelpTOCNode Id="a3542881-6fb2-4704-af24-6fd7a11fdda6" Title="CharacterFlags Class" Url="html/T_Furcadia_Movement_CharacterFlags.htm">
+    <HelpTOCNode Id="49fc1baa-0ed1-4a5e-bb24-fc2032f22a47" Title="Furcadia.Movement" Url="html/N_Furcadia_Movement.htm">
+      <HelpTOCNode Id="08ccc84e-b593-48b8-a1db-9c945563dfde" Title="CharacterFlags Class" Url="html/T_Furcadia_Movement_CharacterFlags.htm">
         <HelpTOCNode Title="CharacterFlags Constructor " Url="html/M_Furcadia_Movement_CharacterFlags__ctor.htm" />
-        <HelpTOCNode Id="75ae1805-51de-4521-b2da-a8c2cc8831bb" Title="CharacterFlags Methods" Url="html/Methods_T_Furcadia_Movement_CharacterFlags.htm">
+        <HelpTOCNode Id="e3e35ad3-d3d0-4915-8395-2edeba1c34ba" Title="CharacterFlags Methods" Url="html/Methods_T_Furcadia_Movement_CharacterFlags.htm">
           <HelpTOCNode Title="HasFlag Method " Url="html/M_Furcadia_Movement_CharacterFlags_HasFlag.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="15efc09d-a33c-4b3e-878b-10ea8ee5375f" Title="CharacterFlags Fields" Url="html/Fields_T_Furcadia_Movement_CharacterFlags.htm">
+        <HelpTOCNode Id="1152ca0c-4d6d-4c49-8f14-a168cbe0c4f8" Title="CharacterFlags Fields" Url="html/Fields_T_Furcadia_Movement_CharacterFlags.htm">
           <HelpTOCNode Title="CHAR_FLAG_HAS_PROFILE Field" Url="html/F_Furcadia_Movement_CharacterFlags_CHAR_FLAG_HAS_PROFILE.htm" />
           <HelpTOCNode Title="CHAR_FLAG_NEW_AVATAR Field" Url="html/F_Furcadia_Movement_CharacterFlags_CHAR_FLAG_NEW_AVATAR.htm" />
           <HelpTOCNode Title="CHAR_FLAG_NONE Field" Url="html/F_Furcadia_Movement_CharacterFlags_CHAR_FLAG_NONE.htm" />
           <HelpTOCNode Title="CHAR_FLAG_SET_VISIBLE Field" Url="html/F_Furcadia_Movement_CharacterFlags_CHAR_FLAG_SET_VISIBLE.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="91da8487-f496-448a-aaae-9f07740e12c5" Title="ColorString Class" Url="html/T_Furcadia_Movement_ColorString.htm">
-        <HelpTOCNode Id="6f170c2e-660e-45bf-8c75-f27c253edb80" Title="ColorString Constructor " Url="html/Overload_Furcadia_Movement_ColorString__ctor.htm">
+      <HelpTOCNode Id="812cdc55-ff88-42ec-af5c-957c7a5fdfb8" Title="ColorString Class" Url="html/T_Furcadia_Movement_ColorString.htm">
+        <HelpTOCNode Id="2236a27b-9aa8-4336-b5ce-eae568c3b07f" Title="ColorString Constructor " Url="html/Overload_Furcadia_Movement_ColorString__ctor.htm">
           <HelpTOCNode Title="ColorString Constructor " Url="html/M_Furcadia_Movement_ColorString__ctor.htm" />
           <HelpTOCNode Title="ColorString Constructor (String)" Url="html/M_Furcadia_Movement_ColorString__ctor_1.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="05ec1640-01af-40b4-a556-095dce70d652" Title="ColorString Properties" Url="html/Properties_T_Furcadia_Movement_ColorString.htm">
+        <HelpTOCNode Id="e56ebc2d-7394-44e2-b111-e471b8aff2dd" Title="ColorString Properties" Url="html/Properties_T_Furcadia_Movement_ColorString.htm">
           <HelpTOCNode Title="Accent Property " Url="html/P_Furcadia_Movement_ColorString_Accent.htm" />
           <HelpTOCNode Title="Avatar Property " Url="html/P_Furcadia_Movement_ColorString_Avatar.htm" />
           <HelpTOCNode Title="Badge Property " Url="html/P_Furcadia_Movement_ColorString_Badge.htm" />
@@ -483,21 +484,21 @@
           <HelpTOCNode Title="Vest Property " Url="html/P_Furcadia_Movement_ColorString_Vest.htm" />
           <HelpTOCNode Title="Wings Property " Url="html/P_Furcadia_Movement_ColorString_Wings.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="4910a65e-3dfc-458c-b8bb-6851f7e4b3e2" Title="ColorString Methods" Url="html/Methods_T_Furcadia_Movement_ColorString.htm">
+        <HelpTOCNode Id="ac9b6c74-b366-48a6-b3b5-4ecbea74a566" Title="ColorString Methods" Url="html/Methods_T_Furcadia_Movement_ColorString.htm">
           <HelpTOCNode Title="ToString Method " Url="html/M_Furcadia_Movement_ColorString_ToString.htm" />
           <HelpTOCNode Title="Update Method " Url="html/M_Furcadia_Movement_ColorString_Update.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="52de27d8-c3af-46ff-9d17-9909dc06013d" Title="ColorString Fields" Url="html/Fields_T_Furcadia_Movement_ColorString.htm">
+        <HelpTOCNode Id="45e98d2c-d5e1-4a0a-9800-c76adb240913" Title="ColorString Fields" Url="html/Fields_T_Furcadia_Movement_ColorString.htm">
           <HelpTOCNode Title="ColorStringSize Field" Url="html/F_Furcadia_Movement_ColorString_ColorStringSize.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="56fd39bf-de1c-4c3d-9bcb-c50bb47712e8" Title="Furcadia.Net Namespaces" Url="html/G_Furcadia_Net.htm">
-      <HelpTOCNode Id="f0d45888-26d5-4462-a5e0-1afb3959a53b" Title="Furcadia.Net" Url="html/N_Furcadia_Net.htm">
+    <HelpTOCNode Id="278ddc32-077e-4338-9409-4b1e783ec5de" Title="Furcadia.Net Namespaces" Url="html/G_Furcadia_Net.htm">
+      <HelpTOCNode Id="d0719372-1c00-4895-8806-88e5f457b2ab" Title="Furcadia.Net" Url="html/N_Furcadia_Net.htm">
         <HelpTOCNode Title="ConnectionPhase Enumeration" Url="html/T_Furcadia_Net_ConnectionPhase.htm" />
-        <HelpTOCNode Id="fab9feff-847c-4ff1-b28c-9501f7fca7c0" Title="DREAM Class" Url="html/T_Furcadia_Net_DREAM.htm">
+        <HelpTOCNode Id="2f94259f-e4ed-496c-8e42-93c07060dfee" Title="DREAM Class" Url="html/T_Furcadia_Net_DREAM.htm">
           <HelpTOCNode Title="DREAM Constructor " Url="html/M_Furcadia_Net_DREAM__ctor.htm" />
-          <HelpTOCNode Id="430c6a19-7d7c-40d7-b321-ac1d3bd1287b" Title="DREAM Properties" Url="html/Properties_T_Furcadia_Net_DREAM.htm">
+          <HelpTOCNode Id="7d2f480a-e3eb-4eee-8443-73c7fef183b9" Title="DREAM Properties" Url="html/Properties_T_Furcadia_Net_DREAM.htm">
             <HelpTOCNode Title="IsModern Property " Url="html/P_Furcadia_Net_DREAM_IsModern.htm" />
             <HelpTOCNode Title="Lines Property " Url="html/P_Furcadia_Net_DREAM_Lines.htm" />
             <HelpTOCNode Title="Name Property " Url="html/P_Furcadia_Net_DREAM_Name.htm" />
@@ -506,20 +507,20 @@
             <HelpTOCNode Title="Title Property " Url="html/P_Furcadia_Net_DREAM_Title.htm" />
             <HelpTOCNode Title="URL Property " Url="html/P_Furcadia_Net_DREAM_URL.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="b494db92-a45f-42e9-8de6-4c753808f9f8" Title="DREAM Methods" Url="html/Methods_T_Furcadia_Net_DREAM.htm">
+          <HelpTOCNode Id="ef373811-5c31-4e1d-8972-82e863be1b86" Title="DREAM Methods" Url="html/Methods_T_Furcadia_Net_DREAM.htm">
             <HelpTOCNode Title="Dispose Method " Url="html/M_Furcadia_Net_DREAM_Dispose.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="31f42a4e-e3f7-4edf-ba59-8ae0cf2804a6" Title="DREAM Fields" Url="html/Fields_T_Furcadia_Net_DREAM.htm">
+          <HelpTOCNode Id="4c62e8ec-8663-499d-98c9-d46e08752898" Title="DREAM Fields" Url="html/Fields_T_Furcadia_Net_DREAM.htm">
             <HelpTOCNode Title="FurreList Field" Url="html/F_Furcadia_Net_DREAM_FurreList.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="7bdb0c18-5359-47da-9c62-4006fa791f86" Title="FURRE Class" Url="html/T_Furcadia_Net_FURRE.htm">
-          <HelpTOCNode Id="923ffd83-eebc-4c59-be70-eee452c9aee7" Title="FURRE Constructor " Url="html/Overload_Furcadia_Net_FURRE__ctor.htm">
+        <HelpTOCNode Id="46973711-15a4-49e1-a63e-2810000d4c4e" Title="FURRE Class" Url="html/T_Furcadia_Net_FURRE.htm">
+          <HelpTOCNode Id="1119dad8-a8bd-46cf-b7a2-35e6e158cc34" Title="FURRE Constructor " Url="html/Overload_Furcadia_Net_FURRE__ctor.htm">
             <HelpTOCNode Title="FURRE Constructor " Url="html/M_Furcadia_Net_FURRE__ctor.htm" />
             <HelpTOCNode Title="FURRE Constructor (Int32)" Url="html/M_Furcadia_Net_FURRE__ctor_1.htm" />
             <HelpTOCNode Title="FURRE Constructor (String)" Url="html/M_Furcadia_Net_FURRE__ctor_2.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="cf57c994-9034-45fe-b0e9-67730d30367b" Title="FURRE Properties" Url="html/Properties_T_Furcadia_Net_FURRE.htm">
+          <HelpTOCNode Id="a2b25dc0-649e-44ff-8140-5a297007c2b9" Title="FURRE Properties" Url="html/Properties_T_Furcadia_Net_FURRE.htm">
             <HelpTOCNode Title="AFK Property " Url="html/P_Furcadia_Net_FURRE_AFK.htm" />
             <HelpTOCNode Title="Badge Property " Url="html/P_Furcadia_Net_FURRE_Badge.htm" />
             <HelpTOCNode Title="Color Property " Url="html/P_Furcadia_Net_FURRE_Color.htm" />
@@ -545,93 +546,93 @@
             <HelpTOCNode Title="X Property " Url="html/P_Furcadia_Net_FURRE_X.htm" />
             <HelpTOCNode Title="Y Property " Url="html/P_Furcadia_Net_FURRE_Y.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="8f2d47ca-891f-47e4-b554-91c3d75a20fd" Title="FURRE Methods" Url="html/Methods_T_Furcadia_Net_FURRE.htm">
+          <HelpTOCNode Id="755d738a-96ac-4ea6-917d-19fe5235db54" Title="FURRE Methods" Url="html/Methods_T_Furcadia_Net_FURRE.htm">
             <HelpTOCNode Title="Equals Method " Url="html/M_Furcadia_Net_FURRE_Equals.htm" />
             <HelpTOCNode Title="GetHashCode Method " Url="html/M_Furcadia_Net_FURRE_GetHashCode.htm" />
-            <HelpTOCNode Id="7120ac8c-53a5-4add-af9f-9efc853a10aa" Title="ToFurcadiaID Method " Url="html/Overload_Furcadia_Net_FURRE_ToFurcadiaID.htm">
+            <HelpTOCNode Id="e304924e-30b7-4640-98e0-6843a14d7e8b" Title="ToFurcadiaID Method " Url="html/Overload_Furcadia_Net_FURRE_ToFurcadiaID.htm">
               <HelpTOCNode Title="ToFurcadiaID Method " Url="html/M_Furcadia_Net_FURRE_ToFurcadiaID.htm" />
               <HelpTOCNode Title="ToFurcadiaID Method (Func(FURRE, Int32))" Url="html/M_Furcadia_Net_FURRE_ToFurcadiaID_1.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="6b0bff35-a578-4a5b-86b5-cc40a017b84b" Title="ToString Method " Url="html/Overload_Furcadia_Net_FURRE_ToString.htm">
+            <HelpTOCNode Id="3c99a940-a564-44f1-90f9-97497f8ac08e" Title="ToString Method " Url="html/Overload_Furcadia_Net_FURRE_ToString.htm">
               <HelpTOCNode Title="ToString Method " Url="html/M_Furcadia_Net_FURRE_ToString.htm" />
               <HelpTOCNode Title="ToString Method (Func(FURRE, String))" Url="html/M_Furcadia_Net_FURRE_ToString_1.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="c77767fa-e36c-48c9-9621-43ac5176e0b5" Title="FURREList Class" Url="html/T_Furcadia_Net_FURREList.htm">
+        <HelpTOCNode Id="1b8874b3-2883-4de4-b21e-b3dce591273d" Title="FURREList Class" Url="html/T_Furcadia_Net_FURREList.htm">
           <HelpTOCNode Title="FURREList Constructor " Url="html/M_Furcadia_Net_FURREList__ctor.htm" />
-          <HelpTOCNode Id="fd74efab-1b2d-462b-8a5f-795d5c5226b7" Title="FURREList Properties" Url="html/Properties_T_Furcadia_Net_FURREList.htm">
+          <HelpTOCNode Id="e3b9af43-1fd8-4e34-a0f9-62de9064f2b5" Title="FURREList Properties" Url="html/Properties_T_Furcadia_Net_FURREList.htm">
             <HelpTOCNode Title="Count Property " Url="html/P_Furcadia_Net_FURREList_Count.htm" />
             <HelpTOCNode Title="IsReadOnly Property " Url="html/P_Furcadia_Net_FURREList_IsReadOnly.htm" />
             <HelpTOCNode Title="IsSynchronized Property " Url="html/P_Furcadia_Net_FURREList_IsSynchronized.htm" />
-            <HelpTOCNode Id="864b41f4-1d34-413e-86be-a93aa82c7d62" Title="Item Property " Url="html/Overload_Furcadia_Net_FURREList_Item.htm">
+            <HelpTOCNode Id="c45ba847-c6d5-44ac-ac9a-6ef13edd7ab4" Title="Item Property " Url="html/Overload_Furcadia_Net_FURREList_Item.htm">
               <HelpTOCNode Title="Item Property (Int32)" Url="html/P_Furcadia_Net_FURREList_Item_1.htm" />
               <HelpTOCNode Title="Item Property (FURRE)" Url="html/P_Furcadia_Net_FURREList_Item.htm" />
             </HelpTOCNode>
             <HelpTOCNode Title="SyncRoot Property " Url="html/P_Furcadia_Net_FURREList_SyncRoot.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="949b9b9e-0af2-4ed5-87d3-caa85e19fb4b" Title="FURREList Methods" Url="html/Methods_T_Furcadia_Net_FURREList.htm">
+          <HelpTOCNode Id="1fda548f-7e43-4a15-8070-2d00798ba537" Title="FURREList Methods" Url="html/Methods_T_Furcadia_Net_FURREList.htm">
             <HelpTOCNode Title="Add Method " Url="html/M_Furcadia_Net_FURREList_Add.htm" />
             <HelpTOCNode Title="Clear Method " Url="html/M_Furcadia_Net_FURREList_Clear.htm" />
-            <HelpTOCNode Id="94eee5bb-f048-4d17-991a-acfc97de2512" Title="Contains Method " Url="html/Overload_Furcadia_Net_FURREList_Contains.htm">
+            <HelpTOCNode Id="66071f31-eb78-4d50-9c7e-df3ea6ae4735" Title="Contains Method " Url="html/Overload_Furcadia_Net_FURREList_Contains.htm">
               <HelpTOCNode Title="Contains Method (Int32)" Url="html/M_Furcadia_Net_FURREList_Contains_1.htm" />
               <HelpTOCNode Title="Contains Method (FURRE)" Url="html/M_Furcadia_Net_FURREList_Contains.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="8b987d97-1bb9-4ae5-b3ed-0923f1f07092" Title="CopyTo Method " Url="html/Overload_Furcadia_Net_FURREList_CopyTo.htm">
+            <HelpTOCNode Id="91db7681-7d34-4819-b467-a7b4f60bb099" Title="CopyTo Method " Url="html/Overload_Furcadia_Net_FURREList_CopyTo.htm">
               <HelpTOCNode Title="CopyTo Method (Array, Int32)" Url="html/M_Furcadia_Net_FURREList_CopyTo_1.htm" />
               <HelpTOCNode Title="CopyTo Method (FURRE[], Int32)" Url="html/M_Furcadia_Net_FURREList_CopyTo.htm" />
             </HelpTOCNode>
             <HelpTOCNode Title="Dispose Method " Url="html/M_Furcadia_Net_FURREList_Dispose.htm" />
             <HelpTOCNode Title="GerFurreByName Method " Url="html/M_Furcadia_Net_FURREList_GerFurreByName.htm" />
             <HelpTOCNode Title="GetEnumerator Method " Url="html/M_Furcadia_Net_FURREList_GetEnumerator.htm" />
-            <HelpTOCNode Id="19510935-c663-4e50-8227-cfea5f31ab04" Title="GetFurreByID Method " Url="html/Overload_Furcadia_Net_FURREList_GetFurreByID.htm">
+            <HelpTOCNode Id="1e0d6173-d064-4129-9641-f46da71ff7f6" Title="GetFurreByID Method " Url="html/Overload_Furcadia_Net_FURREList_GetFurreByID.htm">
               <HelpTOCNode Title="GetFurreByID Method (Int32)" Url="html/M_Furcadia_Net_FURREList_GetFurreByID.htm" />
               <HelpTOCNode Title="GetFurreByID Method (String)" Url="html/M_Furcadia_Net_FURREList_GetFurreByID_1.htm" />
             </HelpTOCNode>
             <HelpTOCNode Title="IndexOf Method " Url="html/M_Furcadia_Net_FURREList_IndexOf.htm" />
             <HelpTOCNode Title="Insert Method " Url="html/M_Furcadia_Net_FURREList_Insert.htm" />
-            <HelpTOCNode Id="106ccc9a-c7ab-45e2-94c2-d9cefef83c93" Title="Remove Method " Url="html/Overload_Furcadia_Net_FURREList_Remove.htm">
+            <HelpTOCNode Id="60b2b4c4-541e-4865-a80e-0b91d6a52008" Title="Remove Method " Url="html/Overload_Furcadia_Net_FURREList_Remove.htm">
               <HelpTOCNode Title="Remove Method (String)" Url="html/M_Furcadia_Net_FURREList_Remove_1.htm" />
               <HelpTOCNode Title="Remove Method (FURRE)" Url="html/M_Furcadia_Net_FURREList_Remove.htm" />
             </HelpTOCNode>
             <HelpTOCNode Title="RemoveAt Method " Url="html/M_Furcadia_Net_FURREList_RemoveAt.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="85b2e009-49aa-4978-be39-e81af58c8d47" Title="FURREList Fields" Url="html/Fields_T_Furcadia_Net_FURREList.htm">
+          <HelpTOCNode Id="73332ae6-d2fd-4852-8e3d-17f3ddc9dc75" Title="FURREList Fields" Url="html/Fields_T_Furcadia_Net_FURREList.htm">
             <HelpTOCNode Title="fList Field" Url="html/F_Furcadia_Net_FURREList_fList.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="2e50f063-c6bc-4cfe-94bc-5d8b76dc77e6" Title="INetMessage Interface" Url="html/T_Furcadia_Net_INetMessage.htm">
-          <HelpTOCNode Id="ff5a1928-2a58-4991-bc38-84b5c88ec2ec" Title="INetMessage Methods" Url="html/Methods_T_Furcadia_Net_INetMessage.htm">
+        <HelpTOCNode Id="fad3c1d6-e0c0-4aa6-a964-af2df93f9daf" Title="INetMessage Interface" Url="html/T_Furcadia_Net_INetMessage.htm">
+          <HelpTOCNode Id="302704c0-fb0d-421f-a3b6-0ad62f4d6b64" Title="INetMessage Methods" Url="html/Methods_T_Furcadia_Net_INetMessage.htm">
             <HelpTOCNode Title="GetString Method " Url="html/M_Furcadia_Net_INetMessage_GetString.htm" />
-            <HelpTOCNode Id="42fd549f-4e95-40c1-9493-200a9e6620e7" Title="Write Method " Url="html/Overload_Furcadia_Net_INetMessage_Write.htm">
+            <HelpTOCNode Id="3d0fe9fb-3f76-4459-97d7-75fa2e353f45" Title="Write Method " Url="html/Overload_Furcadia_Net_INetMessage_Write.htm">
               <HelpTOCNode Title="Write Method (Byte[])" Url="html/M_Furcadia_Net_INetMessage_Write.htm" />
               <HelpTOCNode Title="Write Method (String)" Url="html/M_Furcadia_Net_INetMessage_Write_1.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="82a63e90-6a3d-4a02-9292-a19655735763" Title="NetClientEventArgs Class" Url="html/T_Furcadia_Net_NetClientEventArgs.htm">
-          <HelpTOCNode Id="c9fe485b-d4ae-4783-9b36-3f5597906fc6" Title="NetClientEventArgs Constructor " Url="html/Overload_Furcadia_Net_NetClientEventArgs__ctor.htm">
+        <HelpTOCNode Id="a2e6e095-8804-4b30-9158-2e4ffa8f1633" Title="NetClientEventArgs Class" Url="html/T_Furcadia_Net_NetClientEventArgs.htm">
+          <HelpTOCNode Id="1ed73817-1734-4564-904d-c813dc630f6a" Title="NetClientEventArgs Constructor " Url="html/Overload_Furcadia_Net_NetClientEventArgs__ctor.htm">
             <HelpTOCNode Title="NetClientEventArgs Constructor " Url="html/M_Furcadia_Net_NetClientEventArgs__ctor.htm" />
             <HelpTOCNode Title="NetClientEventArgs Constructor (ConnectionPhase, String)" Url="html/M_Furcadia_Net_NetClientEventArgs__ctor_1.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="NetClientEventArgs Methods" Url="html/Methods_T_Furcadia_Net_NetClientEventArgs.htm" />
-          <HelpTOCNode Id="cb0c0480-6d84-4586-b34c-9058c2921882" Title="NetClientEventArgs Fields" Url="html/Fields_T_Furcadia_Net_NetClientEventArgs.htm">
+          <HelpTOCNode Id="382d3090-fd0d-4a34-a9ca-5787094063a3" Title="NetClientEventArgs Fields" Url="html/Fields_T_Furcadia_Net_NetClientEventArgs.htm">
             <HelpTOCNode Title="ConnectPhase Field" Url="html/F_Furcadia_Net_NetClientEventArgs_ConnectPhase.htm" />
             <HelpTOCNode Title="Message Field" Url="html/F_Furcadia_Net_NetClientEventArgs_Message.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="d4d10ea4-13b2-4dcd-9ca6-36fcf0f5b416" Title="NetMessage Class" Url="html/T_Furcadia_Net_NetMessage.htm">
+        <HelpTOCNode Id="faa9c7b5-1596-4df8-9dc4-d525720e8b2a" Title="NetMessage Class" Url="html/T_Furcadia_Net_NetMessage.htm">
           <HelpTOCNode Title="NetMessage Constructor " Url="html/M_Furcadia_Net_NetMessage__ctor.htm" />
-          <HelpTOCNode Id="65ef0d59-27cf-4d92-90ef-393d35e43962" Title="NetMessage Methods" Url="html/Methods_T_Furcadia_Net_NetMessage.htm">
+          <HelpTOCNode Id="e1ef4ef4-e95f-49ff-8a47-0d9d69e9a894" Title="NetMessage Methods" Url="html/Methods_T_Furcadia_Net_NetMessage.htm">
             <HelpTOCNode Title="GetString Method " Url="html/M_Furcadia_Net_NetMessage_GetString.htm" />
-            <HelpTOCNode Id="f7139eae-2807-4ad7-8b7f-00e0adbc50db" Title="Write Method " Url="html/Overload_Furcadia_Net_NetMessage_Write.htm">
+            <HelpTOCNode Id="ce6e0557-7da1-4224-ae2a-383ed52b266c" Title="Write Method " Url="html/Overload_Furcadia_Net_NetMessage_Write.htm">
               <HelpTOCNode Title="Write Method (Byte[])" Url="html/M_Furcadia_Net_NetMessage_Write.htm" />
               <HelpTOCNode Title="Write Method (String)" Url="html/M_Furcadia_Net_NetMessage_Write_1.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="2d3ae5d3-c5df-45f2-98f2-58b404b75d6d" Title="NetProxy Class" Url="html/T_Furcadia_Net_NetProxy.htm">
-          <HelpTOCNode Id="29295265-919d-4dc1-be1e-8c0638b4ff19" Title="NetProxy Constructor " Url="html/Overload_Furcadia_Net_NetProxy__ctor.htm">
+        <HelpTOCNode Id="5dee48eb-1dc3-4d8f-8cd2-7503abc3f3a5" Title="NetProxy Class" Url="html/T_Furcadia_Net_NetProxy.htm">
+          <HelpTOCNode Id="e9bafe91-75fc-4077-b6fc-73f0ac50df38" Title="NetProxy Constructor " Url="html/Overload_Furcadia_Net_NetProxy__ctor.htm">
             <HelpTOCNode Title="NetProxy Constructor " Url="html/M_Furcadia_Net_NetProxy__ctor.htm" />
             <HelpTOCNode Title="NetProxy Constructor (Int32)" Url="html/M_Furcadia_Net_NetProxy__ctor_2.htm" />
             <HelpTOCNode Title="NetProxy Constructor (ProxyOptions)" Url="html/M_Furcadia_Net_NetProxy__ctor_1.htm" />
@@ -640,33 +641,33 @@
             <HelpTOCNode Title="NetProxy Constructor (String, Int32)" Url="html/M_Furcadia_Net_NetProxy__ctor_5.htm" />
             <HelpTOCNode Title="NetProxy Constructor (String, Int32, Int32)" Url="html/M_Furcadia_Net_NetProxy__ctor_6.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="b43df744-0f44-483d-a5a9-1e6e90536f77" Title="NetProxy Properties" Url="html/Properties_T_Furcadia_Net_NetProxy.htm">
+          <HelpTOCNode Id="8f46affe-aa48-460e-9d7c-71a19095f851" Title="NetProxy Properties" Url="html/Properties_T_Furcadia_Net_NetProxy.htm">
             <HelpTOCNode Title="BufferCapacity Property " Url="html/P_Furcadia_Net_NetProxy_BufferCapacity.htm" />
             <HelpTOCNode Title="EncoderPage Property " Url="html/P_Furcadia_Net_NetProxy_EncoderPage.htm" />
             <HelpTOCNode Title="IsClientConnected Property " Url="html/P_Furcadia_Net_NetProxy_IsClientConnected.htm" />
             <HelpTOCNode Title="IsServerConnected Property " Url="html/P_Furcadia_Net_NetProxy_IsServerConnected.htm" />
             <HelpTOCNode Title="ProcessID Property " Url="html/P_Furcadia_Net_NetProxy_ProcessID.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="3d62aa90-be7e-4445-bba6-ef3ed4a9f0ae" Title="NetProxy Methods" Url="html/Methods_T_Furcadia_Net_NetProxy.htm">
+          <HelpTOCNode Id="7a25b59d-f043-4160-8fee-27f844eca087" Title="NetProxy Methods" Url="html/Methods_T_Furcadia_Net_NetProxy.htm">
             <HelpTOCNode Title="ClientDisconnect Method " Url="html/M_Furcadia_Net_NetProxy_ClientDisconnect.htm" />
             <HelpTOCNode Title="CloseClient Method " Url="html/M_Furcadia_Net_NetProxy_CloseClient.htm" />
             <HelpTOCNode Title="Connect Method " Url="html/M_Furcadia_Net_NetProxy_Connect.htm" />
             <HelpTOCNode Title="Disconnect Method " Url="html/M_Furcadia_Net_NetProxy_Disconnect.htm" />
-            <HelpTOCNode Id="fb27159d-1082-4a0d-bb7d-6281dd24b1d8" Title="Dispose Method " Url="html/Overload_Furcadia_Net_NetProxy_Dispose.htm">
+            <HelpTOCNode Id="b7c1b396-c596-4192-a254-5858f3bde5af" Title="Dispose Method " Url="html/Overload_Furcadia_Net_NetProxy_Dispose.htm">
               <HelpTOCNode Title="Dispose Method " Url="html/M_Furcadia_Net_NetProxy_Dispose.htm" />
               <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_Furcadia_Net_NetProxy_Dispose_1.htm" />
             </HelpTOCNode>
             <HelpTOCNode Title="SendLineToServer Method " Url="html/M_Furcadia_Net_NetProxy_SendLineToServer.htm" />
-            <HelpTOCNode Id="b92e6259-2f6e-49fe-b52d-80f0f124e240" Title="SendToClient Method " Url="html/Overload_Furcadia_Net_NetProxy_SendToClient.htm">
+            <HelpTOCNode Id="e7c80f1c-1ddf-4a2a-aaa5-38a5d593b63c" Title="SendToClient Method " Url="html/Overload_Furcadia_Net_NetProxy_SendToClient.htm">
               <HelpTOCNode Title="SendToClient Method (String)" Url="html/M_Furcadia_Net_NetProxy_SendToClient_1.htm" />
               <HelpTOCNode Title="SendToClient Method (INetMessage)" Url="html/M_Furcadia_Net_NetProxy_SendToClient.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="8311d221-46cd-4dd8-b203-1d501fc1e0cb" Title="SendToServer Method " Url="html/Overload_Furcadia_Net_NetProxy_SendToServer.htm">
+            <HelpTOCNode Id="8701783f-eea3-4219-bcdb-6be98607e611" Title="SendToServer Method " Url="html/Overload_Furcadia_Net_NetProxy_SendToServer.htm">
               <HelpTOCNode Title="SendToServer Method (String)" Url="html/M_Furcadia_Net_NetProxy_SendToServer_1.htm" />
               <HelpTOCNode Title="SendToServer Method (INetMessage)" Url="html/M_Furcadia_Net_NetProxy_SendToServer.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
-          <HelpTOCNode Id="3bfcdf57-f764-4198-a93a-27488b2ddb6d" Title="NetProxy Events" Url="html/Events_T_Furcadia_Net_NetProxy.htm">
+          <HelpTOCNode Id="6fd59dd8-a311-402e-84ea-a7cb9877282d" Title="NetProxy Events" Url="html/Events_T_Furcadia_Net_NetProxy.htm">
             <HelpTOCNode Title="ClientData Event" Url="html/E_Furcadia_Net_NetProxy_ClientData.htm" />
             <HelpTOCNode Title="ClientData2 Event" Url="html/E_Furcadia_Net_NetProxy_ClientData2.htm" />
             <HelpTOCNode Title="ClientDisConnected Event" Url="html/E_Furcadia_Net_NetProxy_ClientDisConnected.htm" />
@@ -678,7 +679,7 @@
             <HelpTOCNode Title="ServerData2 Event" Url="html/E_Furcadia_Net_NetProxy_ServerData2.htm" />
             <HelpTOCNode Title="ServerDisConnected Event" Url="html/E_Furcadia_Net_NetProxy_ServerDisConnected.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="2505eaaa-c009-4d38-b7ec-b2d015f2e216" Title="NetProxy Fields" Url="html/Fields_T_Furcadia_Net_NetProxy.htm">
+          <HelpTOCNode Id="027c4f0f-27dd-4639-820e-43a8947df34a" Title="NetProxy Fields" Url="html/Fields_T_Furcadia_Net_NetProxy.htm">
             <HelpTOCNode Title="FurcadiaUtilities Field" Url="html/F_Furcadia_Net_NetProxy_FurcadiaUtilities.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
@@ -686,8 +687,8 @@
         <HelpTOCNode Title="NetProxy.DataEventHandler Delegate" Url="html/T_Furcadia_Net_NetProxy_DataEventHandler.htm" />
         <HelpTOCNode Title="NetProxy.DataEventHandler2 Delegate" Url="html/T_Furcadia_Net_NetProxy_DataEventHandler2.htm" />
         <HelpTOCNode Title="NetProxy.ErrorEventHandler Delegate" Url="html/T_Furcadia_Net_NetProxy_ErrorEventHandler.htm" />
-        <HelpTOCNode Id="ccc26b74-efbe-4ac3-9359-bb4db4c0cc43" Title="NetProxyException Class" Url="html/T_Furcadia_Net_NetProxyException.htm">
-          <HelpTOCNode Id="ef3ff875-a641-435c-a8ab-4b65f9381ba2" Title="NetProxyException Constructor " Url="html/Overload_Furcadia_Net_NetProxyException__ctor.htm">
+        <HelpTOCNode Id="bcbe9ccf-5d0d-4e18-8785-a2df8724f7a6" Title="NetProxyException Class" Url="html/T_Furcadia_Net_NetProxyException.htm">
+          <HelpTOCNode Id="8f954d44-333c-458a-ae97-b19c28f55dbb" Title="NetProxyException Constructor " Url="html/Overload_Furcadia_Net_NetProxyException__ctor.htm">
             <HelpTOCNode Title="NetProxyException Constructor " Url="html/M_Furcadia_Net_NetProxyException__ctor.htm" />
             <HelpTOCNode Title="NetProxyException Constructor (String)" Url="html/M_Furcadia_Net_NetProxyException__ctor_2.htm" />
             <HelpTOCNode Title="NetProxyException Constructor (SerializationInfo, StreamingContext)" Url="html/M_Furcadia_Net_NetProxyException__ctor_1.htm" />
@@ -697,25 +698,25 @@
           <HelpTOCNode Title="NetProxyException Methods" Url="html/Methods_T_Furcadia_Net_NetProxyException.htm" />
           <HelpTOCNode Title="NetProxyException Events" Url="html/Events_T_Furcadia_Net_NetProxyException.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="62e6b03c-00a9-43a5-ab9f-700367ce9851" Title="NetServerEventArgs Class" Url="html/T_Furcadia_Net_NetServerEventArgs.htm">
-          <HelpTOCNode Id="c6fdf98b-6ffd-43bd-98ad-6f046be97276" Title="NetServerEventArgs Constructor " Url="html/Overload_Furcadia_Net_NetServerEventArgs__ctor.htm">
+        <HelpTOCNode Id="54763c61-e910-4a34-8ec5-abb7cff10bb0" Title="NetServerEventArgs Class" Url="html/T_Furcadia_Net_NetServerEventArgs.htm">
+          <HelpTOCNode Id="1564e1bd-f789-4a7e-b894-db4274da00ec" Title="NetServerEventArgs Constructor " Url="html/Overload_Furcadia_Net_NetServerEventArgs__ctor.htm">
             <HelpTOCNode Title="NetServerEventArgs Constructor " Url="html/M_Furcadia_Net_NetServerEventArgs__ctor.htm" />
             <HelpTOCNode Title="NetServerEventArgs Constructor (ConnectionPhase, ServerInstructionType)" Url="html/M_Furcadia_Net_NetServerEventArgs__ctor_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="c5041d0a-a077-4e2e-a9c7-00832b7aef89" Title="NetServerEventArgs Properties" Url="html/Properties_T_Furcadia_Net_NetServerEventArgs.htm">
+          <HelpTOCNode Id="4aa2b77a-056d-41af-ad6d-4a6e7e31f9a0" Title="NetServerEventArgs Properties" Url="html/Properties_T_Furcadia_Net_NetServerEventArgs.htm">
             <HelpTOCNode Title="ServerInstruction Property " Url="html/P_Furcadia_Net_NetServerEventArgs_ServerInstruction.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="NetServerEventArgs Methods" Url="html/Methods_T_Furcadia_Net_NetServerEventArgs.htm" />
-          <HelpTOCNode Id="3f6d17cb-7e85-47fd-8778-0f8214e56308" Title="NetServerEventArgs Fields" Url="html/Fields_T_Furcadia_Net_NetServerEventArgs.htm">
+          <HelpTOCNode Id="9d7cd045-50cb-40f5-8905-aba34e6dde6b" Title="NetServerEventArgs Fields" Url="html/Fields_T_Furcadia_Net_NetServerEventArgs.htm">
             <HelpTOCNode Title="ConnectPhase Field" Url="html/F_Furcadia_Net_NetServerEventArgs_ConnectPhase.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="85aca8ff-563d-46b4-b923-bd5dab8865d2" Title="ParseServerArgs Class" Url="html/T_Furcadia_Net_ParseServerArgs.htm">
-          <HelpTOCNode Id="e4f85985-58f6-44a7-93fd-dab358a87b15" Title="ParseServerArgs Constructor " Url="html/Overload_Furcadia_Net_ParseServerArgs__ctor.htm">
+        <HelpTOCNode Id="62ef8749-ca18-4ca5-9eaa-49f9255b4c21" Title="ParseServerArgs Class" Url="html/T_Furcadia_Net_ParseServerArgs.htm">
+          <HelpTOCNode Id="402acf37-e5c3-479a-8d98-2967fa5f399b" Title="ParseServerArgs Constructor " Url="html/Overload_Furcadia_Net_ParseServerArgs__ctor.htm">
             <HelpTOCNode Title="ParseServerArgs Constructor " Url="html/M_Furcadia_Net_ParseServerArgs__ctor.htm" />
             <HelpTOCNode Title="ParseServerArgs Constructor (ServerInstructionType, ConnectionPhase)" Url="html/M_Furcadia_Net_ParseServerArgs__ctor_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="d39d66bd-a073-4332-acd1-1493677e1ff8" Title="ParseServerArgs Properties" Url="html/Properties_T_Furcadia_Net_ParseServerArgs.htm">
+          <HelpTOCNode Id="e1de42c7-e3c2-43f4-98bc-91271b1a3b33" Title="ParseServerArgs Properties" Url="html/Properties_T_Furcadia_Net_ParseServerArgs.htm">
             <HelpTOCNode Title="ServerConnectedPhase Property " Url="html/P_Furcadia_Net_ParseServerArgs_ServerConnectedPhase.htm" />
             <HelpTOCNode Title="ServerInstruction Property " Url="html/P_Furcadia_Net_ParseServerArgs_ServerInstruction.htm" />
           </HelpTOCNode>
@@ -723,57 +724,57 @@
         </HelpTOCNode>
         <HelpTOCNode Title="ServerInstructionType Enumeration" Url="html/T_Furcadia_Net_ServerInstructionType.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="032325e4-9d55-4f75-bdad-64d70b958cd2" Title="Furcadia.Net.Account" Url="html/N_Furcadia_Net_Account.htm">
-        <HelpTOCNode Id="7cac1037-bcc0-47af-93f6-af2d076be71e" Title="AccountInfo Class" Url="html/T_Furcadia_Net_Account_AccountInfo.htm">
+      <HelpTOCNode Id="68b7828e-b313-4601-941e-07b58a8023ae" Title="Furcadia.Net.Account" Url="html/N_Furcadia_Net_Account.htm">
+        <HelpTOCNode Id="e4eeea17-9f81-4b43-a3be-8f0e7c8cbf4b" Title="AccountInfo Class" Url="html/T_Furcadia_Net_Account_AccountInfo.htm">
           <HelpTOCNode Title="AccountInfo Constructor " Url="html/M_Furcadia_Net_Account_AccountInfo__ctor.htm" />
-          <HelpTOCNode Id="20c2cc48-f3b3-47cd-9738-b704bcc1d7d3" Title="AccountInfo Properties" Url="html/Properties_T_Furcadia_Net_Account_AccountInfo.htm">
+          <HelpTOCNode Id="eaaa3ee7-f361-485b-8e8c-f1a038fa3279" Title="AccountInfo Properties" Url="html/Properties_T_Furcadia_Net_Account_AccountInfo.htm">
             <HelpTOCNode Title="ApiKey Property " Url="html/P_Furcadia_Net_Account_AccountInfo_ApiKey.htm" />
             <HelpTOCNode Title="EMail Property " Url="html/P_Furcadia_Net_Account_AccountInfo_EMail.htm" />
             <HelpTOCNode Title="Password Property " Url="html/P_Furcadia_Net_Account_AccountInfo_Password.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="AccountInfo Methods" Url="html/Methods_T_Furcadia_Net_Account_AccountInfo.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="d14adaba-6227-402c-84f4-2c98f1c1fa63" Title="CharacterInfo Class" Url="html/T_Furcadia_Net_Account_CharacterInfo.htm">
+        <HelpTOCNode Id="3b0bb2b6-7a4e-4ba3-ba25-e9aa11012f48" Title="CharacterInfo Class" Url="html/T_Furcadia_Net_Account_CharacterInfo.htm">
           <HelpTOCNode Title="CharacterInfo Constructor " Url="html/M_Furcadia_Net_Account_CharacterInfo__ctor.htm" />
-          <HelpTOCNode Id="d16c8c7a-87e8-4e62-bb38-be4786cf6b6c" Title="CharacterInfo Properties" Url="html/Properties_T_Furcadia_Net_Account_CharacterInfo.htm">
+          <HelpTOCNode Id="ded6c9da-da52-4bd4-8d88-0f10b49e4793" Title="CharacterInfo Properties" Url="html/Properties_T_Furcadia_Net_Account_CharacterInfo.htm">
             <HelpTOCNode Title="CharacterName Property " Url="html/P_Furcadia_Net_Account_CharacterInfo_CharacterName.htm" />
             <HelpTOCNode Title="Costume Property " Url="html/P_Furcadia_Net_Account_CharacterInfo_Costume.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="CharacterInfo Methods" Url="html/Methods_T_Furcadia_Net_Account_CharacterInfo.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="eebb9f7e-f18d-4580-80e2-6b32720bb083" Title="Furcadia.Net.DirectConnection" Url="html/N_Furcadia_Net_DirectConnection.htm">
-        <HelpTOCNode Id="6517caa5-beb5-4ad5-af04-edfa1726cdb9" Title="ClientBase Class" Url="html/T_Furcadia_Net_DirectConnection_ClientBase.htm">
-          <HelpTOCNode Id="9efefa4d-51ef-44dd-b407-1ed268a0dd67" Title="ClientBase Constructor " Url="html/Overload_Furcadia_Net_DirectConnection_ClientBase__ctor.htm">
+      <HelpTOCNode Id="be90e2ab-4b94-4683-84f2-9c920d46b649" Title="Furcadia.Net.DirectConnection" Url="html/N_Furcadia_Net_DirectConnection.htm">
+        <HelpTOCNode Id="51a9c640-7f9f-4405-b429-a6b8922f0ea7" Title="ClientBase Class" Url="html/T_Furcadia_Net_DirectConnection_ClientBase.htm">
+          <HelpTOCNode Id="973f45bc-68df-4201-b4d4-ee0d8120c60e" Title="ClientBase Constructor " Url="html/Overload_Furcadia_Net_DirectConnection_ClientBase__ctor.htm">
             <HelpTOCNode Title="ClientBase Constructor " Url="html/M_Furcadia_Net_DirectConnection_ClientBase__ctor.htm" />
             <HelpTOCNode Title="ClientBase Constructor (Int32)" Url="html/M_Furcadia_Net_DirectConnection_ClientBase__ctor_1.htm" />
             <HelpTOCNode Title="ClientBase Constructor (IPAddress, Int32)" Url="html/M_Furcadia_Net_DirectConnection_ClientBase__ctor_2.htm" />
             <HelpTOCNode Title="ClientBase Constructor (String, Int32)" Url="html/M_Furcadia_Net_DirectConnection_ClientBase__ctor_3.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="eae9cb65-7168-460c-83fc-c914b3e1fb50" Title="ClientBase Properties" Url="html/Properties_T_Furcadia_Net_DirectConnection_ClientBase.htm">
+          <HelpTOCNode Id="8e62b270-71f0-426f-b232-1fbc06ae3b97" Title="ClientBase Properties" Url="html/Properties_T_Furcadia_Net_DirectConnection_ClientBase.htm">
             <HelpTOCNode Title="BufferCapacity Property " Url="html/P_Furcadia_Net_DirectConnection_ClientBase_BufferCapacity.htm" />
             <HelpTOCNode Title="EncoderPage Property " Url="html/P_Furcadia_Net_DirectConnection_ClientBase_EncoderPage.htm" />
             <HelpTOCNode Title="EndPoint Property " Url="html/P_Furcadia_Net_DirectConnection_ClientBase_EndPoint.htm" />
             <HelpTOCNode Title="IsServerConnected Property " Url="html/P_Furcadia_Net_DirectConnection_ClientBase_IsServerConnected.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="f76b31be-590c-4188-b565-c6c53f01f33b" Title="ClientBase Methods" Url="html/Methods_T_Furcadia_Net_DirectConnection_ClientBase.htm">
+          <HelpTOCNode Id="6d680a36-df81-426b-bffe-b3d6472a793d" Title="ClientBase Methods" Url="html/Methods_T_Furcadia_Net_DirectConnection_ClientBase.htm">
             <HelpTOCNode Title="Connect Method " Url="html/M_Furcadia_Net_DirectConnection_ClientBase_Connect.htm" />
-            <HelpTOCNode Id="76f35de0-064e-41f1-838a-cd1da089d53c" Title="Dispose Method " Url="html/Overload_Furcadia_Net_DirectConnection_ClientBase_Dispose.htm">
+            <HelpTOCNode Id="45e60952-c7ed-4904-81d1-ff0add886ef0" Title="Dispose Method " Url="html/Overload_Furcadia_Net_DirectConnection_ClientBase_Dispose.htm">
               <HelpTOCNode Title="Dispose Method " Url="html/M_Furcadia_Net_DirectConnection_ClientBase_Dispose.htm" />
               <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_Furcadia_Net_DirectConnection_ClientBase_Dispose_1.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="a034b436-d8b1-4c63-a5d2-7aaf9353aa8d" Title="SendServer Method " Url="html/Overload_Furcadia_Net_DirectConnection_ClientBase_SendServer.htm">
+            <HelpTOCNode Id="2942f674-d0d3-471f-84ea-060522cf69de" Title="SendServer Method " Url="html/Overload_Furcadia_Net_DirectConnection_ClientBase_SendServer.htm">
               <HelpTOCNode Title="SendServer Method (String)" Url="html/M_Furcadia_Net_DirectConnection_ClientBase_SendServer_1.htm" />
               <HelpTOCNode Title="SendServer Method (INetMessage)" Url="html/M_Furcadia_Net_DirectConnection_ClientBase_SendServer.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
-          <HelpTOCNode Id="769c89dc-1704-4949-8165-03bcf29f52b6" Title="ClientBase Events" Url="html/Events_T_Furcadia_Net_DirectConnection_ClientBase.htm">
+          <HelpTOCNode Id="cf1d7efb-d918-4dcc-93a8-2a57999f2cef" Title="ClientBase Events" Url="html/Events_T_Furcadia_Net_DirectConnection_ClientBase.htm">
             <HelpTOCNode Title="Connected Event" Url="html/E_Furcadia_Net_DirectConnection_ClientBase_Connected.htm" />
             <HelpTOCNode Title="Error Event" Url="html/E_Furcadia_Net_DirectConnection_ClientBase_Error.htm" />
             <HelpTOCNode Title="ServerData Event" Url="html/E_Furcadia_Net_DirectConnection_ClientBase_ServerData.htm" />
             <HelpTOCNode Title="ServerDisConnected Event" Url="html/E_Furcadia_Net_DirectConnection_ClientBase_ServerDisConnected.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="d879296d-10fb-4b92-adb4-35e3517603a9" Title="ClientBase Fields" Url="html/Fields_T_Furcadia_Net_DirectConnection_ClientBase.htm">
+          <HelpTOCNode Id="c9e560d9-6f90-435e-aeba-f33c6a7a5b7d" Title="ClientBase Fields" Url="html/Fields_T_Furcadia_Net_DirectConnection_ClientBase.htm">
             <HelpTOCNode Title="FurcadiaUtilities Field" Url="html/F_Furcadia_Net_DirectConnection_ClientBase_FurcadiaUtilities.htm" />
             <HelpTOCNode Title="FurcPath Field" Url="html/F_Furcadia_Net_DirectConnection_ClientBase_FurcPath.htm" />
           </HelpTOCNode>
@@ -781,16 +782,16 @@
         <HelpTOCNode Title="ClientBase.ActionDelegate Delegate" Url="html/T_Furcadia_Net_DirectConnection_ClientBase_ActionDelegate.htm" />
         <HelpTOCNode Title="ClientBase.DataEventHandler2 Delegate" Url="html/T_Furcadia_Net_DirectConnection_ClientBase_DataEventHandler2.htm" />
         <HelpTOCNode Title="ClientBase.ErrorEventHandler Delegate" Url="html/T_Furcadia_Net_DirectConnection_ClientBase_ErrorEventHandler.htm" />
-        <HelpTOCNode Id="86551323-9cae-475d-9c3e-d7619d2236e4" Title="NetConnection Class" Url="html/T_Furcadia_Net_DirectConnection_NetConnection.htm">
-          <HelpTOCNode Id="4417b9d9-1c1f-4b04-a2a7-1b5178d38c5d" Title="NetConnection Constructor " Url="html/Overload_Furcadia_Net_DirectConnection_NetConnection__ctor.htm">
+        <HelpTOCNode Id="8aa90b62-f505-4fd8-b640-558223184c85" Title="NetConnection Class" Url="html/T_Furcadia_Net_DirectConnection_NetConnection.htm">
+          <HelpTOCNode Id="dc3fd5b2-19f5-4552-a566-1fd09f5f7430" Title="NetConnection Constructor " Url="html/Overload_Furcadia_Net_DirectConnection_NetConnection__ctor.htm">
             <HelpTOCNode Title="NetConnection Constructor " Url="html/M_Furcadia_Net_DirectConnection_NetConnection__ctor.htm" />
             <HelpTOCNode Title="NetConnection Constructor (IPAddress, Int32)" Url="html/M_Furcadia_Net_DirectConnection_NetConnection__ctor_1.htm" />
             <HelpTOCNode Title="NetConnection Constructor (String, Int32)" Url="html/M_Furcadia_Net_DirectConnection_NetConnection__ctor_2.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="NetConnection Properties" Url="html/Properties_T_Furcadia_Net_DirectConnection_NetConnection.htm" />
-          <HelpTOCNode Id="4acb16b7-5284-486b-9a7e-4e939d0b92e0" Title="NetConnection Methods" Url="html/Methods_T_Furcadia_Net_DirectConnection_NetConnection.htm">
+          <HelpTOCNode Id="7b0c36d2-2a7a-4392-927e-d9014a44510d" Title="NetConnection Methods" Url="html/Methods_T_Furcadia_Net_DirectConnection_NetConnection.htm">
             <HelpTOCNode Title="Connect Method " Url="html/M_Furcadia_Net_DirectConnection_NetConnection_Connect.htm" />
-            <HelpTOCNode Id="b9b9d25a-0787-47f0-8428-6d479deb762b" Title="SendServer Method " Url="html/Overload_Furcadia_Net_DirectConnection_NetConnection_SendServer.htm">
+            <HelpTOCNode Id="8a394503-3c30-46d7-94ab-dd629f24bf62" Title="SendServer Method " Url="html/Overload_Furcadia_Net_DirectConnection_NetConnection_SendServer.htm">
               <HelpTOCNode Title="SendServer Method (String)" Url="html/M_Furcadia_Net_DirectConnection_NetConnection_SendServer.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
@@ -798,22 +799,22 @@
           <HelpTOCNode Title="NetConnection Fields" Url="html/Fields_T_Furcadia_Net_DirectConnection_NetConnection.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="ef27e7ad-6f03-46dc-aab1-8e2647f3aa9c" Title="Furcadia.Net.Options" Url="html/N_Furcadia_Net_Options.htm">
-        <HelpTOCNode Id="dff2a994-7f4e-4911-85b5-c93d8cfd94db" Title="ClientOptions Class" Url="html/T_Furcadia_Net_Options_ClientOptions.htm">
+      <HelpTOCNode Id="083e85c3-0098-4f79-94e7-6412db44d76e" Title="Furcadia.Net.Options" Url="html/N_Furcadia_Net_Options.htm">
+        <HelpTOCNode Id="58d79d26-d974-4568-ac8d-988f4b55fd45" Title="ClientOptions Class" Url="html/T_Furcadia_Net_Options_ClientOptions.htm">
           <HelpTOCNode Title="ClientOptions Constructor " Url="html/M_Furcadia_Net_Options_ClientOptions__ctor.htm" />
-          <HelpTOCNode Id="3158e575-f3aa-4df0-a588-199e231a802d" Title="ClientOptions Properties" Url="html/Properties_T_Furcadia_Net_Options_ClientOptions.htm">
+          <HelpTOCNode Id="c4af1905-1613-4f28-8fbf-324c9758215e" Title="ClientOptions Properties" Url="html/Properties_T_Furcadia_Net_Options_ClientOptions.htm">
             <HelpTOCNode Title="GameServerHost Property " Url="html/P_Furcadia_Net_Options_ClientOptions_GameServerHost.htm" />
             <HelpTOCNode Title="GameServerPort Property " Url="html/P_Furcadia_Net_Options_ClientOptions_GameServerPort.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="ClientOptions Methods" Url="html/Methods_T_Furcadia_Net_Options_ClientOptions.htm" />
-          <HelpTOCNode Id="c8747db3-83a9-40eb-9c59-ebf4102da1fd" Title="ClientOptions Fields" Url="html/Fields_T_Furcadia_Net_Options_ClientOptions.htm">
+          <HelpTOCNode Id="54aa7c0d-9845-46cd-9cb1-94d29b37e68f" Title="ClientOptions Fields" Url="html/Fields_T_Furcadia_Net_Options_ClientOptions.htm">
             <HelpTOCNode Title="FurcadiaFilePaths Field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaFilePaths.htm" />
             <HelpTOCNode Title="FurcadiaUtilities Field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaUtilities.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="eafe2114-5cda-4789-9a04-33bf00efa69a" Title="ProxyOptions Class" Url="html/T_Furcadia_Net_Options_ProxyOptions.htm">
+        <HelpTOCNode Id="251c3a56-7d85-4e57-b938-a2337c03bfc9" Title="ProxyOptions Class" Url="html/T_Furcadia_Net_Options_ProxyOptions.htm">
           <HelpTOCNode Title="ProxyOptions Constructor " Url="html/M_Furcadia_Net_Options_ProxyOptions__ctor.htm" />
-          <HelpTOCNode Id="a3ac43e7-0c2c-49ce-8c66-5e7673e2e11f" Title="ProxyOptions Properties" Url="html/Properties_T_Furcadia_Net_Options_ProxyOptions.htm">
+          <HelpTOCNode Id="9d4ab335-1ef8-4ff6-991a-bec6b6a2c293" Title="ProxyOptions Properties" Url="html/Properties_T_Furcadia_Net_Options_ProxyOptions.htm">
             <HelpTOCNode Title="CharacterIniFile Property " Url="html/P_Furcadia_Net_Options_ProxyOptions_CharacterIniFile.htm" />
             <HelpTOCNode Title="FurcadiaInstallPath Property " Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaInstallPath.htm" />
             <HelpTOCNode Title="FurcadiaProcess Property " Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaProcess.htm" />
@@ -823,95 +824,95 @@
           <HelpTOCNode Title="ProxyOptions Methods" Url="html/Methods_T_Furcadia_Net_Options_ProxyOptions.htm" />
           <HelpTOCNode Title="ProxyOptions Fields" Url="html/Fields_T_Furcadia_Net_Options_ProxyOptions.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="3fe56f5c-9f8a-466c-8899-37d71c739d0e" Title="ProxyReconnectOptions Class" Url="html/T_Furcadia_Net_Options_ProxyReconnectOptions.htm">
+        <HelpTOCNode Id="b7cf99ec-b217-4a5c-b45e-09286f452c5d" Title="ProxyReconnectOptions Class" Url="html/T_Furcadia_Net_Options_ProxyReconnectOptions.htm">
           <HelpTOCNode Title="ProxyReconnectOptions Constructor " Url="html/M_Furcadia_Net_Options_ProxyReconnectOptions__ctor.htm" />
-          <HelpTOCNode Id="d8d13609-a093-42f6-a714-023e82821b29" Title="ProxyReconnectOptions Properties" Url="html/Properties_T_Furcadia_Net_Options_ProxyReconnectOptions.htm">
+          <HelpTOCNode Id="88177699-aba1-4a37-a9ef-0c970f02f7f1" Title="ProxyReconnectOptions Properties" Url="html/Properties_T_Furcadia_Net_Options_ProxyReconnectOptions.htm">
             <HelpTOCNode Title="ConnectionTimeOut Property " Url="html/P_Furcadia_Net_Options_ProxyReconnectOptions_ConnectionTimeOut.htm" />
             <HelpTOCNode Title="ReconnectMax Property " Url="html/P_Furcadia_Net_Options_ProxyReconnectOptions_ReconnectMax.htm" />
             <HelpTOCNode Title="TimeOutTimeSpan Property " Url="html/P_Furcadia_Net_Options_ProxyReconnectOptions_TimeOutTimeSpan.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="ProxyReconnectOptions Methods" Url="html/Methods_T_Furcadia_Net_Options_ProxyReconnectOptions.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="0539c46e-cecf-4828-a6dd-688c47de0070" Title="ProxySessionOptions Class" Url="html/T_Furcadia_Net_Options_ProxySessionOptions.htm">
-          <HelpTOCNode Id="7572c60e-6593-4198-80c2-f60e6247fbfa" Title="ProxySessionOptions Constructor " Url="html/Overload_Furcadia_Net_Options_ProxySessionOptions__ctor.htm">
+        <HelpTOCNode Id="da7e5554-8f5e-4c54-b556-763af1c79718" Title="ProxySessionOptions Class" Url="html/T_Furcadia_Net_Options_ProxySessionOptions.htm">
+          <HelpTOCNode Id="8334f492-87ac-4632-aaee-4efa5f47dc52" Title="ProxySessionOptions Constructor " Url="html/Overload_Furcadia_Net_Options_ProxySessionOptions__ctor.htm">
             <HelpTOCNode Title="ProxySessionOptions Constructor " Url="html/M_Furcadia_Net_Options_ProxySessionOptions__ctor.htm" />
             <HelpTOCNode Title="ProxySessionOptions Constructor (ProxyReconnectOptions)" Url="html/M_Furcadia_Net_Options_ProxySessionOptions__ctor_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="8d9c3630-692a-4af2-946c-de47e3c36120" Title="ProxySessionOptions Properties" Url="html/Properties_T_Furcadia_Net_Options_ProxySessionOptions.htm">
+          <HelpTOCNode Id="6c4e35de-ec16-4753-b6e6-87776e770799" Title="ProxySessionOptions Properties" Url="html/Properties_T_Furcadia_Net_Options_ProxySessionOptions.htm">
             <HelpTOCNode Title="ReconnectOptions Property " Url="html/P_Furcadia_Net_Options_ProxySessionOptions_ReconnectOptions.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="ProxySessionOptions Methods" Url="html/Methods_T_Furcadia_Net_Options_ProxySessionOptions.htm" />
           <HelpTOCNode Title="ProxySessionOptions Fields" Url="html/Fields_T_Furcadia_Net_Options_ProxySessionOptions.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b8ef56a2-2981-4f46-8df5-e362a500c6e8" Title="ServerOptions Class" Url="html/T_Furcadia_Net_Options_ServerOptions.htm">
+        <HelpTOCNode Id="2cdd2aa3-46e0-4c80-9610-7a265b7e0b22" Title="ServerOptions Class" Url="html/T_Furcadia_Net_Options_ServerOptions.htm">
           <HelpTOCNode Title="ServerOptions Constructor " Url="html/M_Furcadia_Net_Options_ServerOptions__ctor.htm" />
           <HelpTOCNode Title="ServerOptions Methods" Url="html/Methods_T_Furcadia_Net_Options_ServerOptions.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="629e6b69-7cd0-47ba-9a7d-78a472b761aa" Title="Furcadia.Net.Pounce" Url="html/N_Furcadia_Net_Pounce.htm">
-        <HelpTOCNode Id="3cef4b9e-a787-4caf-9504-c057ef4d7910" Title="PounceClient Class" Url="html/T_Furcadia_Net_Pounce_PounceClient.htm">
-          <HelpTOCNode Id="e9b91ed3-7d5d-4e3d-ac5e-a7b31b250d28" Title="PounceClient Constructor " Url="html/Overload_Furcadia_Net_Pounce_PounceClient__ctor.htm">
+      <HelpTOCNode Id="dd83159f-07ad-4161-b0fb-76134badf51a" Title="Furcadia.Net.Pounce" Url="html/N_Furcadia_Net_Pounce.htm">
+        <HelpTOCNode Id="04877e40-d424-4acd-8e25-11b2c4dbad8b" Title="PounceClient Class" Url="html/T_Furcadia_Net_Pounce_PounceClient.htm">
+          <HelpTOCNode Id="1062f936-1a7c-4f68-acbc-74fe6499ca73" Title="PounceClient Constructor " Url="html/Overload_Furcadia_Net_Pounce_PounceClient__ctor.htm">
             <HelpTOCNode Title="PounceClient Constructor " Url="html/M_Furcadia_Net_Pounce_PounceClient__ctor.htm" />
             <HelpTOCNode Title="PounceClient Constructor (String[], String[])" Url="html/M_Furcadia_Net_Pounce_PounceClient__ctor_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="0920fb7b-b647-4c9b-b428-1dbc89db6209" Title="PounceClient Properties" Url="html/Properties_T_Furcadia_Net_Pounce_PounceClient.htm">
+          <HelpTOCNode Id="52d2e540-c3a1-4650-bf9d-5deac3e0a55a" Title="PounceClient Properties" Url="html/Properties_T_Furcadia_Net_Pounce_PounceClient.htm">
             <HelpTOCNode Title="FurreList Property " Url="html/P_Furcadia_Net_Pounce_PounceClient_FurreList.htm" />
             <HelpTOCNode Title="OnlineList Property " Url="html/P_Furcadia_Net_Pounce_PounceClient_OnlineList.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="PounceClient Methods" Url="html/Methods_T_Furcadia_Net_Pounce_PounceClient.htm" />
           <HelpTOCNode Title="PounceClient Events" Url="html/Events_T_Furcadia_Net_Pounce_PounceClient.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a073adf5-78e5-4690-a2e7-62bf65914a91" Title="PounceClient.PounceFurre Class" Url="html/T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm">
+        <HelpTOCNode Id="81b0b89e-21b6-4b96-9a23-7aca4f6bce12" Title="PounceClient.PounceFurre Class" Url="html/T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm">
           <HelpTOCNode Title="PounceClient.PounceFurre Constructor " Url="html/M_Furcadia_Net_Pounce_PounceClient_PounceFurre__ctor.htm" />
-          <HelpTOCNode Id="a768b7b2-9c3e-4a87-a77a-621fbc1b456f" Title="PounceFurre Properties" Url="html/Properties_T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm">
+          <HelpTOCNode Id="b813a8d5-86e3-4f26-9f48-cf70b368ea97" Title="PounceFurre Properties" Url="html/Properties_T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm">
             <HelpTOCNode Title="Name Property " Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_Name.htm" />
             <HelpTOCNode Title="Online Property " Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_Online.htm" />
             <HelpTOCNode Title="WasOnline Property " Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_WasOnline.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="PounceFurre Methods" Url="html/Methods_T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="7746c7f2-ddf1-4153-a46b-e8d830ad7885" Title="PounceConnection Class" Url="html/T_Furcadia_Net_Pounce_PounceConnection.htm">
-          <HelpTOCNode Id="8d205c73-666a-44aa-8246-3f97697b8616" Title="PounceConnection Constructor " Url="html/Overload_Furcadia_Net_Pounce_PounceConnection__ctor.htm">
+        <HelpTOCNode Id="3ac9b65b-4216-4a7a-a13b-62a61739b9d2" Title="PounceConnection Class" Url="html/T_Furcadia_Net_Pounce_PounceConnection.htm">
+          <HelpTOCNode Id="f54be015-82f8-4cd9-a37e-5f7973191b7c" Title="PounceConnection Constructor " Url="html/Overload_Furcadia_Net_Pounce_PounceConnection__ctor.htm">
             <HelpTOCNode Title="PounceConnection Constructor " Url="html/M_Furcadia_Net_Pounce_PounceConnection__ctor.htm" />
             <HelpTOCNode Title="PounceConnection Constructor (String, String[], String[])" Url="html/M_Furcadia_Net_Pounce_PounceConnection__ctor_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="348b8a25-d02a-4458-b3cf-ab4cee17a6bd" Title="PounceConnection Properties" Url="html/Properties_T_Furcadia_Net_Pounce_PounceConnection.htm">
+          <HelpTOCNode Id="5e005a4f-8930-4ce1-ab42-737b33896466" Title="PounceConnection Properties" Url="html/Properties_T_Furcadia_Net_Pounce_PounceConnection.htm">
             <HelpTOCNode Title="EncoderPage Property " Url="html/P_Furcadia_Net_Pounce_PounceConnection_EncoderPage.htm" />
             <HelpTOCNode Title="NumberOfDreamsOnMainMaps Property " Url="html/P_Furcadia_Net_Pounce_PounceConnection_NumberOfDreamsOnMainMaps.htm" />
             <HelpTOCNode Title="RawResponse Property " Url="html/P_Furcadia_Net_Pounce_PounceConnection_RawResponse.htm" />
             <HelpTOCNode Title="Status Property " Url="html/P_Furcadia_Net_Pounce_PounceConnection_Status.htm" />
             <HelpTOCNode Title="TotalFurresOnline Property " Url="html/P_Furcadia_Net_Pounce_PounceConnection_TotalFurresOnline.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="8f258c31-60d1-44bc-ad23-919c9571af76" Title="PounceConnection Methods" Url="html/Methods_T_Furcadia_Net_Pounce_PounceConnection.htm">
+          <HelpTOCNode Id="dae3eaaa-66cd-4c31-87b0-ef195b5dac1a" Title="PounceConnection Methods" Url="html/Methods_T_Furcadia_Net_Pounce_PounceConnection.htm">
             <HelpTOCNode Title="AddFriend Method " Url="html/M_Furcadia_Net_Pounce_PounceConnection_AddFriend.htm" />
             <HelpTOCNode Title="CheckFriendName Method " Url="html/M_Furcadia_Net_Pounce_PounceConnection_CheckFriendName.htm" />
             <HelpTOCNode Title="CheckFriendNames Method " Url="html/M_Furcadia_Net_Pounce_PounceConnection_CheckFriendNames.htm" />
             <HelpTOCNode Title="ClearFriends Method " Url="html/M_Furcadia_Net_Pounce_PounceConnection_ClearFriends.htm" />
             <HelpTOCNode Title="Connect Method " Url="html/M_Furcadia_Net_Pounce_PounceConnection_Connect.htm" />
             <HelpTOCNode Title="ConnectAsync Method " Url="html/M_Furcadia_Net_Pounce_PounceConnection_ConnectAsync.htm" />
-            <HelpTOCNode Id="b4c95bec-04f5-4e83-97e4-1cadd98616e0" Title="Dispose Method " Url="html/Overload_Furcadia_Net_Pounce_PounceConnection_Dispose.htm">
+            <HelpTOCNode Id="ad01b511-f12c-4a84-bce8-91132f262a64" Title="Dispose Method " Url="html/Overload_Furcadia_Net_Pounce_PounceConnection_Dispose.htm">
               <HelpTOCNode Title="Dispose Method " Url="html/M_Furcadia_Net_Pounce_PounceConnection_Dispose.htm" />
               <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_Furcadia_Net_Pounce_PounceConnection_Dispose_1.htm" />
             </HelpTOCNode>
             <HelpTOCNode Title="RemoveFriend Method " Url="html/M_Furcadia_Net_Pounce_PounceConnection_RemoveFriend.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="caced58a-2089-4ded-aa2c-07c0f19a34a5" Title="PounceConnection Events" Url="html/Events_T_Furcadia_Net_Pounce_PounceConnection.htm">
+          <HelpTOCNode Id="e75c0c95-bded-4c16-946a-c48861808102" Title="PounceConnection Events" Url="html/Events_T_Furcadia_Net_Pounce_PounceConnection.htm">
             <HelpTOCNode Title="Response Event" Url="html/E_Furcadia_Net_Pounce_PounceConnection_Response.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
         <HelpTOCNode Title="PounceConnection.PounceResponse Delegate" Url="html/T_Furcadia_Net_Pounce_PounceConnection_PounceResponse.htm" />
-        <HelpTOCNode Id="6b75e185-daee-428f-9361-14c8372cfa34" Title="PounceIni Class" Url="html/T_Furcadia_Net_Pounce_PounceIni.htm">
+        <HelpTOCNode Id="264f1cb9-308b-4f1a-8b72-bb92dbd1a015" Title="PounceIni Class" Url="html/T_Furcadia_Net_Pounce_PounceIni.htm">
           <HelpTOCNode Title="PounceIni Constructor " Url="html/M_Furcadia_Net_Pounce_PounceIni__ctor.htm" />
           <HelpTOCNode Title="PounceIni Methods" Url="html/Methods_T_Furcadia_Net_Pounce_PounceIni.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="82201179-0df2-4c1e-8333-cbf02976ae43" Title="Furcadia.Net.Proxy" Url="html/N_Furcadia_Net_Proxy.htm">
-        <HelpTOCNode Id="0bb07eb2-1abf-4e6e-bce3-962b20df6160" Title="ProxySession Class" Url="html/T_Furcadia_Net_Proxy_ProxySession.htm">
-          <HelpTOCNode Id="2b88d7e5-9f69-4107-87a2-22f68c42adda" Title="ProxySession Constructor " Url="html/Overload_Furcadia_Net_Proxy_ProxySession__ctor.htm">
+      <HelpTOCNode Id="40b4c612-a4f5-4b12-a709-904b278e0dcf" Title="Furcadia.Net.Proxy" Url="html/N_Furcadia_Net_Proxy.htm">
+        <HelpTOCNode Id="6ceae44f-f8eb-4925-834c-2ed9d25e2c94" Title="ProxySession Class" Url="html/T_Furcadia_Net_Proxy_ProxySession.htm">
+          <HelpTOCNode Id="1f6b6afb-ff4e-4b79-8d12-ddd0b7fe5ac3" Title="ProxySession Constructor " Url="html/Overload_Furcadia_Net_Proxy_ProxySession__ctor.htm">
             <HelpTOCNode Title="ProxySession Constructor " Url="html/M_Furcadia_Net_Proxy_ProxySession__ctor.htm" />
             <HelpTOCNode Title="ProxySession Constructor (ProxySessionOptions)" Url="html/M_Furcadia_Net_Proxy_ProxySession__ctor_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="191650a8-7ebe-48c8-81f7-4acf1c4f4f04" Title="ProxySession Properties" Url="html/Properties_T_Furcadia_Net_Proxy_ProxySession.htm">
+          <HelpTOCNode Id="e5489f5a-470b-453c-9ea3-bda69bd66e89" Title="ProxySession Properties" Url="html/Properties_T_Furcadia_Net_Proxy_ProxySession.htm">
             <HelpTOCNode Title="BadgeTag Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_BadgeTag.htm" />
             <HelpTOCNode Title="BanishName Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_BanishName.htm" />
             <HelpTOCNode Title="BanishString Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_BanishString.htm" />
@@ -934,9 +935,9 @@
             <HelpTOCNode Title="StandAlone Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_StandAlone.htm" />
             <HelpTOCNode Title="ThroatTired Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_ThroatTired.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="9de9d56f-1fa7-4a74-bb25-74f84b63e7d6" Title="ProxySession Methods" Url="html/Methods_T_Furcadia_Net_Proxy_ProxySession.htm">
+          <HelpTOCNode Id="4404f231-d508-49a2-a7eb-d9068438233d" Title="ProxySession Methods" Url="html/Methods_T_Furcadia_Net_Proxy_ProxySession.htm">
             <HelpTOCNode Title="Connect Method " Url="html/M_Furcadia_Net_Proxy_ProxySession_Connect.htm" />
-            <HelpTOCNode Id="a7360141-ff96-4895-b9c0-dd57e2915da3" Title="Dispose Method " Url="html/Overload_Furcadia_Net_Proxy_ProxySession_Dispose.htm">
+            <HelpTOCNode Id="d1a7b4c9-acce-4542-afe9-c7d82344b653" Title="Dispose Method " Url="html/Overload_Furcadia_Net_Proxy_ProxySession_Dispose.htm">
               <HelpTOCNode Title="Dispose Method " Url="html/M_Furcadia_Net_Proxy_ProxySession_Dispose.htm" />
               <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_Furcadia_Net_Proxy_ProxySession_Dispose_1.htm" />
             </HelpTOCNode>
@@ -946,14 +947,14 @@
             <HelpTOCNode Title="ParseServerData Method " Url="html/M_Furcadia_Net_Proxy_ProxySession_ParseServerData.htm" />
             <HelpTOCNode Title="ProcessSpokenCommands Method " Url="html/M_Furcadia_Net_Proxy_ProxySession_ProcessSpokenCommands.htm" />
             <HelpTOCNode Title="SendLineToServer Method " Url="html/M_Furcadia_Net_Proxy_ProxySession_SendLineToServer.htm" />
-            <HelpTOCNode Id="60ff1e4c-8e0b-4644-8b24-49d120e4528d" Title="SendToClient Method " Url="html/Overload_Furcadia_Net_Proxy_ProxySession_SendToClient.htm">
+            <HelpTOCNode Id="701c2b76-471b-4017-8087-f5963e583175" Title="SendToClient Method " Url="html/Overload_Furcadia_Net_Proxy_ProxySession_SendToClient.htm">
               <HelpTOCNode Title="SendToClient Method (String)" Url="html/M_Furcadia_Net_Proxy_ProxySession_SendToClient.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="6e53b2ee-8cde-42c6-b0ad-0c4a120f31f3" Title="SendToServer Method " Url="html/Overload_Furcadia_Net_Proxy_ProxySession_SendToServer.htm">
+            <HelpTOCNode Id="8b3a364d-7858-488c-8063-31a9d25b947b" Title="SendToServer Method " Url="html/Overload_Furcadia_Net_Proxy_ProxySession_SendToServer.htm">
               <HelpTOCNode Title="SendToServer Method (String)" Url="html/M_Furcadia_Net_Proxy_ProxySession_SendToServer.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
-          <HelpTOCNode Id="22a7ecc9-f972-43df-9827-d1117f079815" Title="ProxySession Events" Url="html/Events_T_Furcadia_Net_Proxy_ProxySession.htm">
+          <HelpTOCNode Id="4df49302-6f7c-4c86-94a4-db195bb8d881" Title="ProxySession Events" Url="html/Events_T_Furcadia_Net_Proxy_ProxySession.htm">
             <HelpTOCNode Title="ClientData2 Event" Url="html/E_Furcadia_Net_Proxy_ProxySession_ClientData2.htm" />
             <HelpTOCNode Title="ClientStatusChanged Event" Url="html/E_Furcadia_Net_Proxy_ProxySession_ClientStatusChanged.htm" />
             <HelpTOCNode Title="OnError Event" Url="html/E_Furcadia_Net_Proxy_ProxySession_OnError.htm" />
@@ -962,7 +963,7 @@
             <HelpTOCNode Title="ServerData2 Event" Url="html/E_Furcadia_Net_Proxy_ProxySession_ServerData2.htm" />
             <HelpTOCNode Title="ServerStatusChanged Event" Url="html/E_Furcadia_Net_Proxy_ProxySession_ServerStatusChanged.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="76060213-c2dc-4a92-a332-1b843fd7f891" Title="ProxySession Fields" Url="html/Fields_T_Furcadia_Net_Proxy_ProxySession.htm">
+          <HelpTOCNode Id="b08980d3-8195-42d3-82c2-5737c32c1b63" Title="ProxySession Fields" Url="html/Fields_T_Furcadia_Net_Proxy_ProxySession.htm">
             <HelpTOCNode Title="Repq Field" Url="html/F_Furcadia_Net_Proxy_ProxySession_Repq.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
@@ -971,8 +972,8 @@
         <HelpTOCNode Title="ProxySession.OnErrorEventHandler Delegate" Url="html/T_Furcadia_Net_Proxy_ProxySession_OnErrorEventHandler.htm" />
         <HelpTOCNode Title="ProxySession.ProcessChannel Delegate" Url="html/T_Furcadia_Net_Proxy_ProxySession_ProcessChannel.htm" />
         <HelpTOCNode Title="ProxySession.ProcessInstruction Delegate" Url="html/T_Furcadia_Net_Proxy_ProxySession_ProcessInstruction.htm" />
-        <HelpTOCNode Id="0348ebbc-c2a4-4c1c-814e-45f454760f1c" Title="ProxySession.Rep Structure" Url="html/T_Furcadia_Net_Proxy_ProxySession_Rep.htm">
-          <HelpTOCNode Id="5b353ccc-b220-475b-9c4a-a85db83f5a27" Title="Rep Properties" Url="html/Properties_T_Furcadia_Net_Proxy_ProxySession_Rep.htm">
+        <HelpTOCNode Id="57d0aaaa-330b-469a-8684-a5eb40588b57" Title="ProxySession.Rep Structure" Url="html/T_Furcadia_Net_Proxy_ProxySession_Rep.htm">
+          <HelpTOCNode Id="73e7bace-3298-46dd-86f5-a6a12155d717" Title="Rep Properties" Url="html/Properties_T_Furcadia_Net_Proxy_ProxySession_Rep.htm">
             <HelpTOCNode Title="ID Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_Rep_ID.htm" />
             <HelpTOCNode Title="Type Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_Rep_Type.htm" />
           </HelpTOCNode>
@@ -980,18 +981,18 @@
         </HelpTOCNode>
         <HelpTOCNode Title="ProxySession.ServerStatusChangedEventHandler Delegate" Url="html/T_Furcadia_Net_Proxy_ProxySession_ServerStatusChangedEventHandler.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ae1e2ee1-1c05-4c37-88aa-64ba3759ee58" Title="Furcadia.Net.Utils Namespaces" Url="html/G_Furcadia_Net_Utils.htm">
-        <HelpTOCNode Id="248ca7ec-53c8-4fcd-bc26-c3849937049a" Title="Furcadia.Net.Utils" Url="html/N_Furcadia_Net_Utils.htm">
-          <HelpTOCNode Id="dad80bfe-9711-484e-a741-a59b0a27fdde" Title="ProxyReconnect Class" Url="html/T_Furcadia_Net_Utils_ProxyReconnect.htm">
-            <HelpTOCNode Id="d0d158de-6448-4ade-8ed8-e02ef8ca6434" Title="ProxyReconnect Constructor " Url="html/Overload_Furcadia_Net_Utils_ProxyReconnect__ctor.htm">
+      <HelpTOCNode Id="3c9e9287-beee-49e8-8bce-5c318c05c5fd" Title="Furcadia.Net.Utils Namespaces" Url="html/G_Furcadia_Net_Utils.htm">
+        <HelpTOCNode Id="eeab154f-adfc-4b51-943d-14519a9c95e5" Title="Furcadia.Net.Utils" Url="html/N_Furcadia_Net_Utils.htm">
+          <HelpTOCNode Id="14a4be1d-b5cb-4029-88d0-6bed687c3f34" Title="ProxyReconnect Class" Url="html/T_Furcadia_Net_Utils_ProxyReconnect.htm">
+            <HelpTOCNode Id="a422aea5-2944-4e15-92c4-5439b0e05d00" Title="ProxyReconnect Constructor " Url="html/Overload_Furcadia_Net_Utils_ProxyReconnect__ctor.htm">
               <HelpTOCNode Title="ProxyReconnect Constructor " Url="html/M_Furcadia_Net_Utils_ProxyReconnect__ctor.htm" />
               <HelpTOCNode Title="ProxyReconnect Constructor (ProxyReconnectOptions)" Url="html/M_Furcadia_Net_Utils_ProxyReconnect__ctor_1.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="b01d816e-c810-47b1-835e-39b9052d4e2d" Title="ProxyReconnect Properties" Url="html/Properties_T_Furcadia_Net_Utils_ProxyReconnect.htm">
+            <HelpTOCNode Id="64324a37-4fb0-4ed4-8a85-8ac705d2b487" Title="ProxyReconnect Properties" Url="html/Properties_T_Furcadia_Net_Utils_ProxyReconnect.htm">
               <HelpTOCNode Title="IsRunning Property " Url="html/P_Furcadia_Net_Utils_ProxyReconnect_IsRunning.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="a34700cb-0879-4448-aef6-582316bdbd6f" Title="ProxyReconnect Methods" Url="html/Methods_T_Furcadia_Net_Utils_ProxyReconnect.htm">
-              <HelpTOCNode Id="3a6c272c-9ff1-40dc-acf4-360e27d39d56" Title="Dispose Method " Url="html/Overload_Furcadia_Net_Utils_ProxyReconnect_Dispose.htm">
+            <HelpTOCNode Id="39998b3b-5df9-4dd8-9544-54a126a8450b" Title="ProxyReconnect Methods" Url="html/Methods_T_Furcadia_Net_Utils_ProxyReconnect.htm">
+              <HelpTOCNode Id="629bb657-0142-44c6-bfab-d5e44e42c664" Title="Dispose Method " Url="html/Overload_Furcadia_Net_Utils_ProxyReconnect_Dispose.htm">
                 <HelpTOCNode Title="Dispose Method " Url="html/M_Furcadia_Net_Utils_ProxyReconnect_Dispose.htm" />
                 <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_Furcadia_Net_Utils_ProxyReconnect_Dispose_1.htm" />
               </HelpTOCNode>
@@ -1000,38 +1001,38 @@
               <HelpTOCNode Title="Start Method " Url="html/M_Furcadia_Net_Utils_ProxyReconnect_Start.htm" />
               <HelpTOCNode Title="Stop Method " Url="html/M_Furcadia_Net_Utils_ProxyReconnect_Stop.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="252816cc-4038-4044-bc77-960bf48b2779" Title="ProxyReconnect Fields" Url="html/Fields_T_Furcadia_Net_Utils_ProxyReconnect.htm">
+            <HelpTOCNode Id="c28ad2cd-5c4e-4199-8ed4-aef197ab91c3" Title="ProxyReconnect Fields" Url="html/Fields_T_Furcadia_Net_Utils_ProxyReconnect.htm">
               <HelpTOCNode Title="OnAttemptsExceded Field" Url="html/F_Furcadia_Net_Utils_ProxyReconnect_OnAttemptsExceded.htm" />
               <HelpTOCNode Title="OnConnectTimeOut Field" Url="html/F_Furcadia_Net_Utils_ProxyReconnect_OnConnectTimeOut.htm" />
               <HelpTOCNode Title="OnStartProxyConnect Field" Url="html/F_Furcadia_Net_Utils_ProxyReconnect_OnStartProxyConnect.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
-          <HelpTOCNode Id="642aabbc-65a8-404a-8095-09b26098b05a" Title="ServerQue Class" Url="html/T_Furcadia_Net_Utils_ServerQue.htm">
-            <HelpTOCNode Id="002d445e-753f-4121-aed7-bf436ed8e0b2" Title="ServerQue Constructor " Url="html/Overload_Furcadia_Net_Utils_ServerQue__ctor.htm">
+          <HelpTOCNode Id="47070047-6c47-40d0-a564-7c1d24d799bc" Title="ServerQue Class" Url="html/T_Furcadia_Net_Utils_ServerQue.htm">
+            <HelpTOCNode Id="db9759ea-0a2b-4f46-80ad-47b7728f9500" Title="ServerQue Constructor " Url="html/Overload_Furcadia_Net_Utils_ServerQue__ctor.htm">
               <HelpTOCNode Title="ServerQue Constructor " Url="html/M_Furcadia_Net_Utils_ServerQue__ctor.htm" />
               <HelpTOCNode Title="ServerQue Constructor (Int32, Int32)" Url="html/M_Furcadia_Net_Utils_ServerQue__ctor_1.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="d12258eb-9de4-4d54-9214-7ed44ccf7a61" Title="ServerQue Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerQue.htm">
+            <HelpTOCNode Id="0635156f-6457-42dc-933e-f749a10e14d1" Title="ServerQue Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerQue.htm">
               <HelpTOCNode Title="NoEndurance Property " Url="html/P_Furcadia_Net_Utils_ServerQue_NoEndurance.htm" />
               <HelpTOCNode Title="PingDelayTime Property " Url="html/P_Furcadia_Net_Utils_ServerQue_PingDelayTime.htm" />
               <HelpTOCNode Title="ThroatTired Property " Url="html/P_Furcadia_Net_Utils_ServerQue_ThroatTired.htm" />
               <HelpTOCNode Title="ThroatTiredDelayTime Property " Url="html/P_Furcadia_Net_Utils_ServerQue_ThroatTiredDelayTime.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="f955ee9b-3ac7-4e42-80e2-347b9c42233a" Title="ServerQue Methods" Url="html/Methods_T_Furcadia_Net_Utils_ServerQue.htm">
-              <HelpTOCNode Id="7583d1e9-e3de-4dee-b1d6-94618fa21d96" Title="Dispose Method " Url="html/Overload_Furcadia_Net_Utils_ServerQue_Dispose.htm">
+            <HelpTOCNode Id="beeaa557-abea-4d1e-8d38-36ecc818d4fc" Title="ServerQue Methods" Url="html/Methods_T_Furcadia_Net_Utils_ServerQue.htm">
+              <HelpTOCNode Id="471b9200-cfc7-4b1c-aa4c-8aa04e24b1b5" Title="Dispose Method " Url="html/Overload_Furcadia_Net_Utils_ServerQue_Dispose.htm">
                 <HelpTOCNode Title="Dispose Method " Url="html/M_Furcadia_Net_Utils_ServerQue_Dispose.htm" />
                 <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_Furcadia_Net_Utils_ServerQue_Dispose_1.htm" />
               </HelpTOCNode>
               <HelpTOCNode Title="SendToServer Method " Url="html/M_Furcadia_Net_Utils_ServerQue_SendToServer.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="042a4984-0dff-4f7a-b928-cedc1fb9c3d3" Title="ServerQue Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerQue.htm">
+            <HelpTOCNode Id="cbfb334f-3e1a-41a2-b3e4-55236e73f895" Title="ServerQue Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerQue.htm">
               <HelpTOCNode Title="OnServerSendMessage Field" Url="html/F_Furcadia_Net_Utils_ServerQue_OnServerSendMessage.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
           <HelpTOCNode Title="ServerQue.SendServerEventHandler Delegate" Url="html/T_Furcadia_Net_Utils_ServerQue_SendServerEventHandler.htm" />
-          <HelpTOCNode Id="cbe91160-ef46-4523-ba67-896f2657bde0" Title="Utilities Class" Url="html/T_Furcadia_Net_Utils_Utilities.htm">
+          <HelpTOCNode Id="b04b1a6e-259b-4f9e-aed2-16d433931f51" Title="Utilities Class" Url="html/T_Furcadia_Net_Utils_Utilities.htm">
             <HelpTOCNode Title="Utilities Constructor " Url="html/M_Furcadia_Net_Utils_Utilities__ctor.htm" />
-            <HelpTOCNode Id="c8ee962e-71b8-4e0c-88f0-8bf5cfedf5ab" Title="Utilities Properties" Url="html/Properties_T_Furcadia_Net_Utils_Utilities.htm">
+            <HelpTOCNode Id="afa145c1-c32a-4c0c-8ef5-e59074343387" Title="Utilities Properties" Url="html/Properties_T_Furcadia_Net_Utils_Utilities.htm">
               <HelpTOCNode Title="DefaultClient Property " Url="html/P_Furcadia_Net_Utils_Utilities_DefaultClient.htm" />
               <HelpTOCNode Title="GameServerHost Property " Url="html/P_Furcadia_Net_Utils_Utilities_GameServerHost.htm" />
               <HelpTOCNode Title="GameServerIp Property " Url="html/P_Furcadia_Net_Utils_Utilities_GameServerIp.htm" />
@@ -1041,35 +1042,35 @@
               <HelpTOCNode Title="ReggistryPathX64 Property " Url="html/P_Furcadia_Net_Utils_Utilities_ReggistryPathX64.htm" />
               <HelpTOCNode Title="ReggistryPathX86 Property " Url="html/P_Furcadia_Net_Utils_Utilities_ReggistryPathX86.htm" />
             </HelpTOCNode>
-            <HelpTOCNode Id="758b0314-1f89-498e-ad92-76349c81adc0" Title="Utilities Methods" Url="html/Methods_T_Furcadia_Net_Utils_Utilities.htm">
+            <HelpTOCNode Id="0f261f9c-5669-4825-9a08-1a3d6ebc1f46" Title="Utilities Methods" Url="html/Methods_T_Furcadia_Net_Utils_Utilities.htm">
               <HelpTOCNode Title="PortOpen Method " Url="html/M_Furcadia_Net_Utils_Utilities_PortOpen.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="a628f142-4ec0-48b3-bfe4-3a9033368eac" Title="Furcadia.Net.Utils.ServerParser" Url="html/N_Furcadia_Net_Utils_ServerParser.htm">
-          <HelpTOCNode Id="ae97ce30-b162-47a2-998a-873e4b289c4f" Title="BaseServerInstruction Class" Url="html/T_Furcadia_Net_Utils_ServerParser_BaseServerInstruction.htm">
+        <HelpTOCNode Id="5b96346f-c609-44a1-a68e-32ff00166585" Title="Furcadia.Net.Utils.ServerParser" Url="html/N_Furcadia_Net_Utils_ServerParser.htm">
+          <HelpTOCNode Id="355f3be4-a294-4e49-bbde-2671b6a9df7b" Title="BaseServerInstruction Class" Url="html/T_Furcadia_Net_Utils_ServerParser_BaseServerInstruction.htm">
             <HelpTOCNode Title="BaseServerInstruction Constructor " Url="html/M_Furcadia_Net_Utils_ServerParser_BaseServerInstruction__ctor.htm" />
-            <HelpTOCNode Id="a978e163-55a9-43d1-8845-780822be4205" Title="BaseServerInstruction Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_BaseServerInstruction.htm">
+            <HelpTOCNode Id="1c31126a-703d-4b54-ab1b-ad8ac2f3f3fc" Title="BaseServerInstruction Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_BaseServerInstruction.htm">
               <HelpTOCNode Title="InstructionType Property " Url="html/P_Furcadia_Net_Utils_ServerParser_BaseServerInstruction_InstructionType.htm" />
               <HelpTOCNode Title="RawInstruction Property " Url="html/P_Furcadia_Net_Utils_ServerParser_BaseServerInstruction_RawInstruction.htm" />
             </HelpTOCNode>
             <HelpTOCNode Title="BaseServerInstruction Methods" Url="html/Methods_T_Furcadia_Net_Utils_ServerParser_BaseServerInstruction.htm" />
-            <HelpTOCNode Id="487f26fa-2cc4-455e-be99-37bc205128dd" Title="BaseServerInstruction Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_BaseServerInstruction.htm">
+            <HelpTOCNode Id="4b292b43-b96c-4272-b5b1-5a4da46ebc83" Title="BaseServerInstruction Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_BaseServerInstruction.htm">
               <HelpTOCNode Title="instructionType Field" Url="html/F_Furcadia_Net_Utils_ServerParser_BaseServerInstruction_instructionType.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
-          <HelpTOCNode Id="30ad9398-fc74-4f17-be1a-12b7bafbafaf" Title="ChannelObject Class" Url="html/T_Furcadia_Net_Utils_ServerParser_ChannelObject.htm">
+          <HelpTOCNode Id="306f96bc-e8c5-4027-b2fa-fd9c52a63df2" Title="ChannelObject Class" Url="html/T_Furcadia_Net_Utils_ServerParser_ChannelObject.htm">
             <HelpTOCNode Title="ChannelObject Constructor " Url="html/M_Furcadia_Net_Utils_ServerParser_ChannelObject__ctor.htm" />
-            <HelpTOCNode Id="1a500ae6-1c56-4815-9d8d-4f567226b54f" Title="ChannelObject Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_ChannelObject.htm">
+            <HelpTOCNode Id="ad81cbbd-ad02-4485-8fa9-0bb2fd63fef8" Title="ChannelObject Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_ChannelObject.htm">
               <HelpTOCNode Title="Channel Property " Url="html/P_Furcadia_Net_Utils_ServerParser_ChannelObject_Channel.htm" />
               <HelpTOCNode Title="Player Property " Url="html/P_Furcadia_Net_Utils_ServerParser_ChannelObject_Player.htm" />
             </HelpTOCNode>
             <HelpTOCNode Title="ChannelObject Methods" Url="html/Methods_T_Furcadia_Net_Utils_ServerParser_ChannelObject.htm" />
             <HelpTOCNode Title="ChannelObject Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_ChannelObject.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="d6ffdfe9-2477-4d4e-b986-79790ee4bfb2" Title="DiceRolls Class" Url="html/T_Furcadia_Net_Utils_ServerParser_DiceRolls.htm">
+          <HelpTOCNode Id="69af4c82-4591-4a3c-8de8-34e1188b3c82" Title="DiceRolls Class" Url="html/T_Furcadia_Net_Utils_ServerParser_DiceRolls.htm">
             <HelpTOCNode Title="DiceRolls Constructor " Url="html/M_Furcadia_Net_Utils_ServerParser_DiceRolls__ctor.htm" />
-            <HelpTOCNode Id="615976cc-2ec9-4a8e-9c1b-0ab69bcd4a68" Title="DiceRolls Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_DiceRolls.htm">
+            <HelpTOCNode Id="29c2fb1f-ef6f-4f2a-8172-e5821d2ec9b5" Title="DiceRolls Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_DiceRolls.htm">
               <HelpTOCNode Title="DiceCompnentMatch Property " Url="html/P_Furcadia_Net_Utils_ServerParser_DiceRolls_DiceCompnentMatch.htm" />
               <HelpTOCNode Title="DiceCount Property " Url="html/P_Furcadia_Net_Utils_ServerParser_DiceRolls_DiceCount.htm" />
               <HelpTOCNode Title="DiceModifyer Property " Url="html/P_Furcadia_Net_Utils_ServerParser_DiceRolls_DiceModifyer.htm" />
@@ -1079,60 +1080,60 @@
             <HelpTOCNode Title="DiceRolls Methods" Url="html/Methods_T_Furcadia_Net_Utils_ServerParser_DiceRolls.htm" />
             <HelpTOCNode Title="DiceRolls Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_DiceRolls.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="36c92c93-24ed-4219-b11a-01eb2b867baa" Title="RemoveAvatar Class" Url="html/T_Furcadia_Net_Utils_ServerParser_RemoveAvatar.htm">
+          <HelpTOCNode Id="8eacd6dd-f399-4096-b211-d378b83d80e0" Title="RemoveAvatar Class" Url="html/T_Furcadia_Net_Utils_ServerParser_RemoveAvatar.htm">
             <HelpTOCNode Title="RemoveAvatar Constructor " Url="html/M_Furcadia_Net_Utils_ServerParser_RemoveAvatar__ctor.htm" />
             <HelpTOCNode Title="RemoveAvatar Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_RemoveAvatar.htm" />
             <HelpTOCNode Title="RemoveAvatar Methods" Url="html/Methods_T_Furcadia_Net_Utils_ServerParser_RemoveAvatar.htm" />
-            <HelpTOCNode Id="24d6ae3f-6f7c-494f-b9e2-fe2faec86f3e" Title="RemoveAvatar Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_RemoveAvatar.htm">
+            <HelpTOCNode Id="879f5291-c9a5-4f45-a324-6c75fd364cba" Title="RemoveAvatar Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_RemoveAvatar.htm">
               <HelpTOCNode Title="AvatarID Field" Url="html/F_Furcadia_Net_Utils_ServerParser_RemoveAvatar_AvatarID.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
-          <HelpTOCNode Id="954b48a0-24c0-49f0-96a4-3859768aca6c" Title="SpawnAvatar Class" Url="html/T_Furcadia_Net_Utils_ServerParser_SpawnAvatar.htm">
+          <HelpTOCNode Id="ea5a02f5-e37c-4ec4-aabd-3a26d6a50cbe" Title="SpawnAvatar Class" Url="html/T_Furcadia_Net_Utils_ServerParser_SpawnAvatar.htm">
             <HelpTOCNode Title="SpawnAvatar Constructor " Url="html/M_Furcadia_Net_Utils_ServerParser_SpawnAvatar__ctor.htm" />
             <HelpTOCNode Title="SpawnAvatar Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_SpawnAvatar.htm" />
             <HelpTOCNode Title="SpawnAvatar Methods" Url="html/Methods_T_Furcadia_Net_Utils_ServerParser_SpawnAvatar.htm" />
-            <HelpTOCNode Id="5af1fa49-795f-4a06-82b9-4ccdc8d87aa6" Title="SpawnAvatar Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_SpawnAvatar.htm">
+            <HelpTOCNode Id="563b0387-8082-40aa-b577-eedc9df7169e" Title="SpawnAvatar Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_SpawnAvatar.htm">
               <HelpTOCNode Title="player Field" Url="html/F_Furcadia_Net_Utils_ServerParser_SpawnAvatar_player.htm" />
               <HelpTOCNode Title="PlayerFlags Field" Url="html/F_Furcadia_Net_Utils_ServerParser_SpawnAvatar_PlayerFlags.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
-          <HelpTOCNode Id="35b49c6d-3edf-4e64-ba7a-1c443edd2a88" Title="UpdateColorString Class" Url="html/T_Furcadia_Net_Utils_ServerParser_UpdateColorString.htm">
+          <HelpTOCNode Id="c3bac692-e439-49dd-995e-90792768bfea" Title="UpdateColorString Class" Url="html/T_Furcadia_Net_Utils_ServerParser_UpdateColorString.htm">
             <HelpTOCNode Title="UpdateColorString Constructor " Url="html/M_Furcadia_Net_Utils_ServerParser_UpdateColorString__ctor.htm" />
             <HelpTOCNode Title="UpdateColorString Properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_UpdateColorString.htm" />
             <HelpTOCNode Title="UpdateColorString Methods" Url="html/Methods_T_Furcadia_Net_Utils_ServerParser_UpdateColorString.htm" />
-            <HelpTOCNode Id="ca66877f-f53f-47f7-ac14-ea0694f48f5b" Title="UpdateColorString Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_UpdateColorString.htm">
+            <HelpTOCNode Id="6ae61e16-b3c7-474d-be34-a2b3396f61c2" Title="UpdateColorString Fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_UpdateColorString.htm">
               <HelpTOCNode Title="player Field" Url="html/F_Furcadia_Net_Utils_ServerParser_UpdateColorString_player.htm" />
             </HelpTOCNode>
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="7283fddc-562c-45f6-9cbf-19e3047f1cb6" Title="Furcadia.Security" Url="html/N_Furcadia_Security.htm">
-      <HelpTOCNode Id="88ae7172-575e-4f99-91a9-537f4b65feb0" Title="SecureTcpClient Class" Url="html/T_Furcadia_Security_SecureTcpClient.htm">
-        <HelpTOCNode Id="b1521280-fc08-47bc-8cac-a49f6b2bb2f5" Title="SecureTcpClient Constructor " Url="html/Overload_Furcadia_Security_SecureTcpClient__ctor.htm">
+    <HelpTOCNode Id="76998ef1-7307-4cff-ba35-9d3657b5d6d2" Title="Furcadia.Security" Url="html/N_Furcadia_Security.htm">
+      <HelpTOCNode Id="b18bf825-e66a-4771-9c98-951ecab030b9" Title="SecureTcpClient Class" Url="html/T_Furcadia_Security_SecureTcpClient.htm">
+        <HelpTOCNode Id="241a6fa6-43d8-4b17-842b-838714b4ccab" Title="SecureTcpClient Constructor " Url="html/Overload_Furcadia_Security_SecureTcpClient__ctor.htm">
           <HelpTOCNode Title="SecureTcpClient Constructor (SSL.SecureConnectionResultsCallback)" Url="html/M_Furcadia_Security_SecureTcpClient__ctor.htm" />
           <HelpTOCNode Title="SecureTcpClient Constructor (SSL.SecureConnectionResultsCallback, RemoteCertificateValidationCallback)" Url="html/M_Furcadia_Security_SecureTcpClient__ctor_1.htm" />
           <HelpTOCNode Title="SecureTcpClient Constructor (SSL.SecureConnectionResultsCallback, RemoteCertificateValidationCallback, SslProtocols)" Url="html/M_Furcadia_Security_SecureTcpClient__ctor_2.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="14a993c8-33c6-45d4-a1dc-291d4dd2a33f" Title="SecureTcpClient Properties" Url="html/Properties_T_Furcadia_Security_SecureTcpClient.htm">
+        <HelpTOCNode Id="88f86ae2-8831-4b5c-a962-05747a5876e5" Title="SecureTcpClient Properties" Url="html/Properties_T_Furcadia_Security_SecureTcpClient.htm">
           <HelpTOCNode Title="CheckCertificateRevocation Property " Url="html/P_Furcadia_Security_SecureTcpClient_CheckCertificateRevocation.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="0e2071ad-fcc7-42c2-899e-7ed3ebecad47" Title="SecureTcpClient Methods" Url="html/Methods_T_Furcadia_Security_SecureTcpClient.htm">
+        <HelpTOCNode Id="4366cd2b-ad2e-4c47-b753-127065865bb7" Title="SecureTcpClient Methods" Url="html/Methods_T_Furcadia_Security_SecureTcpClient.htm">
           <HelpTOCNode Title="Close Method " Url="html/M_Furcadia_Security_SecureTcpClient_Close.htm" />
           <HelpTOCNode Title="Dispose Method " Url="html/M_Furcadia_Security_SecureTcpClient_Dispose.htm" />
           <HelpTOCNode Title="Finalize Method " Url="html/M_Furcadia_Security_SecureTcpClient_Finalize.htm" />
-          <HelpTOCNode Id="110b5060-0f63-4048-8888-5fdcffeced08" Title="StartConnecting Method " Url="html/Overload_Furcadia_Security_SecureTcpClient_StartConnecting.htm">
+          <HelpTOCNode Id="5fe5e70f-6b7a-49af-9257-891f42bb41bd" Title="StartConnecting Method " Url="html/Overload_Furcadia_Security_SecureTcpClient_StartConnecting.htm">
             <HelpTOCNode Title="StartConnecting Method (String, IPEndPoint)" Url="html/M_Furcadia_Security_SecureTcpClient_StartConnecting.htm" />
             <HelpTOCNode Title="StartConnecting Method (String, IPEndPoint, X509CertificateCollection)" Url="html/M_Furcadia_Security_SecureTcpClient_StartConnecting_1.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="d1fbd732-0324-49e2-977e-7e35cf1e8f58" Title="SSL Class" Url="html/T_Furcadia_Security_SSL.htm">
+      <HelpTOCNode Id="68deb1cf-c4bc-4385-b0ec-7f5a9ad73146" Title="SSL Class" Url="html/T_Furcadia_Security_SSL.htm">
         <HelpTOCNode Title="SSL Constructor " Url="html/M_Furcadia_Security_SSL__ctor.htm" />
         <HelpTOCNode Title="SSL Methods" Url="html/Methods_T_Furcadia_Security_SSL.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a56754a5-29e5-431a-9a26-e6093ad89e14" Title="SSL.SecureConnectionResults Class" Url="html/T_Furcadia_Security_SSL_SecureConnectionResults.htm">
-        <HelpTOCNode Id="01a3e697-2345-439d-a839-0b5750c5b64a" Title="SecureConnectionResults Properties" Url="html/Properties_T_Furcadia_Security_SSL_SecureConnectionResults.htm">
+      <HelpTOCNode Id="9cba183a-f19f-403c-b869-2b09800bc9d0" Title="SSL.SecureConnectionResults Class" Url="html/T_Furcadia_Security_SSL_SecureConnectionResults.htm">
+        <HelpTOCNode Id="df755653-b4b0-4e9b-800a-560bc90539b9" Title="SecureConnectionResults Properties" Url="html/Properties_T_Furcadia_Security_SSL_SecureConnectionResults.htm">
           <HelpTOCNode Title="AsyncException Property " Url="html/P_Furcadia_Security_SSL_SecureConnectionResults_AsyncException.htm" />
           <HelpTOCNode Title="SecureStream Property " Url="html/P_Furcadia_Security_SSL_SecureConnectionResults_SecureStream.htm" />
         </HelpTOCNode>
@@ -1140,43 +1141,43 @@
       </HelpTOCNode>
       <HelpTOCNode Title="SSL.SecureConnectionResultsCallback Delegate" Url="html/T_Furcadia_Security_SSL_SecureConnectionResultsCallback.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="10af8087-82fd-451b-b7ee-c0d8a62f2b78" Title="Furcadia.Text" Url="html/N_Furcadia_Text.htm">
-      <HelpTOCNode Id="f01ddfb8-9bef-4760-8dac-d879c6bfd847" Title="Base220 Class" Url="html/T_Furcadia_Text_Base220.htm">
-        <HelpTOCNode Id="863b0db0-080f-4c36-aa66-7ff16955a5dd" Title="Base220 Constructor " Url="html/Overload_Furcadia_Text_Base220__ctor.htm">
+    <HelpTOCNode Id="1713d70a-f3f5-494d-a4a0-02d4f1c1c659" Title="Furcadia.Text" Url="html/N_Furcadia_Text.htm">
+      <HelpTOCNode Id="c7af511c-72db-4141-a9ec-cd7e8063bfbe" Title="Base220 Class" Url="html/T_Furcadia_Text_Base220.htm">
+        <HelpTOCNode Id="685e433d-0399-4c81-986b-e5815c418f84" Title="Base220 Constructor " Url="html/Overload_Furcadia_Text_Base220__ctor.htm">
           <HelpTOCNode Title="Base220 Constructor " Url="html/M_Furcadia_Text_Base220__ctor.htm" />
           <HelpTOCNode Title="Base220 Constructor (Int32)" Url="html/M_Furcadia_Text_Base220__ctor_1.htm" />
           <HelpTOCNode Title="Base220 Constructor (String)" Url="html/M_Furcadia_Text_Base220__ctor_2.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="47321146-0016-47ad-840d-3c6788d4424e" Title="Base220 Methods" Url="html/Methods_T_Furcadia_Text_Base220.htm">
+        <HelpTOCNode Id="1482cc1a-f336-4afd-a184-c1af83a4a9fa" Title="Base220 Methods" Url="html/Methods_T_Furcadia_Text_Base220.htm">
           <HelpTOCNode Title="Base220StringLengeth Method " Url="html/M_Furcadia_Text_Base220_Base220StringLengeth.htm" />
           <HelpTOCNode Title="CompareTo Method " Url="html/M_Furcadia_Text_Base220_CompareTo.htm" />
           <HelpTOCNode Title="ConvertFromBase220 Method " Url="html/M_Furcadia_Text_Base220_ConvertFromBase220.htm" />
-          <HelpTOCNode Id="6cf64e36-3527-457c-906e-1ba65a73eb81" Title="ConvertToBase220 Method " Url="html/Overload_Furcadia_Text_Base220_ConvertToBase220.htm">
+          <HelpTOCNode Id="b3032c07-22ef-4aea-a5a6-0c51c9141f03" Title="ConvertToBase220 Method " Url="html/Overload_Furcadia_Text_Base220_ConvertToBase220.htm">
             <HelpTOCNode Title="ConvertToBase220 Method (Int32)" Url="html/M_Furcadia_Text_Base220_ConvertToBase220.htm" />
             <HelpTOCNode Title="ConvertToBase220 Method (Int32, Int32)" Url="html/M_Furcadia_Text_Base220_ConvertToBase220_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="c39c6aba-8fc0-4d73-8e7c-3ef1a90881ec" Title="Equals Method " Url="html/Overload_Furcadia_Text_Base220_Equals.htm">
+          <HelpTOCNode Id="bcbfd64f-8de9-4185-a1a1-930f33dec172" Title="Equals Method " Url="html/Overload_Furcadia_Text_Base220_Equals.htm">
             <HelpTOCNode Title="Equals Method (Int32)" Url="html/M_Furcadia_Text_Base220_Equals.htm" />
             <HelpTOCNode Title="Equals Method (Object)" Url="html/M_Furcadia_Text_Base220_Equals_1.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="FromString Method " Url="html/M_Furcadia_Text_Base220_FromString.htm" />
           <HelpTOCNode Title="GetHashCode Method " Url="html/M_Furcadia_Text_Base220_GetHashCode.htm" />
-          <HelpTOCNode Id="6a1497e7-948c-44fb-a062-6988c6fdf9b1" Title="ToByteArray Method " Url="html/Overload_Furcadia_Text_Base220_ToByteArray.htm">
+          <HelpTOCNode Id="bce1a59f-7ba2-4960-af99-522f09163507" Title="ToByteArray Method " Url="html/Overload_Furcadia_Text_Base220_ToByteArray.htm">
             <HelpTOCNode Title="ToByteArray Method " Url="html/M_Furcadia_Text_Base220_ToByteArray.htm" />
             <HelpTOCNode Title="ToByteArray Method (Int32)" Url="html/M_Furcadia_Text_Base220_ToByteArray_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="a8bd2147-8391-4d0b-a506-42b7d19612e2" Title="ToString Method " Url="html/Overload_Furcadia_Text_Base220_ToString.htm">
+          <HelpTOCNode Id="89f312dc-696e-41b2-b483-6dd6c064b2ae" Title="ToString Method " Url="html/Overload_Furcadia_Text_Base220_ToString.htm">
             <HelpTOCNode Title="ToString Method " Url="html/M_Furcadia_Text_Base220_ToString.htm" />
             <HelpTOCNode Title="ToString Method (Int32)" Url="html/M_Furcadia_Text_Base220_ToString_1.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="f19e4de9-0ab9-472d-82a8-1360266e6b52" Title="Base220 Operators and Type Conversions" Url="html/Operators_T_Furcadia_Text_Base220.htm">
+        <HelpTOCNode Id="66315f37-7612-49d2-a98f-fbd447b4d2d4" Title="Base220 Operators and Type Conversions" Url="html/Operators_T_Furcadia_Text_Base220.htm">
           <HelpTOCNode Title="Addition Operator " Url="html/M_Furcadia_Text_Base220_op_Addition.htm" />
           <HelpTOCNode Title="Division Operator " Url="html/M_Furcadia_Text_Base220_op_Division.htm" />
           <HelpTOCNode Title="Equality Operator " Url="html/M_Furcadia_Text_Base220_op_Equality.htm" />
           <HelpTOCNode Title="Explicit Conversion (Base220 to Int16)" Url="html/M_Furcadia_Text_Base220_op_Explicit.htm" />
           <HelpTOCNode Title="GreaterThan Operator " Url="html/M_Furcadia_Text_Base220_op_GreaterThan.htm" />
-          <HelpTOCNode Id="0c4f865f-bae0-4180-af50-359adc28e584" Title="Implicit Conversion Operators" Url="html/Overload_Furcadia_Text_Base220_op_Implicit.htm">
+          <HelpTOCNode Id="a0d77090-8e40-4b21-8566-c8cbd35953a1" Title="Implicit Conversion Operators" Url="html/Overload_Furcadia_Text_Base220_op_Implicit.htm">
             <HelpTOCNode Title="Implicit Conversion (Int16 to Base220)" Url="html/M_Furcadia_Text_Base220_op_Implicit_3.htm" />
             <HelpTOCNode Title="Implicit Conversion (Int32 to Base220)" Url="html/M_Furcadia_Text_Base220_op_Implicit_4.htm" />
             <HelpTOCNode Title="Implicit Conversion (String to Base220)" Url="html/M_Furcadia_Text_Base220_op_Implicit_5.htm" />
@@ -1191,41 +1192,41 @@
           <HelpTOCNode Title="Subtraction Operator " Url="html/M_Furcadia_Text_Base220_op_Subtraction.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="e443215e-40bb-4d53-851e-e2f55188df59" Title="Base95 Class" Url="html/T_Furcadia_Text_Base95.htm">
-        <HelpTOCNode Id="150dccd1-e9be-4215-8829-fd44d4372e61" Title="Base95 Constructor " Url="html/Overload_Furcadia_Text_Base95__ctor.htm">
+      <HelpTOCNode Id="44baafb4-354c-4554-a6a8-30c0c65825b7" Title="Base95 Class" Url="html/T_Furcadia_Text_Base95.htm">
+        <HelpTOCNode Id="77c60b1b-d6f4-4ecb-a079-41db3d2bab41" Title="Base95 Constructor " Url="html/Overload_Furcadia_Text_Base95__ctor.htm">
           <HelpTOCNode Title="Base95 Constructor " Url="html/M_Furcadia_Text_Base95__ctor.htm" />
           <HelpTOCNode Title="Base95 Constructor (String)" Url="html/M_Furcadia_Text_Base95__ctor_1.htm" />
           <HelpTOCNode Title="Base95 Constructor (UInt32)" Url="html/M_Furcadia_Text_Base95__ctor_2.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f504542d-0b37-4f41-87a7-573da8ef6d38" Title="Base95 Methods" Url="html/Methods_T_Furcadia_Text_Base95.htm">
+        <HelpTOCNode Id="de854b3d-8299-42cf-bb3a-959578d0a09e" Title="Base95 Methods" Url="html/Methods_T_Furcadia_Text_Base95.htm">
           <HelpTOCNode Title="CompareTo Method " Url="html/M_Furcadia_Text_Base95_CompareTo.htm" />
           <HelpTOCNode Title="ConvertFromBase95 Method " Url="html/M_Furcadia_Text_Base95_ConvertFromBase95.htm" />
-          <HelpTOCNode Id="6412cadd-1314-4177-be5b-2c9c85f7ae9f" Title="ConvertToBase95 Method " Url="html/Overload_Furcadia_Text_Base95_ConvertToBase95.htm">
+          <HelpTOCNode Id="d779df2f-bdba-44e6-ad94-b75f7dbd3707" Title="ConvertToBase95 Method " Url="html/Overload_Furcadia_Text_Base95_ConvertToBase95.htm">
             <HelpTOCNode Title="ConvertToBase95 Method (UInt32)" Url="html/M_Furcadia_Text_Base95_ConvertToBase95.htm" />
             <HelpTOCNode Title="ConvertToBase95 Method (UInt32, Int32)" Url="html/M_Furcadia_Text_Base95_ConvertToBase95_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="80991666-94ca-4080-a29b-22c7e95de898" Title="Equals Method " Url="html/Overload_Furcadia_Text_Base95_Equals.htm">
+          <HelpTOCNode Id="ab73460e-9f00-414d-a51a-76ed499d46df" Title="Equals Method " Url="html/Overload_Furcadia_Text_Base95_Equals.htm">
             <HelpTOCNode Title="Equals Method (Object)" Url="html/M_Furcadia_Text_Base95_Equals.htm" />
             <HelpTOCNode Title="Equals Method (UInt32)" Url="html/M_Furcadia_Text_Base95_Equals_1.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="FromString Method " Url="html/M_Furcadia_Text_Base95_FromString.htm" />
           <HelpTOCNode Title="GetHashCode Method " Url="html/M_Furcadia_Text_Base95_GetHashCode.htm" />
-          <HelpTOCNode Id="5e3aa316-7e66-4891-ac23-4a9b5c0d0c64" Title="ToByteArray Method " Url="html/Overload_Furcadia_Text_Base95_ToByteArray.htm">
+          <HelpTOCNode Id="4ab3dc68-ecbb-423a-be9d-25d0a28876dc" Title="ToByteArray Method " Url="html/Overload_Furcadia_Text_Base95_ToByteArray.htm">
             <HelpTOCNode Title="ToByteArray Method " Url="html/M_Furcadia_Text_Base95_ToByteArray.htm" />
             <HelpTOCNode Title="ToByteArray Method (Int32)" Url="html/M_Furcadia_Text_Base95_ToByteArray_1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="7eca80d1-9ea4-4bd7-a221-a9d7989b0c51" Title="ToString Method " Url="html/Overload_Furcadia_Text_Base95_ToString.htm">
+          <HelpTOCNode Id="7176614c-3af0-4985-a41b-8bad5c44bbf2" Title="ToString Method " Url="html/Overload_Furcadia_Text_Base95_ToString.htm">
             <HelpTOCNode Title="ToString Method " Url="html/M_Furcadia_Text_Base95_ToString.htm" />
             <HelpTOCNode Title="ToString Method (Int32)" Url="html/M_Furcadia_Text_Base95_ToString_1.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="66b5e3e4-4b06-4127-98f4-c6be0a7dac02" Title="Base95 Operators and Type Conversions" Url="html/Operators_T_Furcadia_Text_Base95.htm">
+        <HelpTOCNode Id="e3931660-371d-49e5-b433-808f7ddd6e65" Title="Base95 Operators and Type Conversions" Url="html/Operators_T_Furcadia_Text_Base95.htm">
           <HelpTOCNode Title="Addition Operator " Url="html/M_Furcadia_Text_Base95_op_Addition.htm" />
           <HelpTOCNode Title="Division Operator " Url="html/M_Furcadia_Text_Base95_op_Division.htm" />
           <HelpTOCNode Title="Equality Operator " Url="html/M_Furcadia_Text_Base95_op_Equality.htm" />
           <HelpTOCNode Title="Explicit Conversion (Base95 to UInt16)" Url="html/M_Furcadia_Text_Base95_op_Explicit.htm" />
           <HelpTOCNode Title="GreaterThan Operator " Url="html/M_Furcadia_Text_Base95_op_GreaterThan.htm" />
-          <HelpTOCNode Id="1eaeeaea-111b-440e-aeb7-1435f5b26dd9" Title="Implicit Conversion Operators" Url="html/Overload_Furcadia_Text_Base95_op_Implicit.htm">
+          <HelpTOCNode Id="923e0107-4fb7-4fbf-80c5-99256a1cfe27" Title="Implicit Conversion Operators" Url="html/Overload_Furcadia_Text_Base95_op_Implicit.htm">
             <HelpTOCNode Title="Implicit Conversion (String to Base95)" Url="html/M_Furcadia_Text_Base95_op_Implicit_3.htm" />
             <HelpTOCNode Title="Implicit Conversion (UInt16 to Base95)" Url="html/M_Furcadia_Text_Base95_op_Implicit_4.htm" />
             <HelpTOCNode Title="Implicit Conversion (UInt32 to Base95)" Url="html/M_Furcadia_Text_Base95_op_Implicit_5.htm" />
@@ -1239,15 +1240,15 @@
           <HelpTOCNode Title="Multiply Operator " Url="html/M_Furcadia_Text_Base95_op_Multiply.htm" />
           <HelpTOCNode Title="Subtraction Operator " Url="html/M_Furcadia_Text_Base95_op_Subtraction.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="9b8c5c28-394a-41e8-bbfe-01a0f06b636e" Title="Base95 Fields" Url="html/Fields_T_Furcadia_Text_Base95.htm">
+        <HelpTOCNode Id="f8247882-9ddc-44c4-9bef-237cbe2b5ca8" Title="Base95 Fields" Url="html/Fields_T_Furcadia_Text_Base95.htm">
           <HelpTOCNode Title="BASE Field" Url="html/F_Furcadia_Text_Base95_BASE.htm" />
           <HelpTOCNode Title="CHAR_OFFSET Field" Url="html/F_Furcadia_Text_Base95_CHAR_OFFSET.htm" />
           <HelpTOCNode Title="Value Field" Url="html/F_Furcadia_Text_Base95_Value.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="a705a0dc-448c-42f6-b2aa-7d10156437e7" Title="Character Class" Url="html/T_Furcadia_Text_Character.htm">
+      <HelpTOCNode Id="31127369-21ae-4b1d-989e-6003b29b5d9a" Title="Character Class" Url="html/T_Furcadia_Text_Character.htm">
         <HelpTOCNode Title="Character Constructor " Url="html/M_Furcadia_Text_Character__ctor.htm" />
-        <HelpTOCNode Id="52c3d7ac-b984-4529-af3e-194f8b8ae974" Title="Character Properties" Url="html/Properties_T_Furcadia_Text_Character.htm">
+        <HelpTOCNode Id="b14ba6b7-6fbe-4b1c-b573-1341e010f8bd" Title="Character Properties" Url="html/Properties_T_Furcadia_Text_Character.htm">
           <HelpTOCNode Title="ColorString Property " Url="html/P_Furcadia_Text_Character_ColorString.htm" />
           <HelpTOCNode Title="Description Property " Url="html/P_Furcadia_Text_Character_Description.htm" />
           <HelpTOCNode Title="LastLogin Property " Url="html/P_Furcadia_Text_Character_LastLogin.htm" />
@@ -1255,14 +1256,14 @@
           <HelpTOCNode Title="Name Property " Url="html/P_Furcadia_Text_Character_Name.htm" />
           <HelpTOCNode Title="Password Property " Url="html/P_Furcadia_Text_Character_Password.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="3c8c652b-67e3-4056-ad8f-3ec816161bd7" Title="Character Methods" Url="html/Methods_T_Furcadia_Text_Character.htm">
+        <HelpTOCNode Id="834ae642-a748-4a6c-b78e-3d63d2cf555b" Title="Character Methods" Url="html/Methods_T_Furcadia_Text_Character.htm">
           <HelpTOCNode Title="Load Method " Url="html/M_Furcadia_Text_Character_Load.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="9e8005b3-de77-49c2-aea9-c6b00596ea78" Title="FurcadiaMarkup Class" Url="html/T_Furcadia_Text_FurcadiaMarkup.htm">
+      <HelpTOCNode Id="9da97d5b-6180-4cbf-9d4d-775bc36ff2f1" Title="FurcadiaMarkup Class" Url="html/T_Furcadia_Text_FurcadiaMarkup.htm">
         <HelpTOCNode Title="FurcadiaMarkup Constructor " Url="html/M_Furcadia_Text_FurcadiaMarkup__ctor.htm" />
         <HelpTOCNode Title="FurcadiaMarkup Methods" Url="html/Methods_T_Furcadia_Text_FurcadiaMarkup.htm" />
-        <HelpTOCNode Id="fe2adf02-3e93-4b3c-a0cd-860c5ab92058" Title="FurcadiaMarkup Fields" Url="html/Fields_T_Furcadia_Text_FurcadiaMarkup.htm">
+        <HelpTOCNode Id="4d91d626-d23d-4619-aeb6-1fa8d868de34" Title="FurcadiaMarkup Fields" Url="html/Fields_T_Furcadia_Text_FurcadiaMarkup.htm">
           <HelpTOCNode Title="ChannelNameFilter Field" Url="html/F_Furcadia_Text_FurcadiaMarkup_ChannelNameFilter.htm" />
           <HelpTOCNode Title="CookieToMeREGEX Field" Url="html/F_Furcadia_Text_FurcadiaMarkup_CookieToMeREGEX.htm" />
           <HelpTOCNode Title="DescFilter Field" Url="html/F_Furcadia_Text_FurcadiaMarkup_DescFilter.htm" />
@@ -1274,43 +1275,43 @@
           <HelpTOCNode Title="YouSayFilter Field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouSayFilter.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="b9f337ad-13a3-43fe-b0e0-f6d533f814ce" Title="FurcIni Class" Url="html/T_Furcadia_Text_FurcIni.htm">
+      <HelpTOCNode Id="09a1c716-2c17-48a1-b628-2b55c032c4a9" Title="FurcIni Class" Url="html/T_Furcadia_Text_FurcIni.htm">
         <HelpTOCNode Title="FurcIni Constructor " Url="html/M_Furcadia_Text_FurcIni__ctor.htm" />
-        <HelpTOCNode Id="0744e9f6-1125-4782-b40e-50eeb70dd42d" Title="FurcIni Methods" Url="html/Methods_T_Furcadia_Text_FurcIni.htm">
+        <HelpTOCNode Id="4826e18e-c9a6-4642-87e9-4a93a8e7ac3c" Title="FurcIni Methods" Url="html/Methods_T_Furcadia_Text_FurcIni.htm">
           <HelpTOCNode Title="GetUserSetting Method " Url="html/M_Furcadia_Text_FurcIni_GetUserSetting.htm" />
           <HelpTOCNode Title="LoadFurcadiaSettings Method " Url="html/M_Furcadia_Text_FurcIni_LoadFurcadiaSettings.htm" />
           <HelpTOCNode Title="SaveFurcadiaSettings Method " Url="html/M_Furcadia_Text_FurcIni_SaveFurcadiaSettings.htm" />
           <HelpTOCNode Title="SetUserSetting Method " Url="html/M_Furcadia_Text_FurcIni_SetUserSetting.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="17fb37de-573a-4c4a-8484-bf316a01dc7c" Title="IniParser Class" Url="html/T_Furcadia_Text_IniParser.htm">
+      <HelpTOCNode Id="14b75e73-0b85-4afe-95e1-c66f121ae4e0" Title="IniParser Class" Url="html/T_Furcadia_Text_IniParser.htm">
         <HelpTOCNode Title="IniParser Constructor " Url="html/M_Furcadia_Text_IniParser__ctor.htm" />
-        <HelpTOCNode Id="fdd5215b-c2d3-412a-ab99-1023120259c0" Title="IniParser Methods" Url="html/Methods_T_Furcadia_Text_IniParser.htm">
-          <HelpTOCNode Id="3f789e40-d8d4-4fea-88b4-651d598c65e1" Title="AddSetting Method " Url="html/Overload_Furcadia_Text_IniParser_AddSetting.htm">
+        <HelpTOCNode Id="d80f6ad6-9ca5-4aaa-b658-cd86fd0215ed" Title="IniParser Methods" Url="html/Methods_T_Furcadia_Text_IniParser.htm">
+          <HelpTOCNode Id="57b03aa5-2c76-4821-8953-ab9a339f832b" Title="AddSetting Method " Url="html/Overload_Furcadia_Text_IniParser_AddSetting.htm">
             <HelpTOCNode Title="AddSetting Method (String, String)" Url="html/M_Furcadia_Text_IniParser_AddSetting.htm" />
             <HelpTOCNode Title="AddSetting Method (String, String, String)" Url="html/M_Furcadia_Text_IniParser_AddSetting_1.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="DeleteSetting Method " Url="html/M_Furcadia_Text_IniParser_DeleteSetting.htm" />
           <HelpTOCNode Title="EnumSection Method " Url="html/M_Furcadia_Text_IniParser_EnumSection.htm" />
           <HelpTOCNode Title="GetSetting Method " Url="html/M_Furcadia_Text_IniParser_GetSetting.htm" />
-          <HelpTOCNode Id="fe01962a-45a9-45ef-8d68-ff5cea9ac587" Title="SaveSettings Method " Url="html/Overload_Furcadia_Text_IniParser_SaveSettings.htm">
+          <HelpTOCNode Id="5ab3c965-0e33-4122-b862-6ee967a24a1f" Title="SaveSettings Method " Url="html/Overload_Furcadia_Text_IniParser_SaveSettings.htm">
             <HelpTOCNode Title="SaveSettings Method " Url="html/M_Furcadia_Text_IniParser_SaveSettings.htm" />
             <HelpTOCNode Title="SaveSettings Method (String)" Url="html/M_Furcadia_Text_IniParser_SaveSettings_1.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="0731b84f-085b-4bb6-b7f9-8a6dbedc89e9" Title="Settings Class" Url="html/T_Furcadia_Text_Settings.htm">
-        <HelpTOCNode Id="312805dd-0f6f-429d-9fd5-63ba0c1e1333" Title="Settings Constructor " Url="html/Overload_Furcadia_Text_Settings__ctor.htm">
+      <HelpTOCNode Id="c3d40aef-9d38-4bab-a6ec-b1445f1d5d7c" Title="Settings Class" Url="html/T_Furcadia_Text_Settings.htm">
+        <HelpTOCNode Id="2e3e1efc-00eb-4db7-9b03-5aae03532a80" Title="Settings Constructor " Url="html/Overload_Furcadia_Text_Settings__ctor.htm">
           <HelpTOCNode Title="Settings Constructor " Url="html/M_Furcadia_Text_Settings__ctor.htm" />
           <HelpTOCNode Title="Settings Constructor (Int32)" Url="html/M_Furcadia_Text_Settings__ctor_1.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="97e65f31-c7c7-4c00-b285-680cf5fd56fa" Title="Settings Properties" Url="html/Properties_T_Furcadia_Text_Settings.htm">
+        <HelpTOCNode Id="a0d9cc9e-78a8-48c4-a829-e6d71c7bca63" Title="Settings Properties" Url="html/Properties_T_Furcadia_Text_Settings.htm">
           <HelpTOCNode Title="Localhost Property " Url="html/P_Furcadia_Text_Settings_Localhost.htm" />
           <HelpTOCNode Title="LocalPort Property " Url="html/P_Furcadia_Text_Settings_LocalPort.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="ba2e41db-eb8f-4ec4-b082-64977907ff4b" Title="Settings Methods" Url="html/Methods_T_Furcadia_Text_Settings.htm">
+        <HelpTOCNode Id="fcdf30b6-d953-4756-8f2d-8e60276dd1e2" Title="Settings Methods" Url="html/Methods_T_Furcadia_Text_Settings.htm">
           <HelpTOCNode Title="InitializeFurcadiaSettings Method " Url="html/M_Furcadia_Text_Settings_InitializeFurcadiaSettings.htm" />
-          <HelpTOCNode Id="ec56b756-6fc9-451b-a6bd-3ddc6b9d36ea" Title="Load Method " Url="html/Overload_Furcadia_Text_Settings_Load.htm">
+          <HelpTOCNode Id="3a610a62-1806-488b-ab11-c5e0d0e2a24b" Title="Load Method " Url="html/Overload_Furcadia_Text_Settings_Load.htm">
             <HelpTOCNode Title="Load(T) Method (String)" Url="html/M_Furcadia_Text_Settings_Load__1.htm" />
             <HelpTOCNode Title="Load Method (String)" Url="html/M_Furcadia_Text_Settings_Load.htm" />
           </HelpTOCNode>
@@ -1321,13 +1322,13 @@
   </HelpTOCNode>
   <HelpTOCNode Title="Glossary" Url="html/2d3fdb7f-0542-4fb7-8f0a-a38eda8039f0.htm" />
   <HelpTOCNode Title="Appendix" Url="html/05d2020c-0adc-4a01-a8dc-62c78634c5fc.htm" />
-  <HelpTOCNode Id="ab34e386-e76e-4553-a893-6978629cdd69" Title="About" Url="html/64d441eb-864b-4f9e-994f-2d87632ea597.htm">
+  <HelpTOCNode Id="58dd3bd6-ae8c-41ac-84c5-79157d8e59b0" Title="About" Url="html/64d441eb-864b-4f9e-994f-2d87632ea597.htm">
     <HelpTOCNode Title="Project Credits" Url="html/65fa49e4-c1d8-4fa4-86d0-12dd7be5dd4d.htm" />
     <HelpTOCNode Title="Contribute" Url="html/c7ed588e-a969-400d-8893-39ed661e45a4.htm" />
     <HelpTOCNode Title="Bibilography" Url="html/9fbfdcb2-e20d-4006-b879-31ec0c08346d.htm" />
     <HelpTOCNode Title="BugTraq (Bug Reports)" Url="html/1711b873-c91f-4780-8e67-6c39206cb317.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="a7d2b051-196d-4707-954d-d9eebc7d3f6f" Title="Placeholder #1">
+  <HelpTOCNode Id="78e99eb4-48ab-4623-89bd-f237654e5de6" Title="Placeholder #1">
     <HelpTOCNode Title="Placeholder #2" Url="" />
     <HelpTOCNode Title="Placeholder #3" Url="" />
   </HelpTOCNode>
