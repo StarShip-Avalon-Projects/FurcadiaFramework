@@ -42,12 +42,12 @@
         <list class="ordered">
           <listItem>
             <para>
-              <legacyBold>Client to Server Queue Manager</legacyBold> This will Absorb all the SendToServer instructions and spoon
+              <legacyBold>Client to Server Queue Manager(<codeEntityReference qualifyHint="true" autoUpgrade="true">
+                T:Furcadia.Net.Utils.ServerQue
+              </codeEntityReference> )</legacyBold> This will Absorb all the SendToServer instructions and spoon
               feed them to the game server without overloading the Servers' Buffer. In here we'll handle
               Throat-Tired Syndrome and NoEndurance.  
-              <codeEntityReference qualifyHint="true" autoUpgrade="true">
-                T:Furcadia.Net.Utils.ServerQue
-              </codeEntityReference> 
+    
           </para>
           </listItem>
           <listItem>
@@ -66,7 +66,7 @@
           </listItem>
           <listItem>
             <para>
-              <legacyBold>Pounce Connection</legacyBold> Player online detection.
+              <legacyBold>Pounce Connection(<codeEntityReference qualifyHint="false" autoUpgrade="true">N:Furcadia.Net.Pounce</codeEntityReference>)</legacyBold> Player online detection.
             </para>
           </listItem>
           <listItem>
@@ -76,7 +76,7 @@
           </listItem>
           <listItem>
             <para>
-              <legacyBold>Server to Client Instruction Handling</legacyBold> Parsing Server data for basic Proxy operation with events
+              <legacyBold>Server to Client Instruction Handling(<codeEntityReference qualifyHint="false">N:Furcadia.Net.Utils.ServerParser</codeEntityReference>)</legacyBold> Parsing Server data for basic Proxy operation with events
               leading out for custom code links. The events will return Server Data and EventArgs. This will
               apply to Text channel parsing as well.
             </para>
