@@ -18,7 +18,7 @@
         Alternatively, you can download this document in a Compiled Help File format
         <externalLink>
           <linkText>here</linkText>
-          <linkUri>../Furcadia_Framework_Help.chm</linkUri>
+          <linkUri>https://starship-avalon-projects.github.io/FurcadiaFramework/Furcadia_Framework_Help.chm</linkUri>
         </externalLink>.
       </para>
     </introduction>
@@ -44,18 +44,24 @@
             <para>
               <legacyBold>Client to Server Queue Manager</legacyBold> This will Absorb all the SendToServer instructions and spoon
               feed them to the game server without overloading the Servers' Buffer. In here we'll handle
-              Throat-Tired Syndrome and NoEndurance.   
+              Throat-Tired Syndrome and NoEndurance.  
+              <codeEntityReference qualifyHint="true" autoUpgrade="true">
+                T:Furcadia.Net.Utils.ServerQue
+              </codeEntityReference> 
           </para>
           </listItem>
           <listItem>
             <para>
-              <legacyBold>Dream Patron List Manager</legacyBold> This will maintain a list of players in the current dream and keep
+              <legacyBold>Dream Patron List Manager(<codeEntityReference qualifyHint="false">N:Furcadia.Net.Dream</codeEntityReference>)</legacyBold> This will maintain a list of players in the current dream and keep
               track of basic stats such as current player position, costume settings, taking advantage of
               <externalLink>
                 <linkText>DragonSpeak Parameters</linkText>
                 <linkAlternateText>DragonSpeak Parameters</linkAlternateText>
                 <linkUri>http://cms.furcadia.com/creations/dreammaking/dragonspeak/dsparams</linkUri>
               </externalLink>.
+           
+               
+           
             </para>
           </listItem>
           <listItem>

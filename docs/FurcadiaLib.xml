@@ -3866,858 +3866,6 @@
             Connection lost
             </summary>
     </member>
-    <member name="T:Furcadia.Net.DREAM">
-      <summary>
-            Current Dream information
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.DREAM.#ctor">
-      <summary>
-            List of Furres in the dream.
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.DREAM.Dispose(System.Boolean)">
-      <summary>
-            Implements Idisposable
-            </summary>
-      <param name="disposing">
-        <markup>
-          <include item="SMCAutoDocDisposeParam">
-            <parameter>Furcadia.Net.DREAM</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="F:Furcadia.Net.DREAM.FurreList">
-      <summary>
-            Dream List Furcadia requires Clients to handle thier own Dream
-            Lists See
-            <para>
-            http://dev.furcadia.com/docs New Movement for Spawn and Remove packets
-            </para><para>
-            **Spawn is out dated. New information requires a 4byte for AFK
-              flag at the end
-            </para><para>
-            As of V31, Color code has changed.
-            </para></summary>
-    </member>
-    <member name="P:Furcadia.Net.DREAM.IsModern">
-      <summary>
-            Is this dream Modern Mode?
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DREAM.Lines">
-      <summary>
-            Number of DS Lines
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DREAM.Name">
-      <summary>
-            Name of the dream
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DREAM.Owner">
-      <summary>
-            Dreams uploader character
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DREAM.Rating">
-      <summary>
-            Furcadia Dream rating
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DREAM.Title">
-      <summary>
-            Dream title
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DREAM.URL">
-      <summary>
-            Dreams full Furcadia Drean URL
-            <para>
-            IE: 'fdl furc://DreamOwner:DreamTitle/EntryCode#
-            </para></summary>
-    </member>
-    <member name="T:Furcadia.Net.FURRE">
-      <summary>
-            Class for Proxies and bots to use Furrre Data provided by the game server.
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.FURRE.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.FURRE</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.FURRE.#ctor(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.FURRE</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="FurreID">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>FurreID</parameter>
-            <parameter>M:Furcadia.Net.FURRE.#ctor(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.FURRE.#ctor(System.String)">
-      <summary>
-            Furre Constructor with Name
-            </summary>
-      <param name="Name">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>Name</parameter>
-            <parameter>M:Furcadia.Net.FURRE.#ctor(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.AFK">
-      <summary>
-            Away from keyboard time
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Badge">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.Badge</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Color">
-      <summary>
-            Furcadia Color Code (v31c)
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Desc">
-      <summary>
-            Furcadia Description
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.FURRE.Equals(System.Object)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURRE.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="obj">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>obj</parameter>
-            <parameter>M:Furcadia.Net.FURRE.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURRE.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.FloorObjectCurrent">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.FloorObjectCurrent</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.FloorObjectOld">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.FloorObjectOld</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.FURRE.GetHashCode">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURRE.GetHashCode</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURRE.GetHashCode</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Group">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.Group</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.ID">
-      <summary>
-            Furre ID
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.LastPosition">
-      <summary>
-            The Position the Furre Moved from
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.LastStat">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.LastStat</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Level">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.Level</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Message">
-      <summary>
-            Last Message Furre had
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Name">
-      <summary>
-            Furcadia Name
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.PawObjectCurrent">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.PawObjectCurrent</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.PawObjectOld">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.PawObjectOld</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Position">
-      <summary>
-            Current position where the Furre is standing
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Shape">
-      <summary>
-            Avatar Shape, (it's Look)
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.ShortName">
-      <summary>
-            Furcadia Shortname format for Furre Name
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.SourceX">
-      <summary>
-            the X Position the Furre moved from
-            <para>
-            Obsolete. Use LasPosition as FurrePosition
-            </para></summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.SourceY">
-      <summary>
-            the Y Position the Furre moved from
-            <para>
-            Obsolete. Use LasPosition as FurrePosition
-            </para></summary>
-    </member>
-    <member name="M:Furcadia.Net.FURRE.ToFurcadiaID">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToFurcadiaID</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToFurcadiaID</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURRE.ToFurcadiaID(System.Func{Furcadia.Net.FURRE,System.Int32})">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToFurcadiaID(System.Func{Furcadia.Net.FURRE,System.Int32})</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="format">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>format</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToFurcadiaID(System.Func{Furcadia.Net.FURRE,System.Int32})</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToFurcadiaID(System.Func{Furcadia.Net.FURRE,System.Int32})</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURRE.ToString">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToString</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToString</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURRE.ToString(System.Func{Furcadia.Net.FURRE,System.String})">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToString(System.Func{Furcadia.Net.FURRE,System.String})</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="format">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>format</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToString(System.Func{Furcadia.Net.FURRE,System.String})</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURRE.ToString(System.Func{Furcadia.Net.FURRE,System.String})</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Visible">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.Visible</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.WasVisible">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURRE.WasVisible</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.X">
-      <summary>
-            the X Position the Furre is currently standing at
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURRE.Y">
-      <summary>
-            the Y Position the Furre Standing At
-            </summary>
-    </member>
-    <member name="T:Furcadia.Net.FURREList">
-      <summary>
-            Furre List information for a Furcadia Dream
-            <para>
-            This class acts like an enhanced List(of &gt;T&lt;) because you can
-            Select a Furre by Item as well as index
-            </para></summary>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.FURREList</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.Add(Furcadia.Net.FURRE)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Add(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="Furre">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>Furre</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Add(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.Clear">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Clear</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.Contains(Furcadia.Net.FURRE)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Contains(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="Furre">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>Furre</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Contains(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Contains(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.Contains(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Contains(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="FurreID">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>FurreID</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Contains(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Contains(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.CopyTo(Furcadia.Net.FURRE[],System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.CopyTo(Furcadia.Net.FURRE[],System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="array">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>array</parameter>
-            <parameter>M:Furcadia.Net.FURREList.CopyTo(Furcadia.Net.FURRE[],System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="arrayIndex">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>arrayIndex</parameter>
-            <parameter>M:Furcadia.Net.FURREList.CopyTo(Furcadia.Net.FURRE[],System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.CopyTo(System.Array,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.CopyTo(System.Array,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="array">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>array</parameter>
-            <parameter>M:Furcadia.Net.FURREList.CopyTo(System.Array,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="index">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>index</parameter>
-            <parameter>M:Furcadia.Net.FURREList.CopyTo(System.Array,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.Net.FURREList.Count">
-      <summary>
-            Number of Avatars in the Dream
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.Dispose(System.Boolean)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocDisposeBool">
-            <parameter>Furcadia.Net.FURREList</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="disposing">
-        <markup>
-          <include item="SMCAutoDocDisposeParam">
-            <parameter>Furcadia.Net.FURREList</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="F:Furcadia.Net.FURREList.fList">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.FURREList.fList</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.GerFurreByName(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.GerFurreByName(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sname">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sname</parameter>
-            <parameter>M:Furcadia.Net.FURREList.GerFurreByName(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURREList.GerFurreByName(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.GetEnumerator">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.GetEnumerator</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURREList.GetEnumerator</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.GetFurreByID(System.Int32)">
-      <summary>
-            get a furre from the furrelist by its integer idd
-            </summary>
-      <param name="FurreID">
-            Furre ID as integer
-            </param>
-      <returns>
-            Furre
-            </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.GetFurreByID(System.String)">
-      <summary>
-            Get's a Furre from the Dream List bu it's ID
-            </summary>
-      <param name="FurreID">
-            Base220 4 byte string representing the Furre ID
-            </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURREList.GetFurreByID(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.IndexOf(Furcadia.Net.FURRE)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.IndexOf(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="Furre">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>Furre</parameter>
-            <parameter>M:Furcadia.Net.FURREList.IndexOf(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURREList.IndexOf(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.Insert(System.Int32,Furcadia.Net.FURRE)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Insert(System.Int32,Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="index">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>index</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Insert(System.Int32,Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="item">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>item</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Insert(System.Int32,Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.Net.FURREList.IsReadOnly">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURREList.IsReadOnly</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURREList.IsSynchronized">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURREList.IsSynchronized</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.FURREList.Item(Furcadia.Net.FURRE)">
-      <summary>
-            Gets or set the furre at index of fur
-            </summary>
-      <param name="fur">
-            Furre
-            </param>
-      <returns></returns>
-    </member>
-    <member name="P:Furcadia.Net.FURREList.Item(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURREList.Item(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="index"></param>
-      <returns></returns>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.Remove(Furcadia.Net.FURRE)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Remove(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="item">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>item</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Remove(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Remove(Furcadia.Net.FURRE)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.Remove(System.String)">
-      <summary>
-            Removes a Furre based on their Furre ID
-            </summary>
-      <param name="FurreID">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>FurreID</parameter>
-            <parameter>M:Furcadia.Net.FURREList.Remove(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.FURREList.RemoveAt(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.FURREList.RemoveAt(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="index">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>index</parameter>
-            <parameter>M:Furcadia.Net.FURREList.RemoveAt(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.Net.FURREList.SyncRoot">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.FURREList.SyncRoot</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
     <member name="T:Furcadia.Net.INetMessage">
       <summary>
         <markup>
@@ -5821,6 +4969,858 @@
           </include>
         </markup>
       </param>
+    </member>
+    <member name="T:Furcadia.Net.Dream.DREAM">
+      <summary>
+            Current Dream information
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.DREAM.#ctor">
+      <summary>
+            List of Furres in the dream.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.DREAM.Dispose(System.Boolean)">
+      <summary>
+            Implements Idisposable
+            </summary>
+      <param name="disposing">
+        <markup>
+          <include item="SMCAutoDocDisposeParam">
+            <parameter>Furcadia.Net.Dream.DREAM</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="F:Furcadia.Net.Dream.DREAM.FurreList">
+      <summary>
+            Dream List Furcadia requires Clients to handle thier own Dream
+            Lists See
+            <para>
+            http://dev.furcadia.com/docs New Movement for Spawn and Remove packets
+            </para><para>
+            **Spawn is out dated. New information requires a 4byte for AFK
+              flag at the end
+            </para><para>
+            As of V31, Color code has changed.
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.IsModern">
+      <summary>
+            Is this dream Modern Mode?
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Lines">
+      <summary>
+            Number of DS Lines
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Name">
+      <summary>
+            Name of the dream
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Owner">
+      <summary>
+            Dreams uploader character
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Rating">
+      <summary>
+            Furcadia Dream rating
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Title">
+      <summary>
+            Dream title
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.URL">
+      <summary>
+            Dreams full Furcadia Drean URL
+            <para>
+            IE: 'fdl furc://DreamOwner:DreamTitle/EntryCode#
+            </para></summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.FURRE">
+      <summary>
+            Class for Proxies and bots to use Furrre Data provided by the game server.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Dream.FURRE</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.#ctor(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Dream.FURRE</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="FurreID">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>FurreID</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.#ctor(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.#ctor(System.String)">
+      <summary>
+            Furre Constructor with Name
+            </summary>
+      <param name="Name">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Name</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.AFK">
+      <summary>
+            Away from keyboard time
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Badge">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.Badge</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Color">
+      <summary>
+            Furcadia Color Code (v31c)
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Desc">
+      <summary>
+            Furcadia Description
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.Equals(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="obj">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>obj</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.FloorObjectCurrent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.FloorObjectCurrent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.FloorObjectOld">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.FloorObjectOld</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.GetHashCode">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.GetHashCode</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.GetHashCode</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Group">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.Group</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.ID">
+      <summary>
+            Furre ID
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.LastPosition">
+      <summary>
+            The Position the Furre Moved from
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.LastStat">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.LastStat</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Level">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.Level</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Message">
+      <summary>
+            Last Message Furre had
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Name">
+      <summary>
+            Furcadia Name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.PawObjectCurrent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.PawObjectCurrent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.PawObjectOld">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.PawObjectOld</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Position">
+      <summary>
+            Current position where the Furre is standing
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Shape">
+      <summary>
+            Avatar Shape, (it's Look)
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.ShortName">
+      <summary>
+            Furcadia Shortname format for Furre Name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.SourceX">
+      <summary>
+            the X Position the Furre moved from
+            <para>
+            Obsolete. Use LasPosition as FurrePosition
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.SourceY">
+      <summary>
+            the Y Position the Furre moved from
+            <para>
+            Obsolete. Use LasPosition as FurrePosition
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.ToFurcadiaID">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToFurcadiaID</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToFurcadiaID</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.ToFurcadiaID(System.Func{Furcadia.Net.Dream.FURRE,System.Int32})">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToFurcadiaID(System.Func{Furcadia.Net.Dream.FURRE,System.Int32})</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToFurcadiaID(System.Func{Furcadia.Net.Dream.FURRE,System.Int32})</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToFurcadiaID(System.Func{Furcadia.Net.Dream.FURRE,System.Int32})</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.ToString">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToString</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToString</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.ToString(System.Func{Furcadia.Net.Dream.FURRE,System.String})">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToString(System.Func{Furcadia.Net.Dream.FURRE,System.String})</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToString(System.Func{Furcadia.Net.Dream.FURRE,System.String})</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.ToString(System.Func{Furcadia.Net.Dream.FURRE,System.String})</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Visible">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.Visible</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.WasVisible">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.WasVisible</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.X">
+      <summary>
+            the X Position the Furre is currently standing at
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Y">
+      <summary>
+            the Y Position the Furre Standing At
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.FURREList">
+      <summary>
+            Furre List information for a Furcadia Dream
+            <para>
+            This class acts like an enhanced List(of &gt;T&lt;) because you can
+            Select a Furre by Item as well as index
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Dream.FURREList</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.Add(Furcadia.Net.Dream.FURRE)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Add(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="Furre">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Furre</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Add(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.Clear">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Clear</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.Contains(Furcadia.Net.Dream.FURRE)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Contains(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="Furre">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Furre</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Contains(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Contains(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.Contains(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Contains(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="FurreID">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>FurreID</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Contains(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Contains(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.CopyTo(Furcadia.Net.Dream.FURRE[],System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.CopyTo(Furcadia.Net.Dream.FURRE[],System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="array">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>array</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.CopyTo(Furcadia.Net.Dream.FURRE[],System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="arrayIndex">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>arrayIndex</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.CopyTo(Furcadia.Net.Dream.FURRE[],System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.CopyTo(System.Array,System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.CopyTo(System.Array,System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="array">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>array</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.CopyTo(System.Array,System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="index">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.CopyTo(System.Array,System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURREList.Count">
+      <summary>
+            Number of Avatars in the Dream
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.Dispose(System.Boolean)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocDisposeBool">
+            <parameter>Furcadia.Net.Dream.FURREList</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="disposing">
+        <markup>
+          <include item="SMCAutoDocDisposeParam">
+            <parameter>Furcadia.Net.Dream.FURREList</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="F:Furcadia.Net.Dream.FURREList.fList">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Dream.FURREList.fList</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.GerFurreByName(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.GerFurreByName(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sname">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sname</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.GerFurreByName(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.GerFurreByName(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.GetEnumerator">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.GetEnumerator</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.GetEnumerator</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.GetFurreByID(System.Int32)">
+      <summary>
+            get a furre from the furrelist by its integer idd
+            </summary>
+      <param name="FurreID">
+            Furre ID as integer
+            </param>
+      <returns>
+            Furre
+            </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.GetFurreByID(System.String)">
+      <summary>
+            Get's a Furre from the Dream List bu it's ID
+            </summary>
+      <param name="FurreID">
+            Base220 4 byte string representing the Furre ID
+            </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.GetFurreByID(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.IndexOf(Furcadia.Net.Dream.FURRE)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.IndexOf(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="Furre">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Furre</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.IndexOf(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.IndexOf(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.Insert(System.Int32,Furcadia.Net.Dream.FURRE)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Insert(System.Int32,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="index">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Insert(System.Int32,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="item">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>item</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Insert(System.Int32,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURREList.IsReadOnly">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURREList.IsReadOnly</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURREList.IsSynchronized">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURREList.IsSynchronized</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURREList.Item(Furcadia.Net.Dream.FURRE)">
+      <summary>
+            Gets or set the furre at index of fur
+            </summary>
+      <param name="fur">
+            Furre
+            </param>
+      <returns></returns>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURREList.Item(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURREList.Item(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="index"></param>
+      <returns></returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.Remove(Furcadia.Net.Dream.FURRE)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Remove(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="item">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>item</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Remove(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Remove(Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.Remove(System.String)">
+      <summary>
+            Removes a Furre based on their Furre ID
+            </summary>
+      <param name="FurreID">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>FurreID</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Remove(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURREList.RemoveAt(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.RemoveAt(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="index">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.RemoveAt(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURREList.SyncRoot">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURREList.SyncRoot</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="T:Furcadia.Net.Options.ClientOptions">
       <summary>
@@ -7208,7 +7208,7 @@
         </markup>
       </summary>
     </member>
-    <member name="M:Furcadia.Net.Utils.ServerParser.UpdateColorString.#ctor(Furcadia.Net.FURRE@,System.String)">
+    <member name="M:Furcadia.Net.Utils.ServerParser.UpdateColorString.#ctor(Furcadia.Net.Dream.FURRE@,System.String)">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
@@ -7221,7 +7221,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>Player</parameter>
-            <parameter>M:Furcadia.Net.Utils.ServerParser.UpdateColorString.#ctor(Furcadia.Net.FURRE@,System.String)</parameter>
+            <parameter>M:Furcadia.Net.Utils.ServerParser.UpdateColorString.#ctor(Furcadia.Net.Dream.FURRE@,System.String)</parameter>
           </include>
         </markup>
       </param>
@@ -7230,7 +7230,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>ServerInstruction</parameter>
-            <parameter>M:Furcadia.Net.Utils.ServerParser.UpdateColorString.#ctor(Furcadia.Net.FURRE@,System.String)</parameter>
+            <parameter>M:Furcadia.Net.Utils.ServerParser.UpdateColorString.#ctor(Furcadia.Net.Dream.FURRE@,System.String)</parameter>
           </include>
         </markup>
       </param>
