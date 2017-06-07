@@ -3932,6 +3932,30 @@
         </markup>
       </param>
     </member>
+    <member name="T:Furcadia.Net.NetChannelEventArgs">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.NetChannelEventArgs</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetChannelEventArgs.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.NetChannelEventArgs</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.NetChannelEventArgs.Channel">
+      <summary>
+            Server Text Channel
+            </summary>
+    </member>
     <member name="T:Furcadia.Net.NetClientEventArgs">
       <summary>
             Client Status Event Arguments.
@@ -3945,21 +3969,21 @@
       <summary>
             Constructor
             </summary>
-      <param name="message">
+      <param name="clientdata">
             Optional Message
             </param>
       <param name="phase">
             Connection Phase
             </param>
     </member>
+    <member name="P:Furcadia.Net.NetClientEventArgs.ClientData">
+      <summary>
+            optional string message
+            </summary>
+    </member>
     <member name="F:Furcadia.Net.NetClientEventArgs.ConnectPhase">
       <summary>
             Status of the Furcadia Client Connection
-            </summary>
-    </member>
-    <member name="F:Furcadia.Net.NetClientEventArgs.Message">
-      <summary>
-            optional string message
             </summary>
     </member>
     <member name="T:Furcadia.Net.NetMessage">
@@ -4288,14 +4312,6 @@
             Process ID for closing Furcadia.exe
             </summary>
     </member>
-    <member name="M:Furcadia.Net.NetProxy.SendLineToServer(System.String)">
-      <summary>
-            Send Message to Server through the Load Ballancer
-            </summary>
-      <param name="message">
-            Client to server Instruction
-            </param>
-    </member>
     <member name="M:Furcadia.Net.NetProxy.SendToClient(Furcadia.Net.INetMessage)">
       <summary>
         <markup>
@@ -4545,6 +4561,52 @@
             Server to Client instructions
             </summary>
     </member>
+    <member name="T:Furcadia.Net.ParseChannelArgs">
+      <summary>
+            Parse Server Instruction set
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.ParseChannelArgs.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.ParseChannelArgs</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.ParseChannelArgs.#ctor(Furcadia.Net.ServerInstructionType,Furcadia.Net.ConnectionPhase)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.ParseChannelArgs</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="ServerInstruction">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ServerInstruction</parameter>
+            <parameter>M:Furcadia.Net.ParseChannelArgs.#ctor(Furcadia.Net.ServerInstructionType,Furcadia.Net.ConnectionPhase)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="phase">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>phase</parameter>
+            <parameter>M:Furcadia.Net.ParseChannelArgs.#ctor(Furcadia.Net.ServerInstructionType,Furcadia.Net.ConnectionPhase)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.ParseChannelArgs.Channel">
+      <summary>
+            Server Text Channel
+            </summary>
+    </member>
     <member name="T:Furcadia.Net.ParseServerArgs">
       <summary>
             Parse Server Instruction set
@@ -4573,6 +4635,11 @@
           </include>
         </markup>
       </summary>
+    </member>
+    <member name="P:Furcadia.Net.ParseServerArgs.ServerData">
+      <summary>
+            optional string message
+            </summary>
     </member>
     <member name="P:Furcadia.Net.ParseServerArgs.ServerInstruction">
       <summary>
@@ -5113,6 +5180,16 @@
             Furcadia Description
             </summary>
     </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.DSSpecies">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.DSSpecies</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="M:Furcadia.Net.Dream.FURRE.Equals(System.Object)">
       <summary>
         <markup>
@@ -5156,6 +5233,26 @@
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
             <parameter>P:Furcadia.Net.Dream.FURRE.FloorObjectOld</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.FrameInfo">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.FrameInfo</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Gender">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.Gender</parameter>
           </include>
         </markup>
       </summary>
@@ -5227,6 +5324,78 @@
       <summary>
             Furcadia Name
             </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.op_Equality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.op_Equality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="a">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>a</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.op_Equality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="b">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.op_Equality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.op_Equality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.op_Inequality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.op_Inequality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="a">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>a</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.op_Inequality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="b">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.op_Inequality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.op_Inequality(Furcadia.Net.Dream.FURRE,Furcadia.Net.Dream.FURRE)</parameter>
+          </include>
+        </markup>
+      </returns>
     </member>
     <member name="P:Furcadia.Net.Dream.FURRE.PawObjectCurrent">
       <summary>
@@ -5401,7 +5570,7 @@
       <summary>
             Furre List information for a Furcadia Dream
             <para>
-            This class acts like an enhanced List(of &gt;T&lt;) because you can
+            This class acts like an enhanced List(of &lt;T&gt;) because you can
             Select a Furre by Item as well as index
             </para></summary>
     </member>
@@ -5821,6 +5990,10 @@
           </include>
         </markup>
       </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURREList.ToIList">
+      <summary>
+            Convert Furre List to <see cref="T:System.Collections.IList" /></summary>
     </member>
     <member name="T:Furcadia.Net.Options.ClientOptions">
       <summary>
@@ -6417,20 +6590,6 @@
         </markup>
       </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.FormatSpokenCommandForServer(System.String@)">
-      <summary>
-            Text Channel Prefixes (shout,whisper emote, Raw Server command)
-            </summary>
-      <param name="arg">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>arg</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.FormatSpokenCommandForServer(System.String@)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.GetEnumInt``1(``0)">
       <summary>
         <markup>
@@ -6492,7 +6651,7 @@
             Error Event Handler
             </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerChannel(System.String,System.Boolean@)">
+    <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerChannel(System.String,System.Boolean)">
       <summary>
             Parse Channel Data
             </summary>
@@ -6546,18 +6705,6 @@
         </markup>
       </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.ProcessSpokenCommands(System.String@)">
-      <summary>
-            Format basic furcadia commands and send to server
-            <para>
-            We also mirror the client to server banish system.
-            </para><para>
-            This maybe a good place to place Proxy/Bot commands for controls
-            </para></summary>
-      <param name="data">
-            Raw Client to Server instruction
-            </param>
-    </member>
     <member name="F:Furcadia.Net.Proxy.ProxySession.Repq">
       <summary>
         <markup>
@@ -6567,14 +6714,6 @@
           </include>
         </markup>
       </summary>
-    </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.SendLineToServer(System.String)">
-      <summary>
-            Send a Message with line terminator to Server through the Load Ballancer
-            </summary>
-      <param name="message">
-            Client to server Instruction
-            </param>
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.SendToClient(System.String)">
       <summary>
@@ -6597,8 +6736,7 @@
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.SendToServer(System.String)">
       <summary>
-            Send a message with out a line terminator to Server through the
-            Load Ballancer
+            Send Message to Server through the Load Ballancer
             </summary>
       <param name="message">
             Client to server Instruction
@@ -6628,11 +6766,37 @@
             Track the Server Status
             </summary>
     </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.sndServer(System.String@)">
+      <summary>
+            Format basic furcadia commands and send to server
+            <para>
+            We also mirror the client to server banish system.
+            </para><para>
+            This maybe a good place to place Proxy/Bot commands for controls
+            </para></summary>
+      <param name="data">
+            Raw Client to Server instruction
+            </param>
+    </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.StandAlone">
       <summary>
             Allows the Furcadia Client to Disconnect from the session,
             allowing the session to remain connected to the game server
             </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.TextToServer(System.String@)">
+      <summary>
+            Text Channel Prefixes (shout,whisper emote, Raw Server command)
+            </summary>
+      <param name="arg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>arg</parameter>
+            <parameter>M:Furcadia.Net.Proxy.ProxySession.TextToServer(System.String@)</parameter>
+          </include>
+        </markup>
+      </param>
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ThroatTired">
       <summary>
@@ -7009,6 +7173,55 @@
             Windows 32 Registry path
             </summary>
     </member>
+    <member name="T:Furcadia.Net.Utils.ServerObjects.DataObject">
+      <summary>
+            Base object fo sharing custom data for server instructions
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerObjects.DataObject.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Utils.ServerObjects.DataObject</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerObjects.DiceObject">
+      <summary>
+            Dice for the @roll channel
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerObjects.DiceObject.#ctor">
+      <summary>
+            Consgructor
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceCompnentMatch">
+      <summary>
+            + or - Modifyer
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceCount">
+      <summary>
+            Number of Dice
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceModifyer">
+      <summary>
+            Die offset +/- n
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceResult">
+      <summary>
+            Sum of the Dice Result
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceSides">
+      <summary>
+            Number of sides per Die
+            </summary>
+    </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.BaseServerInstruction">
       <summary>
             Server instruction object base class
@@ -7076,6 +7289,16 @@
             Channel Name
             </summary>
     </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.ChannelText">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Utils.ServerParser.ChannelObject.ChannelText</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.Player">
       <summary>
             Active Triggering avatar
@@ -7104,40 +7327,15 @@
         </markup>
       </param>
     </member>
-    <member name="P:Furcadia.Net.Utils.ServerParser.DiceRolls.DiceCompnentMatch">
+    <member name="P:Furcadia.Net.Utils.ServerParser.DiceRolls.Dice">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.Utils.ServerParser.DiceRolls.DiceCompnentMatch</parameter>
+            <parameter>P:Furcadia.Net.Utils.ServerParser.DiceRolls.Dice</parameter>
           </include>
         </markup>
       </summary>
-    </member>
-    <member name="P:Furcadia.Net.Utils.ServerParser.DiceRolls.DiceCount">
-      <summary>
-            Number of Dice
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Utils.ServerParser.DiceRolls.DiceModifyer">
-      <summary>
-            Die offset +/- n
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Utils.ServerParser.DiceRolls.DiceResult">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.Utils.ServerParser.DiceRolls.DiceResult</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.Utils.ServerParser.DiceRolls.DiceSides">
-      <summary>
-            Number of sides per Die
-            </summary>
     </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.RemoveAvatar">
       <summary>
@@ -7239,260 +7437,6 @@
       <summary>
             the Active Player
             </summary>
-    </member>
-    <member name="T:Furcadia.Security.SecureTcpClient">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Security.SecureTcpClient</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Security.SecureTcpClient</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="callback">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>callback</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Security.SecureTcpClient</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="callback">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>callback</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="certValidationCallback">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>certValidationCallback</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback,System.Security.Authentication.SslProtocols)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Security.SecureTcpClient</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="callback">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>callback</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback,System.Security.Authentication.SslProtocols)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="certValidationCallback">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>certValidationCallback</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback,System.Security.Authentication.SslProtocols)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sslProtocols">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sslProtocols</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.#ctor(Furcadia.Security.SSL.SecureConnectionResultsCallback,System.Net.Security.RemoteCertificateValidationCallback,System.Security.Authentication.SslProtocols)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.Security.SecureTcpClient.CheckCertificateRevocation">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Security.SecureTcpClient.CheckCertificateRevocation</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Security.SecureTcpClient.Close">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.Close</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Security.SecureTcpClient.Dispose">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocDispose">
-            <parameter>Furcadia.Security.SecureTcpClient</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Security.SecureTcpClient.Finalize">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.Finalize</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="remoteHostName">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>remoteHostName</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="remoteEndPoint">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>remoteEndPoint</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="remoteHostName">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>remoteHostName</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="remoteEndPoint">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>remoteEndPoint</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="clientCertificates">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>clientCertificates</parameter>
-            <parameter>M:Furcadia.Security.SecureTcpClient.StartConnecting(System.String,System.Net.IPEndPoint,System.Security.Cryptography.X509Certificates.X509CertificateCollection)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="T:Furcadia.Security.SSL">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Security.SSL</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Security.SSL.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Security.SSL</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="T:Furcadia.Security.SSL.SecureConnectionResults">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Security.SSL.SecureConnectionResults</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Security.SSL.SecureConnectionResults.AsyncException">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Security.SSL.SecureConnectionResults.AsyncException</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Security.SSL.SecureConnectionResults.SecureStream">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Security.SSL.SecureConnectionResults.SecureStream</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="T:Furcadia.Security.SSL.SecureConnectionResultsCallback">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Security.SSL.SecureConnectionResultsCallback</parameter>
-          </include>
-        </markup>
-      </summary>
     </member>
     <member name="T:Furcadia.Text.Base220">
       <summary>
