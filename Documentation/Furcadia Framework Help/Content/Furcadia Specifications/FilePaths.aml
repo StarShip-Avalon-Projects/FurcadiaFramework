@@ -202,7 +202,7 @@
       </content>
     </section>
     <relatedTopics>
-      <codeEntityReference qualifyHint="true" autoUpgrade="true">T:Furcadia.IO.Paths</codeEntityReference>
+
       <!--localdir.ini-->
       <link xlink:href="0622bf6b-9933-4acb-95eb-b5ddfa4be5e7" />
       <!--DSC File paths-->
@@ -211,6 +211,18 @@
         <linkText>Credits: Furcadia Forums</linkText>
         <linkUri>http://forums.furcadia.com/index.php?furcadia_session_id=300293-cdlq-pvp&amp;showtopic=63786</linkUri>
       </externalLink>
+      <externalLink>
+        <linkText>Furcadia Flash install (localdir.ini)</linkText>
+        <linkAlternateText>Official Flash Install document</linkAlternateText>
+        <linkUri>https://cms.furcadia.com/help/download/localdir</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Furcadia Diagnostic Tools</linkText>
+        <linkAlternateText>Visit Furcadia Diagnostic tools</linkAlternateText>
+        <linkUri>    https://github.com/StarShip-Avalon-Projects/Furcadia-Diagnostics/</linkUri>
+      </externalLink>
+
+      <codeEntityReference qualifyHint="true" autoUpgrade="true">T:Furcadia.IO.Paths</codeEntityReference>
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

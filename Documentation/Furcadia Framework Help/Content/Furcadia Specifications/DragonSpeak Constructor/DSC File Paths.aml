@@ -70,6 +70,18 @@
 
     <relatedTopics>
       <link xlink:href="a23d6f60-970b-4881-ad5f-077563316c63" />
+      <externalLink>
+        <linkText>Furcadia Flash install (localdir.ini)</linkText>
+        <linkAlternateText>Official Flash Install document</linkAlternateText>
+        <linkUri>https://cms.furcadia.com/help/download/localdir</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Furcadia Diagnostic Tools</linkText>
+        <linkAlternateText>Visit Furcadia Diagnostic tools</linkAlternateText>
+        <linkUri>    https://github.com/StarShip-Avalon-Projects/Furcadia-Diagnostics/</linkUri>
+      </externalLink>
+
+      <codeEntityReference qualifyHint="true" autoUpgrade="true">T:Furcadia.IO.Paths</codeEntityReference>
       
       <!-- One or more of the following:
            - A local link
