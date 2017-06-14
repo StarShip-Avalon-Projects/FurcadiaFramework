@@ -35,27 +35,35 @@
   <HelpKINode Title="Auth enumeration member" Url="html/T_Furcadia_Net_ConnectionPhase.htm" />
   <HelpKINode Title="AutoFrameDelay enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="Avatar class">
-    <HelpKINode Title="Avatar Class" Url="html/T_Furcadia_Avatar.htm" />
-    <HelpKINode Title="about Avatar class" Url="html/T_Furcadia_Avatar.htm" />
-    <HelpKINode Title="constructor" Url="html/M_Furcadia_Avatar__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Avatar.htm" />
+    <HelpKINode Title="Avatar Class" Url="html/T_Furcadia_Net_Dream_Avatar.htm" />
+    <HelpKINode Title="about Avatar class" Url="html/T_Furcadia_Net_Dream_Avatar.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_Dream_Avatar__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Dream_Avatar.htm" />
   </HelpKINode>
   <HelpKINode Title="Avatar property" Url="html/P_Furcadia_Movement_ColorString_Avatar.htm" />
-  <HelpKINode Title="Avatar.Avatar constructor" Url="html/M_Furcadia_Avatar__ctor.htm" />
+  <HelpKINode Title="Avatar.Avatar constructor" Url="html/M_Furcadia_Net_Dream_Avatar__ctor.htm" />
+  <HelpKINode Title="Avatar.av_DIR enumeration" Url="html/T_Furcadia_Net_Dream_Avatar_av_DIR.htm" />
+  <HelpKINode Title="Avatar.av_POSE enumeration" Url="html/T_Furcadia_Net_Dream_Avatar_av_POSE.htm" />
   <HelpKINode Title="Avatar.Frame structure">
-    <HelpKINode Title="Avatar.Frame Structure" Url="html/T_Furcadia_Avatar_Frame.htm" />
-    <HelpKINode Title="about Avatar.Frame structure" Url="html/T_Furcadia_Avatar_Frame.htm" />
+    <HelpKINode Title="Avatar.Frame Structure" Url="html/T_Furcadia_Net_Dream_Avatar_Frame.htm" />
+    <HelpKINode Title="about Avatar.Frame structure" Url="html/T_Furcadia_Net_Dream_Avatar_Frame.htm" />
   </HelpKINode>
-  <HelpKINode Title="Avatar.Frame.Clear method" Url="html/M_Furcadia_Avatar_Frame_Clear.htm" />
-  <HelpKINode Title="Avatar.Frame.dir field" Url="html/F_Furcadia_Avatar_Frame_dir.htm" />
-  <HelpKINode Title="Avatar.Frame.DS_Number field" Url="html/F_Furcadia_Avatar_Frame_DS_Number.htm" />
-  <HelpKINode Title="Avatar.Frame.gender field" Url="html/F_Furcadia_Avatar_Frame_gender.htm" />
-  <HelpKINode Title="Avatar.Frame.pose field" Url="html/F_Furcadia_Avatar_Frame_pose.htm" />
-  <HelpKINode Title="Avatar.Frame.Spec field" Url="html/F_Furcadia_Avatar_Frame_Spec.htm" />
-  <HelpKINode Title="Avatar.Frame.Wings field" Url="html/F_Furcadia_Avatar_Frame_Wings.htm" />
-  <HelpKINode Title="Avatar.PrimeTable method" Url="html/M_Furcadia_Avatar_PrimeTable.htm" />
-  <HelpKINode Title="Avatar.SpecNum method" Url="html/M_Furcadia_Avatar_SpecNum.htm" />
+  <HelpKINode Title="Avatar.Frame.Clear method" Url="html/M_Furcadia_Net_Dream_Avatar_Frame_Clear.htm" />
+  <HelpKINode Title="Avatar.Frame.dir field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_dir.htm" />
+  <HelpKINode Title="Avatar.Frame.DS_Number field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_DS_Number.htm" />
+  <HelpKINode Title="Avatar.Frame.gender field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_gender.htm" />
+  <HelpKINode Title="Avatar.Frame.pose field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_pose.htm" />
+  <HelpKINode Title="Avatar.Frame.Spec field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_Spec.htm" />
+  <HelpKINode Title="Avatar.Frame.Wings field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_Wings.htm" />
+  <HelpKINode Title="Avatar.FurrePose enumeration" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
+  <HelpKINode Title="Avatar.PrimeTable method" Url="html/M_Furcadia_Net_Dream_Avatar_PrimeTable.htm" />
+  <HelpKINode Title="Avatar.SpecNum method" Url="html/M_Furcadia_Net_Dream_Avatar_SpecNum.htm" />
   <HelpKINode Title="AvatarID field" Url="html/F_Furcadia_Net_Utils_ServerParser_RemoveAvatar_AvatarID.htm" />
+  <HelpKINode Title="AVPOSE_LIE enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_POSE.htm" />
+  <HelpKINode Title="AVPOSE_SIT enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_POSE.htm" />
+  <HelpKINode Title="AVPOSE_STAND enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_POSE.htm" />
+  <HelpKINode Title="AVPOSE_WALK0 enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_POSE.htm" />
+  <HelpKINode Title="AVPOSE_WALK1 enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_POSE.htm" />
   <HelpKINode Title="Badge property">
     <HelpKINode Title="ColorString.Badge Property " Url="html/P_Furcadia_Movement_ColorString_Badge.htm" />
     <HelpKINode Title="FURRE.Badge Property " Url="html/P_Furcadia_Net_Dream_FURRE_Badge.htm" />
@@ -238,7 +246,7 @@
   <HelpKINode Title="CheckFriendName method" Url="html/M_Furcadia_Net_Pounce_PounceConnection_CheckFriendName.htm" />
   <HelpKINode Title="CheckFriendNames method" Url="html/M_Furcadia_Net_Pounce_PounceConnection_CheckFriendNames.htm" />
   <HelpKINode Title="Clear method">
-    <HelpKINode Title="Avatar.Frame.Clear Method " Url="html/M_Furcadia_Avatar_Frame_Clear.htm" />
+    <HelpKINode Title="Avatar.Frame.Clear Method " Url="html/M_Furcadia_Net_Dream_Avatar_Frame_Clear.htm" />
     <HelpKINode Title="FURREList.Clear Method " Url="html/M_Furcadia_Net_Dream_FURREList_Clear.htm" />
   </HelpKINode>
   <HelpKINode Title="ClearFriends method" Url="html/M_Furcadia_Net_Pounce_PounceConnection_ClearFriends.htm" />
@@ -427,7 +435,8 @@
   <HelpKINode Title="DiceRolls.Dice property" Url="html/P_Furcadia_Net_Utils_ServerParser_DiceRolls_Dice.htm" />
   <HelpKINode Title="DiceRolls.DiceRolls constructor" Url="html/M_Furcadia_Net_Utils_ServerParser_DiceRolls__ctor.htm" />
   <HelpKINode Title="DiceSides property" Url="html/P_Furcadia_Net_Utils_ServerObjects_DiceObject_DiceSides.htm" />
-  <HelpKINode Title="dir field" Url="html/F_Furcadia_Avatar_Frame_dir.htm" />
+  <HelpKINode Title="dir field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_dir.htm" />
+  <HelpKINode Title="Direction property" Url="html/P_Furcadia_Net_Dream_FURRE_Direction.htm" />
   <HelpKINode Title="Disconnect method" Url="html/M_Furcadia_Net_NetProxy_Disconnect.htm" />
   <HelpKINode Title="Disconnected enumeration member" Url="html/T_Furcadia_Net_ConnectionPhase.htm" />
   <HelpKINode Title="DisplayText enumeration member" Url="html/T_Furcadia_Net_ServerInstructionType.htm" />
@@ -468,7 +477,7 @@
   <HelpKINode Title="DREAM.URL property" Url="html/P_Furcadia_Net_Dream_DREAM_URL.htm" />
   <HelpKINode Title="DreamsPath property" Url="html/P_Furcadia_IO_Paths_DreamsPath.htm" />
   <HelpKINode Title="DSSpecies property" Url="html/P_Furcadia_Net_Dream_FURRE_DSSpecies.htm" />
-  <HelpKINode Title="DS_Number field" Url="html/F_Furcadia_Avatar_Frame_DS_Number.htm" />
+  <HelpKINode Title="DS_Number field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_DS_Number.htm" />
   <HelpKINode Title="effectNumber field">
     <HelpKINode Title="MapPosition.effectNumber Field" Url="html/F_Furcadia_FurcMap_MapPosition_effectNumber.htm" />
     <HelpKINode Title="MapTile.effectNumber Field" Url="html/F_Furcadia_FurcMap_MapTile_effectNumber.htm" />
@@ -522,9 +531,9 @@
     <HelpKINode Title="Frame Structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="about Frame structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
-    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Avatar_Frame.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Avatar_Frame.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_Dream_Avatar_Frame.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Dream_Avatar_Frame.htm" />
   </HelpKINode>
   <HelpKINode Title="Frame.FrameFormat field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FrameFormat.htm" />
   <HelpKINode Title="Frame.FrameFormats enumeration" Url="html/T_Furcadia_Drawing_Graphics_Frame_FrameFormats.htm" />
@@ -541,7 +550,6 @@
   <HelpKINode Title="Frame.Pos.Y field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
   <HelpKINode Title="Frame.Width field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Width.htm" />
   <HelpKINode Title="FrameFormat field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FrameFormat.htm" />
-  <HelpKINode Title="FrameInfo property" Url="html/P_Furcadia_Net_Dream_FURRE_FrameInfo.htm" />
   <HelpKINode Title="FramePos field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FramePos.htm" />
   <HelpKINode Title="Frames field" Url="html/F_Furcadia_Drawing_Graphics_Shape_Frames.htm" />
   <HelpKINode Title="FromString method">
@@ -550,8 +558,6 @@
   </HelpKINode>
   <HelpKINode Title="Fur property" Url="html/P_Furcadia_Movement_ColorString_Fur.htm" />
   <HelpKINode Title="Furcadia namespace" Url="html/N_Furcadia.htm" />
-  <HelpKINode Title="Furcadia.Avatar class" Url="html/T_Furcadia_Avatar.htm" />
-  <HelpKINode Title="Furcadia.Avatar.Frame structure" Url="html/T_Furcadia_Avatar_Frame.htm" />
   <HelpKINode Title="Furcadia.Badges class" Url="html/T_Furcadia_Badges.htm" />
   <HelpKINode Title="Furcadia.Drawing namespace" Url="html/N_Furcadia_Drawing.htm" />
   <HelpKINode Title="Furcadia.Drawing.FurrePosition class" Url="html/T_Furcadia_Drawing_FurrePosition.htm" />
@@ -598,6 +604,11 @@
   <HelpKINode Title="Furcadia.Net.DirectConnection.ClientBase.ErrorEventHandler delegate" Url="html/T_Furcadia_Net_DirectConnection_ClientBase_ErrorEventHandler.htm" />
   <HelpKINode Title="Furcadia.Net.DirectConnection.NetConnection class" Url="html/T_Furcadia_Net_DirectConnection_NetConnection.htm" />
   <HelpKINode Title="Furcadia.Net.Dream namespace" Url="html/N_Furcadia_Net_Dream.htm" />
+  <HelpKINode Title="Furcadia.Net.Dream.Avatar class" Url="html/T_Furcadia_Net_Dream_Avatar.htm" />
+  <HelpKINode Title="Furcadia.Net.Dream.Avatar.av_DIR enumeration" Url="html/T_Furcadia_Net_Dream_Avatar_av_DIR.htm" />
+  <HelpKINode Title="Furcadia.Net.Dream.Avatar.av_POSE enumeration" Url="html/T_Furcadia_Net_Dream_Avatar_av_POSE.htm" />
+  <HelpKINode Title="Furcadia.Net.Dream.Avatar.Frame structure" Url="html/T_Furcadia_Net_Dream_Avatar_Frame.htm" />
+  <HelpKINode Title="Furcadia.Net.Dream.Avatar.FurrePose enumeration" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
   <HelpKINode Title="Furcadia.Net.Dream.DREAM class" Url="html/T_Furcadia_Net_Dream_DREAM.htm" />
   <HelpKINode Title="Furcadia.Net.Dream.FURRE class" Url="html/T_Furcadia_Net_Dream_FURRE.htm" />
   <HelpKINode Title="Furcadia.Net.Dream.FURREList class" Url="html/T_Furcadia_Net_Dream_FURREList.htm" />
@@ -766,12 +777,12 @@
   <HelpKINode Title="FURRE.Badge property" Url="html/P_Furcadia_Net_Dream_FURRE_Badge.htm" />
   <HelpKINode Title="FURRE.Color property" Url="html/P_Furcadia_Net_Dream_FURRE_Color.htm" />
   <HelpKINode Title="FURRE.Desc property" Url="html/P_Furcadia_Net_Dream_FURRE_Desc.htm" />
+  <HelpKINode Title="FURRE.Direction property" Url="html/P_Furcadia_Net_Dream_FURRE_Direction.htm" />
   <HelpKINode Title="FURRE.DSSpecies property" Url="html/P_Furcadia_Net_Dream_FURRE_DSSpecies.htm" />
   <HelpKINode Title="FURRE.Equality operator" Url="html/M_Furcadia_Net_Dream_FURRE_op_Equality.htm" />
   <HelpKINode Title="FURRE.Equals method" Url="html/M_Furcadia_Net_Dream_FURRE_Equals.htm" />
   <HelpKINode Title="FURRE.FloorObjectCurrent property" Url="html/P_Furcadia_Net_Dream_FURRE_FloorObjectCurrent.htm" />
   <HelpKINode Title="FURRE.FloorObjectOld property" Url="html/P_Furcadia_Net_Dream_FURRE_FloorObjectOld.htm" />
-  <HelpKINode Title="FURRE.FrameInfo property" Url="html/P_Furcadia_Net_Dream_FURRE_FrameInfo.htm" />
   <HelpKINode Title="FURRE.FURRE constructor" Url="html/Overload_Furcadia_Net_Dream_FURRE__ctor.htm" />
   <HelpKINode Title="FURRE.Gender property" Url="html/P_Furcadia_Net_Dream_FURRE_Gender.htm" />
   <HelpKINode Title="FURRE.GetHashCode method" Url="html/M_Furcadia_Net_Dream_FURRE_GetHashCode.htm" />
@@ -785,8 +796,8 @@
   <HelpKINode Title="FURRE.Name property" Url="html/P_Furcadia_Net_Dream_FURRE_Name.htm" />
   <HelpKINode Title="FURRE.PawObjectCurrent property" Url="html/P_Furcadia_Net_Dream_FURRE_PawObjectCurrent.htm" />
   <HelpKINode Title="FURRE.PawObjectOld property" Url="html/P_Furcadia_Net_Dream_FURRE_PawObjectOld.htm" />
+  <HelpKINode Title="FURRE.Pose property" Url="html/P_Furcadia_Net_Dream_FURRE_Pose.htm" />
   <HelpKINode Title="FURRE.Position property" Url="html/P_Furcadia_Net_Dream_FURRE_Position.htm" />
-  <HelpKINode Title="FURRE.Shape property" Url="html/P_Furcadia_Net_Dream_FURRE_Shape.htm" />
   <HelpKINode Title="FURRE.ShortName property" Url="html/P_Furcadia_Net_Dream_FURRE_ShortName.htm" />
   <HelpKINode Title="FURRE.SourceX property" Url="html/P_Furcadia_Net_Dream_FURRE_SourceX.htm" />
   <HelpKINode Title="FURRE.SourceY property" Url="html/P_Furcadia_Net_Dream_FURRE_SourceY.htm" />
@@ -849,7 +860,7 @@
   </HelpKINode>
   <HelpKINode Title="GameServerIp property" Url="html/P_Furcadia_Net_Utils_Utilities_GameServerIp.htm" />
   <HelpKINode Title="GameServerPort property" Url="html/P_Furcadia_Net_Options_ClientOptions_GameServerPort.htm" />
-  <HelpKINode Title="gender field" Url="html/F_Furcadia_Avatar_Frame_gender.htm" />
+  <HelpKINode Title="gender field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_gender.htm" />
   <HelpKINode Title="Gender property">
     <HelpKINode Title="ColorString.Gender Property " Url="html/P_Furcadia_Movement_ColorString_Gender.htm" />
     <HelpKINode Title="FURRE.Gender Property " Url="html/P_Furcadia_Net_Dream_FURRE_Gender.htm" />
@@ -908,8 +919,8 @@
   <HelpKINode Title="HasFlag method" Url="html/M_Furcadia_Movement_CharacterFlags_HasFlag.htm" />
   <HelpKINode Title="HasShare property" Url="html/P_Furcadia_Net_Proxy_ProxySession_HasShare.htm" />
   <HelpKINode Title="Header field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_Header.htm" />
-  <HelpKINode Title="height field" Url="html/F_Furcadia_Drawing_ViewArea_height.htm" />
   <HelpKINode Title="Height field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Height.htm" />
+  <HelpKINode Title="height field" Url="html/F_Furcadia_Drawing_ViewArea_height.htm" />
   <HelpKINode Title="Height property" Url="html/P_Furcadia_FurcMap_Map_Height.htm" />
   <HelpKINode Title="Helper class">
     <HelpKINode Title="Helper Class" Url="html/T_Furcadia_Drawing_Helper.htm" />
@@ -1038,6 +1049,7 @@
     <HelpKINode Title="Base95.LessThan Operator " Url="html/M_Furcadia_Text_Base95_op_LessThan.htm" />
   </HelpKINode>
   <HelpKINode Title="Level property" Url="html/P_Furcadia_Net_Dream_FURRE_Level.htm" />
+  <HelpKINode Title="LieDown enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
   <HelpKINode Title="Lines property" Url="html/P_Furcadia_Net_Dream_DREAM_Lines.htm" />
   <HelpKINode Title="Load method">
     <HelpKINode Title="Character.Load Method " Url="html/M_Furcadia_Text_Character_Load.htm" />
@@ -1161,6 +1173,7 @@
     <HelpKINode Title="PounceClient.PounceFurre.Name Property " Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_Name.htm" />
   </HelpKINode>
   <HelpKINode Title="NameFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_NameFilter.htm" />
+  <HelpKINode Title="NE enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_DIR.htm" />
   <HelpKINode Title="NetChannelEventArgs class">
     <HelpKINode Title="NetChannelEventArgs Class" Url="html/T_Furcadia_Net_NetChannelEventArgs.htm" />
     <HelpKINode Title="about NetChannelEventArgs class" Url="html/T_Furcadia_Net_NetChannelEventArgs.htm" />
@@ -1261,12 +1274,14 @@
   <HelpKINode Title="NetServerEventArgs.NetServerEventArgs constructor" Url="html/Overload_Furcadia_Net_NetServerEventArgs__ctor.htm" />
   <HelpKINode Title="NetServerEventArgs.ServerInstruction property" Url="html/P_Furcadia_Net_NetServerEventArgs_ServerInstruction.htm" />
   <HelpKINode Title="NoEndurance property" Url="html/P_Furcadia_Net_Utils_ServerQue_NoEndurance.htm" />
+  <HelpKINode Title="None enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
   <HelpKINode Title="NumberOfDreamsOnMainMaps property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_NumberOfDreamsOnMainMaps.htm" />
   <HelpKINode Title="NumFrames field" Url="html/F_Furcadia_Drawing_Graphics_Shape_NumFrames.htm" />
   <HelpKINode Title="NumShapes field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_NumShapes.htm" />
   <HelpKINode Title="NumSteps field" Url="html/F_Furcadia_Drawing_Graphics_Shape_NumSteps.htm" />
   <HelpKINode Title="NumToEnum(Of T) method" Url="html/M_Furcadia_Badges_NumToEnum__1.htm" />
   <HelpKINode Title="NumToEnum&lt;T&gt; method" Url="html/M_Furcadia_Badges_NumToEnum__1.htm" />
+  <HelpKINode Title="NW enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_DIR.htm" />
   <HelpKINode Title="objectNumber field">
     <HelpKINode Title="MapPosition.objectNumber Field" Url="html/F_Furcadia_FurcMap_MapPosition_objectNumber.htm" />
     <HelpKINode Title="MapTile.objectNumber Field" Url="html/F_Furcadia_FurcMap_MapTile_objectNumber.htm" />
@@ -1388,7 +1403,8 @@
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame_Pos.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame_Pos.htm" />
   </HelpKINode>
-  <HelpKINode Title="pose field" Url="html/F_Furcadia_Avatar_Frame_pose.htm" />
+  <HelpKINode Title="pose field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_pose.htm" />
+  <HelpKINode Title="Pose property" Url="html/P_Furcadia_Net_Dream_FURRE_Pose.htm" />
   <HelpKINode Title="Position property" Url="html/P_Furcadia_Net_Dream_FURRE_Position.htm" />
   <HelpKINode Title="PosX enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="PosY enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
@@ -1452,7 +1468,7 @@
   <HelpKINode Title="PreventSeasonalAvatars property" Url="html/P_Furcadia_FurcMap_Map_PreventSeasonalAvatars.htm" />
   <HelpKINode Title="PreventTabListing property" Url="html/P_Furcadia_FurcMap_Map_PreventTabListing.htm" />
   <HelpKINode Title="PrimeTable method">
-    <HelpKINode Title="Avatar.PrimeTable Method " Url="html/M_Furcadia_Avatar_PrimeTable.htm" />
+    <HelpKINode Title="Avatar.PrimeTable Method " Url="html/M_Furcadia_Net_Dream_Avatar_PrimeTable.htm" />
     <HelpKINode Title="Badges.PrimeTable Method " Url="html/M_Furcadia_Badges_PrimeTable.htm" />
   </HelpKINode>
   <HelpKINode Title="ProcessID property" Url="html/P_Furcadia_Net_NetProxy_ProcessID.htm" />
@@ -1651,6 +1667,7 @@
   <HelpKINode Title="SaveFurcadiaSettings method" Url="html/M_Furcadia_Text_FurcIni_SaveFurcadiaSettings.htm" />
   <HelpKINode Title="SaveSettings method" Url="html/Overload_Furcadia_Text_IniParser_SaveSettings.htm" />
   <HelpKINode Title="ScreenshotsPath property" Url="html/P_Furcadia_IO_Paths_ScreenshotsPath.htm" />
+  <HelpKINode Title="SE enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_DIR.htm" />
   <HelpKINode Title="Sections property" Url="html/P_Furcadia_IO_IniFile_Sections.htm" />
   <HelpKINode Title="SendServer method">
     <HelpKINode Title="ClientBase.SendServer Method " Url="html/Overload_Furcadia_Net_DirectConnection_ClientBase_SendServer.htm" />
@@ -1737,7 +1754,6 @@
   <HelpKINode Title="SetUserSetting method" Url="html/M_Furcadia_Text_FurcIni_SetUserSetting.htm" />
   <HelpKINode Title="SetValue method" Url="html/M_Furcadia_IO_IniFile_IniSection_IniKey_SetValue.htm" />
   <HelpKINode Title="setWallAt method" Url="html/M_Furcadia_FurcMap_Map_setWallAt.htm" />
-  <HelpKINode Title="Shape property" Url="html/P_Furcadia_Net_Dream_FURRE_Shape.htm" />
   <HelpKINode Title="Shape structure">
     <HelpKINode Title="Shape Structure" Url="html/T_Furcadia_Drawing_Graphics_Shape.htm" />
     <HelpKINode Title="about Shape structure" Url="html/T_Furcadia_Drawing_Graphics_Shape.htm" />
@@ -1754,6 +1770,7 @@
   <HelpKINode Title="ShapeNum field" Url="html/F_Furcadia_Drawing_Graphics_Shape_ShapeNum.htm" />
   <HelpKINode Title="Shapes field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_Shapes.htm" />
   <HelpKINode Title="ShortName property" Url="html/P_Furcadia_Net_Dream_FURRE_ShortName.htm" />
+  <HelpKINode Title="Sit enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
   <HelpKINode Title="Sittable enumeration member" Url="html/T_Furcadia_Drawing_Graphics_Shape_ShapeFlags.htm" />
   <HelpKINode Title="SkipAttempt method" Url="html/M_Furcadia_Net_Utils_ProxyReconnect_SkipAttempt.htm" />
   <HelpKINode Title="sndServer method" Url="html/M_Furcadia_Net_Proxy_ProxySession_sndServer.htm" />
@@ -1771,11 +1788,13 @@
   <HelpKINode Title="SpawnAvatar.player field" Url="html/F_Furcadia_Net_Utils_ServerParser_SpawnAvatar_player.htm" />
   <HelpKINode Title="SpawnAvatar.PlayerFlags field" Url="html/F_Furcadia_Net_Utils_ServerParser_SpawnAvatar_PlayerFlags.htm" />
   <HelpKINode Title="SpawnAvatar.SpawnAvatar constructor" Url="html/M_Furcadia_Net_Utils_ServerParser_SpawnAvatar__ctor.htm" />
-  <HelpKINode Title="Spec field" Url="html/F_Furcadia_Avatar_Frame_Spec.htm" />
+  <HelpKINode Title="Spec field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_Spec.htm" />
   <HelpKINode Title="Species property" Url="html/P_Furcadia_Movement_ColorString_Species.htm" />
-  <HelpKINode Title="SpecNum method" Url="html/M_Furcadia_Avatar_SpecNum.htm" />
-  <HelpKINode Title="Standalone property" Url="html/P_Furcadia_Net_Options_ProxyOptions_Standalone.htm" />
+  <HelpKINode Title="SpecNum method" Url="html/M_Furcadia_Net_Dream_Avatar_SpecNum.htm" />
+  <HelpKINode Title="Stand1 enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
+  <HelpKINode Title="Stand2 enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
   <HelpKINode Title="StandAlone property" Url="html/P_Furcadia_Net_Proxy_ProxySession_StandAlone.htm" />
+  <HelpKINode Title="Standalone property" Url="html/P_Furcadia_Net_Options_ProxyOptions_Standalone.htm" />
   <HelpKINode Title="Start method" Url="html/M_Furcadia_Net_Utils_ProxyReconnect_Start.htm" />
   <HelpKINode Title="Status property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_Status.htm" />
   <HelpKINode Title="StepBlock structure">
@@ -1797,6 +1816,7 @@
     <HelpKINode Title="Base220.Subtraction Operator " Url="html/M_Furcadia_Text_Base220_op_Subtraction.htm" />
     <HelpKINode Title="Base95.Subtraction Operator " Url="html/M_Furcadia_Text_Base95_op_Subtraction.htm" />
   </HelpKINode>
+  <HelpKINode Title="SW enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_DIR.htm" />
   <HelpKINode Title="SyncRoot property" Url="html/P_Furcadia_Net_Dream_FURREList_SyncRoot.htm" />
   <HelpKINode Title="Teen field" Url="html/F_Furcadia_FurcMap_MapRating_Teen.htm" />
   <HelpKINode Title="TemporaryDreamsPath property" Url="html/P_Furcadia_IO_Paths_TemporaryDreamsPath.htm" />
@@ -1901,6 +1921,8 @@
   </HelpKINode>
   <HelpKINode Title="VisibleArea.getTargetRectFromCenterCoord method" Url="html/M_Furcadia_Drawing_VisibleArea_getTargetRectFromCenterCoord.htm" />
   <HelpKINode Title="VisibleArea.IsOdd method" Url="html/M_Furcadia_Drawing_VisibleArea_IsOdd.htm" />
+  <HelpKINode Title="Walk1 enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
+  <HelpKINode Title="Walk2 enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
   <HelpKINode Title="Walkable enumeration member" Url="html/T_Furcadia_Drawing_Graphics_Shape_ShapeFlags.htm" />
   <HelpKINode Title="wallNENumber field" Url="html/F_Furcadia_FurcMap_MapTile_wallNENumber.htm" />
   <HelpKINode Title="wallNumber field" Url="html/F_Furcadia_FurcMap_MapPosition_wallNumber.htm" />
@@ -1910,7 +1932,7 @@
   <HelpKINode Title="WhisperLogsPath property" Url="html/P_Furcadia_IO_Paths_WhisperLogsPath.htm" />
   <HelpKINode Title="Width field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Width.htm" />
   <HelpKINode Title="Width property" Url="html/P_Furcadia_FurcMap_Map_Width.htm" />
-  <HelpKINode Title="Wings field" Url="html/F_Furcadia_Avatar_Frame_Wings.htm" />
+  <HelpKINode Title="Wings field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_Wings.htm" />
   <HelpKINode Title="Wings property" Url="html/P_Furcadia_Movement_ColorString_Wings.htm" />
   <HelpKINode Title="Write method">
     <HelpKINode Title="INetMessage.Write Method " Url="html/Overload_Furcadia_Net_INetMessage_Write.htm" />
@@ -1924,17 +1946,17 @@
     <HelpKINode Title="MapPosition.x Field" Url="html/F_Furcadia_FurcMap_MapPosition_x.htm" />
     <HelpKINode Title="MapTile.x Field" Url="html/F_Furcadia_FurcMap_MapTile_x.htm" />
   </HelpKINode>
-  <HelpKINode Title="x property" Url="html/P_Furcadia_Drawing_FurrePosition_x.htm" />
   <HelpKINode Title="X property" Url="html/P_Furcadia_Net_Dream_FURRE_X.htm" />
-  <HelpKINode Title="Y field">
-    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
-    <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
-  </HelpKINode>
+  <HelpKINode Title="x property" Url="html/P_Furcadia_Drawing_FurrePosition_x.htm" />
   <HelpKINode Title="y field">
-    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
     <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
+    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
   </HelpKINode>
-  <HelpKINode Title="y property" Url="html/P_Furcadia_Drawing_FurrePosition_y.htm" />
+  <HelpKINode Title="Y field">
+    <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
+    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
+  </HelpKINode>
   <HelpKINode Title="Y property" Url="html/P_Furcadia_Net_Dream_FURRE_Y.htm" />
+  <HelpKINode Title="y property" Url="html/P_Furcadia_Drawing_FurrePosition_y.htm" />
   <HelpKINode Title="YouSayFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouSayFilter.htm" />
 </HelpKI>

@@ -137,12 +137,12 @@
           </terms>
           <definition>
             <para>
-              &lt; User ID[4]Position X[2]Position Y[2]Avatar Shape #[2]Name[3 - 65]Partial 
+              &lt; User ID[4]Position X[2]Position Y[2]Avatar Shape #[2]Name[3 - 65]Partial
               Color Code[10]Flags[1]AFK Time[4]
             </para>
             <para>
-              Visually spawns an avatar at the target coordinates and updates the user 
-              list accordingly, depending on flags. The Flags[1] set is zero, or any 
+              Visually spawns an avatar at the target coordinates and updates the user
+              list accordingly, depending on flags. The Flags[1] set is zero, or any
               combination of the following flags:
             </para>
             <para>
@@ -156,6 +156,14 @@
             </para>
             <para>
               The AFK Time[4] argument is the time in seconds since the character was set as being AFK.
+            </para>
+            <para>CHAR_FLAG_NEW_AVATAR + CHAR_FLAG_SET_VISIBLE = 6 = ')'b220</para>
+            <para>
+              When a furre joins a dream, They're new and visible by default. The visible flag can
+              be changed by Dragon speak later on.  Poxssibly with local species 0.
+            </para>
+            <para>
+              CHAR_FLAG_NEW_AVATAR will never appear by itself, It'll allways be accompined by another flag.
             </para>
             <para>Credits</para>
             <para>
@@ -180,6 +188,7 @@
           </definition>
           <relatedEntry termId="" />
         </glossaryEntry>
+     
         <glossaryEntry>
           <terms>
             <term termId="SSL">SSL/TLS</term>

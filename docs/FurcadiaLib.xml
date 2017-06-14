@@ -4,126 +4,6 @@
     <name>FurcadiaLib</name>
   </assembly>
   <members>
-    <member name="T:Furcadia.Avatar">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Avatar</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Avatar.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Avatar</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Avatar.PrimeTable">
-      <summary>
-            Primes the table.
-            </summary>
-    </member>
-    <member name="M:Furcadia.Avatar.SpecNum(System.Int32)">
-      <summary>
-            Specs the number.
-            </summary>
-      <param name="Frame">
-            The frame.
-            </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Avatar.SpecNum(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="T:Furcadia.Avatar.Frame">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Avatar.Frame</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Avatar.Frame.Clear">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Avatar.Frame.Clear</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Avatar.Frame.dir">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Avatar.Frame.dir</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Avatar.Frame.DS_Number">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Avatar.Frame.DS_Number</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Avatar.Frame.gender">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Avatar.Frame.gender</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Avatar.Frame.pose">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Avatar.Frame.pose</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Avatar.Frame.Spec">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Avatar.Frame.Spec</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:Furcadia.Avatar.Frame.Wings">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Avatar.Frame.Wings</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
     <member name="T:Furcadia.Badges">
       <summary>
             Beekin Badges
@@ -5037,6 +4917,156 @@
         </markup>
       </param>
     </member>
+    <member name="T:Furcadia.Net.Dream.Avatar">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Dream.Avatar</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Avatar.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Dream.Avatar</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Avatar.PrimeTable">
+      <summary>
+            Primes the table.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Avatar.SpecNum(System.Int32)">
+      <summary>
+            Specs the number.
+            </summary>
+      <param name="Frame">
+            The frame.
+            </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.Avatar.SpecNum(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Avatar.av_DIR">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Dream.Avatar.av_DIR</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Avatar.av_POSE">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Dream.Avatar.av_POSE</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Avatar.Frame">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Dream.Avatar.Frame</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Avatar.Frame.Clear">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.Avatar.Frame.Clear</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.Avatar.Frame.dir">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Dream.Avatar.Frame.dir</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.Avatar.Frame.DS_Number">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Dream.Avatar.Frame.DS_Number</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.Avatar.Frame.gender">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Dream.Avatar.Frame.gender</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.Avatar.Frame.pose">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Dream.Avatar.Frame.pose</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.Avatar.Frame.Spec">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Dream.Avatar.Frame.Spec</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.Avatar.Frame.Wings">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Dream.Avatar.Frame.Wings</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Avatar.FurrePose">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Dream.Avatar.FurrePose</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="T:Furcadia.Net.Dream.DREAM">
       <summary>
             Current Dream information
@@ -5141,6 +5171,33 @@
         </markup>
       </param>
     </member>
+    <member name="M:Furcadia.Net.Dream.FURRE.#ctor(System.Int32,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Dream.FURRE</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="FurreID">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>FurreID</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.#ctor(System.Int32,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="Name">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Name</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURRE.#ctor(System.Int32,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
     <member name="M:Furcadia.Net.Dream.FURRE.#ctor(System.String)">
       <summary>
             Furre Constructor with Name
@@ -5179,6 +5236,16 @@
       <summary>
             Furcadia Description
             </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Direction">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.FURRE.Direction</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="P:Furcadia.Net.Dream.FURRE.DSSpecies">
       <summary>
@@ -5233,16 +5300,6 @@
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
             <parameter>P:Furcadia.Net.Dream.FURRE.FloorObjectOld</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.Dream.FURRE.FrameInfo">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.Dream.FURRE.FrameInfo</parameter>
           </include>
         </markup>
       </summary>
@@ -5417,14 +5474,14 @@
         </markup>
       </summary>
     </member>
+    <member name="P:Furcadia.Net.Dream.FURRE.Pose">
+      <summary>
+            Furre Pose
+            </summary>
+    </member>
     <member name="P:Furcadia.Net.Dream.FURRE.Position">
       <summary>
             Current position where the Furre is standing
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Dream.FURRE.Shape">
-      <summary>
-            Avatar Shape, (it's Look)
             </summary>
     </member>
     <member name="P:Furcadia.Net.Dream.FURRE.ShortName">
@@ -5948,7 +6005,7 @@
         </markup>
       </returns>
     </member>
-    <member name="M:Furcadia.Net.Dream.FURREList.Remove(System.String)">
+    <member name="M:Furcadia.Net.Dream.FURREList.Remove(System.Int32)">
       <summary>
             Removes a Furre based on their Furre ID
             </summary>
@@ -5957,7 +6014,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>FurreID</parameter>
-            <parameter>M:Furcadia.Net.Dream.FURREList.Remove(System.String)</parameter>
+            <parameter>M:Furcadia.Net.Dream.FURREList.Remove(System.Int32)</parameter>
           </include>
         </markup>
       </param>

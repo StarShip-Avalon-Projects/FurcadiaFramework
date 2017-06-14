@@ -17,14 +17,21 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Required introduction</para>
+      <para>Furcadia allows custome install methods by using localdir.ini. This makes things easy to install furcadia out
+      side the normal Progame Files or Program Files(x86) folders. in thios configuration the Windows registry should remain
+      untouched.
+      </para>
+      <para>
+        There are two mode of operation. The first is a blank localdir.ini. This configuration resembles the Windows XP and earlier style
+        folders.
+      </para>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="ModeBlank">
+      <title>Blank localdir.ini</title>
       <content>
         <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
