@@ -4,50 +4,147 @@
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <!--
     <summary>
-      <para>Optional summary abstract</para>
+      <para>Character .ini files are legacy files for storing character information. These files are unsecure as they contain plaintext passwords, making personal character information available to anyone with access to the files. This login method also requires that you have an .ini file present for all characters on all devices you wish to access Furcadia with. The account system rectifies both of these problems.</para>
     </summary>
-    -->
 
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-
-      <para>Required introduction</para>
+      <para>Credits:</para>
+      <list class="nobullet">
+        <listItem>
+          <para>
+            Author: Iced
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Edited by: Gerolkae
+          </para>
+        </listItem>
+      </list>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
+    
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>File Elements</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <mediaLink>
+          <image xlink:href="Ini File" />
+        </mediaLink>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
       <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+        <section address="SubSection1">
+          <title>[Colors] &#8208; OK to Change</title>
+          <content>
+            <para>This is your characters color code.</para>
+          </content>
+        </section>
+        <section address="SubSection2">
+          <title>[Name] &#8208; Recommend no Changes</title>
+          <content>
+            <para>This is your characters name. Changing it isn't recommended, as you won't be able to login unless the character has been created and you have a valid password.</para>
+          </content>
+        </section>
+        <section address="SubSection3">
+          <title>[Password] &#8208; Recommend no Changes</title>
+          <content>
+            <para>This is your characters password in plain text. This is extremely unsecure. Your password is visible to everyone who has access to this file.</para>
+          </content>
+        </section>
+        <section address="SubSection4">
+          <title>[Desc] &#8208; OK to Change</title>
+          <content>
+            <para>
+              This is your characters description. It's what other people will see when they click your character.
+            </para>
+          </content>
+        </section>
+        <section address="SubSection5">
+          <title>[Logins] &#8208; Recommend no Changes</title>
+          <content>
+            <para>
+              The number of times you have logged in to this character.
+            </para>
+          </content>
+        </section>
+        <section address="SubSection6">
+          <title>[LastLogin] &#8208; Recommend no Changes</title>
+          <content>
+            <para>
+              A number representing the last time you logged in to this character.
+            </para>
+          </content>
+        </section>
+        <section address="SubSection7">
+          <title>[AutoResponse] &#8208; OK to Change</title>
+          <content>
+            <para>
+              This is a boolean (true/false) field that states if you will automatically reply to whispers with the configured [AutoResponseMessage].
+            </para>
+          </content>
+        </section>
+        <section address="SubSection8">
+          <title>[AutoResponseMessage] &#8208; OK to Change</title>
+          <content>
+            <para>
+              This is what you will automatically whisper as a reply, regardless of whether you are marked AFK, if you have AutoResponse turned on. Supports keywords.
+            </para>
+          </content>
+        </section>
+        <section address="SubSection9">
+          <title>[AFKTime] &#8208; OK to Change</title>
+          <content>
+            <para>
+              The idle time, in minutes, before your character is marked as being AFK (Away From Keyboard).
+            </para>
+          </content>
+        </section>
+        <section address="SubSection10">
+          <title>[AFKMessage] &#8208; OK to Change</title>
+          <content>
+            <para>
+              This is what you will automatically whisper as a reply if your character has been marked AFK. Supports keywords.
+            </para>
+          </content>
+        </section>
+        <section address="SubSection11">
+          <title>[AFKDescription] &#8208; OK to Change</title>
+          <content>
+            <para>
+              This is your characters description when you have been marked AFK. Supports keywords.
+            </para>
+          </content>
+        </section>
+        <section address="SubSection12">
+          <title>[AFKPortrait] &#8208; OK to Change</title>
+          <content>
+            <para>
+              This is the portrait number that will display when you have been marked AFK.
+            </para>
+          </content>
+        </section>
+        <section address="SubSection13">
+          <title>[AFKPortrait] &#8208; OK to Change</title>
+          <content>
+            <para>
+              This is your default portrait when you login to Furcadia.
+            </para>
+          </content>
+        </section>
+        <section address="SubSection14">
+          <title>[AFKDisconnectTime] &#8208; OK to Change</title>
+          <content>
+            <para>
+              The idle time, in minutes, before your character is disconnected from Furcadia.
+            </para>
+          </content>
+        </section>
+      </sections>
     </section>
-
+    
     <relatedTopics>
       <!-- One or more of the following:
            - A local link
