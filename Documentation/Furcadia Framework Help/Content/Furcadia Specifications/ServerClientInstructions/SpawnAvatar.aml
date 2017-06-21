@@ -17,7 +17,8 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Required introduction</para>
+      <para>&lt; User ID[4]Position X[2]Position Y[2]Direction[1]Pose[1]Name[3 - 65]Partial
+              Color Code[10-30]Flags[1]AFK Time[4]KitterSize[1]]</para>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.

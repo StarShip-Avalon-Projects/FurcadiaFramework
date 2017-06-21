@@ -19,6 +19,7 @@ namespace BugProxy.Net
             // this.LocalhostPort = 6700; this.ReconnectAttempts = 5;
             // this.ReconnectTimeOutDelay = 45; this.GameServerHost =
             // "lightbringer.furcadia.com"; this.GameServerPort = 6500;
+            CharacterIniFile = "-followurl=furc://vinca/";
         }
 
         public BugProxyOptions(string CharacterIni) : this()

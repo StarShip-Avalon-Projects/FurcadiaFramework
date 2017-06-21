@@ -26,7 +26,7 @@ namespace BugConsole
                 {
                     if (proxy is null)
                     {
-                        ProxyOptions = new ProxySessionOptions();
+                        ProxyOptions = new BugProxy.Net.BugProxyOptions();
                         proxy = new ProxySession(ProxyOptions);
                         proxy.ClientData2 += onClientDataReceived;
                         proxy.ServerData2 += onServerDataReceived;
@@ -43,13 +43,13 @@ namespace BugConsole
 
         static private void onClientDataReceived(string data)
         {
-            Console.Write("C>: " + data);
+            Console.WriteLine("C>: " + data);
             proxy.SendToServer(data);
         }
 
         static private void onServerDataReceived(string data)
         {
-            Console.Write("S>: " + data);
+            Console.WriteLine("S>: " + data);
             proxy.SendToClient(data);
         }
 

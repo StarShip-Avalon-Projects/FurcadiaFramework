@@ -82,6 +82,9 @@
               010
             </para>
           </entry>
+           <entry>
+              <para></para>
+            </entry>
         </row>
         <row>
           <entry>
@@ -130,6 +133,7 @@
     </section>
 
     <relatedTopics>
+    <codeEntityReference qualifyHint="false">T:Furcadia.Net.Utils.ServerParser.SpawnAvatar</codeEntityReference>
       <externalLink>
         <linkText>Ice Realm Number Calculator</linkText>
         <linkAlternateText>Visit FTR</linkAlternateText>
