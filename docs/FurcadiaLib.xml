@@ -1307,23 +1307,11 @@
             Get the effect number from a tile
             </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getEffectAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            x coordinate
+            </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getEffectAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            Y coordinate
+            </param>
       <returns>
             The effect number
             </returns>
@@ -1333,23 +1321,11 @@
             Get the floor number from a tile
             </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getFloorAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            x coordinate
+            </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getFloorAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            Y coordinate
+            </param>
       <returns>
             The floor number
             </returns>
@@ -1391,63 +1367,28 @@
       </returns>
     </member>
     <member name="M:Furcadia.FurcMap.Map.getMapTile(System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getMapTile(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
+      <summary> 
+            Get a MapTile object from the position specified by x
+            &amp; y 
+            </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getMapTile(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            x coordinate
+            </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getMapTile(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getMapTile(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
+            Y coordinate
+            </param>
+      <returns>the Tile data</returns>
     </member>
     <member name="M:Furcadia.FurcMap.Map.getObjectAt(System.Int32,System.Int32)">
       <summary>
             Get the object number from a tile
             </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getObjectAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            x coordinate
+            </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getObjectAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            Y coordinate
+            </param>
       <returns>
             The object number
             </returns>
@@ -1457,23 +1398,11 @@
             Get the region number from a tile
             </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getRegionAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            x coordinate
+            </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getRegionAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            Y coordinate
+            </param>
       <returns>
             The region number
             </returns>
@@ -1483,23 +1412,11 @@
             Get the wall number from a tile
             </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getWallAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            x coordinate
+            </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getWallAt(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            Y coordinate
+            </param>
       <returns>
             The wall number
             </returns>
@@ -1608,32 +1525,14 @@
             </returns>
     </member>
     <member name="M:Furcadia.FurcMap.Map.setEffectAt(System.Int32,System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setEffectAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
+      <summary> Set the effect number at a tile specified by x &amp; y
+            </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setEffectAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            x coordinate
+            </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setEffectAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            Y coordinate
+            </param>
       <param name="effectNumber">
         <markup>
           <include item="SMCMissingParamTag">
@@ -1649,23 +1548,11 @@
             Set the floor number at a tile specified by x and y
             </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setFloorAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            x coordinate
+            </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setFloorAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            Y coordinate
+            </param>
       <param name="floorNumber">
         <markup>
           <include item="SMCMissingParamTag">
@@ -4127,7 +4014,7 @@
     </member>
     <member name="E:Furcadia.Net.NetProxy.Connected">
       <summary>
-            This is triggered when the
+            This is triggered when the Client and/or Server have connected to tcp stream
              </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxy.Disconnect">
@@ -4541,6 +4428,11 @@
             <para>
             Needs further research
             </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.None">
+      <summary>
+            No instruction Nessary
+            </summary>
     </member>
     <member name="F:Furcadia.Net.ServerInstructionType.SpawnAvatar">
       <summary>
@@ -5125,6 +5017,11 @@
     <member name="P:Furcadia.Net.Dream.DREAM.Rating">
       <summary>
             Furcadia Dream rating
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.ShortName">
+      <summary>
+            Name of the dream
             </summary>
     </member>
     <member name="P:Furcadia.Net.Dream.DREAM.Title">
@@ -6546,16 +6443,6 @@
         </markup>
       </summary>
     </member>
-    <member name="P:Furcadia.Net.Proxy.ProxySession.ClientClose">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.Proxy.ProxySession.ClientClose</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ClientConnectPhase">
       <summary>
             Current Connection Phase
@@ -6603,6 +6490,11 @@
     <member name="P:Furcadia.Net.Proxy.ProxySession.ConnectedFurre">
       <summary>
             Connected Furre (Who we are)
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.Disconnect">
+      <summary>
+            Disconnect from Furcadia and notify delegates.
             </summary>
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.Dispose">
@@ -6772,15 +6664,22 @@
         </markup>
       </summary>
     </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.SendFormattedTextToServer(System.String@)">
+      <summary>
+            Format basic furcadia commands and send to server
+            <para>
+            We also mirror the client to server banish system.
+            </para><para>
+            This maybe a good place to place Proxy/Bot commands for controls
+            </para></summary>
+      <param name="data">
+            Raw Client to Server instruction
+            </param>
+    </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.SendToClient(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.SendToClient(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
+            Send a raw instruction to the client
+            </summary>
       <param name="data">
         <markup>
           <include item="SMCMissingParamTag">
@@ -6793,7 +6692,7 @@
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.SendToServer(System.String)">
       <summary>
-            Send Message to Server through the Load Ballancer
+            Send a raw instruction to Server through the Load Ballancer
             </summary>
       <param name="message">
             Client to server Instruction
@@ -6822,18 +6721,6 @@
       <summary>
             Track the Server Status
             </summary>
-    </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.sndServer(System.String@)">
-      <summary>
-            Format basic furcadia commands and send to server
-            <para>
-            We also mirror the client to server banish system.
-            </para><para>
-            This maybe a good place to place Proxy/Bot commands for controls
-            </para></summary>
-      <param name="data">
-            Raw Client to Server instruction
-            </param>
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.StandAlone">
       <summary>

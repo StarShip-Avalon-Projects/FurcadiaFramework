@@ -1,8 +1,8 @@
-﻿using BugProxy.Net;
+﻿using BeekinProxy.Net;
 using System;
 using System.Windows.Forms;
 
-namespace BugProxy
+namespace BeekinProxy
 {
     /// <summary>
     /// Description of MainForm.
@@ -11,8 +11,8 @@ namespace BugProxy
     {
         #region Private Fields
 
-        private BugProxySession proxy;
-        private BugProxyOptions ProxyOptions;
+        private BeekinProxySession proxy;
+        private BeekinProxyOptions ProxyOptions;
 
         #endregion Private Fields
 
@@ -37,8 +37,8 @@ namespace BugProxy
         {
             if (proxy == null)
             {
-                ProxyOptions = new BugProxyOptions();
-                proxy = new BugProxySession(ProxyOptions);
+                ProxyOptions = new BeekinProxyOptions();
+                proxy = new BeekinProxySession(ProxyOptions);
                 proxy.ClientData2 += onClientDataReceived;
                 proxy.ServerData2 += onServerDataReceived;
                 // We need a Character.ini file to work with -Gerolkae

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace BugProxy
+namespace BeekinProxy
 {
     partial class MainForm : Form
     {

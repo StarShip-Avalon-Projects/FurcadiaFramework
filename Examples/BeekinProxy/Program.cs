@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace BugProxy
+namespace BeekinProxy
 {
     /// <summary>
     /// Class with program entry point.
