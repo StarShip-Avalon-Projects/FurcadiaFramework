@@ -252,6 +252,11 @@
       <AlternateText>DS File</AlternateText>
       <CopyToMedia>True</CopyToMedia>
     </Image>
+    <Image Include="images\Ini File.png">
+      <ImageId>Ini File</ImageId>
+      <AlternateText>Ini File</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <SiteMap Include="Site Map1.sitemap" />
