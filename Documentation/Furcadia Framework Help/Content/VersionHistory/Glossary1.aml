@@ -27,12 +27,11 @@
                attribute if you need to link to it from a relatedEntry element.
                Otherwise, it can be omitted.  Terms appear as a comma-separated
                list above the definition. -->
-            <term termId="xyz">1st term</term>
-            <term>Other term (if any)</term>
+            <term termId="NameString">Furcadia Name String</term>
           </terms>
 
           <definition>
-            <para>The definition of the term(s)</para>
+            <para>Character names consist of 2-64 Alpha-Numeric Characters</para>
           </definition>
 
           <!-- One or more optional related entries.  Creates a "See Also"
