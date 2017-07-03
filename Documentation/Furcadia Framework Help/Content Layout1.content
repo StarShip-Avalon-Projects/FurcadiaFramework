@@ -16,20 +16,20 @@
     <Topic id="08538137-7c91-4fad-b4dc-287fc6efa298" visible="True" />
   </Topic>
   <Topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" visible="True" isExpanded="true" title="Furcadia Specifications">
-    <Topic id="061a27f3-3740-48cd-93a1-206c51823e5a" visible="True" noFile="true" isExpanded="true" title="Client Server Communications">
+    <Topic id="e897d816-e829-4b4b-b4a5-41ce6cac22ec" visible="True" isSelected="true" title="Modern Color-Code" />
+    <Topic id="061a27f3-3740-48cd-93a1-206c51823e5a" visible="True" noFile="true" title="Client Server Communications">
       <Topic id="ace0106b-f963-47f6-8be8-7c2fa78d223a" visible="True" isExpanded="true" title="Server To Client Instructions (Game Server)">
-        <Topic id="5fb54a72-62e8-4bfd-a81f-79d00d83b764" visible="True" isSelected="true" title="Spawn Avatar  (Furcadia v31c)" />
+        <Topic id="5fb54a72-62e8-4bfd-a81f-79d00d83b764" visible="True" title="Spawn Avatar  (Furcadia v31c)" />
         <Topic id="ffece671-a97d-4060-a35f-e41e0c23148d" visible="True" title="Character Spawn Flags (Furcadia v31c)" />
       </Topic>
       <Topic id="14d9e4be-5faf-4a40-85a0-b0129610103c" visible="True" title="Furcadia Markup Language (FML)" />
-      <Topic id="e897d816-e829-4b4b-b4a5-41ce6cac22ec" visible="True" />
       <Topic id="7180cbcd-d0cd-4db5-820b-2255d5764840" visible="True" />
     </Topic>
     <Topic id="a5f6d9fd-e7ec-4278-97f0-5c6d6535f7f7" visible="True" />
     <Topic id="a23d6f60-970b-4881-ad5f-077563316c63" visible="True" title="Furcadia File Paths">
       <Topic id="0622bf6b-9933-4acb-95eb-b5ddfa4be5e7" visible="True" />
     </Topic>
-    <Topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" visible="True" isExpanded="true" title="DragonSpeak Constructor">
+    <Topic id="c4d53694-c72e-4abc-b376-4cf56d279cbe" visible="True" title="DragonSpeak Constructor">
       <Topic id="c64fbfff-bfc3-42dc-bd67-21400a69023c" visible="True" title="DSC Hot Keys" />
       <Topic id="8c924167-6c3d-41dc-a8bb-b7f21f34830c" visible="True" title="DSC File Paths" />
       <Topic id="52f92ba7-b964-4377-9336-d1a664365e40" visible="True" isExpanded="true" title="Configuration Files">
