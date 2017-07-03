@@ -171,7 +171,9 @@
           <linkText>Download Character.ini</linkText>
           <linkUri>http://www.furcadia.com/services/retrieve/retrieve.php4</linkUri>
         </externalLink>
+
     <link xlink:href="e897d816-e829-4b4b-b4a5-41ce6cac22ec" />
+            <codeEntityReference qualifyHint="false">T:Furcadia.Text.Character</codeEntityReference>
     <codeEntityReference qualifyHint="false">T:Furcadia.Movement.ColorString</codeEntityReference>
       <!-- One or more of the following:
            - A local link
