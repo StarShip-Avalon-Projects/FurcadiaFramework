@@ -3477,7 +3477,7 @@
     </member>
     <member name="M:Furcadia.Movement.ColorString.#ctor(System.String)">
       <summary>
-            Constructor with ColorStrinhg code
+            Constructor with <see cref="T:Furcadia.Text.Base220" /> encoded ColorStrinhg
             </summary>
       <param name="Colors">
             Color String in legacy "t" format or new "w" format
@@ -3555,13 +3555,8 @@
     </member>
     <member name="M:Furcadia.Movement.ColorString.ToString">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Movement.ColorString.ToString</parameter>
-          </include>
-        </markup>
-      </summary>
+            Output the Base220 encoded color string
+            </summary>
       <returns>
             Furcadia color-string in modern "w" format
             </returns>
@@ -3573,7 +3568,7 @@
     </member>
     <member name="M:Furcadia.Movement.ColorString.Update(System.String)">
       <summary>
-            Update the Furre's colorcode
+            Update the Furre's color-code
             </summary>
       <param name="Colors">
             Partial Color String
