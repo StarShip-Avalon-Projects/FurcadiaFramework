@@ -1,5 +1,5 @@
 # Furcadia Framework for Third Party Programs
-Furcadia Framework Core  Library is a 3rd Party Development Kit developed in .NET. It can be used with any .NET language (c#,vb.net,cpp,boo,etc).  This library is intended for use on multiple platforms.  
+Furcadia Framework is a Furcadia Documentation Project and 3rd Party Development Kit developed in .NET. It can be used with any .NET language (c#,vb.net,cpp,boo,etc).  This library is intended for use on multiple platforms.  
 
 ## Features
 
