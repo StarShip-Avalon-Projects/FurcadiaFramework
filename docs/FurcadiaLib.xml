@@ -7286,6 +7286,39 @@
         </markup>
       </summary>
     </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.LoadDream">
+      <summary>
+            Triggered when the connection enters a new dream.
+            <para>
+            This instruction tells the client to download the specified dream
+            data from the file server.
+            </para><para>
+            Respond with client command when furcadia client is not available "vasecodegamma"
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.LoadDream.#ctor(System.String)">
+      <summary>
+            Constructor with Dream Data definitions
+            </summary>
+      <param name="ServerInstruction">
+            Raw server instruction from the game server
+            </param>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.LoadDream.DreamName">
+      <summary>
+            td or permanent map name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.LoadDream.IsModern">
+      <summary>
+            Current dream mode
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.LoadDream.IsPermanent">
+      <summary>
+            Is the current dream a permanent dream?
+            </summary>
+    </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.RemoveAvatar">
       <summary>
             Remove Avatar Server Instruction Object

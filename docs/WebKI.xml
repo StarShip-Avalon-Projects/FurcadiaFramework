@@ -478,6 +478,7 @@
   <HelpKINode Title="DREAM.ShortName property" Url="html/P_Furcadia_Net_Dream_DREAM_ShortName.htm" />
   <HelpKINode Title="DREAM.Title property" Url="html/P_Furcadia_Net_Dream_DREAM_Title.htm" />
   <HelpKINode Title="DREAM.URL property" Url="html/P_Furcadia_Net_Dream_DREAM_URL.htm" />
+  <HelpKINode Title="DreamName property" Url="html/P_Furcadia_Net_Utils_ServerParser_LoadDream_DreamName.htm" />
   <HelpKINode Title="DreamsPath property" Url="html/P_Furcadia_IO_Paths_DreamsPath.htm" />
   <HelpKINode Title="DSSpecies property" Url="html/P_Furcadia_Net_Dream_FURRE_DSSpecies.htm" />
   <HelpKINode Title="DS_Number field" Url="html/F_Furcadia_Net_Dream_Avatar_Frame_DS_Number.htm" />
@@ -533,10 +534,10 @@
   <HelpKINode Title="Frame structure">
     <HelpKINode Title="Frame Structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="about Frame structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm" />
-    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_Dream_Avatar_Frame.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Dream_Avatar_Frame.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Dream_Avatar_Frame.htm" />
   </HelpKINode>
   <HelpKINode Title="Frame.FrameFormat field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FrameFormat.htm" />
   <HelpKINode Title="Frame.FrameFormats enumeration" Url="html/T_Furcadia_Drawing_Graphics_Frame_FrameFormats.htm" />
@@ -659,6 +660,7 @@
   <HelpKINode Title="Furcadia.Net.Utils.ServerParser.BaseServerInstruction class" Url="html/T_Furcadia_Net_Utils_ServerParser_BaseServerInstruction.htm" />
   <HelpKINode Title="Furcadia.Net.Utils.ServerParser.ChannelObject class" Url="html/T_Furcadia_Net_Utils_ServerParser_ChannelObject.htm" />
   <HelpKINode Title="Furcadia.Net.Utils.ServerParser.DiceRolls class" Url="html/T_Furcadia_Net_Utils_ServerParser_DiceRolls.htm" />
+  <HelpKINode Title="Furcadia.Net.Utils.ServerParser.LoadDream class" Url="html/T_Furcadia_Net_Utils_ServerParser_LoadDream.htm" />
   <HelpKINode Title="Furcadia.Net.Utils.ServerParser.RemoveAvatar class" Url="html/T_Furcadia_Net_Utils_ServerParser_RemoveAvatar.htm" />
   <HelpKINode Title="Furcadia.Net.Utils.ServerParser.SpawnAvatar class" Url="html/T_Furcadia_Net_Utils_ServerParser_SpawnAvatar.htm" />
   <HelpKINode Title="Furcadia.Net.Utils.ServerParser.UpdateColorString class" Url="html/T_Furcadia_Net_Utils_ServerParser_UpdateColorString.htm" />
@@ -1029,8 +1031,12 @@
   <HelpKINode Title="Int32 to Base220 conversion" Url="html/M_Furcadia_Text_Base220_op_Implicit_4.htm" />
   <HelpKINode Title="IsClientConnected property" Url="html/P_Furcadia_Net_NetProxy_IsClientConnected.htm" />
   <HelpKINode Title="IsConnectedCharacter property" Url="html/P_Furcadia_Net_Proxy_ProxySession_IsConnectedCharacter.htm" />
-  <HelpKINode Title="IsModern property" Url="html/P_Furcadia_Net_Dream_DREAM_IsModern.htm" />
+  <HelpKINode Title="IsModern property">
+    <HelpKINode Title="DREAM.IsModern Property " Url="html/P_Furcadia_Net_Dream_DREAM_IsModern.htm" />
+    <HelpKINode Title="LoadDream.IsModern Property " Url="html/P_Furcadia_Net_Utils_ServerParser_LoadDream_IsModern.htm" />
+  </HelpKINode>
   <HelpKINode Title="IsOdd method" Url="html/M_Furcadia_Drawing_VisibleArea_IsOdd.htm" />
+  <HelpKINode Title="IsPermanent property" Url="html/P_Furcadia_Net_Utils_ServerParser_LoadDream_IsPermanent.htm" />
   <HelpKINode Title="IsReadOnly property" Url="html/P_Furcadia_Net_Dream_FURREList_IsReadOnly.htm" />
   <HelpKINode Title="IsRunning property" Url="html/P_Furcadia_Net_Utils_ProxyReconnect_IsRunning.htm" />
   <HelpKINode Title="IsServerConnected property">
@@ -1059,6 +1065,18 @@
     <HelpKINode Title="IniFile.Load Method " Url="html/M_Furcadia_IO_IniFile_Load.htm" />
     <HelpKINode Title="Settings.Load Method " Url="html/Overload_Furcadia_Text_Settings_Load.htm" />
   </HelpKINode>
+  <HelpKINode Title="LoadDream class">
+    <HelpKINode Title="LoadDream Class" Url="html/T_Furcadia_Net_Utils_ServerParser_LoadDream.htm" />
+    <HelpKINode Title="about LoadDream class" Url="html/T_Furcadia_Net_Utils_ServerParser_LoadDream.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_Utils_ServerParser_LoadDream__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_Utils_ServerParser_LoadDream.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Utils_ServerParser_LoadDream.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Utils_ServerParser_LoadDream.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LoadDream.DreamName property" Url="html/P_Furcadia_Net_Utils_ServerParser_LoadDream_DreamName.htm" />
+  <HelpKINode Title="LoadDream.IsModern property" Url="html/P_Furcadia_Net_Utils_ServerParser_LoadDream_IsModern.htm" />
+  <HelpKINode Title="LoadDream.IsPermanent property" Url="html/P_Furcadia_Net_Utils_ServerParser_LoadDream_IsPermanent.htm" />
+  <HelpKINode Title="LoadDream.LoadDream constructor" Url="html/M_Furcadia_Net_Utils_ServerParser_LoadDream__ctor.htm" />
   <HelpKINode Title="LoadDreamEvent enumeration member" Url="html/T_Furcadia_Net_ServerInstructionType.htm" />
   <HelpKINode Title="LoadFrom method" Url="html/M_Furcadia_FurcMap_Map_LoadFrom.htm" />
   <HelpKINode Title="LoadFurcadiaSettings method" Url="html/M_Furcadia_Text_FurcIni_LoadFurcadiaSettings.htm" />
@@ -1948,25 +1966,25 @@
     <HelpKINode Title="INetMessage.Write Method " Url="html/Overload_Furcadia_Net_INetMessage_Write.htm" />
     <HelpKINode Title="NetMessage.Write Method " Url="html/Overload_Furcadia_Net_NetMessage_Write.htm" />
   </HelpKINode>
-  <HelpKINode Title="X field">
-    <HelpKINode Title="Frame.Pos.X Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
-    <HelpKINode Title="ViewArea.X Field" Url="html/F_Furcadia_Drawing_ViewArea_X.htm" />
-  </HelpKINode>
   <HelpKINode Title="x field">
     <HelpKINode Title="MapPosition.x Field" Url="html/F_Furcadia_FurcMap_MapPosition_x.htm" />
     <HelpKINode Title="MapTile.x Field" Url="html/F_Furcadia_FurcMap_MapTile_x.htm" />
   </HelpKINode>
-  <HelpKINode Title="x property" Url="html/P_Furcadia_Drawing_FurrePosition_x.htm" />
+  <HelpKINode Title="X field">
+    <HelpKINode Title="Frame.Pos.X Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
+    <HelpKINode Title="ViewArea.X Field" Url="html/F_Furcadia_Drawing_ViewArea_X.htm" />
+  </HelpKINode>
   <HelpKINode Title="X property" Url="html/P_Furcadia_Net_Dream_FURRE_X.htm" />
+  <HelpKINode Title="x property" Url="html/P_Furcadia_Drawing_FurrePosition_x.htm" />
+  <HelpKINode Title="Y field">
+    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
+    <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
+  </HelpKINode>
   <HelpKINode Title="y field">
     <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
     <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
   </HelpKINode>
-  <HelpKINode Title="Y field">
-    <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
-    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
-  </HelpKINode>
-  <HelpKINode Title="Y property" Url="html/P_Furcadia_Net_Dream_FURRE_Y.htm" />
   <HelpKINode Title="y property" Url="html/P_Furcadia_Drawing_FurrePosition_y.htm" />
+  <HelpKINode Title="Y property" Url="html/P_Furcadia_Net_Dream_FURRE_Y.htm" />
   <HelpKINode Title="YouSayFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouSayFilter.htm" />
 </HelpKI>
