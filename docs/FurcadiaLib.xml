@@ -4470,6 +4470,16 @@
             'B' + user id + shape + color code + linefeed
             </para></summary>
     </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.LoadDreamEvent">
+      <summary>
+            Download Dream Data
+            <para>
+            IE: ]q pmnaiagreen 3318793420 modern
+            </para><para>
+            respond with client command when furcadia client is not
+            available "vasecodegamma"
+            </para></summary>
+    </member>
     <member name="T:Furcadia.Net.Account.AccountInfo">
       <summary>
             Furcadia Modern Login feature
