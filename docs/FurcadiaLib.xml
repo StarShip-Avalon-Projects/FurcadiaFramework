@@ -6697,7 +6697,7 @@
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.SendToServer(System.String)">
       <summary>
-            Send a raw instruction to Server through the Load Ballancer
+            Send a raw instruction to Server through the Load Balancer
             </summary>
       <param name="message">
             Client to server Instruction
@@ -7025,7 +7025,7 @@
             Ping the server Time in Seconds
             </summary>
     </member>
-    <member name="M:Furcadia.Net.Utils.ServerQue.SendToServer(System.String)">
+    <member name="M:Furcadia.Net.Utils.ServerQue.SendToServer(System.String@)">
       <summary>
             Incoming Messages for server processing
             </summary>
