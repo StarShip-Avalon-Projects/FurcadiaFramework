@@ -6425,7 +6425,7 @@
       <summary>
             Current Name for Banish Operations
             <para>
-            We mirror Furcadia's Banish system for effciency
+            We mirror Furcadia's Banish system for efficiency
             </para></summary>
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.BanishString">
@@ -7178,17 +7178,12 @@
     </member>
     <member name="M:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.#ctor(System.String)">
       <summary>
-            Read Sthe raw server instruction and Set this object to its settings
-            </summary>
+            Reads the raw server instruction and set this object to its settings
+            <para>
+            Default Server instruction type is <see cref="F:Furcadia.Net.ServerInstructionType.Unknown" /></para></summary>
       <param name="ServerInstruction">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>ServerInstruction</parameter>
-            <parameter>M:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.#ctor(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            raw server instruction
+            </param>
     </member>
     <member name="F:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.instructionType">
       <summary>
@@ -7240,13 +7235,18 @@
     </member>
     <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.ChannelText">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.Utils.ServerParser.ChannelObject.ChannelText</parameter>
-          </include>
-        </markup>
-      </summary>
+            Raw unformatted channel text
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.DynamicChannel">
+      <summary>
+            Dynamic Channel filter
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.FormattedChannelText">
+      <summary>
+            returns Clear Text to display in a log
+            </summary>
     </member>
     <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.Player">
       <summary>
@@ -9290,7 +9290,7 @@
     </member>
     <member name="T:Furcadia.Text.FurcadiaMarkup">
       <summary>
-            Stuff for Furcadia Markup Language (FML)
+            Furcadia Markup Language (FML) REGEX
             </summary>
     </member>
     <member name="M:Furcadia.Text.FurcadiaMarkup.#ctor">
@@ -9304,13 +9304,26 @@
     </member>
     <member name="F:Furcadia.Text.FurcadiaMarkup.ChannelNameFilter">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Text.FurcadiaMarkup.ChannelNameFilter</parameter>
-          </include>
-        </markup>
-      </summary>
+            Dynamic Channel tags
+            <para>
+            &gt;channel name='@channelName' /&lt;
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaMarkup.ChannelTag(System.String@,System.String)">
+      <summary>
+            Format Channel Tags
+            <para>
+            &lt;channel name='@channelname' /&gt;
+            </para></summary>
+      <param name="serverData">
+            Raw server data string
+            </param>
+      <param name="replaceText">
+            Reg ex supported text replacement
+            </param>
+      <returns>
+            True on a successful match
+            </returns>
     </member>
     <member name="F:Furcadia.Text.FurcadiaMarkup.CookieToMeREGEX">
       <summary>
@@ -9362,6 +9375,11 @@
         </markup>
       </summary>
     </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.ImgTagFilter">
+      <summary>
+            HTML images filter
+            </summary>
+    </member>
     <member name="F:Furcadia.Text.FurcadiaMarkup.NameFilter">
       <summary>
         <markup>
@@ -9375,6 +9393,25 @@
     <member name="F:Furcadia.Text.FurcadiaMarkup.RegExName">
       <summary>
             Whispers Name
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaMarkup.SystemFshIcon(System.String@,System.String)">
+      <summary>
+            Format Text string
+            </summary>
+      <param name="serverData">
+            Raw server data string
+            </param>
+      <param name="replaceText">
+            Reg ex supported text replacement
+            </param>
+      <returns>
+            True on a successful match
+            </returns>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.UrlFilter">
+      <summary>
+            Regex for working with HTML URLS
             </summary>
     </member>
     <member name="F:Furcadia.Text.FurcadiaMarkup.YouSayFilter">
