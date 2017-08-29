@@ -9306,7 +9306,7 @@
       <summary>
             Dynamic Channel tags
             <para>
-            &gt;channel name='@channelName' /&lt;
+            &lt;channel name='@channelName' / &gt;
             </para></summary>
     </member>
     <member name="M:Furcadia.Text.FurcadiaMarkup.ChannelTag(System.String@,System.String)">
