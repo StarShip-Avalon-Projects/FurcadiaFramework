@@ -11,11 +11,18 @@
       method also requires that you have an .ini file present for all characters on all
       devices you wish to access Furcadia with. The account system rectifies both of these problems.</para>
       <para>
+      It is possible to retrieve existing Character .ini files. For new accounts in the post 
+      "The Second Dreaming" erra, One needs to establish a "character" bassed password and then 
+      download the Character .ini.
+   
+      </para>
+      <para>
         NOTICE: Using ini files will override the Last Logged in Character Costume in
         <externalLink>
           <linkText>FurEd</linkText>
           <linkUri>https://cms.furcadia.com/fured/</linkUri>
         </externalLink>
+        Tean Dragon plans to do away with this system in future Releases.
         
 
       </para>
@@ -169,8 +176,12 @@
         <linkText>FurEd</linkText>
         <linkUri>https://cms.furcadia.com/fured/</linkUri>
       </externalLink>
-              <externalLink>
-          <linkText>Download Character.ini</linkText>
+           <externalLink>
+          <linkText>Character Password link</linkText>
+          <linkUri>http://www.furcadia.com/services/pw/oblivion.php4</linkUri>
+        </externalLink>
+             <externalLink>
+          <linkText>Furcadia Character .ini retrieval service</linkText>
           <linkUri>http://www.furcadia.com/services/retrieve/retrieve.php4</linkUri>
         </externalLink>
 
