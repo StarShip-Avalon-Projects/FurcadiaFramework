@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurcadiaLib", "FurcLib\FurcadiaLib.csproj", "{156C2AF0-3DA8-4D8C-A525-5400185579B3}"
 EndProject
@@ -10,8 +10,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{C21B09BB-6599-4333-BEC2-3700FCB2356A}"
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Furcadia Framework Help", "Documentation\Furcadia Framework Help\Furcadia Framework Help.shfbproj", "{B2878B72-7524-40D9-8A4E-53561094567E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{156C2AF0-3DA8-4D8C-A525-5400185579B3} = {156C2AF0-3DA8-4D8C-A525-5400185579B3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugProxy", "Examples\BugProxy\BugProxy.csproj", "{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2878B72-7524-40D9-8A4E-53561094567E} = {B2878B72-7524-40D9-8A4E-53561094567E}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{AF7971C4-0356-46A5-9BC8-9056036C997E}"
 EndProject
@@ -28,8 +34,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugConsole", "Examples\BugConsole\BugConsole.csproj", "{E12C32C1-4131-440A-832C-A7DAD3DC9ECF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeekinProxy", "Examples\BeekinProxy\BeekinProxy.csproj", "{963AE520-CD12-4072-92D6-5DF657B6844F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2878B72-7524-40D9-8A4E-53561094567E} = {B2878B72-7524-40D9-8A4E-53561094567E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,14 +87,6 @@ Global
 		{E12C32C1-4131-440A-832C-A7DAD3DC9ECF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E12C32C1-4131-440A-832C-A7DAD3DC9ECF}.Release|x86.ActiveCfg = Release|Any CPU
 		{E12C32C1-4131-440A-832C-A7DAD3DC9ECF}.Release|x86.Build.0 = Release|Any CPU
-		{963AE520-CD12-4072-92D6-5DF657B6844F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{963AE520-CD12-4072-92D6-5DF657B6844F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{963AE520-CD12-4072-92D6-5DF657B6844F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{963AE520-CD12-4072-92D6-5DF657B6844F}.Debug|x86.Build.0 = Debug|Any CPU
-		{963AE520-CD12-4072-92D6-5DF657B6844F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{963AE520-CD12-4072-92D6-5DF657B6844F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{963AE520-CD12-4072-92D6-5DF657B6844F}.Release|x86.ActiveCfg = Release|Any CPU
-		{963AE520-CD12-4072-92D6-5DF657B6844F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,7 +96,9 @@ Global
 		{B73B04C7-3FCB-4BFD-8DCB-B0CF5E81FBF9} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
 		{2A3A81F8-9B1F-45AA-A8D7-AA28FA9522EC} = {AF7971C4-0356-46A5-9BC8-9056036C997E}
 		{E12C32C1-4131-440A-832C-A7DAD3DC9ECF} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
-		{963AE520-CD12-4072-92D6-5DF657B6844F} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCFCCF27-949E-4082-88E8-5A873E8B3A57}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = FurcadiaFramework_Example\FurcadiaFramework_Example.csproj

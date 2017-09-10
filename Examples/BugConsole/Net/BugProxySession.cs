@@ -1,4 +1,5 @@
 ﻿using Furcadia.IO;
+using Furcadia.Net.Options;
 using Furcadia.Net.Proxy;
 using System;
 using System.Net.NetworkInformation;
@@ -53,10 +54,11 @@ namespace BugProxy.Net
 
         #region Public Constructors
 
-        public BugProxySession(BugProxyOptions Options) : base(Options)
+        public BugProxySession(ProxySessionOptions Options): base(ref Options)
         {
-            options = Options;
+            options = (BugProxyOptions)Options;
         }
+
 
         #endregion Public Constructors
     }
