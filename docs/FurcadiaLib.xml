@@ -3833,7 +3833,7 @@
             Connect to game servver with default settings
             </summary>
     </member>
-    <member name="M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions)">
+    <member name="M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions@)">
       <summary>
             Connect to Furcadia with Proxy Options
             </summary>
@@ -3842,12 +3842,30 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>Options</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions)</parameter>
+            <parameter>M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions@)</parameter>
           </include>
         </markup>
       </param>
     </member>
-    <member name="M:Furcadia.Net.NetProxy.#ctor(System.Int32)">
+    <member name="M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxySessionOptions@)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.NetProxy</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="Options">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Options</parameter>
+            <parameter>M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxySessionOptions@)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.#ctor(System.Int32@)">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
@@ -3860,12 +3878,12 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>port</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.#ctor(System.Int32)</parameter>
+            <parameter>M:Furcadia.Net.NetProxy.#ctor(System.Int32@)</parameter>
           </include>
         </markup>
       </param>
     </member>
-    <member name="M:Furcadia.Net.NetProxy.#ctor(System.Int32,System.Int32)">
+    <member name="M:Furcadia.Net.NetProxy.#ctor(System.Int32@,System.Int32@)">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
@@ -3878,7 +3896,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>port</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.#ctor(System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.Net.NetProxy.#ctor(System.Int32@,System.Int32@)</parameter>
           </include>
         </markup>
       </param>
@@ -3887,7 +3905,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>lport</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.#ctor(System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.Net.NetProxy.#ctor(System.Int32@,System.Int32@)</parameter>
           </include>
         </markup>
       </param>
@@ -4073,6 +4091,38 @@
       <summary>
             Process ID for closing Furcadia.exe
             </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.SendError(System.Exception,System.Object,System.String)">
+      <summary>
+            send errors to the error handler
+            </summary>
+      <param name="e">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>e</parameter>
+            <parameter>M:Furcadia.Net.NetProxy.SendError(System.Exception,System.Object,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="o">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>o</parameter>
+            <parameter>M:Furcadia.Net.NetProxy.SendError(System.Exception,System.Object,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="text">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>text</parameter>
+            <parameter>M:Furcadia.Net.NetProxy.SendError(System.Exception,System.Object,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
     </member>
     <member name="M:Furcadia.Net.NetProxy.SendToClient(Furcadia.Net.INetMessage)">
       <summary>
@@ -6404,7 +6454,7 @@
         </markup>
       </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.#ctor(Furcadia.Net.Options.ProxySessionOptions)">
+    <member name="M:Furcadia.Net.Proxy.ProxySession.#ctor(Furcadia.Net.Options.ProxySessionOptions@)">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
@@ -6600,11 +6650,6 @@
             Are we the current executing character?
             </summary>
     </member>
-    <member name="E:Furcadia.Net.Proxy.ProxySession.OnError">
-      <summary>
-            Error Event Handler
-            </summary>
-    </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerChannel(System.String,System.Boolean)">
       <summary>
             Parse Channel Data
@@ -6676,6 +6721,8 @@
             We also mirror the client to server banish system.
             </para><para>
             This maybe a good place to place Proxy/Bot commands for controls
+            </para><para>
+            default to say or "normal spoken command"
             </para></summary>
       <param name="data">
             Raw Client to Server instruction
@@ -6736,7 +6783,9 @@
     <member name="M:Furcadia.Net.Proxy.ProxySession.TextToServer(System.String@)">
       <summary>
             Text Channel Prefixes (shout,whisper emote, Raw Server command)
-            </summary>
+            <para>
+            default to say or "normal spoken command"
+            </para></summary>
       <param name="arg">
         <markup>
           <include item="SMCMissingParamTag">
@@ -7176,6 +7225,15 @@
             Server instruction object base class
             </summary>
     </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Utils.ServerParser.BaseServerInstruction</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="M:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.#ctor(System.String)">
       <summary>
             Reads the raw server instruction and set this object to its settings
@@ -7295,6 +7353,15 @@
             </para><para>
             Respond with client command when furcadia client is not available "vasecodegamma"
             </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.LoadDream.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Utils.ServerParser.LoadDream</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="M:Furcadia.Net.Utils.ServerParser.LoadDream.#ctor(System.String)">
       <summary>
@@ -9761,6 +9828,28 @@
       <summary>
             Local port Furcadia Client connects to
             </summary>
+    </member>
+    <member name="M:Furcadia.Text.Settings.ReadSettingIni(System.String)">
+      <summary>
+            Rrad Furcadia settings from Furcadia install path. If the settings does not exist We'll use our Embedded fresource
+            </summary>
+      <param name="SettingsIni">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>SettingsIni</parameter>
+            <parameter>M:Furcadia.Text.Settings.ReadSettingIni(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Text.Settings.ReadSettingIni(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
     </member>
     <member name="M:Furcadia.Text.Settings.RestoreFurcadiaSettings(System.String[])">
       <summary>
