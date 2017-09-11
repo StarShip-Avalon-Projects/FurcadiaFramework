@@ -48,11 +48,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Prefer32Bit>false</Prefer32Bit>
-    <OutputPath>..\Build\BugProxy\Debug\</OutputPath>
+    <OutputPath>..\..\Build\BugProxy\Debug\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <Prefer32Bit>false</Prefer32Bit>
-    <OutputPath>..\Build\BugProxy\Release\</OutputPath>
+    <OutputPath>..\..\Build\BugProxy\Release\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -77,8 +77,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\furclib\AssemblyFileVersion1.cs">
-      <Link>AssemblyFileVersion1.cs</Link>
+    <Compile Include="..\..\furclib\AssemblyInfoersion.cs">
+      <Link>AssemblyInfoersion.cs</Link>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -120,6 +120,8 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(SolutionDir)docs\Furcadia_Framework_Help.chm" "$(TargetDir)"</PostBuildEvent>
+    <PostBuildEvent>IF EXIST "$(SolutionDir)Build\Help\Furcadia_Framework_Help.chm" (
+xcopy /Y "$(SolutionDir)Build\Help\Furcadia_Framework_Help.chm" "$(TargetDir)"
+)</PostBuildEvent>
   </PropertyGroup>
 </Project>

@@ -1,28 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" >
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" >
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+  </PropertyGroup>
 
+  <Target Name="BuildALL">
+		<CallTarget Targets="Clean"/>
+		<CallTarget Targets="IncrementVersions"/>
+	
+	<!--	<CallTarget Targets="GetVersion"/> -->
+		<CallTarget Targets="Build"/>
+		<CallTarget Targets="BackupSource"/>
+  </Target>
 
-<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- Define default target with name 'Build' -->
+      <!-- Define default target with name 'Build' -->
   <Target Name="Build">
     <!-- Compile whole solution in release mode -->
     <MSBuild
         Projects="FurcadiaFramework.sln"
         Targets="Build"
-        Properties="Configuration=Debug;Platform=Any CPU"
+        Properties="Configuration=$(Configuration);Platform=Any CPU" />
+  </Target>
 
-                />
+    <Target Name="BackupSource" Condition=" '$(Configuration)' == 'Debug' ">
+			<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -x\.svn\* -x*\Net40\* -x*\Build\* -x*\.vs\* -x*\.git\* -x*\.svn\* -x*Plugins\*  -x*bin\*  -x*\src\ -x*\obj\* -n*.*proj -nbin\*.exe -nbin\*.dll -nbin\*.bat -n*.sln -n*.nsi -n*.wxs -n*.build -n*.snk -n*.xslt -n*.rtf -n*.vb -n*.wix -n*.cs -n*.ds -n*.ms -n*.ini -nlicense*.*-n*.sln -n*.resx -n*.txt -n*.dll -n*.chm -n*.config Build/FurcadiaFramework.SRC.rar *.*" 
+			WorkingDirectory="" />
+			
+		<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.exe -n*.chm  -n*.xml -n*.txt -n*.config -n*.pdp  -n*.dll -n*.bat ..\FurcadiaFramework.Bin.rar *.*"
+			WorkingDirectory="Build\Debug\" />
+					<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.exe -n*.xml -n*.txt -n*.chm  -n*.config -n*.pdp  -n*.dll -n*.bat ..\..\BugProxy.Bin.rar *.*"
+			WorkingDirectory="Build\BugProxy\Debug\" />
+					<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.chm  -n*.xml -n*.txt -n*.config -n*.pdp -n*.exe -n*.dll -n*.bat ..\..\BugConsole.Bin.rar *.*"
+			WorkingDirectory="Build\BugConsole\Debug\" />
 
   </Target>
 
-  <Target Name="BuildALL">
+    <Target Name="Clean" Condition=" '$(Configuration)' == 'Debug' ">
+     <ItemGroup>
 
-    <MSBuild
-        Projects="FurcadiaFramework.sln"
-        Targets="Build"
-        Properties="Configuration=Release;Platform=Any CPU" 
+		<FilesToDelete Include="Build\*.rar"/>
 
-        />
+	</ItemGroup>
+    <Delete Files="@(FilesToDelete)" />
+  </Target>
+   <Target Name="IncrementVersions" Condition=" '$(Configuration)' == 'Debug' ">
+      <!-- Compile whole solution in release mode -->
+		<Exec Command="..\bin\TextTransform.exe AssemblyFileVersion.t4" 
+			WorkingDirectory="FurcLib/"/>
+
 
   </Target>
 </Project>

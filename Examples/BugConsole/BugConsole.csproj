@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\Build\BugConsole\Debug\</OutputPath>
+    <OutputPath>..\..\Build\BugConsole\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,7 +27,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\Build\BugConsole\Release\</OutputPath>
+    <OutputPath>..\..\Build\BugConsole\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -67,6 +67,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(SolutionDir)docs\Furcadia_Framework_Help.chm" "$(TargetDir)"</PostBuildEvent>
+    <PostBuildEvent>IF EXIST "$(SolutionDir)Build\Help\Furcadia_Framework_Help.chm" (
+xcopy/Y "$(SolutionDir)Build\Help\Furcadia_Framework_Help.chm" "$(TargetDir)"
+)</PostBuildEvent>
   </PropertyGroup>
 </Project>

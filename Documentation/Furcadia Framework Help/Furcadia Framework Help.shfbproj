@@ -142,15 +142,16 @@
     <BinaryTOC>True</BinaryTOC>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="(global)" isDocumented="False" />
-<NamespaceSummaryItem name="Furcadia" isDocumented="True" />
-<NamespaceSummaryItem name="Furcadia.Drawing (Group)" isGroup="True" isDocumented="True" />
-<NamespaceSummaryItem name="Furcadia.Drawing" isDocumented="True" />
-<NamespaceSummaryItem name="Furcadia.Drawing.Graphics" isDocumented="True" />
-<NamespaceSummaryItem name="Furcadia.FurcMap" isDocumented="True" />
-<NamespaceSummaryItem name="Furcadia.IO" isDocumented="True" />
-<NamespaceSummaryItem name="Furcadia.Net" isDocumented="True" />
-<NamespaceSummaryItem name="Furcadia.Net.Dream" isDocumented="True">Classes specific to Dream management. Use these classes for Tracking furres around the map, thier interactions with the current triggering avatar</NamespaceSummaryItem>
-<NamespaceSummaryItem name="Furcadia.Net.Utils.ServerParser" isDocumented="True" /></NamespaceSummaries>
+      <NamespaceSummaryItem name="Furcadia" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.Drawing (Group)" isGroup="True" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.Drawing" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.Drawing.Graphics" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.FurcMap" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.IO" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.Net" isDocumented="True" />
+      <NamespaceSummaryItem name="Furcadia.Net.Dream" isDocumented="True">Classes specific to Dream management. Use these classes for Tracking furres around the map, thier interactions with the current triggering avatar</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="Furcadia.Net.Utils.ServerParser" isDocumented="True" />
+    </NamespaceSummaries>
     <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter, AutoDocumentDispose</MissingTags>
     <VisibleItems>Attributes, InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
     <NewProperty1 />
@@ -275,8 +276,8 @@
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>xcopy /Y "$(OutputPath)Furcadia_Framework_Help.chm" "$(SolutionDir)Build\$(Configuration)"
+</PostBuildEvent>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
 </Project>
