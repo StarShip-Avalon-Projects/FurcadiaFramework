@@ -6,10 +6,19 @@ IF "%~1"=="VersionBump" GOTO VersionBump
 
 :VersionBump
 msbuild /t:IncrementVersions;BuildAll  Solution.build
-goto End
-
+set BUILD_STATUS=%ERRORLEVEL% 
+if %BUILD_STATUS%==0 goto end 
+if not %BUILD_STATUS%==0 goto fail 
+ 
 :BuildAll
 msbuild /t:BuildAll  Solution.build
+set BUILD_STATUS=%ERRORLEVEL% 
+if %BUILD_STATUS%==0 goto end 
+if not %BUILD_STATUS%==0 goto fail 
+ 
+:fail 
+pause 
+exit /b 1
 
 :End
 git add --all
