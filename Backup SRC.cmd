@@ -11,3 +11,6 @@ goto :End
 msbuild /t:BuildAll  Solution.build
 
 :End
+git add --all
+git commit -m"Update docs" --all
+git push
