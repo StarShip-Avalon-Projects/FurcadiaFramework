@@ -17,7 +17,7 @@ git commit -m"Auto Version Update and Update Docs" --all
 
 git submodule foreach "git add --all"
 git submodule foreach "git commit -m'Auto Update SubModules'-a"
-git submodule foreach "git push --all"
-git push --all --recurse-submodules=on-demand
+git submodule foreach "git push origin HEAD:master"
+git push -f --all --recurse-submodules=on-demand
 
 git request-pull master https://github.com/StarShip-Avalon-Projects/FurcadiaFramework.git
