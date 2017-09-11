@@ -1,5 +1,6 @@
 
-git pull --all
+git pull
+git submodule update -f --merge
 IF "%~1"=="" GOTO BuildAll
 IF "%~1"=="VersionBump" GOTO VersionBump
 
