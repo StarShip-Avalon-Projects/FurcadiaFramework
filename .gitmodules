@@ -1,8 +1,8 @@
 
 [submodule "furclib"]
 	path = furclib
-	url = https://github.com/StarShip-Avalon-Projects/FurcLib.git
-[submodule "UnitTests"]
+	url = git://github.com/StarShip-Avalon-Projects/FurcLib.git
 	
+[submodule "UnitTests"]
 	path = UnitTests
-	url = https://github.com/StarShip-Avalon-Projects/UnitTests.git
+	url = git://github.com/StarShip-Avalon-Projects/UnitTests.git
