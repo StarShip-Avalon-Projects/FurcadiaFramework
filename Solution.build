@@ -6,7 +6,7 @@
 
   <Target Name="BuildALL">
 		<CallTarget Targets="Clean"/>
-		<CallTarget Targets="IncrementVersions"/>
+
 	
 	<!--	<CallTarget Targets="GetVersion"/> -->
 		<CallTarget Targets="Build"/>
