@@ -25,7 +25,7 @@ git add --all
 git commit -m"Auto Version Update and Update Docs" --all
 
 git submodule foreach "git add --all"
-git submodule foreach "git commit -m'Auto Update SubModules'-a"
+git submodule foreach "git commit -m'Auto Update SubModules'"
 git submodule foreach "git push -f origin HEAD:master"
 git push -f --all --recurse-submodules=on-demand
 
