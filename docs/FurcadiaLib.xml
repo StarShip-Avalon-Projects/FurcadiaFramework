@@ -7344,6 +7344,46 @@
         </markup>
       </summary>
     </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.DreamBookmark">
+      <summary>
+             Triggered when the connection enters a new dream.
+             <para>
+             This instruction tells the client to download the specified dream
+             data from the file server.
+             </para><para>
+             Respond with client command when furcadia client is not available "vasecodegamma"
+             </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.DreamBookmark.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Utils.ServerParser.DreamBookmark</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.DreamBookmark.#ctor(System.String)">
+      <summary>
+            Constructor with Dream Data definitions
+            </summary>
+      <param name="ServerInstruction">
+            Raw server instruction from the game server
+            </param>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.DreamBookmark.DreamType">
+      <summary>
+            Dream Type
+            <para> Type 0 = Temporary</para>
+            Type 1 = Regular
+            Type -1 = undefined
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.DreamBookmark.DreamUrl">
+      <summary>
+            The Dreams URL
+            </summary>
+    </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.LoadDream">
       <summary>
             Triggered when the connection enters a new dream.
