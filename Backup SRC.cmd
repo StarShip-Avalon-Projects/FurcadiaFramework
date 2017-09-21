@@ -14,12 +14,18 @@ if not %GIT_STATUS%==0 goto fail
 :VersionBump
 msbuild /t:IncrementVersions;BuildAll  Solution.build
 set BUILD_STATUS=%ERRORLEVEL% 
-if %BUILD_STATUS%==0 goto end 
+if %BUILD_STATUS%==0 goto BuildRelease 
 if not %BUILD_STATUS%==0 goto fail 
  
 :BuildAll
 msbuild /t:BuildAll  Solution.build
 set BUILD_STATUS=%ERRORLEVEL% 
+if %BUILD_STATUS%==0 goto BuildRelease 
+if not %BUILD_STATUS%==0 goto fail 
+
+:BuildRelease
+ msbuild /t:Build /property:Configuration=Release Solution.build
+ set BUILD_STATUS=%ERRORLEVEL% 
 if %BUILD_STATUS%==0 goto end 
 if not %BUILD_STATUS%==0 goto fail 
  
@@ -32,7 +38,7 @@ git add --all
 set GIT_STATUS=%ERRORLEVEL% 
 if not %GIT_STATUS%==0 goto fail 
 
-git commit -m"Auto Version Update" --all
+git commit -ma"Auto Version Update" --all
 set GIT_STATUS=%ERRORLEVEL% 
 if not %GIT_STATUS%==0 goto fail 
 
@@ -42,12 +48,7 @@ set GIT_STATUS=%ERRORLEVEL%
 if not %GIT_STATUS%==0 goto fail 
 
 git submodule foreach "git commit -ma'Auto Update SubModules'"
-# set GIT_STATUS=%ERRORLEVEL% 
-# if not %GIT_STATUS%==0 goto fail 
 
-git submodule foreach "git push -f origin HEAD:master"
-set GIT_STATUS=%ERRORLEVEL% 
-if not %GIT_STATUS%==0 goto fail 
 
 git push -f --all --recurse-submodules=on-demand
 set GIT_STATUS=%ERRORLEVEL% 
