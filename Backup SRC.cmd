@@ -10,7 +10,9 @@ if not %GIT_STATUS%==0 goto fail
 git submodule foreach "git pull"
 set GIT_STATUS=%ERRORLEVEL% 
 if not %GIT_STATUS%==0 goto fail 
-if %BUILD_STATUS%==0 goto end 
+
+IF "%~1"=="" GOTO BuildAll
+IF "%~1"=="VersionBump" GOTO VersionBump
 
 :VersionBump
 msbuild /t:IncrementVersions;BuildAll  Solution.build

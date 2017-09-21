@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\furclib\AssemblyInfoersion.cs">
-      <Link>AssemblyInfoersion.cs</Link>
+    <Compile Include="..\..\FurcLib\AssemblyInfoersion1.cs">
+      <Link>AssemblyInfoersion1.cs</Link>
     </Compile>
     <Compile Include="Net\BugProxyOptions.cs" />
     <Compile Include="Net\BugProxySession.cs" />
