@@ -39,22 +39,26 @@ exit /b 1
 :End
 git add --all
 set GIT_STATUS=%ERRORLEVEL% 
-if not %GIT_STATUS%==0 goto fail 
+if not %GIT_STATUS%==0 goto eof 
 
-git commit -ma"Auto Version Update" --all
+git commit -m"Auto Version Update" --all
 set GIT_STATUS=%ERRORLEVEL% 
-if not %GIT_STATUS%==0 goto fail 
+if not %GIT_STATUS%==0 goto eof 
 
 
 git submodule foreach "git add --all"
 set GIT_STATUS=%ERRORLEVEL% 
-if not %GIT_STATUS%==0 goto fail 
+if not %GIT_STATUS%==0 goto eof 
 
 git submodule foreach "git commit -ma'Auto Update SubModules'"
-
+set GIT_STATUS=%ERRORLEVEL% 
+if not %GIT_STATUS%==0 goto eof 
 
 git push -f --all --recurse-submodules=on-demand
 set GIT_STATUS=%ERRORLEVEL% 
-if not %GIT_STATUS%==0 goto fail 
+if not %GIT_STATUS%==0 goto eof  
 
 git request-pull master https://github.com/StarShip-Avalon-Projects/FurcadiaFramework.git
+
+:eof
+exit /b 0
