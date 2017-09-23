@@ -25,13 +25,17 @@
     <Target Name="BackupSource" Condition=" '$(Configuration)' == 'Debug' ">
 			<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -x\.svn\* -x*\Net40\* -x*\Build\* -x*\.vs\* -x*\.git\* -x*\.svn\* -x*Plugins\*  -x*bin\*  -x*\src\ -x*\obj\* -n*.*proj -nbin\*.exe -nbin\*.dll -nbin\*.bat -n*.sln -n*.nsi -n*.wxs -n*.build -n*.snk -n*.xslt -n*.rtf -n*.vb -n*.wix -n*.cs -n*.ds -n*.ms -n*.ini -nlicense*.*-n*.sln -n*.resx -n*.txt -n*.dll -n*.chm -n*.config Build/FurcadiaFramework.SRC.rar *.*" 
 			WorkingDirectory="" />
-			
-		<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.exe -n*.chm  -n*.xml -n*.txt -n*.config -n*.pdp  -n*.dll -n*.bat ..\FurcadiaFramework.Bin.rar *.*"
-			WorkingDirectory="Build\Debug\" />
-					<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.exe -n*.xml -n*.txt -n*.chm  -n*.config -n*.pdp  -n*.dll -n*.bat ..\..\BugProxy.Bin.rar *.*"
-			WorkingDirectory="Build\BugProxy\Debug\" />
-					<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.chm  -n*.xml -n*.txt -n*.config -n*.pdp -n*.exe -n*.dll -n*.bat ..\..\BugConsole.Bin.rar *.*"
-			WorkingDirectory="Build\BugConsole\Debug\" />
+	  </Target>
+
+    <Target Name="BackupSource" >		
+		<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.exe -n*.chm  -n*.xml -n*.txt -n*.config -n*.pdp  -n*.dll -n*.bat ..\FurcadiaFramework_$(Configuration).Bin.rar *.*"
+			WorkingDirectory="Build\$(Configuration)\" />
+		<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.exe -n*.xml -n*.txt -n*.chm  -n*.config -n*.pdp  -n*.dll -n*.bat ..\..\BugProxy_$(Configuration).Bin.rar *.*"
+			WorkingDirectory="Build\BugProxy\$(Configuration)" />
+		<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.chm  -n*.xml -n*.txt -n*.config -n*.pdp -n*.exe -n*.dll -n*.bat ..\..\BugConsole_$(Configuration).Bin.rar *.*"
+			WorkingDirectory="Build\BugConsole\$(Configuration)" />
+		<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.chm  -n*.xml -n*.txt -n*.config -n*.pdp -n*.exe -n*.dll -n*.bat ..\..\FurEd_$(Configuration).Bin.rar *.*"
+			WorkingDirectory="Build\FurEd\$(Configuration)" />
 
   </Target>
 
