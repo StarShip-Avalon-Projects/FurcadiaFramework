@@ -1,0 +1,29 @@
+Components?
+Basically.
+LZMA.
+The rest is pretty nice.
+There are three parts of each FOX5 file: the magic footer, the command block, the image list.
+The magic footer comes first, and it tells you how to decompress the command block.(edited)
+The command block contains all meta-data like which objects/frames/sprites exist in the FOX5 file, it also contains information about the images.
+The command block and each image are compressed separately.
+And you need to decompress the command block to figure out the image sizes and their order, so you can then decompress the proper image.
+
+
+
+The first thing you can do:
+Decompress the last 20 bytes of a FOX5 file. That's the magic footer.
+Put it in a structure, find the compressed size.
+
+
+
+Then decompress the first compressed size bytes of the file - that's the command block.
+Then start parsing it.
+The spec is fairly complete about how this block should be parsed and understood.
+
+You have a binary file.
+You need to parse it in the following order.
+Last 20 bytes tell you about the command block.
+The command block tells you all meta-data and the location of images in the file.
+Time for me to run off. See you!
+And good luck.
+
