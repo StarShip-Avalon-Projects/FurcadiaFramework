@@ -349,13 +349,8 @@
     </member>
     <member name="T:Furcadia.Drawing.ViewArea">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Drawing.ViewArea</parameter>
-          </include>
-        </markup>
-      </summary>
+            Visible are a Furre can see
+            </summary>
     </member>
     <member name="M:Furcadia.Drawing.ViewArea.#ctor">
       <summary>
@@ -368,69 +363,39 @@
     </member>
     <member name="F:Furcadia.Drawing.ViewArea.height">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Drawing.ViewArea.height</parameter>
-          </include>
-        </markup>
-      </summary>
+            height
+            </summary>
     </member>
     <member name="F:Furcadia.Drawing.ViewArea.length">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Drawing.ViewArea.length</parameter>
-          </include>
-        </markup>
-      </summary>
+            length
+            </summary>
     </member>
     <member name="F:Furcadia.Drawing.ViewArea.X">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Drawing.ViewArea.X</parameter>
-          </include>
-        </markup>
-      </summary>
+            X Coordinate
+            </summary>
     </member>
     <member name="F:Furcadia.Drawing.ViewArea.Y">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Drawing.ViewArea.Y</parameter>
-          </include>
-        </markup>
-      </summary>
+            Y Coordinate
+            </summary>
     </member>
     <member name="T:Furcadia.Drawing.VisibleArea">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Drawing.VisibleArea</parameter>
-          </include>
-        </markup>
-      </summary>
+            Furre Visible area
+            </summary>
     </member>
-    <member name="M:Furcadia.Drawing.VisibleArea.getTargetRectFromCenterCoord(System.Int32,System.Int32)">
+    <member name="M:Furcadia.Drawing.VisibleArea.GetTargetRectFromCenterCoord(System.Int32,System.Int32)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Drawing.VisibleArea.getTargetRectFromCenterCoord(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
+            Gets the target View area from the center coordinates, This is useful for finding the View area of the Connected Furre
+            </summary>
       <param name="X">
         <markup>
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>X</parameter>
-            <parameter>M:Furcadia.Drawing.VisibleArea.getTargetRectFromCenterCoord(System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.Drawing.VisibleArea.GetTargetRectFromCenterCoord(System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </param>
@@ -439,7 +404,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>Y</parameter>
-            <parameter>M:Furcadia.Drawing.VisibleArea.getTargetRectFromCenterCoord(System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.Drawing.VisibleArea.GetTargetRectFromCenterCoord(System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </param>
@@ -447,20 +412,15 @@
         <markup>
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
-            <parameter>M:Furcadia.Drawing.VisibleArea.getTargetRectFromCenterCoord(System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.Drawing.VisibleArea.GetTargetRectFromCenterCoord(System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </returns>
     </member>
     <member name="M:Furcadia.Drawing.VisibleArea.IsOdd(System.Int32)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Drawing.VisibleArea.IsOdd(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
+            Integer is Odd
+            </summary>
       <param name="value">
         <markup>
           <include item="SMCMissingParamTag">
@@ -871,22 +831,8 @@
     </member>
     <member name="T:Furcadia.Drawing.Graphics.Remapper">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Drawing.Graphics.Remapper</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Drawing.Graphics.Remapper.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Drawing.Graphics.Remapper</parameter>
-          </include>
-        </markup>
-      </summary>
+            Remap colors
+            </summary>
     </member>
     <member name="F:Furcadia.Drawing.Graphics.Remapper.BadgeRemap">
       <summary>
@@ -1224,83 +1170,43 @@
     </member>
     <member name="P:Furcadia.FurcMap.Map.AllowDreamURL">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.AllowDreamURL</parameter>
-          </include>
-        </markup>
-      </summary>
+            Allow furres to enter via the Dream URL?
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.AllowJoinSummon">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.AllowJoinSummon</parameter>
-          </include>
-        </markup>
-      </summary>
+            Allow Furres to Sommon and join each other in this dream?
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.AllowLargeDreamSize">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.AllowLargeDreamSize</parameter>
-          </include>
-        </markup>
-      </summary>
+            Allow Dream Pack sizes?
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.AllowLeadFollow">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.AllowLeadFollow</parameter>
-          </include>
-        </markup>
-      </summary>
+            Allow Lead and Follow commands in the dream?
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.AllowShouting">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.AllowShouting</parameter>
-          </include>
-        </markup>
-      </summary>
+            Allow Furres to use the shout channel in the dream?
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.EncodeDream">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.EncodeDream</parameter>
-          </include>
-        </markup>
-      </summary>
+            Encrypt the dream?
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.EnforceParentalControls">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.EnforceParentalControls</parameter>
-          </include>
-        </markup>
-      </summary>
+            enforce parental controls
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.ForceSitting">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.ForceSitting</parameter>
-          </include>
-        </markup>
-      </summary>
+            force sitting ?
+            </summary>
     </member>
     <member name="M:Furcadia.FurcMap.Map.getEffectAt(System.Int32,System.Int32)">
       <summary>
@@ -1316,7 +1222,7 @@
             The effect number
             </returns>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.getFloorAt(System.Int32,System.Int32)">
+    <member name="M:Furcadia.FurcMap.Map.GetFloorAt(System.Int32,System.Int32)">
       <summary>
             Get the floor number from a tile
             </summary>
@@ -1330,46 +1236,24 @@
             The floor number
             </returns>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.getMapPos(System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getMapPos(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getMapPos(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getMapPos(System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+    <member name="M:Furcadia.FurcMap.Map.GetMapPos(System.Int32,System.Int32)">
+      <summary> Get a MapPosition object from the position specified
+            by x &amp; y </summary>
+      <param name="x">X Coordinate</param>
+      <param name="y">Y Coordinate</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.getMapPos(System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.FurcMap.Map.GetMapPos(System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </returns>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.getMapTile(System.Int32,System.Int32)">
-      <summary> 
+    <member name="M:Furcadia.FurcMap.Map.GetMapTile(System.Int32,System.Int32)">
+      <summary>
             Get a MapTile object from the position specified by x
-            &amp; y 
+            &amp; y
             </summary>
       <param name="x">
             x coordinate
@@ -1407,7 +1291,7 @@
             The region number
             </returns>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.getWallAt(System.Int32,System.Int32)">
+    <member name="M:Furcadia.FurcMap.Map.GetWallAt(System.Int32,System.Int32)">
       <summary>
             Get the wall number from a tile
             </summary>
@@ -1442,73 +1326,38 @@
     </member>
     <member name="P:Furcadia.FurcMap.Map.Name">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.Name</parameter>
-          </include>
-        </markup>
-      </summary>
+            Name of the dream. Dream  Title?
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.PatchArchive">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.PatchArchive</parameter>
-          </include>
-        </markup>
-      </summary>
+            Link to the Patch archive
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.PreventPlayerListing">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.PreventPlayerListing</parameter>
-          </include>
-        </markup>
-      </summary>
+            prevent F4 to see the player list?
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.PreventSeasonalAvatars">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.PreventSeasonalAvatars</parameter>
-          </include>
-        </markup>
-      </summary>
+            Allow Seasonal Avatars in the dream?
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.PreventTabListing">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.PreventTabListing</parameter>
-          </include>
-        </markup>
-      </summary>
+            prevent Tab from showing furre names
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.Rating">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.Rating</parameter>
-          </include>
-        </markup>
-      </summary>
+            Dream Rating
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.Revision">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.Revision</parameter>
-          </include>
-        </markup>
-      </summary>
+            revision?
+            </summary>
     </member>
     <member name="M:Furcadia.FurcMap.Map.Save(System.String,System.Boolean)">
       <summary>
@@ -1543,7 +1392,7 @@
         </markup>
       </param>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.setFloorAt(System.Int32,System.Int32,System.Int32)">
+    <member name="M:Furcadia.FurcMap.Map.SetFloorAt(System.Int32,System.Int32,System.Int32)">
       <summary>
             Set the floor number at a tile specified by x and y
             </summary>
@@ -1558,109 +1407,61 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>floorNumber</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setFloorAt(System.Int32,System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.FurcMap.Map.SetFloorAt(System.Int32,System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </param>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.setObjectAt(System.Int32,System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setObjectAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
+    <member name="M:Furcadia.FurcMap.Map.SetObjectAt(System.Int32,System.Int32,System.Int32)">
+      <summary> Set the object number at a tile specified by x &amp; y
+            </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setObjectAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            x coordinate
+            </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setObjectAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            Y coordinate
+            </param>
       <param name="objectNumber">
         <markup>
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>objectNumber</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setObjectAt(System.Int32,System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.FurcMap.Map.SetObjectAt(System.Int32,System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </param>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.setRegionAt(System.Int32,System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setRegionAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
+    <member name="M:Furcadia.FurcMap.Map.SetRegionAt(System.Int32,System.Int32,System.Int32)">
+      <summary> Set the region number at a tile specified by x &amp; y
+             </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setRegionAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+             x coordinate
+             </param>
       <param name="y">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setRegionAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+             Y coordinate
+             </param>
       <param name="regionNumber">
         <markup>
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>regionNumber</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setRegionAt(System.Int32,System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.FurcMap.Map.SetRegionAt(System.Int32,System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </param>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.setWallAt(System.Int32,System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setWallAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
+    <member name="M:Furcadia.FurcMap.Map.SetWallAt(System.Int32,System.Int32,System.Int32)">
+      <summary> Set the wall number at a tile specified by x &amp; y
+             </summary>
       <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setWallAt(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+             x coordinate
+             </param>
       <param name="y">
         <markup>
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>y</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setWallAt(System.Int32,System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.FurcMap.Map.SetWallAt(System.Int32,System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </param>
@@ -1669,30 +1470,20 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>wallNumber</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setWallAt(System.Int32,System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.FurcMap.Map.SetWallAt(System.Int32,System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </param>
     </member>
     <member name="P:Furcadia.FurcMap.Map.UsePatch">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.UsePatch</parameter>
-          </include>
-        </markup>
-      </summary>
+            type of dream patch to use
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.UseSwearFilter">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.FurcMap.Map.UseSwearFilter</parameter>
-          </include>
-        </markup>
-      </summary>
+            Swear Filter
+            </summary>
     </member>
     <member name="P:Furcadia.FurcMap.Map.Width">
       <summary>
@@ -1701,13 +1492,8 @@
     </member>
     <member name="T:Furcadia.FurcMap.MapPosition">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.FurcMap.MapPosition</parameter>
-          </include>
-        </markup>
-      </summary>
+            tile data
+             </summary>
     </member>
     <member name="M:Furcadia.FurcMap.MapPosition.#ctor(System.Int32,System.Int32)">
       <summary>
@@ -1774,73 +1560,38 @@
     </member>
     <member name="F:Furcadia.FurcMap.MapPosition.effectNumber">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.FurcMap.MapPosition.effectNumber</parameter>
-          </include>
-        </markup>
-      </summary>
+            objects
+             </summary>
     </member>
     <member name="F:Furcadia.FurcMap.MapPosition.floorNumber">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.FurcMap.MapPosition.floorNumber</parameter>
-          </include>
-        </markup>
-      </summary>
+            objects
+             </summary>
     </member>
     <member name="F:Furcadia.FurcMap.MapPosition.objectNumber">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.FurcMap.MapPosition.objectNumber</parameter>
-          </include>
-        </markup>
-      </summary>
+            objects
+             </summary>
     </member>
     <member name="F:Furcadia.FurcMap.MapPosition.regionNumber">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.FurcMap.MapPosition.regionNumber</parameter>
-          </include>
-        </markup>
-      </summary>
+            objects
+             </summary>
     </member>
     <member name="F:Furcadia.FurcMap.MapPosition.wallNumber">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.FurcMap.MapPosition.wallNumber</parameter>
-          </include>
-        </markup>
-      </summary>
+            objects
+             </summary>
     </member>
     <member name="F:Furcadia.FurcMap.MapPosition.x">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.FurcMap.MapPosition.x</parameter>
-          </include>
-        </markup>
-      </summary>
+            Coordinates
+             </summary>
     </member>
     <member name="F:Furcadia.FurcMap.MapPosition.y">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.FurcMap.MapPosition.y</parameter>
-          </include>
-        </markup>
-      </summary>
+            Coordinates
+             </summary>
     </member>
     <member name="T:Furcadia.FurcMap.MapRating">
       <summary>
@@ -1914,13 +1665,8 @@
     </member>
     <member name="T:Furcadia.FurcMap.MapTile">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.FurcMap.MapTile</parameter>
-          </include>
-        </markup>
-      </summary>
+            Map objects position information
+            </summary>
     </member>
     <member name="M:Furcadia.FurcMap.MapTile.#ctor(System.Int32,System.Int32)">
       <summary>
@@ -3016,13 +2762,8 @@
     </member>
     <member name="T:Furcadia.IO.Paths">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.IO.Paths</parameter>
-          </include>
-        </markup>
-      </summary>
+             This class contains all the paths related to the users furcadia installation.
+            <para>***NOTICE: DO NOT REMOVE***</para><para> Credits go to Artex for helping me fix Path issues and contributing his code.</para><para>***NOTICE: DO NOT REMOVE.***</para><para>Log Header</para><para>Format: (date,Version) AuthorName, Changes.</para><para> (Mar 12,2014,0.2.12) Gerolkae, Adapted Paths to work with a Supplied path</para><para>  (June 1, 2016) Gerolkae, Added possible missing Registry Paths for x86/x64 Windows and Mono Support. Wine Support also contains these corrections.</para></summary>
     </member>
     <member name="M:Furcadia.IO.Paths.#ctor">
       <summary>
@@ -3988,11 +3729,6 @@
         </markup>
       </summary>
     </member>
-    <member name="E:Furcadia.Net.NetProxy.ClientData">
-      <summary>
-            This is triggered when the Client sends data to the server.
-            </summary>
-    </member>
     <member name="E:Furcadia.Net.NetProxy.ClientData2">
       <summary>
             This is triggered when the Client sends data to the server.
@@ -4070,11 +3806,6 @@
     <member name="F:Furcadia.Net.NetProxy.FurcadiaUtilities">
       <summary>
             Furcadia Utilities
-            </summary>
-    </member>
-    <member name="E:Furcadia.Net.NetProxy.FurcSettingsRestored">
-      <summary>
-            This is triggered when t client is closed.
             </summary>
     </member>
     <member name="P:Furcadia.Net.NetProxy.IsClientConnected">
@@ -4199,12 +3930,6 @@
           </include>
         </markup>
       </param>
-    </member>
-    <member name="E:Furcadia.Net.NetProxy.ServerData">
-      <summary>
-            This is triggered when the Server sends data to the client.
-            Expects a return Value
-            </summary>
     </member>
     <member name="E:Furcadia.Net.NetProxy.ServerData2">
       <summary>
