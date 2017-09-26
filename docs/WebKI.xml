@@ -1986,8 +1986,8 @@
     <HelpKINode Title="NetMessage.Write Method " Url="html/Overload_Furcadia_Net_NetMessage_Write.htm" />
   </HelpKINode>
   <HelpKINode Title="X field">
-    <HelpKINode Title="Frame.Pos.X Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
     <HelpKINode Title="ViewArea.X Field" Url="html/F_Furcadia_Drawing_ViewArea_X.htm" />
+    <HelpKINode Title="Frame.Pos.X Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
   </HelpKINode>
   <HelpKINode Title="x field">
     <HelpKINode Title="MapPosition.x Field" Url="html/F_Furcadia_FurcMap_MapPosition_x.htm" />
@@ -1997,13 +1997,13 @@
     <HelpKINode Title="FURRE.X Property " Url="html/P_Furcadia_Net_Dream_FURRE_X.htm" />
     <HelpKINode Title="FurrePosition.X Property " Url="html/P_Furcadia_Drawing_FurrePosition_X.htm" />
   </HelpKINode>
-  <HelpKINode Title="Y field">
-    <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
-    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
-  </HelpKINode>
   <HelpKINode Title="y field">
     <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
     <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Y field">
+    <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
+    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
   </HelpKINode>
   <HelpKINode Title="Y property">
     <HelpKINode Title="FURRE.Y Property " Url="html/P_Furcadia_Net_Dream_FURRE_Y.htm" />
