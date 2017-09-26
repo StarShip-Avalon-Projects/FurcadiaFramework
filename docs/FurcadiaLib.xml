@@ -278,14 +278,14 @@
         </markup>
       </returns>
     </member>
-    <member name="P:Furcadia.Drawing.FurrePosition.x">
+    <member name="P:Furcadia.Drawing.FurrePosition.X">
       <summary>
-            x coordiante
+            x coordinate
             </summary>
     </member>
-    <member name="P:Furcadia.Drawing.FurrePosition.y">
+    <member name="P:Furcadia.Drawing.FurrePosition.Y">
       <summary>
-            y corrdinate
+            y coordinate
             </summary>
     </member>
     <member name="T:Furcadia.Drawing.Helper">
@@ -1208,7 +1208,7 @@
             force sitting ?
             </summary>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.getEffectAt(System.Int32,System.Int32)">
+    <member name="M:Furcadia.FurcMap.Map.GetEffectAt(System.Int32,System.Int32)">
       <summary>
             Get the effect number from a tile
             </summary>
@@ -1263,7 +1263,7 @@
             </param>
       <returns>the Tile data</returns>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.getObjectAt(System.Int32,System.Int32)">
+    <member name="M:Furcadia.FurcMap.Map.GetObjectAt(System.Int32,System.Int32)">
       <summary>
             Get the object number from a tile
             </summary>
@@ -1277,7 +1277,7 @@
             The object number
             </returns>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.getRegionAt(System.Int32,System.Int32)">
+    <member name="M:Furcadia.FurcMap.Map.GetRegionAt(System.Int32,System.Int32)">
       <summary>
             Get the region number from a tile
             </summary>
@@ -1373,7 +1373,7 @@
             True if the save was a success, False if not
             </returns>
     </member>
-    <member name="M:Furcadia.FurcMap.Map.setEffectAt(System.Int32,System.Int32,System.Int32)">
+    <member name="M:Furcadia.FurcMap.Map.SetEffectAt(System.Int32,System.Int32,System.Int32)">
       <summary> Set the effect number at a tile specified by x &amp; y
             </summary>
       <param name="x">
@@ -1387,7 +1387,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>effectNumber</parameter>
-            <parameter>M:Furcadia.FurcMap.Map.setEffectAt(System.Int32,System.Int32,System.Int32)</parameter>
+            <parameter>M:Furcadia.FurcMap.Map.SetEffectAt(System.Int32,System.Int32,System.Int32)</parameter>
           </include>
         </markup>
       </param>
@@ -2767,30 +2767,13 @@
     </member>
     <member name="M:Furcadia.IO.Paths.#ctor">
       <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.IO.Paths</parameter>
-          </include>
-        </markup>
-      </summary>
+            Load Default Furcadia Paths
+            </summary>
     </member>
     <member name="M:Furcadia.IO.Paths.#ctor(System.String)">
       <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.IO.Paths</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="path">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>path</parameter>
-            <parameter>M:Furcadia.IO.Paths.#ctor(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Load Paths Based on <paramref name="path" /></summary>
+      <param name="path">Specified directory to look for a nonstandard Furcadia install</param>
     </member>
     <member name="P:Furcadia.IO.Paths.CachePath">
       <summary>
@@ -2810,33 +2793,18 @@
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultCachePath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultCachePath</parameter>
-          </include>
-        </markup>
-      </summary>
+            c:\Program Data\
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultCharacterPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultCharacterPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Default Character Path
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultDreamsPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultDreamsPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Personal Dreams Folder
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultFurcadiaPath">
       <summary>
@@ -2848,43 +2816,23 @@
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultGlobalMapsPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultGlobalMapsPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Main Maps Default path
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultGlobalSkinsPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultGlobalSkinsPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            default skins
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultLocalSkinsPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultLocalSkinsPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            default local skins
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultLogsPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultLogsPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            default personal log folder
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultPatchPath">
       <summary>
@@ -2896,93 +2844,48 @@
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultPermanentMapsCachePath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultPermanentMapsCachePath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Default Main Maps
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultPersonalDataPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultPersonalDataPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Default Documents\Furcadia
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultPortraitCachePath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultPortraitCachePath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Portrait cache
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultScreenshotsPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultScreenshotsPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Furcadia Screen Shots default folder
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultSettingsPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultSettingsPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            User App Data Settings
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultTemporaryDreamsPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultTemporaryDreamsPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Temporary dreams
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultTemporaryFilesPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultTemporaryFilesPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Default Temporary Files
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultTemporaryPatchesPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultTemporaryPatchesPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Temporary patches
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DefaultWhisperLogsPath">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.DefaultWhisperLogsPath</parameter>
-          </include>
-        </markup>
-      </summary>
+            Whisper Logs
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.DreamsPath">
       <summary>
@@ -3036,18 +2939,18 @@
     <member name="P:Furcadia.IO.Paths.GlobalMapsPath">
       <summary>
              Path to the global maps, distributed with Furcadia and loadable
-             during gameplay in some main dreams.
-            
+             during game play in some main dreams.
+            <para>
              Default: c:\Program Files\Furcadia\maps
-             </summary>
+             </para></summary>
     </member>
     <member name="P:Furcadia.IO.Paths.GlobalSkinsPath">
       <summary>
              Path to the global skins that change Furcadia's graphical
              layout. They are stored in the Furcadia program files folder.
-            
-             Default: c:\Program Files\Furcadia\skins
-             </summary>
+            <para>
+            Default: c:\Program Files\Furcadia\skins
+             </para></summary>
     </member>
     <member name="P:Furcadia.IO.Paths.LocaldirPath">
       <summary>
@@ -3059,52 +2962,50 @@
     </member>
     <member name="P:Furcadia.IO.Paths.LocalSkinsPath">
       <summary>
-             Local skins path - contains Furcadia skins used locally by each user.
-            
-             Default: My Documents\Furcadia\Skins
-             </summary>
+            Local skins path - contains Furcadia skins used locally by each user.
+            <para>
+            Default: My Documents\Furcadia\Skins
+            </para></summary>
     </member>
     <member name="P:Furcadia.IO.Paths.LogsPath">
       <summary>
-             Logs path - contains session logs for each character and a
-             subfolder with whisper logs, should Pounce be enabled.
-            
-             Default: My Documents\Furcadia\Logs
-             </summary>
+            Logs path - contains session logs for each character and a
+            sub-folder with whisper logs, should Pounce be enabled.
+            <para>
+            Default: My Documents\Furcadia\Logs
+            </para></summary>
     </member>
     <member name="P:Furcadia.IO.Paths.PermanentMapsCachePath">
       <summary>
              Permanent Maps cache path - contains downloaded main maps such
              as the festival maps or other DEP-specific customized dreams.
-            
-             Default: %ALLUSERSPROFILE%\Dragon's Eye
-                      Productions\Furcadia\Permanent Maps
-             </summary>
+            <para>
+             Default: %ALLUSERSPROFILE%\Dragon's Eye Productions\Furcadia\Permanent Maps
+             </para></summary>
     </member>
     <member name="P:Furcadia.IO.Paths.PersonalDataPath">
       <summary>
              Personal data path - contains user-specific files such as logs,
-             patches, screenshots and character files.
-            
+             patches, screen shots and character files.
+            <para>
              Default: My Documents\Furcadia\
-             </summary>
+             </para></summary>
     </member>
     <member name="P:Furcadia.IO.Paths.PortraitCachePath">
       <summary>
-             Portrait cache path - contains downloaded portraits and desctags
-             cache for faster loading and bandwidth optimization.
-            
-             Default: %ALLUSERSPROFILE%\Dragon's Eye
-                      Productions\Furcadia\Portrait Cache
-             </summary>
+            Portrait cache path - contains downloaded portraits and desctags
+            cache for faster loading and bandwidth optimization.
+            <para>
+            Default: %ALLUSERSPROFILE%\Dragon's Eye Productions\Furcadia\Portrait Cache
+            </para></summary>
     </member>
     <member name="P:Furcadia.IO.Paths.ScreenshotsPath">
       <summary>
-             Screenshots path - contains screen shot files taken by Furcadia
-             with the CTRL+F1 hotkey. At the time of writing, in PNG format.
-            
-             Default: My Documents\Furcadia\Screenshots
-             </summary>
+            Screenshots path - contains screen shot files taken by Furcadia
+            with the CTRL+F1 hotkey. At the time of writing, in PNG format.
+            <para>
+            Default: My Documents\Furcadia\Screenshots
+            </para></summary>
     </member>
     <member name="P:Furcadia.IO.Paths.SettingsPath">
       <summary>
@@ -3571,7 +3472,7 @@
     </member>
     <member name="M:Furcadia.Net.NetProxy.#ctor">
       <summary>
-            Connect to game servver with default settings
+            Connect to game server with default settings
             </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions@)">
@@ -3707,7 +3608,7 @@
     </member>
     <member name="M:Furcadia.Net.NetProxy.#ctor(System.String,System.Int32,System.Int32)">
       <summary>
-            Connect to the Game serer by Host name ot IP address
+            Connect to the Game serer by Host name to IP address
             </summary>
       <param name="host">
             GameServer Ip address or hostname
@@ -3747,7 +3648,7 @@
     </member>
     <member name="E:Furcadia.Net.NetProxy.ClientExited">
       <summary>
-            This is triggered when the user has exited/logoff Furcadia and
+            This is triggered when the user has exited/log-off Furcadia and
             the Furcadia client is closed.
             </summary>
     </member>
@@ -3763,7 +3664,7 @@
     </member>
     <member name="E:Furcadia.Net.NetProxy.Connected">
       <summary>
-            This is triggered when the Client and/or Server have connected to tcp stream
+            This is triggered when the Client and/or Server have connected to TCP stream
              </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxy.Disconnect">
@@ -5745,13 +5646,8 @@
     </member>
     <member name="F:Furcadia.Net.Options.ClientOptions.FurcadiaFilePaths">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.Options.ClientOptions.FurcadiaFilePaths</parameter>
-          </include>
-        </markup>
-      </summary>
+            Furcadia Paths File Path Structure.
+            </summary>
     </member>
     <member name="F:Furcadia.Net.Options.ClientOptions.FurcadiaUtilities">
       <summary>
@@ -5775,7 +5671,7 @@
     </member>
     <member name="M:Furcadia.Net.Options.ProxyOptions.#ctor">
       <summary>
-            Deault settings
+            Default settings
             <para><see cref="F:Furcadia.Net.Options.ProxyOptions.localhostport" /> = 6700
             </para><para><see cref="F:Furcadia.Net.Options.ProxyOptions.furcprocess" /> = "Furcadia.exe"
             </para></summary>
@@ -6167,7 +6063,7 @@
             </para><para>
             Part2a: Proxy Functions do link to Monkey Speak trigger execution
             </para><para>
-            Part3: This Class Links loosley to the GUI
+            Part3: This Class Links loosely to the GUI
             </para></summary>
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.#ctor">
@@ -6215,13 +6111,8 @@
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.Channel">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.Proxy.ProxySession.Channel</parameter>
-          </include>
-        </markup>
-      </summary>
+            Channel name?
+            </summary>
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ClientConnectPhase">
       <summary>
@@ -6477,7 +6368,7 @@
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ServerConnectPhase">
       <summary>
-            Curent server connection phase
+            Current server connection phase
             </summary>
     </member>
     <member name="E:Furcadia.Net.Proxy.ProxySession.ServerData2">
@@ -6524,7 +6415,9 @@
     <member name="P:Furcadia.Net.Proxy.ProxySession.ThroatTired">
       <summary>
             ServerQueue Throat Tired Mode
-            </summary>
+            <para>
+            When set, a <see cref="T:System.Threading.Timer" /> is created to make us wait till the time is clear to resume.
+            </para></summary>
       <returns>
             State <see cref="P:Furcadia.Net.Utils.ServerQue.ThroatTired" /></returns>
     </member>
@@ -6548,7 +6441,7 @@
             Raw instruction to send
             </param>
       <param name="e">
-            Cliemt or Server Event Argumentss with Instruction type
+            Client or Server Event Arguments with Instruction type
             </param>
     </member>
     <member name="T:Furcadia.Net.Proxy.ProxySession.OnErrorEventHandler">
@@ -6577,7 +6470,7 @@
     </member>
     <member name="T:Furcadia.Net.Proxy.ProxySession.ProcessInstruction">
       <summary>
-            Send Server to Client Instruction object to Subclassed for handlings
+            Send Server to Client Instruction object to Sub-classed for handling.
             </summary>
       <param name="InstructionObject">
             Server Instruction Object
@@ -6750,17 +6643,13 @@
     </member>
     <member name="M:Furcadia.Net.Utils.ServerQue.#ctor(System.Int32,System.Int32)">
       <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Utils.ServerQue</parameter>
-          </include>
-        </markup>
-      </summary>
+            Queue Manager constructor
+            </summary>
       <param name="ThroatTiredTime">
             Delay time to pause for Throat Tired Syndrome
             </param>
       <param name="PingTimerTime">
-            Optional Server Ping timme in seconds
+            Optional ping the game server time in seconds
             </param>
     </member>
     <member name="M:Furcadia.Net.Utils.ServerQue.Dispose">
@@ -6810,7 +6699,9 @@
     <member name="P:Furcadia.Net.Utils.ServerQue.ThroatTired">
       <summary>
             If Proxy get "Your throat is tired" Pause for a number of seconds
-            </summary>
+            <para>
+            When set, a <see cref="T:System.Threading.Timer" /> is created to make us wait till the time is clear to resume.
+            </para></summary>
     </member>
     <member name="P:Furcadia.Net.Utils.ServerQue.ThroatTiredDelayTime">
       <summary>
@@ -6837,12 +6728,12 @@
     </member>
     <member name="M:Furcadia.Net.Utils.Utilities.#ctor">
       <summary>
-            Default Constructor
+            Furcadia Defaults with optional app.config
             </summary>
     </member>
     <member name="P:Furcadia.Net.Utils.Utilities.DefaultClient">
       <summary>
-            Furcadia Client Executable
+            Furcadia Client Executable Name with extension
             </summary>
     </member>
     <member name="P:Furcadia.Net.Utils.Utilities.GameServerHost">
@@ -6860,20 +6751,23 @@
     </member>
     <member name="P:Furcadia.Net.Utils.Utilities.GetEncoding">
       <summary>
-            Master Config set Encoders to Win 1252 encoding.
+            Master configuration set Encoders to Win 1252 encoding.
             </summary>
     </member>
     <member name="M:Furcadia.Net.Utils.Utilities.PortOpen(System.Int32)">
       <summary>
             Checks TCP port and scans for an available TCP port on the host
-            system <paraa>
-            TODO: Find an Available Port?</paraa></summary>
+            system
+            </summary>
       <param name="port">
             ref TCP Port
             </param>
       <returns>
             True when a port is found available
             </returns>
+      <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="port" /> is 0
+            </exception>
     </member>
     <member name="P:Furcadia.Net.Utils.Utilities.PounceServerHost">
       <summary>
@@ -9596,25 +9490,11 @@
     </member>
     <member name="M:Furcadia.Text.Settings.ReadSettingIni(System.String)">
       <summary>
-            Rrad Furcadia settings from Furcadia install path. If the settings does not exist We'll use our Embedded fresource
+            Read Furcadia settings from Furcadia install path. If the settings does not exist We'll use our
+            Embedded from source
             </summary>
-      <param name="SettingsIni">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>SettingsIni</parameter>
-            <parameter>M:Furcadia.Text.Settings.ReadSettingIni(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Text.Settings.ReadSettingIni(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
+      <param name="SettingsIni">Full file path to settings.ini</param>
+      <returns>Array of settings</returns>
     </member>
     <member name="M:Furcadia.Text.Settings.RestoreFurcadiaSettings(System.String[])">
       <summary>

@@ -51,7 +51,10 @@
 
 <span class="keyword">Dim</span> <span class="parameter">instance</span> <span class="keyword">As</span> <span class="identifier">Paths</span></pre></div><div id="ID1EDCA_code_Div3" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">Paths</span></pre></div><div id="ID1EDCA_code_Div4" class="codeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">type</span> <span class="identifier">Paths</span> =  <span class="keyword">class</span> <span class="keyword">end</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EDCA");</script></div><p>The <span class="selflink">Paths</span> type exposes the following members.</p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Constructors</span></div><div id="ID3RBSection" class="collapsibleSection"><table class="members" id="constructorList"><tr><th class="iconColumn">
 								 
-							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Furcadia_IO_Paths__ctor.htm">Paths<span id="LSTF2224D57_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF2224D57_2?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a></td><td><div class="summary">Initializes a new instance of the <span class="selflink">Paths</span> class</div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Furcadia_IO_Paths__ctor_1.htm">Paths(String)</a></td><td><div class="summary">Initializes a new instance of the <span class="selflink">Paths</span> class</div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Properties</span></div><div id="ID4RBSection" class="collapsibleSection"><table class="members" id="propertyList"><tr><th class="iconColumn">
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Furcadia_IO_Paths__ctor.htm">Paths<span id="LSTF2224D57_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF2224D57_2?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a></td><td><div class="summary">
+            Load Default Furcadia Paths
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Furcadia_IO_Paths__ctor_1.htm">Paths(String)</a></td><td><div class="summary">
+            Load Paths Based on <span class="parameter">path</span></div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Properties</span></div><div id="ID4RBSection" class="collapsibleSection"><table class="members" id="propertyList"><tr><th class="iconColumn">
 								 
 							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_CachePath.htm">CachePath</a></td><td><div class="summary">
              Cache path - contains all the Furcadia cache and resides in the
@@ -63,17 +66,49 @@
              information for each character.
             
              Default: My Documents\Furcadia\Furcadia Characters\
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultCachePath.htm">DefaultCachePath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultCharacterPath.htm">DefaultCharacterPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultDreamsPath.htm">DefaultDreamsPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultFurcadiaPath.htm">DefaultFurcadiaPath</a></td><td><div class="summary">
+             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultCachePath.htm">DefaultCachePath</a></td><td><div class="summary">
+            c:\Program Data\
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultCharacterPath.htm">DefaultCharacterPath</a></td><td><div class="summary">
+            Default Character Path
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultDreamsPath.htm">DefaultDreamsPath</a></td><td><div class="summary">
+            Personal Dreams Folder
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultFurcadiaPath.htm">DefaultFurcadiaPath</a></td><td><div class="summary">
              Default Furcadia install folder - this path is used by default
              to install Furcadia to.
             
              Default: c:\Program Files\Furcadia
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultGlobalMapsPath.htm">DefaultGlobalMapsPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultGlobalSkinsPath.htm">DefaultGlobalSkinsPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultLocalSkinsPath.htm">DefaultLocalSkinsPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultLogsPath.htm">DefaultLogsPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultPatchPath.htm">DefaultPatchPath</a></td><td><div class="summary">
+             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultGlobalMapsPath.htm">DefaultGlobalMapsPath</a></td><td><div class="summary">
+            Main Maps Default path
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultGlobalSkinsPath.htm">DefaultGlobalSkinsPath</a></td><td><div class="summary">
+            default skins
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultLocalSkinsPath.htm">DefaultLocalSkinsPath</a></td><td><div class="summary">
+            default local skins
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultLogsPath.htm">DefaultLogsPath</a></td><td><div class="summary">
+            default personal log folder
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultPatchPath.htm">DefaultPatchPath</a></td><td><div class="summary">
              Path to the default patch (graphics, sounds, layout) folder used
              to display Furcadia itself, its tools and environment.
             
              Default: c:\Program Files\Furcadia\patches\default
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultPermanentMapsCachePath.htm">DefaultPermanentMapsCachePath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultPersonalDataPath.htm">DefaultPersonalDataPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultPortraitCachePath.htm">DefaultPortraitCachePath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultScreenshotsPath.htm">DefaultScreenshotsPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultSettingsPath.htm">DefaultSettingsPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultTemporaryDreamsPath.htm">DefaultTemporaryDreamsPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultTemporaryFilesPath.htm">DefaultTemporaryFilesPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultTemporaryPatchesPath.htm">DefaultTemporaryPatchesPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultWhisperLogsPath.htm">DefaultWhisperLogsPath</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DreamsPath.htm">DreamsPath</a></td><td><div class="summary">
+             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultPermanentMapsCachePath.htm">DefaultPermanentMapsCachePath</a></td><td><div class="summary">
+            Default Main Maps
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultPersonalDataPath.htm">DefaultPersonalDataPath</a></td><td><div class="summary">
+            Default Documents\Furcadia
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultPortraitCachePath.htm">DefaultPortraitCachePath</a></td><td><div class="summary">
+            Portrait cache
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultScreenshotsPath.htm">DefaultScreenshotsPath</a></td><td><div class="summary">
+            Furcadia Screen Shots default folder
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultSettingsPath.htm">DefaultSettingsPath</a></td><td><div class="summary">
+            User App Data Settings
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultTemporaryDreamsPath.htm">DefaultTemporaryDreamsPath</a></td><td><div class="summary">
+            Temporary dreams
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultTemporaryFilesPath.htm">DefaultTemporaryFilesPath</a></td><td><div class="summary">
+            Default Temporary Files
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultTemporaryPatchesPath.htm">DefaultTemporaryPatchesPath</a></td><td><div class="summary">
+            Temporary patches
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DefaultWhisperLogsPath.htm">DefaultWhisperLogsPath</a></td><td><div class="summary">
+            Whisper Logs
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_DreamsPath.htm">DreamsPath</a></td><td><div class="summary">
              Dreams path - contains Furcadia dreams made by the player.
             
              Default: My Documents\Furcadia\Dreams
@@ -90,51 +125,49 @@
             found, this property will be null.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_GlobalMapsPath.htm">GlobalMapsPath</a></td><td><div class="summary">
              Path to the global maps, distributed with Furcadia and loadable
-             during gameplay in some main dreams.
-            
+             during game play in some main dreams.
+            <p>
              Default: c:\Program Files\Furcadia\maps
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_GlobalSkinsPath.htm">GlobalSkinsPath</a></td><td><div class="summary">
+             </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_GlobalSkinsPath.htm">GlobalSkinsPath</a></td><td><div class="summary">
              Path to the global skins that change Furcadia's graphical
              layout. They are stored in the Furcadia program files folder.
-            
-             Default: c:\Program Files\Furcadia\skins
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_LocaldirPath.htm">LocaldirPath</a></td><td><div class="summary">
+            <p>
+            Default: c:\Program Files\Furcadia\skins
+             </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_LocaldirPath.htm">LocaldirPath</a></td><td><div class="summary">
             LocalDir path - a specific path where all the player-specific
             and cache data is stored in its classic form. Used mainly to
             retain the classic path structure or to run Furcadia from a
             removable disk.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_LocalSkinsPath.htm">LocalSkinsPath</a></td><td><div class="summary">
-             Local skins path - contains Furcadia skins used locally by each user.
-            
-             Default: My Documents\Furcadia\Skins
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_LogsPath.htm">LogsPath</a></td><td><div class="summary">
-             Logs path - contains session logs for each character and a
-             subfolder with whisper logs, should Pounce be enabled.
-            
-             Default: My Documents\Furcadia\Logs
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_PermanentMapsCachePath.htm">PermanentMapsCachePath</a></td><td><div class="summary">
+            Local skins path - contains Furcadia skins used locally by each user.
+            <p>
+            Default: My Documents\Furcadia\Skins
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_LogsPath.htm">LogsPath</a></td><td><div class="summary">
+            Logs path - contains session logs for each character and a
+            sub-folder with whisper logs, should Pounce be enabled.
+            <p>
+            Default: My Documents\Furcadia\Logs
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_PermanentMapsCachePath.htm">PermanentMapsCachePath</a></td><td><div class="summary">
              Permanent Maps cache path - contains downloaded main maps such
              as the festival maps or other DEP-specific customized dreams.
-            
-             Default: %ALLUSERSPROFILE%\Dragon's Eye
-                      Productions\Furcadia\Permanent Maps
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_PersonalDataPath.htm">PersonalDataPath</a></td><td><div class="summary">
+            <p>
+             Default: %ALLUSERSPROFILE%\Dragon's Eye Productions\Furcadia\Permanent Maps
+             </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_PersonalDataPath.htm">PersonalDataPath</a></td><td><div class="summary">
              Personal data path - contains user-specific files such as logs,
-             patches, screenshots and character files.
-            
+             patches, screen shots and character files.
+            <p>
              Default: My Documents\Furcadia\
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_PortraitCachePath.htm">PortraitCachePath</a></td><td><div class="summary">
-             Portrait cache path - contains downloaded portraits and desctags
-             cache for faster loading and bandwidth optimization.
-            
-             Default: %ALLUSERSPROFILE%\Dragon's Eye
-                      Productions\Furcadia\Portrait Cache
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_ScreenshotsPath.htm">ScreenshotsPath</a></td><td><div class="summary">
-             Screenshots path - contains screen shot files taken by Furcadia
-             with the CTRL+F1 hotkey. At the time of writing, in PNG format.
-            
-             Default: My Documents\Furcadia\Screenshots
-             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_SettingsPath.htm">SettingsPath</a></td><td><div class="summary">
+             </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_PortraitCachePath.htm">PortraitCachePath</a></td><td><div class="summary">
+            Portrait cache path - contains downloaded portraits and desctags
+            cache for faster loading and bandwidth optimization.
+            <p>
+            Default: %ALLUSERSPROFILE%\Dragon's Eye Productions\Furcadia\Portrait Cache
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_ScreenshotsPath.htm">ScreenshotsPath</a></td><td><div class="summary">
+            Screenshots path - contains screen shot files taken by Furcadia
+            with the CTRL+F1 hotkey. At the time of writing, in PNG format.
+            <p>
+            Default: My Documents\Furcadia\Screenshots
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Furcadia_IO_Paths_SettingsPath.htm">SettingsPath</a></td><td><div class="summary">
              Personal settings path - contains all the Furcadia settings for
              each user that uses it.
             
@@ -174,7 +207,7 @@
             on the current machine.
             </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode</a></td><td> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/dfwy45w9" target="_blank">GetType</a></td><td> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/57ctke0a" target="_blank">MemberwiseClone</a></td><td> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/7bxwbwt2" target="_blank">ToString</a></td><td> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Remarks</span></div><div id="ID6RBSection" class="collapsibleSection">
               Theory check all known default paths
-            <p> check localdir.ini</p><p>  then check each registry hives for active CPU type</p><p>  Then check each give for default 32bit path(Non wow6432node)</p><p>  then check Wine variants(C++ Win32 client)</p><p>  then check Mono Versions for before mentioned(C#? Client)</p><p>  then check default drive folder paths</p><p>  If all Fail... Throw <span class="nolink">[!:FurcadiaNotInstalled]</span> exception</p><p>  Clients Should check for this error and then ask the user where to manually locate Furccadia</p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID7RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Furcadia_IO.htm">Furcadia.IO Namespace</a></div></div></div>
+            <p> check localdir.ini</p><p>  then check each registry hives for active CPU type</p><p>  Then check each give for default 32bit path(Non wow6432node)</p><p>  then check Wine variants(C++ Win32 client)</p><p>  then check Mono Versions for before mentioned(C#? Client)</p><p>  then check default drive folder paths</p><p>  If all Fail... Throw <a href="T_Furcadia_IO_FurcadiaNotFoundException.htm">FurcadiaNotFoundException</a> exception</p><p>  Clients Should check for this error and then ask the user where to manually locate Furccadia</p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID7RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Furcadia_IO.htm">Furcadia.IO Namespace</a></div></div></div>
     </div>
     <div id="pageFooter" class="pageFooter">
       <div class="feedbackLink">Send comments on this topic to
