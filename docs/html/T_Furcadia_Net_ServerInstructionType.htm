@@ -19,6 +19,8 @@
     <meta name="System.Keywords" content="DisplayText enumeration member" />
     <meta name="System.Keywords" content="UpdateColorString enumeration member" />
     <meta name="System.Keywords" content="LoadDreamEvent enumeration member" />
+    <meta name="System.Keywords" content="UniqueUserId enumeration member" />
+    <meta name="System.Keywords" content="SetOwnId enumeration member" />
     <meta name="System.Keywords" content="BookmarkDream enumeration member" />
     <meta name="Microsoft.Help.F1" content="Furcadia.Net.ServerInstructionType" />
     <meta name="Microsoft.Help.F1" content="Furcadia.Net.ServerInstructionType.Unknown" />
@@ -30,6 +32,8 @@
     <meta name="Microsoft.Help.F1" content="Furcadia.Net.ServerInstructionType.DisplayText" />
     <meta name="Microsoft.Help.F1" content="Furcadia.Net.ServerInstructionType.UpdateColorString" />
     <meta name="Microsoft.Help.F1" content="Furcadia.Net.ServerInstructionType.LoadDreamEvent" />
+    <meta name="Microsoft.Help.F1" content="Furcadia.Net.ServerInstructionType.UniqueUserId" />
+    <meta name="Microsoft.Help.F1" content="Furcadia.Net.ServerInstructionType.SetOwnId" />
     <meta name="Microsoft.Help.F1" content="Furcadia.Net.ServerInstructionType.BookmarkDream" />
     <meta name="Microsoft.Help.Id" content="T:Furcadia.Net.ServerInstructionType" />
     <meta name="Description" content="Server to Client Instruction set. (Furcadia v31c) This is the set that FF3PP understands and uses. these can change with each Furcadia update." />
@@ -110,7 +114,21 @@
             </p><p>
             respond with client command when furcadia client is not
             available "vasecodegamma"
-            </p></td></tr><tr><td /><td target="F:Furcadia.Net.ServerInstructionType.BookmarkDream"><span class="selflink">BookmarkDream</span></td><td>8</td><td /></tr></table></div></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID3RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Furcadia_Net.htm">Furcadia.Net Namespace</a></div></div></div>
+            </p></td></tr><tr><td /><td target="F:Furcadia.Net.ServerInstructionType.UniqueUserId"><span class="selflink">UniqueUserId</span></td><td>8</td><td>
+            Unique User ID
+             <p />]z UID[*]
+            <p />This instruction is sent as a response to the uid command. The purpose of this is unclear.
+             <p /> Credits Artex, FTR
+            </td></tr><tr><td /><td target="F:Furcadia.Net.ServerInstructionType.SetOwnId"><span class="selflink">SetOwnId</span></td><td>9</td><td>
+            Set Own ID
+            <p /> ]BUserID[*]
+            <p />This instruction informs the client of which user-name is it logged into. Knowing your
+            own UserID can help you find your own avatar within the dream.
+            <p />Credits Artex, FTR
+            </td></tr><tr><td /><td target="F:Furcadia.Net.ServerInstructionType.BookmarkDream"><span class="selflink">BookmarkDream</span></td><td>10</td><td>
+             Dream Book Mark
+             <p />Triggers Pounce to add the dream to the list marked temporary
+            </td></tr></table></div></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID3RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Furcadia_Net.htm">Furcadia.Net Namespace</a></div></div></div>
     </div>
     <div id="pageFooter" class="pageFooter">
       <div class="feedbackLink">Send comments on this topic to

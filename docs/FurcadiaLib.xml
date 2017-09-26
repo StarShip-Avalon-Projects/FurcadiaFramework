@@ -2779,7 +2779,7 @@
       <summary>
              Cache path - contains all the Furcadia cache and resides in the
              global user space.
-            
+            <para />
              Default: %ALLUSERSPROFILE%\Dragon's Eye Productions\Furcadia
              </summary>
     </member>
@@ -2787,7 +2787,7 @@
       <summary>
              Character file path - contains furcadia.ini files with login
              information for each character.
-            
+            <para />
              Default: My Documents\Furcadia\Furcadia Characters\
              </summary>
     </member>
@@ -2810,7 +2810,7 @@
       <summary>
              Default Furcadia install folder - this path is used by default
              to install Furcadia to.
-            
+            <para />
              Default: c:\Program Files\Furcadia
              </summary>
     </member>
@@ -2838,7 +2838,7 @@
       <summary>
              Path to the default patch (graphics, sounds, layout) folder used
              to display Furcadia itself, its tools and environment.
-            
+            <para />
              Default: c:\Program Files\Furcadia\patches\default
              </summary>
     </member>
@@ -3001,7 +3001,7 @@
     </member>
     <member name="P:Furcadia.IO.Paths.ScreenshotsPath">
       <summary>
-            Screenshots path - contains screen shot files taken by Furcadia
+            Screen shots path - contains screen shot files taken by Furcadia
             with the CTRL+F1 hotkey. At the time of writing, in PNG format.
             <para>
             Default: My Documents\Furcadia\Screenshots
@@ -3011,7 +3011,7 @@
       <summary>
              Personal settings path - contains all the Furcadia settings for
              each user that uses it.
-            
+            <para />
              Default (VISTA+): %USERPROFILE%\Local\AppData\Dragon's Eye Productions\Furcadia
              </summary>
     </member>
@@ -3019,7 +3019,7 @@
       <summary>
              Temporary dreams path - contains downloaded player dreams for
              subsequent loading.
-            
+            <para />
              Default: %ALLUSERSPROFILE%\Dragon's Eye
                       Productions\Furcadia\Temporary Dreams
              </summary>
@@ -3028,30 +3028,25 @@
       <summary>
              Temporary files path - contains downloaded and uploaded files
              that are either used to upload packages or download them for extraction.
-            
+            <para />
              Default: %ALLUSERSPROFILE%\Dragon's Eye
                       Productions\Furcadia\Temporary Files
              </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.TemporaryPatchesPath">
       <summary>
-             Temporary patch path - contains downloaded temporary patches.
-             This technology is never in use, yet supported, so this folder
-             is always empty.
-            
-             Default: %ALLUSERSPROFILE%\Dragon's Eye
-                      Productions\Furcadia\Temporary Patches
-             </summary>
+            Temporary patch path - contains downloaded temporary patches.
+            This technology is never in use, yet supported, so this folder
+            is always empty.
+            <para />
+            Default: %ALLUSERSPROFILE%\Dragon's Eye
+                     Productions\Furcadia\Temporary Patches
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.UsingLocaldir">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.Paths.UsingLocaldir</parameter>
-          </include>
-        </markup>
-      </summary>
+            Has LoclDir.ini been detected?
+            </summary>
     </member>
     <member name="P:Furcadia.IO.Paths.WhisperLogsPath">
       <summary>
@@ -4155,6 +4150,29 @@
             respond with client command when furcadia client is not
             available "vasecodegamma"
             </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.UniqueUserId">
+      <summary>
+            Unique User ID
+             <para />]z UID[*]
+            <para />This instruction is sent as a response to the uid command. The purpose of this is unclear.
+             <para /> Credits Artex, FTR
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.SetOwnId">
+      <summary>
+            Set Own ID
+            <para /> ]BUserID[*]
+            <para />This instruction informs the client of which user-name is it logged into. Knowing your
+            own UserID can help you find your own avatar within the dream.
+            <para />Credits Artex, FTR
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.BookmarkDream">
+      <summary>
+             Dream Book Mark
+             <para />Triggers Pounce to add the dream to the list marked temporary
+            </summary>
     </member>
     <member name="T:Furcadia.Net.Account.AccountInfo">
       <summary>
@@ -6465,14 +6483,16 @@
           </include>
         </markup>
       </summary>
-      <param name="InstructionObject"></param>
+      <param name="sender">
+            ChannelObject
+            </param>
       <param name="Args"></param>
     </member>
     <member name="T:Furcadia.Net.Proxy.ProxySession.ProcessInstruction">
       <summary>
             Send Server to Client Instruction object to Sub-classed for handling.
             </summary>
-      <param name="InstructionObject">
+      <param name="sender">
             Server Instruction Object
             </param>
       <param name="Args"></param>

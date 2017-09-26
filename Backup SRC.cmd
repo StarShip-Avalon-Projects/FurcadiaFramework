@@ -50,7 +50,7 @@ if not %GIT_STATUS%==0 goto eof
 
 git submodule foreach "git commit -ma'Auto Update SubModules'"
 
-git push -f --all --recurse-submodules=on-demand
+git push -f --all --recurse-submodules=on-check
 set GIT_STATUS=%ERRORLEVEL% 
 if not %GIT_STATUS%==0 goto eof  
 
