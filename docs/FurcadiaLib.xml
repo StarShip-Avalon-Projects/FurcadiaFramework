@@ -3669,12 +3669,12 @@
     </member>
     <member name="M:Furcadia.Net.NetProxy.Dispose">
       <summary>
-            Implement IDisposable.
+            Public implementation of Dispose pattern callable by consumers.
             </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxy.Dispose(System.Boolean)">
       <summary>
-            Dispose all our Disposable objects
+            Protected implementation of Dispose pattern.
             </summary>
       <param name="disposing">
         <markup>
@@ -6158,13 +6158,8 @@
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.Connect">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.Connect</parameter>
-          </include>
-        </markup>
-      </summary>
+            Connect the Proxy to the Furcadia  Game server
+             </summary>
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ConnectedCharacterFurcadiaID">
       <summary>
