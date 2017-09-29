@@ -5,9 +5,15 @@ Furcadia Framework is a Furcadia Documentation Project and 3rd Party Development
 
 * Easy to use classes ([NetProxy](https://starship-avalon-projects.github.io/FurcadiaFramework/html/6fdb6471-90ca-4bf7-b380-7b23d1ad6663.htm), [ProxySession](https://starship-avalon-projects.github.io/FurcadiaFramework/html/9a6827e6-8a7b-45a1-9a20-7aaee6f5a481.htm)) to make your very own Proxy/Bot Program.
 * Creating your very own Pounce-like client with PounceConnection.
-* Want to make a Fox Editor?  With Furcadia.Drawing you can!
+* Want to make a Fox Editor?  With Furcadia.Drawing you can! (Upto Fox-4 Support with remapping)
 * Some extras like Furcadia.Util.Host gets the Furcadia server host.  Furcadia.IO.Paths for easy Furcadia User folder access.
 * Server Load balancer ([ServerQueu](https://starship-avalon-projects.github.io/FurcadiaFramework/html/T_Furcadia_Net_Utils_ServerQue.htm)) helps to regulate the flow of data going to the game server
+* Pounce Support 
+* Furcadia Markup Language Processing
+* Furcadia Map File Support
+* Use Furcadia Installation File Paths
+* Read/Write Furcadia Settings.ini
+* Basse 220 and Base 95 Numbers
 
 ## Disclaimer
 Furcadia Framework and its Documentation is not supported by Furcadia, Dragon's Eye Production or Catnip Studios. This project is developed and maintained independently by and for the Furcadia Community.
