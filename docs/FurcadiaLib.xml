@@ -5841,6 +5841,27 @@
             dream list as s string array
             </param>
     </member>
+    <member name="M:Furcadia.Net.Pounce.PounceClient.Dispose">
+      <summary>
+            Implement IDisposable and Dispose of PounceTimer
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceClient.Dispose(System.Boolean)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocDisposeBool">
+            <parameter>Furcadia.Net.Pounce.PounceClient</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="disposing">
+        <markup>
+          <include item="SMCAutoDocDisposeParam">
+            <parameter>Furcadia.Net.Pounce.PounceClient</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
     <member name="P:Furcadia.Net.Pounce.PounceClient.FurreList">
       <summary>
         <markup>
@@ -5854,40 +5875,6 @@
     <member name="P:Furcadia.Net.Pounce.PounceClient.OnlineList">
       <summary>
             File path to List of furres to check online status
-            </summary>
-    </member>
-    <member name="T:Furcadia.Net.Pounce.PounceClient.PounceFurre">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.Pounce.PounceClient.PounceFurre</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.Pounce.PounceClient.PounceFurre.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Pounce.PounceClient.PounceFurre</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.Pounce.PounceClient.PounceFurre.Name">
-      <summary>
-            Furre Name
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Pounce.PounceClient.PounceFurre.Online">
-      <summary>
-            Furre Currently online
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Pounce.PounceClient.PounceFurre.WasOnline">
-      <summary>
-            Furre Previous Online State
             </summary>
     </member>
     <member name="T:Furcadia.Net.Pounce.PounceConnection">
@@ -5965,27 +5952,6 @@
             request without affecting the executing thread.
             </summary>
     </member>
-    <member name="M:Furcadia.Net.Pounce.PounceConnection.Dispose">
-      <summary>
-            Implement disposal pattern
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.Pounce.PounceConnection.Dispose(System.Boolean)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocDisposeBool">
-            <parameter>Furcadia.Net.Pounce.PounceConnection</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="disposing">
-        <markup>
-          <include item="SMCAutoDocDisposeParam">
-            <parameter>Furcadia.Net.Pounce.PounceConnection</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
     <member name="P:Furcadia.Net.Pounce.PounceConnection.EncoderPage">
       <summary>
             Set the Encoder to win 1252 encoding
@@ -6049,6 +6015,40 @@
       <param name="dreams">
             Dream list.
             </param>
+    </member>
+    <member name="T:Furcadia.Net.Pounce.PounceFurre">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Pounce.PounceFurre</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceFurre.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Pounce.PounceFurre</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceFurre.Name">
+      <summary>
+            Furre Name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceFurre.Online">
+      <summary>
+            Furre Currently online
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceFurre.WasOnline">
+      <summary>
+            Furre Previous Online State
+            </summary>
     </member>
     <member name="T:Furcadia.Net.Pounce.PounceIni">
       <summary>

@@ -450,7 +450,7 @@
     <HelpKINode Title="DREAM.Dispose Method " Url="html/M_Furcadia_Net_Dream_DREAM_Dispose.htm" />
     <HelpKINode Title="FURREList.Dispose Method " Url="html/M_Furcadia_Net_Dream_FURREList_Dispose.htm" />
     <HelpKINode Title="NetProxy.Dispose Method " Url="html/Overload_Furcadia_Net_NetProxy_Dispose.htm" />
-    <HelpKINode Title="PounceConnection.Dispose Method " Url="html/Overload_Furcadia_Net_Pounce_PounceConnection_Dispose.htm" />
+    <HelpKINode Title="PounceClient.Dispose Method " Url="html/Overload_Furcadia_Net_Pounce_PounceClient_Dispose.htm" />
     <HelpKINode Title="ProxyReconnect.Dispose Method " Url="html/Overload_Furcadia_Net_Utils_ProxyReconnect_Dispose.htm" />
     <HelpKINode Title="ProxySession.Dispose Method " Url="html/Overload_Furcadia_Net_Proxy_ProxySession_Dispose.htm" />
     <HelpKINode Title="ServerQue.Dispose Method " Url="html/Overload_Furcadia_Net_Utils_ServerQue_Dispose.htm" />
@@ -554,8 +554,8 @@
     <HelpKINode Title="about Frame structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_Dream_Avatar_Frame.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Dream_Avatar_Frame.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Dream_Avatar_Frame.htm" />
   </HelpKINode>
   <HelpKINode Title="Frame.FrameFormat field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FrameFormat.htm" />
   <HelpKINode Title="Frame.FrameFormats enumeration" Url="html/T_Furcadia_Drawing_Graphics_Frame_FrameFormats.htm" />
@@ -655,9 +655,9 @@
   <HelpKINode Title="Furcadia.Net.ParseServerArgs class" Url="html/T_Furcadia_Net_ParseServerArgs.htm" />
   <HelpKINode Title="Furcadia.Net.Pounce namespace" Url="html/N_Furcadia_Net_Pounce.htm" />
   <HelpKINode Title="Furcadia.Net.Pounce.PounceClient class" Url="html/T_Furcadia_Net_Pounce_PounceClient.htm" />
-  <HelpKINode Title="Furcadia.Net.Pounce.PounceClient.PounceFurre class" Url="html/T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm" />
   <HelpKINode Title="Furcadia.Net.Pounce.PounceConnection class" Url="html/T_Furcadia_Net_Pounce_PounceConnection.htm" />
   <HelpKINode Title="Furcadia.Net.Pounce.PounceConnection.PounceResponse delegate" Url="html/T_Furcadia_Net_Pounce_PounceConnection_PounceResponse.htm" />
+  <HelpKINode Title="Furcadia.Net.Pounce.PounceFurre class" Url="html/T_Furcadia_Net_Pounce_PounceFurre.htm" />
   <HelpKINode Title="Furcadia.Net.Pounce.PounceIni class" Url="html/T_Furcadia_Net_Pounce_PounceIni.htm" />
   <HelpKINode Title="Furcadia.Net.Proxy namespace" Url="html/N_Furcadia_Net_Proxy.htm" />
   <HelpKINode Title="Furcadia.Net.Proxy.ProxySession class" Url="html/T_Furcadia_Net_Proxy_ProxySession.htm" />
@@ -946,8 +946,8 @@
   <HelpKINode Title="HasFlag method" Url="html/M_Furcadia_Movement_CharacterFlags_HasFlag.htm" />
   <HelpKINode Title="HasShare property" Url="html/P_Furcadia_Net_Proxy_ProxySession_HasShare.htm" />
   <HelpKINode Title="Header field" Url="html/F_Furcadia_Drawing_Graphics_FurcadiaShapes_Header.htm" />
-  <HelpKINode Title="height field" Url="html/F_Furcadia_Drawing_ViewArea_height.htm" />
   <HelpKINode Title="Height field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Height.htm" />
+  <HelpKINode Title="height field" Url="html/F_Furcadia_Drawing_ViewArea_height.htm" />
   <HelpKINode Title="Height property" Url="html/P_Furcadia_FurcMap_Map_Height.htm" />
   <HelpKINode Title="Helper class">
     <HelpKINode Title="Helper Class" Url="html/T_Furcadia_Drawing_Helper.htm" />
@@ -1215,7 +1215,7 @@
     <HelpKINode Title="IniFile.IniSection.IniKey.Name Property " Url="html/P_Furcadia_IO_IniFile_IniSection_IniKey_Name.htm" />
     <HelpKINode Title="IniFile.IniSection.Name Property " Url="html/P_Furcadia_IO_IniFile_IniSection_Name.htm" />
     <HelpKINode Title="Map.Name Property " Url="html/P_Furcadia_FurcMap_Map_Name.htm" />
-    <HelpKINode Title="PounceClient.PounceFurre.Name Property " Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_Name.htm" />
+    <HelpKINode Title="PounceFurre.Name Property " Url="html/P_Furcadia_Net_Pounce_PounceFurre_Name.htm" />
   </HelpKINode>
   <HelpKINode Title="NameFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_NameFilter.htm" />
   <HelpKINode Title="NE enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_av_DIR.htm" />
@@ -1334,7 +1334,7 @@
   </HelpKINode>
   <HelpKINode Title="OnAttemptsExceded field" Url="html/F_Furcadia_Net_Utils_ProxyReconnect_OnAttemptsExceded.htm" />
   <HelpKINode Title="OnConnectTimeOut field" Url="html/F_Furcadia_Net_Utils_ProxyReconnect_OnConnectTimeOut.htm" />
-  <HelpKINode Title="Online property" Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_Online.htm" />
+  <HelpKINode Title="Online property" Url="html/P_Furcadia_Net_Pounce_PounceFurre_Online.htm" />
   <HelpKINode Title="OnlineList property" Url="html/P_Furcadia_Net_Pounce_PounceClient_OnlineList.htm" />
   <HelpKINode Title="OnServerSendMessage field" Url="html/F_Furcadia_Net_Utils_ServerQue_OnServerSendMessage.htm" />
   <HelpKINode Title="OnStartProxyConnect field" Url="html/F_Furcadia_Net_Utils_ProxyReconnect_OnStartProxyConnect.htm" />
@@ -1461,18 +1461,10 @@
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Pounce_PounceClient.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Pounce_PounceClient.htm" />
   </HelpKINode>
+  <HelpKINode Title="PounceClient.Dispose method" Url="html/Overload_Furcadia_Net_Pounce_PounceClient_Dispose.htm" />
   <HelpKINode Title="PounceClient.FurreList property" Url="html/P_Furcadia_Net_Pounce_PounceClient_FurreList.htm" />
   <HelpKINode Title="PounceClient.OnlineList property" Url="html/P_Furcadia_Net_Pounce_PounceClient_OnlineList.htm" />
   <HelpKINode Title="PounceClient.PounceClient constructor" Url="html/Overload_Furcadia_Net_Pounce_PounceClient__ctor.htm" />
-  <HelpKINode Title="PounceClient.PounceFurre class">
-    <HelpKINode Title="PounceClient.PounceFurre Class" Url="html/T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm" />
-    <HelpKINode Title="about PounceClient.PounceFurre class" Url="html/T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm" />
-    <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_Pounce_PounceClient_PounceFurre__ctor.htm" />
-  </HelpKINode>
-  <HelpKINode Title="PounceClient.PounceFurre.Name property" Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_Name.htm" />
-  <HelpKINode Title="PounceClient.PounceFurre.Online property" Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_Online.htm" />
-  <HelpKINode Title="PounceClient.PounceFurre.PounceFurre constructor" Url="html/M_Furcadia_Net_Pounce_PounceClient_PounceFurre__ctor.htm" />
-  <HelpKINode Title="PounceClient.PounceFurre.WasOnline property" Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_WasOnline.htm" />
   <HelpKINode Title="PounceConnection class">
     <HelpKINode Title="PounceConnection Class" Url="html/T_Furcadia_Net_Pounce_PounceConnection.htm" />
     <HelpKINode Title="about PounceConnection class" Url="html/T_Furcadia_Net_Pounce_PounceConnection.htm" />
@@ -1487,7 +1479,6 @@
   <HelpKINode Title="PounceConnection.ClearFriends method" Url="html/M_Furcadia_Net_Pounce_PounceConnection_ClearFriends.htm" />
   <HelpKINode Title="PounceConnection.Connect method" Url="html/M_Furcadia_Net_Pounce_PounceConnection_Connect.htm" />
   <HelpKINode Title="PounceConnection.ConnectAsync method" Url="html/M_Furcadia_Net_Pounce_PounceConnection_ConnectAsync.htm" />
-  <HelpKINode Title="PounceConnection.Dispose method" Url="html/Overload_Furcadia_Net_Pounce_PounceConnection_Dispose.htm" />
   <HelpKINode Title="PounceConnection.EncoderPage property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_EncoderPage.htm" />
   <HelpKINode Title="PounceConnection.NumberOfDreamsOnMainMaps property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_NumberOfDreamsOnMainMaps.htm" />
   <HelpKINode Title="PounceConnection.PounceConnection constructor" Url="html/Overload_Furcadia_Net_Pounce_PounceConnection__ctor.htm" />
@@ -1498,9 +1489,16 @@
   <HelpKINode Title="PounceConnection.Status property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_Status.htm" />
   <HelpKINode Title="PounceConnection.TotalFurresOnline property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_TotalFurresOnline.htm" />
   <HelpKINode Title="PounceFurre class">
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Pounce_PounceClient_PounceFurre.htm" />
+    <HelpKINode Title="PounceFurre Class" Url="html/T_Furcadia_Net_Pounce_PounceFurre.htm" />
+    <HelpKINode Title="about PounceFurre class" Url="html/T_Furcadia_Net_Pounce_PounceFurre.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_Pounce_PounceFurre__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Pounce_PounceFurre.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Pounce_PounceFurre.htm" />
   </HelpKINode>
+  <HelpKINode Title="PounceFurre.Name property" Url="html/P_Furcadia_Net_Pounce_PounceFurre_Name.htm" />
+  <HelpKINode Title="PounceFurre.Online property" Url="html/P_Furcadia_Net_Pounce_PounceFurre_Online.htm" />
+  <HelpKINode Title="PounceFurre.PounceFurre constructor" Url="html/M_Furcadia_Net_Pounce_PounceFurre__ctor.htm" />
+  <HelpKINode Title="PounceFurre.WasOnline property" Url="html/P_Furcadia_Net_Pounce_PounceFurre_WasOnline.htm" />
   <HelpKINode Title="PounceIni class">
     <HelpKINode Title="PounceIni Class" Url="html/T_Furcadia_Net_Pounce_PounceIni.htm" />
     <HelpKINode Title="about PounceIni class" Url="html/T_Furcadia_Net_Pounce_PounceIni.htm" />
@@ -1839,8 +1837,8 @@
   <HelpKINode Title="SpecNum method" Url="html/M_Furcadia_Net_Dream_Avatar_SpecNum.htm" />
   <HelpKINode Title="Stand1 enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
   <HelpKINode Title="Stand2 enumeration member" Url="html/T_Furcadia_Net_Dream_Avatar_FurrePose.htm" />
-  <HelpKINode Title="Standalone property" Url="html/P_Furcadia_Net_Options_ProxyOptions_Standalone.htm" />
   <HelpKINode Title="StandAlone property" Url="html/P_Furcadia_Net_Proxy_ProxySession_StandAlone.htm" />
+  <HelpKINode Title="Standalone property" Url="html/P_Furcadia_Net_Options_ProxyOptions_Standalone.htm" />
   <HelpKINode Title="Start method" Url="html/M_Furcadia_Net_Utils_ProxyReconnect_Start.htm" />
   <HelpKINode Title="Status property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_Status.htm" />
   <HelpKINode Title="StepBlock structure">
@@ -1976,7 +1974,7 @@
   <HelpKINode Title="wallNENumber field" Url="html/F_Furcadia_FurcMap_MapTile_wallNENumber.htm" />
   <HelpKINode Title="wallNumber field" Url="html/F_Furcadia_FurcMap_MapPosition_wallNumber.htm" />
   <HelpKINode Title="wallNWNumber field" Url="html/F_Furcadia_FurcMap_MapTile_wallNWNumber.htm" />
-  <HelpKINode Title="WasOnline property" Url="html/P_Furcadia_Net_Pounce_PounceClient_PounceFurre_WasOnline.htm" />
+  <HelpKINode Title="WasOnline property" Url="html/P_Furcadia_Net_Pounce_PounceFurre_WasOnline.htm" />
   <HelpKINode Title="WasVisible property" Url="html/P_Furcadia_Net_Dream_FURRE_WasVisible.htm" />
   <HelpKINode Title="WhisperLogsPath property" Url="html/P_Furcadia_IO_Paths_WhisperLogsPath.htm" />
   <HelpKINode Title="Width field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Width.htm" />
@@ -2000,12 +1998,12 @@
     <HelpKINode Title="FurrePosition.X Property " Url="html/P_Furcadia_Drawing_FurrePosition_X.htm" />
   </HelpKINode>
   <HelpKINode Title="y field">
-    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
     <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
+    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
   </HelpKINode>
   <HelpKINode Title="Y field">
-    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
     <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
+    <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
   </HelpKINode>
   <HelpKINode Title="Y property">
     <HelpKINode Title="FURRE.Y Property " Url="html/P_Furcadia_Net_Dream_FURRE_Y.htm" />
