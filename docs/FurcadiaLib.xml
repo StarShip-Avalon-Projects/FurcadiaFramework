@@ -1147,6 +1147,116 @@
         </markup>
       </summary>
     </member>
+    <member name="T:Furcadia.Extensions.ObjectExtensions">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Extensions.ObjectExtensions</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Extensions.ObjectExtensions.As``1(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Extensions.ObjectExtensions.As``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="obj">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>obj</parameter>
+            <parameter>M:Furcadia.Extensions.ObjectExtensions.As``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Extensions.ObjectExtensions.As``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Extensions.ObjectExtensions.As``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Extensions.StringExtensions">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Extensions.StringExtensions</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.Char)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.Char)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="chr">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>chr</parameter>
+            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.Char)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.Char)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="str">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>str</parameter>
+            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
     <member name="T:Furcadia.FurcMap.Map">
       <summary>
         <markup>
@@ -3529,23 +3639,11 @@
         </markup>
       </summary>
       <param name="port">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>port</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.#ctor(System.Int32@,System.Int32@)</parameter>
-          </include>
-        </markup>
-      </param>
+            gameserver port
+            </param>
       <param name="lport">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>lport</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.#ctor(System.Int32@,System.Int32@)</parameter>
-          </include>
-        </markup>
-      </param>
+            localhost port
+            </param>
     </member>
     <member name="M:Furcadia.Net.NetProxy.#ctor(System.Net.IPEndPoint,System.Int32)">
       <summary>
@@ -3583,14 +3681,8 @@
         </markup>
       </summary>
       <param name="host">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>host</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.#ctor(System.String,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+            Game server host
+            </param>
       <param name="port">
         <markup>
           <include item="SMCMissingParamTag">
@@ -5714,6 +5806,13 @@
             Localhost TCP port
             </summary>
     </member>
+    <member name="P:Furcadia.Net.Options.ProxyOptions.ProxyHost">
+      <summary>
+            Host name or IP Address for the proxy server
+            <para />
+            Defaults to "localhost'
+            </summary>
+    </member>
     <member name="P:Furcadia.Net.Options.ProxyOptions.Standalone">
       <summary>
              Allow the connection to stay open after the client drops?
@@ -7160,6 +7259,776 @@
       <summary>
             the Active Player
             </summary>
+    </member>
+    <member name="T:Furcadia.Net.Web.IVariable">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Web.IVariable</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.IVariable.Name">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Web.IVariable.Name</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.IVariable.Value">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Web.IVariable.Value</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Web.NetWeb">
+      <summary>
+            Basic Webpage Task interface.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.NetWeb.#ctor(System.String)">
+      <summary>
+            Initialize the Class with a default URL
+            </summary>
+      <param name="url">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>url</parameter>
+            <parameter>M:Furcadia.Net.Web.NetWeb.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.NetWeb.PostData">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.NetWeb.PostData</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.NetWeb.PostData</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Net.Web.Variable">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Web.Variable</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.#ctor(System.String)">
+      <summary>
+            Construct the Variable with name
+            </summary>
+      <param name="name">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>name</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.#ctor(System.String,System.Object)">
+      <summary>
+            Construct the variable with name and value
+            </summary>
+      <param name="name">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>name</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.#ctor(System.String,System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="value">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>value</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.#ctor(System.String,System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.Clone">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.Clone</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.Clone</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.Equals(Furcadia.Net.Web.IVariable)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.Equals(Furcadia.Net.Web.IVariable)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="other">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>other</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.Equals(Furcadia.Net.Web.IVariable)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.Equals(Furcadia.Net.Web.IVariable)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.Equals(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="obj">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>obj</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.Equals(System.Object)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.GetHashCode">
+      <summary>
+            Returns the hash code for this instance.
+            </summary>
+      <returns>
+            A 32-bit signed integer that is the hash code for this instance.
+            </returns>
+    </member>
+    <member name="P:Furcadia.Net.Web.Variable.Name">
+      <summary>
+            Name of the Variable
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Web.Variable.NoValue">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Web.Variable.NoValue</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.Double)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="varA">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>varA</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="num">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>num</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="varA">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>varA</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="str">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>str</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Division(Furcadia.Net.Web.Variable,System.Double)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Division(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="varA">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>varA</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Division(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="num">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>num</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Division(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Division(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Equality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Equality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="varA">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>varA</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Equality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="varB">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>varB</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Equality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Equality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Implicit(Furcadia.Net.Web.Variable)~System.String">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Implicit(Furcadia.Net.Web.Variable)~System.String</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="var">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>var</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Implicit(Furcadia.Net.Web.Variable)~System.String</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Implicit(Furcadia.Net.Web.Variable)~System.String</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Implicit(Furcadia.Net.Web.Variable)~System.Double">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Implicit(Furcadia.Net.Web.Variable)~System.Double</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="var">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>var</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Implicit(Furcadia.Net.Web.Variable)~System.Double</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Implicit(Furcadia.Net.Web.Variable)~System.Double</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Inequality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Inequality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="varA">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>varA</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Inequality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="varB">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>varB</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Inequality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Inequality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Multiply(Furcadia.Net.Web.Variable,System.Double)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Multiply(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="varA">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>varA</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Multiply(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="num">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>num</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Multiply(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Multiply(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Subtraction(Furcadia.Net.Web.Variable,System.Double)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Subtraction(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="varA">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>varA</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Subtraction(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="num">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>num</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Subtraction(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.op_Subtraction(Furcadia.Net.Web.Variable,System.Double)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.ToString">
+      <summary>
+            Returns a const identifier if the variable is constant followed by name,
+            <para>otherwise just the name is returned.</para></summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.Variable.ToString</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:Furcadia.Net.Web.Variable.Value">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Web.Variable.Value</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Web.VariableIsConstantException">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Web.VariableIsConstantException</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableIsConstantException.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Web.VariableIsConstantException</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Web.VariableIsConstantException</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="info">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>info</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="context">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>context</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Web.VariableIsConstantException</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="message">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>message</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.String,System.Exception)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Web.VariableIsConstantException</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="message">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>message</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.String,System.Exception)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="inner">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>inner</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.String,System.Exception)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Web.VariableList">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Web.VariableList</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableList.#ctor(System.String,System.Boolean)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Web.VariableList</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="name">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>name</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableList.#ctor(System.String,System.Boolean)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="isConstant">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>isConstant</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableList.#ctor(System.String,System.Boolean)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableList.#ctor(System.String,System.Object[])">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Web.VariableList</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="name">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>name</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableList.#ctor(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="values">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>values</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableList.#ctor(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Web.VariableList.Count">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Web.VariableList.Count</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableList.Equals(Furcadia.Net.Web.IVariable)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableList.Equals(Furcadia.Net.Web.IVariable)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="other">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>other</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableList.Equals(Furcadia.Net.Web.IVariable)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.VariableList.Equals(Furcadia.Net.Web.IVariable)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableList.GetHashCode">
+      <summary>
+            Returns the hash code for this instance.
+            </summary>
+      <returns>
+            A 32-bit signed integer that is the hash code for this instance.
+            </returns>
+    </member>
+    <member name="P:Furcadia.Net.Web.VariableList.Item(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Web.VariableList.Item(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="index"></param>
+      <returns></returns>
+    </member>
+    <member name="P:Furcadia.Net.Web.VariableList.Name">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Web.VariableList.Name</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.VariableList.Value">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Web.VariableList.Value</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="T:Furcadia.Text.Base220">
       <summary>
@@ -9418,12 +10287,7 @@
             A simple way to load settings whether from ini or xml.
             </summary>
     </member>
-    <member name="M:Furcadia.Text.Settings.#ctor">
-      <summary>
-            Default Constructor
-            </summary>
-    </member>
-    <member name="M:Furcadia.Text.Settings.#ctor(System.Int32)">
+    <member name="M:Furcadia.Text.Settings.#ctor(Furcadia.Net.Options.ProxyOptions)">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
@@ -9431,9 +10295,7 @@
           </include>
         </markup>
       </summary>
-      <param name="Port">
-            Local TCP Port
-            </param>
+      <param name="options">Pxoxy Options</param>
     </member>
     <member name="M:Furcadia.Text.Settings.InitializeFurcadiaSettings(System.String)">
       <summary>
@@ -9493,16 +10355,6 @@
             A new Hashtable, or a empty Hashtable on file not found.
             </returns>
     </member>
-    <member name="P:Furcadia.Text.Settings.Localhost">
-      <summary>
-            Localhost or local IP
-            </summary>
-    </member>
-    <member name="P:Furcadia.Text.Settings.LocalPort">
-      <summary>
-            Local port Furcadia Client connects to
-            </summary>
-    </member>
     <member name="M:Furcadia.Text.Settings.ReadSettingIni(System.String)">
       <summary>
             Read Furcadia settings from Furcadia install path. If the settings does not exist We'll use our
@@ -9511,7 +10363,7 @@
       <param name="SettingsIni">Full file path to settings.ini</param>
       <returns>Array of settings</returns>
     </member>
-    <member name="M:Furcadia.Text.Settings.RestoreFurcadiaSettings(System.String[])">
+    <member name="M:Furcadia.Text.Settings.RestoreFurcadiaSettings(System.String[]@)">
       <summary>
             Restores the Furcadia Settings we backed up earlier.
             </summary>
