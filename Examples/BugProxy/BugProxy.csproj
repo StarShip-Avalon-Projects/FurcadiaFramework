@@ -77,8 +77,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\FurcLib\AssemblyInfoersion1.cs">
-      <Link>AssemblyInfoersion1.cs</Link>
+    <Compile Include="..\..\FurcLib\AssemblyInfoersionCS1.cs">
+      <Link>AssemblyInfoersionCS1.cs</Link>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

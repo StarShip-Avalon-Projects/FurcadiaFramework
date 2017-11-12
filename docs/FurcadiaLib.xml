@@ -6351,10 +6351,27 @@
         </markup>
       </summary>
     </member>
-    <member name="P:Furcadia.Net.Proxy.ProxySession.IsConnectedCharacter">
+    <member name="M:Furcadia.Net.Proxy.ProxySession.IsConnectedCharacter">
       <summary>
             Are we the current executing character?
             </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Proxy.ProxySession.IsConnectedCharacter</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.IsConnectedCharacter(Furcadia.Net.Dream.Furre)">
+      <summary>
+            Is the target furre the connected characyer?
+            </summary>
+      <param name="Fur">
+        <see cref="T:Furcadia.Net.Dream.Furre" />
+      </param>
+      <returns>True if Fur is the Connected Furre</returns>
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.Options">
       <summary>
