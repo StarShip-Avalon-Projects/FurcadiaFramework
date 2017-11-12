@@ -3750,23 +3750,6 @@
             Disconnect from the Furcadia gameserver and Furcadia client
             </summary>
     </member>
-    <member name="M:Furcadia.Net.NetProxy.Dispose">
-      <summary>
-            Public implementation of Dispose pattern callable by consumers.
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.NetProxy.Dispose(System.Boolean)">
-      <summary>
-            Protected implementation of Dispose pattern.
-            </summary>
-      <param name="disposing">
-        <markup>
-          <include item="SMCAutoDocDisposeParam">
-            <parameter>Furcadia.Net.NetProxy</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
     <member name="P:Furcadia.Net.NetProxy.EncoderPage">
       <summary>
         <markup>
