@@ -4,142 +4,6 @@
     <name>FurcadiaLib</name>
   </assembly>
   <members>
-    <member name="T:Furcadia.Badges">
-      <summary>
-            Beekin Badges
-            </summary>
-    </member>
-    <member name="M:Furcadia.Badges.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Badges</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Badges.GetGroup(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Badges.GetGroup(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="tag">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>tag</parameter>
-            <parameter>M:Furcadia.Badges.GetGroup(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Badges.GetGroup(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Badges.GetLevel(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Badges.GetLevel(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="tag">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>tag</parameter>
-            <parameter>M:Furcadia.Badges.GetLevel(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Badges.GetLevel(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Badges.GetTag(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Badges.GetTag(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="tag">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>tag</parameter>
-            <parameter>M:Furcadia.Badges.GetTag(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Badges.GetTag(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Badges.NumToEnum``1(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Badges.NumToEnum``1(System.Int32)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="number">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>number</parameter>
-            <parameter>M:Furcadia.Badges.NumToEnum``1(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <typeparam name="T">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>typeparam</parameter>
-            <parameter>T</parameter>
-            <parameter>M:Furcadia.Badges.NumToEnum``1(System.Int32)</parameter>
-          </include>
-        </markup>
-      </typeparam>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Badges.NumToEnum``1(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Badges.PrimeTable">
-      <summary>
-            Preload the badge table
-            </summary>
-    </member>
     <member name="T:Furcadia.Util">
       <summary>
             Utility class with helper functions.
@@ -4581,13 +4445,8 @@
     </member>
     <member name="T:Furcadia.Net.Dream.Avatar">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.Dream.Avatar</parameter>
-          </include>
-        </markup>
-      </summary>
+            Legacy Furre Avatar information
+            </summary>
     </member>
     <member name="M:Furcadia.Net.Dream.Avatar.#ctor">
       <summary>
@@ -4728,6 +4587,142 @@
           </include>
         </markup>
       </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Badges">
+      <summary>
+            Beekin Badges
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Badges.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Dream.Badges</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Badges.GetGroup(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.GetGroup(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="tag">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tag</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.GetGroup(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.GetGroup(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Badges.GetLevel(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.GetLevel(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="tag">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tag</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.GetLevel(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.GetLevel(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Badges.GetTag(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.GetTag(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="tag">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tag</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.GetTag(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.GetTag(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Badges.NumToEnum``1(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.NumToEnum``1(System.Int32)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="number">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>number</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.NumToEnum``1(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.NumToEnum``1(System.Int32)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.Badges.NumToEnum``1(System.Int32)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Badges.PrimeTable">
+      <summary>
+            Preload the badge table
+            </summary>
     </member>
     <member name="T:Furcadia.Net.Dream.DREAM">
       <summary>
@@ -7235,16 +7230,6 @@
             the Active Player
             </summary>
     </member>
-    <member name="T:Furcadia.Net.web.WebUtils">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.web.WebUtils</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
     <member name="T:Furcadia.Net.Web.AccountLogin">
       <summary>
         <markup>
@@ -8053,6 +8038,11 @@
           </include>
         </markup>
       </summary>
+    </member>
+    <member name="T:Furcadia.Net.Web.WebUtils">
+      <summary>
+            Web handling utilities
+            </summary>
     </member>
     <member name="T:Furcadia.Text.Base220">
       <summary>
