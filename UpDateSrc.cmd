@@ -1,5 +1,5 @@
 
-git pull --recurse-submodules=on-demand
+git pull --recurse-submodules=yes
 set GIT_STATUS=%ERRORLEVEL% 
 if not %GIT_STATUS%==0 goto fail 
 
