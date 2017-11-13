@@ -1483,8 +1483,8 @@
   <HelpKINode Title="PingDelayTime property" Url="html/P_Furcadia_Net_Utils_ServerQue_PingDelayTime.htm" />
   <HelpKINode Title="player field" Url="html/F_Furcadia_Net_Utils_ServerParser_UpdateColorString_player.htm" />
   <HelpKINode Title="Player property">
-    <HelpKINode Title="ProxySession.Player Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_Player.htm" />
     <HelpKINode Title="ChannelObject.Player Property " Url="html/P_Furcadia_Net_Utils_ServerParser_ChannelObject_Player.htm" />
+    <HelpKINode Title="ProxySession.Player Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_Player.htm" />
   </HelpKINode>
   <HelpKINode Title="player property" Url="html/P_Furcadia_Net_Utils_ServerParser_SpawnAvatar_player.htm" />
   <HelpKINode Title="PlayerFlags property" Url="html/P_Furcadia_Net_Utils_ServerParser_SpawnAvatar_PlayerFlags.htm" />
@@ -2102,13 +2102,13 @@
     <HelpKINode Title="Furre.X Property " Url="html/P_Furcadia_Net_Dream_Furre_X.htm" />
     <HelpKINode Title="FurrePosition.X Property " Url="html/P_Furcadia_Drawing_FurrePosition_X.htm" />
   </HelpKINode>
-  <HelpKINode Title="y field">
-    <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
-    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
-  </HelpKINode>
   <HelpKINode Title="Y field">
     <HelpKINode Title="Frame.Pos.Y Field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
     <HelpKINode Title="ViewArea.Y Field" Url="html/F_Furcadia_Drawing_ViewArea_Y.htm" />
+  </HelpKINode>
+  <HelpKINode Title="y field">
+    <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
+    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
   </HelpKINode>
   <HelpKINode Title="Y property">
     <HelpKINode Title="Furre.Y Property " Url="html/P_Furcadia_Net_Dream_Furre_Y.htm" />
