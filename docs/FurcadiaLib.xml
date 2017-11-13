@@ -7235,6 +7235,55 @@
             the Active Player
             </summary>
     </member>
+    <member name="T:Furcadia.Net.web.WebUtils">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.web.WebUtils</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Web.AccountLogin">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Web.AccountLogin</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.AccountLogin.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Web.AccountLogin</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.AccountLogin.getFurcadiaCharacters(System.String,System.String,System.String,System.String)">
+      <summary>
+            Retriev Account information from the Furcadia Log-On server
+            </summary>
+      <param name="u">
+            Account E-mail address
+            </param>
+      <param name="p">
+            Account Password
+            </param>
+      <param name="k">
+            API Key
+            </param>
+      <param name="LoginUrl">
+            Login Server URL
+            </param>
+      <returns>
+            Furcadia Account information including Characters and thier costumes
+            </returns>
+    </member>
     <member name="T:Furcadia.Net.Web.IVariable">
       <summary>
         <markup>
