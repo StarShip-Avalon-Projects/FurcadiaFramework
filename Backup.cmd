@@ -42,7 +42,7 @@ set GIT_STATUS=%ERRORLEVEL%
 if not %GIT_STATUS%==0 goto eof
 
 :pull
-git.exe request-pull master https://github.com/StarShip-Avalon-Projects/FurcadiaFramework.git
+call PullRequest.cmd
 
 :eof
 exit /b 0
