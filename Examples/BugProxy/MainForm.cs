@@ -44,7 +44,7 @@ namespace BugProxy
                 // We need a Character.ini file to work with -Gerolkae
                 proxy.Connect();
             }
-            else if (!proxy.IsServerConnected)
+            else if (!proxy.IsServerSocketConnected)
             {
                 proxy.Connect();
             }

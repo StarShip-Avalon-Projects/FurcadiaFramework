@@ -27,13 +27,13 @@ namespace BugConsole
                     if (proxy is null)
                     {
                         ProxyOptions = new BugProxy.Net.BugProxyOptions();
-                        proxy = new ProxySession(ref ProxyOptions);
+                        proxy = new ProxySession(ProxyOptions);
                         proxy.ClientData2 += onClientDataReceived;
                         proxy.ServerData2 += onServerDataReceived;
                         // We need a Character.ini file to work with -Gerolkae
                         proxy.Connect();
                     }
-                    else if (!proxy.IsServerConnected)
+                    else if (!proxy.IsServerSocketConnected)
                     {
                         proxy.Connect();
                     }

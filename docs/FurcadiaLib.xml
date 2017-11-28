@@ -4,31 +4,6 @@
     <name>FurcadiaLib</name>
   </assembly>
   <members>
-    <member name="T:Furcadia.Util">
-      <summary>
-            Utility class with helper functions.
-            </summary>
-    </member>
-    <member name="M:Furcadia.Util.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Util</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Util.FurcadiaShortName(System.String)">
-      <summary>
-            Takes a string and returns Furcadia's short name format
-            </summary>
-      <param name="name">
-            Display name.
-            </param>
-      <returns>
-            furcadia short-name format
-            </returns>
-    </member>
     <member name="T:Furcadia.Drawing.FurrePosition">
       <summary>
             Furcadia Isometric Corrdinates
@@ -1045,70 +1020,6 @@
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
             <parameter>M:Furcadia.Extensions.ObjectExtensions.As``1(System.Object)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="T:Furcadia.Extensions.StringExtensions">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Extensions.StringExtensions</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.Char)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.Char)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="chr">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>chr</parameter>
-            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.Char)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.Char)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="str">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>str</parameter>
-            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Extensions.StringExtensions.EscapeForCSharp(System.String)</parameter>
           </include>
         </markup>
       </returns>
@@ -3022,6 +2933,1102 @@
              Default: My Documents\Furcadia\Logs\Whispers
              </summary>
     </member>
+    <member name="T:Furcadia.Logging.ConsoleLogOutput">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Logging.ConsoleLogOutput</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.ConsoleLogOutput.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Logging.ConsoleLogOutput</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.ConsoleLogOutput.BuildMessage(Furcadia.Logging.LogMessage@)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.ConsoleLogOutput.BuildMessage(Furcadia.Logging.LogMessage@)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.ConsoleLogOutput.BuildMessage(Furcadia.Logging.LogMessage@)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.ConsoleLogOutput.BuildMessage(Furcadia.Logging.LogMessage@)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.ConsoleLogOutput.Log(Furcadia.Logging.LogMessage)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.ConsoleLogOutput.Log(Furcadia.Logging.LogMessage)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="logMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>logMsg</parameter>
+            <parameter>M:Furcadia.Logging.ConsoleLogOutput.Log(Furcadia.Logging.LogMessage)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="T:Furcadia.Logging.ILogOutput">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Logging.ILogOutput</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.ILogOutput.Log(Furcadia.Logging.LogMessage)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.ILogOutput.Log(Furcadia.Logging.LogMessage)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="logMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>logMsg</parameter>
+            <parameter>M:Furcadia.Logging.ILogOutput.Log(Furcadia.Logging.LogMessage)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="T:Furcadia.Logging.Level">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Logging.Level</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Logging.Logger">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Logging.Logger</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Assert(System.Boolean,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="cond">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cond</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="failMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>failMsg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Assert``1(System.Boolean,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="cond">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cond</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="failMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>failMsg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Assert(System.Func{System.Boolean},System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="cond">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cond</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="failMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>failMsg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Assert``1(System.Func{System.Boolean},System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="cond">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cond</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="failMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>failMsg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Assert``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Debug(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Debug(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Debug(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Debug``1(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Debug``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Debug``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Debug``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.DebugEnabled">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Logging.Logger.DebugEnabled</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.DebugFormat(System.String,System.Object[])">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.DebugFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Logging.Logger.DebugFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="args">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>args</parameter>
+            <parameter>M:Furcadia.Logging.Logger.DebugFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.DebugFormat``1(System.String,System.Object[])">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.DebugFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Logging.Logger.DebugFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="args">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>args</parameter>
+            <parameter>M:Furcadia.Logging.Logger.DebugFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.DebugFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </typeparam>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Error(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Error(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Error(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Error``1(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Error``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Error``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Error``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.ErrorEnabled">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Logging.Logger.ErrorEnabled</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.ErrorFormat(System.String,System.Object[])">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.ErrorFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Logging.Logger.ErrorFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="args">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>args</parameter>
+            <parameter>M:Furcadia.Logging.Logger.ErrorFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.ErrorFormat``1(System.String,System.Object[])">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.ErrorFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Logging.Logger.ErrorFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="args">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>args</parameter>
+            <parameter>M:Furcadia.Logging.Logger.ErrorFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.ErrorFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </typeparam>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Fails(System.Boolean,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="cond">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cond</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="failMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>failMsg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Fails``1(System.Boolean,System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="cond">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cond</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="failMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>failMsg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Boolean,System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Fails(System.Func{System.Boolean},System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="cond">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cond</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="failMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>failMsg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Fails``1(System.Func{System.Boolean},System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="cond">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cond</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="failMsg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>failMsg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Fails``1(System.Func{System.Boolean},System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Info(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Info(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Info(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Info``1(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Info``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Info``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Info``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.InfoEnabled">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Logging.Logger.InfoEnabled</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.InfoFormat(System.String,System.Object[])">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.InfoFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Logging.Logger.InfoFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="args">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>args</parameter>
+            <parameter>M:Furcadia.Logging.Logger.InfoFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.InfoFormat``1(System.String,System.Object[])">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.InfoFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Logging.Logger.InfoFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="args">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>args</parameter>
+            <parameter>M:Furcadia.Logging.Logger.InfoFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.InfoFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </typeparam>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.LogOutput">
+      <summary>
+            Sets the <see cref="T:Furcadia.Logging.ILogOutput" />.
+            </summary>
+      <param name="output">The output.</param>
+      <exception cref="T:System.ArgumentNullException">output</exception>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.MessagesExpire">
+      <summary>
+            Gets or sets the messages expire time limit.
+            Messages that have expired are removed from history.
+            This property used in conjunction with SupressSpam = true prevents
+            too much memory from being used over time
+            </summary>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.SingleThreaded">
+      <summary>
+            Gets or sets a value indicating whether [single threaded].
+            </summary>
+    </member>
+    <member name="E:Furcadia.Logging.Logger.SpamFound">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:Furcadia.Logging.Logger.SpamFound</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.SuppressSpam">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Logging.Logger.SuppressSpam</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Warn(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Warn(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Warn(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.Warn``1(System.Object)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Warn``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Warn``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.Warn``1(System.Object)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.WarnFormat(System.String,System.Object[])">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.WarnFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Logging.Logger.WarnFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="args">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>args</parameter>
+            <parameter>M:Furcadia.Logging.Logger.WarnFormat(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Logging.Logger.WarnFormat``1(System.String,System.Object[])">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.Logger.WarnFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="format">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>format</parameter>
+            <parameter>M:Furcadia.Logging.Logger.WarnFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="args">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>args</parameter>
+            <parameter>M:Furcadia.Logging.Logger.WarnFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Furcadia.Logging.Logger.WarnFormat``1(System.String,System.Object[])</parameter>
+          </include>
+        </markup>
+      </typeparam>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.WarningEnabled">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Logging.Logger.WarningEnabled</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Logging.LogMessage">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Logging.LogMessage</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.LogMessage.Equals(System.Object)">
+      <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+      <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+      <returns>
+        <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Logging.LogMessage.From(Furcadia.Logging.Level,System.String,System.TimeSpan)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Logging.LogMessage.From(Furcadia.Logging.Level,System.String,System.TimeSpan)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="level">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>level</parameter>
+            <parameter>M:Furcadia.Logging.LogMessage.From(Furcadia.Logging.Level,System.String,System.TimeSpan)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="msg">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>msg</parameter>
+            <parameter>M:Furcadia.Logging.LogMessage.From(Furcadia.Logging.Level,System.String,System.TimeSpan)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="expireDuration">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>expireDuration</parameter>
+            <parameter>M:Furcadia.Logging.LogMessage.From(Furcadia.Logging.Level,System.String,System.TimeSpan)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.LogMessage.From(Furcadia.Logging.Level,System.String,System.TimeSpan)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.LogMessage.GetHashCode">
+      <summary>
+            Returns a hash code for this instance.
+            </summary>
+      <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+            </returns>
+    </member>
+    <member name="P:Furcadia.Logging.LogMessage.IsSpam">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Logging.LogMessage.IsSpam</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Logging.LogMessage.Level">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Logging.LogMessage.Level</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Logging.LogMessage.message">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Logging.LogMessage.message</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Logging.LogMessage.Thread">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Logging.LogMessage.Thread</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Logging.LogMessage.TimeStamp">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Logging.LogMessage.TimeStamp</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Logging.LogMessage.ToString">
+      <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+      <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+    </member>
     <member name="T:Furcadia.Movement.CharacterFlags">
       <summary>
             Furcadia reconmended Material to support thier Protocol Standards
@@ -3224,11 +4231,6 @@
     <member name="F:Furcadia.Net.ConnectionPhase.Connected">
       <summary>
             Connection established
-            </summary>
-    </member>
-    <member name="F:Furcadia.Net.ConnectionPhase.Disconnectng">
-      <summary>
-            Dropping connection
             </summary>
     </member>
     <member name="F:Furcadia.Net.ConnectionPhase.Disconnected">
@@ -3441,7 +4443,7 @@
             Connect to game server with default settings
             </summary>
     </member>
-    <member name="M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions@)">
+    <member name="M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions)">
       <summary>
             Connect to Furcadia with Proxy Options
             </summary>
@@ -3450,25 +4452,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>Options</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions@)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxySessionOptions@)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.NetProxy</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="Options">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>Options</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxySessionOptions@)</parameter>
+            <parameter>M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions)</parameter>
           </include>
         </markup>
       </param>
@@ -3570,13 +4554,8 @@
     </member>
     <member name="P:Furcadia.Net.NetProxy.BufferCapacity">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.NetProxy.BufferCapacity</parameter>
-          </include>
-        </markup>
-      </summary>
+            Buffer Size
+            </summary>
     </member>
     <member name="E:Furcadia.Net.NetProxy.ClientData2">
       <summary>
@@ -3616,13 +4595,10 @@
     </member>
     <member name="P:Furcadia.Net.NetProxy.EncoderPage">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.NetProxy.EncoderPage</parameter>
-          </include>
-        </markup>
-      </summary>
+            Encodig
+            <para />
+            DEFAULT: Windows 1252
+            </summary>
     </member>
     <member name="E:Furcadia.Net.NetProxy.Error">
       <summary>
@@ -3634,12 +4610,12 @@
             Furcadia Utilities
             </summary>
     </member>
-    <member name="P:Furcadia.Net.NetProxy.IsClientConnected">
+    <member name="P:Furcadia.Net.NetProxy.IsClientSocketConnected">
       <summary>
             Check the connection Status of the Furcadia Client
             </summary>
     </member>
-    <member name="P:Furcadia.Net.NetProxy.IsServerConnected">
+    <member name="P:Furcadia.Net.NetProxy.IsServerSocketConnected">
       <summary>
             Check our connection status to the game server
             </summary>
@@ -4039,27 +5015,42 @@
       <summary>
             Spawns a new Furre in the dream furre list because they have
             joing the Dream we're in
-            <para>
+            <para />
             '&lt;' + user id + x + y + shape number + name + color code +
             flag + linefeed
-            </para></summary>
+            <para />
+            sender object is Type SpawnAvatar()
+            </summary>
     </member>
     <member name="F:Furcadia.Net.ServerInstructionType.RemoveAvatar">
       <summary>
             Remove the Avatar from the Dream Furre list because they have
             left the dream
-            <para>
+            <para />
             ')' + user id + linefeed
-            </para></summary>
+            <para />
+            Source: Furcatia Technical Resources
+            <para />
+            sender object is Type RemoveAvatar()
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.HideAvatar">
+      <summary>
+            Hide Avatar from display (Invisible?)
+            </summary>
     </member>
     <member name="F:Furcadia.Net.ServerInstructionType.AnimatedMoveAvatar">
       <summary>
             Move and animate the Active Furre to the next location
+            <para />
+            sender object is Type Furre()
             </summary>
     </member>
     <member name="F:Furcadia.Net.ServerInstructionType.MoveAvatar">
       <summary>
             Move the current active furre to the next locatiomn
+            <para />
+            sender object is Type Furre
             </summary>
     </member>
     <member name="F:Furcadia.Net.ServerInstructionType.DisplayText">
@@ -4107,6 +5098,13 @@
       <summary>
              Dream Book Mark
              <para />Triggers Pounce to add the dream to the list marked temporary
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.LookResponse">
+      <summary>
+            received after a look at furre command
+            <para />
+            sender object is Type Furre
             </summary>
     </member>
     <member name="T:Furcadia.Net.Account.AccountInfo">
@@ -4734,7 +5732,7 @@
             List of Furres in the dream.
             </summary>
     </member>
-    <member name="F:Furcadia.Net.Dream.DREAM.FurreList">
+    <member name="P:Furcadia.Net.Dream.DREAM.Furres">
       <summary>
             Dream List Furcadia requires Clients to handle thier own Dream
             Lists See
@@ -4763,6 +5761,11 @@
             </summary>
     </member>
     <member name="P:Furcadia.Net.Dream.DREAM.Owner">
+      <summary>
+            Dreams uploader character
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.OwnerShortName">
       <summary>
             Dreams uploader character
             </summary>
@@ -4891,6 +5894,33 @@
       <summary>
             Legacy DS Species
             </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.Equals(Furcadia.Net.Dream.IFurre)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.Equals(Furcadia.Net.Dream.IFurre)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="other">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>other</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.Equals(Furcadia.Net.Dream.IFurre)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.Equals(Furcadia.Net.Dream.IFurre)</parameter>
+          </include>
+        </markup>
+      </returns>
     </member>
     <member name="M:Furcadia.Net.Dream.Furre.Equals(System.Object)">
       <summary>
@@ -5027,12 +6057,12 @@
             Furcadia Name
             </summary>
     </member>
-    <member name="M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)">
+    <member name="M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)</parameter>
           </include>
         </markup>
       </summary>
@@ -5041,7 +6071,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>a</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)</parameter>
           </include>
         </markup>
       </param>
@@ -5050,7 +6080,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>b</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)</parameter>
           </include>
         </markup>
       </param>
@@ -5058,17 +6088,17 @@
         <markup>
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)</parameter>
           </include>
         </markup>
       </returns>
     </member>
-    <member name="M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)">
+    <member name="M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)</parameter>
           </include>
         </markup>
       </summary>
@@ -5077,7 +6107,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>a</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)</parameter>
           </include>
         </markup>
       </param>
@@ -5086,7 +6116,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>b</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)</parameter>
           </include>
         </markup>
       </param>
@@ -5094,7 +6124,7 @@
         <markup>
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.Furre)</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)</parameter>
           </include>
         </markup>
       </returns>
@@ -5166,12 +6196,12 @@
         </markup>
       </returns>
     </member>
-    <member name="M:Furcadia.Net.Dream.Furre.ToFurcadiaID(System.Func{Furcadia.Net.Dream.Furre,System.Int32})">
+    <member name="M:Furcadia.Net.Dream.Furre.ToFurcadiaID(System.Func{Furcadia.Net.Dream.IFurre,System.Int32})">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.ToFurcadiaID(System.Func{Furcadia.Net.Dream.Furre,System.Int32})</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.ToFurcadiaID(System.Func{Furcadia.Net.Dream.IFurre,System.Int32})</parameter>
           </include>
         </markup>
       </summary>
@@ -5180,7 +6210,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>format</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.ToFurcadiaID(System.Func{Furcadia.Net.Dream.Furre,System.Int32})</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.ToFurcadiaID(System.Func{Furcadia.Net.Dream.IFurre,System.Int32})</parameter>
           </include>
         </markup>
       </param>
@@ -5188,7 +6218,7 @@
         <markup>
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.ToFurcadiaID(System.Func{Furcadia.Net.Dream.Furre,System.Int32})</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.ToFurcadiaID(System.Func{Furcadia.Net.Dream.IFurre,System.Int32})</parameter>
           </include>
         </markup>
       </returns>
@@ -5211,12 +6241,12 @@
         </markup>
       </returns>
     </member>
-    <member name="M:Furcadia.Net.Dream.Furre.ToString(System.Func{Furcadia.Net.Dream.Furre,System.String})">
+    <member name="M:Furcadia.Net.Dream.Furre.ToString(System.Func{Furcadia.Net.Dream.IFurre,System.String})">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.ToString(System.Func{Furcadia.Net.Dream.Furre,System.String})</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.ToString(System.Func{Furcadia.Net.Dream.IFurre,System.String})</parameter>
           </include>
         </markup>
       </summary>
@@ -5225,7 +6255,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>format</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.ToString(System.Func{Furcadia.Net.Dream.Furre,System.String})</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.ToString(System.Func{Furcadia.Net.Dream.IFurre,System.String})</parameter>
           </include>
         </markup>
       </param>
@@ -5233,7 +6263,7 @@
         <markup>
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.Dream.Furre.ToString(System.Func{Furcadia.Net.Dream.Furre,System.String})</parameter>
+            <parameter>M:Furcadia.Net.Dream.Furre.ToString(System.Func{Furcadia.Net.Dream.IFurre,System.String})</parameter>
           </include>
         </markup>
       </returns>
@@ -5511,18 +6541,7 @@
         </markup>
       </returns>
     </member>
-    <member name="M:Furcadia.Net.Dream.FurreList.GetFurreByID(System.Int32)">
-      <summary>
-            get a Furre from the Furrelist by its integer idd
-            </summary>
-      <param name="FurreID">
-            Furre ID as integer
-            </param>
-      <returns>
-            Furre
-            </returns>
-    </member>
-    <member name="M:Furcadia.Net.Dream.FurreList.GetFurreByID(System.String)">
+    <member name="M:Furcadia.Net.Dream.FurreList.GetFurreByID(Furcadia.Text.Base220)">
       <summary>
             Get's a Furre from the Dream List bu it's ID
             </summary>
@@ -5533,10 +6552,21 @@
         <markup>
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.Dream.FurreList.GetFurreByID(System.String)</parameter>
+            <parameter>M:Furcadia.Net.Dream.FurreList.GetFurreByID(Furcadia.Text.Base220)</parameter>
           </include>
         </markup>
       </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.GetFurreByID(System.Int32)">
+      <summary>
+            get a Furre from the Furrelist by its integer idd
+            </summary>
+      <param name="FurreID">
+            Furre ID as integer
+            </param>
+      <returns>
+            Furre
+            </returns>
     </member>
     <member name="M:Furcadia.Net.Dream.FurreList.IndexOf(Furcadia.Net.Dream.Furre)">
       <summary>
@@ -5707,6 +6737,36 @@
     <member name="P:Furcadia.Net.Dream.FurreList.ToIList">
       <summary>
             Convert Furre List to <see cref="T:System.Collections.IList" /></summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.IFurre">
+      <summary>
+            Furre Class Interface
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.IFurre.FurreID">
+      <summary>
+            Implements the FurreID or unique furre identifyer
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.IFurre.Message">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Dream.IFurre.Message</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.IFurre.Name">
+      <summary>
+            implements the Furre;s Name Property
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.IFurre.ShortName">
+      <summary>
+            implements the Furre;s Name Property
+            </summary>
     </member>
     <member name="T:Furcadia.Net.Options.ClientOptions">
       <summary>
@@ -6019,7 +7079,7 @@
     </member>
     <member name="P:Furcadia.Net.Pounce.PounceConnection.EncoderPage">
       <summary>
-            Set the Encoder to win 1252 encoding
+            Set the Encoder to Windows 1252 encoding
             </summary>
     </member>
     <member name="P:Furcadia.Net.Pounce.PounceConnection.NumberOfDreamsOnMainMaps">
@@ -6083,19 +7143,34 @@
     </member>
     <member name="T:Furcadia.Net.Pounce.PounceFurre">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.Pounce.PounceFurre</parameter>
-          </include>
-        </markup>
-      </summary>
+            Pounce info for Furre online status
+            </summary>
     </member>
     <member name="M:Furcadia.Net.Pounce.PounceFurre.#ctor">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
             <parameter>Furcadia.Net.Pounce.PounceFurre</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceFurre.FurreID">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Pounce.PounceFurre.FurreID</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceFurre.Message">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Pounce.PounceFurre.Message</parameter>
           </include>
         </markup>
       </summary>
@@ -6109,6 +7184,16 @@
       <summary>
             Furre Currently online
             </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceFurre.ShortName">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:Furcadia.Net.Pounce.PounceFurre.ShortName</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="P:Furcadia.Net.Pounce.PounceFurre.WasOnline">
       <summary>
@@ -6158,7 +7243,7 @@
         </markup>
       </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.#ctor(Furcadia.Net.Options.ProxySessionOptions@)">
+    <member name="M:Furcadia.Net.Proxy.ProxySession.#ctor(Furcadia.Net.Options.ProxySessionOptions)">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
@@ -6415,7 +7500,7 @@
         </markup>
       </summary>
     </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.SendFormattedTextToServer(System.String@)">
+    <member name="M:Furcadia.Net.Proxy.ProxySession.SendFormattedTextToServer(System.String)">
       <summary>
             Format basic furcadia commands and send to server
             <para>
@@ -6984,11 +8069,6 @@
         </markup>
       </param>
     </member>
-    <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.Channel">
-      <summary>
-            Channel Name
-            </summary>
-    </member>
     <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.ChannelText">
       <summary>
             Raw unformatted channel text
@@ -7124,6 +8204,39 @@
             Is the current dream a permanent dream?
             </summary>
     </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.MoveFurre">
+      <summary>
+            Animated or noanimated move object
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.MoveFurre.#ctor(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Utils.ServerParser.MoveFurre</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="ServerInstruction">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ServerInstruction</parameter>
+            <parameter>M:Furcadia.Net.Utils.ServerParser.MoveFurre.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerParser.MoveFurre.Player">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Utils.ServerParser.MoveFurre.Player</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.RemoveAvatar">
       <summary>
             Remove Avatar Server Instruction Object
@@ -7143,12 +8256,22 @@
         </markup>
       </param>
     </member>
-    <member name="F:Furcadia.Net.Utils.ServerParser.RemoveAvatar.AvatarID">
+    <member name="F:Furcadia.Net.Utils.ServerParser.RemoveAvatar.FurreId">
       <summary>
             Avatar ID
             <para>
             4 byte Base220 string
             </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerParser.RemoveAvatar.Player">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Net.Utils.ServerParser.RemoveAvatar.Player</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.SpawnAvatar">
       <summary>
@@ -7225,45 +8348,6 @@
             the Active Player
             </summary>
     </member>
-    <member name="T:Furcadia.Net.Web.AccountLogin">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.Web.AccountLogin</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.Web.AccountLogin.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Web.AccountLogin</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.Web.AccountLogin.getFurcadiaCharacters(System.String,System.String,System.String,System.String)">
-      <summary>
-            Retriev Account information from the Furcadia Log-On server
-            </summary>
-      <param name="u">
-            Account E-mail address
-            </param>
-      <param name="p">
-            Account Password
-            </param>
-      <param name="k">
-            API Key
-            </param>
-      <param name="LoginUrl">
-            Login Server URL
-            </param>
-      <returns>
-            Furcadia Account information including Characters and thier costumes
-            </returns>
-    </member>
     <member name="T:Furcadia.Net.Web.IVariable">
       <summary>
         <markup>
@@ -7293,43 +8377,6 @@
           </include>
         </markup>
       </summary>
-    </member>
-    <member name="T:Furcadia.Net.Web.NetWeb">
-      <summary>
-            Basic Webpage Task interface.
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.Web.NetWeb.#ctor(System.String)">
-      <summary>
-            Initialize the Class with a default URL
-            </summary>
-      <param name="url">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>url</parameter>
-            <parameter>M:Furcadia.Net.Web.NetWeb.#ctor(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.Web.NetWeb.PostData">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.Web.NetWeb.PostData</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.Web.NetWeb.PostData</parameter>
-          </include>
-        </markup>
-      </returns>
     </member>
     <member name="T:Furcadia.Net.Web.Variable">
       <summary>
@@ -8034,10 +9081,94 @@
         </markup>
       </summary>
     </member>
+    <member name="T:Furcadia.Net.Web.WebRequests">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.Web.WebRequests</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.WebRequests.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Web.WebRequests</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.WebRequests.SendPostRequest(System.String,System.String)">
+      <summary>
+            Retriev Account information from the Furcadia Log-On server
+            </summary>
+      <param name="u">
+            Account E-mail address
+            </param>
+      <param name="p">
+            Account Password
+            </param>
+      <param name="k">
+            API Key
+            </param>
+      <param name="LoginUrl">
+            Login Server URL
+            </param>
+      <param name="PostData">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>PostData</parameter>
+            <parameter>M:Furcadia.Net.Web.WebRequests.SendPostRequest(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="url">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>url</parameter>
+            <parameter>M:Furcadia.Net.Web.WebRequests.SendPostRequest(System.String,System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+            Furcadia Account information including Characters and thier costumes
+            </returns>
+    </member>
     <member name="T:Furcadia.Net.Web.WebUtils">
       <summary>
-            Web handling utilities
-            </summary>
+            General Utility functions for working with web objects
+             </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.WebUtils.PrepWebData(System.Collections.Generic.List{Furcadia.Net.Web.IVariable})">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Web.WebUtils.PrepWebData(System.Collections.Generic.List{Furcadia.Net.Web.IVariable})</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="list">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>list</parameter>
+            <parameter>M:Furcadia.Net.Web.WebUtils.PrepWebData(System.Collections.Generic.List{Furcadia.Net.Web.IVariable})</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Web.WebUtils.PrepWebData(System.Collections.Generic.List{Furcadia.Net.Web.IVariable})</parameter>
+          </include>
+        </markup>
+      </returns>
     </member>
     <member name="T:Furcadia.Text.Base220">
       <summary>
@@ -10006,6 +11137,16 @@
         </markup>
       </summary>
     </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.EmoteRegexFilter">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Text.FurcadiaMarkup.EmoteRegexFilter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="F:Furcadia.Text.FurcadiaMarkup.FontChannelFilter">
       <summary>
         <para />
@@ -10018,11 +11159,6 @@
             Channel Name = 4
             <para />
             Text = 5
-            </summary>
-    </member>
-    <member name="F:Furcadia.Text.FurcadiaMarkup.FontColorRegex">
-      <summary>
-            Filter paragraph(?) text
             </summary>
     </member>
     <member name="F:Furcadia.Text.FurcadiaMarkup.Iconfilter">
@@ -10050,29 +11186,40 @@
             Filter the Name Markup
             </summary>
     </member>
-    <member name="F:Furcadia.Text.FurcadiaMarkup.RegExName">
+    <member name="F:Furcadia.Text.FurcadiaMarkup.ShoutRegexFilter">
       <summary>
-            Whispers Name
-            </summary>
-    </member>
-    <member name="M:Furcadia.Text.FurcadiaMarkup.StripFurcadiaMarkup(System.String)">
-      <summary>
-            Strip a string from all Furcadia Markup
-            </summary>
-      <param name="Text">string to process</param>
-      <returns>
         <markup>
           <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Text.FurcadiaMarkup.StripFurcadiaMarkup(System.String)</parameter>
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Text.FurcadiaMarkup.ShoutRegexFilter</parameter>
           </include>
         </markup>
-      </returns>
+      </summary>
     </member>
     <member name="F:Furcadia.Text.FurcadiaMarkup.UrlFilter">
       <summary>
             Regex for working with HTML URLS
             </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.WhisperRegex">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Text.FurcadiaMarkup.WhisperRegex</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.YouEatCookieFilter">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Text.FurcadiaMarkup.YouEatCookieFilter</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="F:Furcadia.Text.FurcadiaMarkup.YouSayFilter">
       <summary>
@@ -10084,7 +11231,22 @@
         </markup>
       </summary>
     </member>
-    <member name="T:Furcadia.Text.FurcIni">
+    <member name="F:Furcadia.Text.FurcadiaMarkup.YouShoutFilter">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:Furcadia.Text.FurcadiaMarkup.YouShoutFilter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.YouWhisperRegex">
+      <summary>
+            Whispers Name
+            </summary>
+    </member>
+    <member name="T:Furcadia.Text.FurcadiaSettingsUtiliies">
       <summary>
             Furcadia configuration class to backup/set Proxy/firewall settings
             and restore them after we have connected to the game server.
@@ -10094,16 +11256,7 @@
             Courtesy to Dream Dancer for helping me with this.
             </para></summary>
     </member>
-    <member name="M:Furcadia.Text.FurcIni.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Text.FurcIni</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Text.FurcIni.GetUserSetting(System.String,System.String[])">
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.GetUserSetting(System.String,System.String[])">
       <summary>
             Retrieves a field setting in the FurcSettings array
             </summary>
@@ -10112,7 +11265,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>SettingFile</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.GetUserSetting(System.String,System.String[])</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.GetUserSetting(System.String,System.String[])</parameter>
           </include>
         </markup>
       </param>
@@ -10121,7 +11274,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>WhichSetting</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.GetUserSetting(System.String,System.String[])</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.GetUserSetting(System.String,System.String[])</parameter>
           </include>
         </markup>
       </param>
@@ -10129,12 +11282,31 @@
         <markup>
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.GetUserSetting(System.String,System.String[])</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.GetUserSetting(System.String,System.String[])</parameter>
           </include>
         </markup>
       </returns>
     </member>
-    <member name="M:Furcadia.Text.FurcIni.LoadFurcadiaSettings(System.String,System.String)">
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.Load(System.String)">
+      <summary>
+            Loads an ini file and returns a key/value pair of values. (Note:
+            It reads Key=Value pairs only.) (Add: Also the ini must be
+            proper, one key/value per line. No section garbage.)
+            </summary>
+      <param name="file">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>file</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.Load(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+            A new Hashtable, or a empty Hashtable on file not found.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.LoadFurcadiaSettings(System.String,System.String)">
       <summary>
             Backs up the current Furcadia Settings
             </summary>
@@ -10143,7 +11315,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>path</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.LoadFurcadiaSettings(System.String,System.String)</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.LoadFurcadiaSettings(System.String,System.String)</parameter>
           </include>
         </markup>
       </param>
@@ -10152,7 +11324,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>file</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.LoadFurcadiaSettings(System.String,System.String)</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.LoadFurcadiaSettings(System.String,System.String)</parameter>
           </include>
         </markup>
       </param>
@@ -10160,12 +11332,20 @@
         <markup>
           <include item="SMCMissingTag">
             <parameter>returns</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.LoadFurcadiaSettings(System.String,System.String)</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.LoadFurcadiaSettings(System.String,System.String)</parameter>
           </include>
         </markup>
       </returns>
     </member>
-    <member name="M:Furcadia.Text.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])">
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.ReadSettingIni(System.String)">
+      <summary>
+            Read Furcadia settings from Furcadia install path. If the settings does not exist We'll use our
+            Embedded from source
+            </summary>
+      <param name="SettingsIni">Full file path to settings.ini</param>
+      <returns>Array of settings</returns>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.SaveFurcadiaSettings(System.String,System.String,System.String[])">
       <summary>
             Save the furcadia configuration to settings.ini
             </summary>
@@ -10174,7 +11354,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>path</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
           </include>
         </markup>
       </param>
@@ -10183,7 +11363,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>file</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
           </include>
         </markup>
       </param>
@@ -10192,12 +11372,12 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>SettingFile</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.SaveFurcadiaSettings(System.String,System.String,System.String[])</parameter>
           </include>
         </markup>
       </param>
     </member>
-    <member name="M:Furcadia.Text.FurcIni.SetUserSetting(System.String,System.String,System.String[])">
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.SetUserSetting(System.String,System.String,System.String[]@)">
       <summary>
             sets feilds in the FurcSettings array
             </summary>
@@ -10206,7 +11386,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>WhichSetting</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.SetUserSetting(System.String,System.String,System.String[])</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.SetUserSetting(System.String,System.String,System.String[]@)</parameter>
           </include>
         </markup>
       </param>
@@ -10215,7 +11395,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>WhichValue</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.SetUserSetting(System.String,System.String,System.String[])</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.SetUserSetting(System.String,System.String,System.String[]@)</parameter>
           </include>
         </markup>
       </param>
@@ -10224,7 +11404,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>SettingFile</parameter>
-            <parameter>M:Furcadia.Text.FurcIni.SetUserSetting(System.String,System.String,System.String[])</parameter>
+            <parameter>M:Furcadia.Text.FurcadiaSettingsUtiliies.SetUserSetting(System.String,System.String,System.String[]@)</parameter>
           </include>
         </markup>
       </param>
@@ -10337,6 +11517,15 @@
             A simple way to load settings whether from ini or xml.
             </summary>
     </member>
+    <member name="M:Furcadia.Text.Settings.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Text.Settings</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="M:Furcadia.Text.Settings.#ctor(Furcadia.Net.Options.ProxyOptions)">
       <summary>
         <markup>
@@ -10346,6 +11535,15 @@
         </markup>
       </summary>
       <param name="options">Pxoxy Options</param>
+      <param name="Options">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Options</parameter>
+            <parameter>M:Furcadia.Text.Settings.#ctor(Furcadia.Net.Options.ProxyOptions)</parameter>
+          </include>
+        </markup>
+      </param>
     </member>
     <member name="M:Furcadia.Text.Settings.InitializeFurcadiaSettings(System.String)">
       <summary>
@@ -10359,61 +11557,7 @@
             Backup Settings for restoring later
             </returns>
     </member>
-    <member name="M:Furcadia.Text.Settings.Load``1(System.String)">
-      <summary>
-            Loads a xml file and returns a new instance of T. T must be XML Deserializable!
-            </summary>
-      <param name="file">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>file</parameter>
-            <parameter>M:Furcadia.Text.Settings.Load``1(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <typeparam name="T">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>typeparam</parameter>
-            <parameter>T</parameter>
-            <parameter>M:Furcadia.Text.Settings.Load``1(System.String)</parameter>
-          </include>
-        </markup>
-      </typeparam>
-      <returns>
-            Default of T (default(T)) on file not found. Else it returns a
-            instance of T.
-            </returns>
-    </member>
-    <member name="M:Furcadia.Text.Settings.Load(System.String)">
-      <summary>
-            Loads an ini file and returns a key/value pair of values. (Note:
-            It reads Key=Value pairs only.) (Add: Also the ini must be
-            proper, one key/value per line. No section garbage.)
-            </summary>
-      <param name="file">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>file</parameter>
-            <parameter>M:Furcadia.Text.Settings.Load(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-            A new Hashtable, or a empty Hashtable on file not found.
-            </returns>
-    </member>
-    <member name="M:Furcadia.Text.Settings.ReadSettingIni(System.String)">
-      <summary>
-            Read Furcadia settings from Furcadia install path. If the settings does not exist We'll use our
-            Embedded from source
-            </summary>
-      <param name="SettingsIni">Full file path to settings.ini</param>
-      <returns>Array of settings</returns>
-    </member>
-    <member name="M:Furcadia.Text.Settings.RestoreFurcadiaSettings(System.String[]@)">
+    <member name="M:Furcadia.Text.Settings.RestoreFurcadiaSettings">
       <summary>
             Restores the Furcadia Settings we backed up earlier.
             </summary>

@@ -54,7 +54,7 @@ namespace BugProxy.Net
 
         #region Public Constructors
 
-        public BugProxySession(ProxySessionOptions Options): base(ref Options)
+        public BugProxySession(ProxySessionOptions Options): base( Options)
         {
             options = (BugProxyOptions)Options;
         }
