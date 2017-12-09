@@ -1872,31 +1872,15 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.#ctor">
       <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.IO.IniFile</parameter>
-          </include>
-        </markup>
-      </summary>
+            Initializes a new instance of the <see cref="T:Furcadia.IO.IniFile" /> class.
+            </summary>
     </member>
     <member name="M:Furcadia.IO.IniFile.AddSection(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.AddSection(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.AddSection(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Adds a section to the IniFile object, returns a IniSection object
+            to the new or existing object
+            </summary>
+      <param name="sSection">The s section.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -1908,41 +1892,18 @@
     </member>
     <member name="P:Furcadia.IO.IniFile.Code">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.IniFile.Code</parameter>
-          </include>
-        </markup>
-      </summary>
+            If a Code section is detected, It's the last section in the ini file and all
+            lines are read into here.
+            <para />
+            this is for DSC systyle wizard scripts
+            </summary>
     </member>
     <member name="M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Gets the key value.
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sKey">The s key.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -1954,22 +1915,9 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.GetSection(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.GetSection(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.GetSection(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Gets the section.
+            </summary>
+      <param name="sSection">The s section.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -1981,41 +1929,15 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.Load(System.String,System.Boolean)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.Load(System.String,System.Boolean)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sFileName">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sFileName</parameter>
-            <parameter>M:Furcadia.IO.IniFile.Load(System.String,System.Boolean)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="bMerge">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>bMerge</parameter>
-            <parameter>M:Furcadia.IO.IniFile.Load(System.String,System.Boolean)</parameter>
-          </include>
-        </markup>
-      </param>
+            Loads the Reads the data in the ini file into the IniFile object
+            </summary>
+      <param name="sFileName">Name of the s file.</param>
+      <param name="bMerge">if set to <c>true</c> [b merge].</param>
     </member>
     <member name="M:Furcadia.IO.IniFile.RemoveAllSections">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RemoveAllSections</parameter>
-          </include>
-        </markup>
-      </summary>
+            Removes all existing sections, returns trus on success
+            </summary>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2027,31 +1949,10 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Remove a key by section name and key name
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sKey">The s key.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2063,22 +1964,9 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.RemoveSection(Furcadia.IO.IniFile.IniSection)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RemoveSection(Furcadia.IO.IniFile.IniSection)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="Section">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>Section</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RemoveSection(Furcadia.IO.IniFile.IniSection)</parameter>
-          </include>
-        </markup>
-      </param>
+            Removes section by object, returns trus on success
+            </summary>
+      <param name="Section">The section.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2090,22 +1978,9 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.RemoveSection(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RemoveSection(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RemoveSection(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Removes a section by its name sSection, returns trus on success
+            </summary>
+      <param name="sSection">The s section.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2117,40 +1992,12 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sNewKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sNewKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Renames an existing key returns true on success, false if the key
+            didn't exist or there was another section with the same sNewKey
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sKey">The s key.</param>
+      <param name="sNewKey">The s new key.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2162,31 +2009,11 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sNewSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sNewSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Renames an existing section returns true on success, false if the
+            section didn't exist or there was another section with the same sNewSection
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sNewSection">The s new section.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2198,69 +2025,22 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.Save(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.Save(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sFileName">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sFileName</parameter>
-            <parameter>M:Furcadia.IO.IniFile.Save(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Used to save the data back to the file or your choice
+            </summary>
+      <param name="sFileName">Name of the s file.</param>
     </member>
     <member name="P:Furcadia.IO.IniFile.Sections">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.IniFile.Sections</parameter>
-          </include>
-        </markup>
-      </summary>
+            Gets the sections.
+            </summary>
     </member>
     <member name="M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sValue">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sValue</parameter>
-            <parameter>M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Sets a KeyValuePair in a certain section
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sKey">The s key.</param>
+      <param name="sValue">The s value.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2272,59 +2052,22 @@
     </member>
     <member name="T:Furcadia.IO.IniFile.IniSection">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.IO.IniFile.IniSection</parameter>
-          </include>
-        </markup>
-      </summary>
+            IniSection class
+            </summary>
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.#ctor(Furcadia.IO.IniFile,System.String)">
       <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.IO.IniFile.IniSection</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="parent">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>parent</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.#ctor(Furcadia.IO.IniFile,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.#ctor(Furcadia.IO.IniFile,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Constuctor so objects are internally managed
+            </summary>
+      <param name="parent">The parent.</param>
+      <param name="sSection">The s section.</param>
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.AddKey(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.AddKey(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.AddKey(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Adds a key to the IniSection object, returns a IniKey object
+            to the new or existing object
+            </summary>
+      <param name="sKey">The s key.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2336,22 +2079,10 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.GetKey(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.GetKey(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.GetKey(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+             Returns a IniKey object to the key by name, NULL if it was
+             not found
+            </summary>
+      <param name="sKey">The s key.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2363,13 +2094,8 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.GetName">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.GetName</parameter>
-          </include>
-        </markup>
-      </summary>
+            Returns the section name
+            </summary>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2381,33 +2107,18 @@
     </member>
     <member name="P:Furcadia.IO.IniFile.IniSection.Keys">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.IniFile.IniSection.Keys</parameter>
-          </include>
-        </markup>
-      </summary>
+            Returns all the keys in a section
+            </summary>
     </member>
     <member name="P:Furcadia.IO.IniFile.IniSection.Name">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.IniFile.IniSection.Name</parameter>
-          </include>
-        </markup>
-      </summary>
+            Returns the section name
+            </summary>
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.RemoveAllKeys">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveAllKeys</parameter>
-          </include>
-        </markup>
-      </summary>
+            Removes all the keys in the section
+            </summary>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2419,22 +2130,9 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.RemoveKey(Furcadia.IO.IniFile.IniSection.IniKey)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(Furcadia.IO.IniFile.IniSection.IniKey)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="Key">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>Key</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(Furcadia.IO.IniFile.IniSection.IniKey)</parameter>
-          </include>
-        </markup>
-      </param>
+            Removes a single key by IniKey object
+            </summary>
+      <param name="Key">The key.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2446,22 +2144,9 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.RemoveKey(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.RemoveKey(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Removes all the keys in the section
+            </summary>
+      <param name="sKey">The s key.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2473,22 +2158,10 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.SetName(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.SetName(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sSection">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sSection</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.SetName(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Sets the section name, returns true on success, fails if the
+            section name sSection already exists
+            </summary>
+      <param name="sSection">The s section.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2500,50 +2173,20 @@
     </member>
     <member name="T:Furcadia.IO.IniFile.IniSection.IniKey">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.IO.IniFile.IniSection.IniKey</parameter>
-          </include>
-        </markup>
-      </summary>
+            IniKey class
+            </summary>
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.#ctor(Furcadia.IO.IniFile.IniSection,System.String)">
       <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.IO.IniFile.IniSection.IniKey</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="parent">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>parent</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.#ctor(Furcadia.IO.IniFile.IniSection,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="sKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.#ctor(Furcadia.IO.IniFile.IniSection,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Constuctor so objects are internally managed
+            </summary>
+      <param name="parent">The parent.</param>
+      <param name="sKey">The s key.</param>
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.GetName">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.GetName</parameter>
-          </include>
-        </markup>
-      </summary>
+            Returns the name of the Key
+            </summary>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2555,13 +2198,8 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.GetValue">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.GetValue</parameter>
-          </include>
-        </markup>
-      </summary>
+            Returns the value of the Key
+            </summary>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2573,32 +2211,15 @@
     </member>
     <member name="P:Furcadia.IO.IniFile.IniSection.IniKey.Name">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.IniFile.IniSection.IniKey.Name</parameter>
-          </include>
-        </markup>
-      </summary>
+            Returns the name of the Key
+            </summary>
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.SetName(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.SetName(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sKey">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sKey</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.SetName(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Sets the key name Returns true on success, fails if the
+            section name sKey already exists
+            </summary>
+      <param name="sKey">The s key.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -2610,32 +2231,14 @@
     </member>
     <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.SetValue(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.SetValue(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="sValue">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>sValue</parameter>
-            <parameter>M:Furcadia.IO.IniFile.IniSection.IniKey.SetValue(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Sets the value of the key
+            </summary>
+      <param name="sValue">The s value.</param>
     </member>
     <member name="P:Furcadia.IO.IniFile.IniSection.IniKey.Value">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.IO.IniFile.IniSection.IniKey.Value</parameter>
-          </include>
-        </markup>
-      </summary>
+            Sets or Gets the value of the key
+            </summary>
     </member>
     <member name="T:Furcadia.IO.Paths">
       <summary>
@@ -7690,6 +7293,69 @@
       </summary>
       <param name="Sender"></param>
       <param name="e"></param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.CommandQueueManager">
+      <summary>
+            Balance the load to the server
+            <para>
+            Handles Throat-Tired and No Endurance
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.#ctor">
+      <summary>
+            Constructor setting Defaults
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.Dispose">
+      <summary>
+            This code added to correctly implement the disposable pattern.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.Dispose(System.Boolean)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocDisposeBool">
+            <parameter>Furcadia.Net.Utils.CommandQueueManager</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="disposing">
+        <markup>
+          <include item="SMCAutoDocDisposeParam">
+            <parameter>Furcadia.Net.Utils.CommandQueueManager</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="F:Furcadia.Net.Utils.CommandQueueManager.OnServerSendMessage">
+      <summary>
+            Notify subscribers were's sending an instruction to the games server
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.CommandQueueManager.Pause">
+      <summary>
+            Is the Queue Paused?
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.SendQueueItem(System.String)">
+      <summary>
+            Incoming Messages for server processing
+            </summary>
+      <param name="data">
+            Raw Client to Server Instruction.
+            </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.CommandQueueManager.QueueEventHandler">
+      <summary>
+            Event Handler to notify calling class data has been sent to the
+            game server
+            </summary>
+      <param name="sender">
+            raw client to server instruction
+            </param>
+      <param name="args">
+            System.EventArgs. (Unused)
+            </param>
     </member>
     <member name="T:Furcadia.Net.Utils.ProxyReconnect">
       <summary>
