@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a23d6f60-970b-4881-ad5f-077563316c63" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+
+      <para>Furcadia File Paths</para>
+      <para>These are subject to change. As of Furcadia V31c</para>
+      <para>Credits:</para>
+      <list class="nobullet">
+        <listItem>
+          <para>
+            Author: Artex
+            <externalLink>
+              <linkText>
+                Ice Realm (Furcadia Technical Resources)
+              </linkText>
+              <linkUri>http://ftr.icerealm.org/</linkUri>
+            </externalLink>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Edited by: Gerolkae
+          </para>
+        </listItem>
+      </list>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Win95">
+      <title>Windows 95/98/98SE/ME FAT/FAT32 File Systems (No longer supported by Furcadia)</title>
+      <content>
+        <para>Win16/32bit platforms. Path separator is the back-back slash "\" character.</para>
+        <list class="bullet" address="path95">
+          <listItem>
+            <para>
+              Install Path:	c:\Program Files\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	c:\My Documents\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Cache:	c:\Program Files\Furcadia\tmp\
+            </para>
+            <para>
+              c:\Program Files\Furcadia\portraits\
+            </para>
+            <para>
+              c:\Program Files\Furcadia\maps\
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="Win2k">
+      <title>Windows 2k, XP, XPsp1, XPsp2, XPsp3 NTFS File System (No longer supported by Furcadia)</title>
+      <content>
+        <para>32bit platforms. there is a x64 version of XP.  The path separator is the back-back slash "\" character.</para>
+        <list class="bullet" address="path2k">
+          <listItem>
+            <para>
+              Install path:	c:\Program Files\Furcadia\
+            </para>
+            <para>
+              Windows x64 Platform (XP): c:\Program Files (x86)\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	c:\Documents and Settings\username\My Documents\Furcadia\
+            </para>
+            <para>
+              %USERPROFILE%\My Documents\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Settings:	c:\Documents and Settings\username\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+            <para>
+              Cache:	c:\Documents and Settings\All Users\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              %USERPROFILE%\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="Vista">
+      <title>Windows Vista, 7, 7sp1, 8, 8.1, 10 NTFS File System User With Access Control Lists</title>
+      <content>
+        <list class="bullet" address="path7">
+          <listItem>
+            <para>
+              Install path:	c:\Program Files\Furcadia\
+            </para>
+            <para>
+              Windows x64 Platform: c:\Program Files (x86)\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	c:\Documents and Settings\username\My Documents\Furcadia\
+            </para>
+            <para>
+              %USERPROFILE%\My Documents\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Settings:	c:\Users\username\AppData\Local\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              %USERPROFILE%\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Cache:	c:\Documents and Settings\All Users\Application Data\Dragon's Eye Productions\Furcadia\
+            </para>
+            <para>
+              %USERPROFILE%\AppData\Local\Dragon's Eye Productions\Furcadia\
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Temporary Filess: %PROGRAMDATA%\Dragon's Eye Productions\Furcadia
+            </para>
+            <para>
+              C:\ProgramData\Dragon's Eye Productions\Furcadia
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="nix">
+      <title>Wine (UNIX/Linux/...)</title>
+      <content>
+        <para>
+          NOTE: The following paths were used by default for the past years. However, due to wine's flexibility, your setup could be different!
+        </para>
+        <para>
+          Linux is different then Microsoft windows. Windows uses a back slash "\" as a path separator.
+          Linux uses a forward slash "/" as a path separator. Some characters need to be escaped. The
+          Back Slash "\" is the escape character to make special characters usable. Special characters
+          are [space] "  ", double-quote ["], single-quote ['], back-tick [`]. The escaped characters look like
+          "\ " (thats back slash and a space character).
+        </para>
+        <para>
+          In recent editions of Microsoft windows, There is the forward-slash "/" character adopted for Linux
+          compatibility. This came out with the .Net Framework for cross system compatibility.
+        </para>
+        <list class="bullet" address="pathnix">
+          <listItem>
+            <para>
+              Install path:	~/.wine/drive_c/Program\ Files/Furcadia/
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Personal:	~/.wine/drive_c/windows/profiles/$USER/My\ Documents/Furcadia/
+            </para>
+            <para>
+              • ASSUMING My Documents MAPPED TO $HOME: ~/Furcadia/
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Settings:	~/.wine/drive_c/windows/profiles/$USER/Local\ Settings/Application\ Data/Dragon\'s\ Eye\ Productions/Furcadia/
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Cache:	~/.wine/drive_c/windows/profiles/All\ Users/Application\ Data/Dragon\'s\ Eye\ Productions/Furcadia/
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+
+      <!--localdir.ini-->
+      <link xlink:href="0622bf6b-9933-4acb-95eb-b5ddfa4be5e7" />
+      <!--DSC File paths-->
+      <link xlink:href="8c924167-6c3d-41dc-a8bb-b7f21f34830c" />
+      <externalLink>
+        <linkText>Credits: Furcadia Forums</linkText>
+        <linkUri>http://forums.furcadia.com/index.php?furcadia_session_id=300293-cdlq-pvp&amp;showtopic=63786</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Furcadia Flash install (localdir.ini)</linkText>
+        <linkAlternateText>Official Flash Install document</linkAlternateText>
+        <linkUri>https://cms.furcadia.com/help/download/localdir</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Furcadia Diagnostic Tools</linkText>
+        <linkAlternateText>Visit Furcadia Diagnostic tools</linkAlternateText>
+        <linkUri>    https://github.com/StarShip-Avalon-Projects/Furcadia-Diagnostics/</linkUri>
+      </externalLink>
+
+      <codeEntityReference qualifyHint="true" autoUpgrade="true">T:Furcadia.IO.Paths</codeEntityReference>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

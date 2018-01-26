@@ -8,7 +8,7 @@ namespace BugProxy.Net
     /// change these to suit you're needs
     /// </para>
     /// </summary>
-    public class BugProxyOptions : ProxySessionOptions
+    public class BugProxyOptions : ProxyOptions
     {
         #region Public Constructors
 

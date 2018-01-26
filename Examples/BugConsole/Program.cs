@@ -9,7 +9,7 @@ namespace BugConsole
         #region Private Fields
 
         private static ProxySession proxy;
-        private static ProxySessionOptions ProxyOptions;
+        private static ProxyOptions ProxyOptions;
 
         #endregion Private Fields
 
@@ -26,7 +26,7 @@ namespace BugConsole
                 {
                     if (proxy is null)
                     {
-                        ProxyOptions = new BugProxy.Net.BugProxyOptions();
+                        ProxyOptions = new ProxyOptions();
                         proxy = new ProxySession(ProxyOptions);
                         proxy.ClientData2 += onClientDataReceived;
                         proxy.ServerData2 += onServerDataReceived;

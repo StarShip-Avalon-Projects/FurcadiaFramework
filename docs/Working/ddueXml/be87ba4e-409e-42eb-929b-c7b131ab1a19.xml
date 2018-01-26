@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="be87ba4e-409e-42eb-929b-c7b131ab1a19" revisionNumber="1">
+  <developerReferenceWithoutSyntaxDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <para>
+        Dragons Eye Productions is swapped  with updating the software that they openly neglect
+        to document stuff for the community. As a result many players have posted what they
+        know and that information is scattered across the inter-net. Much of that stuff is
+        old and out dated.
+      </para>
+      <para>
+        This documentation is an attempt to fill the void of documentation and update what
+        we can to current standards and bring stuff together in one area.
+      </para>
+      <para>
+        None of the Source code we have is official from Dragons Eye Productions and catnip Studios. It's
+        all derived from documentation already one the Internet or from people like us asking about how things
+        work.
+      </para>
+    </introduction>
+
+    <section address="Section1">
+      <title>Optional section title</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>Add one or more sections with content</para>
+      </content>
+    </section>
+
+    <relatedTopics>
+      <externalLink>
+        <linkText>Official Furcadia Dev Docs</linkText>
+        <linkUri>http://dev.furcadia.com/docs/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Official Furcadia Knowledge Base</linkText>
+        <linkUri>http://support.furcadia.com/kb/index.php</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerReferenceWithoutSyntaxDocument>
+</topic>

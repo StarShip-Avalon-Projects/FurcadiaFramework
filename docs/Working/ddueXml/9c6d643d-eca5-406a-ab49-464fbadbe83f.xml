@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="9c6d643d-eca5-406a-ab49-464fbadbe83f" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <para>Credits:</para>
+      <list class="nobullet">
+        <listItem>
+          <para>
+            Author: Iced
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Edited by: Gerolkae
+          </para>
+        </listItem>
+      </list>
+    </introduction>
+
+
+
+    <section address="Main">
+      <title>File Elements</title>
+      <content>
+      </content>
+      <sections>
+        <section address="Section1">
+          <title>[Ver] &#8208; Recommend no Change</title>
+          <content>
+            <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+            <para>
+              This section is mostly for its namesake, Versioning. It helps developers
+              sync the DragonSpeak Constructor version up with the Furcadia Client version.
+              When new lines of DS are added to Furcadia, a developer would update this file
+              to include them, and would then want to update the versioning information.
+              Recommended not to change.
+            </para>
+          </content>
+        </section>
+        <section address="Section2">
+          <title>
+            [C&#8208;General] &#8208; Some modification OK
+          </title>
+          <content>
+            <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+            <para>
+              This section determines how your default Untitled document would be set up.
+              You might have noticed that your document has a header, footer, and a default
+              comment area for the author. It also specifies that for a new user, the default DS
+              level is 0 (Cause/Effect). Additional Levels can be added by increasing the number.
+            </para>
+            <mediaLink>
+              <image xlink:href="DS File" />
+            </mediaLink>
+            <para>H0 &#61; Line 002, the first header line</para>
+            <para>H1 &#61; Line 003, the second header line, the author line by default</para>
+            <para>
+              H&#35; &#61; add additional lines by adding additional H tags with Numbers. Useful for customizing
+              the DS file with personal scripts.
+            </para>
+            <para>
+              InitLineSpaces &#61; Line 004 &#8208; Line 009, how many blank lines should be included for a new file
+            </para>
+          </content>
+        </section>
+        <section address="Section3">
+          <title>[Levels] – Recommend no Changes</title>
+          <content>
+            <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+            <para>
+              This populates the Levels menu drop down. Numbers correspond to
+              DS lines, which we will see in later sections.
+            </para>
+          </content>
+        </section>
+        <section address="Section4">
+          <title>[Indent&#8208;Lookup] &#8208; Recommend no Changes</title>
+          <content>
+            <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+            <para>
+              Indexing information for Edit -> Fix Indentation. Does not change the # of
+              spaces preceding a line.
+            </para>
+          </content>
+        </section>
+        <section address="Section5">
+          <title>[C&#8208;Indents] &#8208; Some modification OK</title>
+          <content>
+            <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+            <para>
+              Specifies how many spaces should precede a line of DS. When you go to Edit ->
+              Fix Indentation, this is read and lines are spaced accordingly. Modify if
+              you prefer your lines indented in a particular fashion.
+            </para>
+          </content>
+        </section>
+        <section address="Section6">
+          <title>[Init&#8208;Types] &#8208; Recommend no Changes</title>
+          <content>
+            <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+            <para>
+              Specifies what sort of lines exist. Changing these values changes the tab titles,
+              but may cause lines not to load in the toolbox.
+            </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyper-link. -->
+
+    <relatedTopics>
+      <externalLink>
+        <linkText>Iced's Maintained Keys.ini Copy</linkText>
+        <linkUri>http://pastebin.com/TxRanK72</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Iced's Thread DS Suggestions (Furcadia Forums)</linkText>
+        <linkUri>http://forums.furcadia.com/index.php?furcadia_session_id=023577-dpmy-rsz&amp;showtopic=84584&amp;st=0&amp;gopid=508430&amp;#entry508430</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Official Furcadia DragonSpeak Constructor Tutorial</linkText>
+        <linkUri>https://cms.furcadia.com/creations/dreammaking/dreamtutorials/ds-ed</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>DSC Development Thread (Furcadia Forums)</linkText>
+        <linkUri>http://forums.furcadia.com/index.php?furcadia_session_id=150039-kelj-urj&amp;showtopic=51315</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

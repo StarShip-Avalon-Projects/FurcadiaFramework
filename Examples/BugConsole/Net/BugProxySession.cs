@@ -14,7 +14,7 @@ namespace BugProxy.Net
         #region Private Fields
 
         private Paths FurcPath;
-        private BugProxyOptions options;
+        private ProxyOptions options;
 
         #endregion Private Fields
 
@@ -54,11 +54,14 @@ namespace BugProxy.Net
 
         #region Public Constructors
 
-        public BugProxySession(ProxySessionOptions Options): base( Options)
+        public BugProxySession(ProxyOptions Options) : base(Options)
         {
-            options = (BugProxyOptions)Options;
+            options = Options;
         }
 
+        public class ProxySessionOptions
+        {
+        }
 
         #endregion Public Constructors
     }

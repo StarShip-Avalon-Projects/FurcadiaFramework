@@ -12,7 +12,7 @@ namespace BugProxy.Net
     {
         #region Private Fields
 
-        private BugProxyOptions options;
+        private ProxyOptions options;
 
         #endregion Private Fields
 
@@ -52,9 +52,9 @@ namespace BugProxy.Net
 
         #region Public Constructors
 
-        public BugProxySession(ProxySessionOptions Options) : base(Options)
+        public BugProxySession(ProxyOptions Options) : base(Options)
         {
-            options = (BugProxyOptions)Options;
+            options = Options;
         }
 
         #endregion Public Constructors

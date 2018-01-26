@@ -1,0 +1,5653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>FurcadiaLib</name>
+  </assembly>
+  <members>
+    <member name="M:Furcadia.Logging.LogMessage.GetHashCode">
+      <summary>
+            Returns a hash code for this instance.
+            </summary>
+      <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Logging.LogMessage.Equals(System.Object)">
+      <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+      <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+      <returns>
+        <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Logging.LogMessage.ToString">
+      <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+      <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.MessagesExpire">
+      <summary>
+            Gets or sets the messages expire time limit.
+            Messages that have expired are removed from history.
+            This property used in conjunction with SupressSpam = true prevents
+            too much memory from being used over time
+            </summary>
+      <value>
+            The messages expire time limit.
+            </value>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.LogOutput">
+      <summary>
+            Sets the <see cref="T:Furcadia.Logging.ILogOutput" />.
+            </summary>
+      <param name="output">The output.</param>
+      <exception cref="T:System.ArgumentNullException">output</exception>
+    </member>
+    <member name="P:Furcadia.Logging.Logger.SingleThreaded">
+      <summary>
+            Gets or sets a value indicating whether [single threaded].
+            </summary>
+      <value>
+        <c>true</c> if [single threaded]; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Avatar">
+      <summary>
+            Legacy Furre Avatar information
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Avatar.FurrePose">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Avatar.PrimeTable">
+      <summary>
+            Primes the table.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Avatar.SpecNum(System.Int32)">
+      <summary>
+            Specs the number.
+            </summary>
+      <param name="Frame">
+            The frame.
+            </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Avatar.Frame">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Badges">
+      <summary>
+            Beekin Badges
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Badges.Group">
+      <summary>
+            Beekin Group
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Badges.Level">
+      <summary>
+            Group Rank
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Badges.NumToEnum``1(System.Int32)">
+      <summary>
+      </summary>
+      <typeparam name="T">
+      </typeparam>
+      <param name="number">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Badges.PrimeTable">
+      <summary>
+            Preload the badge table
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.DREAM">
+      <summary>
+            Current Dream information
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Furres">
+      <summary>
+            Dream List Furcadia requires Clients to handle thier own Dream
+            Lists See
+            <para>
+            http://dev.furcadia.com/docs New Movement for Spawn and Remove packets
+            </para><para>
+            **Spawn is out dated. New information requires a 4byte for AFK
+              flag at the end
+            </para><para>
+            As of V31, Color code has changed.
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.DREAM.name">
+      <summary>
+            private variables
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.DREAM._Title">
+      <summary>
+            private variables
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.DREAM._Rating">
+      <summary>
+            private variables
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.DREAM._URL">
+      <summary>
+            private variables
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.DREAM.owner">
+      <summary>
+            private variables
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.DREAM.#ctor">
+      <summary>
+            List of Furres in the dream.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.IsModern">
+      <summary>
+            Is this dream Modern Mode?
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Lines">
+      <summary>
+            Number of DS Lines
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Name">
+      <summary>
+            Name of the dream
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.ShortName">
+      <summary>
+            Name of the dream
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Owner">
+      <summary>
+            Dreams uploader character
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.OwnerShortName">
+      <summary>
+            Dreams uploader character
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Rating">
+      <summary>
+            Furcadia Dream rating
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.Title">
+      <summary>
+            Dream title
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.DREAM.URL">
+      <summary>
+            Dreams full Furcadia Drean URL
+            <para>
+            IE: 'fdl furc://DreamOwner:DreamTitle/EntryCode#
+            </para></summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.IFurre">
+      <summary>
+            Furre Class Interface
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.IFurre.Name">
+      <summary>
+            implements the Furre;s Name Property
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.IFurre.ShortName">
+      <summary>
+            implements the Furre;s Name Property
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.IFurre.FurreID">
+      <summary>
+            Implements the FurreID or unique furre identifyer
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Dream.Furre">
+      <summary>
+            Class for Proxies and bots to use Furrre Data provided by the game server.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.Furre._Color">
+      <summary>
+            v31c Colorcodes
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.#ctor(System.Int32)">
+      <summary>
+      </summary>
+      <param name="FurreID">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.#ctor(System.String)">
+      <summary>
+            Furre Constructor with Name
+            </summary>
+      <param name="Name">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.#ctor(System.Int32,System.String)">
+      <summary>
+      </summary>
+      <param name="FurreID">
+      </param>
+      <param name="Name">
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.AfkTime">
+      <summary>
+            Away from keyboard time
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.BeekinBadge">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Direction">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.DSSpecies">
+      <summary>
+            Legacy DS Species
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.FloorObjectCurrent">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.FloorObjectOld">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.FurreColors">
+      <summary>
+            Furcadia Color Code (v31c)
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.FurreDescription">
+      <summary>
+            Furcadia Description
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.FurreID">
+      <summary>
+            Furre ID
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Gender">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Group">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.LastPosition">
+      <summary>
+            The Position the Furre Moved from
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.LastStat">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Level">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Message">
+      <summary>
+            Last Message Furre had
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Name">
+      <summary>
+            Furcadia Name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.PawObjectCurrent">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.PawObjectOld">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Pose">
+      <summary>
+            Furre Pose
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Position">
+      <summary>
+            Current position where the Furre is standing
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.ShortName">
+      <summary>
+            Furcadia Shortname format for Furre Name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.SourceX">
+      <summary>
+            the X Position the Furre moved from
+            <para>
+            Obsolete. Use LasPosition as FurrePosition
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.SourceY">
+      <summary>
+            the Y Position the Furre moved from
+            <para>
+            Obsolete. Use LasPosition as FurrePosition
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Visible">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.WasVisible">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.X">
+      <summary>
+            the X Position the Furre is currently standing at
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.Furre.Y">
+      <summary>
+            the Y Position the Furre Standing At
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.op_Inequality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)">
+      <summary>
+      </summary>
+      <param name="a">
+      </param>
+      <param name="b">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.op_Equality(Furcadia.Net.Dream.Furre,Furcadia.Net.Dream.IFurre)">
+      <summary>
+      </summary>
+      <param name="a">
+      </param>
+      <param name="b">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.Equals(Furcadia.Net.Dream.IFurre)">
+      <summary>
+      </summary>
+      <param name="other">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.Equals(System.Object)">
+      <summary>
+      </summary>
+      <param name="obj">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.GetHashCode">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.ToFurcadiaID">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.ToFurcadiaID(System.Func{Furcadia.Net.Dream.IFurre,System.Int32})">
+      <summary>
+      </summary>
+      <param name="format">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.ToString">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.Furre.ToString(System.Func{Furcadia.Net.Dream.IFurre,System.String})">
+      <summary>
+      </summary>
+      <param name="format">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Net.Dream.FurreList">
+      <summary>
+            Furre List information for a Furcadia Dream
+            <para>
+            This class acts like an enhanced List(of &lt;T&gt;) because you can
+            Select a Furre by Item as well as index
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Dream.FurreList.fList">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FurreList.Count">
+      <summary>
+            Number of Avatars in the Dream
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FurreList.IsReadOnly">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FurreList.IsSynchronized">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FurreList.SyncRoot">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FurreList.ToIList">
+      <summary>
+            Convert Furre List to <see cref="T:System.Collections.IList" /></summary>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FurreList.Item(System.Int32)">
+      <summary>
+      </summary>
+      <param name="index">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Furcadia.Net.Dream.FurreList.Item(Furcadia.Net.Dream.Furre)">
+      <summary>
+            Gets or set the Furre at index of fur
+            </summary>
+      <param name="fur">
+            Furre
+            </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.Add(Furcadia.Net.Dream.Furre)">
+      <summary>
+      </summary>
+      <param name="Furre">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.Clear">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.Contains(System.Int32)">
+      <summary>
+      </summary>
+      <param name="FurreID">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.Contains(System.String)">
+      <summary>
+      </summary>
+      <param name="FurreName">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.Contains(Furcadia.Net.Dream.Furre)">
+      <summary>
+      </summary>
+      <param name="Furre">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.CopyTo(System.Array,System.Int32)">
+      <summary>
+      </summary>
+      <param name="array">
+      </param>
+      <param name="index">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.GerFurreByName(System.String)">
+      <summary>
+      </summary>
+      <param name="sname">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.GetEnumerator">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.GetFurreByID(Furcadia.Text.Base220)">
+      <summary>
+            Get's a Furre from the Dream List bu it's ID
+            </summary>
+      <param name="FurreID">
+            Base220 4 byte string representing the Furre ID
+            </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.GetFurreByID(System.Int32)">
+      <summary>
+            get a Furre from the Furrelist by its integer idd
+            </summary>
+      <param name="FurreID">
+            Furre ID as integer
+            </param>
+      <returns>
+            Furre
+            </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.IndexOf(Furcadia.Net.Dream.Furre)">
+      <summary>
+      </summary>
+      <param name="Furre">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.Remove(System.Int32)">
+      <summary>
+            Removes a Furre based on their Furre ID
+            </summary>
+      <param name="FurreID">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.CopyTo(Furcadia.Net.Dream.Furre[],System.Int32)">
+      <summary>
+      </summary>
+      <param name="array">
+      </param>
+      <param name="arrayIndex">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.Insert(System.Int32,Furcadia.Net.Dream.Furre)">
+      <summary>
+      </summary>
+      <param name="index">
+      </param>
+      <param name="item">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.Remove(Furcadia.Net.Dream.Furre)">
+      <summary>
+      </summary>
+      <param name="item">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Dream.FurreList.RemoveAt(System.Int32)">
+      <summary>
+      </summary>
+      <param name="index">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Account.AccountInfo">
+      <summary>
+            Furcadia Modern Login feature
+            <para>
+            E-Mail and password based accounts.
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Account.AccountInfo.#ctor">
+      <summary>
+            Default Constructor.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Account.AccountInfo.ApiKey">
+      <summary>
+            Furcadia API Key
+            <para>
+            See remarks for DEP/CS NDA
+            </para></summary>
+      <remarks>
+            This intellectual property is owned and controlled by DEP/CS as
+            per their Third Party Nondisclosure Agreement (NDA). This cannot
+            be redistributed with out their consent. Every Measure to
+            protect this key is required, this include
+            Obfuscation/Encryption. Clear Text form is Prohibited.
+            </remarks>
+    </member>
+    <member name="P:Furcadia.Net.Account.AccountInfo.EMail">
+      <summary>
+            Account E-Mail address
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Account.AccountInfo.Password">
+      <summary>
+            Account Password
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Account.CharacterInfo">
+      <summary>
+            Furcadia Modern Login feature
+            <para>
+            E-Mail and password based accounts.
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Account.CharacterInfo.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Account.CharacterInfo.CharacterName">
+      <summary>
+            Character Name to use with this login
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Account.CharacterInfo.Costume">
+      <summary>
+            Costume to use with Selected Character
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.DirectConnection.NetConnection">
+      <summary>
+            Direct Furcadia game server connection with included server load balancer.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DirectConnection.NetConnection.ServerBalancer">
+      <summary>
+            Message to server load balancing.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.NetConnection.#ctor">
+      <summary>
+            Default Constructor
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.NetConnection.#ctor(System.String,System.Int32)">
+      <summary>
+            Connect to game server with Host DNS and Specified port
+            </summary>
+      <param name="host">
+            Game Server Host name
+            </param>
+      <param name="port">
+            Game server TCP Port
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.NetConnection.#ctor(System.Net.IPAddress,System.Int32)">
+      <summary>
+            Connect to game server with Host IP address and Specified port
+            </summary>
+      <param name="ip">
+            Game Server IP
+            </param>
+      <param name="port">
+            Game Server port
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.NetConnection.Connect">
+      <summary>
+            Connect to game server
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.NetConnection.SendServer(System.String)">
+      <summary>
+            Send a message to the Game Server
+            </summary>
+      <param name="message">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.NetConnection.MessageSentToServer(System.Object,System.EventArgs)">
+      <summary>
+            Let the Server Balancer control the message load to the server
+            </summary>
+      <param name="message">
+            Message from the Server Queue
+            </param>
+      <param name="e">
+            event Arguments
+            </param>
+    </member>
+    <member name="T:Furcadia.Net.DirectConnection.ClientBase">
+      <summary>
+            NetConnection
+            <para>
+            Derived from ProxyBase for Stand alone connections
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.DirectConnection.ClientBase.FurcadiaUtilities">
+      <summary>
+            Furcadia Utilities
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.DirectConnection.ClientBase.ActionDelegate">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.DirectConnection.ClientBase.DataEventHandler2">
+      <summary>
+      </summary>
+      <param name="data">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.DirectConnection.ClientBase.ErrorEventHandler">
+      <summary>
+      </summary>
+      <param name="e">
+      </param>
+      <param name="o">
+      </param>
+      <param name="n">
+      </param>
+    </member>
+    <member name="E:Furcadia.Net.DirectConnection.ClientBase.Connected">
+      <summary>
+            This is triggered when the
+             </summary>
+    </member>
+    <member name="E:Furcadia.Net.DirectConnection.ClientBase.Error">
+      <summary>
+            This is triggered when a handled Exception is thrown.
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.DirectConnection.ClientBase.ServerData">
+      <summary>
+            This is triggered when the Server sends data to the client.
+            Doesn't expect a return value.
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.DirectConnection.ClientBase.ServerDisConnected">
+      <summary>
+            This is triggered when the Server Disconnects
+             </summary>
+    </member>
+    <member name="F:Furcadia.Net.DirectConnection.ClientBase.BUFFER_CAP">
+      <summary>
+            Max buffer size
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.DirectConnection.ClientBase.EndPoint">
+      <summary>
+            Game Server IP/Port
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DirectConnection.ClientBase.FurcPath">
+      <summary>
+            Furcadia Path Collection
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor">
+      <summary>
+            Default Constructor
+            <para>
+            Load furcadia defaults from %appData%\settings.ini
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.Int32)">
+      <summary>
+      </summary>
+      <param name="port">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.String,System.Int32)">
+      <summary>
+      </summary>
+      <param name="host">
+      </param>
+      <param name="port">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.Net.IPAddress,System.Int32)">
+      <summary>
+      </summary>
+      <param name="ip">
+      </param>
+      <param name="port">
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.DirectConnection.ClientBase.IsServerConnected">
+      <summary>
+            Proxy is connected, or not.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.DirectConnection.ClientBase.BufferCapacity">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.DirectConnection.ClientBase.EncoderPage">
+      <summary>
+            Set the Encoder to win 1252 encoding
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.Connect">
+      <summary>
+            Connects to the Furcadia Server and starts the mini proxy.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.Dispose">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.SendServer(Furcadia.Net.INetMessage)">
+      <summary>
+            Sends the text to the game server
+            </summary>
+      <param name="message">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.SendServer(System.String)">
+      <summary>
+            Sends Data to the Game server
+            </summary>
+      <param name="message">
+            string to send to game server
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.Dispose(System.Boolean)">
+      <summary>
+      </summary>
+      <param name="disposing">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.NetProxy">
+      <summary>
+            Furcadia base proxy connect between Client and Server. This is a low
+            level class that handles the raw connections and furcadia
+            proxy/firewall settings.
+            <para>
+            We don't have TLS/SSL handling here, so therefore, Furcadia Settings
+            for this are disabled
+            </para></summary>
+      <remarks>
+      </remarks>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.FurcadiaUtilities">
+      <summary>
+            Furcadia Utilities
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.SetFile">
+      <summary>
+            FurcadiaSettings File
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.BUFFER_CAP">
+      <summary>
+            Max buffer size
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.client">
+      <summary>
+            Furcadia Client TCP Client
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.LightBringer">
+      <summary>
+            Furcadia Game server TCP Client
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.ENCODE_PAGE">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.furcProcess">
+      <summary>
+            Furcadia Client Process
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.listen">
+      <summary>
+            Allow Furcadia Client to connect to us
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.NetProxy.Options">
+      <summary>
+            connection options
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.processID">
+      <summary>
+            Process IP for Furcadia.exe
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.SetPath">
+      <summary>
+            Furcadia Settings File Path
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetProxy.sett">
+      <summary>
+            Furcadia Settings for backup/restore
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.#ctor">
+      <summary>
+            Connect to game server with default settings
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.#ctor(System.Int32@)">
+      <summary>
+      </summary>
+      <param name="port">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.#ctor(System.Int32@,System.Int32@)">
+      <summary>
+      </summary>
+      <param name="port">
+            gameserver port
+            </param>
+      <param name="lport">
+            localhost port
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.#ctor(System.String,System.Int32)">
+      <summary>
+      </summary>
+      <param name="host">
+            Game server host
+            </param>
+      <param name="port">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.#ctor(Furcadia.Net.Options.ProxyOptions)">
+      <summary>
+            Connect to Furcadia with Proxy Options
+            </summary>
+      <param name="Options">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.#ctor(System.String,System.Int32,System.Int32)">
+      <summary>
+            Connect to the Game serer by Host name to IP address
+            </summary>
+      <param name="host">
+            GameServer Ip address or hostname
+            </param>
+      <param name="port">
+            Game server port
+            </param>
+      <param name="lport">
+            Localhost port
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.#ctor(System.Net.IPEndPoint,System.Int32)">
+      <summary>
+      </summary>
+      <param name="endpoint">
+      </param>
+      <param name="lport">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.NetProxy.ActionDelegate">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.NetProxy.DataEventHandler">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.NetProxy.DataEventHandler2">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.NetProxy.ErrorEventHandler">
+      <summary>
+      </summary>
+    </member>
+    <member name="E:Furcadia.Net.NetProxy.ClientData2">
+      <summary>
+            This is triggered when the Client sends data to the server.
+            Expects a return value.
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.NetProxy.ServerData2">
+      <summary>
+            This is triggered when the Server sends data to the client.
+            Doesn't expect a return value.
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.NetProxy.ServerDisConnected">
+      <summary>
+            This is triggered when the Server Disconnects
+             </summary>
+    </member>
+    <member name="E:Furcadia.Net.NetProxy.ClientDisConnected">
+      <summary>
+            This is triggered when the Client Disconnects
+             </summary>
+    </member>
+    <member name="E:Furcadia.Net.NetProxy.Connected">
+      <summary>
+            This is triggered when the Client and/or Server have connected to TCP stream
+             </summary>
+    </member>
+    <member name="E:Furcadia.Net.NetProxy.Error">
+      <summary>
+            This is triggered when a handled Exception is thrown.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.SendError(System.Exception,System.Object,System.String)">
+      <summary>
+            send errors to the error handler
+            </summary>
+      <param name="e">
+      </param>
+      <param name="o">
+      </param>
+      <param name="text">
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.NetProxy.BufferCapacity">
+      <summary>
+            Buffer Size
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.NetProxy.EncoderPage">
+      <summary>
+            Encodig
+            <para />
+            DEFAULT: Windows 1252
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.NetProxy.IsClientSocketConnected">
+      <summary>
+            Check the connection Status of the Furcadia Client
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.NetProxy.IsServerSocketConnected">
+      <summary>
+            Check our connection status to the game server
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.NetProxy.ProcessID">
+      <summary>
+            Process ID for closing Furcadia.exe
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.ClientDisconnect">
+      <summary>
+            Disconnect from the Furcadia client
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.CloseClient">
+      <summary>
+            Disconnects the furcadia client and Closes the application
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.Connect">
+      <summary>
+            Connects to the Furcadia Server and starts the mini proxy.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.Disconnect">
+      <summary>
+            Disconnect from the Furcadia gameserver and Furcadia client
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.SendToClient(System.String)">
+      <summary>
+      </summary>
+      <param name="message">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.SendToClient(Furcadia.Net.INetMessage)">
+      <summary>
+      </summary>
+      <param name="message">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.SendToServer(Furcadia.Net.INetMessage)">
+      <summary>
+      </summary>
+      <param name="message">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.SendToServer(System.String)">
+      <summary>
+      </summary>
+      <param name="message">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.AsyncListener(System.IAsyncResult)">
+      <summary>
+      </summary>
+      <param name="ar">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.GetClientData(System.IAsyncResult)">
+      <summary>
+            handle the raw data coming from he Furcadia client
+            </summary>
+      <param name="ar">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxy.GetServerData(System.IAsyncResult)">
+      <summary>
+            Handle the raw server data
+            </summary>
+      <param name="ar">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Options.ClientOptions">
+      <summary>
+            Game server connection settings collection
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.ClientOptions.FurcadiaFilePaths">
+      <summary>
+            Furcadia Paths File Path Structure.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.ClientOptions.FurcadiaUtilities">
+      <summary>
+            Furcadia Utilities
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.ClientOptions.gameserverhost">
+      <summary>
+            Host Name or IP address
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.ClientOptions.gameserverport">
+      <summary>
+            Game Server TCP port
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ClientOptions.GameServerHost">
+      <summary>
+            Host name or IP of the game server
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ClientOptions.GameServerPort">
+      <summary>
+            Game server TCP Port
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Options.ClientOptions.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Options.PouncrOptions">
+      <summary>
+            Pounce Server Configureation settings
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.PouncrOptions.FurcadiaUtilities">
+      <summary>
+            Furcadia Utilities with Library Default settings <paa></paa></summary>
+    </member>
+    <member name="M:Furcadia.Net.Options.PouncrOptions.#ctor">
+      <summary>
+            Default Pounce Settings constructor
+            <para><see cref="P:Furcadia.Net.Options.PouncrOptions.ServerHost">= "on.furcadia.com/q"</see></para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.PouncrOptions.ServerHost">
+      <summary>
+            Pounce Server address
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Options.ProxyOptions">
+      <summary>
+            Configuration options for NetProxy
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.ProxyOptions.furcprocess">
+      <summary>
+            Furcadia Client Executable
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.ProxyOptions.localhostport">
+      <summary>
+            LocalHost port
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyOptions.Standalone">
+      <summary>
+             Allow the connection to stay open after the client drops?
+             </summary>
+      <remarks>
+            if standalone is enabled.. then we can skip, Furcadia Client Login
+            with Firewall/Proxy settings and manage the client triggers ourselves
+             </remarks>
+    </member>
+    <member name="M:Furcadia.Net.Options.ProxyOptions.#ctor">
+      <summary>
+            Default settings
+            <para><see cref="F:Furcadia.Net.Options.ProxyOptions.localhostport" /> = 6700
+            </para><para><see cref="F:Furcadia.Net.Options.ProxyOptions.furcprocess" /> = "Furcadia.exe"
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyOptions.CharacterIniFile">
+      <summary>
+            Character Ini file to connect to the Game server with
+            </summary>
+      <remarks>
+        <para>
+            Furcadia.Exe Command Line options
+            </para>
+        <para>
+            If only a Character.ini is Specified then NetProxy will Connect
+            with Legacy Connection.
+            </para>
+        <para>
+            If NoArguments specified then we'll login with Account Login window
+            </para>
+        <para>
+            If we use -url="" We can Open the client and the server will
+            select the character for us and bypass the Account Login Screen
+            and the Game News feed
+            </para>
+      </remarks>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyOptions.ProxyHost">
+      <summary>
+            Host name or IP Address for the proxy server
+            <para />
+            Defaults to "localhost'
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyOptions.FurcadiaInstallPath">
+      <summary>
+            Furcadia working folder path to the Client install we want to use
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyOptions.FurcadiaProcess">
+      <summary>
+            Furcadia Client executable
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyOptions.LocalhostPort">
+      <summary>
+            Localhost TCP port
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Options.ProxyReconnectOptions">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.ProxyReconnectOptions.reconnectmax">
+      <summary>
+            Max tries to reconnect to server before aborting
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.ProxyReconnectOptions.reconnecttimeout">
+      <summary>
+            the time delay for the current connection attempt in seconds
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Options.ProxyReconnectOptions.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyReconnectOptions.ConnectionTimeOut">
+      <summary>
+            the time delay for the current connection attempt in seconds.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxyReconnectOptions.ReconnectMax">
+      <summary>
+            Maximum tries to reconnect to the server
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Options.ProxySessionOptions">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ProxySessionOptions.ReconnectOptions">
+      <summary>
+            reconnection manager options
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Options.ProxySessionOptions.#ctor">
+      <summary>
+            default Options
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Options.ServerOptions">
+      <summary>
+            Configuration Settings for the Furcadia Client to connect to
+            <para>
+            We're pretending to be the Furcadia Game Server
+            </para></summary>
+    </member>
+    <member name="T:Furcadia.Net.Pounce.PounceClient">
+      <summary>
+            Generic Class to use the Pounce server
+            </summary>
+            TODO: Read default lists(Furres, Dreams, Channels) from Furcadia Online.ini
+        </member>
+    <member name="M:Furcadia.Net.Pounce.PounceClient.#ctor">
+      <summary>
+            Default Constructor
+            <para>
+            Pounce server updates on a 30 second cron-job and returns a list
+            of Furres Currently on-line
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceClient.#ctor(System.String[],System.String[])">
+      <summary>
+            Set up the default Pounce Client and Friends List and Dream List
+            <para>
+            Pounce server updates on a 30 second cron-job and returns a list
+            of Furres Currently on-line
+            </para></summary>
+      <param name="FurreList">
+            Furre List as string array
+            </param>
+      <param name="DreamList">
+            dream list as s string array
+            </param>
+    </member>
+    <member name="F:Furcadia.Net.Pounce.PounceClient.PounceTimer">
+      <summary>
+            30 second timer to send requests to the pounce server
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceClient.FurreList">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceClient.OnlineList">
+      <summary>
+            File path to List of furres to check online status
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceClient.SmPounceSend(System.Object)">
+      <summary>
+            Send request to Pounce server at 30 second interval
+            </summary>
+      <param name="sender">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceClient.Dispose(System.Boolean)">
+      <summary>
+      </summary>
+      <param name="disposing">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceClient.Dispose">
+      <summary>
+            Implement IDisposable and Dispose of PounceTimer
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Pounce.PounceFurre">
+      <summary>
+            Pounce info for Furre online status
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceFurre.Name">
+      <summary>
+            Furre Name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceFurre.Online">
+      <summary>
+            Furre Currently online
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceFurre.WasOnline">
+      <summary>
+            Furre Previous Online State
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Pounce.PounceIni">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Pounce.PounceConnection">
+      <summary>
+            Base class for handling the Pounce Server Connections
+            </summary>
+      <remarks>
+            Pounce server returns a list on online objects (Furres,Dreams,Channels?)
+            </remarks>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceConnection.EncoderPage">
+      <summary>
+            Set the Encoder to Windows 1252 encoding
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceConnection.Status">
+      <summary>
+            Pounce HTTP Status
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceConnection.TotalFurresOnline">
+      <summary>
+            Total on-line Furre count retrieved from an on-line check request
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceConnection.NumberOfDreamsOnMainMaps">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Pounce.PounceConnection.RawResponse">
+      <summary>
+            When a response from the server is received this property will
+            contain the raw HTTP string.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Pounce.PounceConnection._friends">
+      <summary>
+            Stat Lists
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Pounce.PounceConnection._dreams">
+      <summary>
+            Stat Lists
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Pounce.PounceConnection._channels">
+      <summary>
+            Stat Lists
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Pounce.PounceConnection._statusCode">
+      <summary>
+            Status Code returned by Pounce
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Pounce.PounceConnection._url">
+      <summary>
+            Default URL "http://on.furcadia.com/q/
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.#ctor(System.String,System.String[],System.String[])">
+      <summary>
+            A HTTP web request
+            </summary>
+      <param name="url">
+            Url (i.e http://on.furcadia.com) or if you have a custom on-line
+            check server use that instead
+            </param>
+      <param name="shortN_friends">
+            Friends (shortname) (i.e emeraldflame instead of Emerald|Flame)
+            </param>
+      <param name="Dreams">
+            String Array of Dreams
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.#ctor">
+      <summary>
+            default constructor
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Pounce.PounceConnection.PounceResponse">
+      <summary>
+      </summary>
+      <param name="friends">
+            Friends list
+            </param>
+      <param name="dreams">
+            Dream list.
+            </param>
+    </member>
+    <member name="E:Furcadia.Net.Pounce.PounceConnection.Response">
+      <summary>
+            Called when a on-line check request sends a response. First
+            argument is a list of players on-line.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.AddFriend(System.String)">
+      <summary>
+            Adds a friend to a list of friends. Throws a Exception on non
+            alphanumeric string.
+            </summary>
+      <param name="name">
+            A <see cref="T:System.String" /></param>
+      <returns>
+            A <see cref="T:System.Boolean" />. True if successfully added
+            friend name. False if name already added.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.CheckFriendNames">
+      <summary>
+            Iterates through friend's names to make sure they are valid
+            alpha numeric (a-z0-9).
+            </summary>
+      <returns>
+            True: All friends names are fine. False otherwise.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.ClearFriends">
+      <summary>
+            Removes everyone from the friends list.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.Connect">
+      <summary>
+            Connects to the on-line check server and sends a on-line check request
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.ConnectAsync">
+      <summary>
+            Connects asynchronously to the on-line check server and sends a
+            request without affecting the executing thread.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.RemoveFriend(System.String)">
+      <summary>
+            Removes specified name from the list
+            </summary>
+      <param name="name">
+            Furre Name
+            </param>
+      <returns>
+            True on success
+            </returns>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.CheckFriendName(System.String)">
+      <summary>
+            Checks a friend's name to make sure it is a valid alpha numeric (a-z0-9).
+            <para>
+            Furcadia short-name format is lowercase alpha-numeric strings
+            </para></summary>
+      <param name="shortNFriend">
+            Name of Friend.
+            </param>
+      <returns>
+            True: Friend name is fine. False otherwise.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.IsValidAlphaNumeric(System.String)">
+      <summary>
+            Checks a string to see if is it alpha numeric
+            </summary>
+      <param name="inputStr">
+            Input String
+            </param>
+      <returns>
+            True if inputStr is alpha numeric
+            </returns>
+    </member>
+    <member name="M:Furcadia.Net.Pounce.PounceConnection.Request(System.String)">
+      <summary>
+            Sends the "POST" request to the Pounce Server.
+            </summary>
+      <param name="url">
+            Optional URL, Defaults to http://on.furcadia.com
+            </param>
+    </member>
+    <member name="T:Furcadia.Net.Proxy.CharacterNotFoundException">
+      <summary>
+            Furcadia Character Not found Exception
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Proxy.ProxySession">
+      <summary>
+            This Instance handles the current Furcadia Session.
+            <para>
+            Part1: Manage MonkeySpeak Engine Start,Stop,Restart. System
+                   Variables, MonkeySpeak Execution Triggers
+            </para><para>
+            Part2: Furcadia Proxy Controls, In/Out Ports, Host, Character Ini
+                   file. Connect, Disconnect, Reconnect
+            </para><para>
+            Part2a: Proxy Functions do link to Monkey Speak trigger execution
+            </para><para>
+            Part3: This Class Links loosely to the GUI
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.Options">
+      <summary>
+            connection options
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.#ctor(Furcadia.Net.Options.ProxySessionOptions)">
+      <summary>
+      </summary>
+      <param name="Options">
+            ProxySession Options
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.Disconnect">
+      <summary>
+            Disconnect from Furcadia and notify delegates.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.Connect">
+      <summary>
+            Connect the Proxy to the Furcadia  Game server
+             </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.StandAlone">
+      <summary>
+            Allows the Furcadia Client to Disconnect from the session,
+            allowing the session to remain connected to the game server
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ConnectedFurre">
+      <summary>
+            Connected Furre (Who we are)
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.IsConnectedCharacter">
+      <summary>
+            Are we the current executing character?
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.IsConnectedCharacter(Furcadia.Net.Dream.Furre)">
+      <summary>
+            Is the target furre the connected characyer?
+            </summary>
+      <param name="Fur">
+        <see cref="T:Furcadia.Net.Dream.Furre" />
+      </param>
+      <returns>True if Fur is the Connected Furre</returns>
+    </member>
+    <member name="F:Furcadia.Net.Proxy.ProxySession.ReconnectionManager">
+      <summary>
+            Manage out Auto reconnects
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Proxy.ProxySession.ServerBalancer">
+      <summary>
+            Balance the out going load to server
+            <para>
+            Throat Tired Syndrome and No Endurance Control
+            </para></summary>
+    </member>
+    <member name="T:Furcadia.Net.Proxy.ProxySession.ClientStatusChangedEventHandler">
+      <summary>
+      </summary>
+      <param name="Sender">
+      </param>
+      <param name="e">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Proxy.ProxySession.OnErrorEventHandler">
+      <summary>
+      </summary>
+      <param name="sender">
+      </param>
+      <param name="e">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Proxy.ProxySession.ServerStatusChangedEventHandler">
+      <summary>
+      </summary>
+      <param name="Sender">
+      </param>
+      <param name="e">
+      </param>
+    </member>
+    <member name="E:Furcadia.Net.Proxy.ProxySession.ClientData2">
+      <summary>
+            This is triggered when the Client sends data to the server.
+            Expects a return value.
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.Proxy.ProxySession.ClientStatusChanged">
+      <summary>
+            Track the Furcadia Client status
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.Proxy.ProxySession.ServerData2">
+      <summary>
+            This is triggered when the Server sends data to the client.
+            Doesn't expect a return value.
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.Proxy.ProxySession.ServerStatusChanged">
+      <summary>
+            Track the Server Status
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Proxy.ProxySession.DataHandler">
+      <summary>
+            Send Data to Furcadia Client or Game Server
+            </summary>
+      <param name="Message">
+            Raw instruction to send
+            </param>
+      <param name="e">
+            Client or Server Event Arguments with Instruction type
+            </param>
+    </member>
+    <member name="T:Furcadia.Net.Proxy.ProxySession.ProcessChannel">
+      <summary>
+      </summary>
+      <param name="sender">
+            ChannelObject
+            </param>
+      <param name="Args">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Proxy.ProxySession.ProcessInstruction">
+      <summary>
+            Send Server to Client Instruction object to Sub-classed for handling.
+            </summary>
+      <param name="sender">
+            Server Instruction Object
+            </param>
+      <param name="Args">
+      </param>
+    </member>
+    <member name="E:Furcadia.Net.Proxy.ProxySession.ProcessServerChannelData">
+      <summary>
+            Process Display Text and Channels
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.Proxy.ProxySession.ProcessServerInstruction">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ThroatTired">
+      <summary>
+            ServerQueue Throat Tired Mode
+            <para>
+            When set, a <see cref="T:System.Threading.Timer" /> is created to make us wait till the time is clear to resume.
+            </para></summary>
+      <returns>
+            State <see cref="P:Furcadia.Net.Utils.ServerQue.ThroatTired" /></returns>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.NoEndurance">
+      <summary>
+            Server Queue NoEndurance mode
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.BanishName">
+      <summary>
+            Current Name for Banish Operations
+            <para>
+            We mirror Furcadia's Banish system for efficiency
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.BanishString">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.Channel">
+      <summary>
+            Channel name?
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ClientConnectPhase">
+      <summary>
+            Current Connection Phase
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ClientStatus">
+      <summary>
+            Client Connection status
+            </summary>
+      <returns>
+            Status tog the Furcadia Client
+            </returns>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.Dream">
+      <summary>
+            Current Dream Information with Furre List
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ErrorMsg">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ErrorNum">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.HasShare">
+      <summary>
+            We have Dream Share or We are Dream owner
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.InDream">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.Player">
+      <summary>
+            Current Triggering player
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ServerConnectPhase">
+      <summary>
+            Current server connection phase
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.ServerStatus">
+      <summary>
+            Server Connection status
+            </summary>
+      <returns>
+            Status of the Furcadia Game server
+            </returns>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.Dispose">
+      <summary>
+            implementation of Dispose pattern callable by consumers.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.GetEnumInt``1(``0)">
+      <summary>
+      </summary>
+      <typeparam name="T">
+      </typeparam>
+      <param name="enumVal">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerChannel(System.String,System.Boolean)">
+      <summary>
+            Parse Channel Data
+            </summary>
+      <param name="data">
+            Raw Game Server to Client instruction
+            </param>
+      <param name="Handled">
+            Is this data already handled?
+            </param>
+      <remarks>
+            This is derived content from the Furcadia Dev Docs and Furcadia
+            Technical Resources
+            <para>
+            Update 23 Avatar Movement http://dev.furcadia.com/docs/023_new_movement.pdf
+            </para><para>
+            Update 27 Movement http://dev.furcadia.com/docs/027_movement.html
+            </para><para>
+            FTR http://ftr.icerealm.org/ref-instructions/
+            </para></remarks>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerData(System.String,System.Boolean)">
+      <summary>
+            Parse Server Data
+            </summary>
+      <param name="data">
+      </param>
+      <param name="Handled">
+      </param>
+            ///
+            <remarks>
+            This is derived content from the Furcadia Dev Docs and Furcadia
+            Technical Resources
+            <para>
+            Update 23 Avatar Movement http://dev.furcadia.com/docs/023_new_movement.pdf
+            </para><para>
+            Update 27 Movement http://dev.furcadia.com/docs/027_movement.html
+            </para><para>
+            FTR http://ftr.icerealm.org/ref-instructions/
+            </para></remarks></member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.SendFormattedTextToServer(System.String)">
+      <summary>
+            Format basic furcadia commands and send to server
+            <para>
+            We also mirror the client to server banish system.
+            </para><para>
+            This maybe a good place to place Proxy/Bot commands for controls
+            </para><para>
+            default to say or "normal spoken command"
+            </para></summary>
+      <param name="data">
+            Raw Client to Server instruction
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.SendToClient(System.String)">
+      <summary>
+            Send a raw instruction to the client
+            </summary>
+      <param name="data">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.SendToServer(System.String)">
+      <summary>
+            Send a raw instruction to Server through the Load Balancer
+            </summary>
+      <param name="message">
+            Client to server Instruction
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.TextToServer(System.String@)">
+      <summary>
+            Text Channel Prefixes (shout,whisper emote, Raw Server command)
+            <para>
+            default to say or "normal spoken command"
+            </para></summary>
+      <param name="arg">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.OnClientDataReceived(System.String)">
+      <summary>
+            Client sent us some data, Let's deal with it
+            </summary>
+      <param name="data">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.OnServerDataReceived(System.String)">
+      <summary>
+      </summary>
+      <param name="data">
+      </param>
+    </member>
+    <member name="F:Furcadia.Net.Proxy.ProxySession.Repq">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Proxy.ProxySession.Rep">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.Rep.ID">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Proxy.ProxySession.Rep.Type">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.Dispose(System.Boolean)">
+      <summary>
+            Protected implementation of Dispose pattern.
+            </summary>
+      <param name="disposing">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.CommandQueueManager">
+      <summary>
+            Balance the load to the server
+            <para>
+            Handles Throat-Tired and No Endurance
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.CommandQueueManager.QueueTimer">
+      <summary>
+            Queue Processing timer.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.CommandQueueManager.CommandQueue">
+      <summary>
+            FIFO Stack of Server Instructions to process
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.#ctor">
+      <summary>
+            Constructor setting Defaults
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.CommandQueueManager.Pause">
+      <summary>
+            Is the Queue Paused?
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.CommandQueueManager.QueueEventHandler">
+      <summary>
+            Event Handler to notify calling class data has been sent to the
+            game server
+            </summary>
+      <param name="sender">
+            raw client to server instruction
+            </param>
+      <param name="args">
+            System.EventArgs. (Unused)
+            </param>
+    </member>
+    <member name="F:Furcadia.Net.Utils.CommandQueueManager.OnServerSendMessage">
+      <summary>
+            Notify subscribers were's sending an instruction to the games server
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.SendQueueItem(System.String)">
+      <summary>
+            Incoming Messages for server processing
+            </summary>
+      <param name="data">
+            Raw Client to Server Instruction.
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.ProcessQueue(System.Object)">
+      <summary>
+            handle the Queue timer ticks
+            </summary>
+      <param name="state">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.QueueTick(System.Double)">
+      <summary>
+            Load Balancing Function
+            <para>
+            this makes sure we don't over load what the server can handle
+            </para><para>
+            Proxy has 2 modes of operation
+            </para><para>
+            Mode 1 Normal. handles Throat Tired syndrome with a time out
+            timer to resume
+            </para><para>
+            Mode 2 NoEndurance. Send data to server as fast as it can handle
+            with out overloading its buffer
+            </para></summary>
+      <param name="DelayTime">
+            Delay Time in Milliseconds
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.Dispose">
+      <summary>
+            This code added to correctly implement the disposable pattern.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.CommandQueueManager.Dispose(System.Boolean)">
+      <summary>
+      </summary>
+      <param name="disposing">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerObjects.DiceObject">
+      <summary>
+            Dice for the @roll channel
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerObjects.DiceObject.#ctor">
+      <summary>
+            Consgructor
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceCompnentMatch">
+      <summary>
+            + or - Modifyer
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceCount">
+      <summary>
+            Number of Dice
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceModifyer">
+      <summary>
+            Die offset +/- n
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceResult">
+      <summary>
+            Sum of the Dice Result
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerObjects.DiceObject.DiceSides">
+      <summary>
+            Number of sides per Die
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerObjects.DataObject">
+      <summary>
+            Base object fo sharing custom data for server instructions
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerObjects.DataObject.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.BaseServerInstruction">
+      <summary>
+            Server instruction object base class
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.instructionType">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.#ctor(System.String)">
+      <summary>
+            Reads the raw server instruction and set this object to its settings
+            <para>
+            Default Server instruction type is <see cref="F:Furcadia.Net.ServerInstructionType.Unknown" /></para></summary>
+      <param name="ServerInstruction">
+            raw server instruction
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.InstructionType">
+      <summary>
+            Which Server to Client Instruction are we?
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.BaseServerInstruction.RawInstruction">
+      <summary>
+            Raw Server to Client instruction
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.ChannelObject">
+      <summary>
+            Base Server Instruction object for Channel Processing
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerParser.ChannelObject.player">
+      <summary>
+            Active Triggering avatar
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.ChannelObject.#ctor(System.String)">
+      <summary>
+      </summary>
+      <param name="ServerInstruction">
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.ChannelText">
+      <summary>
+            Raw unformatted channel text
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.DynamicChannel">
+      <summary>
+            Dynamic Channel filter
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.FormattedChannelText">
+      <summary>
+            returns Clear Text to display in a log
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.ChannelObject.Player">
+      <summary>
+            Active Triggering avatar
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.DiceRolls">
+      <summary>
+            Parse Dice rolls
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.DiceRolls.#ctor(System.String)">
+      <summary>
+      </summary>
+      <param name="ServerInstruction">
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.DiceRolls.Dice">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.DreamBookmark">
+      <summary>
+             Triggered when the connection enters a new dream.
+             <para>
+             This instruction tells the client to download the specified dream
+             data from the file server.
+             </para><para>
+             Respond with client command when furcadia client is not available "vasecodegamma"
+             </para></summary>
+      <remarks>
+            ]CBookmark Type[1]Dream URL[*]
+            <para> Type 0 = temporary</para>
+             Type 1 = Regular (per user requests)
+            <para>DreamUrl = "furc://uploadername:dreamname/entrycode "</para>
+             Credits FTR
+             </remarks>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.DreamBookmark.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.DreamBookmark.#ctor(System.String)">
+      <summary>
+            Constructor with Dream Data definitions
+            </summary>
+      <param name="ServerInstruction">
+            Raw server instruction from the game server
+            </param>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.DreamBookmark.DreamUrl">
+      <summary>
+            The Dreams URL
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.DreamBookmark.DreamType">
+      <summary>
+            Dream Type
+            <para> Type 0 = Temporary</para>
+            Type 1 = Regular
+            Type -1 = undefined
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.LoadDream">
+      <summary>
+            Triggered when the connection enters a new dream.
+            <para>
+            This instruction tells the client to download the specified dream
+            data from the file server.
+            </para><para>
+            Respond with client command when furcadia client is not available "vasecodegamma"
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.LoadDream.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.LoadDream.#ctor(System.String)">
+      <summary>
+            Constructor with Dream Data definitions
+            </summary>
+      <param name="ServerInstruction">
+            Raw server instruction from the game server
+            </param>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.LoadDream.DreamName">
+      <summary>
+            td or permanent map name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.LoadDream.IsModern">
+      <summary>
+            Current dream mode
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.LoadDream.IsPermanent">
+      <summary>
+            Is the current dream a permanent dream?
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.MoveFurre">
+      <summary>
+            Animated or noanimated move object
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.MoveFurre.#ctor(System.String)">
+      <summary>
+      </summary>
+      <param name="ServerInstruction">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.RemoveAvatar">
+      <summary>
+            Remove Avatar Server Instruction Object
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerParser.RemoveAvatar.FurreId">
+      <summary>
+            Avatar ID
+            <para>
+            4 byte Base220 string
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.RemoveAvatar.#ctor(System.String)">
+      <summary>
+            Remove Avatar from the Dream Furre List by its Furre ID
+            </summary>
+      <param name="ServerInstruction">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.SpawnAvatar">
+      <summary>
+            Process the Spaw Avatar Instruction
+            </summary>
+      <remarks>
+            "&lt;" + user id + x + y + shape number + name + color code + flag
+            + linefeed
+            <para><see href="http://dev.furcadia.com/docs/027_movement.html" /></para></remarks>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.SpawnAvatar.player">
+      <summary>
+            the Active Player
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerParser.SpawnAvatar.PlayerFlags">
+      <summary>
+            Spawing plags
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.SpawnAvatar.#ctor(System.String)">
+      <summary>
+      </summary>
+      <param name="ServerInstruction">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerParser.UpdateColorString">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerParser.UpdateColorString.player">
+      <summary>
+            the Active Player
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.UpdateColorString.#ctor(Furcadia.Net.Dream.Furre@,System.String)">
+      <summary>
+      </summary>
+      <param name="Player">
+      </param>
+      <param name="ServerInstruction">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ProxyReconnect">
+      <summary>
+            Furcadia Reconnection Manager
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ProxyReconnect.ReconnectOptions">
+      <summary>
+            reconnection Options
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ProxyReconnect.ReconnectTimeOutTimer">
+      <summary>
+            Connection Time Out timer.
+            <para>
+            How long to wait before closing the Connection and starting the
+            Next reconnect attempt
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ProxyReconnect.ReconnectTimer">
+      <summary>
+            delay till the next reconnect attempt
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ProxyReconnect.RelogCounter">
+      <summary>
+            Current Attempt to reconnect
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.#ctor">
+      <summary>
+            Defaults to max 5 connects and delay cycle of 45 seconds.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.#ctor(Furcadia.Net.Options.ProxyReconnectOptions)">
+      <summary>
+      </summary>
+      <param name="options">
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ProxyReconnect.IsRunning">
+      <summary>
+            Is there a reconnection process running?
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.ReconnectAttemptTick(System.Object)">
+      <summary>
+            this begins the Connection Attempt
+            <para>
+            IE: Proxy.Connect()
+            </para></summary>
+      <param name="state">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.ReconnectTimeOutTick(System.Object)">
+      <summary>
+            Current Attempt timed out, begin the next attempt
+            </summary>
+      <param name="Obj">
+            State Object
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.Dispose">
+      <summary>
+            destructor
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.Dispose(System.Boolean)">
+      <summary>
+            Implement IDisposable pattern
+            </summary>
+      <param name="disposing">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.SkipAttempt">
+      <summary>
+            Skips the current connection attempt and go to ReconnectTimeOutTimer
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.Start">
+      <summary>
+            Starts the reconnection sequence.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ProxyReconnect.Stop">
+      <summary>
+            Stops the reconnection sequence.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ProxyReconnect.OnAttemptsExceded">
+      <summary>
+            We failed to reconnect and we aborted.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ProxyReconnect.OnConnectTimeOut">
+      <summary>
+            Current connection to server timed out,
+            <para>
+            Stop the connection attempt and wait for the next attempt
+            </para><para>
+            IE: Proxy.Disconnect()
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ProxyReconnect.OnStartProxyConnect">
+      <summary>
+            we've started the connection attempt
+            <para>
+            IE: Proxy.Connect()
+            </para></summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerQue">
+      <summary>
+            Balance the load to the server
+            <para>
+            Handles Throat-Tired and No Endurance
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerQue.NoEndurance">
+      <summary>
+            Is the connect `noendurance enabled?
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerQue.PingDelayTime">
+      <summary>
+            Ping the server Time in Seconds
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerQue.ThroatTired">
+      <summary>
+            If Proxy get "Your throat is tired" Pause for a number of seconds
+            <para>
+            When set, a <see cref="T:System.Threading.Timer" /> is created to make us wait till the time is clear to resume.
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.ServerQue.ThroatTiredDelayTime">
+      <summary>
+            When "Your throat is tired appears, Pause processing of client
+            to server instructions,
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.NewPingTimer(System.Int32)">
+      <summary>
+            Set the Ping timer
+            </summary>
+      <param name="DelayTime">
+            Delay Time in Seconds
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.#ctor">
+      <summary>
+            Constructor setting Defaults
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.#ctor(System.Int32,System.Int32)">
+      <summary>
+            Queue Manager constructor
+            </summary>
+      <param name="ThroatTiredTime">
+            Delay time to pause for Throat Tired Syndrome
+            </param>
+      <param name="PingTimerTime">
+            Optional ping the game server time in seconds
+            </param>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerQue.QueueTimer">
+      <summary>
+            Queue Processing timer.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerQue.ServerStack">
+      <summary>
+            FIFO Stack of Server Instructions to process
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerQue.TroatTiredDelay">
+      <summary>
+            How long to wait till we resume processing the ServerStack?
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Utils.ServerQue.SendServerEventHandler">
+      <summary>
+            Event Handler to notify calling class data has been sent to the
+            game server
+            </summary>
+      <param name="message">
+            raw client to server instruction
+            </param>
+      <param name="args">
+            System.EventArgs. (Unused)
+            </param>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerQue.noendurance">
+      <summary>
+            NoEndurance. Send data at the speed of the server
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerQue.throattired">
+      <summary>
+            Throat Tired System.
+            <para>
+            Pause sending data to server if we get a message we tried to
+            send too much at one time
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerQue.throattireddelaytime">
+      <summary>
+            Throat tired delay in seconds
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerQue.usingPing">
+      <summary>
+            ping interlock exchange
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.SendToServer(System.String@)">
+      <summary>
+            Incoming Messages for server processing
+            </summary>
+      <param name="data">
+            Raw Client to Server Instruction.
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.PingTimerTick(System.Object)">
+      <summary>
+            Ping the server with a random packet to maintain connection
+            </summary>
+      <param name="state">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.ProcessQueue(System.Object)">
+      <summary>
+      </summary>
+      <param name="state">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.QueueTick(System.Double@)">
+      <summary>
+            Load Balancing Function
+            <para>
+            this makes sure we don't over load what the server can handle
+            </para><para>
+            Proxy has 2 modes of operation
+            </para><para>
+            Mode 1 Normal. handles Throat Tired syndrome with a time out
+            timer to resume
+            </para><para>
+            Mode 2 NoEndurance. Send data to server as fast as it can handle
+            with out overloading its buffer
+            </para></summary>
+      <param name="DelayTime">
+            Delay Time in Milliseconds
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.TroatTiredDelayTick(System.Object)">
+      <summary>
+            Throat Tired Delay function
+            </summary>
+      <param name="state">
+      </param>
+    </member>
+    <member name="F:Furcadia.Net.Utils.ServerQue.OnServerSendMessage">
+      <summary>
+            Notify subscribers were's sending an instruction to the games server
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.Dispose">
+      <summary>
+            This code added to correctly implement the disposable pattern.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerQue.Dispose(System.Boolean)">
+      <summary>
+      </summary>
+      <param name="disposing">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Utils.Utilities">
+      <summary>
+            Generic Furcadia Network Utilities
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Utilities.EncoderPage">
+      <summary>
+            Set Encoders to win 1252 encoding
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.Utilities.PortOpen(System.Int32)">
+      <summary>
+            Checks TCP port and scans for an available TCP port on the host
+            system
+            </summary>
+      <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="port" /> is 0
+            </exception>
+      <param name="port">
+            ref TCP Port
+            </param>
+      <returns>
+            True when a port is found available
+            </returns>
+    </member>
+    <member name="M:Furcadia.Net.Utils.Utilities.#ctor">
+      <summary>
+            Furcadia Defaults with optional app.config
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.DefaultClient">
+      <summary>
+            Furcadia Client Executable Name with extension
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Utilities.gameserverhost">
+      <summary>
+            Game server DNS (Furcadia v31c)
+            <para>
+            update to library config file?
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Utilities.gameserverip">
+      <summary>
+            Game Server IP (Furcadia v31c)
+            <para>
+            update to library configuration file?
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Utilities.pounceserverhost">
+      <summary>
+            Pounce Server Host (Furcadia v31c)
+            <para>
+            update to library configuration file?
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Utilities.RegPathMono">
+      <summary>
+            Registry path for Mono
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Utilities.RegPathx64">
+      <summary>
+            Registry path for Win x64 Systems
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Utils.Utilities.RegPathx86">
+      <summary>
+            Registry path for x86 systems
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.ReggistryPathMono">
+      <summary>
+            Mono Registry Path
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.ReggistryPathX64">
+      <summary>
+            Windows x64 Registry path
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.ReggistryPathX86">
+      <summary>
+            Windows 32 Registry path
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.GetEncoding">
+      <summary>
+            Master configuration set Encoders to Win 1252 encoding.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.GameServerHost">
+      <summary>
+            Gets or sets the Furcadia server host (i.e
+            lightbringer.furcadia.com). (Furcadia v31c)
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.GameServerIp">
+      <summary>
+            Gets or sets the IP of the Furcadia server. (Furcadia v31c)
+            <para>
+            update to library config file?
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.Net.Utils.Utilities.PounceServerHost">
+      <summary>
+            Gets or sets the Furcadia Pounce Server host (IE
+            on.furcadia.com). (Furcadia v31c)
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.WebRequests.SendPostRequest(System.String,System.String)">
+      <summary>
+            Retriev Account information from the Furcadia Log-On server
+            </summary>
+      <param name="u">
+            Account E-mail address
+            </param>
+      <param name="p">
+            Account Password
+            </param>
+      <param name="k">
+            API Key
+            </param>
+      <param name="LoginUrl">
+            Login Server URL
+            </param>
+      <returns>
+            Furcadia Account information including Characters and thier costumes
+            </returns>
+    </member>
+    <member name="T:Furcadia.Net.Web.VariableIsConstantException">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableIsConstantException.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.String)">
+      <summary>
+      </summary>
+      <param name="message">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.String,System.Exception)">
+      <summary>
+      </summary>
+      <param name="message">
+      </param>
+      <param name="inner">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableIsConstantException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>
+      </summary>
+      <param name="info">
+      </param>
+      <param name="context">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.Web.IVariable">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.IVariable.Name">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.IVariable.Value">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.Web.Variable">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.Equals(Furcadia.Net.Web.IVariable)">
+      <summary>
+      </summary>
+      <param name="other">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.GetHashCode">
+      <summary>
+            Returns the hash code for this instance.
+            </summary>
+      <returns>
+            A 32-bit signed integer that is the hash code for this instance.
+            </returns>
+    </member>
+    <member name="F:Furcadia.Net.Web.Variable.NoValue">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.Variable.Value">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.Variable.Name">
+      <summary>
+            Name of the Variable
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.#ctor(System.String)">
+      <summary>
+            Construct the Variable with name
+            </summary>
+      <param name="name">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.#ctor(System.String,System.Object)">
+      <summary>
+            Construct the variable with name and value
+            </summary>
+      <param name="name">
+      </param>
+      <param name="value">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.ToString">
+      <summary>
+            Returns a const identifier if the variable is constant followed by name,
+            <para>otherwise just the name is returned.</para></summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.Clone">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Equality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)">
+      <summary>
+      </summary>
+      <param name="varA">
+      </param>
+      <param name="varB">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Inequality(Furcadia.Net.Web.Variable,Furcadia.Net.Web.Variable)">
+      <summary>
+      </summary>
+      <param name="varA">
+      </param>
+      <param name="varB">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.Variable.op_Addition(Furcadia.Net.Web.Variable,System.Double)">
+      <summary>
+      </summary>
+      <param name="varA">
+      </param>
+      <param name="num">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Net.Web.VariableList">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.VariableList.Name">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.VariableList.Value">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.Web.VariableList.Item(System.Int32)">
+      <summary>
+      </summary>
+      <param name="index">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Furcadia.Net.Web.VariableList.Count">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableList.#ctor(System.String,System.Boolean)">
+      <summary>
+      </summary>
+      <param name="name">
+      </param>
+      <param name="isConstant">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableList.#ctor(System.String,System.Object[])">
+      <summary>
+      </summary>
+      <param name="name">
+      </param>
+      <param name="values">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableList.Equals(Furcadia.Net.Web.IVariable)">
+      <summary>
+      </summary>
+      <param name="other">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.Web.VariableList.GetHashCode">
+      <summary>
+            Returns the hash code for this instance.
+            </summary>
+      <returns>
+            A 32-bit signed integer that is the hash code for this instance.
+            </returns>
+    </member>
+    <member name="T:Furcadia.Net.Web.WebUtils">
+      <summary>
+            General Utility functions for working with web objects
+             </summary>
+    </member>
+    <member name="T:Furcadia.Net.ConnectionPhase">
+      <summary>
+            Connection Status
+            </summary>
+      <remarks>
+            Credit to Artex for his open source projects use this method
+            <para>
+            Reference http://dev.furcadia.com/docs/027_movement.html
+            </para></remarks>
+    </member>
+    <member name="F:Furcadia.Net.ConnectionPhase.error">
+      <summary>
+            Default Error
+            <para>
+            Halt Game Server and Client Connection Procedure
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.ConnectionPhase.Init">
+      <summary>
+            Initialize Connection
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ConnectionPhase.Connecting">
+      <summary>
+            Connection started
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ConnectionPhase.MOTD">
+      <summary>
+            Message of the Day
+            <para>
+            IE: Good Morning Dave...
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.ConnectionPhase.Auth">
+      <summary>
+            Login Account,Password, Character Name
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ConnectionPhase.Connected">
+      <summary>
+            Connection established
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ConnectionPhase.Disconnected">
+      <summary>
+            Connection lost
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.ServerInstructionType">
+      <summary>
+            Server to Client Instruction set. (Furcadia v31c)
+            <para>
+            This is the set that FF3PP understands and uses.
+            </para><para>
+            these can change with each Furcadia update.
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.Unknown">
+      <summary>
+            Unknown Instruction,
+            <para>
+            Needs further research
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.None">
+      <summary>
+            No instruction Nessary
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.SpawnAvatar">
+      <summary>
+            Spawns a new Furre in the dream furre list because they have
+            joing the Dream we're in
+            <para />
+            '&lt;' + user id + x + y + shape number + name + color code +
+            flag + linefeed
+            <para />
+            sender object is Type SpawnAvatar()
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.RemoveAvatar">
+      <summary>
+            Remove the Avatar from the Dream Furre list because they have
+            left the dream
+            <para />
+            ')' + user id + linefeed
+            <para />
+            Source: Furcatia Technical Resources
+            <para />
+            sender object is Type RemoveAvatar()
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.HideAvatar">
+      <summary>
+            Hide Avatar from display (Invisible?)
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.AnimatedMoveAvatar">
+      <summary>
+            Move and animate the Active Furre to the next location
+            <para />
+            sender object is Type Furre()
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.MoveAvatar">
+      <summary>
+            Move the current active furre to the next locatiomn
+            <para />
+            sender object is Type Furre
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.DisplayText">
+      <summary>
+            Display formated Text.
+            <para>
+            Mostly Furcadia Markup but other stuff too
+            </para></summary>
+      <remarks>
+            Prefix "("
+            <para>
+            This instruction displays the specific text in the user's
+            chat-box. The data may be formatted with HTML-equivalent and
+            Furcadia-specific tags, as well as emoticons (stuff like "#SA").
+            </para></remarks>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.UpdateColorString">
+      <summary>
+            Update the Triggering Furre ColorCode
+            <para>
+            'B' + user id + shape + color code + linefeed
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.LoadDreamEvent">
+      <summary>
+            Download Dream Data
+            <para>
+            IE: ]q pmnaiagreen 3318793420 modern
+            </para><para>
+            respond with client command when furcadia client is not
+            available "vasecodegamma"
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.UniqueUserId">
+      <summary>
+            Unique User ID
+             <para />]z UID[*]
+            <para />This instruction is sent as a response to the uid command. The purpose of this is unclear.
+             <para /> Credits Artex, FTR
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.SetOwnId">
+      <summary>
+            Set Own ID
+            <para /> ]BUserID[*]
+            <para />This instruction informs the client of which user-name is it logged into. Knowing your
+            own UserID can help you find your own avatar within the dream.
+            <para />Credits Artex, FTR
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.BookmarkDream">
+      <summary>
+             Dream Book Mark
+             <para />Triggers Pounce to add the dream to the list marked temporary
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ServerInstructionType.LookResponse">
+      <summary>
+            received after a look at furre command
+            <para />
+            sender object is Type Furre
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.NetChannelEventArgs">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetChannelEventArgs.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.NetChannelEventArgs.Channel">
+      <summary>
+            Server Text Channel
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.NetClientEventArgs">
+      <summary>
+            Client Status Event Arguments.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetClientEventArgs.#ctor">
+      <summary>
+            Default Constructor <see cref="F:Furcadia.Net.ConnectionPhase.error" /></summary>
+    </member>
+    <member name="M:Furcadia.Net.NetClientEventArgs.#ctor(Furcadia.Net.ConnectionPhase,System.String)">
+      <summary>
+            Constructor
+            </summary>
+      <param name="clientdata">
+            Optional Message
+            </param>
+      <param name="phase">
+            Connection Phase
+            </param>
+    </member>
+    <member name="F:Furcadia.Net.NetClientEventArgs.ConnectPhase">
+      <summary>
+            Status of the Furcadia Client Connection
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.NetClientEventArgs.ClientData">
+      <summary>
+            optional string message
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.NetServerEventArgs">
+      <summary>
+            Game Server Status Event Arguments
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetServerEventArgs.#ctor(Furcadia.Net.ConnectionPhase,Furcadia.Net.ServerInstructionType)">
+      <summary>
+            Game Server Status Event Arguments
+            </summary>
+      <param name="phase">
+            Server <see cref="T:Furcadia.Net.ConnectionPhase" /></param>
+      <param name="Instruction">
+            Game <see cref="T:Furcadia.Net.ServerInstructionType" /> to client
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.NetServerEventArgs.#ctor">
+      <summary>
+            default Constructor
+            <para><see cref="F:Furcadia.Net.ConnectionPhase.error" /> and <see cref="F:Furcadia.Net.ServerInstructionType.Unknown" /></para></summary>
+    </member>
+    <member name="P:Furcadia.Net.NetServerEventArgs.ServerInstruction">
+      <summary>
+            Server to Client instructions
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.NetServerEventArgs.ConnectPhase">
+      <summary>
+            Status of the Server Connection
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.ParseChannelArgs">
+      <summary>
+            Parse Server Instruction set
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.ParseChannelArgs.#ctor(Furcadia.Net.ServerInstructionType,Furcadia.Net.ConnectionPhase)">
+      <summary>
+      </summary>
+      <param name="ServerInstruction">
+      </param>
+      <param name="phase">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.ParseChannelArgs.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.ParseChannelArgs.Channel">
+      <summary>
+            Server Text Channel
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.ParseServerArgs">
+      <summary>
+            Parse Server Instruction set
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.ParseServerArgs.ServerData">
+      <summary>
+            optional string message
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.ParseServerArgs.ServerConnectedPhase">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Net.ParseServerArgs.ServerInstruction">
+      <summary>
+            Server to Client Instruction Type
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.ParseServerArgs.#ctor">
+      <summary>
+            Default Constructor <see cref="F:Furcadia.Net.ServerInstructionType.Unknown" />
+            because we don't know wich one it is yet
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.ParseServerArgs.#ctor(Furcadia.Net.ServerInstructionType,Furcadia.Net.ConnectionPhase)">
+      <summary>
+            Constructor setting the current Server to Client Instruction type
+            </summary>
+      <param name="ServerInstruction">
+            Current Execuring <see cref="T:Furcadia.Net.ServerInstructionType" /></param>
+      <param name="phase">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.NetProxyException">
+      <summary>
+            Desctiption of NetProxyException.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxyException.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetProxyException.#ctor(System.String)">
+      <summary>
+      </summary>
+      <param name="message">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxyException.#ctor(System.String,System.Exception)">
+      <summary>
+      </summary>
+      <param name="message">
+      </param>
+      <param name="innerException">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetProxyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>
+      </summary>
+      <param name="info">
+      </param>
+      <param name="context">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.INetMessage">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.INetMessage.GetString">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Net.INetMessage.Write(System.String)">
+      <summary>
+      </summary>
+      <param name="data">
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.INetMessage.Write(System.Byte[])">
+      <summary>
+      </summary>
+      <param name="data">
+      </param>
+    </member>
+    <member name="T:Furcadia.Net.NetMessage">
+      <summary>
+            Default.
+            </summary>
+    </member>
+    <member name="T:Furcadia.IO.IniFile">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Furcadia.IO.IniFile" /> class.
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.Code">
+      <summary>
+            If a Code section is detected, It's the last section in the ini file and all
+            lines are read into here.
+            <para />
+            this is for DSC systyle wizard scripts
+            </summary>
+      <value>
+            The code.
+            </value>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.Sections">
+      <summary>
+            Gets the sections.
+            </summary>
+      <value>
+            The sections.
+            </value>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.AddSection(System.String)">
+      <summary>
+            Adds a section to the IniFile object, returns a IniSection object
+            to the new or existing object
+            </summary>
+      <param name="sSection">The s section.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.GetKeyValue(System.String,System.String)">
+      <summary>
+            Gets the key value.
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sKey">The s key.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.GetSection(System.String)">
+      <summary>
+            Gets the section.
+            </summary>
+      <param name="sSection">The s section.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.Load(System.String,System.Boolean)">
+      <summary>
+            Loads the Reads the data in the ini file into the IniFile object
+            </summary>
+      <param name="sFileName">Name of the s file.</param>
+      <param name="bMerge">if set to <c>true</c> [b merge].</param>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RemoveAllSections">
+      <summary>
+            Removes all existing sections, returns trus on success
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RemoveKey(System.String,System.String)">
+      <summary>
+            Remove a key by section name and key name
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sKey">The s key.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RemoveSection(System.String)">
+      <summary>
+            Removes a section by its name sSection, returns trus on success
+            </summary>
+      <param name="sSection">The s section.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RemoveSection(Furcadia.IO.IniFile.IniSection)">
+      <summary>
+            Removes section by object, returns trus on success
+            </summary>
+      <param name="Section">The section.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RenameKey(System.String,System.String,System.String)">
+      <summary>
+            Renames an existing key returns true on success, false if the key
+            didn't exist or there was another section with the same sNewKey
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sKey">The s key.</param>
+      <param name="sNewKey">The s new key.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.RenameSection(System.String,System.String)">
+      <summary>
+            Renames an existing section returns true on success, false if the
+            section didn't exist or there was another section with the same sNewSection
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sNewSection">The s new section.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.Save(System.String)">
+      <summary>
+            Used to save the data back to the file or your choice
+            </summary>
+      <param name="sFileName">Name of the s file.</param>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.SetKeyValue(System.String,System.String,System.String)">
+      <summary>
+            Sets a KeyValuePair in a certain section
+            </summary>
+      <param name="sSection">The s section.</param>
+      <param name="sKey">The s key.</param>
+      <param name="sValue">The s value.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.IO.IniFile.IniSection">
+      <summary>
+            IniSection class
+            </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.#ctor(Furcadia.IO.IniFile,System.String)">
+      <summary>
+            Constuctor so objects are internally managed
+            </summary>
+      <param name="parent">The parent.</param>
+      <param name="sSection">The s section.</param>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.IniSection.Keys">
+      <summary>
+            Returns all the keys in a section
+            </summary>
+      <value>
+            The keys.
+            </value>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.IniSection.Name">
+      <summary>
+            Returns the section name
+            </summary>
+      <value>
+            The name.
+            </value>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.AddKey(System.String)">
+      <summary>
+            Adds a key to the IniSection object, returns a IniKey object
+            to the new or existing object
+            </summary>
+      <param name="sKey">The s key.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.GetKey(System.String)">
+      <summary>
+             Returns a IniKey object to the key by name, NULL if it was
+             not found
+            </summary>
+      <param name="sKey">The s key.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.GetName">
+      <summary>
+            Returns the section name
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.RemoveAllKeys">
+      <summary>
+            Removes all the keys in the section
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.RemoveKey(System.String)">
+      <summary>
+            Removes all the keys in the section
+            </summary>
+      <param name="sKey">The s key.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.RemoveKey(Furcadia.IO.IniFile.IniSection.IniKey)">
+      <summary>
+            Removes a single key by IniKey object
+            </summary>
+      <param name="Key">The key.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.SetName(System.String)">
+      <summary>
+            Sets the section name, returns true on success, fails if the
+            section name sSection already exists
+            </summary>
+      <param name="sSection">The s section.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.IO.IniFile.IniSection.IniKey">
+      <summary>
+            IniKey class
+            </summary>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.#ctor(Furcadia.IO.IniFile.IniSection,System.String)">
+      <summary>
+            Constuctor so objects are internally managed
+            </summary>
+      <param name="parent">The parent.</param>
+      <param name="sKey">The s key.</param>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.IniSection.IniKey.Name">
+      <summary>
+            Returns the name of the Key
+            </summary>
+      <value>
+            The name.
+            </value>
+    </member>
+    <member name="P:Furcadia.IO.IniFile.IniSection.IniKey.Value">
+      <summary>
+            Sets or Gets the value of the key
+            </summary>
+      <value>
+            The value.
+            </value>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.GetName">
+      <summary>
+            Returns the name of the Key
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.GetValue">
+      <summary>
+            Returns the value of the Key
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.SetName(System.String)">
+      <summary>
+            Sets the key name Returns true on success, fails if the
+            section name sKey already exists
+            </summary>
+      <param name="sKey">The s key.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.IO.IniFile.IniSection.IniKey.SetValue(System.String)">
+      <summary>
+            Sets the value of the key
+            </summary>
+      <param name="sValue">The s value.</param>
+    </member>
+    <member name="T:Furcadia.IO.FurcadiaIOException">
+      <summary>
+            Desctiption of FurcadiaIOException.
+            </summary>
+    </member>
+    <member name="T:Furcadia.IO.FurcadiaNotFoundException">
+      <summary>
+            Desctiption of FurcadiaNotFoundException.
+            </summary>
+    </member>
+    <member name="T:Furcadia.IO.SubSystem.PhoenixSpeakParser">
+      <summary>
+            Parses Phoenix Speak responses from the game server
+            </summary>
+    </member>
+    <member name="T:Furcadia.IO.Paths">
+      <summary>
+             This class contains all the paths related to the users furcadia installation.
+            <para>***NOTICE: DO NOT REMOVE***</para><para> Credits go to Artex for helping me fix Path issues and contributing his code.</para><para>***NOTICE: DO NOT REMOVE.***</para><para>Log Header</para><para>Format: (date,Version) AuthorName, Changes.</para><para> (Mar 12,2014,0.2.12) Gerolkae, Adapted Paths to work with a Supplied path</para><para>  (June 1, 2016) Gerolkae, Added possible missing Registry Paths for x86/x64 Windows and Mono Support. Wine Support also contains these corrections.</para></summary>
+      <remarks>
+              Theory check all known default paths
+            <para> check localdir.ini</para><para>  then check each registry hives for active CPU type</para><para>  Then check each give for default 32bit path(Non wow6432node)</para><para>  then check Wine variants(C++ Win32 client)</para><para>  then check Mono Versions for before mentioned(C#? Client)</para><para>  then check default drive folder paths</para><para>  If all Fail... Throw <see cref="T:Furcadia.IO.FurcadiaNotFoundException" /> exception</para><para>  Clients Should check for this error and then ask the user where to manually locate Furccadia</para></remarks>
+    </member>
+    <member name="M:Furcadia.IO.Paths.#ctor">
+      <summary>
+            Load Default Furcadia Paths
+            </summary>
+    </member>
+    <member name="M:Furcadia.IO.Paths.#ctor(System.String)">
+      <summary>
+            Load Paths Based on <paramref name="path" /></summary>
+      <param name="path">Specified directory to look for a nonstandard Furcadia install</param>
+    </member>
+    <member name="P:Furcadia.IO.Paths.CachePath">
+      <summary>
+             Cache path - contains all the Furcadia cache and resides in the
+             global user space.
+            <para />
+             Default: %ALLUSERSPROFILE%\Dragon's Eye Productions\Furcadia
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.CharacterPath">
+      <summary>
+             Character file path - contains furcadia.ini files with login
+             information for each character.
+            <para />
+             Default: My Documents\Furcadia\Furcadia Characters\
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultCachePath">
+      <summary>
+            c:\Program Data\
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultCharacterPath">
+      <summary>
+            Default Character Path
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultDreamsPath">
+      <summary>
+            Personal Dreams Folder
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultFurcadiaPath">
+      <summary>
+             Default Furcadia install folder - this path is used by default
+             to install Furcadia to.
+            <para />
+             Default: c:\Program Files\Furcadia
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultGlobalMapsPath">
+      <summary>
+            Main Maps Default path
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultGlobalSkinsPath">
+      <summary>
+            default skins
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultLocalSkinsPath">
+      <summary>
+            default local skins
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultLogsPath">
+      <summary>
+            default personal log folder
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultPatchPath">
+      <summary>
+             Path to the default patch (graphics, sounds, layout) folder used
+             to display Furcadia itself, its tools and environment.
+            <para />
+             Default: c:\Program Files\Furcadia\patches\default
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultPermanentMapsCachePath">
+      <summary>
+            Default Main Maps
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultPersonalDataPath">
+      <summary>
+            Default Documents\Furcadia
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultPortraitCachePath">
+      <summary>
+            Portrait cache
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultScreenshotsPath">
+      <summary>
+            Furcadia Screen Shots default folder
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultSettingsPath">
+      <summary>
+            User App Data Settings
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultTemporaryDreamsPath">
+      <summary>
+            Temporary dreams
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultTemporaryFilesPath">
+      <summary>
+            Default Temporary Files
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultTemporaryPatchesPath">
+      <summary>
+            Temporary patches
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DefaultWhisperLogsPath">
+      <summary>
+            Whisper Logs
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.DreamsPath">
+      <summary>
+             Dreams path - contains Furcadia dreams made by the player.
+            
+             Default: My Documents\Furcadia\Dreams
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.FurcadiaLocaldirPath">
+      <summary>
+             Furcadia Localdir path - this path (when explicitly set),
+             indicates the whereabouts of the data files used in Furcadia. If
+             localdir.ini is present in the Furcadia folder, Furcadia.exe
+             will load those files from the specific path and not the regular ones.
+            
+             Default: -NONE-
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.FurcadiaPath">
+      <summary>
+            Furcadia install path - this path corresponds to the path where
+            Furcadia is installed on the current machine. If Furcadia is not
+            found, this property will be null.
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.GlobalMapsPath">
+      <summary>
+             Path to the global maps, distributed with Furcadia and loadable
+             during game play in some main dreams.
+            <para>
+             Default: c:\Program Files\Furcadia\maps
+             </para></summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.GlobalSkinsPath">
+      <summary>
+             Path to the global skins that change Furcadia's graphical
+             layout. They are stored in the Furcadia program files folder.
+            <para>
+            Default: c:\Program Files\Furcadia\skins
+             </para></summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.LocaldirPath">
+      <summary>
+            LocalDir path - a specific path where all the player-specific
+            and cache data is stored in its classic form. Used mainly to
+            retain the classic path structure or to run Furcadia from a
+            removable disk.
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.LocalSkinsPath">
+      <summary>
+            Local skins path - contains Furcadia skins used locally by each user.
+            <para>
+            Default: My Documents\Furcadia\Skins
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.LogsPath">
+      <summary>
+            Logs path - contains session logs for each character and a
+            sub-folder with whisper logs, should Pounce be enabled.
+            <para>
+            Default: My Documents\Furcadia\Logs
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.PermanentMapsCachePath">
+      <summary>
+             Permanent Maps cache path - contains downloaded main maps such
+             as the festival maps or other DEP-specific customized dreams.
+            <para>
+             Default: %ALLUSERSPROFILE%\Dragon's Eye Productions\Furcadia\Permanent Maps
+             </para></summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.PersonalDataPath">
+      <summary>
+             Personal data path - contains user-specific files such as logs,
+             patches, screen shots and character files.
+            <para>
+             Default: My Documents\Furcadia\
+             </para></summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.PortraitCachePath">
+      <summary>
+            Portrait cache path - contains downloaded portraits and desctags
+            cache for faster loading and bandwidth optimization.
+            <para>
+            Default: %ALLUSERSPROFILE%\Dragon's Eye Productions\Furcadia\Portrait Cache
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.ScreenshotsPath">
+      <summary>
+            Screen shots path - contains screen shot files taken by Furcadia
+            with the CTRL+F1 hotkey. At the time of writing, in PNG format.
+            <para>
+            Default: My Documents\Furcadia\Screenshots
+            </para></summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.SettingsPath">
+      <summary>
+             Personal settings path - contains all the Furcadia settings for
+             each user that uses it.
+            <para />
+             Default (VISTA+): %USERPROFILE%\Local\AppData\Dragon's Eye Productions\Furcadia
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.TemporaryDreamsPath">
+      <summary>
+             Temporary dreams path - contains downloaded player dreams for
+             subsequent loading.
+            <para />
+             Default: %ALLUSERSPROFILE%\Dragon's Eye
+                      Productions\Furcadia\Temporary Dreams
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.TemporaryFilesPath">
+      <summary>
+             Temporary files path - contains downloaded and uploaded files
+             that are either used to upload packages or download them for extraction.
+            <para />
+             Default: %ALLUSERSPROFILE%\Dragon's Eye
+                      Productions\Furcadia\Temporary Files
+             </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.TemporaryPatchesPath">
+      <summary>
+            Temporary patch path - contains downloaded temporary patches.
+            This technology is never in use, yet supported, so this folder
+            is always empty.
+            <para />
+            Default: %ALLUSERSPROFILE%\Dragon's Eye
+                     Productions\Furcadia\Temporary Patches
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.UsingLocaldir">
+      <summary>
+            Has LoclDir.ini been detected?
+            </summary>
+    </member>
+    <member name="P:Furcadia.IO.Paths.WhisperLogsPath">
+      <summary>
+             Whisper logs path - contains whisper logs for each character
+             whispered, recorded by Pounce with the whisper windows.
+            
+             Default: My Documents\Furcadia\Logs\Whispers
+             </summary>
+    </member>
+    <member name="M:Furcadia.IO.Paths.GetDefaultPatchPath">
+      <summary>
+            Find the path to the default patch folder on the current machine.
+            </summary>
+      <returns>
+            Path to the default patch folder or null if not found.
+            </returns>
+    </member>
+    <member name="M:Furcadia.IO.Paths.GetFurcadiaInstallPath">
+      <summary>
+            Find the path to Furcadia data files currently installed on this system.
+            </summary>
+      <returns>
+            Path to the Furcadia program folder or null if not found/not installed.
+            </returns>
+    </member>
+    <member name="M:Furcadia.IO.Paths.GetFurcadiaLocaldirPath">
+      <summary>
+            Find the current localdir path where data files would be stored
+            on the current machine.
+            </summary>
+      <returns>
+            Path to the data folder from localdir.ini or null if not found.
+            </returns>
+    </member>
+    <member name="F:Furcadia.LegacyAttribute.furcadiaversion">
+      <summary>
+            Furcadia Release version.
+            </summary>
+    </member>
+    <member name="F:Furcadia.LegacyAttribute.Reason">
+      <summary>
+            Reason
+            </summary>
+    </member>
+    <member name="T:Furcadia.Text.Base220">
+      <summary>
+            Furcadia Base220 Encoding
+            <para>
+            Author: Artex (aka, 1337)
+            </para><para>
+            Modified by: Gerolkae
+            </para></summary>
+      <remarks>
+            Reference http://dev.furcadia.com/docs/base220.pdf
+            </remarks>
+    </member>
+    <member name="M:Furcadia.Text.Base220.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.Base220.#ctor(System.Int32)">
+      <summary>
+      </summary>
+      <param name="n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.#ctor(System.String)">
+      <summary>
+      </summary>
+      <param name="s">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Explicit(Furcadia.Text.Base220)~System.Int16">
+      <summary>
+      </summary>
+      <param name="b220n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(System.Int32)~Furcadia.Text.Base220">
+      <summary>
+      </summary>
+      <param name="n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(System.Int16)~Furcadia.Text.Base220">
+      <summary>
+      </summary>
+      <param name="n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(System.String)~Furcadia.Text.Base220">
+      <summary>
+      </summary>
+      <param name="s">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Byte[]">
+      <summary>
+      </summary>
+      <param name="b220n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.Int32">
+      <summary>
+      </summary>
+      <param name="b220n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Implicit(Furcadia.Text.Base220)~System.String">
+      <summary>
+      </summary>
+      <param name="b220n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Subtraction(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Inequality(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Modulus(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Multiply(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Division(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Addition(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_LessThan(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_Equality(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.op_GreaterThan(Furcadia.Text.Base220,Furcadia.Text.Base220)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.Base220StringLengeth(System.String@)">
+      <summary>
+            Process Base220 Strings.
+            <para>
+            these are string Prefixed with a Base220 character representing
+            the Lengeth of the string
+            </para></summary>
+      <param name="b220str">
+      </param>
+      <returns>
+      </returns>
+      <remarks>
+            Reference Base 220 Strings http://dev.furcadia.com/docs/base220.pdf
+            </remarks>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ConvertFromBase220(System.String)">
+      <summary>
+      </summary>
+      <param name="b220str">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ConvertFromBase220(System.Char)">
+      <summary>
+      </summary>
+      <param name="b220chr">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ConvertToBase220(System.Int32)">
+      <summary>
+      </summary>
+      <param name="num">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ConvertToBase220(System.Int32,System.Int32)">
+      <summary>
+      </summary>
+      <param name="num">
+      </param>
+      <param name="nDigits">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.Equals(System.Object)">
+      <summary>
+      </summary>
+      <param name="obj">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.FromString(System.String)">
+      <summary>
+      </summary>
+      <param name="s">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.GetHashCode">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ToByteArray">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ToByteArray(System.Int32)">
+      <summary>
+      </summary>
+      <param name="nDigits">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ToString">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.ToString(System.Int32)">
+      <summary>
+      </summary>
+      <param name="nDigits">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.CompareTo(System.Int32)">
+      <summary>
+      </summary>
+      <param name="other">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base220.Equals(System.Int32)">
+      <summary>
+      </summary>
+      <param name="other">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Text.Base95">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.Base95.BASE">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.Base95.CHAR_OFFSET">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.Base95.Value">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.Base95.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.Base95.#ctor(System.UInt32)">
+      <summary>
+      </summary>
+      <param name="n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.#ctor(System.String)">
+      <summary>
+      </summary>
+      <param name="s">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Explicit(Furcadia.Text.Base95)~System.UInt16">
+      <summary>
+      </summary>
+      <param name="b95n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(System.UInt32)~Furcadia.Text.Base95">
+      <summary>
+      </summary>
+      <param name="n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(System.UInt16)~Furcadia.Text.Base95">
+      <summary>
+      </summary>
+      <param name="n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(System.String)~Furcadia.Text.Base95">
+      <summary>
+      </summary>
+      <param name="s">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.Byte[]">
+      <summary>
+      </summary>
+      <param name="b95n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.String">
+      <summary>
+      </summary>
+      <param name="b95n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Implicit(Furcadia.Text.Base95)~System.UInt32">
+      <summary>
+      </summary>
+      <param name="b95n">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Subtraction(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Inequality(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Modulus(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Multiply(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Division(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Addition(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_LessThan(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_Equality(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.op_GreaterThan(Furcadia.Text.Base95,Furcadia.Text.Base95)">
+      <summary>
+      </summary>
+      <param name="n1">
+      </param>
+      <param name="n2">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ConvertFromBase95(System.String)">
+      <summary>
+      </summary>
+      <param name="b95str">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32)">
+      <summary>
+      </summary>
+      <param name="num">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ConvertToBase95(System.UInt32,System.Int32)">
+      <summary>
+      </summary>
+      <param name="num">
+      </param>
+      <param name="nDigits">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.Equals(System.Object)">
+      <summary>
+      </summary>
+      <param name="obj">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.FromString(System.String)">
+      <summary>
+      </summary>
+      <param name="s">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.GetHashCode">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ToByteArray">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ToByteArray(System.Int32)">
+      <summary>
+      </summary>
+      <param name="nDigits">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ToString">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.ToString(System.Int32)">
+      <summary>
+      </summary>
+      <param name="nDigits">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.CompareTo(System.UInt32)">
+      <summary>
+      </summary>
+      <param name="other">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.Base95.Equals(System.UInt32)">
+      <summary>
+      </summary>
+      <param name="other">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Text.FurcadiaMarkup">
+      <summary>
+            Furcadia Markup Language (FML) REGEX
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaMarkup.ChannelTag(System.String@,System.String)">
+      <summary>
+            Format Channel Tags
+            <para>
+            &lt;channel name='@channelname' /&gt;
+            </para></summary>
+      <param name="serverData">
+            Raw server data string
+            </param>
+      <param name="replaceText">
+            Reg ex supported text replacement
+            </param>
+      <returns>
+            True on a successful match
+            </returns>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.ChannelNameFilter">
+      <summary>
+            Dynamic Channel tags
+            <para>
+            &lt;channel name='@channelName' / &gt;
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.CookieToMeREGEX">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.DescFilter">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.DiceFilter">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.FontChannelFilter">
+      <summary>
+        <para />
+            font = 1
+            <para />
+            system.fhs =2
+            <para />
+            system alt = 3
+            <para />
+            Channel Name = 4
+            <para />
+            Text = 5
+            </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.Iconfilter">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.NameFilter">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.YouWhisperRegex">
+      <summary>
+            Whispers Name
+            </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.WhisperRegex">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.EmoteRegexFilter">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.UrlFilter">
+      <summary>
+            Regex for working with HTML URLS
+            </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.YouSayFilter">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.NameRegex">
+      <summary>
+            Filter the Name Markup
+            </summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaMarkup.DescTagRegex">
+      <summary>
+            Pesky Desc tags filter
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaMarkup.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Text.FurcadiaSettingsUtiliies">
+      <summary>
+            Furcadia configuration class to backup/set Proxy/firewall settings
+            and restore them after we have connected to the game server.
+            <para>
+            Author Gerolkae
+            </para><para>
+            Courtesy to Dream Dancer for helping me with this.
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Text.FurcadiaSettingsUtiliies.regexkey">
+      <summary>
+            RegEx for Setting.ini Key=Value pairs
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.GetUserSetting(System.String,System.String[])">
+      <summary>
+            Retrieves a field setting in the FurcSettings array
+            </summary>
+      <param name="SettingFile">
+      </param>
+      <param name="WhichSetting">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.LoadFurcadiaSettings(System.String,System.String)">
+      <summary>
+            Backs up the current Furcadia Settings
+            </summary>
+      <param name="path">
+      </param>
+      <param name="file">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.SaveFurcadiaSettings(System.String,System.String,System.String[])">
+      <summary>
+            Save the furcadia configuration to settings.ini
+            </summary>
+      <param name="path">
+      </param>
+      <param name="file">
+      </param>
+      <param name="SettingFile">
+      </param>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.Load(System.String)">
+      <summary>
+            Loads an ini file and returns a key/value pair of values. (Note:
+            It reads Key=Value pairs only.) (Add: Also the ini must be
+            proper, one key/value per line. No section garbage.)
+            </summary>
+      <param name="file">
+      </param>
+      <returns>
+            A new Hashtable, or a empty Hashtable on file not found.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.ReadSettingIni(System.String)">
+      <summary>
+            Read Furcadia settings from Furcadia install path. If the settings does not exist We'll use our
+            Embedded from source
+            </summary>
+      <param name="SettingsIni">Full file path to settings.ini</param>
+      <returns>Array of settings</returns>
+    </member>
+    <member name="M:Furcadia.Text.FurcadiaSettingsUtiliies.SetUserSetting(System.String,System.String,System.String[]@)">
+      <summary>
+            sets feilds in the FurcSettings array
+            </summary>
+      <param name="WhichSetting">
+      </param>
+      <param name="WhichValue">
+      </param>
+      <param name="SettingFile">
+      </param>
+    </member>
+    <member name="T:Furcadia.Text.IniParser">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.#ctor(System.String)">
+      <summary>
+            Opens the INI file at the given path and enumerates the values
+            in the IniParser.
+            </summary>
+      <param name="iniPath">
+            Full path to INI file.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.AddSetting(System.String,System.String,System.String)">
+      <summary>
+            Adds or replaces a setting to the table to be saved.
+            </summary>
+      <param name="sectionName">
+            Section to add under.
+            </param>
+      <param name="settingName">
+            Key name to add.
+            </param>
+      <param name="settingValue">
+            Value of key.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.AddSetting(System.String,System.String)">
+      <summary>
+            Adds or replaces a setting to the table to be saved with a null value.
+            </summary>
+      <param name="sectionName">
+            Section to add under.
+            </param>
+      <param name="settingName">
+            Key name to add.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.DeleteSetting(System.String,System.String)">
+      <summary>
+            Remove a setting.
+            </summary>
+      <param name="sectionName">
+            Section to add under.
+            </param>
+      <param name="settingName">
+            Key name to add.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.EnumSection(System.String)">
+      <summary>
+            Enumerates all lines for given section.
+            </summary>
+      <param name="sectionName">
+            Section to enum.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.GetSetting(System.String,System.String)">
+      <summary>
+            Returns the value for the given section, key pair.
+            </summary>
+      <param name="sectionName">
+            Section name.
+            </param>
+      <param name="settingName">
+            Key name.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.SaveSettings(System.String)">
+      <summary>
+            Save settings to new file.
+            </summary>
+      <param name="newFilePath">
+            New file path.
+            </param>
+    </member>
+    <member name="M:Furcadia.Text.IniParser.SaveSettings">
+      <summary>
+            Save settings back to ini file.
+            </summary>
+    </member>
+    <member name="T:Furcadia.Text.Settings">
+      <summary>
+            A simple way to load settings whether from ini or xml.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.Settings.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Text.Settings.#ctor(Furcadia.Net.Options.ProxyOptions)">
+      <summary>
+      </summary>
+      <param name="options">Pxoxy Options</param>
+    </member>
+    <member name="F:Furcadia.Text.Settings.sFile">
+      <summary>
+            Furcadia Settings file
+            </summary>
+    </member>
+    <member name="F:Furcadia.Text.Settings.FurcPath">
+      <summary>
+            Furcadia Default file paths
+            </summary>
+    </member>
+    <member name="F:Furcadia.Text.Settings.Keys">
+      <summary>
+            Proxy/Firewall Keys
+            </summary>
+    </member>
+    <member name="F:Furcadia.Text.Settings.values">
+      <summary>
+            Our Proxy/Firewall Values
+            </summary>
+    </member>
+    <member name="F:Furcadia.Text.Settings.sPath">
+      <summary>
+            Furcadia Settings path
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.Settings.InitializeFurcadiaSettings(System.String)">
+      <summary>
+            Lets back up our Proxy/Firewall settings and then set the new
+            settings for the Furcadia Client
+            </summary>
+      <param name="path">
+            Furcadia Settings.ini path
+            </param>
+      <returns>
+            Backup Settings for restoring later
+            </returns>
+    </member>
+    <member name="M:Furcadia.Text.Settings.RestoreFurcadiaSettings">
+      <summary>
+            Restores the Furcadia Settings we backed up earlier.
+            </summary>
+      <param name="BackupSettings">
+            Backed up settings array
+            </param>
+    </member>
+    <member name="T:Furcadia.Text.Character">
+      <summary>
+            Furcadia Character.ini
+            </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.ColorString">
+      <summary>
+            Furcadia Color String
+            </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.Description">
+      <summary>
+            Description text
+            </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.LastLogin">
+      <summary>
+            Last time the character logged in (UNIX Time stamp?)
+            </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.Logins">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.Name">
+      <summary>
+            character name
+            </summary>
+    </member>
+    <member name="P:Furcadia.Text.Character.Password">
+      <summary>
+            Character Password
+            </summary>
+    </member>
+    <member name="M:Furcadia.Text.Character.Load(System.String)">
+      <summary>
+            Loads a Character.Ini file
+            </summary>
+      <param name="iniFile">
+      </param>
+      <returns>
+            Character Class
+            </returns>
+    </member>
+    <member name="T:Furcadia.Drawing.FurrePosition">
+      <summary>
+            Furcadia Isometric Corrdinates
+            </summary>
+    </member>
+    <member name="M:Furcadia.Drawing.FurrePosition.#ctor(System.String)">
+      <summary>
+            Tak a B220 encoded string representing the x,y coordinates and convert them to Furcadia (X,Y) Coordinates
+            </summary>
+      <param name="b220Encoded">4 byte string</param>
+    </member>
+    <member name="M:Furcadia.Drawing.FurrePosition.#ctor(System.String,System.String)">
+      <summary>
+            Furre Position using Base 220 Corrdinates
+            </summary>
+      <param name="X">
+            Base 220 X Coordinate
+            </param>
+      <param name="Y">
+            Base 220 Y coordinate
+            </param>
+    </member>
+    <member name="M:Furcadia.Drawing.FurrePosition.#ctor(System.Int32,System.Int32)">
+      <summary>
+            Furre Position using integer Corrdinates
+            </summary>
+      <param name="X">
+            Integer X Coordinate
+            </param>
+      <param name="Y">
+            Integer Y Coordinate
+            </param>
+    </member>
+    <member name="P:Furcadia.Drawing.FurrePosition.X">
+      <summary>
+            x coordinate
+            </summary>
+    </member>
+    <member name="P:Furcadia.Drawing.FurrePosition.Y">
+      <summary>
+            y coordinate
+            </summary>
+    </member>
+    <member name="M:Furcadia.Drawing.FurrePosition.Equals(System.Object)">
+      <summary>
+      </summary>
+      <param name="obj">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Drawing.FurrePosition.GetHashCode">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Drawing.FurrePosition.ToString">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Drawing.VisibleArea">
+      <summary>
+            Furre Visible area
+            </summary>
+    </member>
+    <member name="M:Furcadia.Drawing.VisibleArea.GetTargetRectFromCenterCoord(System.Int32,System.Int32)">
+      <summary>
+            Gets the target View area from the center coordinates, This is useful for finding the View area of the Connected Furre
+            </summary>
+      <param name="X">
+      </param>
+      <param name="Y">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Drawing.VisibleArea.IsOdd(System.Int32)">
+      <summary>
+            Integer is Odd
+            </summary>
+      <param name="value">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.Drawing.ViewArea">
+      <summary>
+            Visible are a Furre can see
+            </summary>
+    </member>
+    <member name="F:Furcadia.Drawing.ViewArea.height">
+      <summary>
+            height
+            </summary>
+    </member>
+    <member name="F:Furcadia.Drawing.ViewArea.length">
+      <summary>
+            length
+            </summary>
+    </member>
+    <member name="F:Furcadia.Drawing.ViewArea.X">
+      <summary>
+            X Coordinate
+            </summary>
+    </member>
+    <member name="F:Furcadia.Drawing.ViewArea.Y">
+      <summary>
+            Y Coordinate
+            </summary>
+    </member>
+    <member name="T:Furcadia.Drawing.Graphics.Frame">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Furcadia.Drawing.Graphics.Palette.Default">
+      <summary>
+            title261.pcx
+            </summary>
+    </member>
+    <member name="T:Furcadia.Drawing.Graphics.Remapper">
+      <summary>
+            Remap colors
+            </summary>
+    </member>
+    <member name="M:Furcadia.Drawing.Helper.CharToDescTag(System.Char)">
+      <summary>
+            Converts a Char to Desc Tag
+            </summary>
+      <param name="c">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Furcadia.FurcMap.MapRating">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapRating.Adult">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Furcadia.FurcMap.Map">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.#ctor(System.Int32,System.Int32)">
+      <summary>
+            Creates a new empty map with the specified width and height
+            </summary>
+      <param name="width">
+            The width of the map
+            </param>
+      <param name="height">
+            The height of the map
+            </param>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.AllowDreamURL">
+      <summary>
+            Allow furres to enter via the Dream URL?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.AllowJoinSummon">
+      <summary>
+            Allow Furres to Sommon and join each other in this dream?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.AllowLargeDreamSize">
+      <summary>
+            Allow Dream Pack sizes?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.AllowLeadFollow">
+      <summary>
+            Allow Lead and Follow commands in the dream?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.AllowShouting">
+      <summary>
+            Allow Furres to use the shout channel in the dream?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.EncodeDream">
+      <summary>
+            Encrypt the dream?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.EnforceParentalControls">
+      <summary>
+            enforce parental controls
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.ForceSitting">
+      <summary>
+            force sitting ?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.Height">
+      <summary>
+            The actual height of the map (READ-ONLY)
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.Name">
+      <summary>
+            Name of the dream. Dream  Title?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.PatchArchive">
+      <summary>
+            Link to the Patch archive
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.PreventPlayerListing">
+      <summary>
+            prevent F4 to see the player list?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.PreventSeasonalAvatars">
+      <summary>
+            Allow Seasonal Avatars in the dream?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.PreventTabListing">
+      <summary>
+            prevent Tab from showing furre names
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.Rating">
+      <summary>
+            Dream Rating
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.Revision">
+      <summary>
+            revision?
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.UsePatch">
+      <summary>
+            type of dream patch to use
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.UseSwearFilter">
+      <summary>
+            Swear Filter
+            </summary>
+    </member>
+    <member name="P:Furcadia.FurcMap.Map.Width">
+      <summary>
+            The actual width of the map (READ-ONLY)
+            </summary>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.LoadFrom(System.String)">
+      <summary>
+            Loads a map from a file
+            </summary>
+      <param name="filename">
+            The file to load the map from
+            </param>
+      <exception cref="T:System.IO.InvalidDataException">
+            Thrown if the width and height of the map is not known (corrupt file)
+            </exception>
+      <returns>
+            The map
+            </returns>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.GetEffectAt(System.Int32,System.Int32)">
+      <summary>
+            Get the effect number from a tile
+            </summary>
+      <param name="x">
+            x coordinate
+            </param>
+      <param name="y">
+            Y coordinate
+            </param>
+      <returns>
+            The effect number
+            </returns>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.GetFloorAt(System.Int32,System.Int32)">
+      <summary>
+            Get the floor number from a tile
+            </summary>
+      <param name="x">
+            x coordinate
+            </param>
+      <param name="y">
+            Y coordinate
+            </param>
+      <returns>
+            The floor number
+            </returns>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.GetMapPos(System.Int32,System.Int32)">
+      <summary> Get a MapPosition object from the position specified
+            by x &amp; y </summary>
+      <param name="x">X Coordinate</param>
+      <param name="y">Y Coordinate</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.GetMapTile(System.Int32,System.Int32)">
+      <summary>
+            Get a MapTile object from the position specified by x
+            &amp; y
+            </summary>
+      <param name="x">
+            x coordinate
+            </param>
+      <param name="y">
+            Y coordinate
+            </param>
+      <returns>the Tile data</returns>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.GetObjectAt(System.Int32,System.Int32)">
+      <summary>
+            Get the object number from a tile
+            </summary>
+      <param name="x">
+            x coordinate
+            </param>
+      <param name="y">
+            Y coordinate
+            </param>
+      <returns>
+            The object number
+            </returns>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.GetRegionAt(System.Int32,System.Int32)">
+      <summary>
+            Get the region number from a tile
+            </summary>
+      <param name="x">
+            x coordinate
+            </param>
+      <param name="y">
+            Y coordinate
+            </param>
+      <returns>
+            The region number
+            </returns>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.GetWallAt(System.Int32,System.Int32)">
+      <summary>
+            Get the wall number from a tile
+            </summary>
+      <param name="x">
+            x coordinate
+            </param>
+      <param name="y">
+            Y coordinate
+            </param>
+      <returns>
+            The wall number
+            </returns>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.Save(System.String,System.Boolean)">
+      <summary>
+            Save the map to a file
+            </summary>
+      <param name="filename">
+            The filename to save to
+            </param>
+      <param name="overwrite">
+            If a file with that name already exist, should we overwrite it?
+            </param>
+      <returns>
+            True if the save was a success, False if not
+            </returns>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.SetEffectAt(System.Int32,System.Int32,System.Int32)">
+      <summary> Set the effect number at a tile specified by x &amp; y
+            </summary>
+      <param name="x">
+            x coordinate
+            </param>
+      <param name="y">
+            Y coordinate
+            </param>
+      <param name="effectNumber">
+      </param>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.SetFloorAt(System.Int32,System.Int32,System.Int32)">
+      <summary>
+            Set the floor number at a tile specified by x and y
+            </summary>
+      <param name="x">
+            x coordinate
+            </param>
+      <param name="y">
+            Y coordinate
+            </param>
+      <param name="floorNumber">
+      </param>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.SetObjectAt(System.Int32,System.Int32,System.Int32)">
+      <summary> Set the object number at a tile specified by x &amp; y
+            </summary>
+      <param name="x">
+            x coordinate
+            </param>
+      <param name="y">
+            Y coordinate
+            </param>
+      <param name="objectNumber">
+      </param>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.SetRegionAt(System.Int32,System.Int32,System.Int32)">
+      <summary> Set the region number at a tile specified by x &amp; y
+             </summary>
+      <param name="x">
+             x coordinate
+             </param>
+      <param name="y">
+             Y coordinate
+             </param>
+      <param name="regionNumber">
+      </param>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.SetWallAt(System.Int32,System.Int32,System.Int32)">
+      <summary> Set the wall number at a tile specified by x &amp; y
+             </summary>
+      <param name="x">
+             x coordinate
+             </param>
+      <param name="y">
+      </param>
+      <param name="wallNumber">
+      </param>
+    </member>
+    <member name="M:Furcadia.FurcMap.Map.SetMapHeaders(System.Collections.Generic.Dictionary{System.String,System.String})">
+      <summary>
+      </summary>
+      <param name="Values">
+      </param>
+    </member>
+    <member name="T:Furcadia.FurcMap.MapPosition">
+      <summary>
+            tile data
+             </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapPosition.floorNumber">
+      <summary>
+            objects
+             </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapPosition.objectNumber">
+      <summary>
+            objects
+             </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapPosition.wallNumber">
+      <summary>
+            objects
+             </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapPosition.regionNumber">
+      <summary>
+            objects
+             </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapPosition.effectNumber">
+      <summary>
+            objects
+             </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapPosition.x">
+      <summary>
+            Coordinates
+             </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapPosition.y">
+      <summary>
+            Coordinates
+             </summary>
+    </member>
+    <member name="M:Furcadia.FurcMap.MapPosition.#ctor(System.Int32,System.Int32)">
+      <summary>
+      </summary>
+      <param name="x">
+      </param>
+      <param name="y">
+      </param>
+    </member>
+    <member name="M:Furcadia.FurcMap.MapPosition.#ctor(System.Int32,System.Int32,Furcadia.FurcMap.Map)">
+      <summary>
+      </summary>
+      <param name="x">
+      </param>
+      <param name="y">
+      </param>
+      <param name="map">
+      </param>
+    </member>
+    <member name="T:Furcadia.FurcMap.MapTile">
+      <summary>
+            Map objects position information
+            </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapTile.floorNumber">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapTile.objectNumber">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapTile.wallNENumber">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapTile.wallNWNumber">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapTile.regionNumber">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapTile.effectNumber">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapTile.x">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Furcadia.FurcMap.MapTile.y">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Furcadia.FurcMap.MapTile.#ctor(System.Int32,System.Int32)">
+      <summary>
+      </summary>
+      <param name="x">
+      </param>
+      <param name="y">
+      </param>
+    </member>
+    <member name="M:Furcadia.FurcMap.MapTile.#ctor(System.Int32,System.Int32,Furcadia.FurcMap.Map)">
+      <summary>
+      </summary>
+      <param name="x">
+      </param>
+      <param name="y">
+      </param>
+      <param name="map">
+      </param>
+    </member>
+    <member name="T:Furcadia.Properties.Resources">
+      <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Properties.Resources.ResourceManager">
+      <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Properties.Resources.Culture">
+      <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Properties.Resources.DefaultMapData">
+      <summary>
+               Looks up a localized string similar to MAP V01.40 Furcadia
+            height={0}
+            width={1}
+            revision=0
+            patcht=0
+            name=
+            patchs=
+            encoded=0
+            allowjs=1
+            allowlf=1
+            allowfurl=1
+            swearfilter=0
+            nowho=0
+            forcesittable=0
+            allowshouts=1
+            rating=Teen+
+            allowlarge=0
+            notab=0
+            nonovelty=0
+            parentalcontrols=0
+            BODY
+            {2}.
+             </summary>
+    </member>
+    <member name="P:Furcadia.Properties.Resources.furc">
+      <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+    </member>
+    <member name="T:Furcadia.Movement.ColorString">
+      <summary>
+            Furcadia (v31) Color string format.
+            </summary>
+      <remarks>
+            This is derived content from the Furcadia Dev Docs and Furcadia
+            Technical Resources
+            <para>
+            Update 23 Avatar Moement http://dev.furcadia.com/docs/023_new_movement.pdf
+            </para><para>
+            Update 27 Movement http://dev.furcadia.com/docs/027_movement.html
+            </para><para>
+            FTR http://ftr.icerealm.org/ref-instructions/
+            </para></remarks>
+    </member>
+    <member name="F:Furcadia.Movement.ColorString.ColorStringSize">
+      <summary>
+            wide format ("w") String size
+            </summary>
+    </member>
+    <member name="M:Furcadia.Movement.ColorString.#ctor">
+      <summary>
+            Default Construtor
+            </summary>
+    </member>
+    <member name="M:Furcadia.Movement.ColorString.#ctor(System.String)">
+      <summary>
+            Constructor with <see cref="T:Furcadia.Text.Base220" /> encoded ColorStrinhg
+            </summary>
+      <param name="Colors">
+            Color String in legacy "t" format or new "w" format
+            </param>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Length">
+      <summary>
+            ColorString String Lengeth
+            </summary>
+    </member>
+    <member name="M:Furcadia.Movement.ColorString.ToString">
+      <summary>
+            Output the Base220 encoded color string
+            </summary>
+      <returns>
+            Furcadia color-string in modern "w" format
+            </returns>
+    </member>
+    <member name="M:Furcadia.Movement.ColorString.Update(System.String)">
+      <summary>
+            Update the Furre's color-code
+            </summary>
+      <param name="Colors">
+            Partial Color String
+            </param>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Accent">
+      <summary>
+            Acccent
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Avatar">
+      <summary>
+            Avatar
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Badge">
+      <summary>
+            Badge Color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Boots">
+      <summary>
+            Boots Color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Bracers">
+      <summary>
+            Bracers color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Cape">
+      <summary>
+            cape color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Eye">
+      <summary>
+            Eye color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Fur">
+      <summary>
+            Fur color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Gender">
+      <summary>
+            Avatar Gender
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Hair">
+      <summary>
+            Hair color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Markings">
+      <summary>
+            Markings color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Species">
+      <summary>
+            Avatar Species
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Trousers">
+      <summary>
+            Trousers color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Vest">
+      <summary>
+            /Vest Color
+            </summary>
+    </member>
+    <member name="P:Furcadia.Movement.ColorString.Wings">
+      <summary>
+            Wings
+            </summary>
+    </member>
+    <member name="T:Furcadia.Movement.CharacterFlags">
+      <summary>
+            Furcadia reconmended Material to support thier Protocol Standards
+            </summary>
+    </member>
+    <member name="F:Furcadia.Movement.CharacterFlags.CHAR_FLAG_HAS_PROFILE">
+      <summary>
+            Character has a Web Profile page.
+            <para>
+            As of Furcadia V31 This is not yet used
+            </para></summary>
+    </member>
+    <member name="F:Furcadia.Movement.CharacterFlags.CHAR_FLAG_NEW_AVATAR">
+      <summary>
+            Shown for new arrivals to the dream
+            </summary>
+    </member>
+    <member name="F:Furcadia.Movement.CharacterFlags.CHAR_FLAG_NONE">
+      <summary>
+            Character has no Flags set
+            </summary>
+    </member>
+    <member name="F:Furcadia.Movement.CharacterFlags.CHAR_FLAG_SET_VISIBLE">
+      <summary>
+            Set Character Visable
+            </summary>
+    </member>
+    <member name="M:Furcadia.Movement.CharacterFlags.#ctor(System.Char)">
+      <summary>
+            Build Flags with Base220 string
+            </summary>
+      <param name="flags">
+            Base220 String
+            </param>
+    </member>
+    <member name="M:Furcadia.Movement.CharacterFlags.HasFlag(System.Int32)">
+      <summary>
+            Does the triggering furre have flags set?
+            </summary>
+      <param name="FlagToCheck">
+            Any one of the CHAR_FLAG_ set
+            </param>
+      <returns>
+            true if the flag is set
+            </returns>
+    </member>
+    <member name="N:Furcadia.Drawing">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Drawing.Graphics">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Extensions">
+      <summary />
+    </member>
+    <member name="N:Furcadia.FurcMap">
+      <summary />
+    </member>
+    <member name="N:Furcadia.IO">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Logging">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Movement">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net.Account">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net.DirectConnection">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net.Dream">
+      <summary>Classes specific to Dream management. Use these classes for Tracking furres around the map, thier interactions with the current triggering avatar</summary>
+    </member>
+    <member name="N:Furcadia.Net.Options">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net.Pounce">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net.Proxy">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net.Utils">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net.Utils.ServerObjects">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net.Utils.ServerParser">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Net.Web">
+      <summary />
+    </member>
+    <member name="N:Furcadia.Text">
+      <summary />
+    </member>
+    <member name="G:Furcadia.Net">
+      <summary />
+    </member>
+    <member name="G:Furcadia.Net.Utils">
+      <summary />
+    </member>
+    <member name="G:Furcadia.Drawing">
+      <summary />
+    </member>
+  </members>
+</doc>
