@@ -1,4 +1,5 @@
-﻿using Furcadia.Net.Options;
+﻿using Furcadia.Logging;
+using Furcadia.Net.Options;
 using Furcadia.Net.Proxy;
 using System;
 
@@ -30,6 +31,7 @@ namespace BugConsole
                         proxy = new ProxySession(ProxyOptions);
                         proxy.ClientData2 += onClientDataReceived;
                         proxy.ServerData2 += onServerDataReceived;
+                        proxy.Error += (e, o) => onError(e, o);
                         // We need a Character.ini file to work with -Gerolkae
                         proxy.Connect();
                     }
@@ -43,14 +45,23 @@ namespace BugConsole
 
         static private void onClientDataReceived(string data)
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("C>: " + data);
+            Console.ResetColor();
             proxy.SendToServer(data);
         }
 
         static private void onServerDataReceived(string data)
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("S>: " + data);
+            Console.ResetColor();
             proxy.SendToClient(data);
+        }
+
+        static private void onError(Exception e, object o)
+        {
+            Logger.Error($"{o} \n {e}");
         }
 
         #endregion Private Methods
