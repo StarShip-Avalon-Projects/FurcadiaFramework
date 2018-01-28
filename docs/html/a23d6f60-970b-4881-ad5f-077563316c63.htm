@@ -1,0 +1,120 @@
+﻿<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style>
+    <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
+    <script type="text/javascript" src="../scripts/branding.js"> </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Furcadia File Paths</title>
+    <meta name="Language" content="en-us" />
+    <meta name="Microsoft.Help.Id" content="a23d6f60-970b-4881-ad5f-077563316c63" />
+    <meta name="Description" content="Furcadia File Paths" />
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <meta name="BrandingAware" content="true" />
+    
+    
+    <script type="text/javascript" src="../scripts/clipboard.min.js"></script>
+  </head>
+  <body onload="OnLoad('cs')">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <div class="OH_outerDiv">
+      <div class="OH_outerContent">
+        <table class="TitleTable">
+          <tr>
+            <td class="OH_tdLogoColumn">
+              <img src="../icons/Help.png" />
+            </td>
+            <td class="OH_tdTitleColumn">
+              <h1>Furcadia File Paths</h1>
+            </td>
+            <td class="OH_tdRunningTitleColumn">Furcadia Framework For Third Party Programs</td>
+          </tr>
+        </table>
+        <div id="mainSection">
+          <div id="mainBody">
+            <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="introduction"><p>Furcadia File Paths</p><p>These are subject to change. As of Furcadia V31c</p><p>Credits:</p><ul style="list-style-type:none;"><li><p>
+            Author: Artex
+            <a href="http://ftr.icerealm.org/" target="_blank">Ice Realm (Furcadia Technical Resources)</a></p></li><li><p>
+            Edited by: Gerolkae
+          </p></li></ul></div><div class="OH_CollapsibleAreaRegion" id="Win95"><div class="OH_regiontitle">Windows 95/98/98SE/ME FAT/FAT32 File Systems (No longer supported by Furcadia)</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>Win16/32bit platforms. Path separator is the back-back slash "\" character.</p><ul><li><p>
+              Install Path:	c:\Program Files\Furcadia\
+            </p></li><li><p>
+              Personal:	c:\My Documents\Furcadia\
+            </p></li><li><p>
+              Cache:	c:\Program Files\Furcadia\tmp\
+            </p><p>
+              c:\Program Files\Furcadia\portraits\
+            </p><p>
+              c:\Program Files\Furcadia\maps\
+            </p></li></ul><div class="OH_CollapsibleAreaRegion" id="Win2k"><div class="OH_regiontitle">Windows 2k, XP, XPsp1, XPsp2, XPsp3 NTFS File System (No longer supported by Furcadia)</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>32bit platforms. there is a x64 version of XP.  The path separator is the back-back slash "\" character.</p><ul><li><p>
+              Install path:	c:\Program Files\Furcadia\
+            </p><p>
+              Windows x64 Platform (XP): c:\Program Files (x86)\Furcadia\
+            </p></li><li><p>
+              Personal:	c:\Documents and Settings\username\My Documents\Furcadia\
+            </p><p>
+              %USERPROFILE%\My Documents\Furcadia\
+            </p></li><li><p>
+              Settings:	c:\Documents and Settings\username\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
+            </p><p>
+              Cache:	c:\Documents and Settings\All Users\Application Data\Dragon's Eye Productions\Furcadia\
+            </p></li><li><p>
+              %USERPROFILE%\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
+            </p></li></ul><div class="OH_CollapsibleAreaRegion" id="Vista"><div class="OH_regiontitle">Windows Vista, 7, 7sp1, 8, 8.1, 10 NTFS File System User With Access Control Lists</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><ul><li><p>
+              Install path:	c:\Program Files\Furcadia\
+            </p><p>
+              Windows x64 Platform: c:\Program Files (x86)\Furcadia\
+            </p></li><li><p>
+              Personal:	c:\Documents and Settings\username\My Documents\Furcadia\
+            </p><p>
+              %USERPROFILE%\My Documents\Furcadia\
+            </p></li><li><p>
+              Settings:	c:\Users\username\AppData\Local\Dragon's Eye Productions\Furcadia\
+            </p></li><li><p>
+              %USERPROFILE%\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
+            </p></li><li><p>
+              Cache:	c:\Documents and Settings\All Users\Application Data\Dragon's Eye Productions\Furcadia\
+            </p><p>
+              %USERPROFILE%\AppData\Local\Dragon's Eye Productions\Furcadia\
+            </p></li><li><p>
+              Temporary Filess: %PROGRAMDATA%\Dragon's Eye Productions\Furcadia
+            </p><p>
+              C:\ProgramData\Dragon's Eye Productions\Furcadia
+            </p></li></ul><div class="OH_CollapsibleAreaRegion" id="nix"><div class="OH_regiontitle">Wine (UNIX/Linux/...)</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
+          NOTE: The following paths were used by default for the past years. However, due to wine's flexibility, your setup could be different!
+        </p><p>
+          Linux is different then Microsoft windows. Windows uses a back slash "\" as a path separator.
+          Linux uses a forward slash "/" as a path separator. Some characters need to be escaped. The
+          Back Slash "\" is the escape character to make special characters usable. Special characters
+          are [space] "  ", double-quote ["], single-quote ['], back-tick [`]. The escaped characters look like
+          "\ " (thats back slash and a space character).
+        </p><p>
+          In recent editions of Microsoft windows, There is the forward-slash "/" character adopted for Linux
+          compatibility. This came out with the .Net Framework for cross system compatibility.
+        </p><ul><li><p>
+              Install path:	~/.wine/drive_c/Program\ Files/Furcadia/
+            </p></li><li><p>
+              Personal:	~/.wine/drive_c/windows/profiles/$USER/My\ Documents/Furcadia/
+            </p><p>
+              • ASSUMING My Documents MAPPED TO $HOME: ~/Furcadia/
+            </p></li><li><p>
+              Settings:	~/.wine/drive_c/windows/profiles/$USER/Local\ Settings/Application\ Data/Dragon\'s\ Eye\ Productions/Furcadia/
+            </p></li><li><p>
+              Cache:	~/.wine/drive_c/windows/profiles/All\ Users/Application\ Data/Dragon\'s\ Eye\ Productions/Furcadia/
+            </p></li></ul><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_Furcadia_IO_Paths.htm">Furcadia.IO<span id="LST5FF38511_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST5FF38511_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Paths</a></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="0622bf6b-9933-4acb-95eb-b5ddfa4be5e7.htm">localdir.ini</a></div><div class="seeAlsoStyle"><a href="8c924167-6c3d-41dc-a8bb-b7f21f34830c.htm">DSC File Paths</a></div><div class="seeAlsoStyle"><a href="http://forums.furcadia.com/index.php?furcadia_session_id=300293-cdlq-pvp&amp;showtopic=63786" target="_blank">Credits: Furcadia Forums</a></div><div class="seeAlsoStyle"><a href="https://cms.furcadia.com/help/download/localdir" title="Official Flash Install document" target="_blank">Furcadia Flash install (localdir.ini)</a></div><div class="seeAlsoStyle"><a href="https://github.com/StarShip-Avalon-Projects/Furcadia-Diagnostics/" title="Visit Furcadia Diagnostic tools" target="_blank">Furcadia Diagnostic Tools</a></div></div>
+        </div>
+      </div>
+    </div>
+    <div id="OH_footer" class="OH_footer">
+      <div class="OH_feedbacklink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:gerolkae%40hotmail.com?Subject=Furcadia Framework For Third Party Programs">Lead Developer Gerolkae</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script></div>
+  </body>
+</html>
