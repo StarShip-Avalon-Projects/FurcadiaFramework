@@ -14,7 +14,7 @@
     <Name>Furcadia_Framework_Help</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.6.1</FrameworkVersion>
-    <OutputPath>..\..\docs\</OutputPath>
+    <OutputPath>..\..\wiki\</OutputPath>
     <HtmlHelpName>Furcadia_Framework_Help</HtmlHelpName>
     <Language>en-US</Language>
     <TransformComponentArguments>
@@ -116,7 +116,7 @@
     </ComponentConfigurations>
     <SaveComponentCacheCapacity>1200</SaveComponentCacheCapacity>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
-    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
+    <HelpFileFormat>Markdown</HelpFileFormat>
     <IndentHtml>True</IndentHtml>
     <KeepLogFile>True</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
@@ -127,7 +127,7 @@
     <SyntaxFilters>C#, Visual Basic, Visual Basic Usage, Managed C++, F#</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>True</RootNamespaceContainer>
-    <PresentationStyle>VS2010</PresentationStyle>
+    <PresentationStyle>Markdown</PresentationStyle>
     <Preliminary>True</Preliminary>
     <NamingMethod>MemberName</NamingMethod>
     <HelpTitle>Furcadia Framework For Third Party Programs</HelpTitle>
@@ -137,7 +137,7 @@
     <FeedbackEMailAddress>gerolkae%40hotmail.com</FeedbackEMailAddress>
     <RootNamespaceTitle>Furcadia Frame Work SDK</RootNamespaceTitle>
     <WebsiteSdkLinkType>Msdn</WebsiteSdkLinkType>
-    <HtmlSdkLinkType>None</HtmlSdkLinkType>
+    <HtmlSdkLinkType>Msdn</HtmlSdkLinkType>
     <IncludeFavorites>True</IncludeFavorites>
     <BinaryTOC>True</BinaryTOC>
     <NamespaceSummaries>
@@ -159,7 +159,7 @@
     </WorkingPath>
     <PlugInConfigurations>
     </PlugInConfigurations>
-    <AppendMarkdownFileExtensionsToUrls>False</AppendMarkdownFileExtensionsToUrls>
+    <AppendMarkdownFileExtensionsToUrls>True</AppendMarkdownFileExtensionsToUrls>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
        the build.  The others are optional common platform types that may appear. -->
@@ -277,7 +277,8 @@
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
-    <PostBuildEvent>xcopy /y "$(OutputPath)Furcadia_Framework_Help.chm" "$(SolutionDir)build\$(Configuration)"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
 </Project>
