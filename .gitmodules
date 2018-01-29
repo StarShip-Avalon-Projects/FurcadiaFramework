@@ -6,3 +6,7 @@
 [submodule "UnitTests"]
 	path = UnitTests
 	url = https://github.com/StarShip-Avalon-Projects/UnitTests.git
+[submodule "wiki"]
+	path = wiki
+	url = https://github.com/StarShip-Avalon-Projects/FurcadiaFramework.wiki.git
+	branch = master
