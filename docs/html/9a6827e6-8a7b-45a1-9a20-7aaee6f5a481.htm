@@ -1,0 +1,111 @@
+﻿<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style>
+    <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
+    <script type="text/javascript" src="../scripts/branding.js"> </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ProxySession</title>
+    <meta name="Language" content="en-us" />
+    <meta name="Microsoft.Help.Id" content="9a6827e6-8a7b-45a1-9a20-7aaee6f5a481" />
+    <meta name="Description" content="Required introduction" />
+    <meta name="Microsoft.Help.ContentType" content="Samples" />
+    <meta name="BrandingAware" content="true" />
+    
+    
+    <link type="text/css" rel="stylesheet" href="../styles/highlight.css" />
+    <script type="text/javascript" src="../scripts/highlight.js"> </script>
+    <script type="text/javascript" src="../scripts/clipboard.min.js"></script>
+  </head>
+  <body onload="OnLoad('cs')">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <div class="OH_outerDiv">
+      <div class="OH_outerContent">
+        <table class="TitleTable">
+          <tr>
+            <td class="OH_tdLogoColumn">
+              <img src="../icons/Help.png" />
+            </td>
+            <td class="OH_tdTitleColumn">
+              <h1>ProxySession</h1>
+            </td>
+            <td class="OH_tdRunningTitleColumn">Furcadia Framework For Third Party Programs</td>
+          </tr>
+        </table>
+        <div id="mainSection">
+          <div id="mainBody">
+            <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="introduction"><p>Required introduction</p></div><div class="OH_CollapsibleAreaRegion" id="Section1"><div class="OH_regiontitle">ProxySession Class Example</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p><div class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs"><div class="OH_CodeSnippetContainerTabLeftActive" id="ID0EAAAAABAAA_tabimgleft"> </div><div id="ID0EAAAAABAAA_tab1" class="OH_CodeSnippetContainerTabSolo">C#</div><div class="OH_CodeSnippetContainerTabRightActive" id="ID0EAAAAABAAA_tabimgright"> </div></div><div class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EAAAAABAAA_copyCode" href="#" class="OH_copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAAAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAAAABAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-lineno"> 1</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span><span class="highlight-keyword">using</span> BugProxy.Net;
+<span class="highlight-lineno"> 2</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span><span class="highlight-keyword">using</span> Furcadia.Net.Options;
+<span class="highlight-lineno"> 3</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span><span class="highlight-keyword">using</span> Furcadia.Net.Proxy;
+<span class="highlight-lineno"> 4</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span><span class="highlight-keyword">using</span> System;
+<span class="highlight-lineno"> 5</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span>
+<span class="highlight-lineno"> 6</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span><span class="highlight-keyword">namespace</span> BugConsole
+<span class="highlight-lineno"> 7</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span>{
+<span class="highlight-lineno"> 8</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span><span class="highlight-keyword">internal</span> <span class="highlight-keyword">class</span> Program
+<span class="highlight-lineno"> 9</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span>{
+<span id="hrCol9" style="display: none;"><span class="highlight-lineno">10</span><span class="highlight-lnborder"></span><span class="highlight-collapsebox" onclick="javascript: HighlightExpandCollapse('hrExp9', 'hrCol9');">+</span><span class="highlight-collapsed">Private Fields</span></span><span id="hrExp9" style="display: inline;"><span class="highlight-lineno">10</span><span class="highlight-lnborder"></span><span class="highlight-collapsebox" onclick="javascript: HighlightExpandCollapse('hrCol9', 'hrExp9');">-</span><span class="highlight-preprocessor">#region</span> Private Fields
+<span class="highlight-lineno">11</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>
+<span class="highlight-lineno">12</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">private</span> <span class="highlight-keyword">static</span> ProxySession proxy;
+<span class="highlight-lineno">13</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">private</span> <span class="highlight-keyword">static</span> ProxySessionOptions ProxyOptions;
+<span class="highlight-lineno">14</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>
+<span class="highlight-lineno">15</span><span class="highlight-lnborder"></span><span class="highlight-endblock"> </span><span class="highlight-preprocessor">#endregion</span> Private Fields</span>
+<span class="highlight-lineno">16</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span>
+<span id="hrCol16" style="display: none;"><span class="highlight-lineno">17</span><span class="highlight-lnborder"></span><span class="highlight-collapsebox" onclick="javascript: HighlightExpandCollapse('hrExp16', 'hrCol16');">+</span><span class="highlight-collapsed">Private Methods</span></span><span id="hrExp16" style="display: inline;"><span class="highlight-lineno">17</span><span class="highlight-lnborder"></span><span class="highlight-collapsebox" onclick="javascript: HighlightExpandCollapse('hrCol16', 'hrExp16');">-</span><span class="highlight-preprocessor">#region</span> Private Methods
+<span class="highlight-lineno">18</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>
+<span class="highlight-lineno">19</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">private</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> Main(<span class="highlight-keyword">string</span>[] args)
+<span class="highlight-lineno">20</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>{
+<span class="highlight-lineno">21</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">while</span> (<span class="highlight-keyword">true</span>)
+<span class="highlight-lineno">22</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>{
+<span class="highlight-lineno">23</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>Console.WriteLine(<span class="highlight-literal">"type connect when ready"</span>);
+<span class="highlight-lineno">24</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">string</span> cmd = Console.ReadLine();
+<span class="highlight-lineno">25</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>
+<span class="highlight-lineno">26</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">if</span> (cmd.ToLower() == <span class="highlight-literal">"connect"</span>)
+<span class="highlight-lineno">27</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>{
+<span class="highlight-lineno">28</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">if</span> (proxy <span class="highlight-keyword">is</span> <span class="highlight-keyword">null</span>)
+<span class="highlight-lineno">29</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>{
+<span class="highlight-lineno">30</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>ProxyOptions = <span class="highlight-keyword">new</span> ProxySessionOptions();
+<span class="highlight-lineno">31</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>proxy = <span class="highlight-keyword">new</span> ProxySession(ProxyOptions);
+<span class="highlight-lineno">32</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>proxy.ClientData2 += onClientDataReceived;
+<span class="highlight-lineno">33</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>proxy.ServerData2 += onServerDataReceived;
+<span class="highlight-lineno">34</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-comment">// We need a Character.ini file to work with -Gerolkae</span>
+<span class="highlight-lineno">35</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>proxy.Connect();
+<span class="highlight-lineno">36</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>}
+<span class="highlight-lineno">37</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">else</span> <span class="highlight-keyword">if</span> (!proxy.IsServerConnected)
+<span class="highlight-lineno">38</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>{
+<span class="highlight-lineno">39</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>proxy.Connect();
+<span class="highlight-lineno">40</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>}
+<span class="highlight-lineno">41</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>}
+<span class="highlight-lineno">42</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>}
+<span class="highlight-lineno">43</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>}
+<span class="highlight-lineno">44</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>
+<span class="highlight-lineno">45</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">static</span> <span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> onClientDataReceived(<span class="highlight-keyword">string</span> data)
+<span class="highlight-lineno">46</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>{
+<span class="highlight-lineno">47</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>Console.WriteLine(<span class="highlight-literal">"C&gt;: "</span> + data);
+<span class="highlight-lineno">48</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>proxy.SendToServer(data);
+<span class="highlight-lineno">49</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>}
+<span class="highlight-lineno">50</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>
+<span class="highlight-lineno">51</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span><span class="highlight-keyword">static</span> <span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> onServerDataReceived(<span class="highlight-keyword">string</span> data)
+<span class="highlight-lineno">52</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>{
+<span class="highlight-lineno">53</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>Console.WriteLine(<span class="highlight-literal">"S&gt;: "</span> + data);
+<span class="highlight-lineno">54</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>proxy.SendToClient(data);
+<span class="highlight-lineno">55</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>}
+<span class="highlight-lineno">56</span><span class="highlight-lnborder"></span><span class="highlight-expanded"> </span>
+<span class="highlight-lineno">57</span><span class="highlight-lnborder"></span><span class="highlight-endblock"> </span><span class="highlight-preprocessor">#endregion</span> Private Methods</span>
+<span class="highlight-lineno">58</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span>}
+<span class="highlight-lineno">59</span><span class="highlight-lnborder"></span><span class="highlight-spacer"></span>}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAAAABAAA");</script></p></div>
+        </div>
+      </div>
+    </div>
+    <div id="OH_footer" class="OH_footer">
+      <div class="OH_feedbacklink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:gerolkae%40hotmail.com?Subject=Furcadia Framework For Third Party Programs">Lead Developer Gerolkae</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script></div>
+  </body>
+</html>
