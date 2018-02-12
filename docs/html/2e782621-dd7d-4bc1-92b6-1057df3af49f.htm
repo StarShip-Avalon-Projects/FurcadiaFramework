@@ -2,6 +2,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style>
     <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
     <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
     <script type="text/javascript" src="../scripts/branding.js"> </script>
@@ -14,27 +15,26 @@
     <meta name="BrandingAware" content="true" />
     
     
-    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
-    <script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
     <script type="text/javascript" src="../scripts/clipboard.min.js"></script>
   </head>
   <body onload="OnLoad('cs')">
     <input type="hidden" id="userDataCache" class="userDataStyle" />
-    <div class="pageHeader" id="PageHeader">Furcadia Framework For Third Party Programs<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
-    <div class="pageBody">
-      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\8d0a663e-8095-408a-b860-f55d2fc3ccbe.htm" title="Furcadia Framework For Third Party Programs" tocid="roottoc">Furcadia Framework For Third Party Programs</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/be87ba4e-409e-42eb-929b-c7b131ab1a19.htm" title="Furcadia Specifications" tocid="be87ba4e-409e-42eb-929b-c7b131ab1a19">Furcadia Specifications</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/3661a2f8-dfd3-4c4c-8f36-2ebf0e5cf409.htm" title="Legacy Material" tocid="3661a2f8-dfd3-4c4c-8f36-2ebf0e5cf409">Legacy Material</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/c6406f52-f5e9-4a8e-8c24-559773867a8a.htm" title="File Types" tocid="c6406f52-f5e9-4a8e-8c24-559773867a8a">File Types</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/2e782621-dd7d-4bc1-92b6-1057df3af49f.htm" title="Character.ini" tocid="2e782621-dd7d-4bc1-92b6-1057df3af49f">Character.ini</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/3169fab2-9b67-4b16-9bdf-7dd5e952c280.htm" title="DS File" tocid="3169fab2-9b67-4b16-9bdf-7dd5e952c280">DS File</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/0050c021-7874-45a1-8a39-e250a8043e6f.htm" title="DS Template" tocid="0050c021-7874-45a1-8a39-e250a8043e6f">DS Template</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent">
-        <table class="titleTable">
+    <div class="OH_outerDiv">
+      <div class="OH_outerContent">
+        <table class="TitleTable">
           <tr>
-            <td class="logoColumn">
+            <td class="OH_tdLogoColumn">
               <img src="../icons/Help.png" />
             </td>
-            <td class="titleColumn">
+            <td class="OH_tdTitleColumn">
               <h1>Character.ini</h1>
             </td>
+            <td class="OH_tdRunningTitleColumn">Furcadia Framework For Third Party Programs</td>
           </tr>
         </table>
-        <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary"><p>Character .ini files are legacy files for storing character information. 
+        <div id="mainSection">
+          <div id="mainBody">
+            <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary"><p>Character .ini files are legacy files for storing character information. 
       These files are insecure as they contain plain-text passwords, making personal 
       character information available to anyone with access to the files. This login 
       method also requires that you have an .ini file present for all characters on all
@@ -49,42 +49,44 @@
         Tean Dragon plans to do away with this system in future Releases.
         
 
-      </p></div><div class="introduction"><p>Credits:</p><ul class="noBullet"><li><p>
+      </p></div><div class="introduction"><p>Credits:</p><ul style="list-style-type:none;"><li><p>
             Author: Iced
           </p></li><li><p>
             Edited by: Gerolkae
-          </p></li></ul></div><div class="collapsibleAreaRegion" id="Section1"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />File Elements</span></div><div id="ID0RBSection" class="collapsibleSection"><div class="mediaNear"><img alt="Ini File" src="../media/Ini File.png" /></div><h4 class="subHeading" id="SubSection1">[Colors] ‐ OK to Change</h4><div class="subsection"><p>This is your characters color code.</p></div><h4 class="subHeading" id="SubSection2">[Name] ‐ Recommend no Changes</h4><div class="subsection"><p>This is your characters name. Changing it isn't recommended, 
+          </p></li></ul></div><div class="OH_CollapsibleAreaRegion" id="Section1"><div class="OH_regiontitle">File Elements</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><div class="ps_mediaNear"><img alt="Ini File" src="../media/Ini File.png" /></div><div class="OH_CollapsibleAreaRegion" id="SubSection1"><div class="OH_regiontitle">[Colors] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>This is your characters color code.</p><div class="OH_CollapsibleAreaRegion" id="SubSection2"><div class="OH_regiontitle">[Name] ‐ Recommend no Changes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>This is your characters name. Changing it isn't recommended, 
             as you won't be able to login unless the character has been created 
-            and you have a valid password.</p></div><h4 class="subHeading" id="SubSection3">[Password] ‐ Recommend no Changes</h4><div class="subsection"><p>This is your characters password in plain text. This is extremely 
-            insecure. Your password is visible to everyone who has access to this file.</p></div><h4 class="subHeading" id="SubSection4">[Desc] ‐ OK to Change</h4><div class="subsection"><p>
+            and you have a valid password.</p><div class="OH_CollapsibleAreaRegion" id="SubSection3"><div class="OH_regiontitle">[Password] ‐ Recommend no Changes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>This is your characters password in plain text. This is extremely 
+            insecure. Your password is visible to everyone who has access to this file.</p><div class="OH_CollapsibleAreaRegion" id="SubSection4"><div class="OH_regiontitle">[Desc] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               This is your characters description. It's what other people will see when they click your character.
-            </p></div><h4 class="subHeading" id="SubSection5">[Logins] ‐ Recommend no Changes</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection5"><div class="OH_regiontitle">[Logins] ‐ Recommend no Changes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               The number of times you have logged in to this character.
-            </p></div><h4 class="subHeading" id="SubSection6">[LastLogin] ‐ Recommend no Changes</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection6"><div class="OH_regiontitle">[LastLogin] ‐ Recommend no Changes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               A number representing the last time you logged in to this character.
-            </p></div><h4 class="subHeading" id="SubSection7">[AutoResponse] ‐ OK to Change</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection7"><div class="OH_regiontitle">[AutoResponse] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               This is a boolean (true/false) field that states if you will automatically
               reply to whispers with the configured [AutoResponseMessage].
-            </p></div><h4 class="subHeading" id="SubSection8">[AutoResponseMessage] ‐ OK to Change</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection8"><div class="OH_regiontitle">[AutoResponseMessage] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               This is what you will automatically whisper as a reply, regardless of whether 
               you are marked AFK, if you have AutoResponse turned on. Supports keywords.
-            </p></div><h4 class="subHeading" id="SubSection9">[AFKTime] ‐ OK to Change</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection9"><div class="OH_regiontitle">[AFKTime] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               The idle time, in minutes, before your character is marked as being AFK (Away From Keyboard).
-            </p></div><h4 class="subHeading" id="SubSection10">[AFKMessage] ‐ OK to Change</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection10"><div class="OH_regiontitle">[AFKMessage] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               This is what you will automatically whisper as a reply if your character
               has been marked AFK. Supports keywords.
-            </p></div><h4 class="subHeading" id="SubSection11">[AFKDescription] ‐ OK to Change</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection11"><div class="OH_regiontitle">[AFKDescription] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               This is your characters description when you have been marked AFK. Supports keywords.
-            </p></div><h4 class="subHeading" id="SubSection12">[AFKPortrait] ‐ OK to Change</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection12"><div class="OH_regiontitle">[AFKPortrait] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               This is the portrait number that will display when you have been marked AFK.
-            </p></div><h4 class="subHeading" id="SubSection13">[AFKPortrait] ‐ OK to Change</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection13"><div class="OH_regiontitle">[AFKPortrait] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               This is your default portrait when you login to Furcadia.
-            </p></div><h4 class="subHeading" id="SubSection14">[AFKDisconnectTime] ‐ OK to Change</h4><div class="subsection"><p>
+            </p><div class="OH_CollapsibleAreaRegion" id="SubSection14"><div class="OH_regiontitle">[AFKDisconnectTime] ‐ OK to Change</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
               The idle time, in minutes, before your character is disconnected from Furcadia.
-            </p></div></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID1RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><span class="nolink">Character</span></div><div class="seeAlsoStyle"><a href="T_Furcadia_Movement_ColorString.htm">ColorString</a></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="https://cms.furcadia.com/fured/" target="_blank">FurEd</a></div><div class="seeAlsoStyle"><a href="http://www.furcadia.com/services/pw/oblivion.php4" target="_blank">Character Password link</a></div><div class="seeAlsoStyle"><a href="http://www.furcadia.com/services/retrieve/retrieve.php4" target="_blank">Furcadia Character .ini retrieval service</a></div><div class="seeAlsoStyle"><a href="e897d816-e829-4b4b-b4a5-41ce6cac22ec.htm">Modern Color-Code</a></div></div></div>
+            </p><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><span class="nolink">Character</span></div><div class="seeAlsoStyle"><a href="T_Furcadia_Movement_ColorString.htm">ColorString</a></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="https://cms.furcadia.com/fured/" target="_blank">FurEd</a></div><div class="seeAlsoStyle"><a href="http://www.furcadia.com/services/pw/oblivion.php4" target="_blank">Character Password link</a></div><div class="seeAlsoStyle"><a href="http://www.furcadia.com/services/retrieve/retrieve.php4" target="_blank">Furcadia Character .ini retrieval service</a></div><div class="seeAlsoStyle"><a href="e897d816-e829-4b4b-b4a5-41ce6cac22ec.htm">Modern Color-Code</a></div></div>
+        </div>
+      </div>
     </div>
-    <div id="pageFooter" class="pageFooter">
-      <div class="feedbackLink">Send comments on this topic to
+    <div id="OH_footer" class="OH_footer">
+      <div class="OH_feedbacklink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:gerolkae%40hotmail.com?Subject=Furcadia Framework For Third Party Programs">Lead Developer Gerolkae</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");

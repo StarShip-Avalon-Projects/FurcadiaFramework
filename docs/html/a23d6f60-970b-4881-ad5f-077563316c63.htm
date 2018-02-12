@@ -2,6 +2,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style>
     <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
     <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
     <script type="text/javascript" src="../scripts/branding.js"> </script>
@@ -14,31 +15,30 @@
     <meta name="BrandingAware" content="true" />
     
     
-    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
-    <script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
     <script type="text/javascript" src="../scripts/clipboard.min.js"></script>
   </head>
   <body onload="OnLoad('cs')">
     <input type="hidden" id="userDataCache" class="userDataStyle" />
-    <div class="pageHeader" id="PageHeader">Furcadia Framework For Third Party Programs<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
-    <div class="pageBody">
-      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\8d0a663e-8095-408a-b860-f55d2fc3ccbe.htm" title="Furcadia Framework For Third Party Programs" tocid="roottoc">Furcadia Framework For Third Party Programs</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/be87ba4e-409e-42eb-929b-c7b131ab1a19.htm" title="Furcadia Specifications" tocid="be87ba4e-409e-42eb-929b-c7b131ab1a19">Furcadia Specifications</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/a23d6f60-970b-4881-ad5f-077563316c63.htm" title="Furcadia File Paths" tocid="a23d6f60-970b-4881-ad5f-077563316c63">Furcadia File Paths</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/0622bf6b-9933-4acb-95eb-b5ddfa4be5e7.htm" title="localdir.ini" tocid="0622bf6b-9933-4acb-95eb-b5ddfa4be5e7">localdir.ini</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent">
-        <table class="titleTable">
+    <div class="OH_outerDiv">
+      <div class="OH_outerContent">
+        <table class="TitleTable">
           <tr>
-            <td class="logoColumn">
+            <td class="OH_tdLogoColumn">
               <img src="../icons/Help.png" />
             </td>
-            <td class="titleColumn">
+            <td class="OH_tdTitleColumn">
               <h1>Furcadia File Paths</h1>
             </td>
+            <td class="OH_tdRunningTitleColumn">Furcadia Framework For Third Party Programs</td>
           </tr>
         </table>
-        <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="introduction"><p>Furcadia File Paths</p><p>These are subject to change. As of Furcadia V31c</p><p>Credits:</p><ul class="noBullet"><li><p>
+        <div id="mainSection">
+          <div id="mainBody">
+            <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="introduction"><p>Furcadia File Paths</p><p>These are subject to change. As of Furcadia V31c</p><p>Credits:</p><ul style="list-style-type:none;"><li><p>
             Author: Artex
             <a href="http://ftr.icerealm.org/" target="_blank">Ice Realm (Furcadia Technical Resources)</a></p></li><li><p>
             Edited by: Gerolkae
-          </p></li></ul></div><div class="collapsibleAreaRegion" id="Win95"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Windows 95/98/98SE/ME FAT/FAT32 File Systems (No longer supported by Furcadia)</span></div><div id="ID0RBSection" class="collapsibleSection"><p>Win16/32bit platforms. Path separator is the back-back slash "\" character.</p><ul><li><p>
+          </p></li></ul></div><div class="OH_CollapsibleAreaRegion" id="Win95"><div class="OH_regiontitle">Windows 95/98/98SE/ME FAT/FAT32 File Systems (No longer supported by Furcadia)</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>Win16/32bit platforms. Path separator is the back-back slash "\" character.</p><ul><li><p>
               Install Path:	c:\Program Files\Furcadia\
             </p></li><li><p>
               Personal:	c:\My Documents\Furcadia\
@@ -48,7 +48,7 @@
               c:\Program Files\Furcadia\portraits\
             </p><p>
               c:\Program Files\Furcadia\maps\
-            </p></li></ul></div><div class="collapsibleAreaRegion" id="Win2k"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Windows 2k, XP, XPsp1, XPsp2, XPsp3 NTFS File System (No longer supported by Furcadia)</span></div><div id="ID1RBSection" class="collapsibleSection"><p>32bit platforms. there is a x64 version of XP.  The path separator is the back-back slash "\" character.</p><ul><li><p>
+            </p></li></ul><div class="OH_CollapsibleAreaRegion" id="Win2k"><div class="OH_regiontitle">Windows 2k, XP, XPsp1, XPsp2, XPsp3 NTFS File System (No longer supported by Furcadia)</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>32bit platforms. there is a x64 version of XP.  The path separator is the back-back slash "\" character.</p><ul><li><p>
               Install path:	c:\Program Files\Furcadia\
             </p><p>
               Windows x64 Platform (XP): c:\Program Files (x86)\Furcadia\
@@ -62,7 +62,7 @@
               Cache:	c:\Documents and Settings\All Users\Application Data\Dragon's Eye Productions\Furcadia\
             </p></li><li><p>
               %USERPROFILE%\Local Settings\Application Data\Dragon's Eye Productions\Furcadia\
-            </p></li></ul></div><div class="collapsibleAreaRegion" id="Vista"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Windows Vista, 7, 7sp1, 8, 8.1, 10 NTFS File System User With Access Control Lists</span></div><div id="ID2RBSection" class="collapsibleSection"><ul><li><p>
+            </p></li></ul><div class="OH_CollapsibleAreaRegion" id="Vista"><div class="OH_regiontitle">Windows Vista, 7, 7sp1, 8, 8.1, 10 NTFS File System User With Access Control Lists</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><ul><li><p>
               Install path:	c:\Program Files\Furcadia\
             </p><p>
               Windows x64 Platform: c:\Program Files (x86)\Furcadia\
@@ -82,7 +82,7 @@
               Temporary Filess: %PROGRAMDATA%\Dragon's Eye Productions\Furcadia
             </p><p>
               C:\ProgramData\Dragon's Eye Productions\Furcadia
-            </p></li></ul></div><div class="collapsibleAreaRegion" id="nix"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Wine (UNIX/Linux/...)</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
+            </p></li></ul><div class="OH_CollapsibleAreaRegion" id="nix"><div class="OH_regiontitle">Wine (UNIX/Linux/...)</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
           NOTE: The following paths were used by default for the past years. However, due to wine's flexibility, your setup could be different!
         </p><p>
           Linux is different then Microsoft windows. Windows uses a back slash "\" as a path separator.
@@ -103,10 +103,12 @@
               Settings:	~/.wine/drive_c/windows/profiles/$USER/Local\ Settings/Application\ Data/Dragon\'s\ Eye\ Productions/Furcadia/
             </p></li><li><p>
               Cache:	~/.wine/drive_c/windows/profiles/All\ Users/Application\ Data/Dragon\'s\ Eye\ Productions/Furcadia/
-            </p></li></ul></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID4RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_Furcadia_IO_Paths.htm">Furcadia.IO<span id="LST5FF38511_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST5FF38511_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Paths</a></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="0622bf6b-9933-4acb-95eb-b5ddfa4be5e7.htm">localdir.ini</a></div><div class="seeAlsoStyle"><a href="8c924167-6c3d-41dc-a8bb-b7f21f34830c.htm">DSC File Paths</a></div><div class="seeAlsoStyle"><a href="http://forums.furcadia.com/index.php?furcadia_session_id=300293-cdlq-pvp&amp;showtopic=63786" target="_blank">Credits: Furcadia Forums</a></div><div class="seeAlsoStyle"><a href="https://cms.furcadia.com/help/download/localdir" title="Official Flash Install document" target="_blank">Furcadia Flash install (localdir.ini)</a></div><div class="seeAlsoStyle"><a href="https://github.com/StarShip-Avalon-Projects/Furcadia-Diagnostics/" title="Visit Furcadia Diagnostic tools" target="_blank">Furcadia Diagnostic Tools</a></div></div></div>
+            </p></li></ul><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_Furcadia_IO_Paths.htm">Furcadia.IO<span id="LST5FF38511_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST5FF38511_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Paths</a></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="0622bf6b-9933-4acb-95eb-b5ddfa4be5e7.htm">localdir.ini</a></div><div class="seeAlsoStyle"><a href="8c924167-6c3d-41dc-a8bb-b7f21f34830c.htm">DSC File Paths</a></div><div class="seeAlsoStyle"><a href="http://forums.furcadia.com/index.php?furcadia_session_id=300293-cdlq-pvp&amp;showtopic=63786" target="_blank">Credits: Furcadia Forums</a></div><div class="seeAlsoStyle"><a href="https://cms.furcadia.com/help/download/localdir" title="Official Flash Install document" target="_blank">Furcadia Flash install (localdir.ini)</a></div><div class="seeAlsoStyle"><a href="https://github.com/StarShip-Avalon-Projects/Furcadia-Diagnostics/" title="Visit Furcadia Diagnostic tools" target="_blank">Furcadia Diagnostic Tools</a></div></div>
+        </div>
+      </div>
     </div>
-    <div id="pageFooter" class="pageFooter">
-      <div class="feedbackLink">Send comments on this topic to
+    <div id="OH_footer" class="OH_footer">
+      <div class="OH_feedbacklink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:gerolkae%40hotmail.com?Subject=Furcadia Framework For Third Party Programs">Lead Developer Gerolkae</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");

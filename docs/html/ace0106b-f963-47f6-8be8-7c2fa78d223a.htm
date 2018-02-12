@@ -2,6 +2,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style>
     <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
     <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
     <script type="text/javascript" src="../scripts/branding.js"> </script>
@@ -14,47 +15,46 @@
     <meta name="BrandingAware" content="true" />
     
     
-    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
-    <script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
     <script type="text/javascript" src="../scripts/clipboard.min.js"></script>
   </head>
   <body onload="OnLoad('cs')">
     <input type="hidden" id="userDataCache" class="userDataStyle" />
-    <div class="pageHeader" id="PageHeader">Furcadia Framework For Third Party Programs<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
-    <div class="pageBody">
-      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\8d0a663e-8095-408a-b860-f55d2fc3ccbe.htm" title="Furcadia Framework For Third Party Programs" tocid="roottoc">Furcadia Framework For Third Party Programs</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/be87ba4e-409e-42eb-929b-c7b131ab1a19.htm" title="Furcadia Specifications" tocid="be87ba4e-409e-42eb-929b-c7b131ab1a19">Furcadia Specifications</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/ace0106b-f963-47f6-8be8-7c2fa78d223a.htm" title="Client Server Communications" tocid="d3075c41-c003-4fb2-b692-6ce37f111a6a">Client Server Communications</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/ace0106b-f963-47f6-8be8-7c2fa78d223a.htm" title="Server To Client Instructions (Game Server)" tocid="ace0106b-f963-47f6-8be8-7c2fa78d223a">Server To Client Instructions (Game Server)</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/5fb54a72-62e8-4bfd-a81f-79d00d83b764.htm" title="Spawn Avatar (Furcadia v31c)" tocid="5fb54a72-62e8-4bfd-a81f-79d00d83b764">Spawn Avatar (Furcadia v31c)</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/ffece671-a97d-4060-a35f-e41e0c23148d.htm" title="Character Spawn Flags (Furcadia v31c)" tocid="ffece671-a97d-4060-a35f-e41e0c23148d">Character Spawn Flags (Furcadia v31c)</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/7276e360-59ea-43e2-a072-64a51495604c.htm" title="Join Dream Event" tocid="7276e360-59ea-43e2-a072-64a51495604c">Join Dream Event</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent">
-        <table class="titleTable">
+    <div class="OH_outerDiv">
+      <div class="OH_outerContent">
+        <table class="TitleTable">
           <tr>
-            <td class="logoColumn">
+            <td class="OH_tdLogoColumn">
               <img src="../icons/Help.png" />
             </td>
-            <td class="titleColumn">
+            <td class="OH_tdTitleColumn">
               <h1>Server To Client Instructions (Game Server)</h1>
             </td>
+            <td class="OH_tdRunningTitleColumn">Furcadia Framework For Third Party Programs</td>
           </tr>
         </table>
-        <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><br /><a href="#PrefixLineCv28">Server to Client Instructions (Furcadia V31)</a><div class="glossaryDiv" id="PrefixLineCv28"><h3>Server to Client Instructions (Furcadia V31)</h3><hr class="glossaryRule" /><div class="glossaryLetterBar"><span class="nolink">A</span> | <span class="nolink">B</span> | <span class="nolink">C</span> | <a href="#ID0EAAAAAD">D</a> | <span class="nolink">E</span> | <span class="nolink">F</span> | <span class="nolink">G</span> | <span class="nolink">H</span> | <span class="nolink">I</span> | <span class="nolink">J</span> | <span class="nolink">K</span> | <span class="nolink">L</span> | <span class="nolink">M</span> | <span class="nolink">N</span> | <span class="nolink">O</span> | <a href="#ID0EAAAAAP">P</a> | <span class="nolink">Q</span> | <span class="nolink">R</span> | <a href="#ID0EAAAAAS">S</a> | <span class="nolink">T</span> | <span class="nolink">U</span> | <span class="nolink">V</span> | <span class="nolink">W</span> | <span class="nolink">X</span> | <span class="nolink">Y</span> | <span class="nolink">Z</span></div><br /><div class="glossaryGroup"><h3 class="glossaryGroupHeading" id="ID0EAAAAA&#x9;">	</h3><dl class="glossaryGroupList"><dt class="glossaryEntry">]- Prefix Text[*], <span id="PreFixOld">Prefix the following text line</span></dt><dd class="glossaryEntry"><p>
+        <div id="mainSection">
+          <div id="mainBody">
+            <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><br /><a href="#PrefixLineCv28">Server to Client Instructions (Furcadia V31)</a><div class="ps_glossaryDiv" id="PrefixLineCv28"><h2 class="ps_glossaryDivHeading">Server to Client Instructions (Furcadia V31)</h2><hr class="ps_glossaryRule" /><div class="ps_glossaryLetterBar"><span class="nolink">A</span> | <span class="nolink">B</span> | <span class="nolink">C</span> | <a href="#ID0EAAAAAD">D</a> | <span class="nolink">E</span> | <span class="nolink">F</span> | <span class="nolink">G</span> | <span class="nolink">H</span> | <span class="nolink">I</span> | <span class="nolink">J</span> | <span class="nolink">K</span> | <span class="nolink">L</span> | <span class="nolink">M</span> | <span class="nolink">N</span> | <span class="nolink">O</span> | <a href="#ID0EAAAAAP">P</a> | <span class="nolink">Q</span> | <span class="nolink">R</span> | <a href="#ID0EAAAAAS">S</a> | <span class="nolink">T</span> | <span class="nolink">U</span> | <span class="nolink">V</span> | <span class="nolink">W</span> | <span class="nolink">X</span> | <span class="nolink">Y</span> | <span class="nolink">Z</span></div><br /><div class="ps_glossaryGroup"><h3 class="ps_glossaryGroupHeading" id="ID0EAAAAA&#x9;">	</h3><dl class="ps_glossaryGroupList"><dt class="ps_glossaryEntry">]- Prefix Text[*], <span id="PreFixOld">Prefix the following text line</span></dt><dd class="ps_glossaryEntry"><p>
               This instruction is commonly used in its two forms: ]-#A and ]-#B that perpend a specitag/beekin
               badge to the next text line shown by the instruction.
             </p><p>
               In essence, this instruction can pretty much perpend any desired string to the next text line
               if specified.
-            </p><p>Credits:</p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p><p /><div class="relatedEntry">See Also: 
+            </p><p>Credits:</p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p><p /><div class="ps_relatedEntry">See Also: 
 
-					<a href="#PrefixSpecitag">Prefix Specitag</a>, <a href="#PreFixBadgeOld">	Prefix With Beekin Badge</a></div></dd><dt class="glossaryEntry">]-#BLast byte of badge tag[1], <span id="PreFixBadgeOld">Prefix With Beekin Badge</span></dt><dd class="glossaryEntry"><p>
+					<a href="#PrefixSpecitag">Prefix Specitag</a>, <a href="#PreFixBadgeOld">	Prefix With Beekin Badge</a></div></dd><dt class="ps_glossaryEntry">]-#BLast byte of badge tag[1], <span id="PreFixBadgeOld">Prefix With Beekin Badge</span></dt><dd class="ps_glossaryEntry"><p>
               This instruction is used with the text output instruction to display a specitag
               of whoever sent the following message. It is a sub-instruction to ]-.
-            </p><p>Credits:</p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p><div class="relatedEntry">See Also: 
+            </p><p>Credits:</p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p><div class="ps_relatedEntry">See Also: 
 
-					<a href="#PrefixSpecitag">Prefix Specitag</a>, <a href="#PreFixOld">	Prefix the following text line</a></div></dd></dl></div><div class="glossaryGroup"><h3 class="glossaryGroupHeading" id="ID0EAAAAAD">D</h3><dl class="glossaryGroupList"><dt class="glossaryEntry">( Text, <span id="DisplayText">Display Text</span></dt><dd class="glossaryEntry"><p>
+					<a href="#PrefixSpecitag">Prefix Specitag</a>, <a href="#PreFixOld">	Prefix the following text line</a></div></dd></dl></div><div class="ps_glossaryGroup"><h3 class="ps_glossaryGroupHeading" id="ID0EAAAAAD">D</h3><dl class="ps_glossaryGroupList"><dt class="ps_glossaryEntry">( Text, <span id="DisplayText">Display Text</span></dt><dd class="ps_glossaryEntry"><p>
               Formatted text to display in the chatbox (markup and tags like #SA included)
-            </p><p>Credits:</p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p></dd></dl></div><div class="glossaryGroup"><h3 class="glossaryGroupHeading" id="ID0EAAAAAP">P</h3><dl class="glossaryGroupList"><dt class="glossaryEntry">]-#AColors[14 - 30], <span id="PrefixSpecitag">Prefix Specitag</span></dt><dd class="glossaryEntry"><p>
+            </p><p>Credits:</p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p></dd></dl></div><div class="ps_glossaryGroup"><h3 class="ps_glossaryGroupHeading" id="ID0EAAAAAP">P</h3><dl class="ps_glossaryGroupList"><dt class="ps_glossaryEntry">]-#AColors[14 - 30], <span id="PrefixSpecitag">Prefix Specitag</span></dt><dd class="ps_glossaryEntry"><p>
               This instruction is used with the text output instruction to display a
               specitag of whoever sent the following message. It is a sub-instruction to ]-.
-            </p><p>Credits:</p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p><p /><div class="relatedEntry">See Also: 
+            </p><p>Credits:</p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p><p /><div class="ps_relatedEntry">See Also: 
 
-					<a href="#PreFixOld">	Prefix the following text line</a>, <a href="#PreFixBadgeOld">	Prefix With Beekin Badge</a></div></dd></dl></div><div class="glossaryGroup"><h3 class="glossaryGroupHeading" id="ID0EAAAAAS">S</h3><dl class="glossaryGroupList"><dt class="glossaryEntry">&lt;, <span id="SpawnAvatar">Spawn Avatar (Furcadia 0.27c)</span></dt><dd class="glossaryEntry"><p>
+					<a href="#PreFixOld">	Prefix the following text line</a>, <a href="#PreFixBadgeOld">	Prefix With Beekin Badge</a></div></dd></dl></div><div class="ps_glossaryGroup"><h3 class="ps_glossaryGroupHeading" id="ID0EAAAAAS">S</h3><dl class="ps_glossaryGroupList"><dt class="ps_glossaryEntry">&lt;, <span id="SpawnAvatar">Spawn Avatar (Furcadia 0.27c)</span></dt><dd class="ps_glossaryEntry"><p>
               &lt; User ID[4]Position X[2]Position Y[2]Avatar Shape #[2]Name[3 - 65]Partial
               Color Code[10]Flags[1]AFK Time[4]
             </p><p>
@@ -74,17 +74,19 @@
               be changed by Dragon speak later on.  Poxssibly with local species 0.
             </p><p>
               CHAR_FLAG_NEW_AVATAR will never appear by itself, It'll allways be accompined by another flag.
-            </p><p>Credits</p><p><a href="http://dev.furcadia.com/docs/023_new_movement.pdf" target="_blank">Furcadia Dev Docs (Furcadia v23)</a></p><p><a href="http://dev.furcadia.com/docs/027_movement.html" target="_blank">Furcadia Dev Docs (Furcadia v27)</a></p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p><div class="relatedEntry">See Also: 
+            </p><p>Credits</p><p><a href="http://dev.furcadia.com/docs/023_new_movement.pdf" target="_blank">Furcadia Dev Docs (Furcadia v23)</a></p><p><a href="http://dev.furcadia.com/docs/027_movement.html" target="_blank">Furcadia Dev Docs (Furcadia v27)</a></p><p><a href="http://ftr.icerealm.org/ref-instructions/" title="Vist FTR" target="_blank">Furcadia Technical Resources</a></p><div class="ps_relatedEntry">See Also: 
 
-					<a href="#"></a></div></dd><dt class="glossaryEntry">]S#, <span id="SSL">SSL/TLS</span></dt><dd class="glossaryEntry"><p>
+					<a href="#"></a></div></dd><dt class="ps_glossaryEntry">]S#, <span id="SSL">SSL/TLS</span></dt><dd class="ps_glossaryEntry"><p>
               Secure Socket Layer/ Transport Layer Security
             </p><p>
               SSL is initiated by the `starttls command, valid at any point in the connection, 
               but recommended before `connect/`account/`token.
             </p><p>]S0 - SSL is disabled, show the user a warning</p><p>]S1 - SSL is enabled, proceed</p><p>]S2 - SSL is disabled, do NOT show the user a warning</p><p>]S3 - reserved</p><p>]S4 - SSL is enabled, but fall back on insecure connection without warning</p></dd></dl></div></div></div>
+        </div>
+      </div>
     </div>
-    <div id="pageFooter" class="pageFooter">
-      <div class="feedbackLink">Send comments on this topic to
+    <div id="OH_footer" class="OH_footer">
+      <div class="OH_feedbacklink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:gerolkae%40hotmail.com?Subject=Furcadia Framework For Third Party Programs">Lead Developer Gerolkae</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");

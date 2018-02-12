@@ -2,6 +2,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style>
     <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
     <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
     <script type="text/javascript" src="../scripts/branding.js"> </script>
@@ -14,32 +15,33 @@
     <meta name="BrandingAware" content="true" />
     
     
-    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
-    <script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
     <script type="text/javascript" src="../scripts/clipboard.min.js"></script>
   </head>
   <body onload="OnLoad('cs')">
     <input type="hidden" id="userDataCache" class="userDataStyle" />
-    <div class="pageHeader" id="PageHeader">Furcadia Framework For Third Party Programs<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
-    <div class="pageBody">
-      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\8d0a663e-8095-408a-b860-f55d2fc3ccbe.htm" title="Furcadia Framework For Third Party Programs" tocid="roottoc">Furcadia Framework For Third Party Programs</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/be87ba4e-409e-42eb-929b-c7b131ab1a19.htm" title="Furcadia Specifications" tocid="be87ba4e-409e-42eb-929b-c7b131ab1a19">Furcadia Specifications</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/c4d53694-c72e-4abc-b376-4cf56d279cbe.htm" title="DragonSpeak Constructor" tocid="c4d53694-c72e-4abc-b376-4cf56d279cbe">DragonSpeak Constructor</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/c66c6136-b446-4383-9f4d-4212fbeb1ea1.htm" title="FileTypes" tocid="c66c6136-b446-4383-9f4d-4212fbeb1ea1">FileTypes</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/95db5c29-0875-459d-b4f1-fd3c35c37fa7.htm" title="Draconic Magician (DS Wizard) Script format" tocid="95db5c29-0875-459d-b4f1-fd3c35c37fa7">Draconic Magician (DS Wizard) Script format</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/c8a00a7c-d0f8-4c4d-b392-710c441dab68.htm" title="DS File" tocid="c8a00a7c-d0f8-4c4d-b392-710c441dab68">DS File</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/02986d13-4fb6-41e9-8259-5a6aba51839d.htm" title="DS Template" tocid="02986d13-4fb6-41e9-8259-5a6aba51839d">DS Template</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent">
-        <table class="titleTable">
+    <div class="OH_outerDiv">
+      <div class="OH_outerContent">
+        <table class="TitleTable">
           <tr>
-            <td class="logoColumn">
+            <td class="OH_tdLogoColumn">
               <img src="../icons/Help.png" />
             </td>
-            <td class="titleColumn">
+            <td class="OH_tdTitleColumn">
               <h1>Draconic Magician (DS Wizard) Script format</h1>
             </td>
+            <td class="OH_tdRunningTitleColumn">Furcadia Framework For Third Party Programs</td>
           </tr>
         </table>
-        <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="introduction"><p>Required introduction</p><p>Credits:</p><ul class="noBullet"><li><p>
+        <div id="mainSection">
+          <div id="mainBody">
+            <span class="introStyle">This stuff is still in the planning stages. Any questions or Comments are welcome.</span> <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="introduction"><p>Required introduction</p><p>Credits:</p><ul style="list-style-type:none;"><li><p>
             Authors Lothus Marque &amp; Gerolkae
-          </p><p>a joint collaboration project</p></li></ul></div><div class="collapsibleAreaRegion" id="Section1"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Optional section title</span></div><div id="ID0RBSection" class="collapsibleSection"><p>Add one or more sections with content</p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID1RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="http://forums.furcadia.com/index.php?furcadia_session_id=150039-kelj-urj&amp;showtopic=51315" target="_blank">Furcadia Forums (DSC Development Thread)</a></div></div></div>
+          </p><p>a joint collaboration project</p></li></ul></div><div class="OH_CollapsibleAreaRegion" id="Section1"><div class="OH_regiontitle">Optional section title</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>Add one or more sections with content</p><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="http://forums.furcadia.com/index.php?furcadia_session_id=150039-kelj-urj&amp;showtopic=51315" target="_blank">Furcadia Forums (DSC Development Thread)</a></div></div>
+        </div>
+      </div>
     </div>
-    <div id="pageFooter" class="pageFooter">
-      <div class="feedbackLink">Send comments on this topic to
+    <div id="OH_footer" class="OH_footer">
+      <div class="OH_feedbacklink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:gerolkae%40hotmail.com?Subject=Furcadia Framework For Third Party Programs">Lead Developer Gerolkae</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
