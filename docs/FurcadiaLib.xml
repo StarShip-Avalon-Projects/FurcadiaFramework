@@ -6540,13 +6540,11 @@
         </markup>
       </param>
       <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Net.DreamInfo.FurreList.GerFurreByName(System.String)</parameter>
-          </include>
-        </markup>
-      </returns>
+            Furre name with a real Furcadia ID if the furre is in the dream
+            Other wise, Furre with Furre Id 0
+            <para />
+            Furre Id of -1 is Undefined
+            </returns>
     </member>
     <member name="M:Furcadia.Net.DreamInfo.FurreList.GetEnumerator">
       <summary>
@@ -6590,7 +6588,10 @@
             Furre ID as integer
             </param>
       <returns>
-            Furre
+            Furre name with a real Furcadia ID if the furre is in the dream
+            Other wise, Furre with with name unknown and the given Furre Id
+            <para />
+            Furre Id of -1 is Undefined
             </returns>
     </member>
     <member name="M:Furcadia.Net.DreamInfo.FurreList.IndexOf(Furcadia.Net.DreamInfo.Furre)">
