@@ -14,7 +14,7 @@
     <Name>Furcadia_Framework_Help</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.6.1</FrameworkVersion>
-    <OutputPath>..\..\wiki\</OutputPath>
+    <OutputPath>..\..\Docs\</OutputPath>
     <HtmlHelpName>Furcadia_Framework_Help</HtmlHelpName>
     <Language>en-US</Language>
     <TransformComponentArguments>
@@ -116,7 +116,7 @@
     </ComponentConfigurations>
     <SaveComponentCacheCapacity>1200</SaveComponentCacheCapacity>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
-    <HelpFileFormat>Markdown</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <IndentHtml>True</IndentHtml>
     <KeepLogFile>True</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
@@ -127,7 +127,7 @@
     <SyntaxFilters>C#, Visual Basic, Visual Basic Usage, Managed C++, F#</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>True</RootNamespaceContainer>
-    <PresentationStyle>Markdown</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>True</Preliminary>
     <NamingMethod>MemberName</NamingMethod>
     <HelpTitle>Furcadia Framework For Third Party Programs</HelpTitle>
