@@ -5484,15 +5484,55 @@
         </markup>
       </summary>
     </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.av_DIR.SW">
+      <summary>
+            South West
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.av_DIR.SE">
+      <summary>
+            South East
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.av_DIR.NW">
+      <summary>
+            The nwNorth West
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.av_DIR.NE">
+      <summary>
+            North East
+            </summary>
+    </member>
     <member name="T:Furcadia.Net.DreamInfo.Avatar.av_POSE">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.DreamInfo.Avatar.av_POSE</parameter>
-          </include>
-        </markup>
-      </summary>
+            Avatar pose
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.av_POSE.AVPOSE_SIT">
+      <summary>
+            Sit
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.av_POSE.AVPOSE_WALK0">
+      <summary>
+            Walk 0
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.av_POSE.AVPOSE_STAND">
+      <summary>
+            Stand
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.av_POSE.AVPOSE_WALK1">
+      <summary>
+            Walk 1
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.av_POSE.AVPOSE_LIE">
+      <summary>
+            Lie
+            </summary>
     </member>
     <member name="T:Furcadia.Net.DreamInfo.Avatar.Frame">
       <summary>
@@ -5506,83 +5546,78 @@
     </member>
     <member name="M:Furcadia.Net.DreamInfo.Avatar.Frame.Clear">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.DreamInfo.Avatar.Frame.Clear</parameter>
-          </include>
-        </markup>
-      </summary>
+            Clears this instance.
+            </summary>
     </member>
     <member name="F:Furcadia.Net.DreamInfo.Avatar.Frame.dir">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.DreamInfo.Avatar.Frame.dir</parameter>
-          </include>
-        </markup>
-      </summary>
+            The dir
+            </summary>
     </member>
     <member name="F:Furcadia.Net.DreamInfo.Avatar.Frame.DS_Number">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.DreamInfo.Avatar.Frame.DS_Number</parameter>
-          </include>
-        </markup>
-      </summary>
+            The ds number
+            </summary>
     </member>
     <member name="F:Furcadia.Net.DreamInfo.Avatar.Frame.gender">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.DreamInfo.Avatar.Frame.gender</parameter>
-          </include>
-        </markup>
-      </summary>
+            The gender
+            </summary>
     </member>
     <member name="F:Furcadia.Net.DreamInfo.Avatar.Frame.pose">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.DreamInfo.Avatar.Frame.pose</parameter>
-          </include>
-        </markup>
-      </summary>
+            The pose
+            </summary>
     </member>
     <member name="F:Furcadia.Net.DreamInfo.Avatar.Frame.Spec">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.DreamInfo.Avatar.Frame.Spec</parameter>
-          </include>
-        </markup>
-      </summary>
+            The spec
+            </summary>
     </member>
     <member name="F:Furcadia.Net.DreamInfo.Avatar.Frame.Wings">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:Furcadia.Net.DreamInfo.Avatar.Frame.Wings</parameter>
-          </include>
-        </markup>
-      </summary>
+            The wings
+            </summary>
     </member>
     <member name="T:Furcadia.Net.DreamInfo.Avatar.FurrePose">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.DreamInfo.Avatar.FurrePose</parameter>
-          </include>
-        </markup>
-      </summary>
+            Furre Poses
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.FurrePose.None">
+      <summary>
+            The none
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.FurrePose.Walk1">
+      <summary>
+            The walk1
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.FurrePose.Stand1">
+      <summary>
+            The stand1
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.FurrePose.Walk2">
+      <summary>
+            The walk2
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.FurrePose.Stand2">
+      <summary>
+            The stand2
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.FurrePose.Sit">
+      <summary>
+            The sit
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.DreamInfo.Avatar.FurrePose.LieDown">
+      <summary>
+            The lie down
+            </summary>
     </member>
     <member name="T:Furcadia.Net.DreamInfo.Badges">
       <summary>
@@ -5600,22 +5635,9 @@
     </member>
     <member name="M:Furcadia.Net.DreamInfo.Badges.GetGroup(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.DreamInfo.Badges.GetGroup(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="tag">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>tag</parameter>
-            <parameter>M:Furcadia.Net.DreamInfo.Badges.GetGroup(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Gets the group.
+            </summary>
+      <param name="tag">The tag.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -5627,22 +5649,9 @@
     </member>
     <member name="M:Furcadia.Net.DreamInfo.Badges.GetLevel(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.DreamInfo.Badges.GetLevel(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="tag">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>tag</parameter>
-            <parameter>M:Furcadia.Net.DreamInfo.Badges.GetLevel(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Gets the level.
+            </summary>
+      <param name="tag">The tag.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -5654,22 +5663,9 @@
     </member>
     <member name="M:Furcadia.Net.DreamInfo.Badges.GetTag(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.DreamInfo.Badges.GetTag(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="tag">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>tag</parameter>
-            <parameter>M:Furcadia.Net.DreamInfo.Badges.GetTag(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Gets the tag.
+            </summary>
+      <param name="tag">The tag.</param>
       <returns>
         <markup>
           <include item="SMCMissingTag">
@@ -5848,7 +5844,8 @@
     </member>
     <member name="T:Furcadia.Net.DreamInfo.Furre">
       <summary>
-            Class for Proxies and bots to use Furrre Data provided by the game server.
+            Class for Proxies and bots to use Furrre Data
+            provided by the game server.
             </summary>
     </member>
     <member name="M:Furcadia.Net.DreamInfo.Furre.#ctor">
@@ -6481,22 +6478,6 @@
       <summary>
              Allow the connection to stay open after the client drops?
              </summary>
-    </member>
-    <member name="T:Furcadia.Net.Options.ServerOptions">
-      <summary>
-            Configuration Settings for the Furcadia Client to connect to
-            <para>
-            We're pretending to be the Furcadia Game Server
-            </para></summary>
-    </member>
-    <member name="M:Furcadia.Net.Options.ServerOptions.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Options.ServerOptions</parameter>
-          </include>
-        </markup>
-      </summary>
     </member>
     <member name="T:Furcadia.Net.Pounce.PounceClient">
       <summary>
