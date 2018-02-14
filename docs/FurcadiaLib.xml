@@ -7458,6 +7458,24 @@
             Gets the query command type.
             </summary>
     </member>
+    <member name="M:Furcadia.Net.Utils.ChannelObjects.QueryChannelObject.ToString">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.Utils.ChannelObjects.QueryChannelObject.ToString</parameter>
+          </include>
+        </markup>
+      </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.Utils.ChannelObjects.QueryChannelObject.ToString</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
     <member name="T:Furcadia.Net.Utils.ChannelObjects.QueryType">
       <summary>
         <markup>
