@@ -13,10 +13,6 @@ bin\nuget.exe restore FurcadiaFramework.sln
 set GIT_STATUS=%ERRORLEVEL% 
 if not %GIT_STATUS%==0 goto fail 
 
-bin\nuget.exe update FurcadiaFramework.sln
-set GIT_STATUS=%ERRORLEVEL% 
-if not %GIT_STATUS%==0 goto fail 
-
 :eof
 exit /b 0
 
