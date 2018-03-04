@@ -118,12 +118,15 @@
       <NamespaceSummaryItem name="Furcadia.Net.Dream" isDocumented="True">Classes specific to Dream management. Use these classes for Tracking furres around the map, thier interactions with the current triggering avatar</NamespaceSummaryItem>
       <NamespaceSummaryItem name="Furcadia.Net.Utils.ServerParser" isDocumented="True" />
     </NamespaceSummaries>
-    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter, AutoDocumentDispose</MissingTags>
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, TypeParameter, AutoDocumentDispose</MissingTags>
     <VisibleItems>Attributes, InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected, EditorBrowsableNever, NonBrowsable</VisibleItems>
     <NewProperty1 />
     <WorkingPath>
     </WorkingPath>
     <PlugInConfigurations>
+      <PlugInConfig id="Documented Entities Only" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
     <AppendMarkdownFileExtensionsToUrls>False</AppendMarkdownFileExtensionsToUrls>
   </PropertyGroup>

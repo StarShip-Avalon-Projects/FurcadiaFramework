@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
+  <HelpKINode Title=" namespace" Url="html/N_.htm" />
   <HelpKINode Title="Accent property" Url="html/P_Furcadia_Movement_ColorString_Accent.htm" />
   <HelpKINode Title="AccountInfo class">
     <HelpKINode Title="AccountInfo Class" Url="html/T_Furcadia_Net_Account_AccountInfo.htm" />
@@ -25,7 +26,6 @@
   <HelpKINode Title="AddSection method" Url="html/M_Furcadia_IO_IniFile_AddSection.htm" />
   <HelpKINode Title="AddSetting method" Url="html/Overload_Furcadia_Text_IniParser_AddSetting.htm" />
   <HelpKINode Title="Adult field" Url="html/F_Furcadia_FurcMap_MapRating_Adult.htm" />
-  <HelpKINode Title="AdultOnly field" Url="html/F_Furcadia_FurcMap_MapRating_AdultOnly.htm" />
   <HelpKINode Title="AfkTime property" Url="html/P_Furcadia_Net_DreamInfo_Furre_AfkTime.htm" />
   <HelpKINode Title="AllowDreamURL property" Url="html/P_Furcadia_FurcMap_Map_AllowDreamURL.htm" />
   <HelpKINode Title="AllowJoinSummon property" Url="html/P_Furcadia_FurcMap_Map_AllowJoinSummon.htm" />
@@ -33,7 +33,6 @@
   <HelpKINode Title="AllowLeadFollow property" Url="html/P_Furcadia_FurcMap_Map_AllowLeadFollow.htm" />
   <HelpKINode Title="AllowShouting property" Url="html/P_Furcadia_FurcMap_Map_AllowShouting.htm" />
   <HelpKINode Title="AnimatedMoveAvatar enumeration member" Url="html/T_Furcadia_Net_ServerInstructionType.htm" />
-  <HelpKINode Title="AOClean field" Url="html/F_Furcadia_FurcMap_MapRating_AOClean.htm" />
   <HelpKINode Title="ApiKey property" Url="html/P_Furcadia_Net_Account_AccountInfo_ApiKey.htm" />
   <HelpKINode Title="ArrayExtensions class">
     <HelpKINode Title="ArrayExtensions Class" Url="html/T_Furcadia_Extensions_ArrayExtensions.htm" />
@@ -555,15 +554,22 @@
     <HelpKINode Title="Variable.Equals Method " Url="html/Overload_Furcadia_Net_Web_Variable_Equals.htm" />
     <HelpKINode Title="VariableEqualityComparer.Equals Method " Url="html/Overload_Furcadia_Net_Web_VariableEqualityComparer_Equals.htm" />
   </HelpKINode>
-  <HelpKINode Title="Error enumeration member" Url="html/T_Furcadia_Logging_Level.htm" />
   <HelpKINode Title="error enumeration member" Url="html/T_Furcadia_Net_ConnectionPhase.htm" />
+  <HelpKINode Title="Error enumeration member" Url="html/T_Furcadia_Logging_Level.htm" />
   <HelpKINode Title="Error event">
     <HelpKINode Title="ClientBase.Error Event" Url="html/E_Furcadia_Net_DirectConnection_ClientBase_Error.htm" />
     <HelpKINode Title="NetProxy.Error Event" Url="html/E_Furcadia_Net_NetProxy_Error.htm" />
   </HelpKINode>
   <HelpKINode Title="Error method" Url="html/Overload_Furcadia_Logging_Logger_Error.htm" />
   <HelpKINode Title="ErrorEnabled property" Url="html/P_Furcadia_Logging_Logger_ErrorEnabled.htm" />
-  <HelpKINode Title="Everyone field" Url="html/F_Furcadia_FurcMap_MapRating_Everyone.htm" />
+  <HelpKINode Title="EscapeForCSharp method" Url="html/Overload_StringExtensions_EscapeForCSharp.htm" />
+  <HelpKINode Title="ExceptionExtensions class">
+    <HelpKINode Title="ExceptionExtensions Class" Url="html/T_ExceptionExtensions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ExceptionExtensions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExceptionExtensions.Flatten method" Url="html/M_ExceptionExtensions_Flatten.htm" />
+  <HelpKINode Title="ExceptionExtensions.Log method" Url="html/Overload_ExceptionExtensions_Log.htm" />
+  <HelpKINode Title="ExceptionExtensions.LogMessage method" Url="html/Overload_ExceptionExtensions_LogMessage.htm" />
   <HelpKINode Title="Eye property" Url="html/P_Furcadia_Movement_ColorString_Eye.htm" />
   <HelpKINode Title="EyeRemap field" Url="html/F_Furcadia_Drawing_Graphics_Remapper_EyeRemap.htm" />
   <HelpKINode Title="Fails method" Url="html/Overload_Furcadia_Logging_Logger_Fails.htm" />
@@ -579,6 +585,7 @@
   <HelpKINode Title="FileLogOutput.Log method" Url="html/M_Furcadia_Logging_FileLogOutput_Log.htm" />
   <HelpKINode Title="FileName property" Url="html/P_Furcadia_Net_DreamInfo_Dream_FileName.htm" />
   <HelpKINode Title="Flags field" Url="html/F_Furcadia_Drawing_Graphics_Shape_Flags.htm" />
+  <HelpKINode Title="Flatten method" Url="html/M_ExceptionExtensions_Flatten.htm" />
   <HelpKINode Title="floorNumber field">
     <HelpKINode Title="MapPosition.floorNumber Field" Url="html/F_Furcadia_FurcMap_MapPosition_floorNumber.htm" />
     <HelpKINode Title="MapTile.floorNumber Field" Url="html/F_Furcadia_FurcMap_MapTile_floorNumber.htm" />
@@ -594,8 +601,8 @@
   <HelpKINode Title="Frame enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="Frame structure">
     <HelpKINode Title="Frame Structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm" />
-    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_DreamInfo_Avatar_Frame.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_DreamInfo_Avatar_Frame.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
   </HelpKINode>
@@ -646,8 +653,6 @@
   <HelpKINode Title="Furcadia.FurcMap.MapRating class" Url="html/T_Furcadia_FurcMap_MapRating.htm" />
   <HelpKINode Title="Furcadia.FurcMap.MapTile class" Url="html/T_Furcadia_FurcMap_MapTile.htm" />
   <HelpKINode Title="Furcadia.IO namespace" Url="html/N_Furcadia_IO.htm" />
-  <HelpKINode Title="Furcadia.IO.FurcadiaIOException class" Url="html/T_Furcadia_IO_FurcadiaIOException.htm" />
-  <HelpKINode Title="Furcadia.IO.FurcadiaNotFoundException class" Url="html/T_Furcadia_IO_FurcadiaNotFoundException.htm" />
   <HelpKINode Title="Furcadia.IO.IniFile class" Url="html/T_Furcadia_IO_IniFile.htm" />
   <HelpKINode Title="Furcadia.IO.IniFile.IniSection class" Url="html/T_Furcadia_IO_IniFile_IniSection.htm" />
   <HelpKINode Title="Furcadia.IO.IniFile.IniSection.IniKey class" Url="html/T_Furcadia_IO_IniFile_IniSection_IniKey.htm" />
@@ -760,14 +765,6 @@
   <HelpKINode Title="FurcadiaClientIsRunning property" Url="html/P_Furcadia_Net_NetProxy_FurcadiaClientIsRunning.htm" />
   <HelpKINode Title="FurcadiaFilePaths field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaFilePaths.htm" />
   <HelpKINode Title="FurcadiaInstallPath property" Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaInstallPath.htm" />
-  <HelpKINode Title="FurcadiaIOException class">
-    <HelpKINode Title="FurcadiaIOException Class" Url="html/T_Furcadia_IO_FurcadiaIOException.htm" />
-    <HelpKINode Title="constructor" Url="html/Overload_Furcadia_IO_FurcadiaIOException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Furcadia_IO_FurcadiaIOException.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_IO_FurcadiaIOException.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_IO_FurcadiaIOException.htm" />
-  </HelpKINode>
-  <HelpKINode Title="FurcadiaIOException.FurcadiaIOException constructor" Url="html/Overload_Furcadia_IO_FurcadiaIOException__ctor.htm" />
   <HelpKINode Title="FurcadiaLocaldirPath property" Url="html/P_Furcadia_IO_Paths_FurcadiaLocaldirPath.htm" />
   <HelpKINode Title="FurcadiaMarkup class">
     <HelpKINode Title="FurcadiaMarkup Class" Url="html/T_Furcadia_Text_FurcadiaMarkup.htm" />
@@ -797,14 +794,6 @@
   <HelpKINode Title="FurcadiaMarkup.YouSayFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouSayFilter.htm" />
   <HelpKINode Title="FurcadiaMarkup.YouShoutFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouShoutFilter.htm" />
   <HelpKINode Title="FurcadiaMarkup.YouWhisperRegex field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouWhisperRegex.htm" />
-  <HelpKINode Title="FurcadiaNotFoundException class">
-    <HelpKINode Title="FurcadiaNotFoundException Class" Url="html/T_Furcadia_IO_FurcadiaNotFoundException.htm" />
-    <HelpKINode Title="constructor" Url="html/Overload_Furcadia_IO_FurcadiaNotFoundException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Furcadia_IO_FurcadiaNotFoundException.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_IO_FurcadiaNotFoundException.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_IO_FurcadiaNotFoundException.htm" />
-  </HelpKINode>
-  <HelpKINode Title="FurcadiaNotFoundException.FurcadiaNotFoundException constructor" Url="html/Overload_Furcadia_IO_FurcadiaNotFoundException__ctor.htm" />
   <HelpKINode Title="FurcadiaPaletteException class">
     <HelpKINode Title="FurcadiaPaletteException Class" Url="html/T_Furcadia_Drawing_Graphics_FurcadiaPaletteException.htm" />
     <HelpKINode Title="constructor" Url="html/M_Furcadia_Drawing_Graphics_FurcadiaPaletteException__ctor.htm" />
@@ -983,10 +972,7 @@
   <HelpKINode Title="GetRegionAt method" Url="html/M_Furcadia_FurcMap_Map_GetRegionAt.htm" />
   <HelpKINode Title="GetSection method" Url="html/M_Furcadia_IO_IniFile_GetSection.htm" />
   <HelpKINode Title="GetSetting method" Url="html/M_Furcadia_Text_IniParser_GetSetting.htm" />
-  <HelpKINode Title="GetString method">
-    <HelpKINode Title="INetMessage.GetString Method " Url="html/M_Furcadia_Net_INetMessage_GetString.htm" />
-    <HelpKINode Title="NetMessage.GetString Method " Url="html/M_Furcadia_Net_NetMessage_GetString.htm" />
-  </HelpKINode>
+  <HelpKINode Title="GetString method" Url="html/M_Furcadia_Net_INetMessage_GetString.htm" />
   <HelpKINode Title="Gettable enumeration member" Url="html/T_Furcadia_Drawing_Graphics_Shape_ShapeFlags.htm" />
   <HelpKINode Title="GetTag method" Url="html/M_Furcadia_Net_DreamInfo_Badges_GetTag.htm" />
   <HelpKINode Title="GetValue method" Url="html/M_Furcadia_IO_IniFile_IniSection_IniKey_GetValue.htm" />
@@ -1014,7 +1000,6 @@
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Helper.htm" />
   </HelpKINode>
   <HelpKINode Title="Helper.CharToDescTag method" Url="html/M_Furcadia_Drawing_Helper_CharToDescTag.htm" />
-  <HelpKINode Title="Helper.ToBitmapArray method" Url="html/M_Furcadia_Drawing_Helper_ToBitmapArray.htm" />
   <HelpKINode Title="HideAvatar enumeration member" Url="html/T_Furcadia_Net_ServerInstructionType.htm" />
   <HelpKINode Title="Iconfilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_Iconfilter.htm" />
   <HelpKINode Title="ID property" Url="html/P_Furcadia_Net_Proxy_ProxySession_Rep_ID.htm" />
@@ -1146,6 +1131,7 @@
     <HelpKINode Title="IDream.IsModern Property " Url="html/P_Furcadia_Net_DreamInfo_IDream_IsModern.htm" />
     <HelpKINode Title="LoadDream.IsModern Property " Url="html/P_Furcadia_Net_Utils_ServerParser_LoadDream_IsModern.htm" />
   </HelpKINode>
+  <HelpKINode Title="IsNullOrBlank method" Url="html/M_StringExtensions_IsNullOrBlank.htm" />
   <HelpKINode Title="IsOdd method" Url="html/M_Furcadia_Drawing_VisibleArea_IsOdd.htm" />
   <HelpKINode Title="IsPermanent property">
     <HelpKINode Title="Dream.IsPermanent Property " Url="html/P_Furcadia_Net_DreamInfo_Dream_IsPermanent.htm" />
@@ -1211,6 +1197,7 @@
   <HelpKINode Title="Location property" Url="html/P_Furcadia_Net_DreamInfo_Furre_Location.htm" />
   <HelpKINode Title="Log method">
     <HelpKINode Title="ConsoleLogOutput.Log Method " Url="html/M_Furcadia_Logging_ConsoleLogOutput_Log.htm" />
+    <HelpKINode Title="ExceptionExtensions.Log Method " Url="html/Overload_ExceptionExtensions_Log.htm" />
     <HelpKINode Title="FileLogOutput.Log Method " Url="html/M_Furcadia_Logging_FileLogOutput_Log.htm" />
     <HelpKINode Title="ILogOutput.Log Method " Url="html/M_Furcadia_Logging_ILogOutput_Log.htm" />
     <HelpKINode Title="MultiLogOutput.Log Method " Url="html/M_Furcadia_Logging_MultiLogOutput_Log.htm" />
@@ -1240,6 +1227,7 @@
   <HelpKINode Title="Logger.SuppressSpam property" Url="html/P_Furcadia_Logging_Logger_SuppressSpam.htm" />
   <HelpKINode Title="Logger.Warn method" Url="html/Overload_Furcadia_Logging_Logger_Warn.htm" />
   <HelpKINode Title="Logger.WarningEnabled property" Url="html/P_Furcadia_Logging_Logger_WarningEnabled.htm" />
+  <HelpKINode Title="LogMessage method" Url="html/Overload_ExceptionExtensions_LogMessage.htm" />
   <HelpKINode Title="LogMessage structure">
     <HelpKINode Title="LogMessage Structure" Url="html/T_Furcadia_Logging_LogMessage.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Logging_LogMessage.htm" />
@@ -1318,11 +1306,6 @@
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_FurcMap_MapRating.htm" />
   </HelpKINode>
   <HelpKINode Title="MapRating.Adult field" Url="html/F_Furcadia_FurcMap_MapRating_Adult.htm" />
-  <HelpKINode Title="MapRating.AdultOnly field" Url="html/F_Furcadia_FurcMap_MapRating_AdultOnly.htm" />
-  <HelpKINode Title="MapRating.AOClean field" Url="html/F_Furcadia_FurcMap_MapRating_AOClean.htm" />
-  <HelpKINode Title="MapRating.Everyone field" Url="html/F_Furcadia_FurcMap_MapRating_Everyone.htm" />
-  <HelpKINode Title="MapRating.Mature field" Url="html/F_Furcadia_FurcMap_MapRating_Mature.htm" />
-  <HelpKINode Title="MapRating.Teen field" Url="html/F_Furcadia_FurcMap_MapRating_Teen.htm" />
   <HelpKINode Title="MapTile class">
     <HelpKINode Title="MapTile Class" Url="html/T_Furcadia_FurcMap_MapTile.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_Furcadia_FurcMap_MapTile__ctor.htm" />
@@ -1340,7 +1323,6 @@
   <HelpKINode Title="MapTile.y field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
   <HelpKINode Title="Markings property" Url="html/P_Furcadia_Movement_ColorString_Markings.htm" />
   <HelpKINode Title="MarkingsRemap field" Url="html/F_Furcadia_Drawing_Graphics_Remapper_MarkingsRemap.htm" />
-  <HelpKINode Title="Mature field" Url="html/F_Furcadia_FurcMap_MapRating_Mature.htm" />
   <HelpKINode Title="message field" Url="html/F_Furcadia_Logging_LogMessage_message.htm" />
   <HelpKINode Title="Message property">
     <HelpKINode Title="Furre.Message Property " Url="html/P_Furcadia_Net_DreamInfo_Furre_Message.htm" />
@@ -1429,9 +1411,7 @@
     <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_NetMessage__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_NetMessage.htm" />
   </HelpKINode>
-  <HelpKINode Title="NetMessage.GetString method" Url="html/M_Furcadia_Net_NetMessage_GetString.htm" />
   <HelpKINode Title="NetMessage.NetMessage constructor" Url="html/M_Furcadia_Net_NetMessage__ctor.htm" />
-  <HelpKINode Title="NetMessage.Write method" Url="html/Overload_Furcadia_Net_NetMessage_Write.htm" />
   <HelpKINode Title="NetProxy class">
     <HelpKINode Title="NetProxy Class" Url="html/T_Furcadia_Net_NetProxy.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_Furcadia_Net_NetProxy__ctor.htm" />
@@ -1881,8 +1861,8 @@
     <HelpKINode Title="NetProxy.ServerData2 Event" Url="html/E_Furcadia_Net_NetProxy_ServerData2.htm" />
     <HelpKINode Title="ProxySession.ServerData2 Event" Url="html/E_Furcadia_Net_Proxy_ProxySession_ServerData2.htm" />
   </HelpKINode>
-  <HelpKINode Title="ServerDisconnected event" Url="html/E_Furcadia_Net_NetProxy_ServerDisconnected.htm" />
   <HelpKINode Title="ServerDisConnected event" Url="html/E_Furcadia_Net_DirectConnection_ClientBase_ServerDisConnected.htm" />
+  <HelpKINode Title="ServerDisconnected event" Url="html/E_Furcadia_Net_NetProxy_ServerDisconnected.htm" />
   <HelpKINode Title="ServerInstruction property">
     <HelpKINode Title="NetServerEventArgs.ServerInstruction Property " Url="html/P_Furcadia_Net_NetServerEventArgs_ServerInstruction.htm" />
     <HelpKINode Title="ParseServerArgs.ServerInstruction Property " Url="html/P_Furcadia_Net_ParseServerArgs_ServerInstruction.htm" />
@@ -1972,8 +1952,8 @@
   <HelpKINode Title="SpecNum method" Url="html/M_Furcadia_Net_DreamInfo_Avatar_SpecNum.htm" />
   <HelpKINode Title="Stand1 enumeration member" Url="html/T_Furcadia_Net_DreamInfo_Avatar_FurrePose.htm" />
   <HelpKINode Title="Stand2 enumeration member" Url="html/T_Furcadia_Net_DreamInfo_Avatar_FurrePose.htm" />
-  <HelpKINode Title="StandAlone property" Url="html/P_Furcadia_Net_Proxy_ProxySession_StandAlone.htm" />
   <HelpKINode Title="Standalone property" Url="html/P_Furcadia_Net_Options_ProxyOptions_Standalone.htm" />
+  <HelpKINode Title="StandAlone property" Url="html/P_Furcadia_Net_Proxy_ProxySession_StandAlone.htm" />
   <HelpKINode Title="Status property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_Status.htm" />
   <HelpKINode Title="StepBlock structure">
     <HelpKINode Title="StepBlock Structure" Url="html/T_Furcadia_Drawing_Graphics_StepBlock.htm" />
@@ -1988,6 +1968,14 @@
   <HelpKINode Title="Stop enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="String to Base220 conversion" Url="html/M_Furcadia_Text_Base220_op_Implicit_5.htm" />
   <HelpKINode Title="String to Base95 conversion" Url="html/M_Furcadia_Text_Base95_op_Implicit_3.htm" />
+  <HelpKINode Title="StringExtensions class">
+    <HelpKINode Title="StringExtensions Class" Url="html/T_StringExtensions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_StringExtensions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StringExtensions.EscapeForCSharp method" Url="html/Overload_StringExtensions_EscapeForCSharp.htm" />
+  <HelpKINode Title="StringExtensions.IsNullOrBlank method" Url="html/M_StringExtensions_IsNullOrBlank.htm" />
+  <HelpKINode Title="StringExtensions.ToFurcadiaShortName method" Url="html/M_StringExtensions_ToFurcadiaShortName.htm" />
+  <HelpKINode Title="StringExtensions.ToStrippedFurcadiaMarkupString method" Url="html/M_StringExtensions_ToStrippedFurcadiaMarkupString.htm" />
   <HelpKINode Title="Subtraction operator">
     <HelpKINode Title="Base220.Subtraction Operator " Url="html/M_Furcadia_Text_Base220_op_Subtraction.htm" />
     <HelpKINode Title="Base95.Subtraction Operator " Url="html/M_Furcadia_Text_Base95_op_Subtraction.htm" />
@@ -1997,7 +1985,6 @@
   <HelpKINode Title="SuppressSpam property" Url="html/P_Furcadia_Logging_Logger_SuppressSpam.htm" />
   <HelpKINode Title="SW enumeration member" Url="html/T_Furcadia_Net_DreamInfo_Avatar_AvatarDirection.htm" />
   <HelpKINode Title="SyncRoot property" Url="html/P_Furcadia_Net_DreamInfo_FurreList_SyncRoot.htm" />
-  <HelpKINode Title="Teen field" Url="html/F_Furcadia_FurcMap_MapRating_Teen.htm" />
   <HelpKINode Title="TemporaryDreamsPath property" Url="html/P_Furcadia_IO_Paths_TemporaryDreamsPath.htm" />
   <HelpKINode Title="TemporaryFilesPath property" Url="html/P_Furcadia_IO_Paths_TemporaryFilesPath.htm" />
   <HelpKINode Title="TemporaryPatchesPath property" Url="html/P_Furcadia_IO_Paths_TemporaryPatchesPath.htm" />
@@ -2014,12 +2001,12 @@
     <HelpKINode Title="DreamBookmark.Title Property " Url="html/P_Furcadia_Net_Utils_ServerParser_DreamBookmark_Title.htm" />
   </HelpKINode>
   <HelpKINode Title="ToBitmap method" Url="html/M_Furcadia_Drawing_Graphics_FurcadiaShapes_ToBitmap.htm" />
-  <HelpKINode Title="ToBitmapArray method" Url="html/M_Furcadia_Drawing_Helper_ToBitmapArray.htm" />
   <HelpKINode Title="ToByteArray method">
     <HelpKINode Title="Base220.ToByteArray Method " Url="html/Overload_Furcadia_Text_Base220_ToByteArray.htm" />
     <HelpKINode Title="Base95.ToByteArray Method " Url="html/Overload_Furcadia_Text_Base95_ToByteArray.htm" />
   </HelpKINode>
   <HelpKINode Title="ToFurcadiaID method" Url="html/Overload_Furcadia_Net_DreamInfo_Furre_ToFurcadiaID.htm" />
+  <HelpKINode Title="ToFurcadiaShortName method" Url="html/M_StringExtensions_ToFurcadiaShortName.htm" />
   <HelpKINode Title="ToIList property" Url="html/P_Furcadia_Net_DreamInfo_FurreList_ToIList.htm" />
   <HelpKINode Title="ToString method">
     <HelpKINode Title="ArrayExtensions.ToString Method " Url="html/Overload_Furcadia_Extensions_ArrayExtensions_ToString.htm" />
@@ -2037,6 +2024,7 @@
     <HelpKINode Title="QueryChannelObject.ToString Method " Url="html/M_Furcadia_Net_Utils_ChannelObjects_QueryChannelObject_ToString.htm" />
     <HelpKINode Title="Variable.ToString Method " Url="html/M_Furcadia_Net_Web_Variable_ToString.htm" />
   </HelpKINode>
+  <HelpKINode Title="ToStrippedFurcadiaMarkupString method" Url="html/M_StringExtensions_ToStrippedFurcadiaMarkupString.htm" />
   <HelpKINode Title="TotalFurresOnline property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_TotalFurresOnline.htm" />
   <HelpKINode Title="TroatTiredEventHandler field">
     <HelpKINode Title="ProxySession.TroatTiredEventHandler Field" Url="html/F_Furcadia_Net_Proxy_ProxySession_TroatTiredEventHandler.htm" />
@@ -2185,15 +2173,12 @@
   <HelpKINode Title="Width property" Url="html/P_Furcadia_FurcMap_Map_Width.htm" />
   <HelpKINode Title="Wings field" Url="html/F_Furcadia_Net_DreamInfo_Avatar_Frame_Wings.htm" />
   <HelpKINode Title="Wings property" Url="html/P_Furcadia_Movement_ColorString_Wings.htm" />
-  <HelpKINode Title="Write method">
-    <HelpKINode Title="INetMessage.Write Method " Url="html/Overload_Furcadia_Net_INetMessage_Write.htm" />
-    <HelpKINode Title="NetMessage.Write Method " Url="html/Overload_Furcadia_Net_NetMessage_Write.htm" />
-  </HelpKINode>
-  <HelpKINode Title="X field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
+  <HelpKINode Title="Write method" Url="html/Overload_Furcadia_Net_INetMessage_Write.htm" />
   <HelpKINode Title="x field">
     <HelpKINode Title="MapPosition.x Field" Url="html/F_Furcadia_FurcMap_MapPosition_x.htm" />
     <HelpKINode Title="MapTile.x Field" Url="html/F_Furcadia_FurcMap_MapTile_x.htm" />
   </HelpKINode>
+  <HelpKINode Title="X field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
   <HelpKINode Title="X property" Url="html/P_Furcadia_Drawing_FurrePosition_X.htm" />
   <HelpKINode Title="y field">
     <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
