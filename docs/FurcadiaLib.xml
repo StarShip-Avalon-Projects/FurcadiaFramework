@@ -2982,6 +2982,237 @@
             Wings
             </summary>
     </member>
+    <member name="T:Furcadia.Net.ClientBase">
+      <summary>
+            Furcadia base proxy connect between Client and Server. This is a low
+            level class that handles the raw connections and furcadia
+            proxy/firewall settings.
+            <para>
+            We don't have TLS/SSL handling here, so therefore, Furcadia Settings
+            for this are disabled
+            </para></summary>
+    </member>
+    <member name="M:Furcadia.Net.ClientBase.#ctor">
+      <summary>
+            Connect to game server with default settings
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.ClientBase.#ctor(Furcadia.Net.Options.ClientOptions)">
+      <summary>
+            Connect to Furcadia with Proxy Options
+            </summary>
+      <param name="Options">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Options</parameter>
+            <parameter>M:Furcadia.Net.ClientBase.#ctor(Furcadia.Net.Options.ClientOptions)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.ClientBase.#ctor(System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.ClientBase</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="port">
+            gameserver port
+            </param>
+      <param name="lport">
+            localhost port
+            </param>
+    </member>
+    <member name="M:Furcadia.Net.ClientBase.#ctor(System.String,System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.ClientBase</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="host">
+            Game server host
+            </param>
+      <param name="port">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>port</parameter>
+            <parameter>M:Furcadia.Net.ClientBase.#ctor(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.ClientBase.BufferCapacity">
+      <summary>
+            Gets the buffer capacity.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.ClientBase.CurrentConnectionAttempt">
+      <summary>
+            Gets the current connection attempt.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.ClientBase.Disconnect">
+      <summary>
+            Disconnect from the Furcadia gameserver and Furcadia client
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.ClientBase.Dispose">
+      <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.ClientBase.EncoderPage">
+      <summary>
+            Encodig
+            <para />
+            DEFAULT: Windows 1252
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.ClientBase.Error">
+      <summary>
+            This is triggered when a handled Exception is thrown.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.ClientBase.FurcadiaUtilities">
+      <summary>
+            Furcadia Utilities
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.ClientBase.IsServerSocketConnected">
+      <summary>
+            Check our connection status to the game server
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.ClientBase.Options">
+      <summary>
+            Gets or sets the options.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.ClientBase.SendError(System.Exception,System.Object)">
+      <summary>
+            send errors to the error handler
+            </summary>
+      <param name="e">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>e</parameter>
+            <parameter>M:Furcadia.Net.ClientBase.SendError(System.Exception,System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="o">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>o</parameter>
+            <parameter>M:Furcadia.Net.ClientBase.SendError(System.Exception,System.Object)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.ClientBase.SendToServer(Furcadia.Net.INetMessage)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.ClientBase.SendToServer(Furcadia.Net.INetMessage)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="message">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>message</parameter>
+            <parameter>M:Furcadia.Net.ClientBase.SendToServer(Furcadia.Net.INetMessage)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.ClientBase.SendToServer(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:Furcadia.Net.ClientBase.SendToServer(System.String)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="message">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>message</parameter>
+            <parameter>M:Furcadia.Net.ClientBase.SendToServer(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="E:Furcadia.Net.ClientBase.ServerConnected">
+      <summary>
+            Occurs when [server connected].
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.ClientBase.ServerData2">
+      <summary>
+            This is triggered when the Server sends data to the client.
+            Doesn't expect a return value.
+            </summary>
+    </member>
+    <member name="E:Furcadia.Net.ClientBase.ServerDisconnected">
+      <summary>
+            This is triggered when the Server Disconnects
+             </summary>
+    </member>
+    <member name="T:Furcadia.Net.ClientBase.ActionDelegate">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.ClientBase.ActionDelegate</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.ClientBase.DataEventHandler">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.ClientBase.DataEventHandler</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.ClientBase.DataEventHandler2">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.ClientBase.DataEventHandler2</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:Furcadia.Net.ClientBase.ErrorEventHandler">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Furcadia.Net.ClientBase.ErrorEventHandler</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="e">The e.</param>
+      <param name="o">The o.</param>
+    </member>
     <member name="T:Furcadia.Net.ConnectionPhase">
       <summary>
             Connection Status
@@ -3115,6 +3346,92 @@
             Status of the Furcadia Client Connection
             </summary>
     </member>
+    <member name="T:Furcadia.Net.NetConnectionException">
+      <summary>
+            Desctiption of NetConnectionException.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetConnectionException.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.NetConnectionException</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.NetConnectionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.NetConnectionException</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="info">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>info</parameter>
+            <parameter>M:Furcadia.Net.NetConnectionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="context">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>context</parameter>
+            <parameter>M:Furcadia.Net.NetConnectionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetConnectionException.#ctor(System.String)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.NetConnectionException</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="message">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>message</parameter>
+            <parameter>M:Furcadia.Net.NetConnectionException.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:Furcadia.Net.NetConnectionException.#ctor(System.String,System.Exception)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.NetConnectionException</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="message">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>message</parameter>
+            <parameter>M:Furcadia.Net.NetConnectionException.#ctor(System.String,System.Exception)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="innerException">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>innerException</parameter>
+            <parameter>M:Furcadia.Net.NetConnectionException.#ctor(System.String,System.Exception)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
     <member name="T:Furcadia.Net.NetMessage">
       <summary>
             Default.
@@ -3226,11 +3543,6 @@
             Localhost port
             </param>
     </member>
-    <member name="P:Furcadia.Net.NetProxy.BufferCapacity">
-      <summary>
-            Gets the buffer capacity.
-            </summary>
-    </member>
     <member name="E:Furcadia.Net.NetProxy.ClientConnected">
       <summary>
             Occurs when [client connected].
@@ -3272,11 +3584,6 @@
             Client executable '" + options.FurcadiaProcess + "' not found.
             </exception>
     </member>
-    <member name="P:Furcadia.Net.NetProxy.CurrentConnectionAttempt">
-      <summary>
-            Gets the current connection attempt.
-            </summary>
-    </member>
     <member name="M:Furcadia.Net.NetProxy.DisconnectClientStream">
       <summary>
             Disconnect from the Furcadia client
@@ -3290,18 +3597,6 @@
     <member name="M:Furcadia.Net.NetProxy.Dispose">
       <summary>
             Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.NetProxy.EncoderPage">
-      <summary>
-            Encodig
-            <para />
-            DEFAULT: Windows 1252
-            </summary>
-    </member>
-    <member name="E:Furcadia.Net.NetProxy.Error">
-      <summary>
-            This is triggered when a handled Exception is thrown.
             </summary>
     </member>
     <member name="P:Furcadia.Net.NetProxy.FurcadiaClientIsRunning">
@@ -3324,38 +3619,10 @@
             Gets a value indicating whether this instance is client socket connected.
             </summary>
     </member>
-    <member name="P:Furcadia.Net.NetProxy.IsServerSocketConnected">
-      <summary>
-            Check our connection status to the game server
-            </summary>
-    </member>
     <member name="P:Furcadia.Net.NetProxy.Options">
       <summary>
             Gets or sets the options.
             </summary>
-    </member>
-    <member name="M:Furcadia.Net.NetProxy.SendError(System.Exception,System.Object)">
-      <summary>
-            send errors to the error handler
-            </summary>
-      <param name="e">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>e</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.SendError(System.Exception,System.Object)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="o">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>o</parameter>
-            <parameter>M:Furcadia.Net.NetProxy.SendError(System.Exception,System.Object)</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="M:Furcadia.Net.NetProxy.SendToClient(Furcadia.Net.INetMessage)">
       <summary>
@@ -3438,58 +3705,10 @@
             Occurs when [server connected].
             </summary>
     </member>
-    <member name="E:Furcadia.Net.NetProxy.ServerData2">
-      <summary>
-            This is triggered when the Server sends data to the client.
-            Doesn't expect a return value.
-            </summary>
-    </member>
     <member name="E:Furcadia.Net.NetProxy.ServerDisconnected">
       <summary>
             This is triggered when the Server Disconnects
              </summary>
-    </member>
-    <member name="T:Furcadia.Net.NetProxy.ActionDelegate">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.NetProxy.ActionDelegate</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="T:Furcadia.Net.NetProxy.DataEventHandler">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.NetProxy.DataEventHandler</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="T:Furcadia.Net.NetProxy.DataEventHandler2">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.NetProxy.DataEventHandler2</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="T:Furcadia.Net.NetProxy.ErrorEventHandler">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.NetProxy.ErrorEventHandler</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="e">The e.</param>
-      <param name="o">The o.</param>
     </member>
     <member name="T:Furcadia.Net.NetProxyException">
       <summary>
@@ -3857,239 +4076,6 @@
             Costume to use with Selected Character
             </summary>
     </member>
-    <member name="T:Furcadia.Net.DirectConnection.ClientBase">
-      <summary>
-            NetConnection
-            <para>
-            Derived from ProxyBase for Stand alone connections
-            </para></summary>
-    </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor">
-      <summary>
-            Default Constructor
-            <para>
-            Load furcadia defaults from %appData%\settings.ini
-            </para></summary>
-    </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.DirectConnection.ClientBase</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="port">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>port</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.Net.IPAddress,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.DirectConnection.ClientBase</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="ip">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>ip</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.Net.IPAddress,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="port">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>port</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.Net.IPAddress,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.String,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.DirectConnection.ClientBase</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="host">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>host</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.String,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="port">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>port</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.#ctor(System.String,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.Net.DirectConnection.ClientBase.BufferCapacity">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Furcadia.Net.DirectConnection.ClientBase.BufferCapacity</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.Connect">
-      <summary>
-            Connects to the Furcadia Server and starts the mini proxy.
-            </summary>
-    </member>
-    <member name="E:Furcadia.Net.DirectConnection.ClientBase.Connected">
-      <summary>
-            This is triggered when the
-             </summary>
-    </member>
-    <member name="P:Furcadia.Net.DirectConnection.ClientBase.DefaultSettings">
-      <summary>
-            Gets the default settings.
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.Dispose">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocDispose">
-            <parameter>Furcadia.Net.DirectConnection.ClientBase</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.Dispose(System.Boolean)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocDisposeBool">
-            <parameter>Furcadia.Net.DirectConnection.ClientBase</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="disposing">
-        <markup>
-          <include item="SMCAutoDocDisposeParam">
-            <parameter>Furcadia.Net.DirectConnection.ClientBase</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.Net.DirectConnection.ClientBase.EncoderPage">
-      <summary>
-            Set the Encoder to win 1252 encoding
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DirectConnection.ClientBase.EndPoint">
-      <summary>
-            Game Server IP/Port
-            </summary>
-    </member>
-    <member name="E:Furcadia.Net.DirectConnection.ClientBase.Error">
-      <summary>
-            This is triggered when a handled Exception is thrown.
-            </summary>
-    </member>
-    <member name="F:Furcadia.Net.DirectConnection.ClientBase.FurcadiaUtilities">
-      <summary>
-            Furcadia Utilities
-            </summary>
-    </member>
-    <member name="F:Furcadia.Net.DirectConnection.ClientBase.FurcPath">
-      <summary>
-            Furcadia Path Collection
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DirectConnection.ClientBase.IsServerConnected">
-      <summary>
-            Proxy is connected, or not.
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.SendServer(Furcadia.Net.INetMessage)">
-      <summary>
-            Sends the text to the game server
-            </summary>
-      <param name="message">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>message</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.SendServer(Furcadia.Net.INetMessage)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.SendServer(System.String)">
-      <summary>
-            Sends Data to the Game server
-            </summary>
-      <param name="message">
-            string to send to game server
-            </param>
-    </member>
-    <member name="E:Furcadia.Net.DirectConnection.ClientBase.ServerData">
-      <summary>
-            This is triggered when the Server sends data to the client.
-            Doesn't expect a return value.
-            </summary>
-    </member>
-    <member name="E:Furcadia.Net.DirectConnection.ClientBase.ServerDisConnected">
-      <summary>
-            This is triggered when the Server Disconnects
-             </summary>
-    </member>
-    <member name="T:Furcadia.Net.DirectConnection.ClientBase.ActionDelegate">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.DirectConnection.ClientBase.ActionDelegate</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="T:Furcadia.Net.DirectConnection.ClientBase.DataEventHandler2">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.DirectConnection.ClientBase.DataEventHandler2</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="data"></param>
-    </member>
-    <member name="T:Furcadia.Net.DirectConnection.ClientBase.ErrorEventHandler">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Net.DirectConnection.ClientBase.ErrorEventHandler</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="e"></param>
-      <param name="o"></param>
-      <param name="n"></param>
-    </member>
     <member name="T:Furcadia.Net.DirectConnection.NetConnection">
       <summary>
             Direct Furcadia game server connection with included server load balancer.
@@ -4100,16 +4086,11 @@
             Default Constructor
             </summary>
     </member>
-    <member name="M:Furcadia.Net.DirectConnection.NetConnection.#ctor(System.Net.IPAddress,System.Int32)">
+    <member name="M:Furcadia.Net.DirectConnection.NetConnection.#ctor(Furcadia.Net.Options.ClientOptions)">
       <summary>
-            Connect to game server with Host IP address and Specified port
+            Initializes a new instance of the <see cref="T:Furcadia.Net.DirectConnection.NetConnection" /> class.
             </summary>
-      <param name="ip">
-            Game Server IP
-            </param>
-      <param name="port">
-            Game Server port
-            </param>
+      <param name="options">The options.</param>
     </member>
     <member name="M:Furcadia.Net.DirectConnection.NetConnection.#ctor(System.String,System.Int32)">
       <summary>
@@ -5086,6 +5067,16 @@
         </markup>
       </param>
     </member>
+    <member name="P:Furcadia.Net.Options.ClientOptions.ConnectionRetries">
+      <summary>
+            Gets or sets the connection retries.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ClientOptions.ConnectionTimeOut">
+      <summary>
+            Gets or sets the connection time out.
+            </summary>
+    </member>
     <member name="F:Furcadia.Net.Options.ClientOptions.FurcadiaFilePaths">
       <summary>
             Furcadia Paths File Path Structure.
@@ -5121,16 +5112,6 @@
     <member name="P:Furcadia.Net.Options.ProxyOptions.CharacterIniFile">
       <summary>
             Character Ini file to connect to the Game server with
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Options.ProxyOptions.ConnectionRetries">
-      <summary>
-            Gets or sets the connection retries.
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Options.ProxyOptions.ConnectionTimeOut">
-      <summary>
-            Gets or sets the connection time out.
             </summary>
     </member>
     <member name="P:Furcadia.Net.Options.ProxyOptions.FurcadiaInstallPath">
