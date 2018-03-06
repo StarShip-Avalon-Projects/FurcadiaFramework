@@ -1,12 +1,14 @@
 
-[submodule "furclib"]
-	path = FurcLib
-	url = https://github.com/StarShip-Avalon-Projects/FurcLib.git
 	
 [submodule "UnitTests"]
 	path = UnitTests
 	url = https://github.com/StarShip-Avalon-Projects/UnitTests.git
+	 branch = master
 [submodule "wiki"]
 	path = wiki
 	url = https://github.com/StarShip-Avalon-Projects/FurcadiaFramework.wiki.git
+	branch = master
+[submodule "FurcLib"]
+	path = FurcLib
+	url = https://github.com/StarShip-Avalon-Projects/FurcLib.git
 	branch = master
