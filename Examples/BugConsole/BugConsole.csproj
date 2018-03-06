@@ -66,8 +66,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>IF EXIST "$(SolutionDir)Build\Help\Furcadia_Framework_Help.chm" (
-xcopy/Y "$(SolutionDir)Build\Help\Furcadia_Framework_Help.chm" "$(TargetDir)"
-)</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
