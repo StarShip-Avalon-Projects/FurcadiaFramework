@@ -5599,44 +5599,6 @@
         </markup>
       </param>
     </member>
-    <member name="M:Furcadia.Net.Proxy.NetProxy.SendToServer(Furcadia.Net.INetMessage)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.Proxy.NetProxy.SendToServer(Furcadia.Net.INetMessage)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="message">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>message</parameter>
-            <parameter>M:Furcadia.Net.Proxy.NetProxy.SendToServer(Furcadia.Net.INetMessage)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Furcadia.Net.Proxy.NetProxy.SendToServer(System.String)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.Proxy.NetProxy.SendToServer(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="message">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>message</parameter>
-            <parameter>M:Furcadia.Net.Proxy.NetProxy.SendToServer(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
     <member name="E:Furcadia.Net.Proxy.NetProxy.ServerConnected">
       <summary>
             Occurs when [server connected].
