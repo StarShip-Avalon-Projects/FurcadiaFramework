@@ -1633,7 +1633,7 @@
             Loads the Reads the data in the ini file into the IniFile object
             </summary>
       <param name="sFileName">Name of the s file.</param>
-      <param name="bMerge">if set to <c>true</c> [b merge].</param>
+      <param name="bMerge">if set to <c>fase</c>, remove all sections.</param>
     </member>
     <member name="M:Furcadia.IO.IniFile.RemoveAllSections">
       <summary>
@@ -2281,52 +2281,6 @@
           </include>
         </markup>
       </summary>
-    </member>
-    <member name="M:Furcadia.Logging.FileLogOutput.#ctor(Furcadia.Logging.Level)">
-      <summary>
-            Initializes a new instance of the <see cref="T:Furcadia.Logging.FileLogOutput" /> class.
-            </summary>
-      <param name="level">The level.</param>
-    </member>
-    <member name="M:Furcadia.Logging.FileLogOutput.BuildMessage(Furcadia.Logging.LogMessage@)">
-      <summary>
-            Builds the message.
-            </summary>
-      <param name="msg">The MSG.</param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Logging.FileLogOutput.BuildMessage(Furcadia.Logging.LogMessage@)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Logging.FileLogOutput.Equals(Furcadia.Logging.FileLogOutput)">
-      <summary>
-            Indicates whether the current object is equal to another object of the same type.
-            </summary>
-      <param name="other">An object to compare with this object.</param>
-      <returns>
-            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
-            </returns>
-    </member>
-    <member name="M:Furcadia.Logging.FileLogOutput.Equals(System.Object)">
-      <summary>
-            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
-            </summary>
-      <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
-      <returns>
-        <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
-            </returns>
-    </member>
-    <member name="M:Furcadia.Logging.FileLogOutput.GetHashCode">
-      <summary>
-            Returns a hash code for this instance.
-            </summary>
-      <returns>
-            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
-            </returns>
     </member>
     <member name="M:Furcadia.Logging.FileLogOutput.Log(Furcadia.Logging.LogMessage)">
       <summary>
@@ -3440,61 +3394,6 @@
             Entering a new dream
             </summary>
     </member>
-    <member name="T:Furcadia.Net.Account.AccountInfo">
-      <summary>
-            Furcadia Modern Login feature
-            <para>
-            E-Mail and password based accounts.
-            </para></summary>
-    </member>
-    <member name="M:Furcadia.Net.Account.AccountInfo.#ctor">
-      <summary>
-            Default Constructor.
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Account.AccountInfo.ApiKey">
-      <summary>
-            Furcadia API Key
-            <para>
-            See remarks for DEP/CS NDA
-            </para></summary>
-    </member>
-    <member name="P:Furcadia.Net.Account.AccountInfo.EMail">
-      <summary>
-            Account E-Mail address
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Account.AccountInfo.Password">
-      <summary>
-            Account Password
-            </summary>
-    </member>
-    <member name="T:Furcadia.Net.Account.CharacterInfo">
-      <summary>
-            Furcadia Modern Login feature
-            <para>
-            E-Mail and password based accounts.
-            </para></summary>
-    </member>
-    <member name="M:Furcadia.Net.Account.CharacterInfo.#ctor">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Account.CharacterInfo</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:Furcadia.Net.Account.CharacterInfo.CharacterName">
-      <summary>
-            Character Name to use with this login
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Account.CharacterInfo.Costume">
-      <summary>
-            Costume to use with Selected Character
-            </summary>
-    </member>
     <member name="T:Furcadia.Net.DirectConnection.ClientBase">
       <summary>
             Furcadia base proxy connect between Client and Server. This is a low
@@ -3607,41 +3506,15 @@
     </member>
     <member name="M:Furcadia.Net.DirectConnection.ClientBase.SendToServer(Furcadia.Net.INetMessage)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.SendToServer(Furcadia.Net.INetMessage)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="message">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>message</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.SendToServer(Furcadia.Net.INetMessage)</parameter>
-          </include>
-        </markup>
-      </param>
+            Sends to server.
+            </summary>
+      <param name="message">The message.</param>
     </member>
     <member name="M:Furcadia.Net.DirectConnection.ClientBase.SendToServer(System.String)">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.SendToServer(System.String)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="message">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>message</parameter>
-            <parameter>M:Furcadia.Net.DirectConnection.ClientBase.SendToServer(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+            Sends to server.
+            </summary>
+      <param name="message">The message.</param>
     </member>
     <member name="E:Furcadia.Net.DirectConnection.ClientBase.ServerConnected">
       <summary>
@@ -3700,6 +3573,35 @@
       </summary>
       <param name="e">The e.</param>
       <param name="o">The o.</param>
+    </member>
+    <member name="T:Furcadia.Net.DirectConnection.IniParser">
+      <summary>
+            Read settings from Ini files
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.IniParser.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Furcadia.Net.DirectConnection.IniParser" /> class.
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.IniParser.LoadOptionsFromIni(System.String)">
+      <summary>
+            Loads the options from ini.
+            </summary>
+      <param name="IniFile">The ini file.</param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Net.DirectConnection.IniParser.LoadOptionsFromIni(System.String)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:Furcadia.Net.DirectConnection.IniParser.Options">
+      <summary>
+            Gets or sets the options.
+            </summary>
     </member>
     <member name="T:Furcadia.Net.DirectConnection.NetConnection">
       <summary>
@@ -5080,12 +4982,8 @@
     </member>
     <member name="M:Furcadia.Net.Options.ClientOptions.#ctor">
       <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Options.ClientOptions</parameter>
-          </include>
-        </markup>
-      </summary>
+            Initializes a new instance of the <see cref="T:Furcadia.Net.Options.ClientOptions" /> class.
+            </summary>
     </member>
     <member name="P:Furcadia.Net.Options.ClientOptions.Account">
       <summary>
@@ -5097,19 +4995,34 @@
             Character Name
             </summary>
     </member>
+    <member name="P:Furcadia.Net.Options.ClientOptions.CharacterShortName">
+      <summary>
+            Gets the short name of the character.
+            </summary>
+    </member>
     <member name="P:Furcadia.Net.Options.ClientOptions.Colors">
       <summary>
-            character color and avatar settings
+            Gets or sets the avatar colors.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ClientOptions.Costume">
+      <summary>
+            Costume to use with Selected Character
             </summary>
     </member>
     <member name="P:Furcadia.Net.Options.ClientOptions.Description">
       <summary>
-            character Description
+            Gets or sets the avatar description.
             </summary>
     </member>
     <member name="P:Furcadia.Net.Options.ClientOptions.Password">
       <summary>
-            account or character password
+            Gets or sets the password.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.ClientOptions.Version">
+      <summary>
+            Gets or sets the version.
             </summary>
     </member>
     <member name="T:Furcadia.Net.Options.ProxyOptions">
@@ -5728,11 +5641,6 @@
     <member name="P:Furcadia.Net.Proxy.ProxySession.ConnectedFurre">
       <summary>
             Connected Furre (Who we are)
-            </summary>
-    </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.DisconnectServerAndClientStreams">
-      <summary>
-            Disconnect from Furcadia and notify delegates.
             </summary>
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.Dispose">
