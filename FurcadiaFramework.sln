@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurEd", "Examples\CCEditor\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBot", "ConsoleBot\ConsoleBot.csproj", "{F89A4EE6-871B-4062-9E54-4CB1B572FAFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurcadiaLibMono", "UnitTests\FurcadiaLibMono\FurcadiaLibMono.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,14 @@ Global
 		{F89A4EE6-871B-4062-9E54-4CB1B572FAFC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F89A4EE6-871B-4062-9E54-4CB1B572FAFC}.Release|x86.ActiveCfg = Release|Any CPU
 		{F89A4EE6-871B-4062-9E54-4CB1B572FAFC}.Release|x86.Build.0 = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|x86.Build.0 = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|x86.ActiveCfg = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +132,7 @@ Global
 		{E12C32C1-4131-440A-832C-A7DAD3DC9ECF} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
 		{4901984E-75BB-4404-9ABD-EC138FA4CA5D} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
 		{F89A4EE6-871B-4062-9E54-4CB1B572FAFC} = {4A9951DF-53F9-4381-9035-F776E4A37C03}
+		{8EDF4429-251A-416D-BB68-93F227191BCF} = {AF7971C4-0356-46A5-9BC8-9056036C997E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BCFCCF27-949E-4082-88E8-5A873E8B3A57}

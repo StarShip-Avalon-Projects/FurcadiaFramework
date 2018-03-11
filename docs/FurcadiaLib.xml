@@ -3510,7 +3510,7 @@
             Connect to game server with default settings
             </summary>
     </member>
-    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor(Furcadia.Net.Options.ClientOptions)">
+    <member name="M:Furcadia.Net.DirectConnection.ClientBase.#ctor(Furcadia.Net.Options.BaseConnectionOptions)">
       <summary>
             Initializes a new instance of the <see cref="T:Furcadia.Net.DirectConnection.ClientBase" /> class.
             </summary>
@@ -5002,9 +5002,80 @@
             implements the Furre;s Name Property
             </summary>
     </member>
-    <member name="T:Furcadia.Net.Options.ClientOptions">
+    <member name="T:Furcadia.Net.Options.BaseConnectionOptions">
       <summary>
             Game server connection settings collection
+            </summary>
+    </member>
+    <member name="M:Furcadia.Net.Options.BaseConnectionOptions.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Options.BaseConnectionOptions</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Furcadia.Net.Options.BaseConnectionOptions.#ctor(System.String,System.Int32)">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Furcadia.Net.Options.BaseConnectionOptions</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="host">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>host</parameter>
+            <parameter>M:Furcadia.Net.Options.BaseConnectionOptions.#ctor(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="port">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>port</parameter>
+            <parameter>M:Furcadia.Net.Options.BaseConnectionOptions.#ctor(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:Furcadia.Net.Options.BaseConnectionOptions.ConnectionRetries">
+      <summary>
+            Gets or sets the connection retries.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.BaseConnectionOptions.ConnectionTimeOut">
+      <summary>
+            Gets or sets the connection time out.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.BaseConnectionOptions.FurcadiaFilePaths">
+      <summary>
+            Furcadia Paths File Path Structure.
+            </summary>
+    </member>
+    <member name="F:Furcadia.Net.Options.BaseConnectionOptions.FurcadiaUtilities">
+      <summary>
+            Furcadia Utilities
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.BaseConnectionOptions.GameServerHost">
+      <summary>
+            Host name or IP of the game server
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.Options.BaseConnectionOptions.GameServerPort">
+      <summary>
+            Game server TCP Port
+            </summary>
+    </member>
+    <member name="T:Furcadia.Net.Options.ClientOptions">
+      <summary>
+            Client options based on Character.ini settings
             </summary>
     </member>
     <member name="M:Furcadia.Net.Options.ClientOptions.#ctor">
@@ -5016,61 +5087,29 @@
         </markup>
       </summary>
     </member>
-    <member name="M:Furcadia.Net.Options.ClientOptions.#ctor(System.String,System.Int32)">
+    <member name="P:Furcadia.Net.Options.ClientOptions.Account">
       <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Furcadia.Net.Options.ClientOptions</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="host">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>host</parameter>
-            <parameter>M:Furcadia.Net.Options.ClientOptions.#ctor(System.String,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="port">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>port</parameter>
-            <parameter>M:Furcadia.Net.Options.ClientOptions.#ctor(System.String,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="P:Furcadia.Net.Options.ClientOptions.ConnectionRetries">
-      <summary>
-            Gets or sets the connection retries.
+            Optional Account E-Mail
             </summary>
     </member>
-    <member name="P:Furcadia.Net.Options.ClientOptions.ConnectionTimeOut">
+    <member name="P:Furcadia.Net.Options.ClientOptions.CharacterName">
       <summary>
-            Gets or sets the connection time out.
+            Character Name
             </summary>
     </member>
-    <member name="F:Furcadia.Net.Options.ClientOptions.FurcadiaFilePaths">
+    <member name="P:Furcadia.Net.Options.ClientOptions.Colors">
       <summary>
-            Furcadia Paths File Path Structure.
+            character color and avatar settings
             </summary>
     </member>
-    <member name="F:Furcadia.Net.Options.ClientOptions.FurcadiaUtilities">
+    <member name="P:Furcadia.Net.Options.ClientOptions.Description">
       <summary>
-            Furcadia Utilities
+            character Description
             </summary>
     </member>
-    <member name="P:Furcadia.Net.Options.ClientOptions.GameServerHost">
+    <member name="P:Furcadia.Net.Options.ClientOptions.Password">
       <summary>
-            Host name or IP of the game server
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.Options.ClientOptions.GameServerPort">
-      <summary>
-            Game server TCP Port
+            account or character password
             </summary>
     </member>
     <member name="T:Furcadia.Net.Options.ProxyOptions">

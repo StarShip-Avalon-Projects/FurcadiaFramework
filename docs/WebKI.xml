@@ -2,6 +2,7 @@
 <HelpKI>
   <HelpKINode Title=" namespace" Url="html/N_.htm" />
   <HelpKINode Title="Accent property" Url="html/P_Furcadia_Movement_ColorString_Accent.htm" />
+  <HelpKINode Title="Account property" Url="html/P_Furcadia_Net_Options_ClientOptions_Account.htm" />
   <HelpKINode Title="AccountInfo class">
     <HelpKINode Title="AccountInfo Class" Url="html/T_Furcadia_Net_Account_AccountInfo.htm" />
     <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_Account_AccountInfo__ctor.htm" />
@@ -159,6 +160,20 @@
   <HelpKINode Title="Base95.ToByteArray method" Url="html/Overload_Furcadia_Text_Base95_ToByteArray.htm" />
   <HelpKINode Title="Base95.ToString method" Url="html/Overload_Furcadia_Text_Base95_ToString.htm" />
   <HelpKINode Title="Base95.Value field" Url="html/F_Furcadia_Text_Base95_Value.htm" />
+  <HelpKINode Title="BaseConnectionOptions class">
+    <HelpKINode Title="BaseConnectionOptions Class" Url="html/T_Furcadia_Net_Options_BaseConnectionOptions.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_Furcadia_Net_Options_BaseConnectionOptions__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_Options_BaseConnectionOptions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Options_BaseConnectionOptions.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Options_BaseConnectionOptions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseConnectionOptions.BaseConnectionOptions constructor" Url="html/Overload_Furcadia_Net_Options_BaseConnectionOptions__ctor.htm" />
+  <HelpKINode Title="BaseConnectionOptions.ConnectionRetries property" Url="html/P_Furcadia_Net_Options_BaseConnectionOptions_ConnectionRetries.htm" />
+  <HelpKINode Title="BaseConnectionOptions.ConnectionTimeOut property" Url="html/P_Furcadia_Net_Options_BaseConnectionOptions_ConnectionTimeOut.htm" />
+  <HelpKINode Title="BaseConnectionOptions.FurcadiaFilePaths field" Url="html/F_Furcadia_Net_Options_BaseConnectionOptions_FurcadiaFilePaths.htm" />
+  <HelpKINode Title="BaseConnectionOptions.FurcadiaUtilities field" Url="html/F_Furcadia_Net_Options_BaseConnectionOptions_FurcadiaUtilities.htm" />
+  <HelpKINode Title="BaseConnectionOptions.GameServerHost property" Url="html/P_Furcadia_Net_Options_BaseConnectionOptions_GameServerHost.htm" />
+  <HelpKINode Title="BaseConnectionOptions.GameServerPort property" Url="html/P_Furcadia_Net_Options_BaseConnectionOptions_GameServerPort.htm" />
   <HelpKINode Title="BaseServerInstruction class">
     <HelpKINode Title="BaseServerInstruction Class" Url="html/T_Furcadia_Net_Utils_ServerParser_BaseServerInstruction.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_Furcadia_Net_Utils_ServerParser_BaseServerInstruction__ctor.htm" />
@@ -230,7 +245,10 @@
   <HelpKINode Title="CharacterInfo.CharacterName property" Url="html/P_Furcadia_Net_Account_CharacterInfo_CharacterName.htm" />
   <HelpKINode Title="CharacterInfo.Costume property" Url="html/P_Furcadia_Net_Account_CharacterInfo_Costume.htm" />
   <HelpKINode Title="CharacterIniFile property" Url="html/P_Furcadia_Net_Options_ProxyOptions_CharacterIniFile.htm" />
-  <HelpKINode Title="CharacterName property" Url="html/P_Furcadia_Net_Account_CharacterInfo_CharacterName.htm" />
+  <HelpKINode Title="CharacterName property">
+    <HelpKINode Title="CharacterInfo.CharacterName Property " Url="html/P_Furcadia_Net_Account_CharacterInfo_CharacterName.htm" />
+    <HelpKINode Title="ClientOptions.CharacterName Property " Url="html/P_Furcadia_Net_Options_ClientOptions_CharacterName.htm" />
+  </HelpKINode>
   <HelpKINode Title="CharacterPath property" Url="html/P_Furcadia_IO_Paths_CharacterPath.htm" />
   <HelpKINode Title="CharToDescTag method" Url="html/M_Furcadia_Drawing_Helper_CharToDescTag.htm" />
   <HelpKINode Title="CHAR_FLAG_HAS_PROFILE field" Url="html/F_Furcadia_Movement_CharacterFlags_CHAR_FLAG_HAS_PROFILE.htm" />
@@ -284,24 +302,24 @@
   <HelpKINode Title="ClientExited event" Url="html/E_Furcadia_Net_Proxy_NetProxy_ClientExited.htm" />
   <HelpKINode Title="ClientOptions class">
     <HelpKINode Title="ClientOptions Class" Url="html/T_Furcadia_Net_Options_ClientOptions.htm" />
-    <HelpKINode Title="constructor" Url="html/Overload_Furcadia_Net_Options_ClientOptions__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_Options_ClientOptions__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_Options_ClientOptions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_Options_ClientOptions.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_Options_ClientOptions.htm" />
   </HelpKINode>
-  <HelpKINode Title="ClientOptions.ClientOptions constructor" Url="html/Overload_Furcadia_Net_Options_ClientOptions__ctor.htm" />
-  <HelpKINode Title="ClientOptions.ConnectionRetries property" Url="html/P_Furcadia_Net_Options_ClientOptions_ConnectionRetries.htm" />
-  <HelpKINode Title="ClientOptions.ConnectionTimeOut property" Url="html/P_Furcadia_Net_Options_ClientOptions_ConnectionTimeOut.htm" />
-  <HelpKINode Title="ClientOptions.FurcadiaFilePaths field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaFilePaths.htm" />
-  <HelpKINode Title="ClientOptions.FurcadiaUtilities field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaUtilities.htm" />
-  <HelpKINode Title="ClientOptions.GameServerHost property" Url="html/P_Furcadia_Net_Options_ClientOptions_GameServerHost.htm" />
-  <HelpKINode Title="ClientOptions.GameServerPort property" Url="html/P_Furcadia_Net_Options_ClientOptions_GameServerPort.htm" />
+  <HelpKINode Title="ClientOptions.Account property" Url="html/P_Furcadia_Net_Options_ClientOptions_Account.htm" />
+  <HelpKINode Title="ClientOptions.CharacterName property" Url="html/P_Furcadia_Net_Options_ClientOptions_CharacterName.htm" />
+  <HelpKINode Title="ClientOptions.ClientOptions constructor" Url="html/M_Furcadia_Net_Options_ClientOptions__ctor.htm" />
+  <HelpKINode Title="ClientOptions.Colors property" Url="html/P_Furcadia_Net_Options_ClientOptions_Colors.htm" />
+  <HelpKINode Title="ClientOptions.Description property" Url="html/P_Furcadia_Net_Options_ClientOptions_Description.htm" />
+  <HelpKINode Title="ClientOptions.Password property" Url="html/P_Furcadia_Net_Options_ClientOptions_Password.htm" />
   <HelpKINode Title="ClientStatus property" Url="html/P_Furcadia_Net_Proxy_ProxySession_ClientStatus.htm" />
   <HelpKINode Title="ClientStatusChanged event" Url="html/E_Furcadia_Net_Proxy_ProxySession_ClientStatusChanged.htm" />
   <HelpKINode Title="Clone method" Url="html/M_Furcadia_Net_Web_Variable_Clone.htm" />
   <HelpKINode Title="CloseFurcadiaClient method" Url="html/M_Furcadia_Net_Proxy_NetProxy_CloseFurcadiaClient.htm" />
   <HelpKINode Title="Code property" Url="html/P_Furcadia_IO_IniFile_Code.htm" />
   <HelpKINode Title="Colors field" Url="html/F_Furcadia_Drawing_Graphics_Palette_Colors.htm" />
+  <HelpKINode Title="Colors property" Url="html/P_Furcadia_Net_Options_ClientOptions_Colors.htm" />
   <HelpKINode Title="ColorString class">
     <HelpKINode Title="ColorString Class" Url="html/T_Furcadia_Movement_ColorString.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_Furcadia_Movement_ColorString__ctor.htm" />
@@ -349,8 +367,8 @@
   </HelpKINode>
   <HelpKINode Title="Connecting enumeration member" Url="html/T_Furcadia_Net_ConnectionPhase.htm" />
   <HelpKINode Title="ConnectionPhase enumeration" Url="html/T_Furcadia_Net_ConnectionPhase.htm" />
-  <HelpKINode Title="ConnectionRetries property" Url="html/P_Furcadia_Net_Options_ClientOptions_ConnectionRetries.htm" />
-  <HelpKINode Title="ConnectionTimeOut property" Url="html/P_Furcadia_Net_Options_ClientOptions_ConnectionTimeOut.htm" />
+  <HelpKINode Title="ConnectionRetries property" Url="html/P_Furcadia_Net_Options_BaseConnectionOptions_ConnectionRetries.htm" />
+  <HelpKINode Title="ConnectionTimeOut property" Url="html/P_Furcadia_Net_Options_BaseConnectionOptions_ConnectionTimeOut.htm" />
   <HelpKINode Title="ConnectPhase field" Url="html/F_Furcadia_Net_NetServerEventArgs_ConnectPhase.htm" />
   <HelpKINode Title="ConnectPhase property" Url="html/P_Furcadia_Net_NetClientEventArgs_ConnectPhase.htm" />
   <HelpKINode Title="ConsoleLogOutput class">
@@ -405,6 +423,7 @@
   <HelpKINode Title="Delay enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="DeleteSetting method" Url="html/M_Furcadia_Text_IniParser_DeleteSetting.htm" />
   <HelpKINode Title="DescFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_DescFilter.htm" />
+  <HelpKINode Title="Description property" Url="html/P_Furcadia_Net_Options_ClientOptions_Description.htm" />
   <HelpKINode Title="DescTagRegex field" Url="html/F_Furcadia_Text_FurcadiaMarkup_DescTagRegex.htm" />
   <HelpKINode Title="Dice property" Url="html/P_Furcadia_Net_Utils_ServerParser_DiceRolls_Dice.htm" />
   <HelpKINode Title="DiceCompnentMatch property" Url="html/P_Furcadia_Net_Utils_ServerObjects_DiceObject_DiceCompnentMatch.htm" />
@@ -595,10 +614,10 @@
   <HelpKINode Title="Frame enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="Frame structure">
     <HelpKINode Title="Frame Structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm" />
-    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_DreamInfo_Avatar_Frame.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_DreamInfo_Avatar_Frame.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
   </HelpKINode>
   <HelpKINode Title="Frame.FrameFormat field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FrameFormat.htm" />
   <HelpKINode Title="Frame.FrameFormats enumeration" Url="html/T_Furcadia_Drawing_Graphics_Frame_FrameFormats.htm" />
@@ -701,6 +720,7 @@
   <HelpKINode Title="Furcadia.Net.NetProxyException class" Url="html/T_Furcadia_Net_NetProxyException.htm" />
   <HelpKINode Title="Furcadia.Net.NetServerEventArgs class" Url="html/T_Furcadia_Net_NetServerEventArgs.htm" />
   <HelpKINode Title="Furcadia.Net.Options namespace" Url="html/N_Furcadia_Net_Options.htm" />
+  <HelpKINode Title="Furcadia.Net.Options.BaseConnectionOptions class" Url="html/T_Furcadia_Net_Options_BaseConnectionOptions.htm" />
   <HelpKINode Title="Furcadia.Net.Options.ClientOptions class" Url="html/T_Furcadia_Net_Options_ClientOptions.htm" />
   <HelpKINode Title="Furcadia.Net.Options.ProxyOptions class" Url="html/T_Furcadia_Net_Options_ProxyOptions.htm" />
   <HelpKINode Title="Furcadia.Net.ParseChannelArgs class" Url="html/T_Furcadia_Net_ParseChannelArgs.htm" />
@@ -760,7 +780,7 @@
   <HelpKINode Title="Furcadia.Utils namespace" Url="html/N_Furcadia_Utils.htm" />
   <HelpKINode Title="Furcadia.Utils.IOPermissions class" Url="html/T_Furcadia_Utils_IOPermissions.htm" />
   <HelpKINode Title="FurcadiaClientIsRunning property" Url="html/P_Furcadia_Net_Proxy_NetProxy_FurcadiaClientIsRunning.htm" />
-  <HelpKINode Title="FurcadiaFilePaths field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaFilePaths.htm" />
+  <HelpKINode Title="FurcadiaFilePaths field" Url="html/F_Furcadia_Net_Options_BaseConnectionOptions_FurcadiaFilePaths.htm" />
   <HelpKINode Title="FurcadiaInstallPath property" Url="html/P_Furcadia_Net_Options_ProxyOptions_FurcadiaInstallPath.htm" />
   <HelpKINode Title="FurcadiaLocaldirPath property" Url="html/P_Furcadia_IO_Paths_FurcadiaLocaldirPath.htm" />
   <HelpKINode Title="FurcadiaMarkup class">
@@ -827,8 +847,8 @@
   </HelpKINode>
   <HelpKINode Title="FurcadiaShapesException.FurcadiaShapesException constructor" Url="html/M_Furcadia_Drawing_Graphics_FurcadiaShapesException__ctor.htm" />
   <HelpKINode Title="FurcadiaUtilities field">
+    <HelpKINode Title="BaseConnectionOptions.FurcadiaUtilities Field" Url="html/F_Furcadia_Net_Options_BaseConnectionOptions_FurcadiaUtilities.htm" />
     <HelpKINode Title="ClientBase.FurcadiaUtilities Field" Url="html/F_Furcadia_Net_DirectConnection_ClientBase_FurcadiaUtilities.htm" />
-    <HelpKINode Title="ClientOptions.FurcadiaUtilities Field" Url="html/F_Furcadia_Net_Options_ClientOptions_FurcadiaUtilities.htm" />
   </HelpKINode>
   <HelpKINode Title="Furre class">
     <HelpKINode Title="Furre Class" Url="html/T_Furcadia_Net_DreamInfo_Furre.htm" />
@@ -920,12 +940,12 @@
   <HelpKINode Title="FurreX enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="FurreY enumeration member" Url="html/T_Furcadia_Drawing_Graphics_StepBlock_StepBlockStepTypes.htm" />
   <HelpKINode Title="GameServerHost property">
-    <HelpKINode Title="ClientOptions.GameServerHost Property " Url="html/P_Furcadia_Net_Options_ClientOptions_GameServerHost.htm" />
+    <HelpKINode Title="BaseConnectionOptions.GameServerHost Property " Url="html/P_Furcadia_Net_Options_BaseConnectionOptions_GameServerHost.htm" />
     <HelpKINode Title="Utilities.GameServerHost Property " Url="html/P_Furcadia_Net_Utils_Utilities_GameServerHost.htm" />
   </HelpKINode>
   <HelpKINode Title="GameServerIp property" Url="html/P_Furcadia_Net_Utils_Utilities_GameServerIp.htm" />
   <HelpKINode Title="GameServerPort property">
-    <HelpKINode Title="ClientOptions.GameServerPort Property " Url="html/P_Furcadia_Net_Options_ClientOptions_GameServerPort.htm" />
+    <HelpKINode Title="BaseConnectionOptions.GameServerPort Property " Url="html/P_Furcadia_Net_Options_BaseConnectionOptions_GameServerPort.htm" />
     <HelpKINode Title="Utilities.GameServerPort Property " Url="html/P_Furcadia_Net_Utils_Utilities_GameServerPort.htm" />
   </HelpKINode>
   <HelpKINode Title="gender field" Url="html/F_Furcadia_Net_DreamInfo_Avatar_Frame_gender.htm" />
@@ -1576,7 +1596,10 @@
     <HelpKINode Title="NetConnection.ParseServerData Method " Url="html/M_Furcadia_Net_DirectConnection_NetConnection_ParseServerData.htm" />
     <HelpKINode Title="ProxySession.ParseServerData Method " Url="html/M_Furcadia_Net_Proxy_ProxySession_ParseServerData.htm" />
   </HelpKINode>
-  <HelpKINode Title="Password property" Url="html/P_Furcadia_Net_Account_AccountInfo_Password.htm" />
+  <HelpKINode Title="Password property">
+    <HelpKINode Title="AccountInfo.Password Property " Url="html/P_Furcadia_Net_Account_AccountInfo_Password.htm" />
+    <HelpKINode Title="ClientOptions.Password Property " Url="html/P_Furcadia_Net_Options_ClientOptions_Password.htm" />
+  </HelpKINode>
   <HelpKINode Title="PatchArchive property" Url="html/P_Furcadia_FurcMap_Map_PatchArchive.htm" />
   <HelpKINode Title="Paths class">
     <HelpKINode Title="Paths Class" Url="html/T_Furcadia_IO_Paths.htm" />
@@ -1633,13 +1656,13 @@
   <HelpKINode Title="PingDelayTime property" Url="html/P_Furcadia_Net_Utils_ServerQue_PingDelayTime.htm" />
   <HelpKINode Title="player field" Url="html/F_Furcadia_Net_Utils_ServerParser_UpdateColorString_player.htm" />
   <HelpKINode Title="Player field" Url="html/F_Furcadia_Net_Utils_ServerParser_MoveFurre_Player.htm" />
-  <HelpKINode Title="player property" Url="html/P_Furcadia_Net_Utils_ServerParser_SpawnAvatar_player.htm" />
   <HelpKINode Title="Player property">
     <HelpKINode Title="ChannelObject.Player Property " Url="html/P_Furcadia_Net_Utils_ServerParser_ChannelObject_Player.htm" />
     <HelpKINode Title="NetConnection.Player Property " Url="html/P_Furcadia_Net_DirectConnection_NetConnection_Player.htm" />
     <HelpKINode Title="ProxySession.Player Property " Url="html/P_Furcadia_Net_Proxy_ProxySession_Player.htm" />
     <HelpKINode Title="RemoveAvatar.Player Property " Url="html/P_Furcadia_Net_Utils_ServerParser_RemoveAvatar_Player.htm" />
   </HelpKINode>
+  <HelpKINode Title="player property" Url="html/P_Furcadia_Net_Utils_ServerParser_SpawnAvatar_player.htm" />
   <HelpKINode Title="PlayerFlags property" Url="html/P_Furcadia_Net_Utils_ServerParser_SpawnAvatar_PlayerFlags.htm" />
   <HelpKINode Title="PortOpen method" Url="html/M_Furcadia_Net_Utils_Utilities_PortOpen.htm" />
   <HelpKINode Title="PortraitCachePath property" Url="html/P_Furcadia_IO_Paths_PortraitCachePath.htm" />
@@ -2240,17 +2263,17 @@
   <HelpKINode Title="Wings field" Url="html/F_Furcadia_Net_DreamInfo_Avatar_Frame_Wings.htm" />
   <HelpKINode Title="Wings property" Url="html/P_Furcadia_Movement_ColorString_Wings.htm" />
   <HelpKINode Title="Write method" Url="html/Overload_Furcadia_Net_INetMessage_Write.htm" />
-  <HelpKINode Title="X field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
   <HelpKINode Title="x field">
     <HelpKINode Title="MapPosition.x Field" Url="html/F_Furcadia_FurcMap_MapPosition_x.htm" />
     <HelpKINode Title="MapTile.x Field" Url="html/F_Furcadia_FurcMap_MapTile_x.htm" />
   </HelpKINode>
+  <HelpKINode Title="X field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
   <HelpKINode Title="X property" Url="html/P_Furcadia_Drawing_FurrePosition_X.htm" />
-  <HelpKINode Title="y field">
-    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
-    <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
-  </HelpKINode>
   <HelpKINode Title="Y field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
+  <HelpKINode Title="y field">
+    <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
+    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
+  </HelpKINode>
   <HelpKINode Title="Y property" Url="html/P_Furcadia_Drawing_FurrePosition_Y.htm" />
   <HelpKINode Title="YouEatCookieFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouEatCookieFilter.htm" />
   <HelpKINode Title="YouSayFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouSayFilter.htm" />
