@@ -18,8 +18,9 @@ namespace ConsoleClient
         #region Private Fields
 
         private static NetConnection Client;
-        private static int currentRow;
+
         private static ClientOptions options;
+        private static int currentRow;
         private static int origCol;
         private static int origHeight;
         private static int origRow;

@@ -46,6 +46,7 @@
     <Compile Include="..\..\FurcLib\AssemblyInfoersionCS1.cs">
       <Link>AssemblyInfoersionCS1.cs</Link>
     </Compile>
+    <Compile Include="Logging\ConsoleLogOutput.cs" />
     <Compile Include="Net\BugProxySession.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
