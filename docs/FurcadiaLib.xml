@@ -4,6 +4,84 @@
     <name>FurcadiaLib</name>
   </assembly>
   <members>
+    <member name="T:ArrayExtensions">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:ArrayExtensions</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:ArrayExtensions.ToString``2(System.Collections.Generic.IDictionary{``0,``1},System.Char)">
+      <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+      <param name="arr">The arr.</param>
+      <param name="seperator">The seperator.</param>
+      <typeparam name="K"></typeparam>
+      <typeparam name="V"></typeparam>
+      <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+    </member>
+    <member name="M:ArrayExtensions.ToString``1(``0[],System.Char)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="arr">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>arr</parameter>
+            <parameter>M:ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="seperator">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>seperator</parameter>
+            <parameter>M:ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
+          </include>
+        </markup>
+      </param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:ArrayExtensions.ToString``1(``0[],System.String)">
+      <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+      <param name="arr">The arr.</param>
+      <param name="seperator">The seperator.</param>
+      <typeparam name="T"></typeparam>
+      <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+    </member>
     <member name="T:ExceptionExtensions">
       <summary>
         <markup>
@@ -836,84 +914,6 @@
       <summary>
             The camera state
             </summary>
-    </member>
-    <member name="T:Furcadia.Extensions.ArrayExtensions">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:Furcadia.Extensions.ArrayExtensions</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:Furcadia.Extensions.ArrayExtensions.ToString``2(System.Collections.Generic.IDictionary{``0,``1},System.Char)">
-      <summary>
-            Returns a <see cref="T:System.String" /> that represents this instance.
-            </summary>
-      <param name="arr">The arr.</param>
-      <param name="seperator">The seperator.</param>
-      <typeparam name="K"></typeparam>
-      <typeparam name="V"></typeparam>
-      <returns>
-            A <see cref="T:System.String" /> that represents this instance.
-            </returns>
-    </member>
-    <member name="M:Furcadia.Extensions.ArrayExtensions.ToString``1(``0[],System.Char)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Furcadia.Extensions.ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="arr">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>arr</parameter>
-            <parameter>M:Furcadia.Extensions.ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="seperator">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>seperator</parameter>
-            <parameter>M:Furcadia.Extensions.ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
-          </include>
-        </markup>
-      </param>
-      <typeparam name="T">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>typeparam</parameter>
-            <parameter>T</parameter>
-            <parameter>M:Furcadia.Extensions.ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
-          </include>
-        </markup>
-      </typeparam>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Furcadia.Extensions.ArrayExtensions.ToString``1(``0[],System.Char)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Furcadia.Extensions.ArrayExtensions.ToString``1(``0[],System.String)">
-      <summary>
-            Returns a <see cref="T:System.String" /> that represents this instance.
-            </summary>
-      <param name="arr">The arr.</param>
-      <param name="seperator">The seperator.</param>
-      <typeparam name="T"></typeparam>
-      <returns>
-            A <see cref="T:System.String" /> that represents this instance.
-            </returns>
     </member>
     <member name="T:Furcadia.Extensions.ObjectExtensions">
       <summary>
@@ -2281,6 +2281,53 @@
           </include>
         </markup>
       </summary>
+    </member>
+    <member name="M:Furcadia.Logging.FileLogOutput.#ctor(System.String,Furcadia.Logging.Level)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Furcadia.Logging.FileLogOutput" /> class.
+            </summary>
+      <param name="rootFolder">The root folder.</param>
+      <param name="level">The level.</param>
+    </member>
+    <member name="M:Furcadia.Logging.FileLogOutput.BuildMessage(Furcadia.Logging.LogMessage@)">
+      <summary>
+            Builds the message.
+            </summary>
+      <param name="msg">The MSG.</param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Furcadia.Logging.FileLogOutput.BuildMessage(Furcadia.Logging.LogMessage@)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Furcadia.Logging.FileLogOutput.Equals(Furcadia.Logging.FileLogOutput)">
+      <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+      <param name="other">An object to compare with this object.</param>
+      <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Logging.FileLogOutput.Equals(System.Object)">
+      <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+      <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+      <returns>
+        <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+    </member>
+    <member name="M:Furcadia.Logging.FileLogOutput.GetHashCode">
+      <summary>
+            Returns a hash code for this instance.
+            </summary>
+      <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+            </returns>
     </member>
     <member name="M:Furcadia.Logging.FileLogOutput.Log(Furcadia.Logging.LogMessage)">
       <summary>
@@ -3721,6 +3768,12 @@
         <see cref="T:Furcadia.Net.DreamInfo.Furre" />
       </param>
       <returns>True if Fur is the Connected Furre</returns>
+    </member>
+    <member name="M:Furcadia.Net.DirectConnection.NetConnection.OnThroatTiredTrigger(System.Boolean)">
+      <summary>
+            Called when [throat tired trigger].
+            </summary>
+      <param name="stat">if set to <c>true</c> [stat].</param>
     </member>
     <member name="M:Furcadia.Net.DirectConnection.NetConnection.ParseServerChannel(System.String,System.Boolean)">
       <summary>
@@ -5725,6 +5778,12 @@
         <see cref="T:Furcadia.Net.DreamInfo.Furre" />
       </param>
       <returns>True if Fur is the Connected Furre</returns>
+    </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.OnThroatTiredTrigger(System.Boolean)">
+      <summary>
+            Called when [throat tired trigger].
+            </summary>
+      <param name="stat">if set to <c>true</c> [stat].</param>
     </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.ParseServerChannel(System.String,System.Boolean)">
       <summary>

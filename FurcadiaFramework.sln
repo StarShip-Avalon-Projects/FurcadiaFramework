@@ -45,7 +45,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugConsole", "Examples\BugC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurEd", "Examples\CCEditor\FurEd\FurEd.csproj", "{4901984E-75BB-4404-9ABD-EC138FA4CA5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBot", "ConsoleBot\ConsoleBot.csproj", "{F89A4EE6-871B-4062-9E54-4CB1B572FAFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleBot\ConsoleClient.csproj", "{F89A4EE6-871B-4062-9E54-4CB1B572FAFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurcadiaLibMono", "UnitTests\FurcadiaLibMono\FurcadiaLibMono.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
 EndProject

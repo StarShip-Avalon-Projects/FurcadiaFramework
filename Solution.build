@@ -36,7 +36,9 @@
 			WorkingDirectory="Build\BugConsole\$(Configuration)" />
 		<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.chm  -n*.xml -n*.txt -n*.config -n*.pdp -n*.exe -n*.dll -n*.bat ..\..\FurEd_$(Configuration).Bin.rar *.*"
 			WorkingDirectory="Build\FurEd\$(Configuration)" />
-
+		<Exec Command="&quot;c:/program files/winrar/rar.exe&quot; a -r -n*.chm  -n*.xml -n*.txt -n*.config -n*.pdp -n*.exe -n*.dll -n*.bat ..\..\ConsoleClient_$(Configuration).Bin.rar *.*"
+			WorkingDirectory="Build\ConsoleClient\$(Configuration)" />
+			
   </Target>
 
     <Target Name="Clean" Condition=" '$(Configuration)' == 'Debug' ">
