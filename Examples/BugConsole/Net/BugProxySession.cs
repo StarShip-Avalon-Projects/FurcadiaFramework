@@ -59,7 +59,7 @@ namespace BugProxy.Net
             options = Options;
         }
 
-        public class ProxySessionOptions
+        public BugProxySession() : this(new ProxyOptions())
         {
         }
 
