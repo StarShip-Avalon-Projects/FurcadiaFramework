@@ -82,80 +82,6 @@
             A <see cref="T:System.String" /> that represents this instance.
             </returns>
     </member>
-    <member name="T:ExceptionExtensions">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>T:ExceptionExtensions</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="M:ExceptionExtensions.Flatten(System.Exception)">
-      <summary>
-            Flattens the specified exception.
-            </summary>
-      <param name="exception">The exception.</param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:ExceptionExtensions.Flatten(System.Exception)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:ExceptionExtensions.Log(System.Exception,Furcadia.Logging.Level,System.String)">
-      <summary>
-            Logs the specified level.
-            </summary>
-      <param name="ex">The ex.</param>
-      <param name="level">The level.</param>
-      <param name="memberName">Name of the member.</param>
-    </member>
-    <member name="M:ExceptionExtensions.Log``1(System.Exception,Furcadia.Logging.Level,System.String)">
-      <summary>
-            Logs the specified level.
-            </summary>
-      <param name="ex">The ex.</param>
-      <param name="level">The level.</param>
-      <param name="memberName">Name of the member.</param>
-      <typeparam name="T">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>typeparam</parameter>
-            <parameter>T</parameter>
-            <parameter>M:ExceptionExtensions.Log``1(System.Exception,Furcadia.Logging.Level,System.String)</parameter>
-          </include>
-        </markup>
-      </typeparam>
-    </member>
-    <member name="M:ExceptionExtensions.LogMessage(System.Exception,Furcadia.Logging.Level,System.String)">
-      <summary>
-            Logs the message.
-            </summary>
-      <param name="ex">The ex.</param>
-      <param name="level">The level.</param>
-      <param name="memberName">Name of the member.</param>
-    </member>
-    <member name="M:ExceptionExtensions.LogMessage``1(System.Exception,Furcadia.Logging.Level,System.String)">
-      <summary>
-            Logs the message.
-            </summary>
-      <param name="ex">The ex.</param>
-      <param name="level">The level.</param>
-      <param name="memberName">Name of the member.</param>
-      <typeparam name="T">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>typeparam</parameter>
-            <parameter>T</parameter>
-            <parameter>M:ExceptionExtensions.LogMessage``1(System.Exception,Furcadia.Logging.Level,System.String)</parameter>
-          </include>
-        </markup>
-      </typeparam>
-    </member>
     <member name="T:StringExtensions">
       <summary>
         <markup>
@@ -230,6 +156,80 @@
           </include>
         </markup>
       </returns>
+    </member>
+    <member name="T:Extentions.ExceptionExtensions">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:Extentions.ExceptionExtensions</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:Extentions.ExceptionExtensions.Flatten(System.Exception)">
+      <summary>
+            Flattens the specified exception.
+            </summary>
+      <param name="exception">The exception.</param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Extentions.ExceptionExtensions.Flatten(System.Exception)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:Extentions.ExceptionExtensions.Log(System.Exception,Furcadia.Logging.Level,System.String)">
+      <summary>
+            Logs the specified level.
+            </summary>
+      <param name="ex">The ex.</param>
+      <param name="level">The level.</param>
+      <param name="memberName">Name of the member.</param>
+    </member>
+    <member name="M:Extentions.ExceptionExtensions.Log``1(System.Exception,Furcadia.Logging.Level,System.String)">
+      <summary>
+            Logs the specified level.
+            </summary>
+      <param name="ex">The ex.</param>
+      <param name="level">The level.</param>
+      <param name="memberName">Name of the member.</param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Extentions.ExceptionExtensions.Log``1(System.Exception,Furcadia.Logging.Level,System.String)</parameter>
+          </include>
+        </markup>
+      </typeparam>
+    </member>
+    <member name="M:Extentions.ExceptionExtensions.LogMessage(System.Exception,Furcadia.Logging.Level,System.String)">
+      <summary>
+            Logs the message.
+            </summary>
+      <param name="ex">The ex.</param>
+      <param name="level">The level.</param>
+      <param name="memberName">Name of the member.</param>
+    </member>
+    <member name="M:Extentions.ExceptionExtensions.LogMessage``1(System.Exception,Furcadia.Logging.Level,System.String)">
+      <summary>
+            Logs the message.
+            </summary>
+      <param name="ex">The ex.</param>
+      <param name="level">The level.</param>
+      <param name="memberName">Name of the member.</param>
+      <typeparam name="T">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>T</parameter>
+            <parameter>M:Extentions.ExceptionExtensions.LogMessage``1(System.Exception,Furcadia.Logging.Level,System.String)</parameter>
+          </include>
+        </markup>
+      </typeparam>
     </member>
     <member name="T:Furcadia.Drawing.FurrePosition">
       <summary>
@@ -942,7 +942,7 @@
     </member>
     <member name="M:Furcadia.Extensions.ObjectExtensions.AsInt16(System.Object,System.Int16)">
       <summary>
-            Ases the int16.
+            converts an object to 16 bit integer
             </summary>
       <param name="obj">The object.</param>
       <param name="default">The default.</param>
@@ -2947,6 +2947,15 @@
             Markings color
             </summary>
     </member>
+    <member name="M:Furcadia.Movement.ColorString.op_Implicit(System.String)~Furcadia.Movement.ColorString">
+      <summary>
+            Performs an implicit conversion from <see cref="T:System.String" /> to <see cref="T:Furcadia.Movement.ColorString" />.
+            </summary>
+      <param name="colors">The colors.</param>
+      <returns>
+            The result of the conversion.
+            </returns>
+    </member>
     <member name="P:Furcadia.Movement.ColorString.Species">
       <summary>
             Avatar Species
@@ -3132,7 +3141,7 @@
     </member>
     <member name="T:Furcadia.Net.NetProxyException">
       <summary>
-            Desctiption of NetProxyException.
+            Description of NetProxyException.
             </summary>
     </member>
     <member name="M:Furcadia.Net.NetProxyException.#ctor">
@@ -3340,24 +3349,12 @@
             No instruction Nessary
             </summary>
     </member>
-    <member name="F:Furcadia.Net.ServerInstructionType.SpawnAvatar">
-      <summary>
-            Spawns a new Furre in the dream furre list because they have
-            joing the Dream we're in
-            <para />
-            '&lt;' + user id + x + y + shape number + name + color code +
-            flag + linefeed
-            <para />
-            sender object is Type SpawnAvatar()
-            </summary>
-    </member>
     <member name="F:Furcadia.Net.ServerInstructionType.RemoveAvatar">
       <summary>
-            Remove the Avatar from the Dream Furre list because they have
+            Remove the Avatar from the Dream's Furre list because they have
             left the dream
             <para />
             ')' + user id + linefeed
-            <para />
             Source: Furcatia Technical Resources
             <para />
             sender object is Type RemoveAvatar()
@@ -4434,6 +4431,15 @@
             </summary>
       <param name="dreamA">The dream a.</param>
       <param name="DreamB">The dream b.</param>
+      <param name="dreamB">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>dreamB</parameter>
+            <parameter>M:Furcadia.Net.DreamInfo.Dream.op_Inequality(Furcadia.Net.DreamInfo.Dream,Furcadia.Net.DreamInfo.IDream)</parameter>
+          </include>
+        </markup>
+      </param>
       <returns>
             The result of the operator.
             </returns>
@@ -4556,6 +4562,26 @@
             Gets the group.
             </summary>
     </member>
+    <member name="P:Furcadia.Net.DreamInfo.Furre.GroupLevel">
+      <summary>
+            Gets the level.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.DreamInfo.Furre.HasEnteredRange">
+      <summary>
+            Gets a value indicating whether this furre has left the bots view.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.DreamInfo.Furre.HasLeftRange">
+      <summary>
+            Gets a value indicating whether this furre has left the bots view.
+            </summary>
+    </member>
+    <member name="P:Furcadia.Net.DreamInfo.Furre.InRange">
+      <summary>
+            Gets or sets a value indicating whether this <see cref="T:Furcadia.Net.DreamInfo.Furre" /> is inRange.
+            </summary>
+    </member>
     <member name="P:Furcadia.Net.DreamInfo.Furre.LastPosition">
       <summary>
             The Position the Furre Moved from
@@ -4564,11 +4590,6 @@
     <member name="P:Furcadia.Net.DreamInfo.Furre.LastStat">
       <summary>
             Gets the last stat.
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DreamInfo.Furre.Level">
-      <summary>
-            Gets the level.
             </summary>
     </member>
     <member name="P:Furcadia.Net.DreamInfo.Furre.Location">
@@ -4623,7 +4644,7 @@
     </member>
     <member name="P:Furcadia.Net.DreamInfo.Furre.ShortName">
       <summary>
-            Furcadia Shortname format for Furre Name
+            Furcadia Short-name format for Furre Name
             </summary>
     </member>
     <member name="M:Furcadia.Net.DreamInfo.Furre.ToFurcadiaID">
@@ -4670,16 +4691,6 @@
             A <see cref="T:System.String" /> that represents this instance.
             </returns>
     </member>
-    <member name="P:Furcadia.Net.DreamInfo.Furre.Visible">
-      <summary>
-            Gets or sets a value indicating whether this <see cref="T:Furcadia.Net.DreamInfo.Furre" /> is visible.
-            </summary>
-    </member>
-    <member name="P:Furcadia.Net.DreamInfo.Furre.WasVisible">
-      <summary>
-            Gets a value indicating whether [was visible].
-            </summary>
-    </member>
     <member name="T:Furcadia.Net.DreamInfo.FurreList">
       <summary>
             Furre List information for a Furcadia Dream
@@ -4717,11 +4728,11 @@
         <c>true</c> if [contains] [the specified furre]; otherwise, <c>false</c>.
             </returns>
     </member>
-    <member name="M:Furcadia.Net.DreamInfo.FurreList.Contains(System.Int32)">
+    <member name="M:Furcadia.Net.DreamInfo.FurreList.Contains(Furcadia.Text.Base220)">
       <summary>
             Determines whether [contains] [the specified furre identifier].
             </summary>
-      <param name="FurreID">The furre identifier.</param>
+      <param name="FurreId">The furre identifier.</param>
       <returns>
         <c>true</c> if [contains] [the specified furre identifier]; otherwise, <c>false</c>.
             </returns>
@@ -4799,20 +4810,6 @@
         </markup>
       </returns>
     </member>
-    <member name="M:Furcadia.Net.DreamInfo.FurreList.GetFurreByID(System.Int32)">
-      <summary>
-            get a Furre from the Furrelist by its integer idd
-            </summary>
-      <param name="FurreID">
-            Furre ID as integer
-            </param>
-      <returns>
-            Furre name with a real Furcadia ID if the furre is in the dream
-            Other wise, Furre with with name unknown and the given Furre Id
-            <para />
-            Furre Id of -1 is Undefined
-            </returns>
-    </member>
     <member name="M:Furcadia.Net.DreamInfo.FurreList.GetFurreByName(System.String)">
       <summary>
             Gets a Furre object by the Furre's Name
@@ -4882,7 +4879,7 @@
             true if <paramref name="item" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, false. This method also returns false if <paramref name="item" /> is not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.
             </returns>
     </member>
-    <member name="M:Furcadia.Net.DreamInfo.FurreList.Remove(System.Int32)">
+    <member name="M:Furcadia.Net.DreamInfo.FurreList.Remove(Furcadia.Text.Base220)">
       <summary>
             Removes a Furre based on their Furre ID
             </summary>
@@ -4891,7 +4888,7 @@
           <include item="SMCMissingParamTag">
             <parameter>param</parameter>
             <parameter>FurreID</parameter>
-            <parameter>M:Furcadia.Net.DreamInfo.FurreList.Remove(System.Int32)</parameter>
+            <parameter>M:Furcadia.Net.DreamInfo.FurreList.Remove(Furcadia.Text.Base220)</parameter>
           </include>
         </markup>
       </param>
@@ -5449,7 +5446,7 @@
         </markup>
       </summary>
       <param name="port">
-            gameserver port
+            game-server port
             </param>
       <param name="lport">
             localhost port
@@ -5481,7 +5478,7 @@
             Connect to the Game serer by Host name to IP address
             </summary>
       <param name="host">
-            GameServer Ip address or hostname
+            GameServer IP address or host-name
             </param>
       <param name="port">
             Game server port
@@ -5538,7 +5535,7 @@
     </member>
     <member name="M:Furcadia.Net.Proxy.NetProxy.DisconnectServerAndClientStreams">
       <summary>
-            Disconnect from the Furcadia gameserver and Furcadia client
+            Disconnect from the Furcadia game-server and Furcadia client
             </summary>
     </member>
     <member name="M:Furcadia.Net.Proxy.NetProxy.Dispose">
@@ -5706,6 +5703,22 @@
             Current Dream Information with Furre List
             </summary>
     </member>
+    <member name="M:Furcadia.Net.Proxy.ProxySession.FormatTextToServer(System.String@)">
+      <summary>
+            Text Channel Prefixes (shout,whisper emote, Raw Server command)
+            <para>
+            default to say or "normal spoken command"
+            </para></summary>
+      <param name="data">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>data</parameter>
+            <parameter>M:Furcadia.Net.Proxy.ProxySession.FormatTextToServer(System.String@)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
     <member name="M:Furcadia.Net.Proxy.ProxySession.GetEnumInt``1(``0)">
       <summary>
         <markup>
@@ -5826,7 +5839,7 @@
     </member>
     <member name="E:Furcadia.Net.Proxy.ProxySession.ProcessServerChannelData">
       <summary>
-            Process Display Text and Channels
+            Process Display chanObject.ChannelText and Channels
             </summary>
     </member>
     <member name="E:Furcadia.Net.Proxy.ProxySession.ProcessServerInstruction">
@@ -5914,22 +5927,6 @@
             Allows the Furcadia Client to Disconnect from the session,
             allowing the session to remain connected to the game server
             </summary>
-    </member>
-    <member name="M:Furcadia.Net.Proxy.ProxySession.TextToServer(System.String@)">
-      <summary>
-            Text Channel Prefixes (shout,whisper emote, Raw Server command)
-            <para>
-            default to say or "normal spoken command"
-            </para></summary>
-      <param name="data">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>data</parameter>
-            <parameter>M:Furcadia.Net.Proxy.ProxySession.TextToServer(System.String@)</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="P:Furcadia.Net.Proxy.ProxySession.ThroatTired">
       <summary>
@@ -6596,6 +6593,14 @@
             The active player
             </summary>
     </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.MoveFurre.ToString">
+      <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+      <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+    </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.RemoveAvatar">
       <summary>
             Remove Avatar Server Instruction Object
@@ -6627,6 +6632,14 @@
             Triggering furre being removed
             </summary>
     </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.RemoveAvatar.ToString">
+      <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+      <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+    </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.SpawnAvatar">
       <summary>
             Process the Spaw Avatar Instruction
@@ -6650,7 +6663,7 @@
         </markup>
       </param>
     </member>
-    <member name="P:Furcadia.Net.Utils.ServerParser.SpawnAvatar.player">
+    <member name="P:Furcadia.Net.Utils.ServerParser.SpawnAvatar.Player">
       <summary>
             the Active Player
             </summary>
@@ -6659,6 +6672,14 @@
       <summary>
             Spawing plags
             </summary>
+    </member>
+    <member name="M:Furcadia.Net.Utils.ServerParser.SpawnAvatar.ToString">
+      <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+      <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
     </member>
     <member name="T:Furcadia.Net.Utils.ServerParser.UpdateColorString">
       <summary>
