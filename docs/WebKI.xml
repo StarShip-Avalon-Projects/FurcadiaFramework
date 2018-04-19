@@ -597,8 +597,8 @@
     <HelpKINode Title="Frame Structure" Url="html/T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Furcadia_Net_DreamInfo_Avatar_Frame.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_DreamInfo_Avatar_Frame.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Drawing_Graphics_Frame.htm" />
   </HelpKINode>
   <HelpKINode Title="Frame.FrameFormat field" Url="html/F_Furcadia_Drawing_Graphics_Frame_FrameFormat.htm" />
   <HelpKINode Title="Frame.FrameFormats enumeration" Url="html/T_Furcadia_Drawing_Graphics_Frame_FrameFormats.htm" />
@@ -1103,8 +1103,8 @@
   <HelpKINode Title="IniParser class">
     <HelpKINode Title="IniParser Class" Url="html/T_Furcadia_Text_IniParser.htm" />
     <HelpKINode Title="IniParser Class" Url="html/T_Furcadia_Net_DirectConnection_IniParser.htm" />
-    <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_DirectConnection_IniParser__ctor.htm" />
     <HelpKINode Title="constructor" Url="html/M_Furcadia_Text_IniParser__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Furcadia_Net_DirectConnection_IniParser__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Text_IniParser.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Furcadia_Net_DirectConnection_IniParser.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Furcadia_Net_DirectConnection_IniParser.htm" />
@@ -1114,8 +1114,8 @@
   <HelpKINode Title="IniParser.EnumSection method" Url="html/M_Furcadia_Text_IniParser_EnumSection.htm" />
   <HelpKINode Title="IniParser.GetSetting method" Url="html/M_Furcadia_Text_IniParser_GetSetting.htm" />
   <HelpKINode Title="IniParser.IniParser constructor">
-    <HelpKINode Title="IniParser Constructor " Url="html/M_Furcadia_Net_DirectConnection_IniParser__ctor.htm" />
     <HelpKINode Title="IniParser Constructor " Url="html/M_Furcadia_Text_IniParser__ctor.htm" />
+    <HelpKINode Title="IniParser Constructor " Url="html/M_Furcadia_Net_DirectConnection_IniParser__ctor.htm" />
   </HelpKINode>
   <HelpKINode Title="IniParser.LoadOptionsFromIni method" Url="html/M_Furcadia_Net_DirectConnection_IniParser_LoadOptionsFromIni.htm" />
   <HelpKINode Title="IniParser.Options property" Url="html/P_Furcadia_Net_DirectConnection_IniParser_Options.htm" />
@@ -2031,8 +2031,8 @@
   <HelpKINode Title="SpecNum method" Url="html/M_Furcadia_Net_DreamInfo_Avatar_SpecNum.htm" />
   <HelpKINode Title="Stand1 enumeration member" Url="html/T_Furcadia_Net_DreamInfo_Avatar_FurrePose.htm" />
   <HelpKINode Title="Stand2 enumeration member" Url="html/T_Furcadia_Net_DreamInfo_Avatar_FurrePose.htm" />
-  <HelpKINode Title="Standalone property" Url="html/P_Furcadia_Net_Options_ProxyOptions_Standalone.htm" />
   <HelpKINode Title="StandAlone property" Url="html/P_Furcadia_Net_Proxy_ProxySession_StandAlone.htm" />
+  <HelpKINode Title="Standalone property" Url="html/P_Furcadia_Net_Options_ProxyOptions_Standalone.htm" />
   <HelpKINode Title="Status property" Url="html/P_Furcadia_Net_Pounce_PounceConnection_Status.htm" />
   <HelpKINode Title="StepBlock structure">
     <HelpKINode Title="StepBlock Structure" Url="html/T_Furcadia_Drawing_Graphics_StepBlock.htm" />
@@ -2258,17 +2258,17 @@
   <HelpKINode Title="Wings field" Url="html/F_Furcadia_Net_DreamInfo_Avatar_Frame_Wings.htm" />
   <HelpKINode Title="Wings property" Url="html/P_Furcadia_Movement_ColorString_Wings.htm" />
   <HelpKINode Title="Write method" Url="html/Overload_Furcadia_Net_INetMessage_Write.htm" />
-  <HelpKINode Title="X field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
   <HelpKINode Title="x field">
     <HelpKINode Title="MapPosition.x Field" Url="html/F_Furcadia_FurcMap_MapPosition_x.htm" />
     <HelpKINode Title="MapTile.x Field" Url="html/F_Furcadia_FurcMap_MapTile_x.htm" />
   </HelpKINode>
+  <HelpKINode Title="X field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_X.htm" />
   <HelpKINode Title="X property" Url="html/P_Furcadia_Drawing_FurrePosition_X.htm" />
-  <HelpKINode Title="y field">
-    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
-    <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
-  </HelpKINode>
   <HelpKINode Title="Y field" Url="html/F_Furcadia_Drawing_Graphics_Frame_Pos_Y.htm" />
+  <HelpKINode Title="y field">
+    <HelpKINode Title="MapPosition.y Field" Url="html/F_Furcadia_FurcMap_MapPosition_y.htm" />
+    <HelpKINode Title="MapTile.y Field" Url="html/F_Furcadia_FurcMap_MapTile_y.htm" />
+  </HelpKINode>
   <HelpKINode Title="Y property" Url="html/P_Furcadia_Drawing_FurrePosition_Y.htm" />
   <HelpKINode Title="YouEatCookieFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouEatCookieFilter.htm" />
   <HelpKINode Title="YouSayFilter field" Url="html/F_Furcadia_Text_FurcadiaMarkup_YouSayFilter.htm" />
