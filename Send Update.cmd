@@ -10,7 +10,7 @@ set GIT_STATUS=%ERRORLEVEL%
 if not %GIT_STATUS%==0 goto fail 
 
 git push --recurse-submodules=on-demand
-set git.exe_STATUS=%ERRORLEVEL% 
+set GIT_STATUS=%ERRORLEVEL% 
 if %GIT_STATUS%==0 goto eof
 
 git push
